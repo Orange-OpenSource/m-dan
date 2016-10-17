@@ -1,0 +1,31 @@
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one
+  ~ or more contributor license agreements.  See the NOTICE file
+  ~ distributed with this work for additional information
+  ~ regarding copyright ownership.  The ASF licenses this file
+  ~ to you under the Apache License, Version 2.0 (the
+  ~ "License"); you may not use this file except in compliance
+  ~ with the License.  You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="24dp"
+    android:viewportHeight="512.0"
+    android:viewportWidth="512.0"
+    android:width="24dp"
+    android:tintMode="multiply"
+    android:tint="@color/functional_colours_2">
+
+    <path android:fillColor="@color/functional_colours_2"
+        android:pathData="M512,84C512,60.3 492.2,41 467.9,41C456.2,41 445.6,45.4 437.7,52.6L437.7,52.6L176.6,299L90.5,206.2L90.5,206.2C82.8,199.7 72.8,195.8 61.8,195.8C49.6,195.8 38.6,200.6 30.6,208.4L12.9,225.6C4.9,233.4 0,244.2 0,256C0,266.2 3.6,275.5 9.7,282.9L9.7,282.9L150.9,454.9L150.9,454.9C159,464.8 171.4,471.1 185.4,471.1C199.3,471.1 211.7,464.8 219.8,454.9L219.8,454.9L502.3,110.9L502.3,110.9C508.4,103.5 512,94.2 512,84"
+        android:strokeColor="#00000000" android:strokeWidth="1"/>
+</vector>

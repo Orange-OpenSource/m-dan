@@ -1,0 +1,58 @@
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one
+  ~ or more contributor license agreements.  See the NOTICE file
+  ~ distributed with this work for additional information
+  ~ regarding copyright ownership.  The ASF licenses this file
+  ~ to you under the Apache License, Version 2.0 (the
+  ~ "License"); you may not use this file except in compliance
+  ~ with the License.  You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- basically always use 304dp on -sw360dp and 320dp on -sw384dp for your navigation drawer -->
+    <dimen name="navigation_drawer_width">320dp</dimen>
+
+    <!-- text size -->
+    <dimen name="cover_title">22dp</dimen>
+    <dimen name="navigation_drawer_item_text">20sp</dimen>
+
+    <!-- navigation drawer -->
+    <dimen name="navigation_drawer_item">50dp</dimen>
+
+
+    <dimen name="small_margin">5dp</dimen>
+    <dimen name="medium_margin">10dp</dimen>
+    <dimen name="large_margin">15dp</dimen>
+
+    <!-- Brand sizes -->
+    <dimen name="font_size_extra_large4">112sp</dimen>
+    <dimen name="font_size_extra_large3">56sp</dimen>
+    <dimen name="font_size_extra_large2">45sp</dimen>
+    <dimen name="font_size_extra_large">34sp</dimen>
+    <dimen name="font_size_large">24sp</dimen>
+    <dimen name="font_size_common">16sp</dimen>
+    <dimen name="font_size_small">14sp</dimen>
+    <dimen name="font_size_extra_small">12sp</dimen>
+
+    <!-- Accessibility sizes -->
+    <dimen name="font_size_accessibility_title">18sp</dimen>
+
+    <!-- Football field component -->
+    <dimen name="field_image_height">450dp</dimen>
+    <dimen name="field_player_size">70dp</dimen>
+
+
+</resources>

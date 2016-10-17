@@ -1,0 +1,111 @@
+Parts list under Orange SA Copyright
+Copyright (C) 2016 Orange SA All rights reserved
+
+The following parts are proprietary information of Orange.
+You shall not use or display any trade names, trademarks, service marks, products names, illustrations or designs used 
+within the software and owned by Orange SA and its subsidiaries, in whole or part of, in any medium, except as required 
+for reasonable and customary use in describing the origin of the software and reproducing the content of the NOTICE 
+and DOCUMENTATION files.
+Any use or displaying shall constitute an infringement under intellectual property laws of France and international conventions.
+
+Note : drawable* can be drawable, drawable-hdpi, drawable-ldpi, drawable-mdpi, drawable-xhdpi, drawable-xxhdpi, drawable-xxxhdpi
+Note2 : * in file name can be any characters or string of characters
+
+./app/src/main/res/drawable*/icon_*.xml
+./app/src/main/res/drawable*/ic_list.png
+./app/src/main/res/drawable*/ic_list_other_state.png
+./app/src/main/res/drawable*/ic_settings.png
+./app/src/main/res/drawable*/ic_reload.png
+./app/src/main/res/drawable*/logo_mdan.xml
+./app/src/main/res/drawable*/carousel1.jpg
+./app/src/main/res/drawable*/carousel2.jpg
+./app/src/main/res/drawable*/carousel3.jpg
+./app/src/main/res/drawable*/chainemoins.png
+./app/src/main/res/drawable*/chaineplus.png
+./app/src/main/res/drawable*/cover2.9.png
+./app/src/main/res/drawable*/criteria_illustration.9.png
+./app/src/main/res/drawable*/dev_illustration.9.png
+./app/src/main/res/drawable*/edittext_bg.9.png
+./app/src/main/res/drawable*/exampleimg.png
+./app/src/main/res/drawable*/options_illustration.9.png
+./app/src/main/res/drawable*/playor.png
+./app/src/main/res/drawable*/splash.png
+./app/src/main/res/drawable*/talkback_illustration.9.png
+./app/src/main/res/drawable*/volumedown.png
+./app/src/main/res/drawable*/volumeup.png
+./app/src/main/res/drawable*/browsericon.png
+./app/src/main/res/drawable*/checkbox_default.png
+./app/src/main/res/drawable*/checkbox_selected.png
+./app/src/main/res/drawable*/chevron_left_selected.png
+./app/src/main/res/drawable*/chevron_right_selected.png
+./app/src/main/res/drawable*/editt.png
+./app/src/main/res/drawable*/emailicon.png
+./app/src/main/res/drawable*/ic_cercle_black.png
+./app/src/main/res/drawable*/ic_cercle_white.png
+./app/src/main/res/drawable*/ic_play_bad.png
+./app/src/main/res/drawable*/ic_play_bad_pressed.png
+./app/src/main/res/drawable*/ic_play_good.png
+./app/src/main/res/drawable*/ic_play_good_pressed.png
+./app/src/main/res/drawable*/ic_radio_button_checked_white_24dp.png
+./app/src/main/res/drawable*/logo.png
+./app/src/main/res/drawable*/logoemail.png
+./app/src/main/res/drawable*/logoorangeetmoi.png
+./app/src/main/res/drawable*/maillot_gris.png
+./app/src/main/res/drawable*/maillot_noir.png
+./app/src/main/res/drawable*/monreseau.png
+./app/src/main/res/drawable*/musicicon.png
+./app/src/main/res/drawable*/mylivebox.png
+./app/src/main/res/drawable*/orangefootball.png
+./app/src/main/res/drawable*/radio_default.png
+./app/src/main/res/drawable*/radio_selected.png
+./app/src/main/res/drawable*/terrain_de_foot.9.png
+./app/src/main/res/drawable*/videoicon.png
+./app/src/main/res/drawable*/ab_bottom_solid_tab_selector.9.png
+./app/src/main/res/drawable*/ab_solid_tab_selector.9.png
+./app/src/main/res/drawable*/ab_stacked_solid_tab_selector.9.png
+./app/src/main/res/drawable*/ab_texture_tile_tab_selector.png
+./app/src/main/res/drawable*/ab_transparent_tab_selector.9.png
+./app/src/main/res/drawable*/btn_cab_done_default_tab_selector.9.png
+./app/src/main/res/drawable*/btn_cab_done_focused_tab_selector.9.png
+./app/src/main/res/drawable*/btn_cab_done_pressed_tab_selector.9.png
+./app/src/main/res/drawable*/cab_background_bottom_tab_selector.9.png
+./app/src/main/res/drawable*/cab_background_top_tab_selector.9.png
+./app/src/main/res/drawable*/dialog_button_background_default.9.png
+./app/src/main/res/drawable*/dialog_button_background_pressed.9.png
+./app/src/main/res/drawable*/drawer_shadow.9.png
+./app/src/main/res/drawable*/list_focused_devrap.9.png
+./app/src/main/res/drawable*/list_focused_tab_selector.9.png
+./app/src/main/res/drawable*/list_pressed_tab_selector.9.png
+./app/src/main/res/drawable*/menu_dropdown_panel_tab_selector.9.png
+./app/src/main/res/drawable*/progress_bg_tab_selector.9.png
+./app/src/main/res/drawable*/progress_primary_tab_selector.9.png
+./app/src/main/res/drawable*/progress_secondary_tab_selector.9.png
+./app/src/main/res/drawable*/spinner_ab_default_tab_selector.9.png
+./app/src/main/res/drawable*/spinner_ab_disabled_tab_selector.9.png
+./app/src/main/res/drawable*/spinner_ab_focused_tab_selector.9.png
+./app/src/main/res/drawable*/spinner_ab_pressed_tab_selector.9.png
+./app/src/main/res/drawable*/tab_selected_focused_tab_selector.9.png
+./app/src/main/res/drawable*/tab_selected_pressed_tab_selector.9.png
+./app/src/main/res/drawable*/tab_selected_tab_selector.9.png
+./app/src/main/res/drawable*/tab_unselected_focused_tab_selector.9.png
+./app/src/main/res/drawable*/tab_unselected_pressed_tab_selector.9.png
+./app/src/main/res/drawable*/tab_unselected_tab_selector.9.png
+
+
+AnimatedExpandableListView
+Copyright (c) 2014 Gary Guo
+AnimatedExpandableListView is under Apache v2.0 licence:  http://www.apache.org/licenses/LICENSE-2.0
+More information : https://github.com/idunnololz/AnimatedExpandableListView
+
+Android Annotations
+Copyright (c) 2012-2016 eBusiness Information
+AndroidAnnotations is under Apache v2.0 licence:  http://www.apache.org/licenses/LICENSE-2.0
+More information : https://github.com/excilys/androidannotations/
+
+Android Auto Scroll ViewPager
+Copyright (c) 2014 trinea.cn
+AndroidAutoScrollViewPager is under Apache v2.0 licence:  http://www.apache.org/licenses/LICENSE-2.0
+More information : https://github.com/Trinea/android-auto-scroll-view-pager
+
+Cover of Mael's album "Mary Daisy Jane" is under the Creative Commons Attribution-Share Alike 3.0 Unported license and is the property of its author or licensor.
+https://creativecommons.org/licenses/by-sa/3.0/deed.en

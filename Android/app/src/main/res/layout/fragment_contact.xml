@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one
+  ~ or more contributor license agreements.  See the NOTICE file
+  ~ distributed with this work for additional information
+  ~ regarding copyright ownership.  The ASF licenses this file
+  ~ to you under the Apache License, Version 2.0 (the
+  ~ "License"); you may not use this file except in compliance
+  ~ with the License.  You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="false">
+
+        <ImageView
+            android:id="@+id/imgViewLogoContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:src="@drawable/logo"
+            android:elevation="3dp" />
+
+        <TextView
+            android:id="@+id/textViewTitleContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgViewLogoContact"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="@string/contact_title"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewLabelContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewTitleContact"
+            android:layout_marginTop="27dp"
+            android:text="@string/contact_website"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingRight="@dimen/medium_margin"
+            android:paddingLeft="@dimen/medium_margin" />
+
+        <TextView
+            android:id="@+id/textViewLienContact"
+            style="@style/BrandBody1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewLabelContact"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="10dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:contentDescription="@string/contact_cd_website_link"
+            android:autoLink="web"
+            android:text="@string/contact_website_link"
+            android:textColorLink="#F16E00"
+            android:linksClickable="true"
+            android:focusable="true"
+            android:contextClickable="false" />
+
+        <TextView
+            android:id="@+id/textViewLabelSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewLienContact"
+            android:layout_marginTop="25dp"
+            android:text="@string/contact_support"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingRight="@dimen/medium_margin"
+            android:paddingLeft="@dimen/medium_margin" />
+
+        <TextView
+            android:id="@+id/textViewLienSupport"
+            style="@style/BrandBody1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewLienContact"
+            android:layout_alignLeft="@+id/textViewLienContact"
+            android:layout_below="@+id/textViewLabelSupport"
+            android:layout_marginTop="16dp"
+            android:linksClickable="true"
+            android:paddingBottom="10dp"
+            android:text="@string/contact_support_link"
+            android:contentDescription="@string/contact_cd_support_link"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:autoLink="web"
+            android:textColorLink="#F16E00"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/textViewLabelMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewLienSupport"
+            android:layout_marginTop="25dp"
+            android:text="@string/contact_team"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingRight="@dimen/medium_margin"
+            android:paddingLeft="@dimen/medium_margin" />
+
+        <TextView
+            android:id="@+id/textViewLienMail"
+            style="@style/BrandBody1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewLienSupport"
+            android:layout_alignLeft="@+id/textViewLienSupport"
+            android:layout_below="@+id/textViewLabelMail"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="10dp"
+            android:text="@string/contact_team_mail"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/darker_grey"
+            android:textColorLink="@color/core_orange_dark"
+            android:textSize="14sp"
+            android:contentDescription="@string/contact_cd_team_mail"
+            android:autoLink="email" />
+
+    </RelativeLayout>
+</ScrollView>

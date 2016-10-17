@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one
+  ~ or more contributor license agreements.  See the NOTICE file
+  ~ distributed with this work for additional information
+  ~ regarding copyright ownership.  The ASF licenses this file
+  ~ to you under the Apache License, Version 2.0 (the
+  ~ "License"); you may not use this file except in compliance
+  ~ with the License.  You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:animateLayoutChanges="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="false"
+        android:animateLayoutChanges="false">
+
+        <ImageView
+            android:id="@+id/imgViewLogoAxsOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/logo"
+            android:elevation="3dp" />
+
+        <TextView
+            android:id="@+id/textViewTitleAxsOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgViewLogoAxsOrange"
+            android:layout_centerHorizontal="true"
+            android:text="@string/orange_title"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewContentAxsOrange"
+            style="@style/BrandBody1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewTitleAxsOrange"
+            android:layout_marginTop="29dp"
+            android:paddingBottom="10dp"
+            android:text="@string/orange_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:paddingRight="@dimen/medium_margin"
+            android:paddingLeft="@dimen/medium_margin"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/textViewTitleApplicationsAxsOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewContentAxsOrange"
+            android:layout_marginTop="26dp"
+            android:text="@string/orange_accessible_app"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:contentDescription="@string/orange_cd_accessible_app"
+            android:paddingRight="@dimen/medium_margin"
+            android:paddingLeft="@dimen/medium_margin" />
+
+        <GridLayout
+            android:id="@+id/gridLayoutApplicationsAxsOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:orientation="horizontal"
+            android:rowOrderPreserved="false"
+            android:transitionGroup="false"
+            android:useDefaultMargins="true"
+            android:importantForAccessibility="no"
+            android:layout_below="@+id/textViewTitleApplicationsAxsOrange"
+            android:layout_centerHorizontal="true"
+            android:animateLayoutChanges="false">
+
+            <ImageButton
+                android:id="@+id/imgButtonMyBoutiquesOrange"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_column="0"
+                android:layout_marginBottom="0dp"
+                android:layout_row="0"
+                android:importantForAccessibility="yes"
+                android:contentDescription="@string/orange_cd_app"
+                android:baselineAlignBottom="false"
+                android:cropToPadding="false"
+                android:padding="0dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/monreseau"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="70dp"
+                android:labelFor="@+id/textViewMyBoutiquesOrange"
+                android:layout_marginLeft="20dp"
+                android:foreground="@drawable/foregroundselector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/orange_monreseau"
+                android:id="@+id/textViewMyBoutiquesOrange"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="70dp"
+                style="@style/BrandBody1"
+                android:layout_marginLeft="20dp"
+                android:importantForAccessibility="no" />
+
+            <ImageButton
+                android:id="@+id/imgButtonOrangeTV"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:importantForAccessibility="yes"
+                android:contentDescription="@string/orange_cd_app"
+                android:padding="0dp"
+                android:adjustViewBounds="true"
+                android:labelFor="@+id/textViewMyOrange"
+                android:background="@drawable/mylivebox"
+                android:layout_gravity="center_horizontal"
+                android:foreground="@drawable/foregroundselector"/>
+
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/orange_malivebox"
+                android:id="@+id/textViewOrangeTV"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_gravity="center_horizontal"
+                style="@style/BrandBody1"
+                android:paddingLeft="5dp"
+                android:importantForAccessibility="no" />
+
+            <ImageButton
+                android:id="@+id/imgButtonMyOrange"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:importantForAccessibility="yes"
+                android:contentDescription="@string/orange_cd_app"
+                android:padding="0dp"
+                android:adjustViewBounds="true"
+                android:textAlignment="center"
+                android:labelFor="@+id/textViewOrangeTV"
+                android:background="@drawable/logoorangeetmoi"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginLeft="20dp"
+                android:foreground="@drawable/foregroundselector"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/orange_orangeetmoi"
+                android:id="@+id/textViewMyOrange"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="70dp"
+                style="@style/BrandBody1"
+                android:layout_marginLeft="20dp"
+                android:importantForAccessibility="no" />
+
+            <ImageButton
+                android:id="@+id/imgButtonFootballClub"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:importantForAccessibility="yes"
+                android:contentDescription="@string/orange_cd_app"
+                android:padding="0dp"
+                android:adjustViewBounds="true"
+                android:labelFor="@+id/textViewFootballClub"
+                android:background="@drawable/orangefootball"
+                android:cropToPadding="false"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:foreground="@drawable/foregroundselector"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/orange_orangefootballclub"
+                android:id="@+id/textViewFootballClub"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_gravity="center_horizontal"
+                style="@style/BrandBody1"
+                android:textAlignment="center"
+                android:importantForAccessibility="no" />
+
+        </GridLayout>
+
+    </RelativeLayout>
+</ScrollView>
