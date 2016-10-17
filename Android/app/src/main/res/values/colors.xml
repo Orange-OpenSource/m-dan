@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one
+  ~ or more contributor license agreements.  See the NOTICE file
+  ~ distributed with this work for additional information
+  ~ regarding copyright ownership.  The ASF licenses this file
+  ~ to you under the Apache License, Version 2.0 (the
+  ~ "License"); you may not use this file except in compliance
+  ~ with the License.  You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<resources>
+    <color name="action_bar_bg">#000000</color>
+    <color name="status_bar_bg">#000000</color>
+    <color name="separator_bg">#CCCCCC</color>
+
+    <color name="accent_color">#ff7900</color>
+    <color name="accent_color_fallback">#ffa726</color>
+    <color name="orange_digital_2">#F16E00</color>
+
+    <color name="primary_text">#191919</color>
+    <color name="secondary_text">#666666</color>
+    <color name="hint_text">#999999</color>
+    <color name="button_bg">#D9D9D9</color>
+    <color name="button_bg_disabled">#66D9D9D9</color>
+    <color name="button_text">#000000</color>
+    <color name="button_text_disabled">#66000000</color>
+
+    <color name="divider_line">#D9D9D9</color>
+    <color name="app_bg">#FFFFFF</color>
+
+    <color name="cover_subtitle_background">#99FFFFFF</color>
+
+    <color name="red">#DD2C00</color>
+    <color name="green">#32C832</color>
+    <color name="blue">#527EBD</color>
+    <color name="yellow">#FFCC00</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="darker_grey">#333333</color>
+    <color name="dark_grey">#666666</color>
+    <color name="dark_medium_grey">#999999</color>
+    <color name="medium">#DDDDDD</color>
+    <color name="light_medium_grey">#EEEEEE</color>
+    <color name="light_grey">#F6F6F6</color>
+    <color name="lighter_grey">#FAFAFA</color>
+    <color name="lightest_grey">#F2F2F2</color>
+
+    <!-- Brand Core colours -->
+    <color name="core_orange_base">#ff7900</color>
+    <color name="core_orange_dark">#f16e00</color>
+    <color name="core_white">#ffffff</color>
+    <color name="core_black">#000000</color>
+
+    <!-- Brand Supporting colours -->
+    <color name="supporting_colour_1">#FFD200</color>
+    <color name="supporting_colour_2">#4BB4E6</color>
+    <color name="supporting_colour_3">#50BE87</color>
+    <color name="supporting_colour_4">#A885D8</color>
+    <color name="supporting_colour_5">#FFB4E6</color>
+
+    <!-- Brand Functional greys -->
+    <color name="functional_greys_1">#333333</color>
+    <color name="functional_greys_2">#666666</color>
+    <color name="functional_greys_3">#999999</color>
+    <color name="functional_greys_4">#CCCCCC</color>
+    <color name="functional_greys_5">#DDDDDD</color>
+    <color name="functional_greys_6">#EEEEEE</color>
+    <color name="functional_greys_7">#F6F6F6</color>
+    <color name="functional_greys_8">#FAFAFA</color>
+
+    <!-- Brand Functional colours -->
+    <color name="functional_colours_1">#DC3C14</color>
+    <color name="functional_colours_2">#4EC924</color>
+    <color name="functional_colours_3">#FFCC00</color>
+    <color name="functional_colours_4">#527EBD</color>
+
+    <!-- Material colors -->
+    <color name="primary_light">@color/functional_greys_3</color>
+    <color name="primary">@color/core_black</color>
+    <color name="primary_dark">@color/core_black</color>
+    <color name="accent">@color/core_orange_base</color>
+    <color name="wall">@color/functional_greys_7</color>
+    <color name="activity_background">@color/core_white</color>
+
+    <color name="transparency">#00FFFFFF</color>
+    <color name="selectorforegroung">#6d070400</color>
+    <color name="selectorforegroundcarousel">#88f9f9f9</color>
+</resources>

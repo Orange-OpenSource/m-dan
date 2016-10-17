@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one
+  ~ or more contributor license agreements.  See the NOTICE file
+  ~ distributed with this work for additional information
+  ~ regarding copyright ownership.  The ASF licenses this file
+  ~ to you under the Apache License, Version 2.0 (the
+  ~ "License"); you may not use this file except in compliance
+  ~ with the License.  You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<resources>
+    <integer-array name="player_x_relative_position">
+        <item>0</item><!-- remplacant-->
+        <item>50</item><!-- Gardien -->
+        <item>50</item><!-- Défenseur -->
+        <item>50</item><!-- Milieu -->
+        <item>50</item><!-- Attaquant -->
+        <item>15</item><!-- latéral gauche -->
+        <item>85</item><!-- latéral droit -->
+        <item>35</item><!-- central gauche -->
+        <item>65</item><!-- central droit -->
+        <item>15</item><!-- milieu gauche -->
+        <item>85</item><!-- milieu droit -->
+        <item>50</item><!-- milieu centre -->
+        <item>50</item><!-- milieu défensif -->
+        <item>50</item><!-- milieu offensif -->
+        <item>50</item><!-- avant centre -->
+        <item>60</item><!-- 9 1/2 -->
+        <item>50</item><!-- libero -->
+        <item>40</item><!-- avant centre gauche-->
+        <item>60</item><!-- avant centre droit-->
+        <item>35</item><!-- milieu centre gauche-->
+        <item>65</item><!-- milieu centre droit-->
+        <item>50</item><!-- central-->
+        <item>35</item><!-- milieu défensif gauche-->
+        <item>65</item><!-- milieu défensif droit-->
+        <item>35</item><!-- milieu offensif gauche-->
+        <item>65</item><!-- milieu offensif droit-->
+        <item>15</item><!-- ailier gauche-->
+        <item>85</item><!-- ailier droit-->
+        <item>25</item><!-- stopper gauche-->
+        <item>75</item><!-- stopper droit-->
+    </integer-array>
+
+    <integer-array name="player_y_relative_position">
+        <item>0</item><!-- remplacant-->
+        <item>15</item><!-- Gardien -->
+        <item>30</item><!-- Défenseur -->
+        <item>60</item><!-- Milieu -->
+        <item>90</item><!-- Attaquant -->
+        <item>35</item><!-- latéral gauche -->
+        <item>35</item><!-- latéral droit -->
+        <item>35</item><!-- central gauche -->
+        <item>35</item><!-- central droit -->
+        <item>60</item><!-- milieu gauche -->
+        <item>60</item><!-- milieu droit -->
+        <item>60</item><!-- milieu centre -->
+        <item>55</item><!-- milieu défensif -->
+        <item>75</item><!-- milieu offensif -->
+        <item>90</item><!-- avant centre -->
+        <item>75</item><!-- 9 1/2 -->
+        <item>30</item><!-- libero -->
+        <item>90</item><!-- avant centre gauche-->
+        <item>90</item><!-- avant centre droit-->
+        <item>60</item><!-- milieu centre gauche-->
+        <item>60</item><!-- milieu centre droit-->
+        <item>30</item><!-- central-->
+        <item>55</item><!-- milieu défensif gauche-->
+        <item>55</item><!-- milieu défensif droit-->
+        <item>70</item><!-- milieu offensif gauche-->
+        <item>70</item><!-- milieu offensif droit-->
+        <item>85</item><!-- ailier gauche-->
+        <item>85</item><!-- ailier droit-->
+        <item>35</item><!-- stopper gauche-->
+        <item>35</item><!-- stopper droit-->
+    </integer-array>
+</resources>

@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* This file is part of mDAN | mDan is a mobile application (Android and iOS)
+* which explains accessibility guidelines and presents the best practices of
+* a mobile systems in action.
+*
+* Copyright (c)  2016  Orange SA
+* See the Creative Commons Legal Code Attribution 3.0 Unported License for
+* more details (LICENSE file).
+-->
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="fr">
+
+    <!-- project information -->
+    <string name="app_name" translatable="true">mDAN</string>
+    <string name="app_long_name">Démonstrateur d\'Accessibilité Numérique mobile</string>
+
+
+    <!-- navigation drawer -->
+    <string name="navigation_return">Retourner à la page précédente</string>
+    <string name="navigation_home">Retourner à la page d\'accueil</string>
+    <string name="section_home">Accueil</string>
+    <string name="section_criteria">Guide d\'accessibilité Android</string>
+    <string name="section_dev">Guide pour les développeurs</string>
+    <string name="section_talkback">Talkback</string>
+    <string name="section_axs_options">Options d\'accessibilité</string>
+    <string name="section_axs_orange">L\'accessibilité chez Orange</string>
+    <string name="section_about">À propos</string>
+    <string name="section_contact">Contact</string>
+
+
+    <!-- @todo : remove it before release -->
+    <string name="title_content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</string>
+
+    <!-- commons -->
+    <string name="alert_before_leaving">Attention, vous quittez l\'application.\nVoulez-vous continuer ?</string>
+    <string name="selected">sélectionné</string>
+    <string name="not">non</string>
+    <string name="on">sur</string>
+    <string name="promotion">promotion</string>
+    <string name="image">image</string>
+    <string name="step">étape </string>
+    <string name="heure"> heure </string>
+    <string name="date_format">dd-MM-yyyy HH:mm</string>
+    <string name="axsactivated">Exemple accessible</string>
+    <string name="axsdisabled">Exemple non accessible</string>
+    <string name="example">Exemple</string>
+    <string name="alert_title">Information</string>
+    <string name="alert_content">Afin de mieux comprendre la différence entre l\'exemple accessible et non accessible, nous vous recommandons, d\'activer l\'option « %1s ».</string>
+    <string name="alert_choice">ne plus afficher (vous aurez toujours l\'accès rapide aux options d\'accessibilité en haut à droite)</string>
+    <string name="alert_ok">Gérer les options d\'accessibilité</string>
+    <string name="alert_cancel">Annuler</string>
+    <string name="alert_close_cd">Fermer la fenêtre</string>
+    <string name="next">Suivant</string>
+    <string name="previous">Précédent</string>
+    <string-array name="alert_options">
+        <item>TalkBack</item>
+        <item>Grand caractères</item>
+    </string-array>
+
+
+    <!-- home view -->
+    <string name="home_long_mdan">Démonstrateur d\'Accessibilité\nNumérique mobile</string>
+    <string name="home_content">Découvrez l\'accessibilté à travers des exemples, explications et présentation des outils d\'accessibilité!</string>
+    <string name="home_section_criteria">Guide Android\nd\'accessibilité</string>
+    <string name="home_section_criteria_cd">Guide Android d\'accessibilité, Bouton</string>
+    <string name="home_section_dev">Guide\nDéveloppeurs</string>
+    <string name="home_section_dev_cd">Guide à destination des développeurs, Bouton</string>
+    <string name="home_section_talkback">TalkBack</string>
+    <string name="home_section_talkback_cd">Guide d\'utilisation de TalkBack, Bouton</string>
+    <string name="home_section_options">Options\nd\'accessibilité</string>
+    <string name="home_section_options_cd">Options d\'accessibilité, Bouton</string>
+
+    <!-- old home view -->
+    <string name="home_title_what">L\'accessibilité, késako ?</string>
+    <string name="home_title_why">Pourquoi l\'accessibilité numérique ?</string>
+    <string name="home_title_dan">Démonstrateur d\'Accessibilité\nNumérique mobile</string>
+    <string formatted="false" name="home_content_what">C\'est la capacité d\'un produit ou d\'un service à être utilisable par tous dans tous les contextes. On dit d\'une application mobile qu\'elle est accessible si elle interagit correctement avec les options d\'accessibilité offertes nativement par le mobile.\n\nAinsi, un utilisateur non-voyant, malvoyant, malentendant ou présentant tout autre type de handicap sera en mesure d\'utiliser 100% des fonctionnalités d\'une application.</string>
+    <string name="home_content_why">- Parce qu\'elle bénéficie à 80 millions de personnes handicapées ou séniors en Europe\n\n- Parce que nous passons en moyenne 8 ans de notre vie en situation de handicap\n\n- Mais aussi et surtout parce qu\'un produit accessible est plus facile à utiliser et qu\'il bénéficie à tous !</string>
+    <string name="home_content_dan">L\'accessibilité numérique est un domaine souvent inconnu ou méconnu.\n\nLe présent Démonstrateur d\'Accessibilité Numérique a pour vocation de présenter l\'accessibilité mobile sous toutes ses formes. \n\nL\'application présente donc : \n\n- Ce qu\'est l\'accessibilité numérique.\n- Les options d\'accessibilité qui existent sous Android.\n- Comment utiliser les options offertes par les mobiles?.\n- Un guide pour TalkBack (le lecteur d\'écran d\'Android).\n- Les critères d\'accessibilité mobile (présentation non technique) avec des exemples.\n- Un mémo pour développeurs (comment développer accessible).</string>
+
+
+    <!-- criteria view -->
+    <string-array name="criteria_list">
+        <item>Image</item>
+        <item>Couleur</item>
+        <item>Alternative textuelle</item>
+        <item>Titre et entête</item>
+        <item>État des éléments</item>
+        <item>Composant standard</item>
+        <item>Zone de clic</item>
+        <item>Elément fantôme</item>
+        <item>Taille des textes</item>
+        <item>Contrôle de contenu</item>
+        <item>Changement de contenu</item>
+        <item>Scroll horizontal</item>
+        <item>Formulaire</item>
+        <item>Ordre de lecture</item>
+        <item>Navigation au focus</item>
+    </string-array>
+    <string name="criteria_description_title">Description et utilisation</string>
+    <string name="criteria_description_content">Ce guide a pour objectif de présenter les différents critères d\'accessibilité à respecter pour obtenir une application Android accessible. Chaque critère est présenté en expliquant pourquoi il est important et la règle d\'accessibilité qui en découle. Les critères sont explicités par des exemples fonctionnels.</string>
+    <string name="criteria_description_content2">Pour la plupart des exemples vous devez avoir au préalable activé Talkback, le lecteur d\'écran d\'Android.</string>
+    <string name="criteria_sections">Critères</string>
+    <string name="criteria_cd_sections">Selectionnez un critère dans la liste ci-dessous</string>
+    <string name="criteria_accessible_example">Exemple accessible</string>
+    <string name="criteria_accessible_example_more">Exemple accessible ++</string>
+    <string name="criteria_not_accessible_example">Exemple non accessible</string>
+    <string name="criteria_template_why">Le pourquoi</string>
+    <string name="criteria_template_rule">La règle</string>
+    <string name="criteria_template_example">Les exemples</string>
+    <string name="criteria_template_option">Option</string>
+    <string name="criteria_template_option_tb">TalkBack</string>
+    <string name="criteria_template_option_largetext">Grand caractères</string>
+    <string name="criteria_template_option_focus">Clavier</string>
+
+    <!-- criteria : images -->
+    <string name="criteria_img_title">Image</string>
+    <string name="criteria_img_why_description">Les images sont très souvent utilisées pour transmettre de nombreuses informations.\nComme le dit l\'adage, une image vaut mille mots.</string>
+    <string name="criteria_img_rule_description">Les non-voyants ne pouvant voir les images, il est important que celles-ci possèdent une alternative qui donne toutes les informations portées par l\'image.\n\nA noter toutefois que certaines images sont utilisées à des fins décoratives. Ces images ne nécessitent pas d\'alternative.\n\nOn verra à travers plusieurs exemples comment bien renseigner les alternatives des images.</string>
+    <string name="criteria_img_ex1_description">Toute image portant de l\'information doit avoir une alternative textuelle.\n\nDans le cas d\'une image contenant du texte, l\'alternative sera ledit texte.\n\nDans le cas d\'une image qui apporte des informations sous la forme d\'un graphe, dessin ou autre, l\'alternative devra contenir toutes les informations nécessaires présentes dans l\'image.</string>
+    <string name="criteria_img_ex2_description">Une image dite décorative est une image utilisée pour illustrer un propos ou pour mettre en valeur un texte.\n\nCette image est donc uniquement esthétique et n\'a pas vocation à donner la moindre information à l\'utilisateur.\n\nCes images ne nécessitent pas d\'alternative textuelle. Le travail à faire dans ce cas est donc nul : par défaut sous Android, les images ne sont pas vocalisées par le lecteur d\'écran TalkBack.</string>
+    <string name="criteria_img_ex3_description">Les illustrations de l\'application sont également considérées comme des images décoratives. La règle est donc la même : il n\'y a pas d\'alternative textuelle à ajouter.\nLes icônes sont, a contrario, largement utilisées en tant que bouton pour des fonctionnalités diverses.\n\nElles ont donc besoin d\'alternatives textuelles pertinentes.</string>
+    <string name="criteria_img_ex1_title">Image contenant du texte ou informative</string>
+    <string name="criteria_img_ex2_title">Image purement décorative</string>
+    <string name="criteria_img_ex3_title">Alternatives pour icônes et illustrations</string>
+    <string name="criteria_img_ex1_cd_image">souscrivez une offre Internet, jusqu\'à 160 euros remboursés si vous êtes engagé chez un autre fournisseur d\'accès Internet et si vous êtes client Orange mobile, cliquez pour découvrir l\'offre, Bouton</string>
+    <string name="criteria_img_ex2_logo">Orange et moi</string>
+    <string name="criteria_img_ex2_image">Icone de l\'application Orange et moi</string>
+    <string name="criteria_img_ex2_content">Le service change avec Orange. L\'application Orange et moi permet de suivre vos consommations diverses.</string>
+    <string name="criteria_img_ex3_btn_parameters">Paramètres</string>
+    <string name="criteria_img_ex3_btn_edit">Éditer</string>
+    <string name="criteria_img_ex3_cd_btn_edit">Éditer le nom de l\'image</string>
+    <string name="criteria_img_ex3_cd_btn_parameters">Paramètres</string>
+    <string name="criteria_img_ex3_cd_image">Montagnard partant vers un sommet</string>
+    <string-array name="criteria_img_list">
+        <item>L\'image porteuse d\'information </item>
+        <item>L\'image décorative</item>
+        <item>Illustrations et icônes</item>
+    </string-array>
+
+    <!-- criteria : colors -->
+    <string name="criteria_color_title">Couleur</string>
+    <string name="criteria_color_why_description">Les couleurs jouent un rôle très important dans la transmission des informations.\n\nOn associe certaines couleurs à des concepts ou à des sensations mais il ne faut pas oublier qu\'une partie de la population ne distingue pas correctement les couleurs.</string>
+    <string name="criteria_color_rule_description">Les malvoyants sont particulièrement impactés par l\'usage des couleurs.  Il est donc nécessaire de respecter quelques règles essentielles :\n\n1. La couleur ne doit jamais être le seul canal de transmission d\'une information.\n\n2. Le contraste entre les couleurs de texte et de fond doit aussi être suffisant (7:1 sur mobile, 4,5:1 pour les textes larges, à calculer avec Color Constrast Analyzer par exemple).\n\nIllustrons ces règles à travers des exemples.</string>
+    <string name="criteria_color_ex1_description">Dans un contexte lumineux défavorable (à contre-jour par exemple), tout utilisateur est gêné par le manque de contraste d\'une interface.\nIl est donc nécessaire de faire attention au contraste entre la couleur d\'un texte et la couleur de fond.\n\nLes WCAG2 définissent 2 niveaux de contraste à partir duquel on obtient un niveau AA ou AAA. Sur mobile, on essaie toujours d\'atteindre le niveau AAA, soit 7:1.\n\nAfin de mesurer ce niveau de contraste, de nombreux outils existent, par exemple Color Contrast Analyzer.</string>
+    <string name="criteria_color_ex1_title">Quels sont les contrastes à respecter ?</string>
+    <string name="criteria_color_ex1_list_title">Exemple de titre</string>
+    <string name="criteria_color_ex1_list_subtitle">Exemple de sous-titre</string>
+    <string name="criteria_color_ex1_accessible_desc">Dans cet exemple, le titre et le sous-titre sont suffisamment contrastés.</string>
+    <string name="criteria_color_ex1_not_accessible_desc">Dans cet exemple, le titre et le sous-titre ne sont pas suffisamment contrastés.</string>
+    <string name="criteria_color_ex2_title">La couleur ne doit pas être le seul canal d\'information.</string>
+    <string name="criteria_color_ex2_description" formatted="false">La couleur ne doit jamais être le seul canal de transmission d\'une information. La forme ou la position peuvent être un second moyen pour véhiculer de l\'information. Il existe de nombreux problèmes de vision liés à la perception des couleurs.\n\nPour ne citer que le daltonisme, celui-ci représente  8%  de la population masculine et 0.5%  de la population féminine.\n\nImaginez donc si un feu tricolore n\'avait qu\'une seule ampoule et que vous soyez incapable de distinguer le rouge et le vert !\n\nDans l\'exemple non accessible ci-dessous, un daltonien ne peut pas connaître l\'état de ses services.</string>
+    <string name="criteria_color_ex2_legend">Légende</string>
+    <string name="criteria_color_ex2_cd_active">est actif</string>
+    <string name="criteria_color_ex2_cd_error">est en erreur</string>
+    <string name="criteria_color_ex2_cd_inactive">est inactif</string>
+    <string name="criteria_color_ex2_active">Actif</string>
+    <string name="criteria_color_ex2_error">Erreur</string>
+    <string name="criteria_color_ex2_inactive">Inactif</string>
+    <string name="criteria_color_ex2_mailtv">Mail</string>
+    <string name="criteria_color_ex2_audio">Streaming audio</string>
+    <string name="criteria_color_ex2_videostream">Streaming vidéo</string>
+    <string name="criteria_color_ex2_browser">Navigateur web</string>
+    <string name="criteria_color_ex2_service">Le service </string>
+    <string-array name="criteria_color_list">
+        <item>Contrastes </item>
+        <item>Informations par la couleur</item>
+    </string-array>
+
+    <!-- criteria : alt -->
+    <string name="criteria_alt_title">Alternative textuelle</string>
+    <string name="criteria_alt_why_description">Les alternatives textuelles sont au coeur de l\'accessibilité sur mobile.\nGrâce à elles, un utilisateur non voyant peut utiliser une application sans perte d\'information.</string>
+    <string name="criteria_alt_rule_description">Tout comme pour les images, il est important de renseigner une alternative textuelle lorsque l\'information n\'est pas disponible pour les personnes malvoyantes/non-voyantes.\n\nC\'est le cas des composants fournissant de l\'information par la couleur, la forme, la position, le son…\n\nSur mobile, tous les composants peuvent recevoir une alternative textuelle, il est donc possible d\'enrichir la vocalisation native d\'un élément, y compris celle d\'un simple texte.</string>
+    <string name="criteria_alt_ex1_description">La place sur mobile étant réduite, on utilise bien souvent des abréviations pour les textes.\nMais Cependant, cela pose un problème aux utilisateurs de synthèse vocale qui restitue les abréviations telles quelles.\n\nPour corriger ces vocalisations, il suffit de placer une alternative textuelle sur le texte. Cette alternative contient le texte non abrégé.\n\nA noter que TalkBack sait reconnaitre quelques abréviations courantes. Par exemple, "etc." et "Dr." sont bien vocalisées "etcetera" et "docteur".</string>
+    <string name="criteria_alt_ex2_description">Certaines images sont régulièrement associées à du texte pour donner une information.\nC\'est le cas notamment des "messages non lus" où une infobulle donne le nombre de messages à lire et où une image donne l\'information "message".\n\nDans ce cas, la solution consiste à placer une alternative textuelle sur le texte qui donne toutes les informations nécessaires. Par exemple : "3 messages non lus".\n\nOn peut également placer cette alternative sur l\'image mais dans ce cas, il faut penser à rendre le texte "invisible" pour le lecteur d\'écran.</string>
+    <string name="criteria_alt_ex3_description">Certains composants assez complexes peuvent sembler difficile à rendre accessible.\nPourtant, avec la bonne alternative, ceux-ci peuvent restituer à l\'utilisateur de lecteur d\'écran toute l\'information nécessaire à sa compréhension.\n\nC\'est le cas ici avec ce composant. Simplement en ajoutant le poste et l\'équipe de chaque joueur, un utilisateur de TalkBack sera à même d\'obtenir la composition des deux équipes présentées.</string>
+    <string name="criteria_alt_ex1_title">Alternatives textuelles de textes</string>
+    <string name="criteria_alt_ex2_title">Image complétée par du texte</string>
+    <string name="criteria_alt_ex1_txt1">Rdv avec le Dr. François</string>
+    <string name="criteria_alt_ex1_cd_txt1">Rendez-vous avec le docteur François</string>
+    <string name="criteria_alt_ex1_txt2">Application mobile, web etc.</string>
+    <string name="criteria_alt_ex1_cd_txt2">Application mobile, web etcetera </string>
+    <string name="criteria_alt_ex1_txt3">ex. de mDAN</string>
+    <string name="criteria_alt_ex1_cd_txt3">Exemples du démonstrateur d\'accessibilité numérique mobile</string>
+    <string name="criteria_alt_ex2_cd_btn"> messages non lus</string>
+    <string name="criteria_alt_ex3_title">Alternatives et composant complexe</string>
+    <string name="criteria_alt_ex3_team1">France</string>
+    <string name="criteria_alt_ex3_team2">Portugal</string>
+    <string-array name="team1_players_nickname">
+        <item>Lloris</item>
+        <item>Evra</item>
+        <item>Umtiti</item>
+        <item>Koscielny</item>
+        <item>Sagna</item>
+        <item>Payet</item>
+        <item>Matuidi</item>
+        <item>Pogba</item>
+        <item>Sissoko</item>
+        <item>Griezmann</item>
+        <item>Giroud</item>
+    </string-array>
+    <integer-array name="team1_players_role">
+        <item>1</item>
+        <item>5</item>
+        <item>7</item>
+        <item>8</item>
+        <item>6</item>
+        <item>9</item>
+        <item>22</item>
+        <item>23</item>
+        <item>10</item>
+        <item>13</item>
+        <item>14</item>
+    </integer-array>
+    <string-array name="team2_players_nickname">
+        <item>Rui Patricio</item>
+        <item>Guerreiro</item>
+        <item>José Fonte</item>
+        <item>Pepe</item>
+        <item>Cedric</item>
+        <item>Joao Mario</item>
+        <item>William</item>
+        <item>Renato Sanches</item>
+        <item>Adrien</item>
+        <item>Ronaldo</item>
+        <item>Nani</item>
+    </string-array>
+    <integer-array name="team2_players_role">
+        <item>1</item>
+        <item>5</item>
+        <item>7</item>
+        <item>8</item>
+        <item>6</item>
+        <item>9</item>
+        <item>12</item>
+        <item>10</item>
+        <item>13</item>
+        <item>17</item>
+        <item>18</item>
+    </integer-array>
+    <string-array name="player_role">
+        <item>remplaçant</item><!-- remplacant-->
+        <item>gardien</item><!-- Gardien -->
+        <item>défenseur</item><!-- Défenseur -->
+        <item>milieu</item><!-- Milieu -->
+        <item>attaquant</item><!-- Attaquant -->
+        <item>latéral gauche</item><!-- latéral gauche -->
+        <item>latéral droit</item><!-- latéral droit -->
+        <item>central gauche</item><!-- central gauche -->
+        <item>central droit</item><!-- central droit -->
+        <item>milieu gauche</item><!-- milieu gauche -->
+        <item>milieu droit</item><!-- milieu droit -->
+        <item>milieu centre</item><!-- milieu centre -->
+        <item>milieu défensif</item><!-- milieu défensif -->
+        <item>milieu offensif</item><!-- milieu offensif -->
+        <item>avant centre</item><!-- avant centre -->
+        <item>neuf un demi</item><!-- 9 1/2 -->
+        <item>libéro</item><!-- libero -->
+        <item>avant centre gauche</item><!-- avant centre gauche-->
+        <item>avant centre droit</item><!-- avant centre droit-->
+        <item>milieu centre gauche</item><!-- milieu centre gauche-->
+        <item>milieu centre droit</item><!-- milieu centre droit-->
+        <item>central</item><!-- central-->
+        <item>milieu défensif gauche</item><!-- milieu défensif gauche-->
+        <item>milieu défensif droit</item><!-- milieu défensif droit-->
+        <item>milieu offensif gauche</item><!-- milieu offensif gauche-->
+        <item>milieu offensif droit</item><!-- milieu offensif droit-->
+        <item>ailier gauche</item><!-- ailier gauche-->
+        <item>ailier droit</item><!-- ailier droit-->
+        <item>stoppeur gauche</item><!-- stopper gauche-->
+        <item>stoppeur droit</item><!-- stopper droit-->
+    </string-array>
+    <string-array name="criteria_alt_list">
+        <item>Les alternatives textuelles des images</item>
+        <item>L\'état des éléments</item>
+        <item>Les formulaires</item>
+        <item>Abréviations, dates et heures</item>
+        <item>Image complétée par du texte</item>
+        <item>Composant complexe</item>
+    </string-array>
+
+    <!-- criteria : titles -->
+    <string name="criteria_title_title">Titre et entête</string>
+    <string name="criteria_title_why_description">Le titre de la page est le premier élément qui est vocalisé ou vu sur un écran mobile.\n\nIl facilite la navigation pour tout le monde : à tout moment, on sait où on se trouve dans l\'application.</string>
+    <string name="criteria_title_rule_description">Chaque écran doit avoir un titre qui lui est propre ou qui permet de se repérer dans la navigation.</string>
+    <string name="criteria_title_ex1_description">Une erreur commune est de mettre un titre unique pour toutes les pages d\'une application (ou même pas de titre du tout).\n\nIl est très important de choisir un titre qui donne les bonnes informations concernant la page sur laquelle on se trouve.</string>
+    <string name="criteria_title_ex1_title">Chaque page a un titre propre</string>
+    <string name="criteria_title_ex1_axsDesc">Dans cet exemple un titre a été renseigné.</string>
+    <string name="criteria_title_ex1_notAxsDesc">Avec cet exemple il n\'y plus de titre.</string>
+    <string name="criteria_title_ex1_axsButton">Titre accessible</string>
+    <string name="criteria_title_ex1_notAxsButton">Titre non accessible</string>
+    <string name="criteria_title_ex1_announceaxsyes">Le titre de la page est : </string>
+    <string name="criteria_title_ex1_announceaxsno">La page n\'a plus de titre</string>
+    <string name="criteria_title_ex1_btn">Titre accessible : </string>
+    <string-array name="criteria_title_list">
+        <item>Titre de page</item>
+    </string-array>
+
+    <!-- criteria : state -->
+    <string name="criteria_stateelements_title">État des éléments</string>
+    <string name="criteria_stateelements_why_description">Si un élément ne restitue pas à la vocalisation son statut, sa nature ou son état, l\'utilisateur de TalkBack est dans l\'impossibilité de comprendre ce qu\'il se passe à l\'écran.\n\nNe pas préciser qu\'une zone est dépliée ou que l\'on se trouve face à un système d\'onglets sont des exemples très fréquents.</string>
+    <string name="criteria_stateelements_rule_description">Tout élément dont le statut est modifié durant l\'utilisation de l\'application doit restituer son état à travers son alternative textuelle.\n\nPar exemple, un élément qui peut être sélectionné/non sélectionné doit restituer son état à travers une alternative textuelle.</string>
+    <string name="criteria_stateelement_ex1_description">Grand classique de ce problème : les onglets.\nPar défaut, les onglets proposés dans Android ne donnent aucune information sur leur nature et sur leur état.\n\nIl est donc à la charge du développeur de donner ces informations à l\'utilisateur via les attributs d\'accessibilité correspondants.\n\nEn l\'occurrence, une bonne alternative pour le titre d\'un onglet peut être : "onglet titre de l\'onglet - 1 sur 3 - sélectionné"</string>
+    <string name="criteria_stateelement_ex2_description">Si un item d\'une liste peut être sélectionné, il faut que son alternative textuelle reflète son état.\n\nDans le cas d\'un item de liste, il suffit de redéfinir l\'alternative du texte de l\'item.</string>
+    <string name="criteria_stateelement_ex3_description">Autre classique d\'élement qui ne restitue pas par défaut son état : les zones dépliables.\n\nEncore une fois, c\'est grâce à l\'alternative textuelle du titre de la zone dépliable que l\'on peut donner à l\'utilisateur de TalkBack le statut de celle-ci.</string>
+    <string name="criteria_stateelement_ex1_title">Présenter l\'état des onglets</string>
+    <string name="criteria_stateelement_ex1_public">Réseaux publics</string>
+    <string name="criteria_stateelement_ex1_private">Réseaux privés</string>
+    <string name="criteria_stateelement_ex2_title">Liste présentant un item sélectionné</string>
+    <string name="criteria_stateelement_ex2_axsDesc">Dans cet exemple un texte alternatif a été renseigné et informe TalkBack si l\'élément de la liste est sélectionné.</string>
+    <string name="criteria_stateelement_ex2_notAxsDesc">Dans cet exemple il n\'y a pas d\'information sur la sélection d\'un élément.</string>
+    <string name="criteria_stateelement_ex3_title">Présenter l\'état des zones dépliables et accordéon</string>
+    <string name="criteria_stateelement_ex3_cd_open">, zone dépliable ouverte, cliquer pour refermer</string>
+    <string name="criteria_stateelement_ex3_cd_closed">, zone dépliable fermée, cliquer pour ouvrir</string>
+    <string name="criteria_stateelement_ex3_grp">Groupe </string>
+    <string name="criteria_stateelement_ex3_item">Item </string>
+    <string-array name="criteria_stateelement_list">
+        <item>Onglets</item>
+        <item>Listes</item>
+        <item>Zones dépliables</item>
+    </string-array>
+    <string-array name="criteria_stateelement_ex2_list">
+        <item>Démonstrateur</item>
+        <item>Accessibilité</item>
+    </string-array>
+
+    <!-- criteria : standard -->
+    <string name="criteria_standardcomponent_title">Composants standards</string>
+    <string name="criteria_standardcomponent_why_description">L\'accessibilité  est prise en compte dans les composants natifs.\n\nDe plus, l\'utilisation de composants standards permet à l\'utilisateur de se retrouver dans une situation et un comportement habituels.\nLa navigation dans une interface standard est donc plus confortable.</string>
+    <string name="criteria_standardcomponent_rule_description">Utiliser au maximum les composants natifs en modifiant leur apparence.\n\nSi aucun composant standard ne permet de répondre au besoin, créer un composant dédié basé sur un composant standard en veillant à conserver la cohérence de navigation et l\'accessibilité.</string>
+    <string name="criteria_standardcomponent_ex1_description">Les exemples ci-dessous vous montre deux listes dépliables accessibles.\nLa première liste utilise le composant standard où l\'accessibilité a été implémentée.\nLa seconde liste utilise un composant personnalisé, où, là encore, l\'accessibilité a été implémentée.\n\nL\'utilisation des composants standards rend plus facile l\'amélioration de l\'accessibilité lors du développement.</string>
+    <string name="criteria_standardcomponent_ex1_title">Composants standards</string>
+    <string name="criteria_standardcomponent_ex1_category1_name">Les produits</string>
+    <string name="criteria_standardcomponent_ex1_category2_name">Les sports</string>
+    <string name="criteria_standardcomponent_ex1_category1_item1">HomeLive</string>
+    <string name="criteria_standardcomponent_ex1_category1_item2">LiveBox</string>
+    <string name="criteria_standardcomponent_ex1_category2_item1">Football</string>
+    <string name="criteria_standardcomponent_ex1_category2_item2">Basketball</string>
+    <string name="criteria_standardcomponent_ex2_title">Les composants personnalisés</string>
+    <string name="criteria_standardcomponent_ex2_description">Dans cette exemple, nous trouvons deux listes dépliables personnalisées. Ces composants "custom" peuvent toutefois être rendus accessibles si on effectue le travail nécessaire.\n\nL\'exemple non accessible présente le composant tel qu\'il est lorsque utilisé après téléchargement. \n\nL\'accessibilité des composants personnalisés est à prendre en compte lors de la construction d\'une application.</string>
+
+
+    <!-- criteria : click area -->
+    <string name="criteria_clickarea_title">Zone de clic</string>
+    <string name="criteria_clickarea_why_description">Une taille insuffisante pour la zone d\'action d\'un composant peut empêcher certains utilisateurs de profiter pleinement de l\'application.\n\nCela peut engendrer des frustrations qui peuvent conduire à la désinstallation de l\'application.</string>
+    <string name="criteria_clickarea_rule_description">Chaque élément cliquable d\'une application doit donner à l\'utilisateur une taille suffisante pour sa zone d\'action.\n\nGoogle définit pour son système une taille de zone de clic minimum de 48dp (en hauteur ET largeur, avec 8 dp de marge autour de l\'élément).</string>
+    <string name="criteria_clickarea_ex1_description">Dans l\'exemple non accessible ci-dessous, le bouton "play" ne possède pas une taille suffisante et par conséquent il n\'est pas aisé de cliquer dessus.</string>
+    <string name="criteria_clickarea_ex1_song1">Mary Daisy Jane</string>
+    <string name="criteria_clickarea_ex1_song2">Mael</string>
+    <string name="criteria_clickarea_ex1_play">Jouer la musique</string>
+    <string name="criteria_clickarea_ex1_music">Musique</string>
+    <string name="criteria_clickarea_ex1_author">de</string>
+    <string name="criteria_clickarea_ex1_success">Vous avez réussi à appuyer sur le bouton</string>
+    <string-array name="criteria_clickarea_list">
+        <item>Taille de zone de clic</item>
+    </string-array>
+
+    <!-- criteria : ghost -->
+    <string name="criteria_ghostelement_title">Éléments fantômes</string>
+    <string name="criteria_ghostelement_why_description">Bien qu\'invisibles à l\'écran, certains éléments peuvent être lus par le lecteur d\'écran (éléments positionnés en dehors de la zone visible ou masqués par d\'autres éléments).\n\nLa superposition d\'écrans est quelque chose de courant sur mobile mais cela engendre des problèmes d\'accessibilité très lourds à corriger si elle n\'est pas faite correctement dès le départ.\n\nUn lecteur d\'écran tel que TalkBack est capable de lire les informations d\'une vue qui est placée "sous" une autre.\nMais si l\'utilisateur n\'est plus capable d\'interagir avec cette vue, cela perturbe totalement sa navigation et celle-ci devient vite impossible.</string>
+    <string name="criteria_ghostelement_rule_description">Masquer au lecteur d\'écran tout élément non visible et tout élément qui ne doit pas prendre le focus lors de la lecture d\'une page.</string>
+    <string name="criteria_ghostelement_ex1_description">Grand classique du problème: les fragments. Un fragment est un composant qu\'on peut facilement superposer par-dessus un autre sous Android.\n\nUne mauvaise utilisation des fragments peut aboutir à l\'exemple ci-dessous.\n\nAvec TalkBack, il est possible de naviguer de naviguer sur la page précédemment affichée à l\'écran bien qu\'elle ne soit plus visible car une nouvelle vue est apparue.\nA contrario, la vue qui apparaît avec l\'exemple accessible ne permet pas cette "lecture".</string>
+    <string name="criteria_ghostelement_ex1_title">Stack de vue</string>
+    <string name="criteria_ghostelement_ex1_ghost">Ici, le contenu de la page actuelle est accessible</string>
+    <string name="criteria_ghostelement_ex1_noghost">Ici, le contenu de la page actuelle n\'est pas accessible</string>
+    <string name="criteria_ghostelement_ex1_return">Retourner à la page précédente</string>
+    <string-array name="criteria_ghostelement_list">
+        <item>Vue fantôme</item>
+    </string-array>
+
+    <!-- criteria : text -->
+    <string name="criteria_textsize_title">Taille des textes</string>
+    <string name="criteria_textsize_why_description">L\'utilisateur a la possibilité d\'augmenter la taille du texte via une option d\'accessibilité.\n\nAfin que l\'application réagisse correctement à cette option, il est nécessaire d\'utiliser des tailles de texte dynamiques qui s\'ajusteront en fonction des paramètres utilisateurs.\n\nUn texte trop petit sera facilement ignoré par certains utilisateurs malvoyants.</string>
+    <string name="criteria_textsize_rule_description">L\'application devra mettre en oeuvre des tailles de textes dynamiques, s\'assurer de la bonne réactivité des zones d\'affichage au grossissement de texte (conteneurs qui s\'adaptent à la taille de leur contenu).\n\nIl faut aussi assurer une taille minimum pour les textes (14sp).</string>
+    <string name="criteria_textsize_ex1_description">Dans l\'exemple ci-dessous, le texte non accessible n\'est pas dynamique.\n\nL\'option d\'accessibilité permettant d\'agrandir la taille des textes de l\'OS n\'aura aucun effet.</string>
+    <string name="criteria_textsize_button_text">Changer les options d\'accessibilité</string>
+    <string name="criteria_textsize_ex1_sizetxtYes">Ce texte utilise une police acceptant l\'agrandissement de caractère et réagira donc suivant les options d\'accessibilité définies par l\'utilisateur.</string>
+    <string name="criteria_textsize_ex1_sizetxtNo">A contrario, ce texte ne réagira pas aux options d\'agrandissement des caractères.</string>
+    <string-array name="criteria_textsize_list">
+        <item>Taille dynamique</item>
+    </string-array>
+
+    <!-- criteria : content control -->
+    <string name="criteria_contentcontrol_title">Contrôle de contenu</string>
+    <string name="criteria_contentcontrol_why_description">Sur mobile, les lecteurs d\'écran essayent de transmettre au maximum à l\'utilisateur les changements de contexte, ce qui peut donner des vocalisations permanentes, et donc inaudibles, ou empêcher toute action de l\'utilisateur.</string>
+    <string name="criteria_contentcontrol_rule_description">L\'utilisateur doit rester maître du contenu à tout instant. C\'est particulièrement vrai avec le contenu interactif.\n\nIl faut donc éviter par exemple qu\'une vidéo ne se lance directement en plein écran, qu\'une vidéo ne se lance directement sans une action au préalable de l\'utilisateur, qu\'un carrousel défile de manière automatique etc.</string>
+    <string name="criteria_contentcontrol_ex_imgcd1">Commandez avant le 21 décembre midi et recevez vos cadeaux avant Noël</string>
+    <string name="criteria_contentcontrol_ex_imgcd2">Bon plan Orange, Sony Xperia Z3 à 1 euro au lieu de 69,90 euros avec un forfait Origami Play 4 giga octets pour toute commande passée sur orange.fr avant le 21 Décembre 2015 à midi</string>
+    <string name="criteria_contentcontrol_ex_imgcd3">Bon plan Orange, 1 mois offert de forfait Origami Play 4 giga octets avec le code promo PLAY 4 pour toute nouvelle souscription à un forfait Origami Play 4 giga octets avec engagement de 24 mois</string>
+    <string name="criteria_contentcontrol_ex1_title">Eviter le défilement automatique</string>
+    <string name="criteria_contentcontrol_ex1_description">Ici, le carrousel non accessible va complètement perturber la navigation de l\'utilisateur car il défile de façon automatique.\n\nDe plus, suivant l\'implémentation de ce dernier, cela peut même aller jusqu\'à une vocalisation systématique des changements qui peut engendrer un blocage auditif pour le reste de la page.</string>
+    <string name="criteria_contentcontrol_ex1_btn_previous">Promotion précédente</string>
+    <string name="criteria_contentcontrol_ex1_btn_next">Promotion suivante</string>
+    <string name="criteria_contentcontrol_ex2_description">Dans cet exemple, on affiche simplement une image en cliquant sur le bouton. Une erreur commune est de vouloir passer l\'image en plein écran à l\'ouverture de la page.\n\nCela a pour effet de bloquer l\'utilisateur de TalkBack si aucune action n\'a été prévue pour repasser en mode simple.</string>
+    <string name="criteria_contentcontrol_ex2_announceForAxs">Diaporama lancé, touchez brièvement l\'écran avec deux doigts pour arrêter</string>
+    <string name="criteria_contentcontrol_ex2_announceForAxs2">Diaporama arrêté</string>
+    <string name="criteria_contentcontrol_ex2_btn_previous">Image précédente</string>
+    <string name="criteria_contentcontrol_ex2_btn_next">Image suivante</string>
+    <string name="criteria_contentcontrol_ex2_title">Diaporama accessible, c\'est possible</string>
+    <string name="criteria_contentcontrol_ex2_cd_launch">Lancer le diaporama</string>
+    <string-array name="criteria_contentcontrol_list">
+        <item>Carousel automatique</item>
+        <item>Diaporama d\'images</item>
+    </string-array>
+
+    <!-- criteria : content changes -->
+    <string name="criteria_title_contentchange">Changement de contenu</string>
+    <string name="criteria_why_description_contentchange">Lorsque du contenu est modifié dynamiquement à la suite d\'une action de l\'utilisateur, il faut le notifier à la synthèse vocale.\n\nSans retour vocal, l\'utilisateur ne sait pas qu\'une action a été déclenchée.</string>
+    <string name="criteria_rule_description_contentchange">Sur une page, si du contenu est modifié dynamiquement suite à une action utilisateur, il est important que le lecteur d\'écran soit notifié afin qu\'il déclenche une vocalisation.\n\nPar exemple, les listes qui se rafraîchissent, ou un compteur de temps.</string>
+    <string name="criteria_contentchange_ex1_title">Vocaliser les mises à jour d\'éléments dans la page</string>
+    <string name="criteria_contentchange_ex1_description">Dans cette exemple, une liste se rafraîchit de façon automatique.\nDans le cas de l\'exemple non accessible, aucune vocalisation n\'est enclenché au rafraichissement.\n\nSi l\'utilisateur navigue ailleurs dans la page, il ne pourra jamais savoir que de nouveaux réseaux sont disponibles (à part en parcourant de nouveau la liste).</string>
+    <string name="criteria_contentchange_ex1_btn">Rafraichir le contenu</string>
+    <string name="criteria_contentchange_ex1_majwifireload">Recharger la liste des réseaux WiFi</string>
+    <string name="criteria_contentchange_ex1_announce">La liste des réseaux WiFi a été mise a jour</string>
+    <string name="criteria_contentchange_ex1_list_title">Liste des réseaux Wi-Fi</string>
+    <string-array name="criteria_contentchange_list">
+        <item>Mise à jour d\'un élément</item>
+    </string-array>
+    <string-array name="criteria_contentchange_ex1_list_wifi">
+        <item>Numericable-BFF0</item>
+        <item>FreeWifi</item>
+    </string-array>
+
+    <string-array name="criteria_contentchange_ex1_list_wifi2">
+        <item>Bouygues Wi-Fi</item>
+        <item>Freebox-47AT2</item>
+    </string-array>
+
+    <!-- criteria : scroll -->
+    <string name="criteria_horizontalscroll_title">Scroll horizontal</string>
+    <string name="criteria_horizontalscroll_why_description">Un scroll horizontal peut être très difficile à détecter si aucun visuel n\'aide l\'utilisateur à comprendre qu\'il existe plusieurs pages.</string>
+    <string name="criteria_horizontalscroll_rule_description">Ne pas hésiter à afficher un élément pour indiquer un scroll horizontal (des "points" par exemple).\n\nQuand cela est nécessaire, ajouter également des boutons "suivant" et "précédent".</string>
+    <string name="criteria_scroll_ex1_title">Indiquer qu\'on peut scroller horizontalement</string>
+    <string name="criteria_scroll_ex1_description">Le carrousel accessible ci-dessous fait bien comprendre grâce aux "points" qu\'il possède plusieurs pages.\n\nA contrario, le carrousel non accessible ne permet pas de comprendre en un coup d\'œil cela et on peut facilement croire que c\'est une seule et unique information.</string>
+    <string-array name="criteria_scroll_list">
+        <item>Scroll horizontal</item>
+    </string-array>
+
+    <!-- criteria : forms -->
+    <string name="criteria_form_title">Formulaire</string>
+    <string name="criteria_form_why_description">Lier les champs de formulaires avec leurs labels apporte une vocalisation supplémentaire qui permet à l\'utilisateur de comprendre quoi remplir lorsqu\'il arrive sur un champ de formulaire.</string>
+    <string name="criteria_form_rule_description">Chaque champ de formulaire doit être lié à un label.</string>
+    <string name="criteria_form_ex1_title">Un champ de formulaire doit être lié à un label</string>
+    <string name="criteria_form_ex1_description">Dans l\'exemple ci-dessous, certains champs de formulaire sont labellisés et d\'autres non. Vous pouvez donc écouter la différence de vocalisation entre un champ labellisé et un champ non labellisé.\nA noter qu\'un texte d\'exemple qui remplit le champ est bien vocalisé.</string>
+    <string name="criteria_form_ex1_label_name">Nom :</string>
+    <string name="criteria_form_ex1_label_mail">Adresse mail :</string>
+    <string name="criteria_form_ex1_placeholder">Répétez l\'adresse mail</string>
+    <string name="criteria_form_ex1_label_checkbox">Accepter les conditions d\'utilisation</string>
+    <string-array name="criteria_form_list">
+        <item>Label</item>
+    </string-array>
+
+    <!-- criteria : read order -->
+    <string name="criteria_readorder_title">Ordre de lecture</string>
+    <string name="criteria_readorder_why_description">L\'ordre de lecture permet à l\'utilisateur de se repérer dans la navigation et d\'assurer une cohérence fonctionnelle.\nIl est donc important d\'y faire attention.</string>
+    <string name="criteria_readorder_rule_description">L\'ordre de lecture (celui de TalkBack) doit être logique et cohérent.</string>
+    <string name="criteria_readorder_ex1_description">Dans l\'exemple ci-dessous, l\'ordre de lecture "non accessible" ne permet pas d\'utiliser les boutons de la télécommande correctement.\n\nCelui-ci est incohérent et inconsistant. Le changement de chaîne et les modifications de volume viennent perturber la logique des numéros de chaîne.</string>
+    <string name="criteria_readorder_ex1_volup">Augmenter le volume, Bouton</string>
+    <string name="criteria_readorder_ex1_voldown">diminuer le volume, Bouton</string>
+    <string name="criteria_readorder_ex1_canalup">Chaîne suivante, Bouton</string>
+    <string name="criteria_readorder_ex1_canaldown">chaîne précédente, Bouton</string>
+    <string name="criteria_readorder_ex1_title">Assurer un ordre de lecture cohérent</string>
+    <string-array name="criteria_readorder_list">
+        <item>Ordre de lecture</item>
+    </string-array>
+
+    <!-- criteria : focus nav -->
+    <string name="criteria_focusnav_title">Navigation au focus</string>
+    <string name="criteria_focusnav_why_description">La navigation au focus est très utile pour les personnes qui présentent des difficultés motrices ou cognitives.\nCette navigation permet de passer d\'élément interactif en élément interactif (élément sur lequel on peut effectuer une action).\nElle correspond à la navigation que l\'on peut faire avec un clavier Bluetooth lié à un smartphone.</string>
+    <string name="criteria_focusnav_rule_description">L\'ordre de lecture au focus doit être logique et cohérent.\n\nIl faut aussi qu\'à chaque instant on puisse déterminer quel est l\'élément qui possède le focus (de manière visuelle).</string>
+    <string name="criteria_focusnav_ex1_description">Pour cet exemple, essayer la navigation au focus avec un clavier Bluetooth, un dock tablette ou une application dédiée.</string>
+    <string name="criteria_focusnav_ex1_title">Gérer la navigation au focus</string>
+    <string name="criteria_focusnav_ex1_axs">Toute l\'application mDAN est navigable au focus (sauf l\'exemple ci-dessous). Quoi de mieux comme exemple ?</string>
+    <string-array name="criteria_focusnav_list">
+        <item>Navigation au focus</item>
+    </string-array>
+    <string-array name="criteria_focusnav_ex1_list">
+        <item>Exemple 1</item>
+        <item>Exemple 2</item>
+        <item>Exemple 3</item>
+    </string-array>
+
+
+
+    <!-- guide dev view -->
+    <string-array name="dev_list">
+        <item>Alternatives textuelles</item>
+        <item>Masquer des éléments à l\'accessibilité</item>
+        <item>Déclencher une vocalisation</item>
+        <item>Détecter si TalkBack est activé</item>
+        <item>Régions Live (contenu dynamique)</item>
+        <item>Gérer l\'ordre de lecture (TalkBack)</item>
+        <item>Formulaires</item>
+        <item>Tailles des textes</item>
+        <item>Evénements d\'accessibilité &amp; Custom Views</item>
+        <item>WebView</item>
+        <item>Vocalisation des listes</item>
+        <item>Navigation au focus</item>
+    </string-array>
+    <string name="dev_description_title">Description et utilisation</string>
+    <string name="dev_description_content">Le guide pour développeur a pour vocation d\'aider les développeurs avec les principales options d\'accessibilité du SDK Android. A travers différentes catégories, ce guide explique comment utiliser les attributs et méthodes d\'accessibilité et propose des liens vers la documentation officielle de Google.</string>
+    <string name="dev_sections">Catégories</string>
+    <string name="dev_cd_sections">Séléctionnez une option à laquelle vous voulez accéder</string>
+    <string name="dev_link">Lien :</string>
+    <string name="dev_links">Liens :</string>
+    <string name="dev_description">Description :</string>
+
+    <!-- guide dev : alt -->
+    <string name="dev_title_alt">Alternatives textuelles</string>
+    <string name="dev_description_alt">Sous Android, la vocalisation d\'un élément s\'effectue à travers un attribut, à savoir le <i>contentDescription</i>.\n\nCet attribut qui accepte une simple chaîne de caractère en paramètre (et donc internationalisable) redéfinit complètement le texte qui sera lu par le service d\'accessibilité et notamment TalkBack.\nCela permet d\'avoir un texte de composant plus explicite que celui affiché à l\'écran. Par exemple, dans le cas d\'un bouton dont le titre est « OK », on pourra indiquer que le bouton sert à valider un choix.
+        \n\nLe <i>contentDescription</i> doit aussi être utilisé sur les éléments custom pour indiquer leur nature. Par exemple, un <i>LinearLayout</i> que l\'on rendrait cliquable doit avoir un <i>contentDescription</i> type « nom_du_bouton, bouton » (il faut également permettre le focus du bouton à l\'accessibilité, voir la section correspondante).
+\n\nA noter que le <i>contentDescription</i> est disponible sous tout élément qui hérite de View. Il est donc possible de positionner un <i>contentDescription</i> sur une <i>TextView</i> par exemple, comme montré dans la section « guide d\'accessibilité – alternative textuelle – abréviations, dates et heures ».</string>
+    <string name="dev_lien_alt">- contentDescription : \n\n http://developer.android.com/reference/android/view/View.html#attr_android:contentDescription</string>
+
+    <!-- guide dev : hide -->
+    <string name="dev_title_hideaxs">Masquer des éléments à l\'accessibilité</string>
+    <string name="dev_description_hideaxs">Il est possible via un attribut d\'accessibilité de masquer des éléments aux outils d\'accessibilité (TalkBack par exemple). Par extension, il est possible de forcer certains éléments à être visible aux outils d\'accessibilité.\n\n
+<i>ImportantForAccessibility</i> : suivant la valeur de l\'attribut, cela permet d\'indiquer qu\'un élément est visible ou non de l\'API d\'accessibilité.\n\n
+-	<i>auto</i> (0) : valeur par défaut, c\'est le système qui décide. Par exemple, un <i>Button</i> aura sa valeur par défaut à 1 (<i>yes</i>) et un <i>LinearLayout</i> à 2 (<i>no</i>).\n\n
+-	<i>yes</i> (1) : la vue est importante pour l\'accessibilité. Elle peut par exemple recevoir le focus de TalkBack.\n\n
+-	<i>no</i>(2) : la vue n\'est pas importante pour l\'accessibilité. Elle ne déclenche plus d\'évènement d\'accessibilité et est par conséquent ignorée par des services tel que TalkBack.\n\n
+-	<i>noHideDescendants</i>  (4) : la vue n\'est pas importante pour l\'accessibilité, mais également toutes ses vues filles. Cela permet de cacher tous les éléments d\'une vue à l\'accessibilité en une seule fois. Très utile sur les éléments custom.\n\nA noter : l\'attribut « <i>importantForAccessibility</i> » est disponible pour tout élément qui hérite de View.</string>
+    <string name="dev_lien_hideaxs">-	importantForAccessibility :\n\nhttp://developer.android.com/reference/android/view/View.html#attr_android:importantForAccessibility</string>
+
+    <!-- guide dev : vocalization -->
+    <string name="dev_title_voc">Déclencher une vocalisation</string>
+    <string name="dev_description_voc">Il est très facile de déclencher des vocalisations avec TalkBack.\n\nAttention: nous parlons de la vocalisation si TalkBack est activé et non pas de TTS (Text To Speech) qui peut fonctionner indépendamment du statut de TalkBack. Déclencher une vocalisation est très utile dans le cas de contenu dynamique, au même titre que les <i>LiveRegion</i> (voir la section correspondante).\n\nPour déclencher une vocalisation, il suffit de faire appel à la méthode « <i>announceForAccessibility</i> » en lui passant en paramètre l\'id de la chaine de caractère à vocaliser.\n\nA noter : la méthode « <i>announceForAccessibility</i> » est disponible sur tout élément qui hérite de View et se fait dans la langue du système.</string>
+    <string name="dev_lien_voc">-	announceForAccessibility : \n\nhttp://developer.android.com/reference/android/view/View.html#announceForAccessibility&amp;#3728java.lang.CharSequence&amp;#3729</string>
+
+    <!-- guide dev : accessibility activated -->
+    <string name="dev_title_detect">Détecter si TalkBack est activé</string>
+    <string name="dev_description_detect">Sous Android, il est possible de savoir si l\'API d\'accessibilité est activée, et donc de savoir si TalkBack est activé.\n\nA l\'usage  : \n\n
+        <![CDATA[ <b><font color=#A885D8>AccessibilityManager</b>]]> am = (<![CDATA[<b><font color=#A885D8>AccessibilityManager</b>]]>) <![CDATA[<b><font color=#A885D8>context</b>]]>.getSystemService(<![CDATA[<b><font color=#A885D8>ACCESSIBILITY_SERVICE</b>]]>);\n
+<![CDATA[<b><font color=#A885D8>boolean</b>]]> isAccessibilityEnabled = am.<![CDATA[<b><font color=#A885D8>isEnabled()</b>]]>;</string>
+
+    <!-- guide dev : live region -->
+    <string name="dev_title_liveregion">Régions Live (contenu dynamique)</string>
+    <string name="dev_description_liveregion">Il est possible de spécifier à une vue qu\'elle est une région « live », c\'est-à-dire que son contenu est susceptible d\'être modifié dynamiquement et qu\'elle doit dans ce cas prévenir l\'API d\'accessibilité.\nCela aura pour conséquence de générer des vocalisations avec TalkBack par exemple.\n\nUn exemple type d\'utilisation : sur un formulaire, si l\'utilisateur fait une erreur et qu\'un message d\'erreur apparaît, la vue contenant le message doit être définie comme une région « live ».\n\nIl faut passer par la méthode « <i>setAccessibilityLiveRegion</i> » qui prend en paramètre un mode pour la région live. Il existe 3 modes :\n\n
+-	ACCESSIBILITY_LIVE_REGION_NONE : cette vue n\'est pas une région « live ». C\'est la valeur par défaut de la plupart des vues.\n\n
+-	ACCESSIBILITY_LIVE_REGION_POLITE : en cas de changement dans la vue, des vocalisations sont effectuées sur les changements. Ces vocalisations sont « polies » : elles sont moins prioritaires que les vocalisations système par exemple.\n\n
+-	ACCESSIBILITY_LIVE_REGION_ASSERTIVE : en cas de changement dans la vue, des vocalisations seront effectuées sur les changements. Ces vocalisations sont « rudes » : elles sont prioritaires et immédiatement vocalisées.\n\nA noter : la méthode « <i>setAccessibilityLiveRegion</i> » est disponible sur tout élément qui hérite de View.</string>
+    <string  name="dev_lien_liveregion">-	setAccessibilityLiveRegion :\n\nhttp://developer.android.com/reference/android/view/View.html#setAccessibilityLiveRegion&amp;#3728int&amp;#3729</string>
+
+    <!-- guide dev : read order (TalkBack) -->
+    <string name="dev_title_talkbackreadorder">Gérer l\'ordre de lecture (TalkBack)</string>
+    <string name="dev_description_talkbackreadorder">L\'ordre du focus de la synthèse vocale par défaut prend en compte plusieurs paramètres : la lecture « logique », (en France) soit de gauche à droite et de haut en bas, et la lecture du xml (ordre de déclaration des éléments).\nIl est tout à fait possible de redéfinir cet ordre de lecture avec deux outils :\n\n
+    -	<i>accessibilityTraversalAfter</i> : prend un id en paramètre et permet de spécifier à la vue qu\'elle doit être « vue » par l\'accessibilité après la vue passée en paramètre.\n\n
+- <i>accessibilityTraversalBefore</i> : prend un id en paramètre et permet de spécifier à la vue qu\'elle doit être « vue » par l\'accessibilité avant la vue passée en paramètre.\n\nA noter : ces attributs peuvent être utilisés directement dans le xml mais également dans le code via les méthodes « <i>setAccessibilityTraversalAfter</i> » et « <i>setAccessibilityTraversalBefore</i> ».\nCes méthodes sont disponibles pour tout élément qui hérite de View.</string>
+    <string formatted="false"  name="dev_lien_talkbackreadorder">
+    -	setAccessibilityTraversalAfter :\nhttp://developer.android.com/reference/android/view/View.html#setAccessibilityTraversalAfter&amp;#3728int&amp;#3729 \n\n
+-	setAccessibilityTraversalBefore : \nhttp://developer.android.com/reference/android/view/View.html#setAccessibilityTraversalBefore&amp;#3728int&amp;#3729</string>
+
+    <!-- guide dev : forms -->
+    <string name="dev_title_form">Formulaires</string>
+    <string name="dev_description_form">Il est important que les champs de formulaire soient liés à un label.\nIl existe 2 grandes techniques pour réaliser cette liaison :\n\n
+    -	<i>labelFor</i> : permet de spécifier à une vue qu\'elle est le label d\'une autre vue. Cette méthode prend en paramètre l\'id de la vue que l\'on labellise. On peut utiliser cette méthode avec quasiment tout type de champ de formulaire.\nUtilisable depuis le xml « <i>android:labelFor</i>» ou le code « <i>setLabelFor</i> ». <i>LabelFor</i> est utilisable depuis tout élément qui hérite de <i>View</i>.\n\n
+- <i>hint</i> : permet d\'ajouter un texte d\'exemple quand le champ de texte est vide. Cette méthode ne marche que pour les <i>TextView</i>.\nPrend en paramètre l\'id d\'une chaîne de caractère. Utilisable depuis le xml « <i>android:hint</i> » ou le code « <i>setHint</i> ».\n</string>
+    <string name="dev_lien_form">-	setLabelFor :\nhttp://developer.android.com/reference/android/view/View.html#setLabelFor&amp;#3728int&amp;#3729 \n\n-	setHint : \nhttp://developer.android.com/reference/android/widget/TextView.html#setHint&amp;#3728int&amp;#3729</string>
+
+    <!-- guide dev : text size -->
+    <string name="dev_title_textsize">Taille des textes</string>
+    <string name="dev_description_txtsize">Afin de permettre à l\'option « grand caractère » d\'interagir correctement avec l\'application, plusieurs points sont à respecter durant les développements.\n\n<u>Utiliser une taille de police dynamique :</u> le « <i>sp</i> ».\nCette unité, spécifique à Android, permet d\'obtenir une taille de police en fonction de la densité de pixel de l\'écran.\nIl est plus que recommandé de l\'utiliser, ne serait-ce que pour obtenir un design uniforme sur tous les types de device Android.\n\n<u>Gérer les débordements de contenu :</u> une erreur courante est d\'utiliser une taille de texte dynamique (« sp » donc) mais de ne pas faire attention au conteneur.\nSi le texte grossit, le conteneur doit en faire autant pour ne pas qu\'il y ait de débordement.\nOn peut parfaitement jouer avec le min-height et le <i>height</i> des conteneurs pour obtenir un résultat correct (le <i>height</i> doit toujours être en « <i>wrap_content</i> ».</string>
+    <string name="dev_lien_txtsize">- sp :\n\nhttps://www.google.com/design/spec/style/typography.html#typography-styles</string>
+
+    <!-- guide dev : events -->
+    <string name="dev_title_axsevents">Evénements d\'accessibilité &amp; Custom Views</string>
+    <string name="dev_description_axsevents">Il existe sous Android un bon nombre d\'événements liés à l\'API d\'accessibilité.\nVous pouvez manipuler ces événements au même titre que d\'autres événements. Ils permettent d\'enrichir des composants custom insuffisamment accessibles.\n\nL\'utilisation des événements d\'accessibilité est assez rare dans les applications non dédiées à l\'accessibilité, les autres options étant généralement suffisantes.\nCependant, il faut savoir qu\'ils existent et permettent de surcharger la vocalisation d\'un composant.\n\nPour plus d\'informations, nous vous invitons à regarder les liens ci-dessous.</string>
+    <string name="dev_lien_axsevents">-	AccessibilityEvents :\nhttp://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html\n\n-	Construire une vue custom accessible :\nhttp://developer.android.com/guide/topics/ui/accessibility/apps.html#custom-views</string>
+
+    <!-- guide dev : webviews -->
+    <string name="dev_title_webview">WebView</string>
+    <string name="dev_description_webview">Les <i>WebView</i> ont un traitement un peu particulier sous Android.\n\nPour commencer, si on veut qu\'une page soit accessible, il faut que le contenu HTML le soit, à savoir qu\'il respecte les normes internationales sur le sujet : les WCAG2.\n\nCôté Android, il faut s\'assurer que la WebView autorise le JavaScript :\n\nmWebView.getSettings.setJavaScriptEnabled(true);\n\nDans ces conditions, la page affichée à travers la <i>WebView</i>  réagit convenablement à l\'API d\'accessibilité.</string>
+
+    <!-- guide dev : lists -->
+    <string name="dev_title_listvoc">Vocalisation des listes</string>
+    <string name="dev_description_listvoc">Il arrive parfois que les listes soient mal vocalisées: la synthèse vocale tente de vocaliser toute la liste en une seule fois (au moins ce qui est affiché à l\'écran dans le cas de liste longue).\nC\'est notamment le cas lorsque l\'on utilise des <i>RecyclerView</i>.\n\nPour palier à ce problème, une solution simple existe. Il suffit de positioner l\'attribut « <i>focusable</i> » à « <i>true</i> » pour chaque item de la liste.\nCela a pour effet de forcer la synthèse vocale (TalkBack) à lire les items un par un. </string>
+
+    <!-- guide dev : focus nav -->
+    <string name="dev_title_focusnav">Navigation au focus</string>
+    <string name="dev_description_focusnav">Pour gérer la navigation au focus, il faut s\'assurer de 3 choses : \n\n- Permettre le focus sur les éléments interactifs : la navigation au focus ne concerne que les éléments interactifs.\nSi, par exemple, votre application possède des vues custom cliquables, il faut s\'assurer que ces vues soient focusables en positionnant l\'attribut « <i>focusable</i>» à « <i>true</i> ».\n\n- Gérer l\'ordre du focus : à travers les options <i>nextFocusDown, nextFocusUp, nextFocusRight</i> et <i>nextFocusLeft</i>, vous pouvez spécifier quelle vue doit prendre le focus selon l\'utilisation des flèches bas, haut, droit et gauche.\n\n- Gérer l\'affichage du focus : tout élément interactif peut recevoir le focus, il faut donc que le <i>state_focused</i> soit défini et permette de distinguer d\'un seul coup d\'œil quel élément a le focus.\n\nA noter : <i>nextFocusDown, nextFocusUp, nextFocusRight, nextFocusLeft, focusable</i> ainsi que d\'autres options de gestion du focus sont accessibles directement dans le xml ou dans le code à travers les méthodes correspondantes.</string>
+    <string name="dev_lien_focusnav">- Gestion du focus sous Android :\n\nhttp://developer.android.com/guide/topics/ui/accessibility/apps.html#focus-nav</string>
+
+
+
+    <!-- Talkback view -->
+    <string name="tb_what_title">À quoi ça sert?</string>
+    <string name="tb_talkback_btn">Activer TalkBack</string>
+    <string name="tb_how_title">Comment s\'en servir ?</string>
+    <string name="tb_moves_btn">Voir tous les gestes</string>
+    <string name="tb_tuto_title">Les gestes</string>
+    <string name="tb_tuto_close">Fermer le tutoriel</string>
+    <string name="tb_links_title">Liens</string>
+    <string name="tb_what_description">TalkBack est un lecteur d\'écran intégré à Android qui décrit à haute voix les éléments qui apparaissent sur l\'écran du téléphone.\n\nIl est gratuit et permet à un utilisateur non ou mal voyant, dyslexique ou illettré de pouvoir vocaliser tous les éléments visibles contenus dans la page. Un outil comme TalkBack est appelé indifféremment lecteur d\'écran ou synthèse vocale, même si un lecteur d\'écran est en fait un logiciel associé à une synthèse vocale</string>
+    <string name="tb_how_description">Lorsque TalkBack est activé, les gestes standard effectués sur l\'écran tactile donnent des résultats différents.\nEn outre, des gestes supplémentaires permettent de déplacer son focus à l\'écran et de contrôler les éléments sélectionnés.\n\nTalkBack comprend des gestes de toucher et de balayage à un, deux et trois doigts. Nous décrivons ici les gestes de base pour une utilisation courante de TalkBack. \n\nA noter : TalkBack n\'est considéré comme accessible qu\'à partir de la version JellyBean (4.1) car on peut naviguer séquentiellement.</string>
+    <string name="tb_talkbackgesture1"><b>Se déplacer avec un doigt sur l\'écran</b></string>
+    <string name="tb_talkbackgesture1_sub">Explorer l\'écran et entendre la vocalisation de l\'élément qui est touché</string>
+    <string name="tb_talkbackgesture2"><b>Double-cliquer n\'importe où sur l\'écran</b></string>
+    <string name="tb_talkbackgesture2_sub">Ouvrir ou activer l\'élément qui a été touché (vocalisé) en dernier</string>
+    <string name="tb_talkbackgesture3"><b>Slider vers le haut en utilisant deux doigts</b></string>
+    <string name="tb_talkbackgesture3_sub">Se déplacer verticalement sur une liste ou sur une page à condition qu\'elle soit sélectionnée</string>
+    <string name="tb_talkbackgesture4"><b>Slider vers le bas en utilisant deux doigts</b></string>
+    <string name="tb_talkbackgesture4_sub">Se déplacer verticalement sur une liste ou sur une page à condition qu\'elle soit sélectionnée</string>
+    <string name="tb_talkbackgesture5"><b>Slider vers la gauche en utilisant deux doigts</b></string>
+    <string name="tb_talkbackgesture5_sub">Changer de page ou d\'écran quand c\'est possible</string>
+    <string name="tb_talkbackgesture6"><b>Slider vers la droite en utilisant deux doigts</b></string>
+    <string name="tb_talkbackgesture6_sub">Changer de page ou d\'écran quand c\'est possible</string>
+    <string name="tb_talkbackgesture7"><b>Slider vers la droite en utilisant un doigt</b></string>
+    <string name="tb_talkbackgesture7_sub">Déplacer le focus TalkBack sur l\'élément suivant</string>
+    <string name="tb_talkbackgesture8"><b>Slider vers la gauche en utilisant un doigt</b></string>
+    <string name="tb_talkbackgesture8_sub">Déplacer le focus TalkBack sur l\'élément précédent</string>
+    <string name="tb_talkbackgesture9"><b>Slider vers le haut en utilisant un doigt</b></string>
+    <string name="tb_talkbackgesture9_sub">Changer de mode de lecture : "pages", "par défaut (éléments)", "caractères", "mots", "lignes" et "paragraphes"</string>
+    <string name="tb_talkbackgesture10"><b>Slider vers le bas en utilisant un doigt</b></string>
+    <string name="tb_talkbackgesture10_sub">Changer de mode de lecture : "pages", "par défaut (éléments)", "caractères", "mots", "lignes" et "paragraphes"</string>
+    <string name="tb_talkbackgesture_credits">This images are licensed under a Creative Commons Share Alike 2.0 license and modified by Orange.\nPhoto credit: openexhibits ( <a rel="tb_talkbackgesture_credits" href="http://www.flickr.com/people/27512715@N02/">http://www.flickr.com/people/27512715@N02/</a> )</string>
+    <string name="tb_talkbackgesture_links">Pour plus d\'information sur TalkBack et une description détaillée de ses fonctionnalités, nous vous invitons à lire la <a rel="tb_talkbackgesture_links" href="https://support.google.com/accessibility/android/answer/6283677?hl=fr&amp;ref_topic=3529932/">documentation officielle de Google</a></string>
+
+
+    <!-- accessible options view -->
+    <string name="options_content">Sous Android il existe un certain nombre d\'options d\'accessibilité pour améliorer le confort des utilisateurs en situation de handicap. Nous allons ici en présenter quelques unes.</string>
+    <string name="options_content_txtSize">Cette option permet d\'agrandir la taille des caractères du téléphone et des applications. Nous parlons ici d\'une augmentation de 120\% environ. Comme expliqué dans le guide d\'accessibilité, il est nécessaire pour les applications de faire ce qu\'il faut pour que cette option fonctionne correctement. Enfin, il faut noter que suivant les constructeurs, différentes tailles d\'augmentation peuvent être proposées.</string>
+    <string name="options_content_zoom">Cette option permet de zoomer sur l\'écran. Une fois l\'option activée, appuyez trois fois sur l\'écran pour effectuer le zoom. Il est ensuite possible de régler le niveau du zoom (pinch) ou d\'ajuster la zone affichée (slide avec deux doigts).</string>
+    <string name="options_content_colors">Cette option permet de corriger les couleurs affichées en fonction de ses problèmes de vision. Actuellement, il y a trois modes proposés pour le daltonisme (deutéranomalie, protanomalie et tritanomalie). A partir d\'Android 5 uniquement.</string>
+    <string name="options_content_colorInversion">Cette option permet d\'inverser les couleurs à l\'écran, ce qui peut aider à traiter les problèmes de contrastes sur certaines applications. A partir d\'Android 5 uniquement.</string>
+    <string name="options_content_description">Description</string>
+    <string name="options_content_list_title">Liste des options d\'accessibilité</string>
+    <string name="options_content_btn">Accéder aux options d\'accessibilité</string>
+    <string-array name="options_list">
+        <item>Agrandissement des caractères</item>
+        <item>Zoom</item>
+        <item>Correction des couleurs</item>
+        <item>Inversion des couleurs</item>
+    </string-array>
+    <string-array name="options_list2">
+        <item>Agrandissement des caractères</item>
+        <item>Zoom</item>
+        <item>Correction des couleurs\n(Option non disponible pour votre mobile)</item>
+        <item>Inversion des couleurs\n(Option non disponible pour votre mobile)</item>
+    </string-array>
+
+
+    <!-- accessibility & Orange view -->
+    <string name="orange_title">Et chez Orange?</string>
+    <string name="orange_content">Orange s\'efforce de rendre ses applications mobiles accessibles. Dans cette section, nous vous proposons une liste d\'applications ayant porté un intérêt particulier à l\'accessibilité pendant leurs développements.</string>
+    <string name="orange_accessible_app">Quelques applications accessibles</string>
+    <string name="orange_cd_accessible_app">Séléctionnez une application accessible réalisée par Orange ci-dessous</string>
+    <string name="orange_cd_app">Lien vers l\'application</string>
+    <string name="orange_monreseau">Mon réseau</string>
+    <string name="orange_malivebox">Ma Livebox</string>
+    <string name="orange_orangeetmoi">Orange et Moi</string>
+    <string name="orange_orangefootballclub">Orange Football Club</string>
+
+
+    <!-- contact view -->
+    <string name="contact_title">EASE</string>
+    <string name="contact_website">Site web :</string>
+    <string name="contact_website_link"><a href="http://webidea.si.francetelecom.fr/spip/spip.php?rubrique119"><u>Cliquez ici pour nous contacter</u></a></string>
+    <string name="contact_support">Demande de support :</string>
+    <string name="contact_support_link"><a href="http://isf.idea.rd.francetelecom.fr/issue.html?applicationId=4453&amp;amp;projectName="><u>Cliquez ici pour accéder au support</u></a></string>
+    <string name="contact_team">Contacter l\'équipe :</string>
+    <string name="contact_team_mail"><a href="accessibility.support@orange.com"><u>Nous envoyer un email</u></a></string>
+    <string name="contact_cd_website_link">Lien vers le site de contact</string>
+    <string name="contact_cd_support_link">Lien vers le site de support</string>
+    <string name="contact_cd_team_mail">Envoyer un e-mail afin de nous contacter</string>
+
+
+    <!-- about view -->
+    <string name="about_tittle">Orange SA</string>
+    <string name="about_subtittle">mDAN v1.0.0</string>
+    <string name="about_licence">Documentation sous <a rel="about_licence" href="TODO">licence CC BY 3.0</a>, code source de l\'application ainsi que les exemples sous licence <a rel="about_licence" href="TODO">Apache 2.0</a>.\n\nLe logo Orange ainsi que certaines images et captures sont la propriété d\'Orange:\nCopyright &#169; 2016 Orange SA All rights reserved\n\n<a rel="about_licence" href="TODO">Liste des fichiers concernés</a></string>
+    <string name="about_other_licences">Logiciels tiers</string>
+    <string name="about_other_licences_content"><b>AnimatedExpandableListView</b>\nCopyright &#169; 2014 Gary Guo\n\nAnimatedExpandableListView est distribué selon les termes de la <a rel="about_licence" href="http://www.apache.org/licenses/LICENSE-2.0">licence Apache 2.0</a>\nPour en savoir plus : <a rel="about_licence" href="https://github.com/idunnololz/AnimatedExpandableListView">https://github.com/idunnololz/AnimatedExpandableListView</a>\n\n<b>Android Annotations</b>\nCopyright © 2012–2016 eBusiness Information\n\nAndroidAnnotations est distribué selon les termes de la <a rel="about_licence" href="http://www.apache.org/licenses/LICENSE-2.0">licence Apache 2.0</a>\nPour en savoir plus : <a rel="about_licence" href="https://github.com/excilys/androidannotations/">https://github.com/excilys/androidannotations/</a>\n\n<b>Android Auto Scroll ViewPager</b>\nCopyright &#169; 2014 trinea.cn\n\nAndroidAutoScrollViewPager est distribué selon les termes de la <a rel="about_licence" href="http://www.apache.org/licenses/LICENSE-2.0">licence Apache 2.0</a>\nPour en savoir plus : <a rel="about_licence" href="https://github.com/Trinea/android-auto-scroll-view-pager">https://github.com/Trinea/android-auto-scroll-view-pager</a>\n\n<b>Pochette d\'album \"Mary Daisy Jane\"</b>\nLa pochette de l\'album de Mael \"Mary Daisy Jane\" est sous licence <a rel="about_licence" href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</a> et est propriété de ses créateurs ou détenteurs.</string>
+
+</resources>

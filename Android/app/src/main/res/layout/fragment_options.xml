@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one
+  ~ or more contributor license agreements.  See the NOTICE file
+  ~ distributed with this work for additional information
+  ~ regarding copyright ownership.  The ASF licenses this file
+  ~ to you under the Apache License, Version 2.0 (the
+  ~ "License"); you may not use this file except in compliance
+  ~ with the License.  You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:animateLayoutChanges="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/splitImageOptions"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@drawable/options_illustration"
+            android:importantForAccessibility="no" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="45dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/options_content_description"
+            style="@style/TextViewStandard"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="@dimen/large_margin"
+            android:background="@drawable/border"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/options_content"
+            android:id="@+id/textViewDescriptionOptAxs"
+            style="@style/TextViewStandard"
+            android:textSize="14sp"
+            android:paddingRight="@dimen/medium_margin"
+            android:paddingLeft="@dimen/medium_margin"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/options_content_btn"
+            android:id="@+id/buttonOptionsAxs"
+            style="@style/BrandButton"
+            android:layout_marginBottom="@dimen/medium_margin" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="45dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/options_content_list_title"
+            android:id="@+id/textViewTitleListOptAxs"
+            style="@style/TextViewStandard"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/large_margin"
+            android:layout_marginTop="@dimen/medium_margin" />
+
+        <com.orange.ease.dan.view.NonScrollableListView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+    </LinearLayout>
+
+</ScrollView>

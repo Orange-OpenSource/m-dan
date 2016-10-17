@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one
+  ~ or more contributor license agreements.  See the NOTICE file
+  ~ distributed with this work for additional information
+  ~ regarding copyright ownership.  The ASF licenses this file
+  ~ to you under the Apache License, Version 2.0 (the
+  ~ "License"); you may not use this file except in compliance
+  ~ with the License.  You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/splitImage"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/criteria_illustration"
+        android:importantForAccessibility="no"/>
+
+    <TextView
+        android:id="@+id/headerLabel"
+        style="@style/BrandTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="45dp"
+        android:focusable="true"
+        android:paddingBottom="5dp"
+        android:paddingEnd="@dimen/large_margin"
+        android:paddingStart="@dimen/large_margin"
+        android:text="@string/criteria_description_title"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/border"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/headerDescription"
+        style="@style/BrandBody1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:paddingBottom="10dp"
+        android:padding="@dimen/large_margin"
+        android:text="@string/criteria_description_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#333333"
+        android:textSize="14sp"/>
+
+    <View android:id="@+id/virtualSeparator" android:background="@color/functional_greys_6" android:layout_width="match_parent" android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/headerInformation"
+        style="@style/BrandBody1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:padding="@dimen/large_margin"
+        android:text="@string/criteria_description_content2"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/red"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/headerListLabel"
+        style="@style/BrandSubhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="45dp"
+        android:contentDescription="@string/criteria_cd_sections"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:paddingEnd="@dimen/large_margin"
+        android:paddingStart="@dimen/large_margin"
+        android:text="@string/criteria_sections"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/border"
+        android:gravity="center_vertical" />
+
+</LinearLayout>

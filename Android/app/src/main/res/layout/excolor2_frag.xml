@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one
+  ~ or more contributor license agreements.  See the NOTICE file
+  ~ distributed with this work for additional information
+  ~ regarding copyright ownership.  The ASF licenses this file
+  ~ to you under the Apache License, Version 2.0 (the
+  ~ "License"); you may not use this file except in compliance
+  ~ with the License.  You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/legendlayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginRight="@dimen/medium_margin"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:importantForAccessibility="noHideDescendants"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/criteria_color_ex2_legend"
+            android:id="@+id/textView37"
+            android:gravity="left"
+            style="@style/BrandBody2"
+            android:textSize="@dimen/font_size_small"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/imageView11"
+            android:gravity="right"
+            app:srcCompat="@drawable/icon_circle"
+            android:tint="@color/green"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/criteria_color_ex2_active"
+            android:id="@+id/textView38"
+            android:paddingLeft="7dp"
+            style="@style/BrandBody2"
+            android:labelFor="@+id/imageView11"
+            android:importantForAccessibility="no"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_small"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/imageView12"
+            app:srcCompat="@drawable/icon_square"
+            android:tint="@color/functional_colours_1"
+            android:layout_marginLeft="20dp"
+            android:importantForAccessibility="yes" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/criteria_color_ex2_error"
+            android:id="@+id/textView39"
+            android:paddingLeft="7dp"
+            style="@style/BrandBody2"
+            android:labelFor="@+id/imageView12"
+            android:importantForAccessibility="no" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/imageView13"
+            app:srcCompat="@drawable/icon_triangle"
+            android:tint="@color/orange_digital_2"
+            android:layout_marginLeft="20dp"
+            android:importantForAccessibility="yes" />
+
+        <TextView
+            style="@style/BrandBody2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/criteria_color_ex2_inactive"
+            android:id="@+id/textView40"
+            android:paddingLeft="7dp"
+            android:labelFor="@+id/imageView13"
+            android:importantForAccessibility="no" />
+    </LinearLayout>
+
+    <View android:id="@+id/virtualSeparator" android:background="@color/functional_greys_6" android:layout_width="match_parent" android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/colorslayout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/large_margin"
+            android:gravity="left"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:id="@+id/imageView14"
+                android:background="@drawable/emailicon" />
+
+            <TextView
+                style="@style/BrandBody1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/criteria_color_ex2_mailtv"
+                android:id="@+id/textView42"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25dp"
+                android:textSize="@dimen/font_size_common"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:importantForAccessibility="yes"
+                android:focusable="false" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView15"
+                app:srcCompat="@drawable/icon_circle"
+                android:tint="@color/functional_colours_2"
+                android:layout_gravity="center_vertical"
+                android:importantForAccessibility="yes" />
+        </LinearLayout>
+
+        <View android:background="@color/functional_greys_6" android:layout_width="match_parent" android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/large_margin"
+            android:gravity="left"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:id="@+id/imageView16"
+                android:background="@drawable/musicicon" />
+
+            <TextView
+                style="@style/BrandBody1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/criteria_color_ex2_audio"
+                android:id="@+id/textView41"
+                android:textSize="@dimen/font_size_common"
+                android:layout_marginLeft="25dp"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:importantForAccessibility="yes"
+                android:focusable="false" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView17"
+                app:srcCompat="@drawable/icon_square"
+                android:tint="@color/functional_colours_1"
+                android:layout_gravity="center_vertical"
+                android:importantForAccessibility="yes" />
+        </LinearLayout>
+
+        <View android:background="@color/functional_greys_6" android:layout_width="match_parent" android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/large_margin"
+            android:gravity="left"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:id="@+id/imageView18"
+                android:background="@drawable/videoicon"/>
+
+            <TextView
+                style="@style/BrandBody1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/criteria_color_ex2_videostream"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/textView43"
+                android:textSize="@dimen/font_size_common"
+                android:layout_marginLeft="25dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:importantForAccessibility="yes"
+                android:focusable="false" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView19"
+                app:srcCompat="@drawable/icon_triangle"
+                android:tint="@color/orange_digital_2"
+                android:layout_gravity="center_vertical"
+                android:importantForAccessibility="yes" />
+        </LinearLayout>
+
+        <View android:background="@color/functional_greys_6" android:layout_width="match_parent" android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/large_margin"
+            android:gravity="left"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:id="@+id/imageView20"
+                android:background="@drawable/browsericon" />
+
+            <TextView
+                style="@style/BrandBody1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/criteria_color_ex2_browser"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/textView44"
+                android:textSize="@dimen/font_size_common"
+                android:layout_marginLeft="25dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:importantForAccessibility="yes"
+                android:focusable="false" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/imageView21"
+                app:srcCompat="@drawable/icon_square"
+                android:tint="@color/functional_colours_1"
+                android:layout_gravity="center_vertical"
+                android:importantForAccessibility="yes" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
