@@ -22,7 +22,6 @@ All of this pages are in a package named : NavFragments.
  5. Accessibility options
 	 - List of accessibility options
  6. About page
- 7. Contact page
 
 ##**Android accessibility guide :**
 This guide will show you a panel of using android components in two ways and for each examples you'll have a way accessible and a way not accessible.
