@@ -1,0 +1,31 @@
+<!--
+ * This file is part of mDAN | mDan is a mobile application 
+ * which explains accessibility guidelines and presents the best practices of
+ * a mobile systems in action.
+ *
+ * Copyright (c)  2016  Orange SA
+ * See the Creative Commons Legal Code Attribution 3.0 Unported License for
+ * more details (LICENSE file).
+ -->
+
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+        <style type="text/css">
+            body{
+                font-family: '-apple-system', 'HelveticaNeue';
+            }
+            .italic{
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Le système iOS envoie un certain nombre d’évènements d’accessibilité à destination des applications. Ces événements sont envoyés lors de la modification des options d’accessibilité. Par exemple, si VoiceOver est désactivé durant l’utilisation de l’application, celle-ci recevra l’évènement <span class="italic" lang="en">UIAccessibilityVoiceOverStatusChanged</span>. Cela est très utile couplé à la fonction <span class="italic" lang="en">UIAccessibilityIsVoiceOverRunning</span>.</br>
+        Imaginons que nous ayons un traitement particulier quand VoiceOver est activé. Ceci est détecté grâce à la fonction <span class="italic" lang="en">UIAccessibilityIsVoiceOverRunning</span>. Mais que se passe-t-il si VoiceOver est désactivé alors que ce traitement a déjà eu lieu ? C’est là que les évènements système peuvent être utilisés. En restant à l’écoute de ces évènements, il est possible d’appliquer des traitements particuliers de manière dynamique.
+        </p>
+    </body>
+</html>

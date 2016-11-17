@@ -1,0 +1,30 @@
+<!--
+ * This file is part of mDAN | mDan is a mobile application 
+ * which explains accessibility guidelines and presents the best practices of
+ * a mobile systems in action.
+ *
+ * Copyright (c)  2016  Orange SA
+ * See the Creative Commons Legal Code Attribution 3.0 Unported License for
+ * more details (LICENSE file).
+ -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+        <style type="text/css">
+            body{
+                font-family: '-apple-system', 'HelveticaNeue';
+            }
+            .italic{
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Redefining the VoiceOver reading order is done using the <span class="italic">UIAccessibilityContainer</span> protocol. The idea is to have a table of elements that defines the reading order of the elements. It is often very useful to use the <span class="italic">shouldGroupAccessibilityElement</span> attribute so we have a precise order but for a part if the view only (the rest of the view will be read using the 'logical' order).
+        </p>
+    </body>
+</html>

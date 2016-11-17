@@ -1,0 +1,39 @@
+<!--
+ * This file is part of mDAN | mDan is a mobile application 
+ * which explains accessibility guidelines and presents the best practices of
+ * a mobile systems in action.
+ *
+ * Copyright (c)  2016  Orange SA
+ * See the Creative Commons Legal Code Attribution 3.0 Unported License for
+ * more details (LICENSE file).
+ -->
+
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+        <style type="text/css">
+            body{
+                font-family: '-apple-system', 'HelveticaNeue';
+            }
+            .italic{
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Sous iOS, la vocalisation d’un élément s’effectue à travers 4 attributs, à savoir le <span class="italic" lang="en">label</span>, le <span class="italic" lang="en">hint</span>, la <span class="italic" lang="en">value</span> et le <span class="italic" lang="en">trait</span>.</br>
+        L’ordre de vocalisation est toujours le suivant : <span class="italic" lang="en">label</span>, <span class="italic" lang="en">value</span>, <span class="italic" lang="en">trait</span> et <span class="italic" lang="en">hint</span>. Cet ordre ne peut pas être changé et la vocalisation est réalisée en une seule fois, à l’arrivée sur l’élément.</br></br>
+        
+        Une section de ce guide est dédiée au trait, nous décrivons ici les 3 autres :</br>
+        <ul>
+            <li><span class="italic" lang="en">accessibilityLabel</span> : le <span class="italic" lang="en">label</span> permet de préciser le titre spécifique à l’accessibilité qui est lu par VoiceOver en lieu et place du texte du composant si celui-ci en possède un. Cela permet d’avoir un texte de composant plus explicite que celui affiché à l’écran. Par exemple, dans le cas d’un bouton dont le titre est « OK », on peut indiquer que le bouton sert à valider un choix.</br></li>
+            <li><span class="italic" lang="en">accessibilityValue</span> : la valeur d’un l’élément est par défaut le pourcentage de progression (exemple : une barre de progression). A noter que pour la plupart des éléments ajustables disponibles dans le SDK, cette value n’a pas besoin d’être reprécisée (le système restitue automatiquement la valeur à l’utilisateur via VoiceOver).</br></li>
+            <li><span class="italic" lang="en">accessibilityHint</span> : le <span class="italic" lang="en">hint</span> permet de décrire le comportement du composant. Exemple : « cliquez pour obtenir le résultat ».</br></li>
+        </ul></br>
+        
+        Ces attributs d’accessibilité sont disponibles via l’interface builder mais également via le code. Tout élément dérivant de <span class="italic">UIView</span> les possède par défaut. Ces attributs acceptent une chaine de caractère en option, et sont, par conséquent, facilement internationalisables.</p>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!--
+ * This file is part of mDAN | mDan is a mobile application 
+ * which explains accessibility guidelines and presents the best practices of
+ * a mobile systems in action.
+ *
+ * Copyright (c)  2016  Orange SA
+ * See the Creative Commons Legal Code Attribution 3.0 Unported License for
+ * more details (LICENSE file).
+ -->
+
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+        <style type="text/css">
+            body{
+                font-family: '-apple-system', 'HelveticaNeue';
+            }
+            .italic{
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Lors d’un changement de contenu sur une page, il est possible de notifier l’API d’accessibilité de ce changement à travers différentes notifications. Pour ce faire, il faut envoyer une notification de modification à l’API d’accessibilité via la méthode <span class="italic" lang="en">UIAccessibilityPostNotification</span>.</br>
+        Il existe plusieurs notifications de modification mais les deux plus utiles sont :</br>
+        <ul>
+            <li><span class="italic" lang="en">UIAccessibilityLayoutChangedNotification</span></li>
+            <li><span class="italic" lang="en">UIAccessibilityScreenChangedNotification</span></li>
+        </ul></br>
+        
+        <span class="italic" lang="en">UIAccessibilityLayoutChangedNotification</span> permet de spécifier à l’API d’accessibilité qu’une partie de la page a été modifiée. <span class="italic" lang="en">UIAccessibilityScreenChangedNotification </span>permet d’annoncer un changement global de la page.</br></br>
+        
+        A l’usage, il existe une petite différence entre les deux. <span class="italic" lang="en">UIAccessibilityLayoutChangedNotification</span> accepte une <span class="italic" lang="en">NSString</span> ou un <span class="italic" lang="en">UIObject</span>. Avec le premier paramètre, la notification se comporte comme une <span class="italic" lang="en">UIAccessibilityAnnouncementNotification</span> et lance une vocalisation VoiceOver. Avec le second, le focus est repositionné sur l’élément de notre choix.</br></br>
+        
+        <code>UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, @"speakString");</code></br>
+        <code>UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, aViewObject);</code></br></br>
+        
+        <span class="italic" lang="en">UIAccessibilityScreenChangedNotification</span> accepte soit <span class="italic">nil</span>, soit l’élément qui doit recevoir le focus.</br></br>
+        
+        <code>UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil);</code></br>
+        <code>UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, aViewObject);</code>
+        </p>
+    </body>
+</html>

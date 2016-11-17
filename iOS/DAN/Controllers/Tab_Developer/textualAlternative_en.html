@@ -1,0 +1,39 @@
+<!--
+ * This file is part of mDAN | mDan is a mobile application 
+ * which explains accessibility guidelines and presents the best practices of
+ * a mobile systems in action.
+ *
+ * Copyright (c)  2016  Orange SA
+ * See the Creative Commons Legal Code Attribution 3.0 Unported License for
+ * more details (LICENSE file).
+ -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+        <style type="text/css">
+            body{
+                font-family: '-apple-system', 'HelveticaNeue';
+            }
+            .italic{
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <p>On iOS, the vocalization of an element is done through four attributes: <span class="italic">label</span>, <span class="italic">hint</span>, <span class="italic">value</span> and <span class="italic">trait</span>.</br>
+        The order of vocalization is always as follows: <span class="italic">label</span>, <span class="italic">value</span>, <span class="italic">trait</span> and <span class="italic">hint</span>. This order cannot be changed and the vocalization is performed only once.</br></br>
+        
+        A section of this guide is dedicated to the trait, we describe here the other three:</br>
+        <ul>
+            <li><span class="italic">accessibilityLabel</span>: the <span class="italic">label</span> redefines the text read by VoiceOver. This allows a component to be more explicit than the text displayed on the screen. For example, for a button whose title is "OK", this attribute can indicate that the button is used to confirm an action.</br></li>
+            <li><span class="italic">accessibilityValue</span>: the <span class="italic">value</span> valeur of an element is by default the completion percentage (e.g. a progress bar percentage). Note that for most elements available in the SDK, this value does not need to be set (the system automatically sets the value).</br></li>
+            <li><span class="italic">accessibilityHint</span>: the <span class="italic">hint</span> pdescribes the component behavior. Example: "click here to get the result".</br></li>
+        </ul></br>
+        
+        These accessibility attributes are available via the builder interface but also programatically. Anything inheriting from <span class="italic">UIView</span> has these attributes by default. These attributes accept an optional string, and are therefore easily localizable.</p>
+    </body>
+</html>

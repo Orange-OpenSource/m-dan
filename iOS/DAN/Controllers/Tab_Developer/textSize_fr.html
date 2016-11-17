@@ -1,0 +1,36 @@
+<!--
+ * This file is part of mDAN | mDan is a mobile application 
+ * which explains accessibility guidelines and presents the best practices of
+ * a mobile systems in action.
+ *
+ * Copyright (c)  2016  Orange SA
+ * See the Creative Commons Legal Code Attribution 3.0 Unported License for
+ * more details (LICENSE file).
+ -->
+
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+        <style type="text/css">
+            body{
+                font-family: '-apple-system', 'HelveticaNeue';
+            }
+            .italic{
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <p>La gestion des polices dynamiques sous iOS est complexe. Il est possible depuis iOS7 d’utiliser une API permettant de rendre la taille des textes de son application dynamiquement modifiable à l’aide du paramétrage du téléphone. Si on résume cette API, il faut :</br>
+        <ul>
+            <li>Utiliser les polices système pour les textes de l’application, <code>[UIFont preferredFontForTextStyle:UIFontTextStyle…]</code>. Il est aussi possible de définir ses propres polices dérivées de la classe <span class="italic" lang="en">UIFont</span>.</li>
+            <li>Traiter l’évènement signalant le changement de la taille du texte dans les paramètres du téléphone <span class="italic" lang="en">UIContentSizeCategoryDidChangeNotification</span>, <code>[[NSNotificationCenter defaultCenter] addObserver:… selector:@selector(…) name: UIContentSizeCategoryDidChangeNotification object:…];</code></li>
+            <li>Lors du traitement de l’évènement signalant le changement de taille, il faut réafficher les éléments concernés.</li>
+            </ul>
+        Il faut aussi faire attention à ce que les conteneurs s’adaptent à leur contenu : utiliser les contraintes est le meilleur moyen de réaliser cette tâche.
+        </p>
+    </body>
+</html>

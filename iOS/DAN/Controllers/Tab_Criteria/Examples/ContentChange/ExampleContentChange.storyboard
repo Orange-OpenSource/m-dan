@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Content Change Element Update View Controller-->
+        <scene sceneID="jPV-Fg-O3K">
+            <objects>
+                <tableViewController storyboardIdentifier="Example-ContentChange-ElementUpdate" id="Tgh-Ts-75b" customClass="ContentChangeElementUpdateViewController" customModule="mDAN" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="45" sectionFooterHeight="28" id="jCV-gP-XIq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="textCell" rowHeight="100" id="AnA-F4-Hcs" customClass="TextTableViewCell" customModule="mDAN" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="45" width="600" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AnA-F4-Hcs" id="YEb-ex-0my">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzT-FU-Rwm">
+                                            <rect key="frame" x="15" y="12" width="570" height="75"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="kzT-FU-Rwm" firstAttribute="leading" secondItem="YEb-ex-0my" secondAttribute="leadingMargin" constant="7" id="A47-p0-wda"/>
+                                        <constraint firstItem="kzT-FU-Rwm" firstAttribute="centerX" secondItem="YEb-ex-0my" secondAttribute="centerX" id="nAf-av-HBS"/>
+                                        <constraint firstItem="kzT-FU-Rwm" firstAttribute="top" secondItem="YEb-ex-0my" secondAttribute="topMargin" constant="4" id="pyJ-HX-Srg"/>
+                                        <constraint firstItem="kzT-FU-Rwm" firstAttribute="centerY" secondItem="YEb-ex-0my" secondAttribute="centerY" id="t71-UH-DHq"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="label" destination="kzT-FU-Rwm" id="lLK-aH-x88"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="addressCell" rowHeight="190" id="XoT-Pd-19K" userLabel="adressCell" customClass="AddressTableViewCell" customModule="mDAN" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="145" width="600" height="190"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XoT-Pd-19K" id="nXe-3E-eve">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="189"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adresse_de_livraison" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPL-kB-VwS">
+                                            <rect key="frame" x="12" y="15" width="163" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ya0-vO-yEI">
+                                            <rect key="frame" x="12" y="38" width="215" height="41"/>
+                                            <string key="text">123 Avenue de l'Accessibilité
+84100 Orange</string>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Adresse_de_facturation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlN-Ch-TEw">
+                                            <rect key="frame" x="12" y="127" width="183" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LQ1-hv-eiQ">
+                                            <rect key="frame" x="512" y="87" width="51" height="31"/>
+                                        </switch>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Adresse_de_livraison_identique_à_l'adresse_de_facturation" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Qc-2I-bPr">
+                                            <rect key="frame" x="12" y="91" width="479" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Adresse_de_facturation" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ORj-pl-Zxv">
+                                            <rect key="frame" x="12" y="155" width="573" height="17"/>
+                                            <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="LQ1-hv-eiQ" firstAttribute="leading" secondItem="8Qc-2I-bPr" secondAttribute="trailing" constant="21" id="0r0-1g-4rS"/>
+                                        <constraint firstItem="qPL-kB-VwS" firstAttribute="top" secondItem="nXe-3E-eve" secondAttribute="top" constant="15" id="8HT-7e-9ed"/>
+                                        <constraint firstItem="8Qc-2I-bPr" firstAttribute="top" secondItem="ya0-vO-yEI" secondAttribute="bottom" constant="12" id="A5a-fd-TnN"/>
+                                        <constraint firstAttribute="leading" secondItem="qPL-kB-VwS" secondAttribute="leading" constant="-12" id="FF1-3g-rjx"/>
+                                        <constraint firstItem="ya0-vO-yEI" firstAttribute="leading" secondItem="qPL-kB-VwS" secondAttribute="leading" id="JJP-if-3rj"/>
+                                        <constraint firstItem="8Qc-2I-bPr" firstAttribute="leading" secondItem="ya0-vO-yEI" secondAttribute="leading" id="Jkp-PQ-4r3"/>
+                                        <constraint firstItem="WlN-Ch-TEw" firstAttribute="top" secondItem="8Qc-2I-bPr" secondAttribute="bottom" constant="15" id="Kom-7c-LNb"/>
+                                        <constraint firstItem="WlN-Ch-TEw" firstAttribute="leading" secondItem="qPL-kB-VwS" secondAttribute="leading" id="Pgv-Mu-jaR"/>
+                                        <constraint firstItem="LQ1-hv-eiQ" firstAttribute="centerY" secondItem="8Qc-2I-bPr" secondAttribute="centerY" id="US5-sm-fQk"/>
+                                        <constraint firstItem="ORj-pl-Zxv" firstAttribute="top" secondItem="WlN-Ch-TEw" secondAttribute="bottom" constant="8" id="YOr-x6-eL9"/>
+                                        <constraint firstAttribute="trailing" secondItem="ORj-pl-Zxv" secondAttribute="trailing" constant="15" id="jGo-Cv-UJ2"/>
+                                        <constraint firstAttribute="trailing" secondItem="LQ1-hv-eiQ" secondAttribute="trailing" constant="39" id="miH-3c-C8k"/>
+                                        <constraint firstItem="ORj-pl-Zxv" firstAttribute="leading" secondItem="WlN-Ch-TEw" secondAttribute="leading" id="sJZ-E0-Xe4"/>
+                                        <constraint firstItem="ya0-vO-yEI" firstAttribute="top" secondItem="qPL-kB-VwS" secondAttribute="bottom" constant="3" id="uGS-3J-FUD"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <connections>
+                                    <outlet property="addressLabel" destination="ya0-vO-yEI" id="Gi3-01-868"/>
+                                    <outlet property="addressSwitch" destination="LQ1-hv-eiQ" id="Rqa-dn-jis"/>
+                                    <outlet property="addressTextfield" destination="ORj-pl-Zxv" id="7FV-WC-7oj"/>
+                                    <outlet property="billingAddressLabel" destination="WlN-Ch-TEw" id="jx3-mN-l1Y"/>
+                                    <outlet property="deliveringAddressLabel" destination="qPL-kB-VwS" id="opk-wk-k9v"/>
+                                    <outlet property="switchLabel" destination="8Qc-2I-bPr" id="hco-Rw-Aq5"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Tgh-Ts-75b" id="inq-Sb-aO2"/>
+                            <outlet property="delegate" destination="Tgh-Ts-75b" id="V0E-O1-RNg"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PX5-ER-e1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

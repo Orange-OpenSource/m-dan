@@ -1,0 +1,36 @@
+<!--
+ * This file is part of mDAN | mDan is a mobile application 
+ * which explains accessibility guidelines and presents the best practices of
+ * a mobile systems in action.
+ *
+ * Copyright (c)  2016  Orange SA
+ * See the Creative Commons Legal Code Attribution 3.0 Unported License for
+ * more details (LICENSE file).
+ -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+        <style type="text/css">
+            body{
+                font-family: '-apple-system', 'HelveticaNeue';
+            }
+            .italic{
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Dynamic font size on iOS is very tricky. Since iOS7, it is possible to use an API to make the text size dynamic according to the phone settings. If we summarize this API, you must:</br>
+        <ul>
+            <li>Use the system fonts for the application, <code>[UIFont preferredFontForTextStyle:UIFontTextStyle…]</code>. You can also use custom fonts only if they inherit from <span class="italic">UIFont</span>.</li>
+            <li>Listen the font size settings change events <span class="italic">UIContentSizeCategoryDidChangeNotification</span>, <code>[[NSNotificationCenter defaultCenter] addObserver:… selector:@selector(…) name: UIContentSizeCategoryDidChangeNotification object:…];</code></li>
+            <li>When handling the font size change event, you must redisplay the affected elements.</li>
+        </ul>
+        We must also be careful that the containers fit their content: using constraints is the best way to perform this task.
+        </p>
+    </body>
+</html>
