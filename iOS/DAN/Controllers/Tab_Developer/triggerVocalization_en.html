@@ -1,0 +1,36 @@
+<!--
+ * This file is part of mDAN | mDan is a mobile application 
+ * which explains accessibility guidelines and presents the best practices of
+ * a mobile systems in action.
+ *
+ * Copyright (c)  2016  Orange SA
+ * See the Creative Commons Legal Code Attribution 3.0 Unported License for
+ * more details (LICENSE file).
+ -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+        <style type="text/css">
+            body{
+                font-family: '-apple-system', 'HelveticaNeue';
+            }
+            .italic{
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <p>It is very easy to trigger vocalizations with VoiceOver. Note that we are talking about VoiceOver vocalization and not TTS (Text To Speech) that can operate whether VoiceOver is on or off.</br></br>
+        
+        To trigger a vocalization, just call the <span class="italic">UIAccessibilityPostNotification</span> method passing the notification allowing to trigger a vocalization (<span class="italic">UIAccessibilityAnnouncementNotification</span>) and the string to vocalize as parameters.</br></br>
+        
+        <code>UIAccessibilityPostNotification(UIAccessibilityAnnouncementNotification, @"speakString");</code></br></br>
+        
+        The vocalization is done in the system language.
+        </p>
+    </body>
+</html>

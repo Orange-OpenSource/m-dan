@@ -1,0 +1,590 @@
+/*
+ * This file is part of mDAN | mDan is a mobile application 
+ * which explains accessibility guidelines and presents the best practices of
+ * a mobile systems in action.
+ *
+ * Copyright (c)  2016  Orange SA
+ * See the Creative Commons Legal Code Attribution 3.0 Unported License for
+ * more details (LICENSE file).
+ */
+
+// ---------------------------------------------------------------------------
+// Common
+// ---------------------------------------------------------------------------
+"common_hour"                       = "heure";
+"common_whatFor"                    = "Le pourquoi";
+"common_howTo"                      = "La règle";
+"common_whatIsIt"                   = "Qu'est-ce que c'est ?";
+"common_example"                    = "Exemple";
+"common_examples"                   = "Les exemples";
+"common_option"                     = "Option";
+"common_accessibleExample"          = "Exemple accessible";
+"common_notAccessibleExample"       = "Exemple non accessible";
+"common_accessibleCustomExample"    = "Exemple custom accessible";
+"common_notAccessibleCustomExample" = "Exemple custom non accessible";
+"common_ok"                         = "OK";
+"common_description"                = "Description";
+"common_activation"                 = "Activation";
+"common_use"                        = "Utilisation";
+"common_links"                      = "Liens";
+"common_of"                         = "sur";
+"common_DAN"                        = "mDAN";
+"common_accessibilityDemonstrator"  = "Démonstrateur d'Accessibilité Numérique mobile";
+"common_accessibility"              = "L'accessibilité";
+"common_informationButton"          = "Information";
+"common_alertVoiceOverTitle"        = "Information";
+"common_alertVoiceOver"             = "Afin de mieux comprendre l'exemple, nous vous conseillons d'activer VoiceOver.\n\nRéglages > Général > Accessibilité > VoiceOver";
+
+// ----------------
+// Home
+// ----------------
+"home_title" = " Accueil";
+"home_content" = "Découvrez l'accessibilité à travers des exemples, explications et présentation des outils d'accessibilité!";
+"home_criteria_button" = "Guide iOS";
+"home_dev_button" = "Guide Développeurs";
+"home_voiceover_button" = "VoiceOver";
+"home_options_button" = "Options d'accessibilité";
+
+
+
+// ---------------------------------------------------------------------------
+// Criteria tab
+// ---------------------------------------------------------------------------
+// Title
+"tab_criteria_title"    = "Guide d'accessibilité iOS";
+"tab_criteria_title_short"    = "Guide";
+
+// Sections
+"criteria_section_description" = "Description et utilisation";
+"criteria_section_category"    = "Catégories";
+
+// Description
+"criteria_description_cell" = "Ce guide a pour objectif de présenter les différents critères d'accessibilité à respecter pour obtenir une application iOS accessible. Chaque critère est présenté en expliquant pourquoi il est important et la règle d'accessibilité qui en découle. Les critères sont explicités par des exemples fonctionnel.";
+"criteria_description_options_cell" = "Pour la plupart des exemples, vous devez avoir au préalable activé VoiceOver, le lecteur d'écran d'iOS";
+
+
+// Categories
+"criteria_category_image"               = "Image";
+"criteria_category_color"               = "Couleur";
+"criteria_category_textualAlternative"  = "Alternative textuelle";
+"criteria_category_titleAndHeader"      = "Titre et en-tête";
+"criteria_category_elementState"        = "État des éléments";
+"criteria_category_standardComponents"  = "Composants standards";
+"criteria_category_clickZone"           = "Zone de clic";
+"criteria_category_ghostElement"        = "Élément fantôme";
+"criteria_category_textSize"            = "Taille des textes";
+"criteria_category_contentControl"      = "Contrôle du contenu";
+"criteria_category_contentChange"       = "Changement de contenu";
+"criteria_category_horizontalScroll"    = "Scroll horizontal";
+"criteria_category_form"                = "Formulaire";
+"criteria_category_readingOrder"        = "Ordre de lecture";
+"criteria_category_language"            = "Langue";
+
+// -----------------
+// Examples - Image
+// -----------------
+"criteria_category_image_whatFor"   = "Les images sont très souvent utilisées pour transmettre de nombreuses informations.\nComme le dit l'adage, une image vaut mille mots.";
+"criteria_category_image_howTo"     = "Les non-voyants ne pouvant voir les images, il est important que celles-ci possèdent une alternative qui donne toutes les informations portées par l'image.\n\nA noter toutefois que certaines images sont utilisées à des fins décoratives. Ces images ne nécessitent pas d\'alternative.\n\nOn verra à travers plusieurs exemples comment bien renseigner les alternatives des images.";
+
+// Examples - Image -> info
+"example_image_info_title"              = "L'image porteuse d'information";
+"example_image_info_shortDescription"   = "Image contenant du texte ou informative";
+"example_image_info_description"        = "Toute image portant de l\'information doit avoir une alternative textuelle.\n\nDans le cas d'une image contenant du texte, l'alternative sera ledit texte.\n\nDans le cas d'une image qui apporte des informations sous la forme d'un graphe, dessin ou autre, l'alternative devra contenir toutes les informations nécessaires présentes dans l'image.";
+"example_image_info_accessibilityLabel" = "Souscrivez une offre internet, jusqu’à 160 euros reboursés si vous êtes engagé chez un autre fournisseur d’accès Internet et si vous êtes client Orange mobile";
+"example_image_info_accessibilityHint"  = "Cliquer pour découvrir l’offre";
+
+// Examples - Image -> deco
+"example_image_deco_title"                  = "L'image décorative";
+"example_image_deco_shortDescription"       = "Mon image est purement décorative";
+"example_image_deco_description"            = "Une image dite décorative est une image utilisée pour illustrer un propos ou pour mettre en valeur un texte.\n\nCette image est donc uniquement esthétique et n'a pas vocation à donner la moindre information à l'utilisateur.\n\nCes images ne nécessitent pas d'alternative textuelle. Le travail à faire dans ce cas est donc nul : par défaut sous iOS, les images ne sont pas vocalisées par le lecteur d'écran VoiceOver.";
+"example_image_deco_accessibilityLabel"     = "Orange et moi";
+"example_image_deco_accessibilityHint"      = "";
+"example_image_deco_myOrange"               = "Orange et moi";
+"example_image_deco_myOrangeDescription"    = "Le service change avec Orange. Orange et moi est une application qui vous permet de gérer votre compte.";
+
+// Examples - Image -> illustration
+"example_image_illustration_title"                          = "Illustrations et icones";
+"example_image_illustration_shortDescription"               = "Quelles alternatives donner aux icones et aux illustrations ?";
+"example_image_illustration_description"                    = "Les illustrations de l'application sont également considérées comme des images décoratives. La règle est donc la même : il n'y a pas d'alternative textuelle à ajouter.\nLes icônes sont, a contrario, largement utilisées en tant que bouton pour des fonctionnalités diverses.\n\nElles ont donc besoin d'alternatives textuelles pertinentes.";
+"example_image_illustration_accessibilityLabel"             = "Montagnard partant vers un sommet";
+"example_image_illustration_accessibilityHint"              = "";
+"example_image_illustration_parameter_accessibilityLabel"   = "Paramètres";
+"example_image_illustration_edit_accessibilityLabel"        = "Éditer le nom de l'image";
+
+
+// -----------------
+// Examples - Color
+// -----------------
+"criteria_category_color_whatFor"   = "Les couleurs jouent un rôle très important dans la transmission des informations.\n\nOn associe certaines couleurs à des concepts ou à des sensations mais il ne faut pas oublier qu'une partie de la population ne distingue pas correctement les couleurs.";
+"criteria_category_color_howTo"     = "Les malvoyants sont particulièrement impactés par l'usage des couleurs.  Il est donc nécessaire de respecter quelques règles essentielles :\n\n1. La couleur ne doit jamais être le seul canal de transmission d\'une information.\n\n2. Le contraste entre les couleurs de texte et de fond doit aussi être suffisant (7:1 sur mobile, 4,5:1 pour les textes larges, à calculer avec Color Constrast Analyzer par exemple).\n\nIllustrons ces règles à travers des exemples.";
+
+// Examples - Color -> Contrast
+"example_color_contrast_title"                      = "Contrastes";
+"example_color_contrast_shortDescription"           = "Quels sont les contrastes à respecter ?";
+"example_color_contrast_description"                = "Dans un contexte lumineux défavorable (à contre-jour par exemple), tout utilisateur est gêné par le manque de contraste d'une interface.\nIl est donc nécessaire de faire attention au contraste entre la couleur d'un texte et la couleur de fond.\n\nLes WCAG2 définissent 2 niveaux de contraste à partir duquel on obtient un niveau AA ou AAA. Sur mobile, on essaie toujours d'atteindre le niveau AAA, soit 7:1.\n\nAfin de mesurer ce niveau de contraste, de nombreux outils existent, par exemple Color Contrast Analyzer.";
+"example_color_contrast_cellTitleAccessible"                  = "Le titre est suffisamment contrasté";
+"example_color_contrast_cellTitleNonAccessible"               = "Le titre est insuffisamment contrasté";
+"example_color_contrast_cellSubtitleAccessible"     = "Sous-titre suffisamment contrasté";
+"example_color_contrast_cellSubtitleNonAccessible"  = "Sous-titre insuffisamment contrasté";
+
+// Examples - Color -> Info
+"example_color_info_title"              = "Information par la couleur";
+"example_color_info_shortDescription"   = "La couleur ne doit pas être le seul canal d'information";
+"example_color_info_description"        = "La couleur ne doit jamais être le seul canal de transmission d'une information. La forme ou la position peuvent être un second moyen pour véhiculer de l'information. Il existe de nombreux problèmes de vision liés à la perception des couleurs.\n\nPour ne citer que le daltonisme, celui-ci représente  8%  de la population masculine et 0.5%  de la population féminine.\n\nImaginez donc si un feu tricolore n'avait qu'une seule ampoule et que vous soyez incapable de distinguer le rouge et le vert !\n\nDans l'exemple non accessible ci-dessous, un daltonien ne peut pas connaître l'état de ses services.";
+"example_color_info_serviceMail"        = "Mail";
+"example_color_info_serviceVideo"       = "Streaming vidéo";
+"example_color_info_serviceAudio"       = "Streaming audio";
+"example_color_info_serviceBrowser"     = "Navigateur web";
+"example_color_info_statusLegendTitle"  = "Légende";
+"example_color_info_statusLegendOn"     = "Actif";
+"example_color_info_statusLegendError"  = "Erreur";
+"example_color_info_statusLegendOff"    = "Inactif";
+// Accessibility labels
+"example_color_info_AL_service"     = "Service";
+"example_color_info_AL_active"      = "actif";
+"example_color_info_AL_error"       = "en erreur";
+"example_color_info_AL_inactive"    = "inactif";
+
+
+// ------------------------------
+// Examples - TextualAlternative
+// ------------------------------
+"criteria_category_textualAlternative_whatFor"   = "Les alternatives textuelles sont au coeur de l'accessibilité sur mobile.\nGrâce à elles, un utilisateur non voyant peut utiliser une application sans perte d'information.";
+"criteria_category_textualAlternative_howTo"     = "Tout comme pour les images, il est important de renseigner une alternative textuelle lorsque l'information n'est pas disponible pour les personnes malvoyantes/non-voyantes.\n\nC'est le cas des composants fournissant de l'information par la couleur, la forme, la position, le son...\n\nSur mobile, tous les composants peuvent recevoir une alternative textuelle, il est donc possible d'enrichir la vocalisation native d'un élément, y compris celle d'un simple texte.";
+
+// Examples - Redirection !
+"example_textualAlternative_image_title"        = "Les alternatives textuelles des images";
+"example_textualAlternative_elementState_title" = "L’état des éléments";
+"example_textualAlternative_form_title"         = "Les formulaires";
+
+// Examples - TextualAlternative -> Date
+"example_textualAlternative_date_title"                  = "Abréviation, date et heures";
+"example_textualAlternative_date_shortDescription"       = "Alternative textuelle de texte";
+"example_textualAlternative_date_description"            = "La place sur mobile étant réduite, on utilise bien souvent des abréviations pour les textes.\nCependant, cela pose un problème aux utilisateurs de synthèse vocale qui restitue les abréviations telles quelles.\n\nPour corriger ces vocalisations, il suffit de placer une alternative textuelle sur le texte. Cette alternative contient le texte non abrégé. La technique est la même pour les dates : positionner dans l'alternative textuelle du composant la date en toute lettre.\n\nA noter que VoiceOver sait reconnaitre quelques abréviations courantes. Par exemple, \"etc.\" est bien vocalisé \"etcetera\".";
+"example_textualAlternative_date_label"                  = "Ex. de mDAN";
+"example_textualAlternative_date_accessibilityLabel"     = "Exemples du Démonstrateur d’Accessibilité Numérique";
+"example_textualAlternative_date_app_accessibilityLabel" = "Application mobile, web etc.";
+"example_textualAlternative_date_rdv"                    = "Rdv avec le Dr. François";
+"example_textualAlternative_date_rdv_accessibilityLabel" = "Rendez-vous avec le docteur François";
+
+// Examples - TextualAlternative -> TextImage
+"example_textualAlternative_textImage_title"              = "Duo texte-image";
+"example_textualAlternative_textImage_shortDescription"   = "Pour les bouts de texte qui complète une image";
+"example_textualAlternative_textImage_description"        = "Certaines images sont régulièrement associées à du texte pour donner une information.\nC'est le cas notamment des \"messages non lus\" où une infobulle donne le nombre de messages à lire et où une image donne l'information \"message\".\n\nDans ce cas, la solution consiste à placer une alternative textuelle sur le texte qui donne toutes les informations nécessaires. Par exemple : \"3 messages non lus\".\n\nOn peut également placer cette alternative sur l'image mais dans ce cas, il faut penser à rendre le texte \"invisible\" pour le lecteur d'écran.";
+"example_textualAlternative_textImage_accessibilityLabel" = "mails non lus";
+
+// ------------------------------
+// Examples - Titles and headers
+// ------------------------------
+"criteria_category_titleAndHeader_whatFor"  = "Le titre de la page est le premier élément qui est vocalisé ou vu sur un écran mobile.\nIl facilite la navigation pour tout le monde : à tout moment, on sait où on se trouve dans l'application.\n\nLes entêtes sont propres à iOS. Elles permettent de donner la valeur sémantique \"titre\" à un élément.\nLes entêtes sont très pratique car VoiceOver intègre un mode de navigation d'entête en entête.";
+"criteria_category_titleAndHeader_howTo"    = "Chaque écran doit avoir un titre qui lui est propre ou qui permet de se repérer dans la navigation.";
+
+// Examples - Titles and headers -> Page titles
+"example_titleAndHeader_title_title"            = "Titre de page";
+"example_titleAndHeader_title_shortDescription" = "Chaque vue à son propre titre";
+"example_titleAndHeader_title_description"      = "Une erreur commune est de mettre un titre unique pour toutes les pages d'une application (ou même pas de titre du tout).\n\nIl est très important de choisir un titre qui donne les bonnes informations concernant la page sur laquelle on se trouve.";
+"example_titleAndHeader_title_segmentTitle"     = "Titre accessible";
+
+// Examples - Titles and headers -> HeadersBis
+"example_titleAndHeader_headerBis_title"            = "En-têtes";
+"example_titleAndHeader_headerBis_shortDescription" = "En-têtes sur des textes";
+"example_titleAndHeader_headerBis_description"      = "Les en-tête iOS permettent des structurer les pages en apportant une information supplémentaire. Cette information est utile à l'API d'accessibilité car VoiceOver est capable de naviguer d'en-tête en en-tête (molette de VoiceOver, mode en-tête). Cela permet de se déplacer plus rapidement dans la page.";
+"example_titleAndHeader_headerBis_headerLabelText"  = "Adresse de livraison";
+"example_titleAndHeader_headerBis_headerLabelText2" = "Adresse de facturation";
+
+// Examples - Titles and headers -> Headers
+"example_titleAndHeader_header_title"                   = "En-têtes - 2";
+"example_titleAndHeader_header_shortDescription"        = "En-têtes de listes";
+"example_titleAndHeader_header_description"             = "Il est également possible de positionner des en-tête sur les listes à section comme le montre l'exemple ci-dessous.";
+"example_elementState_foldArea_open_accessibilityHint"  = "Cliquer pour ouvrir la section";
+"example_elementState_foldArea_close_accessibilityHint" = "Cliquer pour fermer la section";
+"example_elementState_foldArea_firstnameList"           = "Liste de prénoms";
+
+
+// ------------------------------
+// Examples - Standard components
+// ------------------------------
+"criteria_category_standardComponents_whatFor" = "L'accessibilité  est prise en compte dans les composants natifs.\n\nDe plus, l'utilisation de composants standards permet à l'utilisateur de se retrouver dans une situation et un comportement habituels.\nLa navigation dans une interface standard est donc plus confortable.";
+"criteria_category_standardComponents_howTo"   = "Utiliser au maximum les composants natifs en modifiant leur apparence.\n\nSi aucun composant standard ne permet de répondre au besoin, créer un composant dédié basé sur un composant standard en veillant à conserver la cohérence de navigation et l'accessibilité.";
+
+// Examples - Standard components -> standard vs custom
+"example_standardComponents_standardVsCustom_title"              = "Composants standards";
+"example_standardComponents_standardVsCustom_shortDescription"   = "Différence avec les composants personnalisés";
+"example_standardComponents_tab_description"        = "Les exemples ci-dessous vous montre la différence entre la vocalisation d'un composant standard, en l'occurence les onglets, et un composant personnalisé.\nIl est cependant possible de rendre accessible un composant personnalisé ; c'est d'ailleurs ce que montre le second exemple accessible.\n\nLes composants standards apportent une vocalisation correct par défaut. L'utilisation de composants personnalisés nécessitent souvent de les rendre accessible en corrigeant, via les options adaptées, les défauts de vocalisation.";
+
+
+// ----------------------
+// Examples - Click zone
+// ----------------------
+"criteria_category_clickZone_whatFor" = "Une taille insuffisante pour la zone d'action d'un composant peut empêcher certains utilisateurs de profiter pleinement de l'application.\n\nCela peut engendrer des frustrations qui peuvent conduire à la désinstallation de l'application.";
+"criteria_category_clickZone_howTo"   = "Chaque élément cliquable d'une application doit donner à l'utilisateur une taille suffisante pour sa zone d'action.\n\nApple définit pour son système une taille de zone de clic minimum de 44pt.";
+
+// Examples - Click zone -> Click zone size
+"example_clickZone_size_title"              = "Taille de la zone de clic";
+"example_clickZone_size_shortDescription"   = "Quelle est la taille minimale ?";
+"example_clickZone_size_description"        = "Dans l'exemple non accessible ci-dessous, le bouton \"play\" ne possède pas une taille suffisante et par conséquent il n'est pas aisé de cliquer dessus.";
+"example_clickZone_size_play_song"          = "Lancer la chanson";
+"example_clickZone_size_play_alertTitle"    = "Appuie sur le bouton de lecture détecté !";
+
+
+// ------------------------
+// Examples - ElementState
+// ------------------------
+"criteria_category_elementState_whatFor"   = "Si un élément ne restitue pas à la vocalisation son statut, sa nature ou son état, l'utilisateur de VoiceOver est dans l'impossibilité de comprendre ce qu'il se passe à l'écran.\n\nNe pas préciser qu'une zone est dépliée ou que l'on se trouve face à un système d'onglets (non standard) sont des exemples très fréquents.";
+"criteria_category_elementState_howTo"     = "Tout élément dont le statut est modifié durant l'utilisation de l'application doit restituer son état à travers son alternative textuelle.\n\nPar exemple, un élément qui peut être sélectionné/non sélectionné doit restituer son état à travers une alternative textuelle.";
+
+// Examples - ElementState -> Tabs
+"example_elementState_tab_title"              = "Onglets";
+"example_elementState_tab_shortDescription"   = "Présenter l’état des onglets";
+"example_elementState_tab_description"        = "Grand classique de ce problème : les onglets.\nPar défaut, les onglets proposés dans iOS sont parfaitement accessible. Cependant, il est fréquent de proposer des onglets personnalisés afin d’avoir un rendu différent.\n\nIl est donc à la charge du développeur de donner les informations de nature et d’états des onglets à l'utilisateur via les attributs d'accessibilité correspondants.\n\nNotons toutefois qu'il serait possible de rendre accessible ces onglets personnalisés comme cela est montré avec l'exemple de la section \"composants standards\".";
+
+"example_elementState_tab_page1"   = "Page 1";
+"example_elementState_tab_page2"   = "Page 2";
+"example_elementState_tab_page3"   = "Page 3";
+
+// Examples - ElementState -> SelectionList
+"example_elementState_selectionList_title"              = "Liste avec selection";
+"example_elementState_selectionList_shortDescription"   = "Liste avec selection";
+"example_elementState_selectionList_description"        = "Si un item d'une liste peut être sélectionné, il faut que son alternative textuelle reflète son état.\n\nDans le cas d'un item de liste, il suffit de redéfinir l'alternative du texte de l'item.";
+
+"example_elementState_selectionList_cell_man"   = "Homme";
+"example_elementState_selectionList_cell_woman" = "Femme";
+"example_elementState_selectionList_cell_clickToSelect" = "Cliquer pour selectionner";
+
+
+// Examples - ElementState -> FoldArea
+"example_elementState_foldArea_title"              = "Zones dépliables";
+"example_elementState_foldArea_shortDescription"   = "Présenter l’état des zones dépliables et accordéons";
+"example_elementState_foldArea_description"        = "Autre classique d\'élement qui ne restitue pas par défaut son état : les zones dépliables.\n\nEncore une fois, c'est grâce à l'alternative textuelle du titre de la zone dépliable que l'on peut donner à l'utilisateur de VoiceOver le statut de celle-ci.";
+
+// --------------------------
+// Examples - Ghost Elements
+// --------------------------
+"criteria_category_ghostElement_whatFor"   = "Bien qu'invisibles à l'écran, certains éléments peuvent être lus par le lecteur d'écran (éléments positionnés en dehors de la zone visible ou masqués par d'autres éléments).\n\nLa superposition d'écrans est quelque chose de courant sur mobile mais cela engendre des problèmes d'accessibilité très lourds à corriger si elle n'est pas faite correctement dès le départ.\n\nUn lecteur d'écran tel que VoiceOver est capable de lire les informations d'une vue qui est placée \"sous\" une autre.\nMais si l'utilisateur n'est plus capable d'interagir avec cette vue, cela perturbe totalement sa navigation et celle-ci devient vite impossible.";
+"criteria_category_ghostElement_howTo"     = "Masquer au lecteur d'écran tout élément non visible et tout élément qui ne doit pas prendre le focus lors de la lecture d'une page.";
+
+// Examples - Ghost Elements -> Alert
+"example_ghostElement_alert_title"                      = "Alerte";
+"example_ghostElement_alert_shortDescription"           = "Alerte avec éléments fantômes";
+"example_ghostElement_alert_description"                = "Dans l’exemple ci-dessous, l’alerte personnalisée présente ce problème de vue fantôme. En effet, avec VoiceOver d’activé, vous serez toujours en mesure de parcourir les éléments situés en-dessous.\n\nNotons toutefois qu'il serait possible de rendre accessible l'alerte personnalisée comme cela est expliqué avec l'exemple des onglets dans la section \"composants standards\".";
+"example_ghostElement_alert_buttonText"                 = "Alerte !";
+"example_ghostElement_alert_accessibleAlerteTitle"      = "Ceci est une alerte standard !";
+"example_ghostElement_alert_accessibleAlerteMessage"    = "";
+"example_ghostElement_alert_nonAccessibleAlerteTitle"   = "Ceci est une alerte personnalisée !";
+"example_ghostElement_alert_nonAccessibleAlerteMessage" = "";
+
+
+// ---------------------------
+// Examples - Content control
+// ---------------------------
+"criteria_category_contentControl_whatFor"  = "Sur mobile, les lecteurs d'écran essayent de transmettre au maximum à l'utilisateur les changements de contexte, ce qui peut donner des vocalisations permanentes, et donc inaudibles, ou empêcher toute action de l'utilisateur.";
+"criteria_category_contentControl_howTo"    = "L'utilisateur doit rester maître du contenu à tout instant. C'est particulièrement vrai avec le contenu interactif.\n\nIl faut donc éviter par exemple qu'une vidéo ne se lance directement en plein écran, qu'une vidéo ne se lance directement sans une action au préalable de l'utilisateur, qu'un carrousel défile de manière automatique etc.";
+
+// Examples - Content control -> Carousel
+"example_contentControl_carousel_title"                     = "Carousel automatique";
+"example_contentControl_carousel_shortDescription"          = "Eviter le défilement automatique";
+"example_contentControl_carousel_description"               = "Ici, le carrousel non accessible défile de façon automatique et ne permet pas d’obtenir les informations des images.\nDe plus, suivant l'implémentation de ce dernier, cela peut même aller jusqu'à une vocalisation systématique des changements qui peut engendrer un blocage auditif pour le reste de la page.";
+"example_contentControl_carousel_buttonText"                = "Afficher le carousel";
+"example_contentControl_carousel_accessibleCarousel"        = "Carousel accessible";
+"example_contentControl_carousel_nonAccessibleCarousel"     = "Carousel non accessible";
+"example_contentControl_carousel_imageLabel1"               = "Commandez avant le 21 décembre midi et recevez vos cadeaux avant Noël !";
+"example_contentControl_carousel_imageLabel2"               = "Bon plan - Sony Xperia Z3 à 1 euro au lieu de 69,99 avec un forfait Origami Play 4Go, livré avant Noël si commandé sur Orange.fr avant le 21 décembre 2015 midi, offre valable du 14 au 20 décembre 2015 inclus";
+"example_contentControl_carousel_imageLabel3"               = "Bon plan - un mois offert sur Origami Play 4Go pour toute nouvelle souscription à un forfait Origami Play 4Go avec engagement 24 mois avec le code promo PLAY4, offre valable du 14 au 20 décembre 2015 inclus";
+"example_contentControl_carousel_nonAccessibleImageLabel1"  = "Image carousel 1";
+"example_contentControl_carousel_nonAccessibleImageLabel2"  = "Image carousel 2";
+"example_contentControl_carousel_nonAccessibleImageLabel3"  = "Image carousel 3";
+"example_contentControl_carousel_buttonLabelAccessible"     = "Afficher le carousel accessible";
+"example_contentControl_carousel_buttonLabelNonAccessible"  = "Afficher le carousel non accessible";
+
+
+// Examples - Content control -> Slideshow
+"example_contentControl_slideshow_title"                        = "Diaporama d'images";
+"example_contentControl_slideshow_shortDescription"             = "Diaporama accessible, c'est possible !";
+"example_contentControl_slideshow_description"                  = "Dans cet exemple, on affiche simplement une image en cliquant sur le bouton. Une erreur commune est de vouloir passer l'image en plein écran à l'ouverture de la page.\n\nCela a pour effet de bloquer l'utilisateur de VoiceOver si aucune action n'a été prévue pour repasser en mode simple.";
+"example_contentControl_slideshow_buttonText"                   = "Afficher le diaporama";
+"example_contentControl_slideshow_accessibleSlideshow"          = "Diaporama accessible";
+"example_contentControl_slideshow_nonAccessibleSlideshow"       = "Diaporama non accessible";
+"example_contentControl_slideshow_imageLabel"                   = "";
+"example_contentControl_slideshow_playButtonLabel"              = "Lancer le diaporama";
+"example_contentControl_slideshow_closeButtonLabel"             = "Fermer";
+"example_contentControl_slideshow_previousButtonLabel"          = "Précédent";
+"example_contentControl_slideshow_nextButtonLabel"              = "Suivant";
+"example_contentControl_slideshow_buttonLabelAccessible"        = "Afficher le diaporama accessible";
+"example_contentControl_slideshow_buttonLabelNonAccessible"     = "Afficher le diaporama non accessible";
+
+
+// --------------------------
+// Examples - Content change
+// --------------------------
+"criteria_category_contentChange_whatFor"   = "Lorsque du contenu est modifié dynamiquement à la suite d'une action de l'utilisateur, il faut le notifier à la synthèse vocale.\n\nSans retour vocal, l'utilisateur ne sait pas qu'une action a été déclenchée.";
+"criteria_category_contentChange_howTo"     = "Sur une page, si du contenu est modifié dynamiquement suite à une action utilisateur, il est important que le lecteur d'écran soit notifié afin qu'il déclenche une vocalisation.\n\nPar exemple, les listes qui se rafraîchissent, ou un compteur de temps.";
+
+// Examples - Content change -> Element Update
+"example_contentChange_elementUpdate_title"             = "Mise à jour d'un élement";
+"example_contentChange_elementUpdate_shortDescription"  = "Vocaliser les mises à jour d'éléments dans la page";
+"example_contentChange_elementUpdate_description"       = "Dans cette exemple, une option de formulaire permet de faire apparaitre un nouveau champ..\nDans le cas de l'exemple non accessible, aucune vocalisation n'est enclenché à l’affichage. \nA contrario, dans l’exemple accessible, le focus est positionné sur le nouveau champ ce qui permet directement à l’utilisateur de comprendre qu’un changement a eu lieu.";
+"example_contentChange_elementUpdate_switchTitle"       = "Adresse de facturation identique à l'adresse de livraison";
+"example_contentChange_elementUpdate_placeholder"       = "Adresse de facturation";
+"example_contentChange_elementUpdate_deliveryAddress"   = "Adresse de livraison";
+"example_contentChange_elementUpdate_billingAddress"    = "Adresse de facturation";
+
+
+// ----------------------------
+// Examples - Horizontal Scroll
+// ----------------------------
+"criteria_category_horizontalScroll_whatFor"   = "Un scroll horizontal peut être très difficile à détecter si aucun visuel n'aide l'utilisateur à comprendre qu'il existe plusieurs pages.";
+"criteria_category_horizontalScroll_howTo"     = "Ne pas hésiter à afficher un élément pour indiquer un scroll horizontal (des \"points\" par exemple).\n\nQuand cela est nécessaire, ajouter également des boutons \"suivant\" et \"précédent\".";
+
+// Examples - Horizontal Scroll -> Carousel
+"example_horizontalScroll_carousel_title"                       = "Scroll horizontal";
+"example_horizontalScroll_carousel_shortDescription"            = "Indiquer que l'on peut scroller horizontalement";
+"example_horizontalScroll_carousel_description"                 = "Le carrousel accessible ci-dessous fait bien comprendre grâce aux \"points\" qu'il possède plusieurs pages.\n\nA contrario, le carrousel non accessible ne permet pas de comprendre en un coup d'œil cela et on peut facilement croire que c'est une seule et unique information.";
+"example_horizontalScroll_carousel_buttonText"                  = "Afficher le carousel";
+"example_horizontalScroll_carousel_accessibleCarousel"          = "Carousel accessible";
+"example_horizontalScroll_carousel_nonAccessibleCarousel"       = "Carousel non accessible";
+"example_horizontalScroll_carousel_imageLabel1"                 = "Commandez avant le 21 décembre midi et recevez vos cadeaux avant Noël !";
+"example_horizontalScroll_carousel_imageLabel2"                 = "Bon plan - Sony Xperia Z3 à 1 euro au lieu de 69,99 avec un forfait Origami Play 4Go, livré avant Noël si commandé sur Orange.fr avant le 21 décembre 2015 midi, offre valable du 14 au 20 décembre 2015 inclus";
+"example_horizontalScroll_carousel_imageLabel3"                 = "Bon plan - un mois offert sur Origami Play 4Go pour toute nouvelle souscription à un forfait Origami Play 4Go avec engagement 24 mois avec le code promo PLAY4, offre valable du 14 au 20 décembre 2015 inclus";
+"example_horizontalScroll_carousel_buttonLabelAccessible"       = "Afficher le carousel accessible";
+"example_horizontalScroll_carousel_buttonLabelNonAccessible"    = "Afficher le carousel non accessible";
+
+
+// ----------------
+// Examples - Form
+// ----------------
+"criteria_category_form_whatFor"   = "Lier les champs de formulaires avec leurs labels apporte une vocalisation supplémentaire qui permet à l'utilisateur de comprendre ce qu'il doit remplir lorsqu'il arrive sur un champ de formulaire.";
+"criteria_category_form_howTo"     = "Chaque champ de formulaire doit être lié à un label.";
+
+// Examples - Form -> Label
+"example_form_label_title"                        = "Formulaires";
+"example_form_label_shortDescription"             = "Label";
+"example_form_label_description"                  = "Dans l'exemple ci-dessous, certains champs de formulaire sont labellisés et d'autres non. Vous pouvez donc écouter la différence de vocalisation entre un champ labellisé et un champ non labellisé.\nA noter qu'un texte d'exemple qui remplit le champ est bien vocalisé.";
+"example_form_label_textfield_placeholder"        = "Nom";
+"example_form_label_textfield_accessibilityLabel" = "Nom d'utilisateur";
+"example_form_label_memory"                       = "Se souvenir de moi";
+"example_form_label_valid"                        = "Valider";
+
+
+// -------------------------
+// Examples - Reading Order
+// -------------------------
+"criteria_category_readingOrder_whatFor"  = "L'ordre de lecture permet à l'utilisateur de se repérer dans la navigation et d'assurer une cohérence fonctionnelle.\nIl est donc important d'y faire attention.";
+"criteria_category_readingOrder_howTo"    = "L'ordre de lecture doit être logique et cohérent.";
+
+// Examples - Reading Order -> Remote Control
+"example_readingOrder_remoteControl_title"              = "Ordre de lecture";
+"example_readingOrder_remoteControl_shortDescription"   = "Ordre de lecture";
+"example_readingOrder_remoteControl_description"        = "Dans l'exemple ci-dessous, l'ordre de lecture \"non accessible\" ne permet pas d'utiliser les boutons de la télécommande correctement.\n\nCelui-ci est incohérent et inconsistant. Il n'y a pas de logique dans l'enchaînement des numéros de chaîne.";
+"example_readingOrder_remoteControl_volumePlus"         = "augmenter le volume";
+"example_readingOrder_remoteControl_volumeMinus"        = "diminuer le volume";
+"example_readingOrder_remoteControl_channelPlus"        = "passer à la chaine suivante";
+"example_readingOrder_remoteControl_channelMinus"       = "passer à la chaine précédente";
+
+
+// --------------------
+// Examples - Language
+// --------------------
+"criteria_category_language_whatFor"   = "La vocalisation donnée par VoiceOver s'effectue par défaut dans la langue du système du mobile.\nIl arrive parfois que certain mots/textes d'une application soient dans une langue différente.\nAfin que la vocalisation soit audible, il faut déclarer ces textes dans la langue correspondante.";
+"criteria_category_language_howTo"     = "Déclarer les changement de languages pour les textes et mots non courant.";
+
+// Examples - language -> text
+"example_language_accent_title"             = "Vocalisation selon la langue";
+"example_language_accent_shortDescription"  = "Assurer une bonne vocalisation pour les mots dans une autre langue";
+"example_language_accent_description"       = "Ci-dessous, quelques exemples qu'il est nécessaire de déclarer dans une autre langue que celle du système.";
+"example_language_accent_hello"             = "hello, welcome on Orange";
+"example_language_accent_newsletter"        = "warning";
+"example_language_accent_login"             = "download completed";
+
+
+// ---------------------------------------------------------------------------
+// Developer tab
+// ---------------------------------------------------------------------------
+// Title
+"tab_developer_title"   = "Développeur";
+"tab_developer_title_short"   = "Développeur";
+
+// Sections
+"developer_section_description" = "Description et utilisation";
+"developer_section_options"     = "Options";
+
+// Description
+"developer_description_cell"    = "Le guide pour développeur a pour vocation d'aider les développeur avec les principales options d'accessibilité du SDK iOS. A travers différentes catégories, ce guide explique comment utiliser les attributs et méthodes d'accessibilité et propose des liens vers la documentation officielle d'Apple.";
+
+// Options
+"developer_option_textualAlternative"           = "Alternative textuelle";
+"developer_option_elementsSemantic"             = "Sémantique des éléments";
+"developer_option_hideItems"                    = "Masquer des éléments à l’accessibilité";
+"developer_option_changeVocalization"           = "Modifier la langue de vocalisation";
+"developer_option_changeVoiceOverFocus"         = "Modifier la zone de focus VoiceOver";
+"developer_option_groupItems"                   = "Grouper des éléments";
+"developer_option_accessibilityOptionsState"    = "Connaitre l’état des options d’accessibilité";
+"developer_option_triggerVocalization"          = "Déclencher une vocalisation";
+"developer_option_notifyChangeOnPage"           = "Informer d’une modification sur la page";
+"developer_option_systemEvents"                 = "Evènements système";
+"developer_option_textSize"                     = "Taille des textes";
+"developer_option_readingOrder"                 = "Ordre de lecture";
+
+
+// ---------------------------------------------------------------------------
+// Voiceover tab
+// ---------------------------------------------------------------------------
+// Title
+"tab_voiceover_title"   = "VoiceOver";
+
+// Text
+"voiceover_text_desctription"   = "VoiceOver est un lecteur d’écran intégré qui décrit à haute voix les éléments qui apparaissent sur l’écran de votre téléphone. Il est gratuit et permet à un utilisateur non ou mal voyant, dyslexique et illettré de pouvoir vocaliser tous les éléments visibles contenus dans la page.";
+"voiceover_text_activation"     = "Pour activer VoiceOver, il suffit de l’activer dans le menu :\n\n";
+"voiceover_text_settingsPath"   = "Réglages/Général/Accessibilité/VoiceOver";
+"voiceover_text_use"            = "Lorsque VoiceOver est activé, les gestes standard effectués sur l’écran tactile donnent des résultats différents ; en outre, des gestes supplémentaires permettent de se déplacer à l’écran et de contrôler des éléments sélectionnés. VoiceOver comprend des gestes de toucher et de balayage à deux, trois et quatre doigts. Nous décrirons ici les gestes de base pour une utilisation courante de VoiceOver.";
+"voiceover_text_links"          = "Pour plus d’informations sur VoiceOver et une description détaillée de ses fonctionnalités, nous vous invitons à lire la ";
+"voiceover_appleDocLink"        = "documentation officielle d’Apple";
+"voiceover_gestures"            = "Voir tous les gestes";
+
+// Gestures
+"voiceover_gesture_action_1"    = "Se déplacer avec un doigt sur l’écran";
+"voiceover_gesture_action_2"    = "Double-cliquer n’importe où sur l’écran";
+"voiceover_gesture_action_3"    = "Slider vers le haut en utilisant trois doigts";
+"voiceover_gesture_action_4"    = "Slider vers le bas en utilisant trois doigts";
+"voiceover_gesture_action_5"    = "Slider vers la gauche en utilisant trois doigts";
+"voiceover_gesture_action_6"    = "Slider vers la droite en utilisant trois doigts";
+"voiceover_gesture_action_7"    = "Slider vers la gauche en utilisant un doigt";
+"voiceover_gesture_action_8"    = "Slider vers la droite en utilisant un doigt";
+"voiceover_gesture_action_9"    = "Slider vers le haut en utilisant un doigt";
+"voiceover_gesture_action_10"   = "Slider vers le bas en utilisant un doigt";
+"voiceover_gesture_result_1"    = "Explorer l’écran et entendre la vocalisation de l’élément qui est touché.";
+"voiceover_gesture_result_2"    = "Ouvre ou active l’élément qui a été touché (vocalisé) en dernier.";
+"voiceover_gesture_result_3"    = "Se déplacer verticalement (vers le haut) sur une liste ou sur une page à condition qu’elle soit sélectionnée.";
+"voiceover_gesture_result_4"    = "Se déplacer verticalement (vers le bas) sur une liste ou sur une page à condition qu’elle soit sélectionnée.";
+"voiceover_gesture_result_5"    = "Se déplacer horizontalement (vers la gauche) quand c’est possible.";
+"voiceover_gesture_result_6"    = "Se déplacer horizontalement (vers la droite) quand c’est possible.";
+"voiceover_gesture_result_7"    = "Déplacer le focus VoiceOver sur l’élément précédent.";
+"voiceover_gesture_result_8"    = "Déplacer le focus VoiceOver sur le prochain élément.";
+"voiceover_gesture_result_9"    = "Permet d’augmenter la valeur d’un élément ajustable.";
+"voiceover_gesture_result_10"   = "Permet de diminuer la valeur d’un élément ajustable.";
+"voiceover_imagesLicense"       = "This images are licensed under a Creative Commons Share Alike 2.0 license and modified by Orange";
+"voiceover_imagesCredit"        = "Photo credit: openexhibit (";
+"voiceover_imagesCreditLink"    = "http://www.flickr.com/people/27512715@N02/";
+
+// ---------------------------------------------------------------------------
+// Options tab
+// ---------------------------------------------------------------------------
+// Title
+"tab_options_title" = "Options";
+
+// Description
+"options_description_cell" = "Sous iOS il existe un certain nombre d'options d'accessibilité pour améliorer le confort des utilisateurs en situation de handicap. Nous allons ici en présenter quelques-unes.";
+
+// Sections
+"options_section_accessibilityOptions" = "Options d'accessibilité";
+
+// Options
+"options_option_characterScale"     = "Agrandissement des caractères";
+"options_option_contrastIncrease"   = "Augmentation des contrastes";
+"options_option_monoMode"           = "Mode mono";
+"options_option_zoom"               = "Zoom";
+"options_option_colorInversion"     = "Inversion des couleurs";
+"options_option_buttonForm"         = "Formes des boutons";
+"options_option_selectionControl"   = "Contrôle de sélection";
+
+
+// -------------------------
+// Option - Character scale
+// -------------------------
+"option_characterScale_desctription"    = "Cette option permet d'agrandir la taille des caractères du téléphone et des applications. Comme expliqué dans le guide développeur, il est nécessaire pour les applications de faire ce qu'il faut pour que cette option fonctionne correctement.";
+"option_characterScale_activation"      = "Réglages > Général > Accessibilité > Police plus grande";
+
+
+// --------------------------
+// Option - Contrast increase
+// --------------------------
+"option_contrastIncrease_desctription"  = "Permet d’améliorer artificiellement le contraste.";
+"option_contrastIncrease_activation"    = "Réglages > Général > Accessibilité > Augmenter le contraste";
+
+
+// -------------------
+// Option - Mono mode
+// -------------------
+"option_monoMode_desctription"  = "Permet de passer d’un son stéréo à mono. Très utile pour les personnes avec une déficience auditive sur une oreille.";
+"option_monoMode_activation"    = "Réglages > Général > Accessibilité > Audio mono";
+
+
+// --------------
+// Option - Zoom
+// --------------
+"option_zoom_desctription"  = "Permet de zoomer sur l'écran. Une fois l'option activée, appuyez deux fois sur l'écran avec trois doigts pour effectuer le zoom. Il est ensuite possible de se déplacer sur l’écran en faisant glisser trois doigts.";
+"option_zoom_activation"    = "Réglages > Général > Accessibilité > Zoom";
+
+// -------------------------
+// Option - Color inversion
+// -------------------------
+"option_colorInversion_desctription"    = "Cette option permet d'inverser les couleurs à l'écran, ce qui peut aider à traiter les problèmes de contrastes sur certaines applications.";
+"option_colorInversion_activation"      = "Réglages > Général > Accessibilité > Inverser les couleurs";
+
+// -------------------------
+// Option - Button Form
+// -------------------------
+"option_buttonForm_desctription"    = "Permet d’afficher une forme aux boutons. Depuis iOS 7, les boutons sont de simples textes de couleurs. Avec cette option activée, les boutons sont dessinés.";
+"option_buttonForm_activation"      = "Réglages > Général > Accessibilité > Formes des boutons";
+
+// -------------------------
+// Option - Focus Control
+// -------------------------
+"option_selectionControl_desctription"    = "Le contrôle de sélection permet, une fois activé, d’afficher un focus à l’écran qui va se déplacer automatiquement d’élément interactif en élément interactif. Il est possible, via une action utilisateur, d’activer l’élément focus, d’annuler son action etc. L’action peut être configurée : par exemple, on peut utiliser la caméra pour que l’action soit un simple mouvement de tête vers la droite. Cet option est utile pour des personnes avec des difficultés motrices.";
+"option_selectionControl_activation"      = "Réglages > Général > Accessibilité > Contrôle de sélection";
+
+
+
+// ---------------------------------------------------------------------------
+// Plus tab
+// ---------------------------------------------------------------------------
+// Title
+"tab_plus_title"    = "Plus";
+"tab_plus_title_accessibilityLabel"    = "plusse";
+
+// Menu items
+"plus_menu_home"                = "Introduction à l'accessibilité";
+"plus_menu_orangeAccessibility" = "L'accessibilité chez Orange";
+"plus_menu_about"               = "A propos";
+"plus_menu_contact"             = "Contact";
+
+
+// ----------------
+// Menu - Intro
+// ----------------
+"intro_header1" = "L’accessibilité, kesako ?";
+"intro_header2" = "Pourquoi l’accessibilité numérique ?";
+"intro_header3" = "Et DAN dans tout ça :";
+"intro_text1"   = "C'est la capacité d'un produit ou d'un service à être utilisable par tous dans tous les contextes. On dit d'une application mobile qu'elle est accessible si elle interagit correctement avec les options d'accessibilité offertes nativement par le mobile.\n\nAinsi, un utilisateur non-voyant, malvoyant, malentendant ou présentant tout autre type de handicap sera en mesure d'utiliser 100% des fonctionnalités d'une application.";
+"intro_text2"   = "• Parce qu’elle bénéficie à 80 millions de personnes handicapeés ou séniors en Europe\n• Parce que nous passons en moyenne 8 ans de notre vie en situation de handicap\n• Mais aussi et surtout parce qu’un produit accessible est plus facile à utiliser et qu’il bénéficie à tous !";
+"intro_text3"   = "L'accessibilité numérique est un domaine souvent inconnu ou méconnu.\n\nLe présent Démonstrateur d'Accessibilité Numérique a pour vocation de présenter l'accessibilité mobile sous toutes ses formes. \n\nL'application présente donc : \n\n- Ce qu'est l'accessibilité numérique.\n- Les options d'accessibilité qui existent sous iOS.\n- Comment utiliser les options offertes par les mobiles?.\n- Un guide pour VoiceOver (le lecteur d\écran d'iOS).\n- Les critères d'accessibilité mobile (présentation non technique) avec des exemples.\n- Un mémo pour développeurs (comment développer accessible).";
+
+
+// ----------------
+// Menu - Orange
+// ----------------
+"orange_nav_title"  = "Orange";
+"orange_title"      = "Et chez Orange ?";
+"orange_header"     = "Applications accessibles";
+"orange_text"       = "Orange s'efforce de rendre ses applications mobiles accessibles. Dans cette section, nous vous proposons une liste d'applications ayant porté un intérêt particulier à l'accessibilité pendant leurs développements.";
+"orange_myLivebox"  = "Ma Livebox";
+"orange_myNetwork"  = "Mon Réseau";
+"orange_myOrange"   = "Orange et moi";
+
+
+// ---------------
+// Menu - About
+// ---------------
+"about_title"               = "À propos";
+"about_companyText"         = "mDAN v1.0.0";
+"about_otherLicencesHeader"   = "Logiciels tiers";
+"about_legalNoticeText"     = "Documentation sous licence CC BY 3.0, code source de l'application ainsi que les exemples sous licence http://google.com .\n\nLe logo Orange ainsi que certaines images et captures sont la propriété d'Orange:\nCopyright &#169; 2016 Orange SA All rights reserved\n\n%@";
+"about_otherLicencesText"    = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+
+// ---------------
+// Menu - Contact
+// ---------------
+"contact_title"         = "Contact";
+"contact_webSite"       = "• Site web";
+"contact_support"       = "• Demande de support";
+"contact_contactTeam"   = "Contacter l'équipe :";

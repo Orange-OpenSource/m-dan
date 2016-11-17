@@ -1,0 +1,35 @@
+<!--
+ * This file is part of mDAN | mDan is a mobile application 
+ * which explains accessibility guidelines and presents the best practices of
+ * a mobile systems in action.
+ *
+ * Copyright (c)  2016  Orange SA
+ * See the Creative Commons Legal Code Attribution 3.0 Unported License for
+ * more details (LICENSE file).
+ -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+        <style type="text/css">
+            body{
+                font-family: '-apple-system', 'HelveticaNeue';
+            }
+            .italic{
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <p>In the case of dynamically modified element or component not inheriting from <span class="italic">UIView</span> it is possible to modify the focus area of accessibility of this element, i.e. the area VoiceOver highlights when focusing an element.
+        <ul>
+            <li><span class="italic">AccessibilityFrame</span>: sets the area via a rectangle (<span class="italic">CGRect</span>). Generally, for an element inheriting from <span class="italic">UIView</span>, this area is the "visible" part of the view.</li>
+            <li><span class="italic">AccessibilityPath</span>: equivalent to <span class="italic">AccessibilityFrame</span> but sets the area via Bezier curves.</li>
+            <li><span class="italic">AccessibilityActivationPoint</span>: the activation "point" of an element for accessibility tools. By default, this point is at the center of the element.</li>
+        </ul>
+        </p>
+    </body>
+</html>

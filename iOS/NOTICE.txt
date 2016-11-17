@@ -1,0 +1,44 @@
+Parts list under Orange SA Copyright
+Copyright (C) 2016 Orange SA All rights reserved
+
+The following parts are proprietary information of Orange.
+You shall not use or display any trade names, trademarks, service marks, products names, illustrations or designs used 
+within the software and owned by Orange SA and its subsidiaries, in whole or part of, in any medium, except as required 
+for reasonable and customary use in describing the origin of the software and reproducing the content of the NOTICE 
+and DOCUMENTATION files.
+Any use or displaying shall constitute an infringement under intellectual property laws of France and international conventions.
+
+Note : * can replace any characters
+
+./DAN/Assets.xcassets/AppIcon.appiconset/Icon*.png
+./DAN/Assets.xcassets/Brand Assets.launchimage/Default*.png
+./DAN/Assets.xcassets/Brand Assets.launchimage/splash-*.png
+./DAN/Assets.xcassets/Carousel/carousel_img1.imageset/carousel1.png
+./DAN/Assets.xcassets/Carousel/carousel_img2.imageset/carousel2.png
+./DAN/Assets.xcassets/Carousel/carousel_img3.imageset/carousel3.png
+./DAN/Assets.xcassets/ColorInfoServices/service_audio.imageset/service_audio.pdf
+./DAN/Assets.xcassets/ColorInfoServices/service_browser.imageset/service_browser.pdf
+./DAN/Assets.xcassets/ColorInfoServices/service_email.imageset/service_email.pdf
+./DAN/Assets.xcassets/ColorInfoServices/service_video.imageset/service_video.pdf
+./DAN/Assets.xcassets/dan-icon.imageset/Icon*.png
+./DAN/Assets.xcassets/header-check.imageset/header-check.pdf
+./DAN/Assets.xcassets/header-cross.imageset/header-cross.pdf
+./DAN/Assets.xcassets/icon_*.imageset/icon_*.pdf
+./DAN/Assets.xcassets/illu_*.imageset/illu_*.pdf
+./DAN/Assets.xcassets/logo_mdan.imageset/logo_mdan.pdf
+./DAN/Assets.xcassets/mountain.imageset/mountain.png
+./DAN/Assets.xcassets/Orange apps/myLivebox.imageset/myLivebox.pdf
+./DAN/Assets.xcassets/Orange apps/myNetwork.imageset/myNetwork.pdf
+./DAN/Assets.xcassets/Orange apps/myOrange.imageset/myOrange.pdf
+./DAN/Assets.xcassets/orange-et-moi.imageset/orange-et-moi-1.png
+./DAN/Assets.xcassets/orange.imageset/orange.pdf
+./DAN/Assets.xcassets/pub-livebox.imageset/pub-livebox.png
+./DAN/Assets.xcassets/Remote/tv-minus.imageset/tv-minus.pdf
+./DAN/Assets.xcassets/Remote/tv-plus.imageset/tv-plus.pdf
+./DAN/Assets.xcassets/Remote/volume-minus.imageset/volume-minus.pdf
+./DAN/Assets.xcassets/Remote/volume-plus.imageset/volume-plus.pdf
+./DAN/Assets.xcassets/Slideshow/slideshow_img.imageset/splash*.png
+
+
+Cover of Mael's album "Mary Daisy Jane" is under the Creative Commons Attribution-Share Alike 3.0 Unported license and is the property of its author or licensor.
+https://creativecommons.org/licenses/by-sa/3.0/deed.en

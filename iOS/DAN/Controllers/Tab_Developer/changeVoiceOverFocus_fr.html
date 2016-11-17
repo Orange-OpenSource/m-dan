@@ -1,0 +1,35 @@
+<!--
+ * This file is part of mDAN | mDan is a mobile application 
+ * which explains accessibility guidelines and presents the best practices of
+ * a mobile systems in action.
+ *
+ * Copyright (c)  2016  Orange SA
+ * See the Creative Commons Legal Code Attribution 3.0 Unported License for
+ * more details (LICENSE file).
+ -->
+
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+        <style type="text/css">
+            body{
+                font-family: '-apple-system', 'HelveticaNeue';
+            }
+            .italic{
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Dans le cas d’objet modifié dynamiquement ou d’élément ne dérivant pas de <span class="italic" lang="en">UIView</span>, il est possible de déterminer la zone géographique d’accessibilité de cet élément, c’est à dire la zone que VoiceOver met en surbrillance lors du focus.
+            <ul>
+                <li><span class="italic" lang="en">AccessibilityFrame</span> : permet de définir cette zone via un rectangle (<span class="italic">CGRect</span>). Par défaut pour un élément dérivant de <span class="italic" lang="en">UIView</span>, cette zone est la partie « visible » de la vue.</li>
+                <li><span class="italic" lang="en">AccessibilityPath</span> : équivalent à <span class="italic" lang="en">AccessibilityFrame</span> mais permet de définir la zone via des courbes de Bézier.</li>
+                <li><span class="italic" lang="en">AccessibilityActivationPoint</span> : le « point » d’activation d’un élément pour les outils d’accessibilité. Par défaut, ce point est au centre de l’élément.</li>
+            </ul>
+        </p>
+    </body>
+</html>

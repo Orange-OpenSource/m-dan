@@ -1,0 +1,41 @@
+<!--
+ * This file is part of mDAN | mDan is a mobile application 
+ * which explains accessibility guidelines and presents the best practices of
+ * a mobile systems in action.
+ *
+ * Copyright (c)  2016  Orange SA
+ * See the Creative Commons Legal Code Attribution 3.0 Unported License for
+ * more details (LICENSE file).
+ -->
+
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+        <style type="text/css">
+            body{
+                font-family: '-apple-system', 'HelveticaNeue';
+            }
+            .italic{
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <p>L’attribut <span class="italic" lang="en">accessibilityTraits</span> permet de modifier l’aspect sémantique d’un composant. On peut décider ainsi qu’un item de liste soit pris en compte comme un bouton par VoiceOver car celui-ci est cliquable. De ce fait, l’<span class="italic" lang="en">accessibilityTrait</span> joue également sur la vocalisation de l’élément car cette valeur sémantique est restituée par VoiceOver.</br></br>
+        
+        Cet attribut d’accessibilité est disponible via l’interface builder mais également utilisable directement via le code.</br></br>
+        
+        Il existe beaucoup de traits. Ci-après, les principaux (les plus utiles) :</br>
+        <ul>
+            <li><span class="italic" lang="en">accessibilityTraitNone</span> : supprime toute valeur sémantique à l’élément.</li>
+            <li><span class="italic" lang="en">accessibilityTraitButton</span> : ajoute le trait « bouton », l’élément est vu comme un bouton par VoiceOver.
+            <li><span class="italic" lang="en">accessibilityTraitLink</span> : utile pour définir un label en tant que « lien ».</li>
+            <li><span class="italic" lang="en">accessibilityTraitHeader</span> : permet de définir un élément comme un en-tête (pour plus d’information, voir la section « titres et en-têtes » dans la partie critères de l’application).</li>
+            <li><span class="italic" lang="en">accessibilityTraitAdjustable</span> : permet de définir un élément comme un élément « ajustable », c’est-à-dire un élément dont la valeur instantanée peut être modifiée via un geste spécifique de VoiceOver.</li>
+        </ul>
+        </p>
+    </body>
+</html>

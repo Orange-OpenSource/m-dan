@@ -1,0 +1,41 @@
+<!--
+ * This file is part of mDAN | mDan is a mobile application 
+ * which explains accessibility guidelines and presents the best practices of
+ * a mobile systems in action.
+ *
+ * Copyright (c)  2016  Orange SA
+ * See the Creative Commons Legal Code Attribution 3.0 Unported License for
+ * more details (LICENSE file).
+ -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+        <style type="text/css">
+            body{
+                font-family: '-apple-system', 'HelveticaNeue';
+            }
+            .italic{
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <p>The <span class="italic">accessibilityTraits</span> attribute allows to specify the trait of an element to the accessibility API. Thus, it is possible to make a list item be considered as a button because it is clickable. Therefore, the <span class="italic">accessibilityTrait</span> attribute plays an important role on the element vocalization because the trait is vocalized by VoiceOver.</br></br>
+        
+        This accessibility attribute is available via the builder interface but also programmatically.</br></br>
+        
+        There are many available traits. The more commonly used are:</br>
+        <ul>
+            <li><span class="italic">accessibilityTraitNone</span>: removes any semantic value to the element.</li>
+            <li><span class="italic">accessibilityTraitButton</span>: adds the "button" trait, the element is seen as a button by VoiceOver.
+            <li><span class="italic">accessibilityTraitLink</span>: useful to define a label as a "link".</li>
+            <li><span class="italic">accessibilityTraitHeader</span> : defines an element as a header (for more information, see the "titles and headers" section).</li>
+            <li><span class="italic">accessibilityTraitAdjustable</span>: defines an element as an "adjustable" element, that is to say an element that users can adjust in a continuous manner, such as a slider or a picker view.</li>
+                </ul>
+        </p>
+    </body>
+</html>
