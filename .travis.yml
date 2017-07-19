@@ -22,7 +22,9 @@ cache:
     - $HOME/.android/build-cache
     - $HOME/.sonar/cache
 script:
-  - cd Android && ./gradlew aD
+  - cd Android 
+  - ./gradlew assembleDebug
+  - ./gradlew check
 
 
  
