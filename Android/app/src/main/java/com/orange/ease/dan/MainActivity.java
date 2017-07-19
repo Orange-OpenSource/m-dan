@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity implements OnNewFragment {
                 actionBar.setHomeButtonEnabled(true);
                 actionBar.setDisplayHomeAsUpEnabled(true);
                 mToolbar.setNavigationContentDescription(getString(R.string.navigation_return));
-                actionBar.setHomeAsUpIndicator(R.drawable.abc_ic_ab_back_mtrl_am_alpha);
+                actionBar.setHomeAsUpIndicator(R.drawable.abc_ic_ab_back_material);
             } else {
                 //mToolbar.setNavigationContentDescription(getString(R.string.navigation_home));
                 actionBar.setHomeButtonEnabled(false);
