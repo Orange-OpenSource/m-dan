@@ -1,16 +1,23 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.neenbedankt.android-apt'
-def AAVersion = '3.3.2'
+
+def AAVersion = '4.3.1'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 23
+        targetSdkVersion 25
         vectorDrawables.useSupportLibrary = true
+
+        // If you have different applicationIds for buildTypes or productFlavors uncomment this block.
+        //javaCompileOptions {
+     /*   annotationProcessorOptions {
+            arguments = ["resourcePackageName": android.defaultConfig.applicationId]
+        }*/
     }
+
 
     lintOptions {
         checkReleaseBuilds false
@@ -33,7 +40,7 @@ android {
         }
     }
 
-    // Specific config
+// Specific config
     productFlavors {
         qualif {
             applicationId "com.orange.ease.dan.qualif"
@@ -68,27 +75,20 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
     // AppCompat / Support
-    compile 'com.android.support:appcompat-v7:23.2.1'
-    compile 'com.android.support:cardview-v7:23.2.1'
-    compile 'com.android.support:recyclerview-v7:23.2.1'
-    apt "org.androidannotations:androidannotations:$AAVersion"
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+
+    annotationProcessor "org.androidannotations:androidannotations:$AAVersion"
     compile "org.androidannotations:androidannotations-api:$AAVersion"
+
     compile('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2') {
         exclude module: 'support-v4'
     }
-}
-
-apt {
-    arguments {
-        androidManifestFile variant.outputs[0].processResources.manifestFile
-        // if you have multiple outputs (when using splits), you may want to have other index than 0
-
-        // you should set your package name here if you are using different application IDs
-        resourcePackageName "com.orange.ease.dan"
-
-        // You can set optional annotation processing options here, like these commented options:
-        // logLevel 'INFO'
-        // logFile '/var/log/aa.log'
-    }
+    testCompile 'junit:junit:4.12'
 }
