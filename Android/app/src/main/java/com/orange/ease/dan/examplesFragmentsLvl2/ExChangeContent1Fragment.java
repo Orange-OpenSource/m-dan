@@ -23,7 +23,6 @@ import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
@@ -33,8 +32,8 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.orange.ease.dan.BaseFragment;
 import com.orange.ease.dan.R;
-import com.orange.ease.dan.navFragments.OnNewFragment;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EFragment;
@@ -44,9 +43,8 @@ import org.androidannotations.annotations.ViewById;
  * Created by Clément Roussillon on 12/02/16.
  */
 @EFragment(R.layout.example_frag_lvl2)
-public class ExChangeContent1Fragment extends Fragment{
+public class ExChangeContent1Fragment extends BaseFragment{
 
-    private OnNewFragment mOnNewFragment;
     @ViewById(R.id.textViewTitleExample)
     public TextView mTextViewTitleExample;
 
@@ -85,24 +83,6 @@ public class ExChangeContent1Fragment extends Fragment{
         return inflater.inflate(R.layout.example_frag_lvl2, container, false);
     }
 
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-
-        // This makes sure that the container activity has implemented
-        // the callback interface. If not, it throws an exception
-        try {
-            mOnNewFragment = (OnNewFragment) context;
-        } catch (ClassCastException e) {
-            throw new ClassCastException(context.toString()
-                    + " must implement OnNewFragment");
-        }
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-    }
 
     @AfterViews
     void updateView(){
