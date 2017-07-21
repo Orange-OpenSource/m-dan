@@ -19,11 +19,8 @@
 
 package com.orange.ease.dan.navFragments;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.ListFragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -33,6 +30,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.orange.ease.dan.BaseListFragment;
 import com.orange.ease.dan.R;
 import com.orange.ease.dan.examplesFragmentsLvl1.ExampleAltFragment_;
 import com.orange.ease.dan.examplesFragmentsLvl1.ExampleClickZoneFragment_;
@@ -52,21 +50,18 @@ import com.orange.ease.dan.examplesFragmentsLvl1.ExampleTxtSizeFragment_;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EFragment;
-import org.androidannotations.annotations.ViewById;
 
 @EFragment(R.layout.fragment_exemple)
-public class GuideFragment extends ListFragment {
+public class GuideFragment extends BaseListFragment {
 
     private String mTitle = "";
-    private OnNewFragment mOnNewFragment;
 
     public TextView mCriteriaLabel;
     public TextView mCriteriaDescription;
     public TextView mCriteriaListLabel;
     public View mHeaderView;
 
-    @ViewById(android.R.id.list)
-    public ListView mCriteriaList;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -78,25 +73,11 @@ public class GuideFragment extends ListFragment {
     @AfterViews
     void initHeaderView(){
         mHeaderView = getActivity().getLayoutInflater().inflate(R.layout.header, null);
-        mCriteriaList.addHeaderView(mHeaderView);
+        listView.addHeaderView(mHeaderView);
 
         mCriteriaLabel = (TextView) mHeaderView.findViewById(R.id.headerLabel);
         mCriteriaDescription = (TextView) mHeaderView.findViewById(R.id.headerDescription);
         mCriteriaListLabel = (TextView) mHeaderView.findViewById(R.id.headerListLabel);
-    }
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-
-        // This makes sure that the container activity has implemented
-        // the callback interface. If not, it throws an exception
-        try {
-            mOnNewFragment = (OnNewFragment) context;
-        } catch (ClassCastException e) {
-            throw new ClassCastException(context.toString()
-                    + " must implement OnNewFragment");
-        }
     }
 
 
@@ -109,7 +90,7 @@ public class GuideFragment extends ListFragment {
         mCriteriaListLabel.setText(R.string.criteria_sections);
 
         String[] items = getResources().getStringArray(R.array.criteria_list);
-        ArrayAdapter<String> aa = new ArrayAdapter<String>(getActivity(),
+        ArrayAdapter<String> aa = new ArrayAdapter<>(getActivity(),
                 R.layout.simple_list_item_text, R.id.textCategory, items);
 
         setListAdapter(aa);

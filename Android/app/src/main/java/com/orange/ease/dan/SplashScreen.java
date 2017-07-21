@@ -19,7 +19,6 @@
 
 package com.orange.ease.dan;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 
 import org.androidannotations.annotations.AfterViews;
@@ -41,8 +40,7 @@ public class SplashScreen extends AppCompatActivity{
                 }catch(InterruptedException e){
                     e.printStackTrace();
                 }finally{
-                    Intent openMainActivity= new Intent("com.orange.ease.dan.MainActivity_");
-                    startActivity(openMainActivity);
+                    MainActivity_.intent(SplashScreen.this).start();
                 }
             }
         };
