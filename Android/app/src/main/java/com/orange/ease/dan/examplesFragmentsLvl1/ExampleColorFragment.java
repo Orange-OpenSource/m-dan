@@ -19,10 +19,8 @@
 
 package com.orange.ease.dan.examplesFragmentsLvl1;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.ListFragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,47 +29,27 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.orange.ease.dan.BaseListFragment;
 import com.orange.ease.dan.R;
 import com.orange.ease.dan.examplesFragmentsLvl2.ExColor1Fragment_;
 import com.orange.ease.dan.examplesFragmentsLvl2.ExColor2Fragment_;
-import com.orange.ease.dan.navFragments.OnNewFragment;
 
-import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EFragment;
-import org.androidannotations.annotations.ViewById;
 
-/**
- * Created by Clément Roussillon on 12/02/16.
- */
+import static com.orange.ease.dan.R.string.criteria_color_title;
+
+
 @EFragment(R.layout.criteria_template)
-public class ExampleColorFragment extends ListFragment {
+public class ExampleColorFragment extends BaseListFragment {
 
     private String mNextTitle = "";
-    private OnNewFragment mOnNewFragment;
 
     public TextView mHeaderCriteriaWhyLabel;
     public TextView mHeaderCriteriaWhyDescription;
     public TextView mHheaderCriteriaRuleLabel;
     public TextView mHeaderCriteriaRuleDescription;
     public TextView mHeaderCriteriaListLabel;
-    public View mHeaderView;
 
-    @ViewById(android.R.id.list)
-    public ListView mExampleList;
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-
-        // This makes sure that the container activity has implemented
-        // the callback interface. If not, it throws an exception
-        try {
-            mOnNewFragment = (OnNewFragment) context;
-        } catch (ClassCastException e) {
-            throw new ClassCastException(context.toString()
-                    + " must implement OnNewFragment");
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -80,8 +58,8 @@ public class ExampleColorFragment extends ListFragment {
         return inflater.inflate(R.layout.criteria_template, container, false);
     }
 
-    @AfterViews
-    void initHeaderView(){
+    @Override
+    protected void initHeader() {
         mHeaderView = getActivity().getLayoutInflater().inflate(R.layout.header_criteria, null);
 
         // init class variable
@@ -98,8 +76,6 @@ public class ExampleColorFragment extends ListFragment {
         mHeaderCriteriaRuleDescription.setFocusable(true);
         mHeaderCriteriaListLabel.setFocusable(true);
 
-        //add the header to the list
-        mExampleList.addHeaderView(mHeaderView);
     }
 
     @Override
@@ -145,8 +121,7 @@ public class ExampleColorFragment extends ListFragment {
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
-        mOnNewFragment.setTemplateTitle(getString(R.string.criteria_color_title),true);
+    protected int getTitleResource() {
+        return criteria_color_title;
     }
 }

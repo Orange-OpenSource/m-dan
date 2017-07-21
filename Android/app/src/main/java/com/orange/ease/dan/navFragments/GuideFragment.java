@@ -48,7 +48,6 @@ import com.orange.ease.dan.examplesFragmentsLvl1.ExampleStandardComponentFragmen
 import com.orange.ease.dan.examplesFragmentsLvl1.ExampleTitlesFragment_;
 import com.orange.ease.dan.examplesFragmentsLvl1.ExampleTxtSizeFragment_;
 
-import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EFragment;
 
 @EFragment(R.layout.fragment_exemple)
@@ -59,9 +58,6 @@ public class GuideFragment extends BaseListFragment {
     public TextView mCriteriaLabel;
     public TextView mCriteriaDescription;
     public TextView mCriteriaListLabel;
-    public View mHeaderView;
-
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -70,16 +66,13 @@ public class GuideFragment extends BaseListFragment {
         return inflater.inflate(R.layout.fragment_exemple, container, false);
     }
 
-    @AfterViews
-    void initHeaderView(){
-        mHeaderView = getActivity().getLayoutInflater().inflate(R.layout.header, null);
-        listView.addHeaderView(mHeaderView);
-
+    @Override
+    protected void initHeader() {
+        mHeaderView = inflateHeader(R.layout.header);
         mCriteriaLabel = (TextView) mHeaderView.findViewById(R.id.headerLabel);
         mCriteriaDescription = (TextView) mHeaderView.findViewById(R.id.headerDescription);
         mCriteriaListLabel = (TextView) mHeaderView.findViewById(R.id.headerListLabel);
     }
-
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -180,8 +173,7 @@ public class GuideFragment extends BaseListFragment {
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
-        mOnNewFragment.setTemplateTitle(getString(R.string.section_criteria),true);
+    protected int getTitleResource() {
+        return R.string.section_criteria;
     }
 }

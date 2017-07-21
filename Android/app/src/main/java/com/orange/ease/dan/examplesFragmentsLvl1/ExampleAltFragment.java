@@ -19,10 +19,8 @@
 
 package com.orange.ease.dan.examplesFragmentsLvl1;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.ListFragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,6 +29,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.orange.ease.dan.BaseListFragment;
 import com.orange.ease.dan.R;
 import com.orange.ease.dan.examplesFragmentsLvl2.ExForm1Fragment_;
 import com.orange.ease.dan.examplesFragmentsLvl2.ExImg3Fragment_;
@@ -38,11 +37,8 @@ import com.orange.ease.dan.examplesFragmentsLvl2.ExStateElmts1Fragment_;
 import com.orange.ease.dan.examplesFragmentsLvl2.ExTxt1Fragment_;
 import com.orange.ease.dan.examplesFragmentsLvl2.ExTxt2Fragment_;
 import com.orange.ease.dan.examplesFragmentsLvl2.ExTxt3FootballFragment_;
-import com.orange.ease.dan.navFragments.OnNewFragment;
 
-import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EFragment;
-import org.androidannotations.annotations.ViewById;
 
 /**
  * Created by Clément Roussillon on 12/02/16.
@@ -50,34 +46,17 @@ import org.androidannotations.annotations.ViewById;
  * Modified by Frédéric Coudurier on 26/02/16
  */
 @EFragment(R.layout.criteria_template)
-public class ExampleAltFragment extends ListFragment {
+public class ExampleAltFragment extends BaseListFragment {
 
     private String mNextTitle = "";
-    private OnNewFragment mOnNewFragment;
 
     public TextView mHeaderCriteriaWhyLabel;
     public TextView mHeaderCriteriaWhyDescription;
     public TextView mHheaderCriteriaRuleLabel;
     public TextView mHeaderCriteriaRuleDescription;
     public TextView mHeaderCriteriaListLabel;
-    public View mHeaderView;
 
-    @ViewById(android.R.id.list)
-    public ListView mExampleList;
 
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-
-        // This makes sure that the container activity has implemented
-        // the callback interface. If not, it throws an exception
-        try {
-            mOnNewFragment = (OnNewFragment) context;
-        } catch (ClassCastException e) {
-            throw new ClassCastException(context.toString()
-                    + " must implement OnNewFragment");
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -86,8 +65,9 @@ public class ExampleAltFragment extends ListFragment {
         return inflater.inflate(R.layout.criteria_template, container, false);
     }
 
-    @AfterViews
-    void initHeaderView(){
+
+    @Override
+    protected void initHeader() {
         mHeaderView = getActivity().getLayoutInflater().inflate(R.layout.header_criteria, null);
 
         // init class variable
@@ -97,15 +77,6 @@ public class ExampleAltFragment extends ListFragment {
         mHeaderCriteriaRuleDescription = (TextView) mHeaderView.findViewById(R.id.headerCriteriaRuleDescription);
         mHeaderCriteriaListLabel = (TextView) mHeaderView.findViewById(R.id.headerCriteriaListLabel);
 
-        //for accessibility : force Talckback focus on all element
-        mHeaderCriteriaWhyLabel.setFocusable(true);
-        mHeaderCriteriaWhyDescription.setFocusable(true);
-        mHheaderCriteriaRuleLabel.setFocusable(true);
-        mHeaderCriteriaRuleDescription.setFocusable(true);
-        mHeaderCriteriaListLabel.setFocusable(true);
-
-        //add the header to the list
-        mExampleList.addHeaderView(mHeaderView);
     }
 
     @Override
@@ -165,8 +136,7 @@ public class ExampleAltFragment extends ListFragment {
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
-        mOnNewFragment.setTemplateTitle(getString(R.string.criteria_alt_title),true);
+    protected int getTitleResource() {
+        return R.string.criteria_alt_title;
     }
 }
