@@ -19,17 +19,12 @@
 
 package com.orange.ease.dan.examplesFragmentsLvl1;
 
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
-import com.orange.ease.dan.BaseListFragment;
+import com.orange.ease.dan.BaseCriteriaListFragment;
 import com.orange.ease.dan.R;
 import com.orange.ease.dan.examplesFragmentsLvl2.ExClickZone1Fragment_;
 
@@ -38,63 +33,22 @@ import org.androidannotations.annotations.EFragment;
 import static com.orange.ease.dan.R.string.criteria_clickarea_title;
 
 
-@EFragment(R.layout.criteria_template)
-public class ExampleClickZoneFragment extends BaseListFragment {
-
-    private String mNextTitle = "";
-
-    public TextView mHeaderCriteriaWhyLabel;
-    public TextView mHeaderCriteriaWhyDescription;
-    public TextView mHheaderCriteriaRuleLabel;
-    public TextView mHeaderCriteriaRuleDescription;
-    public TextView mHeaderCriteriaListLabel;
-    public View mHeaderView;
+@EFragment
+public class ExampleClickZoneFragment extends BaseCriteriaListFragment {
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.criteria_template, container, false);
+    protected int getRuleDescription() {
+        return R.string.criteria_clickarea_rule_description;
     }
 
-
     @Override
-    protected void initHeader() {
-        mHeaderView = getActivity().getLayoutInflater().inflate(R.layout.header_criteria, null);
-
-        // init class variable
-        mHeaderCriteriaWhyLabel = (TextView) mHeaderView.findViewById(R.id.headerCriteriaWhyLabel);
-        mHeaderCriteriaWhyDescription = (TextView) mHeaderView.findViewById(R.id.headerCriteriaWhyDescription);
-        mHheaderCriteriaRuleLabel = (TextView) mHeaderView.findViewById(R.id.headerCriteriaRuleLabel);
-        mHeaderCriteriaRuleDescription = (TextView) mHeaderView.findViewById(R.id.headerCriteriaRuleDescription);
-        mHeaderCriteriaListLabel = (TextView) mHeaderView.findViewById(R.id.headerCriteriaListLabel);
-
-        //for accessibility : force Talckback focus on all element
-        mHeaderCriteriaWhyLabel.setFocusable(true);
-        mHeaderCriteriaWhyDescription.setFocusable(true);
-        mHheaderCriteriaRuleLabel.setFocusable(true);
-        mHeaderCriteriaRuleDescription.setFocusable(true);
-        mHeaderCriteriaListLabel.setFocusable(true);
-
+    protected int getWhyDescription() {
+        return R.string.criteria_clickarea_why_description;
     }
 
-
     @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-
-        mHeaderCriteriaWhyLabel.setText(R.string.criteria_template_why);
-        mHeaderCriteriaWhyDescription.setText(R.string.criteria_clickarea_why_description);
-        mHheaderCriteriaRuleLabel.setText(R.string.criteria_template_rule);
-        mHeaderCriteriaRuleDescription.setText(R.string.criteria_clickarea_rule_description);
-        mHeaderCriteriaListLabel.setText(R.string.criteria_template_example);
-
-        String[] items = getResources().getStringArray(R.array.criteria_clickarea_list);
-        ArrayAdapter<String> aa = new ArrayAdapter<String>(getActivity(),
-                R.layout.simple_list_item_text, R.id.textCategory, items);
-
-        setListAdapter(aa);
-        mHeaderCriteriaListLabel.setContentDescription(items.length + " " +getString(R.string.example));
+    protected int getListArray() {
+        return R.array.criteria_clickarea_list;
     }
 
     @Override
@@ -102,7 +56,7 @@ public class ExampleClickZoneFragment extends BaseListFragment {
         super.onListItemClick(l, v, position, id);
         Fragment newFragment = null;
 
-        mNextTitle = getString(R.string.example)+" "+(position)+"/"+"1";
+        String mNextTitle = getString(R.string.example)+" "+(position)+"/"+"1";
 
         switch (position) {
             case 1:

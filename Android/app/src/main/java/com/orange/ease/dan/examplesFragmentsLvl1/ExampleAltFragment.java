@@ -19,17 +19,12 @@
 
 package com.orange.ease.dan.examplesFragmentsLvl1;
 
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
-import com.orange.ease.dan.BaseListFragment;
+import com.orange.ease.dan.BaseCriteriaListFragment;
 import com.orange.ease.dan.R;
 import com.orange.ease.dan.examplesFragmentsLvl2.ExForm1Fragment_;
 import com.orange.ease.dan.examplesFragmentsLvl2.ExImg3Fragment_;
@@ -40,70 +35,31 @@ import com.orange.ease.dan.examplesFragmentsLvl2.ExTxt3FootballFragment_;
 
 import org.androidannotations.annotations.EFragment;
 
-/**
- * Created by Clément Roussillon on 12/02/16.
- *
- * Modified by Frédéric Coudurier on 26/02/16
- */
-@EFragment(R.layout.criteria_template)
-public class ExampleAltFragment extends BaseListFragment {
 
-    private String mNextTitle = "";
-
-    public TextView mHeaderCriteriaWhyLabel;
-    public TextView mHeaderCriteriaWhyDescription;
-    public TextView mHheaderCriteriaRuleLabel;
-    public TextView mHeaderCriteriaRuleDescription;
-    public TextView mHeaderCriteriaListLabel;
-
-
+@EFragment
+public class ExampleAltFragment extends BaseCriteriaListFragment {
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.criteria_template, container, false);
-    }
-
-
-    @Override
-    protected void initHeader() {
-        mHeaderView = getActivity().getLayoutInflater().inflate(R.layout.header_criteria, null);
-
-        // init class variable
-        mHeaderCriteriaWhyLabel = (TextView) mHeaderView.findViewById(R.id.headerCriteriaWhyLabel);
-        mHeaderCriteriaWhyDescription = (TextView) mHeaderView.findViewById(R.id.headerCriteriaWhyDescription);
-        mHheaderCriteriaRuleLabel = (TextView) mHeaderView.findViewById(R.id.headerCriteriaRuleLabel);
-        mHeaderCriteriaRuleDescription = (TextView) mHeaderView.findViewById(R.id.headerCriteriaRuleDescription);
-        mHeaderCriteriaListLabel = (TextView) mHeaderView.findViewById(R.id.headerCriteriaListLabel);
-
+    protected int getListArray() {
+        return R.array.criteria_alt_list;
     }
 
     @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
+    protected int getRuleDescription() {
+        return R.string.criteria_alt_rule_description;
+    }
 
-        mHeaderCriteriaWhyLabel.setText(R.string.criteria_template_why);
-        mHeaderCriteriaWhyDescription.setText(getString(R.string.criteria_alt_why_description));
-        mHheaderCriteriaRuleLabel.setText(R.string.criteria_template_rule);
-        mHeaderCriteriaRuleDescription.setText(getString(R.string.criteria_alt_rule_description));
-        mHeaderCriteriaListLabel.setText(R.string.criteria_template_example);
-
-
-        String[] items = getResources().getStringArray(R.array.criteria_alt_list);
-        ArrayAdapter<String> aa = new ArrayAdapter<String>(getActivity(),
-                R.layout.simple_list_item_text, R.id.textCategory, items);
-
-        setListAdapter(aa);
-        mHeaderCriteriaListLabel.setContentDescription(items.length + " " +getString(R.string.example));
+    @Override
+    protected int getWhyDescription() {
+        return R.string.criteria_alt_why_description;
     }
 
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
         Fragment newFragment = null;
-
-        mNextTitle = getString(R.string.example)+" "+(position)+"/6";
+        String mNextTitle = "";
+        mNextTitle = getString(R.string.example) + " " + (position) + "/6";
 
         switch (position) {
             case 1:

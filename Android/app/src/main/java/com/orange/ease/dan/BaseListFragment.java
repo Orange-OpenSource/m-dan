@@ -2,8 +2,10 @@ package com.orange.ease.dan;
 
 
 import android.content.Context;
+import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.orange.ease.dan.navFragments.OnNewFragment;
@@ -22,6 +24,8 @@ public abstract class BaseListFragment extends ListFragment{
 
     protected OnNewFragment mOnNewFragment;
 
+    protected ArrayAdapter<String> adapter;
+
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -36,6 +40,15 @@ public abstract class BaseListFragment extends ListFragment{
         }
     }
 
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        String[] items = getResources().getStringArray(getListArray());
+        adapter = new ArrayAdapter<>(getActivity(), R.layout.simple_list_item_text, R.id.textCategory, items);
+        setListAdapter(adapter);
+    }
+
+    protected abstract int getListArray();
     protected abstract void initHeader();
 
     protected abstract int getTitleResource();

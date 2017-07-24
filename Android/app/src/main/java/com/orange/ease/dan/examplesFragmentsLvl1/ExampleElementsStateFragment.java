@@ -19,107 +19,45 @@
 
 package com.orange.ease.dan.examplesFragmentsLvl1;
 
-import android.content.Context;
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.ListFragment;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
+import com.orange.ease.dan.BaseCriteriaListFragment;
 import com.orange.ease.dan.R;
 import com.orange.ease.dan.examplesFragmentsLvl2.ExStateElmts1Fragment_;
 import com.orange.ease.dan.examplesFragmentsLvl2.ExStateElmts2Fragment_;
 import com.orange.ease.dan.examplesFragmentsLvl2.ExStateElmts3Fragment_;
-import com.orange.ease.dan.navFragments.OnNewFragment;
 
-import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EFragment;
-import org.androidannotations.annotations.ViewById;
 
-/**
- * Created by Clément Roussillon on 12/02/16.
- */
-@EFragment(R.layout.criteria_template)
-public class ExampleElementsStateFragment extends ListFragment {
+import static com.orange.ease.dan.R.string.criteria_stateelements_rule_description;
+import static com.orange.ease.dan.R.string.criteria_stateelements_title;
+import static com.orange.ease.dan.R.string.criteria_stateelements_why_description;
 
-    private String mNextTitle = "";
-    private OnNewFragment mOnNewFragment;
 
-    public TextView mHeaderCriteriaWhyLabel;
-    public TextView mHeaderCriteriaWhyDescription;
-    public TextView mHheaderCriteriaRuleLabel;
-    public TextView mHeaderCriteriaRuleDescription;
-    public TextView mHeaderCriteriaListLabel;
-    public View mHeaderView;
-
-    @ViewById(android.R.id.list)
-    public ListView mExampleList;
+@EFragment
+public class ExampleElementsStateFragment extends BaseCriteriaListFragment {
 
     @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-
-        // This makes sure that the container activity has implemented
-        // the callback interface. If not, it throws an exception
-        try {
-            mOnNewFragment = (OnNewFragment) context;
-        } catch (ClassCastException e) {
-            throw new ClassCastException(context.toString()
-                    + " must implement OnNewFragment");
-        }
+    protected int getWhyDescription() {
+        return criteria_stateelements_why_description;
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.criteria_template, container, false);
-    }
-
-    @AfterViews
-    void initHeaderView(){
-        mHeaderView = getActivity().getLayoutInflater().inflate(R.layout.header_criteria, null);
-
-        // init class variable
-        mHeaderCriteriaWhyLabel = (TextView) mHeaderView.findViewById(R.id.headerCriteriaWhyLabel);
-        mHeaderCriteriaWhyDescription = (TextView) mHeaderView.findViewById(R.id.headerCriteriaWhyDescription);
-        mHheaderCriteriaRuleLabel = (TextView) mHeaderView.findViewById(R.id.headerCriteriaRuleLabel);
-        mHeaderCriteriaRuleDescription = (TextView) mHeaderView.findViewById(R.id.headerCriteriaRuleDescription);
-        mHeaderCriteriaListLabel = (TextView) mHeaderView.findViewById(R.id.headerCriteriaListLabel);
-
-        //for accessibility : force Talckback focus on all element
-        mHeaderCriteriaWhyLabel.setFocusable(true);
-        mHeaderCriteriaWhyDescription.setFocusable(true);
-        mHheaderCriteriaRuleLabel.setFocusable(true);
-        mHeaderCriteriaRuleDescription.setFocusable(true);
-        mHeaderCriteriaListLabel.setFocusable(true);
-
-        //add the header to the list
-        mExampleList.addHeaderView(mHeaderView);
-
+    protected int getRuleDescription() {
+        return criteria_stateelements_rule_description;
     }
 
     @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
+    protected int getListArray() {
+        return R.array.criteria_stateelement_list;
+    }
 
-        mHeaderCriteriaWhyLabel.setText(R.string.criteria_template_why);
-        mHeaderCriteriaWhyDescription.setText(R.string.criteria_stateelements_why_description);
-        mHheaderCriteriaRuleLabel.setText(R.string.criteria_template_rule);
-        mHeaderCriteriaRuleDescription.setText(R.string.criteria_stateelements_rule_description);
-        mHeaderCriteriaListLabel.setText(R.string.criteria_template_example);
-
-        String[] items = getResources().getStringArray(R.array.criteria_stateelement_list);
-        ArrayAdapter<String> aa = new ArrayAdapter<String>(getActivity(),
-                R.layout.simple_list_item_text, R.id.textCategory, items);
-
-        setListAdapter(aa);
-        mHeaderCriteriaListLabel.setContentDescription(items.length + " " +getString(R.string.example));
+    @Override
+    protected int getTitleResource() {
+        return criteria_stateelements_title;
     }
 
     @Override
@@ -127,7 +65,7 @@ public class ExampleElementsStateFragment extends ListFragment {
         super.onListItemClick(l, v, position, id);
         Fragment newFragment = null;
 
-        mNextTitle = getString(R.string.example)+" "+(position)+"/"+"3";
+        String mNextTitle = getString(R.string.example) + " " + (position) + "/" + "3";
 
         switch (position) {
             case 1:
@@ -150,9 +88,5 @@ public class ExampleElementsStateFragment extends ListFragment {
         }
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-        mOnNewFragment.setTemplateTitle(getString(R.string.criteria_stateelements_title),true);
-    }
+
 }

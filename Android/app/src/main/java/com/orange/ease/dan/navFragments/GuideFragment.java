@@ -19,14 +19,10 @@
 
 package com.orange.ease.dan.navFragments;
 
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -53,40 +49,17 @@ import org.androidannotations.annotations.EFragment;
 @EFragment(R.layout.fragment_exemple)
 public class GuideFragment extends BaseListFragment {
 
-    private String mTitle = "";
-
-    public TextView mCriteriaLabel;
-    public TextView mCriteriaDescription;
-    public TextView mCriteriaListLabel;
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_exemple, container, false);
-    }
-
     @Override
     protected void initHeader() {
         mHeaderView = inflateHeader(R.layout.header);
-        mCriteriaLabel = (TextView) mHeaderView.findViewById(R.id.headerLabel);
-        mCriteriaDescription = (TextView) mHeaderView.findViewById(R.id.headerDescription);
-        mCriteriaListLabel = (TextView) mHeaderView.findViewById(R.id.headerListLabel);
+        ((TextView) mHeaderView.findViewById(R.id.headerLabel)).setText(R.string.criteria_description_title);
+        ((TextView) mHeaderView.findViewById(R.id.headerDescription)).setText(R.string.criteria_description_content);
+        ((TextView) mHeaderView.findViewById(R.id.headerListLabel)).setText(R.string.criteria_sections);
     }
 
     @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-
-        mCriteriaLabel.setText(R.string.criteria_description_title);
-        mCriteriaDescription.setText(R.string.criteria_description_content);
-        mCriteriaListLabel.setText(R.string.criteria_sections);
-
-        String[] items = getResources().getStringArray(R.array.criteria_list);
-        ArrayAdapter<String> aa = new ArrayAdapter<>(getActivity(),
-                R.layout.simple_list_item_text, R.id.textCategory, items);
-
-        setListAdapter(aa);
+    protected int getListArray() {
+        return R.array.criteria_list;
     }
 
     @Override
@@ -99,7 +72,7 @@ public class GuideFragment extends BaseListFragment {
     public void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
         Fragment newFragment = null;
-
+        String mTitle = "";
         switch (position) {
             case 1:
                 mTitle = getString(R.string.criteria_img_title);
