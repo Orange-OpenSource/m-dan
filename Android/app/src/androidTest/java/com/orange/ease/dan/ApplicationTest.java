@@ -4,7 +4,6 @@ package com.orange.ease.dan;
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.espresso.NoMatchingViewException;
-import android.support.test.espresso.contrib.AccessibilityChecks;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 import android.test.suitebuilder.annotation.LargeTest;
@@ -78,7 +77,7 @@ public class ApplicationTest {
     @BeforeClass
     public static void enableAccessibilityChecks() {
         // AccessibilityChecks.enable().setRunChecksFromRootView(true).setSuppressingResultMatcher(AccessibilityCheckResultUtils.matchesViews(withId(-1)));;
-         AccessibilityChecks.enable();
+        // AccessibilityChecks.enable();
     }
 
     @Rule

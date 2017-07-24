@@ -34,7 +34,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.orange.ease.dan.R;
-import com.orange.ease.dan.tutoTalkBack.GestureActivity_;
+import com.orange.ease.dan.guide.talkback.GestureActivity_;
 
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;

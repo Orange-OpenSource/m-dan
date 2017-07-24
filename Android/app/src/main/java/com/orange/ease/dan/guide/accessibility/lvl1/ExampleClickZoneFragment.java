@@ -32,7 +32,7 @@ import org.androidannotations.annotations.EFragment;
 import static com.orange.ease.dan.R.string.criteria_clickarea_title;
 
 
-@EFragment
+@EFragment(R.layout.criteria_template)
 public class ExampleClickZoneFragment extends ABaseCriteriaListFragment {
 
     @Override

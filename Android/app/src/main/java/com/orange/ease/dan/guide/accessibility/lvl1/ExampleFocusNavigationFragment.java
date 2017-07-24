@@ -35,7 +35,7 @@ import static com.orange.ease.dan.R.string.criteria_focusnav_title;
 import static com.orange.ease.dan.R.string.criteria_focusnav_why_description;
 
 
-@EFragment
+@EFragment(R.layout.criteria_template)
 public class ExampleFocusNavigationFragment extends ABaseCriteriaListFragment {
 
     @Override

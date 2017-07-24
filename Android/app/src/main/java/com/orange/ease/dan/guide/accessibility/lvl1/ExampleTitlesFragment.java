@@ -34,7 +34,7 @@ import static com.orange.ease.dan.R.string.criteria_title_rule_description;
 import static com.orange.ease.dan.R.string.criteria_title_title;
 import static com.orange.ease.dan.R.string.criteria_title_why_description;
 
-@EFragment
+@EFragment(R.layout.criteria_template)
 public class ExampleTitlesFragment extends ABaseCriteriaListFragment {
 
     @Override

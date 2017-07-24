@@ -19,12 +19,14 @@
 
 package com.orange.ease.dan.guide.dev;
 
+import com.orange.ease.dan.R;
+
 import org.androidannotations.annotations.EFragment;
 
 import static com.orange.ease.dan.R.string.dev_description_listvoc;
 import static com.orange.ease.dan.R.string.dev_title_listvoc;
 
-@EFragment
+@EFragment(R.layout.guidedev_helps_template)
 public class GuideDevListVocFragment extends AGuideDevListNoLinkFragment {
 
     @Override

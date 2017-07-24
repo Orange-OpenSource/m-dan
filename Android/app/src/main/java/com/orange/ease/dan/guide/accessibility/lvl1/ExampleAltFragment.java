@@ -35,7 +35,7 @@ import com.orange.ease.dan.guide.accessibility.lvl2.ExTxt3FootballFragment_;
 import org.androidannotations.annotations.EFragment;
 
 
-@EFragment
+@EFragment(R.layout.criteria_template)
 public class ExampleAltFragment extends ABaseCriteriaListFragment {
 
     @Override

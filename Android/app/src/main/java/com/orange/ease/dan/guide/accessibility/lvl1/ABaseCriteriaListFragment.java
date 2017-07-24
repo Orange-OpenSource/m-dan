@@ -5,8 +5,8 @@ import android.support.annotation.StringRes;
 
 import com.orange.ease.dan.BaseListFragment;
 import com.orange.ease.dan.R;
-import com.orange.ease.dan.view.HeaderView;
-import com.orange.ease.dan.view.HeaderView_;
+import com.orange.ease.dan.view.CriteriaHeaderView;
+import com.orange.ease.dan.view.CriteriaHeaderView_;
 
 import org.androidannotations.annotations.EFragment;
 
@@ -15,13 +15,13 @@ public abstract class ABaseCriteriaListFragment extends BaseListFragment {
 
     @Override
     protected void initHeader() {
-        mHeaderView = HeaderView_.build(getContext());
+        mHeaderView = CriteriaHeaderView_.build(getContext());
     }
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        ((HeaderView) mHeaderView).mHeaderCriteriaListLabel.setContentDescription(adapter.getCount() + " " + getString(R.string.example));
+        ((CriteriaHeaderView) mHeaderView).setTexts(getWhyDescription(),getRuleDescription(),adapter.getCount() + " " + getString(R.string.example));
     }
 
     protected abstract

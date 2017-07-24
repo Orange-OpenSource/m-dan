@@ -19,6 +19,8 @@
 
 package com.orange.ease.dan.guide.dev;
 
+import com.orange.ease.dan.R;
+
 import org.androidannotations.annotations.EFragment;
 
 import static com.orange.ease.dan.R.string.dev_description_txtsize;
@@ -26,7 +28,7 @@ import static com.orange.ease.dan.R.string.dev_lien_txtsize;
 import static com.orange.ease.dan.R.string.dev_title_textsize;
 
 
-@EFragment
+@EFragment(R.layout.guidedev_helps_template)
 public class GuideDevTxtSizeFragment extends AGuideDevBaseFragment {
 
     @Override

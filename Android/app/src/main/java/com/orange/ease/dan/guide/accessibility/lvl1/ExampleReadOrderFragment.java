@@ -35,7 +35,7 @@ import static com.orange.ease.dan.R.string.criteria_readorder_title;
 import static com.orange.ease.dan.R.string.criteria_readorder_why_description;
 
 
-@EFragment
+@EFragment(R.layout.criteria_template)
 public class ExampleReadOrderFragment extends ABaseCriteriaListFragment {
 
     @Override

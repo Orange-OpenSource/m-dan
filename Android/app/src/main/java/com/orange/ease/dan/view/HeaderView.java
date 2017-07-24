@@ -1,6 +1,10 @@
 package com.orange.ease.dan.view;
 
 import android.content.Context;
+import android.support.annotation.DrawableRes;
+import android.support.annotation.StringRes;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -9,49 +13,50 @@ import com.orange.ease.dan.R;
 import org.androidannotations.annotations.EViewGroup;
 import org.androidannotations.annotations.ViewById;
 
-import static com.orange.ease.dan.R.id.headerCriteriaListLabel;
-import static com.orange.ease.dan.R.id.headerCriteriaRuleDescription;
-import static com.orange.ease.dan.R.id.headerCriteriaRuleLabel;
-import static com.orange.ease.dan.R.id.headerCriteriaWhyDescription;
-import static com.orange.ease.dan.R.id.headerCriteriaWhyLabel;
-
-@EViewGroup(R.layout.header_criteria)
+@EViewGroup(R.layout.header)
 public class HeaderView extends RelativeLayout {
 
+    @ViewById((R.id.headerLabel))
+    protected TextView labelTextView;
 
-    @ViewById(headerCriteriaWhyLabel)
-    public TextView mHeaderCriteriaWhyLabel;
+    @ViewById(R.id.headerDescription)
+    protected TextView descriptionTextView;
 
-    @ViewById(headerCriteriaWhyDescription)
-    public TextView mHeaderCriteriaWhyDescription;
+    @ViewById(R.id.headerListLabel)
+    protected TextView listLabelTextView;
 
-    @ViewById(headerCriteriaRuleLabel)
-    public TextView mHeaderCriteriaRuleLabel;
+    @ViewById(R.id.virtualSeparator)
+    protected View separator;
 
-    @ViewById(headerCriteriaRuleDescription)
-    public TextView mHeaderCriteriaRuleDescription;
+    @ViewById(R.id.splitImage)
+    protected ImageView imageView;
 
-    @ViewById(headerCriteriaListLabel)
-    public TextView mHeaderCriteriaListLabel;
+    @ViewById(R.id.headerInformation)
+    protected TextView headerInformation;
 
     public HeaderView(Context context) {
         super(context);
     }
 
-    public void setTexts(String whyDescription, String ruleDescription) {
+    public void setTexts(@StringRes int label, @StringRes int description, @StringRes int listLabel, String listLabelContentDescription, @DrawableRes int background) {
 
-        mHeaderCriteriaWhyLabel.setText(R.string.criteria_template_why);
-        mHeaderCriteriaWhyDescription.setText(whyDescription);
-        mHeaderCriteriaRuleLabel.setText(R.string.criteria_template_rule);
-        mHeaderCriteriaRuleDescription.setText(ruleDescription);
-        mHeaderCriteriaListLabel.setText(R.string.criteria_template_example);
+        labelTextView.setText(label);
+        descriptionTextView.setText(description);
+        listLabelTextView.setText(listLabel);
+        listLabelTextView.setContentDescription(listLabelContentDescription);
+        imageView.setBackgroundResource(background);
 
         //for accessibility : force talkback focus on all element
-        mHeaderCriteriaWhyLabel.setFocusable(true);
-        mHeaderCriteriaWhyDescription.setFocusable(true);
-        mHeaderCriteriaRuleLabel.setFocusable(true);
-        mHeaderCriteriaRuleDescription.setFocusable(true);
-        mHeaderCriteriaListLabel.setFocusable(true);
+        descriptionTextView.setFocusable(true);
+        labelTextView.setFocusable(true);
+        listLabelTextView.setFocusable(true);
     }
 
+    public void hideHeaderInformation() {
+        headerInformation.setVisibility(View.GONE);
+    }
+
+    public void hideSeparator() {
+        separator.setVisibility(View.GONE);
+    }
 }

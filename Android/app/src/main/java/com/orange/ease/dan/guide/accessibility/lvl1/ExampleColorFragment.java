@@ -32,7 +32,7 @@ import org.androidannotations.annotations.EFragment;
 
 import static com.orange.ease.dan.R.string.criteria_color_title;
 
-@EFragment
+@EFragment(R.layout.criteria_template)
 public class ExampleColorFragment extends ABaseCriteriaListFragment {
 
     @Override
@@ -40,24 +40,14 @@ public class ExampleColorFragment extends ABaseCriteriaListFragment {
         return R.array.criteria_color_list;
     }
 
-    protected int getTemplateExample() {
-        return R.string.criteria_template_example;
-    }
-
+    @Override
     protected int getRuleDescription() {
         return R.string.criteria_color_rule_description;
     }
 
-    protected int getCriteria_template_rule() {
-        return R.string.criteria_template_rule;
-    }
-
+    @Override
     protected int getWhyDescription() {
         return R.string.criteria_color_why_description;
-    }
-
-    protected int getCriteria_template_why() {
-        return R.string.criteria_template_why;
     }
 
     @Override

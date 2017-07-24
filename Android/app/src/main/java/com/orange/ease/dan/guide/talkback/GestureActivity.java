@@ -29,7 +29,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import com.orange.ease.dan.R;
-import com.orange.ease.dan.tutoTalkBack.GestureFragment_;
+
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;

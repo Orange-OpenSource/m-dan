@@ -35,7 +35,7 @@ import static com.orange.ease.dan.R.string.criteria_horizontalscroll_title;
 import static com.orange.ease.dan.R.string.criteria_horizontalscroll_why_description;
 
 
-@EFragment
+@EFragment(R.layout.criteria_template)
 public class ExampleScrollFragment extends ABaseCriteriaListFragment {
 
     @Override

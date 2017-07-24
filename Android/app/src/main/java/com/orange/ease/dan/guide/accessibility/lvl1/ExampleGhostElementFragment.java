@@ -35,7 +35,7 @@ import static com.orange.ease.dan.R.string.criteria_ghostelement_title;
 import static com.orange.ease.dan.R.string.criteria_ghostelement_why_description;
 
 
-@EFragment
+@EFragment(R.layout.criteria_template)
 public class ExampleGhostElementFragment extends ABaseCriteriaListFragment {
 
     @Override

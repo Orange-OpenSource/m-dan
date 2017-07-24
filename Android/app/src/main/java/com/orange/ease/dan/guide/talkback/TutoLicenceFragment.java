@@ -36,7 +36,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.orange.ease.dan.R;
-import com.orange.ease.dan.tutoTalkBack.GestureFragment_;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EFragment;

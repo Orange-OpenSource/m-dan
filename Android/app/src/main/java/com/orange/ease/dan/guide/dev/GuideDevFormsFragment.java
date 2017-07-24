@@ -19,13 +19,15 @@
 
 package com.orange.ease.dan.guide.dev;
 
+import com.orange.ease.dan.R;
+
 import org.androidannotations.annotations.EFragment;
 
 import static com.orange.ease.dan.R.string.dev_description_form;
 import static com.orange.ease.dan.R.string.dev_lien_form;
 import static com.orange.ease.dan.R.string.dev_title_form;
 
-@EFragment
+@EFragment(R.layout.guidedev_helps_template)
 public class GuideDevFormsFragment extends AGuideDevBaseFragment {
     
     @Override

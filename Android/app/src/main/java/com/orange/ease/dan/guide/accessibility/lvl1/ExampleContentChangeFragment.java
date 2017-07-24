@@ -35,7 +35,7 @@ import static com.orange.ease.dan.R.string.criteria_title_contentchange;
 import static com.orange.ease.dan.R.string.criteria_why_description_contentchange;
 
 
-@EFragment
+@EFragment(R.layout.criteria_template)
 public class ExampleContentChangeFragment extends ABaseCriteriaListFragment {
 
     @Override

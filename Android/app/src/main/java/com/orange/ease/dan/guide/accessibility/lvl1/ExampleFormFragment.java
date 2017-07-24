@@ -35,7 +35,7 @@ import static com.orange.ease.dan.R.string.criteria_form_title;
 import static com.orange.ease.dan.R.string.criteria_form_why_description;
 
 
-@EFragment
+@EFragment(R.layout.criteria_template)
 public class ExampleFormFragment extends ABaseCriteriaListFragment {
 
     @Override

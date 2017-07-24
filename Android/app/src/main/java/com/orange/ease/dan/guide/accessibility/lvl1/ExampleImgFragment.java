@@ -36,7 +36,7 @@ import static com.orange.ease.dan.R.string.criteria_img_rule_description;
 import static com.orange.ease.dan.R.string.criteria_img_title;
 import static com.orange.ease.dan.R.string.criteria_img_why_description;
 
-@EFragment
+@EFragment(R.layout.criteria_template)
 public class ExampleImgFragment extends ABaseCriteriaListFragment {
 
     @Override

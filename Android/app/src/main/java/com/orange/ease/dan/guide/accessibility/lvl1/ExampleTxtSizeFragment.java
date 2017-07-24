@@ -34,7 +34,7 @@ import static com.orange.ease.dan.R.string.criteria_textsize_rule_description;
 import static com.orange.ease.dan.R.string.criteria_textsize_title;
 import static com.orange.ease.dan.R.string.criteria_textsize_why_description;
 
-@EFragment
+@EFragment(R.layout.criteria_template)
 public class ExampleTxtSizeFragment extends ABaseCriteriaListFragment {
 
     @Override

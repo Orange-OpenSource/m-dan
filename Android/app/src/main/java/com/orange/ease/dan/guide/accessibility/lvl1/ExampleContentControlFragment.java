@@ -36,7 +36,7 @@ import static com.orange.ease.dan.R.string.criteria_contentcontrol_title;
 import static com.orange.ease.dan.R.string.criteria_contentcontrol_why_description;
 
 
-@EFragment
+@EFragment(R.layout.criteria_template)
 public class ExampleContentControlFragment extends ABaseCriteriaListFragment {
 
     @Override

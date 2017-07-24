@@ -19,6 +19,7 @@
 
 package com.orange.ease.dan.guide.dev;
 
+import android.support.annotation.StringRes;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
@@ -28,7 +29,7 @@ import com.orange.ease.dan.R;
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
-import org.androidannotations.annotations.res.StringRes;
+
 
 
 @EFragment(R.layout.guidedev_helps_template)

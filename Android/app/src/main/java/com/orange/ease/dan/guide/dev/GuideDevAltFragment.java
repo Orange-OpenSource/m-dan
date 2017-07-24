@@ -24,7 +24,7 @@ import com.orange.ease.dan.R;
 import org.androidannotations.annotations.EFragment;
 
 
-@EFragment
+@EFragment(R.layout.guidedev_helps_template)
 public class GuideDevAltFragment extends AGuideDevBaseFragment {
 
     @Override

@@ -37,7 +37,7 @@ import static com.orange.ease.dan.R.string.criteria_standardcomponent_title;
 import static com.orange.ease.dan.R.string.criteria_standardcomponent_why_description;
 
 
-@EFragment
+@EFragment(R.layout.criteria_template)
 public class ExampleStandardComponentFragment extends ABaseCriteriaListFragment {
 
 
