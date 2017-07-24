@@ -17,8 +17,9 @@
  * under the License.
  */
 
-package com.orange.ease.dan.examplesFragmentsLvl1;
+package com.orange.ease.dan.guide.accessibility.lvl1;
 
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.View;
@@ -26,29 +27,46 @@ import android.widget.ListView;
 
 import com.orange.ease.dan.BaseCriteriaListFragment;
 import com.orange.ease.dan.R;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExClickZone1Fragment_;
+import com.orange.ease.dan.examplesFragmentsLvl2.ExStandardComponent1Fragment_;
+import com.orange.ease.dan.examplesFragmentsLvl2.ExStandardComponent2Fragment_;
 
 import org.androidannotations.annotations.EFragment;
 
-import static com.orange.ease.dan.R.string.criteria_clickarea_title;
+import static com.orange.ease.dan.R.string.criteria_standardcomponent_ex2_title;
+import static com.orange.ease.dan.R.string.criteria_standardcomponent_rule_description;
+import static com.orange.ease.dan.R.string.criteria_standardcomponent_title;
+import static com.orange.ease.dan.R.string.criteria_standardcomponent_why_description;
 
 
 @EFragment
-public class ExampleClickZoneFragment extends BaseCriteriaListFragment {
+public class ExampleStandardComponentFragment extends BaseCriteriaListFragment {
 
+
+    @NonNull
     @Override
-    protected int getRuleDescription() {
-        return R.string.criteria_clickarea_rule_description;
+    protected String[] getStringArray() {
+        String[] items = {getString(criteria_standardcomponent_title), getString(criteria_standardcomponent_ex2_title)};
+        return items;
     }
 
     @Override
     protected int getWhyDescription() {
-        return R.string.criteria_clickarea_why_description;
+        return criteria_standardcomponent_why_description;
+    }
+
+    @Override
+    protected int getRuleDescription() {
+        return criteria_standardcomponent_rule_description;
     }
 
     @Override
     protected int getListArray() {
-        return R.array.criteria_clickarea_list;
+        return 0;//not needed, we override getStringArray in that case
+    }
+
+    @Override
+    protected int getTitleResource() {
+        return criteria_standardcomponent_title;
     }
 
     @Override
@@ -56,25 +74,25 @@ public class ExampleClickZoneFragment extends BaseCriteriaListFragment {
         super.onListItemClick(l, v, position, id);
         Fragment newFragment = null;
 
-        String mNextTitle = getString(R.string.example)+" "+(position)+"/"+"1";
+        String title = getString(R.string.example) + " " + (position) + "/" + "2";
 
         switch (position) {
             case 1:
-                newFragment = new ExClickZone1Fragment_();
+                newFragment = new ExStandardComponent1Fragment_();
+                break;
+            case 2:
+                newFragment = new ExStandardComponent2Fragment_();
                 break;
             default:
                 break;
         }
 
         if (newFragment != null) {
-            mOnNewFragment.onNewFragment(newFragment, mNextTitle, true);
+            mOnNewFragment.onNewFragment(newFragment, title, true);
         } else {
             Log.e("MainActivity", "Error in creating fragment");
         }
     }
 
-    @Override
-    protected int getTitleResource() {
-        return criteria_clickarea_title;
-    }
+
 }

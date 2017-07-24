@@ -17,7 +17,7 @@
  * under the License.
  */
 
-package com.orange.ease.dan.examplesFragmentsLvl1;
+package com.orange.ease.dan.guide.accessibility.lvl1;
 
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -27,72 +27,57 @@ import android.widget.ListView;
 import com.orange.ease.dan.BaseCriteriaListFragment;
 import com.orange.ease.dan.R;
 import com.orange.ease.dan.examplesFragmentsLvl2.ExForm1Fragment_;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExImg3Fragment_;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExStateElmts1Fragment_;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExTxt1Fragment_;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExTxt2Fragment_;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExTxt3FootballFragment_;
 
 import org.androidannotations.annotations.EFragment;
 
+import static com.orange.ease.dan.R.array.criteria_form_list;
+import static com.orange.ease.dan.R.string.criteria_form_rule_description;
+import static com.orange.ease.dan.R.string.criteria_form_title;
+import static com.orange.ease.dan.R.string.criteria_form_why_description;
+
 
 @EFragment
-public class ExampleAltFragment extends BaseCriteriaListFragment {
+public class ExampleFormFragment extends BaseCriteriaListFragment {
 
     @Override
-    protected int getListArray() {
-        return R.array.criteria_alt_list;
+    protected int getWhyDescription() {
+        return criteria_form_why_description;
     }
 
     @Override
     protected int getRuleDescription() {
-        return R.string.criteria_alt_rule_description;
+        return criteria_form_rule_description;
     }
 
     @Override
-    protected int getWhyDescription() {
-        return R.string.criteria_alt_why_description;
+    protected int getListArray() {
+        return criteria_form_list;
+    }
+
+    @Override
+    protected int getTitleResource() {
+        return criteria_form_title;
     }
 
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
         Fragment newFragment = null;
-        String mNextTitle = "";
-        mNextTitle = getString(R.string.example) + " " + (position) + "/6";
+
+        String title = getString(R.string.example)+" "+(position)+"/"+"1";
 
         switch (position) {
             case 1:
-                newFragment = new ExImg3Fragment_();
-                break;
-            case 2:
-                newFragment = new ExStateElmts1Fragment_();
-                break;
-            case 3:
                 newFragment = new ExForm1Fragment_();
-                break;
-            case 4:
-                newFragment = new ExTxt1Fragment_();
-                break;
-            case 5:
-                newFragment = new ExTxt2Fragment_();
-                break;
-            case 6:
-                newFragment = new ExTxt3FootballFragment_();
                 break;
             default:
                 break;
         }
 
         if (newFragment != null) {
-            mOnNewFragment.onNewFragment(newFragment, mNextTitle, true);
+            mOnNewFragment.onNewFragment(newFragment, title, true);
         } else {
             Log.e("MainActivity", "Error in creating fragment");
         }
-    }
-
-    @Override
-    protected int getTitleResource() {
-        return R.string.criteria_alt_title;
     }
 }

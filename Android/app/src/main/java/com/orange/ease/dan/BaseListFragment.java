@@ -3,6 +3,9 @@ package com.orange.ease.dan;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.annotation.ArrayRes;
+import android.support.annotation.NonNull;
+import android.support.annotation.StringRes;
 import android.support.v4.app.ListFragment;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -43,15 +46,24 @@ public abstract class BaseListFragment extends ListFragment{
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        String[] items = getResources().getStringArray(getListArray());
+        String[] items = getStringArray();
         adapter = new ArrayAdapter<>(getActivity(), R.layout.simple_list_item_text, R.id.textCategory, items);
         setListAdapter(adapter);
     }
 
+    @NonNull
+    protected String[] getStringArray() {
+        return getResources().getStringArray(getListArray());
+    }
+
+    @ArrayRes
     protected abstract int getListArray();
+
+    @StringRes
+    protected abstract int getTitleResource();
+
     protected abstract void initHeader();
 
-    protected abstract int getTitleResource();
 
     protected View inflateHeader(int layout){
         return getActivity().getLayoutInflater().inflate(layout, null);

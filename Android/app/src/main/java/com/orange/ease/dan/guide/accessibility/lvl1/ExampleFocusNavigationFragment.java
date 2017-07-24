@@ -17,7 +17,7 @@
  * under the License.
  */
 
-package com.orange.ease.dan.examplesFragmentsLvl1;
+package com.orange.ease.dan.guide.accessibility.lvl1;
 
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -26,44 +26,37 @@ import android.widget.ListView;
 
 import com.orange.ease.dan.BaseCriteriaListFragment;
 import com.orange.ease.dan.R;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExColor1Fragment_;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExColor2Fragment_;
+import com.orange.ease.dan.examplesFragmentsLvl2.ExFocusNav1Fragment_;
 
 import org.androidannotations.annotations.EFragment;
 
-import static com.orange.ease.dan.R.string.criteria_color_title;
+import static com.orange.ease.dan.R.array.criteria_focusnav_list;
+import static com.orange.ease.dan.R.string.criteria_focusnav_rule_description;
+import static com.orange.ease.dan.R.string.criteria_focusnav_title;
+import static com.orange.ease.dan.R.string.criteria_focusnav_why_description;
+
 
 @EFragment
-public class ExampleColorFragment extends BaseCriteriaListFragment {
+public class ExampleFocusNavigationFragment extends BaseCriteriaListFragment {
+
+    @Override
+    protected int getWhyDescription() {
+        return criteria_focusnav_why_description;
+    }
+
+    @Override
+    protected int getRuleDescription() {
+        return criteria_focusnav_rule_description;
+    }
 
     @Override
     protected int getListArray() {
-        return R.array.criteria_color_list;
-    }
-
-    protected int getTemplateExample() {
-        return R.string.criteria_template_example;
-    }
-
-    protected int getRuleDescription() {
-        return R.string.criteria_color_rule_description;
-    }
-
-    protected int getCriteria_template_rule() {
-        return R.string.criteria_template_rule;
-    }
-
-    protected int getWhyDescription() {
-        return R.string.criteria_color_why_description;
-    }
-
-    protected int getCriteria_template_why() {
-        return R.string.criteria_template_why;
+        return criteria_focusnav_list;
     }
 
     @Override
     protected int getTitleResource() {
-        return criteria_color_title;
+        return criteria_focusnav_title;
     }
 
     @Override
@@ -71,14 +64,11 @@ public class ExampleColorFragment extends BaseCriteriaListFragment {
         super.onListItemClick(l, v, position, id);
         Fragment newFragment = null;
 
-        String mNextTitle = getString(R.string.example) + " " + (position) + "/" + "2";
+        String mNextTitle = getString(R.string.example) + " " + (position) + "/" + "1";
 
         switch (position) {
             case 1:
-                newFragment = new ExColor1Fragment_();
-                break;
-            case 2:
-                newFragment = new ExColor2Fragment_();
+                newFragment = new ExFocusNav1Fragment_();
                 break;
             default:
                 break;

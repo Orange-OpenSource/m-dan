@@ -17,7 +17,7 @@
  * under the License.
  */
 
-package com.orange.ease.dan.examplesFragmentsLvl1;
+package com.orange.ease.dan.guide.accessibility.lvl1;
 
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -26,38 +26,37 @@ import android.widget.ListView;
 
 import com.orange.ease.dan.BaseCriteriaListFragment;
 import com.orange.ease.dan.R;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExStateElmts1Fragment_;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExStateElmts2Fragment_;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExStateElmts3Fragment_;
+import com.orange.ease.dan.examplesFragmentsLvl2.ExChangeContent1Fragment_;
 
 import org.androidannotations.annotations.EFragment;
 
-import static com.orange.ease.dan.R.string.criteria_stateelements_rule_description;
-import static com.orange.ease.dan.R.string.criteria_stateelements_title;
-import static com.orange.ease.dan.R.string.criteria_stateelements_why_description;
+import static com.orange.ease.dan.R.array.criteria_contentchange_list;
+import static com.orange.ease.dan.R.string.criteria_rule_description_contentchange;
+import static com.orange.ease.dan.R.string.criteria_title_contentchange;
+import static com.orange.ease.dan.R.string.criteria_why_description_contentchange;
 
 
 @EFragment
-public class ExampleElementsStateFragment extends BaseCriteriaListFragment {
+public class ExampleContentChangeFragment extends BaseCriteriaListFragment {
 
     @Override
     protected int getWhyDescription() {
-        return criteria_stateelements_why_description;
+        return criteria_why_description_contentchange;
     }
 
     @Override
     protected int getRuleDescription() {
-        return criteria_stateelements_rule_description;
+        return criteria_rule_description_contentchange;
     }
 
     @Override
     protected int getListArray() {
-        return R.array.criteria_stateelement_list;
+        return criteria_contentchange_list;
     }
 
     @Override
     protected int getTitleResource() {
-        return criteria_stateelements_title;
+        return criteria_title_contentchange;
     }
 
     @Override
@@ -65,28 +64,20 @@ public class ExampleElementsStateFragment extends BaseCriteriaListFragment {
         super.onListItemClick(l, v, position, id);
         Fragment newFragment = null;
 
-        String mNextTitle = getString(R.string.example) + " " + (position) + "/" + "3";
+        String title = getString(R.string.example)+" "+(position)+"/"+"1";
 
         switch (position) {
             case 1:
-                newFragment = new ExStateElmts1Fragment_();
-                break;
-            case 2:
-                newFragment = new ExStateElmts2Fragment_();
-                break;
-            case 3:
-                newFragment = new ExStateElmts3Fragment_();
+                newFragment = new ExChangeContent1Fragment_();
                 break;
             default:
                 break;
         }
 
         if (newFragment != null) {
-            mOnNewFragment.onNewFragment(newFragment, mNextTitle, true);
+            mOnNewFragment.onNewFragment(newFragment, title, true);
         } else {
             Log.e("MainActivity", "Error in creating fragment");
         }
     }
-
-
 }

@@ -28,21 +28,21 @@ import android.widget.TextView;
 
 import com.orange.ease.dan.BaseListFragment;
 import com.orange.ease.dan.R;
-import com.orange.ease.dan.examplesFragmentsLvl1.ExampleAltFragment_;
-import com.orange.ease.dan.examplesFragmentsLvl1.ExampleClickZoneFragment_;
-import com.orange.ease.dan.examplesFragmentsLvl1.ExampleColorFragment_;
-import com.orange.ease.dan.examplesFragmentsLvl1.ExampleContentChangeFragment_;
-import com.orange.ease.dan.examplesFragmentsLvl1.ExampleContentControlFragment_;
-import com.orange.ease.dan.examplesFragmentsLvl1.ExampleElementsStateFragment_;
-import com.orange.ease.dan.examplesFragmentsLvl1.ExampleFocusNavigationFragment_;
-import com.orange.ease.dan.examplesFragmentsLvl1.ExampleFormFragment_;
-import com.orange.ease.dan.examplesFragmentsLvl1.ExampleGhostElementFragment_;
-import com.orange.ease.dan.examplesFragmentsLvl1.ExampleImgFragment_;
-import com.orange.ease.dan.examplesFragmentsLvl1.ExampleReadOrderFragment_;
-import com.orange.ease.dan.examplesFragmentsLvl1.ExampleScrollFragment_;
-import com.orange.ease.dan.examplesFragmentsLvl1.ExampleStandardComponentFragment_;
-import com.orange.ease.dan.examplesFragmentsLvl1.ExampleTitlesFragment_;
-import com.orange.ease.dan.examplesFragmentsLvl1.ExampleTxtSizeFragment_;
+import com.orange.ease.dan.guide.accessibility.lvl1.ExampleAltFragment_;
+import com.orange.ease.dan.guide.accessibility.lvl1.ExampleClickZoneFragment_;
+import com.orange.ease.dan.guide.accessibility.lvl1.ExampleColorFragment_;
+import com.orange.ease.dan.guide.accessibility.lvl1.ExampleContentChangeFragment_;
+import com.orange.ease.dan.guide.accessibility.lvl1.ExampleContentControlFragment_;
+import com.orange.ease.dan.guide.accessibility.lvl1.ExampleElementsStateFragment_;
+import com.orange.ease.dan.guide.accessibility.lvl1.ExampleFocusNavigationFragment_;
+import com.orange.ease.dan.guide.accessibility.lvl1.ExampleFormFragment_;
+import com.orange.ease.dan.guide.accessibility.lvl1.ExampleGhostElementFragment_;
+import com.orange.ease.dan.guide.accessibility.lvl1.ExampleImgFragment_;
+import com.orange.ease.dan.guide.accessibility.lvl1.ExampleReadOrderFragment_;
+import com.orange.ease.dan.guide.accessibility.lvl1.ExampleScrollFragment_;
+import com.orange.ease.dan.guide.accessibility.lvl1.ExampleStandardComponentFragment_;
+import com.orange.ease.dan.guide.accessibility.lvl1.ExampleTitlesFragment_;
+import com.orange.ease.dan.guide.accessibility.lvl1.ExampleTxtSizeFragment_;
 
 import org.androidannotations.annotations.EFragment;
 
