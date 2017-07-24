@@ -42,9 +42,6 @@ import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
-/**
- * Created by Frederic Coudurier on 22/08/2016.
- */
 @EFragment(R.layout.fragment_tuto_end)
 public class TutoLicenceFragment extends Fragment {
 
@@ -124,7 +121,7 @@ public class TutoLicenceFragment extends Fragment {
             }
         });
         mTxtViewInfosDescritpion.announceForAccessibility(mTxtViewInfosDescritpion.getText());
-        mTxtViewInfosDescritpion.requestFocus(); //Not recommended in most case but its usefull here
+        mTxtViewInfosDescritpion.requestFocus(); //Not recommended in most case but its useful here
 
     }
 
@@ -133,7 +130,7 @@ public class TutoLicenceFragment extends Fragment {
         AlertDialog.Builder builder1 = new AlertDialog.Builder(getContext());
         builder1.setMessage(getString(R.string.alert_before_leaving));
         builder1.setCancelable(true);
-        if(type=="mail"){
+        if(type.equals("mail")){
             intent = new Intent(Intent.ACTION_SEND);
             intent.setType("text/html");
             intent.putExtra(Intent.EXTRA_EMAIL, url);

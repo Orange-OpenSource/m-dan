@@ -23,6 +23,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.res.ResourcesCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,9 +39,9 @@ import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
-/**
- * Created by Frederic Coudurier on 22/08/2016.
- */
+import static com.orange.ease.dan.R.string.tb_talkbackgesture1_sub;
+import static com.orange.ease.dan.R.string.tb_talkbackgesture2_sub;
+
 @EFragment(R.layout.fragment_tuto)
 public class GestureFragment extends Fragment {
 
@@ -51,7 +52,7 @@ public class GestureFragment extends Fragment {
     public ImageView mImgViewGesture;
 
     @ViewById(R.id.textViewGestureDescritpion)
-    public TextView mTxtViewGestureDescritpion;
+    public TextView mTxtViewGestureDescription;
 
     @ViewById(R.id.textViewGestureSubDescription)
     public TextView mTxtViewGestureSubDescription;
@@ -67,7 +68,7 @@ public class GestureFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        Bundle bundle=getArguments();
+        Bundle bundle = getArguments();
         mNbStep = bundle.getInt("nbStep", 11); //11 steps in this tuto
         mCurrentStep = bundle.getInt("currentStep", 1); //From 1 to nbStep
         return inflater.inflate(R.layout.fragment_tuto, container, false);
@@ -86,13 +87,13 @@ public class GestureFragment extends Fragment {
                     Fragment newFragment = new GestureFragment_();
                     Bundle bundle = new Bundle();
                     bundle.putInt("nbStep", mNbStep);
-                    bundle.putInt("currentStep", mCurrentStep-1);
+                    bundle.putInt("currentStep", mCurrentStep - 1);
                     newFragment.setArguments(bundle);
 
 
                     FragmentManager mFragmentManager = getActivity().getSupportFragmentManager();
                     final FragmentTransaction ft = mFragmentManager.beginTransaction();
-                    ft.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right , R.anim.slide_in_right, R.anim.slide_out_left);
+                    ft.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right, R.anim.slide_in_right, R.anim.slide_out_left);
                     ft.replace(R.id.container, newFragment);
                     ft.commit();
 
@@ -102,14 +103,14 @@ public class GestureFragment extends Fragment {
 
         if (mCurrentStep == mNbStep) {
             mButtonNext.setEnabled(false); //useless
-        } else if(mCurrentStep == mNbStep-1) {
+        } else if (mCurrentStep == mNbStep - 1) {
             mButtonNext.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Fragment newFragment = new TutoLicenceFragment_();
                     Bundle bundle = new Bundle();
                     bundle.putInt("nbStep", mNbStep);
-                    bundle.putInt("currentStep", mCurrentStep+1);
+                    bundle.putInt("currentStep", mCurrentStep + 1);
                     newFragment.setArguments(bundle);
 
                     FragmentManager mFragmentManager = getActivity().getSupportFragmentManager();
@@ -119,14 +120,14 @@ public class GestureFragment extends Fragment {
                     ft.commit();
                 }
             });
-        } else{
+        } else {
             mButtonNext.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Fragment newFragment = new GestureFragment_();
                     Bundle bundle = new Bundle();
                     bundle.putInt("nbStep", mNbStep);
-                    bundle.putInt("currentStep", mCurrentStep+1);
+                    bundle.putInt("currentStep", mCurrentStep + 1);
                     newFragment.setArguments(bundle);
 
                     FragmentManager mFragmentManager = getActivity().getSupportFragmentManager();
@@ -145,68 +146,51 @@ public class GestureFragment extends Fragment {
         mTxtViewStep.setText(mCurrentStep + "/" + mNbStep);
         mTxtViewStep.setContentDescription(getString(R.string.step) + " " + mCurrentStep + " " + getString(R.string.on) + " " + mNbStep);
 
-        switch (mCurrentStep){
-           case 1:
-               mImgViewGesture.setImageDrawable(getResources().getDrawable(R.drawable.talkbackgesture1));
-               mTxtViewGestureDescritpion.setText(getString(R.string.tb_talkbackgesture1));
-               mTxtViewGestureSubDescription.setText(getString(R.string.tb_talkbackgesture1_sub));
-               break;
-           case 2:
-               mImgViewGesture.setImageDrawable(getResources().getDrawable(R.drawable.talkbackgesture2));
-               mTxtViewGestureDescritpion.setText(getString(R.string.tb_talkbackgesture2));
-               mTxtViewGestureSubDescription.setText(getString(R.string.tb_talkbackgesture2_sub));
-               break;
-           case 3:
-               mImgViewGesture.setImageDrawable(getResources().getDrawable(R.drawable.talkbackgesture3_1));
-               mTxtViewGestureDescritpion.setText(getString(R.string.tb_talkbackgesture3));
-               mTxtViewGestureSubDescription.setText(getString(R.string.tb_talkbackgesture3_sub));
-               break;
-           case 4:
-               mImgViewGesture.setImageDrawable(getResources().getDrawable(R.drawable.talkbackgesture3_2));
-               mTxtViewGestureDescritpion.setText(getString(R.string.tb_talkbackgesture4));
-               mTxtViewGestureSubDescription.setText(getString(R.string.tb_talkbackgesture4_sub));
-               break;
-           case 5:
-               mImgViewGesture.setImageDrawable(getResources().getDrawable(R.drawable.talkbackgesture4_1));
-               mTxtViewGestureDescritpion.setText(getString(R.string.tb_talkbackgesture5));
-               mTxtViewGestureSubDescription.setText(getString(R.string.tb_talkbackgesture5_sub));
-               break;
-           case 6:
-               mImgViewGesture.setImageDrawable(getResources().getDrawable(R.drawable.talkbackgesture4_2));
-               mTxtViewGestureDescritpion.setText(getString(R.string.tb_talkbackgesture6));
-               mTxtViewGestureSubDescription.setText(getString(R.string.tb_talkbackgesture6_sub));
-               break;
-           case 7:
-               mImgViewGesture.setImageDrawable(getResources().getDrawable(R.drawable.talkbackgesture5));
-               mTxtViewGestureDescritpion.setText(getString(R.string.tb_talkbackgesture7));
-               mTxtViewGestureSubDescription.setText(getString(R.string.tb_talkbackgesture7_sub));
-               break;
-           case 8:
-               mImgViewGesture.setImageDrawable(getResources().getDrawable(R.drawable.talkbackgesture6));
-               mTxtViewGestureDescritpion.setText(getString(R.string.tb_talkbackgesture8));
-               mTxtViewGestureSubDescription.setText(getString(R.string.tb_talkbackgesture8_sub));
-               break;
-           case 9:
-               mImgViewGesture.setImageDrawable(getResources().getDrawable(R.drawable.talkbackgesture7));
-               mTxtViewGestureDescritpion.setText(getString(R.string.tb_talkbackgesture9));
-               mTxtViewGestureSubDescription.setText(getString(R.string.tb_talkbackgesture9_sub));
-               break;
-           case 10:
-               mImgViewGesture.setImageDrawable(getResources().getDrawable(R.drawable.talkbackgesture8));
-               mTxtViewGestureDescritpion.setText(getString(R.string.tb_talkbackgesture10));
-               mTxtViewGestureSubDescription.setText(getString(R.string.tb_talkbackgesture10_sub));
-               break;
-           default:
-               mImgViewGesture.setImageDrawable(getResources().getDrawable(R.drawable.talkbackgesture1));
-               mTxtViewGestureDescritpion.setText(getString(R.string.tb_talkbackgesture1));
-               mTxtViewGestureSubDescription.setText(getString(R.string.tb_talkbackgesture1_sub));
-               break;
-       }
-
-        if(mCurrentStep != 1){
-            mTxtViewGestureDescritpion.announceForAccessibility(mTxtViewGestureDescritpion.getText());
-            mTxtViewGestureDescritpion.requestFocus(); //Not recommended in most case but its usefull here
+        switch (mCurrentStep) {
+            case 1:
+                setTutorialScreen(R.drawable.talkbackgesture1, R.string.tb_talkbackgesture1, tb_talkbackgesture1_sub);
+                break;
+            case 2:
+                setTutorialScreen(R.drawable.talkbackgesture2, R.string.tb_talkbackgesture2, tb_talkbackgesture2_sub);
+                break;
+            case 3:
+                setTutorialScreen(R.drawable.talkbackgesture3_1, R.string.tb_talkbackgesture3, R.string.tb_talkbackgesture3_sub);
+                break;
+            case 4:
+                setTutorialScreen(R.drawable.talkbackgesture3_2, R.string.tb_talkbackgesture4, R.string.tb_talkbackgesture4_sub);
+                break;
+            case 5:
+                setTutorialScreen(R.drawable.talkbackgesture4_1, R.string.tb_talkbackgesture5, R.string.tb_talkbackgesture5_sub);
+                break;
+            case 6:
+                setTutorialScreen(R.drawable.talkbackgesture4_2, R.string.tb_talkbackgesture6, R.string.tb_talkbackgesture6_sub);
+                break;
+            case 7:
+                setTutorialScreen(R.drawable.talkbackgesture5, R.string.tb_talkbackgesture7, R.string.tb_talkbackgesture7_sub);
+                break;
+            case 8:
+                setTutorialScreen(R.drawable.talkbackgesture6, R.string.tb_talkbackgesture8, R.string.tb_talkbackgesture8_sub);
+                break;
+            case 9:
+                setTutorialScreen(R.drawable.talkbackgesture7, R.string.tb_talkbackgesture9, R.string.tb_talkbackgesture9_sub);
+                break;
+            case 10:
+                setTutorialScreen(R.drawable.talkbackgesture8, R.string.tb_talkbackgesture10, R.string.tb_talkbackgesture10_sub);
+                break;
+            default:
+                setTutorialScreen(R.drawable.talkbackgesture1, R.string.tb_talkbackgesture1, tb_talkbackgesture1_sub);
+                break;
         }
 
+        if (mCurrentStep != 1) {
+            mTxtViewGestureDescription.announceForAccessibility(mTxtViewGestureDescription.getText());
+            mTxtViewGestureDescription.requestFocus(); //Not recommended in most case but its useful here
+        }
+    }
+
+    private void setTutorialScreen(int dr, int text, int subText) {
+        mImgViewGesture.setImageDrawable(ResourcesCompat.getDrawable(getResources(),dr,null));
+        mTxtViewGestureDescription.setText(getString(text));
+        mTxtViewGestureSubDescription.setText(getString(subText));
     }
 }

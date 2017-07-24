@@ -35,25 +35,15 @@ import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 
-/**
- * Created by Frederic Coudurier on 22/08/2016.
- */
-
 @EActivity(R.layout.activity_main)
 public class GestureActivity extends AppCompatActivity {
 
     @ViewById(R.id.my_toolbar)
-    public Toolbar mToolbar;
+    protected Toolbar mToolbar;
 
     @AfterViews
     void init() {
         setSupportActionBar(mToolbar);
-
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            actionBar.setTitle(getString(R.string.tb_tuto_title));
-            actionBar.setDisplayShowTitleEnabled(true);
-        }
 
         // init the default fragment showed
         Fragment fragment = new GestureFragment_();
@@ -67,11 +57,16 @@ public class GestureActivity extends AppCompatActivity {
         ft.replace(R.id.container, fragment);
         ft.commit();
 
-        //init close button
-        actionBar.setHomeButtonEnabled(true);
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setTitle(getString(R.string.tb_tuto_title));
+            actionBar.setDisplayShowTitleEnabled(true);
+            //init close button
+            actionBar.setHomeButtonEnabled(true);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setHomeAsUpIndicator(R.drawable.icon_popin_close);
+        }
         mToolbar.setNavigationContentDescription(getString(R.string.tb_tuto_close));
-        actionBar.setHomeAsUpIndicator(R.drawable.icon_popin_close);
     }
 
     @Override
