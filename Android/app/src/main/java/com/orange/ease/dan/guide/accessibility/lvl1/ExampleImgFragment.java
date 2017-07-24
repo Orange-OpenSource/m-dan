@@ -24,11 +24,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 
-import com.orange.ease.dan.BaseCriteriaListFragment;
 import com.orange.ease.dan.R;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExImg1Fragment_;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExImg2Fragment_;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExImg3Fragment_;
+import com.orange.ease.dan.guide.accessibility.lvl2.ExImg1Fragment_;
+import com.orange.ease.dan.guide.accessibility.lvl2.ExImg2Fragment_;
+import com.orange.ease.dan.guide.accessibility.lvl2.ExImg3Fragment_;
 
 import org.androidannotations.annotations.EFragment;
 
@@ -38,7 +37,7 @@ import static com.orange.ease.dan.R.string.criteria_img_title;
 import static com.orange.ease.dan.R.string.criteria_img_why_description;
 
 @EFragment
-public class ExampleImgFragment extends BaseCriteriaListFragment {
+public class ExampleImgFragment extends ABaseCriteriaListFragment {
 
     @Override
     protected int getWhyDescription() {

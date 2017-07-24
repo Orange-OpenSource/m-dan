@@ -24,17 +24,16 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 
-import com.orange.ease.dan.BaseCriteriaListFragment;
 import com.orange.ease.dan.R;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExColor1Fragment_;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExColor2Fragment_;
+import com.orange.ease.dan.guide.accessibility.lvl2.ExColor1Fragment_;
+import com.orange.ease.dan.guide.accessibility.lvl2.ExColor2Fragment_;
 
 import org.androidannotations.annotations.EFragment;
 
 import static com.orange.ease.dan.R.string.criteria_color_title;
 
 @EFragment
-public class ExampleColorFragment extends BaseCriteriaListFragment {
+public class ExampleColorFragment extends ABaseCriteriaListFragment {
 
     @Override
     protected int getListArray() {

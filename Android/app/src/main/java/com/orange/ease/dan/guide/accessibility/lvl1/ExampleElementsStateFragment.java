@@ -24,11 +24,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 
-import com.orange.ease.dan.BaseCriteriaListFragment;
 import com.orange.ease.dan.R;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExStateElmts1Fragment_;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExStateElmts2Fragment_;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExStateElmts3Fragment_;
+import com.orange.ease.dan.guide.accessibility.lvl2.ExStateElmts1Fragment_;
+import com.orange.ease.dan.guide.accessibility.lvl2.ExStateElmts2Fragment_;
+import com.orange.ease.dan.guide.accessibility.lvl2.ExStateElmts3Fragment_;
 
 import org.androidannotations.annotations.EFragment;
 
@@ -38,7 +37,7 @@ import static com.orange.ease.dan.R.string.criteria_stateelements_why_descriptio
 
 
 @EFragment
-public class ExampleElementsStateFragment extends BaseCriteriaListFragment {
+public class ExampleElementsStateFragment extends ABaseCriteriaListFragment {
 
     @Override
     protected int getWhyDescription() {

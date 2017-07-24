@@ -24,9 +24,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 
-import com.orange.ease.dan.BaseCriteriaListFragment;
 import com.orange.ease.dan.R;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExChangeContent1Fragment_;
+import com.orange.ease.dan.guide.accessibility.lvl2.ExChangeContent1Fragment_;
 
 import org.androidannotations.annotations.EFragment;
 
@@ -37,7 +36,7 @@ import static com.orange.ease.dan.R.string.criteria_why_description_contentchang
 
 
 @EFragment
-public class ExampleContentChangeFragment extends BaseCriteriaListFragment {
+public class ExampleContentChangeFragment extends ABaseCriteriaListFragment {
 
     @Override
     protected int getWhyDescription() {

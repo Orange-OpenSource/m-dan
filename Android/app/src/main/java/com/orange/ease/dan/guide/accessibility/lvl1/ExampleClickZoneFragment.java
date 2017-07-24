@@ -24,9 +24,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 
-import com.orange.ease.dan.BaseCriteriaListFragment;
 import com.orange.ease.dan.R;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExClickZone1Fragment_;
+import com.orange.ease.dan.guide.accessibility.lvl2.ExClickZone1Fragment_;
 
 import org.androidannotations.annotations.EFragment;
 
@@ -34,7 +33,7 @@ import static com.orange.ease.dan.R.string.criteria_clickarea_title;
 
 
 @EFragment
-public class ExampleClickZoneFragment extends BaseCriteriaListFragment {
+public class ExampleClickZoneFragment extends ABaseCriteriaListFragment {
 
     @Override
     protected int getRuleDescription() {

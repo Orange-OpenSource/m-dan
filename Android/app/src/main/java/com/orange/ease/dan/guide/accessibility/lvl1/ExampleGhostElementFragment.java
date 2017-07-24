@@ -24,9 +24,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 
-import com.orange.ease.dan.BaseCriteriaListFragment;
 import com.orange.ease.dan.R;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExGhost1Fragment_;
+import com.orange.ease.dan.guide.accessibility.lvl2.ExGhost1Fragment_;
 
 import org.androidannotations.annotations.EFragment;
 
@@ -37,7 +36,7 @@ import static com.orange.ease.dan.R.string.criteria_ghostelement_why_description
 
 
 @EFragment
-public class ExampleGhostElementFragment extends BaseCriteriaListFragment {
+public class ExampleGhostElementFragment extends ABaseCriteriaListFragment {
 
     @Override
     protected int getWhyDescription() {

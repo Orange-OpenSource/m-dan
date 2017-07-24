@@ -24,9 +24,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 
-import com.orange.ease.dan.BaseCriteriaListFragment;
 import com.orange.ease.dan.R;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExSizeTxt1Fragment_;
+import com.orange.ease.dan.guide.accessibility.lvl2.ExSizeTxt1Fragment_;
 
 import org.androidannotations.annotations.EFragment;
 
@@ -36,7 +35,7 @@ import static com.orange.ease.dan.R.string.criteria_textsize_title;
 import static com.orange.ease.dan.R.string.criteria_textsize_why_description;
 
 @EFragment
-public class ExampleTxtSizeFragment extends BaseCriteriaListFragment {
+public class ExampleTxtSizeFragment extends ABaseCriteriaListFragment {
 
     @Override
     protected int getWhyDescription() {

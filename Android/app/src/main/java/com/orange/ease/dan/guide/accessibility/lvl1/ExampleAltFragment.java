@@ -24,20 +24,19 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 
-import com.orange.ease.dan.BaseCriteriaListFragment;
 import com.orange.ease.dan.R;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExForm1Fragment_;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExImg3Fragment_;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExStateElmts1Fragment_;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExTxt1Fragment_;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExTxt2Fragment_;
-import com.orange.ease.dan.examplesFragmentsLvl2.ExTxt3FootballFragment_;
+import com.orange.ease.dan.guide.accessibility.lvl2.ExForm1Fragment_;
+import com.orange.ease.dan.guide.accessibility.lvl2.ExImg3Fragment_;
+import com.orange.ease.dan.guide.accessibility.lvl2.ExStateElmts1Fragment_;
+import com.orange.ease.dan.guide.accessibility.lvl2.ExTxt1Fragment_;
+import com.orange.ease.dan.guide.accessibility.lvl2.ExTxt2Fragment_;
+import com.orange.ease.dan.guide.accessibility.lvl2.ExTxt3FootballFragment_;
 
 import org.androidannotations.annotations.EFragment;
 
 
 @EFragment
-public class ExampleAltFragment extends BaseCriteriaListFragment {
+public class ExampleAltFragment extends ABaseCriteriaListFragment {
 
     @Override
     protected int getListArray() {
