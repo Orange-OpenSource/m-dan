@@ -38,9 +38,6 @@ import com.orange.ease.dan.navFragments.OnNewFragment;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
-/**
- * Created by Clément Roussillon on 12/02/16.
- */
 @EFragment(R.layout.example_frag_lvl2)
 public class ExStateElmts1Fragment extends Fragment {
 
