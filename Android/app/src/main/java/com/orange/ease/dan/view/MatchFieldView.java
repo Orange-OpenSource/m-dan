@@ -21,7 +21,6 @@ package com.orange.ease.dan.view;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.os.Build;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,10 +29,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.orange.ease.dan.R;
-
-/**
- * Created by Frederic Coudurier on 15/07/2016.
- */
 
 public class MatchFieldView extends RelativeLayout {
 
@@ -148,8 +143,7 @@ public class MatchFieldView extends RelativeLayout {
         if (height > 0 && width > 0) {
             int size = players.length;
 
-            for (int i = 0; i < size; i++) {
-                final Player player = players[i];
+            for (final Player player : players) {
                 int roleId = player.getRole();
 
                 View playerView = mLayoutInflater
@@ -160,7 +154,7 @@ public class MatchFieldView extends RelativeLayout {
                 playerTv.setCompoundDrawablesWithIntrinsicBounds(null, shirtId, null, null);
 
                 playerTv.setText(player.getNickname());
-                if(mAccessible){
+                if (mAccessible) {
                     playerTv.setContentDescription(player.getNickname() + ", " + teamName + ", " + mPlayersRoles[roleId]);
                 }
 

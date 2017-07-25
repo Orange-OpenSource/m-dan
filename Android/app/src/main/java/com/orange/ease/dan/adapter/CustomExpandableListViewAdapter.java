@@ -152,7 +152,7 @@ public class CustomExpandableListViewAdapter extends com.orange.ease.idunnololz.
     /* DATA & HOLDER */
     public static class GroupItem {
         String title;
-        List<ChildItem> items = new ArrayList<ChildItem>();
+        List<ChildItem> items = new ArrayList<>();
 
         public String getTitle() {
             return title;

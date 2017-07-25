@@ -39,18 +39,15 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.orange.ease.dan.R;
-import com.orange.ease.dan.optionsFragments.ColorCorrectionFragment_;
-import com.orange.ease.dan.optionsFragments.ColorInversionFragment_;
-import com.orange.ease.dan.optionsFragments.TextSizeFragment_;
-import com.orange.ease.dan.optionsFragments.ZoomFragment_;
+import com.orange.ease.dan.guide.options.ColorCorrectionFragment_;
+import com.orange.ease.dan.guide.options.ColorInversionFragment_;
+import com.orange.ease.dan.guide.options.TextSizeFragment_;
+import com.orange.ease.dan.guide.options.ZoomFragment_;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
-/**
- * Created by NQDW8882 on 10/02/2016.
- */
 @EFragment(R.layout.fragment_options)
 public class OptionAxsFragment extends ListFragment {
 
@@ -112,7 +109,7 @@ public class OptionAxsFragment extends ListFragment {
         }else {
             items = getResources().getStringArray(R.array.options_list2);
         }
-        ArrayAdapter<String> aa = new ArrayAdapter<String>(getActivity(),
+        ArrayAdapter<String> aa = new ArrayAdapter<>(getActivity(),
                 R.layout.simple_list_item_text, R.id.textCategory, items);
 
         setListAdapter(aa);

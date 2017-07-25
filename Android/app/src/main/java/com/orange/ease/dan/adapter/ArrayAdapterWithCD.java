@@ -21,6 +21,7 @@ package com.orange.ease.dan.adapter;
 
 import android.content.Context;
 import android.os.Build;
+import android.support.annotation.NonNull;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -28,20 +29,15 @@ import android.widget.TextView;
 
 import com.orange.ease.dan.R;
 
-import java.util.List;
-
-/**
- * Created by Frederic Coudurier on 24/08/2016.
- */
-
 public class ArrayAdapterWithCD<S> extends ArrayAdapter {
 
     public ArrayAdapterWithCD(Context context, int resource, int textViewResourceId, S[] objects) {
         super(context, resource, textViewResourceId, objects);
     }
 
+    @NonNull
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, @NonNull ViewGroup parent) {
 
         if(convertView != null){
             TextView tv = (TextView) convertView.findViewById(R.id.textCategory);
