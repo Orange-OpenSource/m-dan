@@ -19,9 +19,7 @@
 
 package com.orange.ease.dan.guide.accessibility.lvl2;
 
-import android.annotation.TargetApi;
 import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
@@ -32,7 +30,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -44,9 +41,7 @@ import com.orange.ease.dan.navFragments.OnNewFragment;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
-/**
- * Created by Clément Roussillon on 12/02/16.
- */
+
 @EFragment(R.layout.example_frag_lvl2)
 public class ExClickZone1Fragment extends Fragment{
 

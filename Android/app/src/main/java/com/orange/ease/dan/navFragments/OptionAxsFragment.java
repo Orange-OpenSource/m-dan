@@ -109,7 +109,7 @@ public class OptionAxsFragment extends ListFragment {
         }else {
             items = getResources().getStringArray(R.array.options_list2);
         }
-        ArrayAdapter<String> aa = new ArrayAdapter<String>(getActivity(),
+        ArrayAdapter<String> aa = new ArrayAdapter<>(getActivity(),
                 R.layout.simple_list_item_text, R.id.textCategory, items);
 
         setListAdapter(aa);

@@ -19,18 +19,14 @@
 
 package com.orange.ease.dan.guide.options;
 
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.widget.TextView;
 
 import com.orange.ease.dan.R;
 
+import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
-
-/**
- * Created by Frederic Coudurier on 11/08/2016.
- */
 
 @EFragment(R.layout.options_template)
 public class ZoomFragment extends Fragment {
@@ -38,10 +34,9 @@ public class ZoomFragment extends Fragment {
     @ViewById(R.id.optionDescription)
     public TextView mTextViewDescription;
 
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-
+    @AfterViews
+    public void init(){
         mTextViewDescription.setText(R.string.options_content_zoom);
     }
+
 }

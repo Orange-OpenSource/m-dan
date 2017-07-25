@@ -133,7 +133,7 @@ public class ExStandardComponent1Fragment extends Fragment {
         LinearLayout myView = (LinearLayout) inflater.inflate(R.layout.exstandardcomponent1_frag, null);
         mExpandableListViewAxsMore = (ExpandableListView) myView.findViewById(R.id.expandableListView);
         mExpandableListDetail = ExpandableListDataPump.getData(getContext());
-        mExpandableListTitle = new ArrayList<String>(mExpandableListDetail.keySet());
+        mExpandableListTitle = new ArrayList<>(mExpandableListDetail.keySet());
         mExpandableListAdapterMore = new com.orange.ease.dan.adapter.ExpandableListAdapter(getContext(), mExpandableListTitle, mExpandableListDetail, true);
         mExpandableListViewAxsMore.setAdapter(mExpandableListAdapterMore);
         Utils.setListViewHeightBasedOnItems(mExpandableListViewAxsMore);
@@ -156,7 +156,7 @@ public class ExStandardComponent1Fragment extends Fragment {
 
         /* Custom expandable list view augmented with accessibility */
         LinearLayout myView2 = (LinearLayout) inflater.inflate(R.layout.exstateelmts3_frag, null);
-        List<GroupItem> items = new ArrayList<GroupItem>();
+        List<GroupItem> items = new ArrayList<>();
 
         // Populate our list with groups and it's children
         for(int i = 1; i < 3; i++) {

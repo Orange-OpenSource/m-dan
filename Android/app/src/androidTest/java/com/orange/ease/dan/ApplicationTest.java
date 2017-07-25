@@ -21,8 +21,10 @@ import org.junit.runner.RunWith;
 
 import java.util.LinkedHashMap;
 
+import static android.support.test.InstrumentationRegistry.getInstrumentation;
 import static android.support.test.espresso.Espresso.onData;
 import static android.support.test.espresso.Espresso.onView;
+import static android.support.test.espresso.Espresso.openActionBarOverflowOrOptionsMenu;
 import static android.support.test.espresso.Espresso.pressBack;
 import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.action.ViewActions.scrollTo;
@@ -52,6 +54,8 @@ import static com.orange.ease.dan.R.array.dev_list;
 import static com.orange.ease.dan.R.array.options_list;
 import static com.orange.ease.dan.R.id.buttonOptionsAxs;
 import static com.orange.ease.dan.R.string.alert_before_leaving;
+import static com.orange.ease.dan.R.string.section_about;
+import static com.orange.ease.dan.R.string.section_axs_orange;
 import static com.orange.ease.dan.R.string.tb_moves_btn;
 import static com.orange.ease.dan.R.string.tb_tuto_close;
 import static org.hamcrest.Matchers.allOf;
@@ -82,6 +86,23 @@ public class ApplicationTest {
 
     @Rule
     public ActivityTestRule<MainActivity_> mActivityTestRule = new ActivityTestRule<>(MainActivity_.class);
+
+
+
+    @Test
+    public void test_option_menu() {
+        openActionBarOverflowOrOptionsMenu(getInstrumentation().getTargetContext());
+
+        onView(withText(section_axs_orange)).perform(click());
+
+        onView(allOf(withId(R.id.title), withText(section_axs_orange), isDisplayed()));
+        pressBack();
+
+        openActionBarOverflowOrOptionsMenu(getInstrumentation().getTargetContext());
+        onView(withText(section_about)).perform(click());
+        onView(allOf(withId(R.id.title), withText(section_about), isDisplayed()));
+        pressBack();
+    }
 
 
     @Test
@@ -152,9 +173,9 @@ public class ApplicationTest {
 
     private void navigateOnEveryItemOfAStringAdapterList(int stringArrayResourceId) {
         String[] colorCriteria = getResourceStringArray(stringArrayResourceId);
-        for (int i = 0; i < colorCriteria.length; i++) {
-            System.out.println("- sub level " + colorCriteria[i]);
-            onData(allOf(is(instanceOf(String.class)), equalTo(colorCriteria[i]))).perform(click());
+        for (String aColorCriteria : colorCriteria) {
+            System.out.println("- sub level " + aColorCriteria);
+            onData(allOf(is(instanceOf(String.class)), equalTo(aColorCriteria))).perform(click());
             clickOnVoiceOverPopupIfNeeded();
             pressBack();
         }

@@ -20,7 +20,6 @@
 package com.orange.ease.dan.guide.accessibility.lvl2;
 
 import android.content.Context;
-import android.content.res.ColorStateList;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -37,9 +36,6 @@ import com.orange.ease.dan.R;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
-/**
- * Created by Clément Roussillon on 12/02/16.
- */
 @EFragment(R.layout.example_frag_lvl2)
 public class ExColor2Fragment extends Fragment {
 

@@ -111,7 +111,6 @@ public class ExImg3Fragment extends Fragment {
 
         mTextViewTitleExempleAxsNo.setText(R.string.criteria_not_accessible_example);
 
-        LayoutInflater inflater2 = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         LinearLayout myView2 = (LinearLayout) inflater.inflate(R.layout.eximg3_frag, null);
 
         mFrameLayoutExampleAxsNo.addView(myView2);

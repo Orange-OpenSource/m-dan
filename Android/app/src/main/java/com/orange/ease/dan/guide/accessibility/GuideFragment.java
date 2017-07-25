@@ -17,7 +17,7 @@
  * under the License.
  */
 
-package com.orange.ease.dan.navFragments;
+package com.orange.ease.dan.guide.accessibility;
 
 import android.support.v4.app.Fragment;
 import android.util.Log;

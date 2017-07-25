@@ -263,7 +263,7 @@ public class MyViewPager extends Fragment {
 
     private class ImageAdapter extends PagerAdapter {
 
-        SparseArray<View> viewList = new SparseArray<View>();
+        SparseArray<View> viewList = new SparseArray<>();
         boolean isAxs = mIsAccessible;
 
         int[] GalImages = new int[]{
@@ -304,7 +304,7 @@ public class MyViewPager extends Fragment {
 
         @Override
         public Object instantiateItem(ViewGroup container, int position) {
-            View newView = null;
+            View newView;
             LayoutInflater inflater = LayoutInflater.from(getActivity());
 
 

@@ -143,7 +143,7 @@ public class HomeFragment extends Fragment {
         switch (position) {
             case 1:
                 mTitle = getString(R.string.section_criteria);
-                newFragment = new GuideFragment_();
+                newFragment = new com.orange.ease.dan.guide.accessibility.GuideFragment_();
                 break;
             case 2:
                 mTitle = getString(R.string.section_dev);

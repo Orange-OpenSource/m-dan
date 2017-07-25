@@ -22,6 +22,7 @@ package com.orange.ease.dan.guide.accessibility.lvl2;
 import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -208,8 +209,9 @@ public class ExStateElmts2Fragment extends Fragment {
             super(context, 0, stringArrayList);
         }
 
+        @NonNull
         @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
+        public View getView(int position, View convertView, @NonNull ViewGroup parent) {
             // Get the data item for this position
             String string = getItem(position);
             // Check if an existing view is being reused, otherwise inflate the view

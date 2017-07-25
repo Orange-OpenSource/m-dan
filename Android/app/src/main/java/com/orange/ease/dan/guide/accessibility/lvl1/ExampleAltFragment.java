@@ -57,7 +57,7 @@ public class ExampleAltFragment extends ABaseCriteriaListFragment {
     public void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
         Fragment newFragment = null;
-        String mNextTitle = "";
+        String mNextTitle;
         mNextTitle = getString(R.string.example) + " " + (position) + "/6";
 
         switch (position) {

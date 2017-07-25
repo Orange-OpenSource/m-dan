@@ -28,7 +28,6 @@ import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -39,9 +38,7 @@ import com.orange.ease.dan.navFragments.OnNewFragment;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
-/**
- * Created by Clément Roussillon on 12/02/16.
- */
+
 @EFragment(R.layout.example_frag_lvl2)
 public class ExTitles1Fragment extends Fragment {
 

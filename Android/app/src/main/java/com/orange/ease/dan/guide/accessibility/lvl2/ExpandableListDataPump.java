@@ -29,13 +29,13 @@ import java.util.List;
 
 public class ExpandableListDataPump {
     public static HashMap<String, List<String>> getData(Context context) {
-        HashMap<String, List<String>> expandableListDetail = new HashMap<String, List<String>>();
+        HashMap<String, List<String>> expandableListDetail = new HashMap<>();
 
-        List<String> technology = new ArrayList<String>();
+        List<String> technology = new ArrayList<>();
         technology.add(context.getString(R.string.criteria_standardcomponent_ex1_category1_item1));
         technology.add(context.getString(R.string.criteria_standardcomponent_ex1_category1_item2));
 
-        List<String> entertainment = new ArrayList<String>();
+        List<String> entertainment = new ArrayList<>();
         entertainment.add(context.getString(R.string.criteria_standardcomponent_ex1_category2_item1));
         entertainment.add(context.getString(R.string.criteria_standardcomponent_ex1_category2_item2));
 

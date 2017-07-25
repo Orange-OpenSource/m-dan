@@ -121,7 +121,7 @@ public class ExStandardComponent2Fragment extends Fragment {
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         LinearLayout myView = (LinearLayout) inflater.inflate(R.layout.exstateelmts3_frag, null);
         myView2 = (LinearLayout) inflater.inflate(R.layout.exstateelmts3_frag, null);
-        List<GroupItem> items = new ArrayList<GroupItem>();
+        List<GroupItem> items = new ArrayList<>();
 
         // Populate our list with groups and it's children
         for(int i = 1; i < 3; i++) {
