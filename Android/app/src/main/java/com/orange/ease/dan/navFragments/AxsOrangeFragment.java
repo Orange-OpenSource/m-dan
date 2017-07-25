@@ -22,7 +22,6 @@ package com.orange.ease.dan.navFragments;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.res.ColorStateList;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -41,9 +40,7 @@ import com.orange.ease.dan.R;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
-/**
- * Created by Clément Roussillon on 10/02/16.
- */
+
 @EFragment(R.layout.fragment_axsorange)
 public class AxsOrangeFragment extends Fragment {
 

@@ -7,9 +7,6 @@ import android.widget.ExpandableListView;
 
 import com.orange.ease.idunnololz.widgets.AnimatedExpandableListView;
 
-/**
- * Created by Frederic Coudurier on 21/04/2016.
- */
 public class Utils {
 
     /**
@@ -79,7 +76,7 @@ public class Utils {
             }
 
             // Supprimer le if si on veut garder un truc générique. Ici, le if sert à gérer la cutom expandable en plus des expandables classiques
-            View item = null;
+            View item;
             if(expandableListAdapter instanceof com.orange.ease.idunnololz.widgets.AnimatedExpandableListView.AnimatedExpandableListAdapter){
                 item = ((AnimatedExpandableListView.AnimatedExpandableListAdapter) expandableListAdapter).getRealChildView(groupPos, itemPos, lastItem, null, parent);
             }else{

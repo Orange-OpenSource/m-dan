@@ -24,9 +24,7 @@ import android.support.v7.app.AppCompatActivity;
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 
-/**
- * Created by Clement ROUSSILLON
- */
+
 @EActivity(R.layout.splash)
 public class SplashScreen extends AppCompatActivity{
 

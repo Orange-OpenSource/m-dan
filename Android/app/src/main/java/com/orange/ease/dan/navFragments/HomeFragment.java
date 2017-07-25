@@ -25,7 +25,6 @@ import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -144,7 +143,7 @@ public class HomeFragment extends Fragment {
         switch (position) {
             case 1:
                 mTitle = getString(R.string.section_criteria);
-                newFragment = new GuideFragment_();
+                newFragment = new com.orange.ease.dan.guide.accessibility.GuideFragment_();
                 break;
             case 2:
                 mTitle = getString(R.string.section_dev);

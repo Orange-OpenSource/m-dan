@@ -145,7 +145,7 @@ public class ContactFragment extends Fragment {
         AlertDialog.Builder builder1 = new AlertDialog.Builder(getContext());
         builder1.setMessage(getString(R.string.alert_before_leaving));
         builder1.setCancelable(true);
-        if(type=="mail"){
+        if(type.equals("mail")){
             intent = new Intent(Intent.ACTION_SEND);
             intent.setType("text/html");
             intent.putExtra(Intent.EXTRA_EMAIL, url);
