@@ -96,7 +96,7 @@ class VoiceOverCarouselViewController: UIViewController, UIScrollViewDelegate, U
         setUpCarousel()
 
         pageControl.isAccessibilityElement  = true
-        pageControl.accessibilityTraits     = UIAccessibilityTraitAdjustable
+        pageControl.accessibilityTraits     = UIAccessibilityTraits.adjustable
     }
     
     override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
@@ -126,10 +126,10 @@ class VoiceOverCarouselViewController: UIViewController, UIScrollViewDelegate, U
             imageView.contentMode   = .scaleAspectFit
             imageView.translatesAutoresizingMaskIntoConstraints = false
             
-            let imageHorizontalConstraint = NSLayoutConstraint(item: imageView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: pageView, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0)
+            let imageHorizontalConstraint = NSLayoutConstraint(item: imageView, attribute: .centerX, relatedBy: .equal, toItem: pageView, attribute: .centerX, multiplier: 1, constant: 0)
             
-            var imageWidthConstraint = NSLayoutConstraint(item: imageView, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: pageView.frame.size.width)
-            var imageHeightConstraint = NSLayoutConstraint(item: imageView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 2*pageView.frame.size.height/3)
+            var imageWidthConstraint = NSLayoutConstraint(item: imageView, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: pageView.frame.size.width)
+            var imageHeightConstraint = NSLayoutConstraint(item: imageView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 2*pageView.frame.size.height/3)
             
             imageView.isAccessibilityElement = false
             
@@ -137,9 +137,10 @@ class VoiceOverCarouselViewController: UIViewController, UIScrollViewDelegate, U
             let titleLabel = UILabel()
             
             titleLabel.translatesAutoresizingMaskIntoConstraints = false
-            let titleHorizontalConstraint = NSLayoutConstraint(item: titleLabel, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: pageView, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0)
-            let titleLeadingContraint = NSLayoutConstraint(item: titleLabel, attribute: NSLayoutAttribute.leading, relatedBy: NSLayoutRelation.equal, toItem: pageView, attribute: NSLayoutAttribute.leading, multiplier: 1.0,constant: 25)
-            let titleWidthConstraint = NSLayoutConstraint(item: titleLabel, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: pageView.frame.size.width - 50)
+            let titleHorizontalConstraint = NSLayoutConstraint(item: titleLabel, attribute: .centerX, relatedBy: .equal, toItem: pageView, attribute:
+            .centerX, multiplier: 1, constant: 0)
+            let titleLeadingContraint = NSLayoutConstraint(item: titleLabel, attribute: .leading, relatedBy: .equal, toItem: pageView, attribute: .leading, multiplier: 1.0,constant: 25)
+            let titleWidthConstraint = NSLayoutConstraint(item: titleLabel, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: pageView.frame.size.width - 50)
             
             titleLabel.text = titles[i]
             titleLabel.textColor = UIColor.white
@@ -150,14 +151,14 @@ class VoiceOverCarouselViewController: UIViewController, UIScrollViewDelegate, U
             let contentLabel = UILabel()
             
             contentLabel.translatesAutoresizingMaskIntoConstraints = false
-            let contentHorizontalConstraint = NSLayoutConstraint(item: contentLabel, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: pageView, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0)
-            let contentLeadingContraint = NSLayoutConstraint(item: contentLabel, attribute: NSLayoutAttribute.leading, relatedBy: NSLayoutRelation.equal, toItem: pageView, attribute: NSLayoutAttribute.leading, multiplier: 1.0,constant: 15)
-            let contentBottomContraint = NSLayoutConstraint(item: pageView, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: contentLabel, attribute: NSLayoutAttribute.bottom, multiplier: 1.0,constant: 10)
-            let contentWidthConstraint = NSLayoutConstraint(item: contentLabel, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: pageView.frame.size.width - 30)
+            let contentHorizontalConstraint = NSLayoutConstraint(item: contentLabel, attribute: .centerX, relatedBy: .equal, toItem: pageView, attribute: .centerX, multiplier: 1, constant: 0)
+            let contentLeadingContraint = NSLayoutConstraint(item: contentLabel, attribute: .leading, relatedBy: .equal, toItem: pageView, attribute: .leading, multiplier: 1.0,constant: 15)
+            let contentBottomContraint = NSLayoutConstraint(item: pageView, attribute: .bottom, relatedBy: .equal, toItem: contentLabel, attribute: .bottom, multiplier: 1.0,constant: 10)
+            let contentWidthConstraint = NSLayoutConstraint(item: contentLabel, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: pageView.frame.size.width - 30)
             
-            var titleBottomConstraint = NSLayoutConstraint(item: contentLabel, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: titleLabel, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: 15)
+            var titleBottomConstraint = NSLayoutConstraint(item: contentLabel, attribute: .top, relatedBy: .equal, toItem: titleLabel, attribute: .bottom, multiplier: 1, constant: 15)
             
-            var imageBottomConstraint = NSLayoutConstraint(item: titleLabel, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: imageView, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: 15)
+            var imageBottomConstraint = NSLayoutConstraint(item: titleLabel, attribute: .top, relatedBy: .equal, toItem: imageView, attribute: .bottom, multiplier: 1, constant: 15)
             
             contentLabel.text = contents[i]
             contentLabel.textColor = UIColor.orange_functionalGrey5()
@@ -167,18 +168,18 @@ class VoiceOverCarouselViewController: UIViewController, UIScrollViewDelegate, U
             
             
             if(i == pageImages.count - 1){
-                imageWidthConstraint = NSLayoutConstraint(item: imageView, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: pageView.frame.size.width/3)
-                imageHeightConstraint = NSLayoutConstraint(item: imageView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: pageView.frame.size.height/3)
+                imageWidthConstraint = NSLayoutConstraint(item: imageView, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: pageView.frame.size.width/3)
+                imageHeightConstraint = NSLayoutConstraint(item: imageView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: pageView.frame.size.height/3)
                 
-                titleBottomConstraint = NSLayoutConstraint(item: contentLabel, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: titleLabel, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: 15)
+                titleBottomConstraint = NSLayoutConstraint(item: contentLabel, attribute: .top, relatedBy: .equal, toItem: titleLabel, attribute: .bottom, multiplier: 1, constant: 15)
                 
-                imageBottomConstraint = NSLayoutConstraint(item: titleLabel, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: imageView, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: 15)
+                imageBottomConstraint = NSLayoutConstraint(item: titleLabel, attribute: .top, relatedBy: .equal, toItem: imageView, attribute: .bottom, multiplier: 1, constant: 15)
 
                 imageView.tintColor = UIColor.orange_orangeForBlackText()
                 
                 let creditTitleString  = NSMutableAttributedString(string:"voiceover_text_links".localized)
                 let docLink     = NSMutableAttributedString(string:"voiceover_appleDocLink".localized)
-                docLink.addAttribute(NSLinkAttributeName, value: appleDocUrl, range: NSMakeRange(0, docLink.length))
+                docLink.addAttribute(NSAttributedString.Key.link, value: appleDocUrl, range: NSMakeRange(0, docLink.length))
                 //docLink.addAttribute(NSForegroundColorAttributeName, value: UIColor.orange_orangeForBlackText(),range: NSMakeRange(0, docLink.length))
                 
                 creditTitleString.append(docLink)
@@ -192,13 +193,13 @@ class VoiceOverCarouselViewController: UIViewController, UIScrollViewDelegate, U
                 let creditString2 = NSMutableAttributedString(string:"\n"+"voiceover_imagesCredit".localized)
                 let link          = NSMutableAttributedString(string: "voiceover_imagesCreditLink".localized+")")
                 
-                link.addAttribute(NSLinkAttributeName, value: imagesCreditURL, range: NSMakeRange(0, link.length))
-                link.addAttribute(NSUnderlineStyleAttributeName, value:1, range: NSMakeRange(0, link.length))
+                link.addAttribute(NSAttributedString.Key.link, value: imagesCreditURL, range: NSMakeRange(0, link.length))
+                link.addAttribute(NSAttributedString.Key.underlineStyle, value:1, range: NSMakeRange(0, link.length))
                 
                 creditString2.append(link)
                 creditString.append(creditString2)
                 
-                creditString.addAttribute(NSFontAttributeName, value: UIFont.systemFont(ofSize: 11), range: NSMakeRange(0, creditString.length))
+                creditString.addAttribute(NSAttributedString.Key.font, value: UIFont.systemFont(ofSize: 11), range: NSMakeRange(0, creditString.length))
                 
                 contentLabel.attributedText = creditString
                 contentLabel.accessibilityLanguage = "en"
@@ -227,11 +228,11 @@ class VoiceOverCarouselViewController: UIViewController, UIScrollViewDelegate, U
         
     }
     
-    func showCredit(gestureRecognizer: UIGestureRecognizer) {
+    @objc func showCredit(gestureRecognizer: UIGestureRecognizer) {
         UIApplication.shared.openURL(URL(string:imagesCreditURL)!)
     }
     
-    func showDoc(gestureRecognizer: UIGestureRecognizer) {
+    @objc func showDoc(gestureRecognizer: UIGestureRecognizer) {
         UIApplication.shared.openURL(URL(string:appleDocUrl)!)
     }
 
@@ -266,6 +267,6 @@ class VoiceOverCarouselViewController: UIViewController, UIScrollViewDelegate, U
         // Update the page control
         pageControl.currentPage = page
         
-        UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, pageControl)
+        UIAccessibility.post(notification: .layoutChanged, argument: pageControl)
     }
 }

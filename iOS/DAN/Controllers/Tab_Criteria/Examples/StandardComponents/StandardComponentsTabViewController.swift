@@ -92,7 +92,7 @@ class StandardComponentsTabViewController: DefaultTableViewController {
         
         if (indexPath as NSIndexPath).section == 0 {
             
-            return UITableViewAutomaticDimension
+            return UITableView.automaticDimension
         }
         else {
             

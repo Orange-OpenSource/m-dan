@@ -29,15 +29,7 @@ class HeaderBisViewController: DefaultTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let btnName = UIButton()
-        btnName.setImage(UIImage(named: "icon_infos"), for: UIControlState())
-        btnName.accessibilityLabel = "common_informationButton".localized
-        btnName.tintColor = UIColor.white
-        btnName.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
-        btnName.addTarget(self, action: #selector(displayVoiceOverMessage(_:)), for: .touchUpInside)
-        
-        let rightBarButton = UIBarButtonItem(customView: btnName)
-        self.navigationItem.rightBarButtonItem = rightBarButton
+        self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displayVoiceOverMessage(_:)))
     }
     
     override func didReceiveMemoryWarning() {
@@ -78,14 +70,13 @@ class HeaderBisViewController: DefaultTableViewController {
             shareCell.headerLabel2.text = "example_titleAndHeader_headerBis_headerLabelText2".localized
 
             if (indexPath as NSIndexPath).section == accessibleSection {
-                shareCell.headerLabel.accessibilityTraits   |= UIAccessibilityTraitHeader
-                shareCell.headerLabel2.accessibilityTraits  |= UIAccessibilityTraitHeader
+                shareCell.headerLabel.accessibilityTraits.insert(.header)
+                shareCell.headerLabel2.accessibilityTraits.insert(.header)
 
             }
             else {
-                shareCell.headerLabel.accessibilityTraits   &= UIAccessibilityTraitHeader
-                shareCell.headerLabel2.accessibilityTraits  &= UIAccessibilityTraitHeader
-
+                shareCell.headerLabel.accessibilityTraits.remove(.header)
+                shareCell.headerLabel2.accessibilityTraits.remove(.header)
             }
             
             return shareCell
@@ -97,7 +88,7 @@ class HeaderBisViewController: DefaultTableViewController {
         
         if (indexPath as NSIndexPath).section == 0 {
             
-            return UITableViewAutomaticDimension
+            return UITableView.automaticDimension
         }
         else {
             

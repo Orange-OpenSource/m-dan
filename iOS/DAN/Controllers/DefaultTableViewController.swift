@@ -32,7 +32,7 @@ class DefaultTableViewController: UITableViewController {
         super.viewDidLoad()
 
         tableView.backgroundColor   = UIColor.orange_grayForWhiteBG()
-        tableView.rowHeight         = UITableViewAutomaticDimension
+        tableView.rowHeight         = UITableView.automaticDimension
         
         tableView.register(UINib(nibName: "DefaultHeaderViewCell", bundle: nil), forCellReuseIdentifier: headerCellIdentifier)
         
@@ -101,7 +101,7 @@ class DefaultTableViewController: UITableViewController {
             }
             
             defaultHeaderViewCell.contentView.backgroundColor = .orange_greyBgColor()
-            defaultHeaderViewCell.accessibilityTraits = UIAccessibilityTraitHeader
+            defaultHeaderViewCell.accessibilityTraits = UIAccessibilityTraits.header
             
             // Using a view container to fix a bug when using a tableViewCell as header
             let headerContainer = UIView(frame: defaultHeaderViewCell.frame)
@@ -123,7 +123,7 @@ class DefaultTableViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    func displayVoiceOverMessage(_ sender: UIBarButtonItem) {
+    @objc func displayVoiceOverMessage(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "common_alertVoiceOverTitle".localized, message: "common_alertVoiceOver".localized, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "common_ok".localized, style: .default, handler: nil))
         

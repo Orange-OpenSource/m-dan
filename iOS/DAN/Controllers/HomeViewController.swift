@@ -66,9 +66,9 @@ class HomeViewController: UIViewController {
         optionsLabel.text   = "home_options_button".localized
 
         plusButton.accessibilityLabel = "tab_plus_title_accessibilityLabel".localized
-        plusButton.setTitle("...", for: UIControlState())
-        plusButton.setTitleColor(UIColor.white, for: UIControlState())
-        plusButton.setTitleColor(UIColor.orange_orangeForBlackBG(), for: UIControlState.highlighted)
+        plusButton.setTitle("...", for: UIControl.State())
+        plusButton.setTitleColor(UIColor.white, for: UIControl.State())
+        plusButton.setTitleColor(UIColor.orange_orangeForBlackBG(), for: UIControl.State.highlighted)
         plusButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16.0)
         plusButton.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
     }

@@ -29,15 +29,7 @@ class ContentControlCarouselViewController: DefaultTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let btnName = UIButton()
-        btnName.setImage(UIImage(named: "icon_infos"), for: UIControlState())
-        btnName.accessibilityLabel = "common_informationButton".localized
-        btnName.tintColor = UIColor.white
-        btnName.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
-        btnName.addTarget(self, action: #selector(displayVoiceOverMessage(_:)), for: .touchUpInside)
-        
-        let rightBarButton = UIBarButtonItem(customView: btnName)
-        self.navigationItem.rightBarButtonItem = rightBarButton
+        self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displayVoiceOverMessage(_:)))
     }
     
     override func didReceiveMemoryWarning() {
@@ -76,7 +68,7 @@ class ContentControlCarouselViewController: DefaultTableViewController {
             
             let buttonCell: ButtonTableViewCell = tableView.dequeueReusableCell( withIdentifier: buttonCellIdentifier, for: indexPath) as! ButtonTableViewCell
             
-            buttonCell.button.setTitle("example_contentControl_carousel_buttonText".localized, for: UIControlState())
+            buttonCell.button.setTitle("example_contentControl_carousel_buttonText".localized, for: UIControl.State())
             buttonCell.button.tag                   = (indexPath as NSIndexPath).section // allow to differenciate buttons while preparing for segue
             buttonCell.button.accessibilityLabel    = (indexPath as NSIndexPath).section == accessibleSection ? "example_contentControl_carousel_buttonLabelAccessible".localized : "example_contentControl_carousel_buttonLabelNonAccessible".localized
             
@@ -89,7 +81,7 @@ class ContentControlCarouselViewController: DefaultTableViewController {
         
         if (indexPath as NSIndexPath).section == 0 {
             
-            return UITableViewAutomaticDimension
+            return UITableView.automaticDimension
         }
         else {
             

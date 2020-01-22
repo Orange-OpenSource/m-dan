@@ -93,7 +93,7 @@ class CarouselViewController_bis: UIViewController {
             
             if isAccessible && i == 1 || isAccessible && i == 2 {
                 
-                pageView.accessibilityTraits |= UIAccessibilityTraitButton
+                pageView.accessibilityTraits.insert(.button)
             }
             
             scrollView.addSubview(pageView)
@@ -139,7 +139,7 @@ class CarouselViewController_bis: UIViewController {
         pageControl.currentPage = page
         
         if isAccessible {
-            UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, pageControl)
+            UIAccessibility.post(notification: .layoutChanged, argument: pageControl)
         }
     }
 
