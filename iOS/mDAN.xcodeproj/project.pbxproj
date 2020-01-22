@@ -54,6 +54,7 @@
 		04CBE42E1D01DBE80041A95D /* readingOrderLinks.html in Resources */ = {isa = PBXBuildFile; fileRef = 04CBE42D1D01DBE80041A95D /* readingOrderLinks.html */; };
 		04ED731C1D76D07600D1247B /* DoubleTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ED731B1D76D07600D1247B /* DoubleTextTableViewCell.swift */; };
 		04FB95501D75E0A2003675D2 /* CALayer+XibConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB954F1D75E0A2003675D2 /* CALayer+XibConfiguration.swift */; };
+		446C9084239AAA3E00C4BEBB /* UIBarButtonItem+Orange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446C9083239AAA3E00C4BEBB /* UIBarButtonItem+Orange.swift */; };
 		DA6B9A381C1AC16D00767DB4 /* ElementStateFoldAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B9A371C1AC16D00767DB4 /* ElementStateFoldAreaViewController.swift */; };
 		DA6B9A3F1C1AE77C00767DB4 /* AccordionHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B9A3E1C1AE77C00767DB4 /* AccordionHeaderViewCell.swift */; };
 		DA7AD7671C060E8900A42F3D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7AD7661C060E8900A42F3D /* CategoryViewController.swift */; };
@@ -180,6 +181,7 @@
 		04CBE42D1D01DBE80041A95D /* readingOrderLinks.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; lineEnding = 0; path = readingOrderLinks.html; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.html; };
 		04ED731B1D76D07600D1247B /* DoubleTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleTextTableViewCell.swift; sourceTree = "<group>"; };
 		04FB954F1D75E0A2003675D2 /* CALayer+XibConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+XibConfiguration.swift"; sourceTree = "<group>"; };
+		446C9083239AAA3E00C4BEBB /* UIBarButtonItem+Orange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Orange.swift"; sourceTree = "<group>"; };
 		DA6B9A371C1AC16D00767DB4 /* ElementStateFoldAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ElementStateFoldAreaViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DA6B9A3E1C1AE77C00767DB4 /* AccordionHeaderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccordionHeaderViewCell.swift; path = Cells/AccordionHeaderViewCell.swift; sourceTree = "<group>"; };
 		DA7AD7661C060E8900A42F3D /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
@@ -593,6 +595,7 @@
 				F48AF8D41C04733400CBB44D /* String+Orange.swift */,
 				F4B4A9991C0352640036A823 /* UIColor+Orange.swift */,
 				04FB954F1D75E0A2003675D2 /* CALayer+XibConfiguration.swift */,
+				446C9083239AAA3E00C4BEBB /* UIBarButtonItem+Orange.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -682,14 +685,15 @@
 				TargetAttributes = {
 					F4817FD81C03130800E9612D = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = TUM972C778;
+						DevelopmentTeam = N2U26FVUB7;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = F4817FD41C03130800E9612D /* Build configuration list for PBXProject "mDAN" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -835,6 +839,7 @@
 				F48BA2311C16E6B000FC39B2 /* HeaderViewController.swift in Sources */,
 				F4E6EC3A1C217281008C1FF7 /* SlideshowViewController.swift in Sources */,
 				045C16681DC9F89800CEF457 /* VoiceOverCarouselViewController.swift in Sources */,
+				446C9084239AAA3E00C4BEBB /* UIBarButtonItem+Orange.swift in Sources */,
 				DAFC75BC1C15E4EA0008AA81 /* TextualAlternativeDateViewController.swift in Sources */,
 				F49FCD901C19B86200B847F5 /* HeaderTableViewCell.swift in Sources */,
 				F4B4A99A1C0352640036A823 /* UIColor+Orange.swift in Sources */,
@@ -969,15 +974,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Olivier Ducruix (LKZGU4P4D8)";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N2U26FVUB7;
 				INFOPLIST_FILE = DAN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devrap.DAN;
 				PRODUCT_NAME = mDAN;
 				PROVISIONING_PROFILE = "25ded91b-9fdf-466c-8076-192aa9a136e8";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -986,15 +994,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Olivier Ducruix (LKZGU4P4D8)";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N2U26FVUB7;
 				INFOPLIST_FILE = DAN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devrap.DAN;
 				PRODUCT_NAME = mDAN;
 				PROVISIONING_PROFILE = "25ded91b-9fdf-466c-8076-192aa9a136e8";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

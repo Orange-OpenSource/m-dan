@@ -48,27 +48,19 @@ class ElementStateSelectionListViewController: UIViewController, UITableViewDele
         accessibleTableView.backgroundColor     = UIColor.orange_grayForWhiteBG()
         
         accessibleHeaderLabel.text      = "common_accessibleExample".localized
-        accessibleHeaderLabel.accessibilityTraits = UIAccessibilityTraitHeader
+        accessibleHeaderLabel.accessibilityTraits = UIAccessibilityTraits.header
         nonAccessibleHeaderLabel.text   = "common_notAccessibleExample".localized
-        nonAccessibleHeaderLabel.accessibilityTraits = UIAccessibilityTraitHeader
+        nonAccessibleHeaderLabel.accessibilityTraits = UIAccessibilityTraits.header
         
         shortDescriptionHeaderLabel.text    = "example_elementState_selectionList_shortDescription".localized
-        shortDescriptionHeaderLabel.accessibilityTraits = UIAccessibilityTraitHeader
+        shortDescriptionHeaderLabel.accessibilityTraits = UIAccessibilityTraits.header
         descriptionLabel.text               = "example_elementState_selectionList_description".localized
         
         // Remove cell separators for empty cells
         nonAccessibleTableView.tableFooterView  = UIView()
         accessibleTableView.tableFooterView     = UIView()
         
-        let btnName = UIButton()
-        btnName.setImage(UIImage(named: "icon_infos"), for: UIControlState())
-        btnName.accessibilityLabel = "common_informationButton".localized
-        btnName.tintColor = UIColor.white
-        btnName.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
-        btnName.addTarget(self, action: #selector(displayVoiceOverMessage(_:)), for: .touchUpInside)
-        
-        let rightBarButton = UIBarButtonItem(customView: btnName)
-        self.navigationItem.rightBarButtonItem = rightBarButton
+        self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displayVoiceOverMessage(_:)))
     }
 
     override func didReceiveMemoryWarning() {
@@ -157,7 +149,7 @@ class ElementStateSelectionListViewController: UIViewController, UITableViewDele
         return 66
     }
     
-    func displayVoiceOverMessage(_ sender: UIBarButtonItem) {
+    @objc func displayVoiceOverMessage(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "common_alertVoiceOverTitle".localized, message: "common_alertVoiceOver".localized, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "common_ok".localized, style: .default, handler: nil))
         

@@ -35,18 +35,10 @@ class FormLabelViewController: DefaultTableViewController, UITextFieldDelegate {
         tapGesture.cancelsTouchesInView = true
         tableView.addGestureRecognizer(tapGesture)
         
-        let btnName = UIButton()
-        btnName.setImage(UIImage(named: "icon_infos"), for: UIControlState())
-        btnName.accessibilityLabel = "common_informationButton".localized
-        btnName.tintColor = UIColor.white
-        btnName.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
-        btnName.addTarget(self, action: #selector(displayVoiceOverMessage(_:)), for: .touchUpInside)
-        
-        let rightBarButton = UIBarButtonItem(customView: btnName)
-        self.navigationItem.rightBarButtonItem = rightBarButton
+        self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displayVoiceOverMessage(_:)))
     }
     
-    func hideKeyboard() {
+    @objc func hideKeyboard() {
         tableView.endEditing(true)
     }
 
@@ -115,13 +107,13 @@ class FormLabelViewController: DefaultTableViewController, UITextFieldDelegate {
             return 142
         }
         else {
-            return UITableViewAutomaticDimension
+            return UITableView.automaticDimension
         }
     }
     
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return UITableViewAutomaticDimension
+        return UITableView.automaticDimension
     }
     
     //MARK: - UITextFieldDelegate

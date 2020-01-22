@@ -85,7 +85,7 @@ class CarouselViewController: UIViewController, UIScrollViewDelegate {
         
         if isAccessible {
             pageControl.isAccessibilityElement  = true
-            pageControl.accessibilityTraits     = UIAccessibilityTraitAdjustable
+            pageControl.accessibilityTraits     = .adjustable
         }
         else {
             
@@ -132,7 +132,7 @@ class CarouselViewController: UIViewController, UIScrollViewDelegate {
             
             if isAccessible && i == 1 || isAccessible && i == 2 {
                 
-                pageView.accessibilityTraits |= UIAccessibilityTraitButton
+                pageView.accessibilityTraits.insert(.button)
             }
             
             scrollView.addSubview(pageView)
@@ -145,7 +145,7 @@ class CarouselViewController: UIViewController, UIScrollViewDelegate {
 
     }
     
-    func displayNextPage() {
+    @objc func displayNextPage() {
         
         pageControl.currentPage = pageControl.currentPage+1
         
@@ -192,7 +192,7 @@ class CarouselViewController: UIViewController, UIScrollViewDelegate {
         pageControl.currentPage = page
         
         if isAccessible {
-            UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, pageControl)
+            UIAccessibility.post(notification: .layoutChanged, argument: pageControl)
         }
     }
 }
