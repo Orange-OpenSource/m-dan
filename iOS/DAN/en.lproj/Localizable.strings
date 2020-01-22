@@ -40,10 +40,10 @@
 // ----------------
 "home_title" = " Home";
 "home_content" = "Discover the accessibility through examples, explanation and accessibility tools!";
-"home_criteria_button" = "iOS accessibility guide";
-"home_dev_button" = "Developers'Guide";
+"home_criteria_button" = "iOS Accessibility Guide";
+"home_dev_button" = "Developers' Guide";
 "home_voiceover_button" = "VoiceOver";
-"home_options_button" = "Accessibility options";
+"home_options_button" = "Accessibility Options";
 
 
 // ---------------------------------------------------------------------------

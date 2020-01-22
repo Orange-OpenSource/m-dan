@@ -43,23 +43,15 @@ class GhostElementViewController: UIViewController {
         descriptionLabel.text               = "example_ghostElement_alert_description".localized
         customAlertLabel.text               = "example_ghostElement_alert_nonAccessibleAlerteTitle".localized
 
-        nonAccesibleButton.setTitle("example_ghostElement_alert_buttonText".localized, for: UIControlState())
-        accessibleButton.setTitle("example_ghostElement_alert_buttonText".localized, for: UIControlState())
-        customAlertButton.setTitle("common_ok".localized, for: UIControlState())
+        nonAccesibleButton.setTitle("example_ghostElement_alert_buttonText".localized, for: UIControl.State())
+        accessibleButton.setTitle("example_ghostElement_alert_buttonText".localized, for: UIControl.State())
+        customAlertButton.setTitle("common_ok".localized, for: UIControl.State())
         
         nonAccesibleButton.layer.cornerRadius   = 5
         accessibleButton.layer.cornerRadius     = 5
         popUpContainerView.layer.cornerRadius   = 5
         
-        let btnName = UIButton()
-        btnName.setImage(UIImage(named: "icon_infos"), for: UIControlState())
-        btnName.accessibilityLabel = "common_informationButton".localized
-        btnName.tintColor = UIColor.white
-        btnName.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
-        btnName.addTarget(self, action: #selector(displayVoiceOverMessage(_:)), for: .touchUpInside)
-        
-        let rightBarButton = UIBarButtonItem(customView: btnName)
-        self.navigationItem.rightBarButtonItem = rightBarButton
+        self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displayVoiceOverMessage(_:)))
     }
     
     override func didReceiveMemoryWarning() {
@@ -89,7 +81,7 @@ class GhostElementViewController: UIViewController {
         self.navigationController!.navigationBar.isUserInteractionEnabled = true
     }
     
-    func displayVoiceOverMessage(_ sender: UIBarButtonItem) {
+    @objc func displayVoiceOverMessage(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "common_alertVoiceOverTitle".localized, message: "common_alertVoiceOver".localized, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "common_ok".localized, style: .default, handler: nil))
         

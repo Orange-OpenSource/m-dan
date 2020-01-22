@@ -293,7 +293,7 @@ class CategoryViewController: DefaultTableViewController {
         
         if((indexPath as NSIndexPath).section == 0 || (indexPath as NSIndexPath).section == 1) {
             
-            return UITableViewAutomaticDimension
+            return UITableView.automaticDimension
         } else {
             
             return 50

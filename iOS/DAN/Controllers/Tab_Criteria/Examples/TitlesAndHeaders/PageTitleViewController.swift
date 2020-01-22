@@ -73,7 +73,7 @@ class PageTitleViewController: DefaultTableViewController {
         
         if (indexPath as NSIndexPath).section == 0 {
             
-            return UITableViewAutomaticDimension
+            return UITableView.automaticDimension
         }
         else {
             
@@ -87,7 +87,7 @@ class PageTitleViewController: DefaultTableViewController {
     }
     
     // MARK: - Private methods
-    func segmentValueDidChange(_ sender: UISegmentedControl) {
+    @objc func segmentValueDidChange(_ sender: UISegmentedControl) {
         
         title = sender.selectedSegmentIndex == 0 ? "common_example".localized : "mDAN"
     }
@@ -102,6 +102,6 @@ class SwitchCell : UITableViewCell {
         super.awakeFromNib()
 
         accessibilitySegment.tintColor  = .orange_orangeForWhiteBG()
-        accessibilitySegment.setTitleTextAttributes([NSFontAttributeName : UIFont.boldSystemFont(ofSize: 15)], for: UIControlState())
+        accessibilitySegment.setTitleTextAttributes([NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 15)], for: UIControl.State())
     }
 }

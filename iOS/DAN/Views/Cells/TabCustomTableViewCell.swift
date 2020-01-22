@@ -51,27 +51,27 @@ class TabCustomTableViewCell: UITableViewCell {
             if button == sender as! UIButton {
                 button.isSelected = true
                 if accessible {
-                    button.accessibilityTraits = UIAccessibilityTraitButton + UIAccessibilityTraitSelected
+                    button.accessibilityTraits = [.button, .selected]
                 }
-                button.setTitleColor(UIColor.orange_orangeForWhiteBG(), for: UIControlState.selected)
+                button.setTitleColor(UIColor.orange_orangeForWhiteBG(), for: UIControl.State.selected)
                 button.tintColor = UIColor.clear
             }
             else {
                 button.isSelected = false
                 if accessible {
-                    button.accessibilityTraits = UIAccessibilityTraitNone
-                    button.accessibilityTraits = UIAccessibilityTraitButton
+                    button.accessibilityTraits = .none
+                    button.accessibilityTraits = .button
                 }
-                button.setTitleColor(UIColor.orange_blackColor(), for: UIControlState())
+                button.setTitleColor(UIColor.orange_blackColor(), for: UIControl.State())
             }
         }
     }
     
     func accessibleSegmentedControl() {
         
-        onePageButton.accessibilityTraits = UIAccessibilityTraitButton + UIAccessibilityTraitSelected
-        twoPageButton.accessibilityTraits = UIAccessibilityTraitButton
-        threePageButton.accessibilityTraits = UIAccessibilityTraitButton
+        onePageButton.accessibilityTraits = [.button, .selected]
+        twoPageButton.accessibilityTraits = .button
+        threePageButton.accessibilityTraits = .button
         
         
         onePageButton.accessibilityHint = "1 " + "common_of".localized + " " + String(buttonList.count)
@@ -82,7 +82,7 @@ class TabCustomTableViewCell: UITableViewCell {
     func nonAccessibleButton() {
         
         for button:UIButton in buttonList {
-            button.accessibilityTraits = UIAccessibilityTraitNone
+            button.accessibilityTraits = .none
             button.accessibilityHint = ""
         }
     }

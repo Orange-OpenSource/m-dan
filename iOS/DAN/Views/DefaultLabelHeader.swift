@@ -28,7 +28,7 @@ class DefaultLabelHeader: UILabel {
         self.backgroundColor = UIColor.orange_greyBgColor()
         
         if #available(iOS 8.2, *) {
-            self.font = UIFont.systemFont(ofSize: 17, weight:UIFontWeightMedium)
+            self.font = UIFont.systemFont(ofSize: 17, weight:UIFont.Weight.medium)
         } else {
             // Fallback on earlier versions
             self.font = UIFont.systemFont(ofSize: 17)

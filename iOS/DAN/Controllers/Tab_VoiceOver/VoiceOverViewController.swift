@@ -65,7 +65,7 @@ class VoiceOverViewController: DefaultTableViewController {
             
             textAndButtonCell            = tableView.dequeueReusableCell(withIdentifier: creditCellIdentifier, for: indexPath) as! TextAndButtonTableViewCell
             textAndButtonCell.label.text = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
-            textAndButtonCell.button.setTitle("voiceover_gestures".localized, for: UIControlState())
+            textAndButtonCell.button.setTitle("voiceover_gestures".localized, for: UIControl.State())
             
             return textAndButtonCell
             
@@ -79,7 +79,7 @@ class VoiceOverViewController: DefaultTableViewController {
             if (indexPath as NSIndexPath).section == activationSection {
                 
                 let cellString      = NSMutableAttributedString(string:cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized)
-                let settingsPath    = NSMutableAttributedString(string:"voiceover_text_settingsPath".localized, attributes: [NSFontAttributeName : UIFont.boldSystemFont(ofSize: 16.0)])
+                let settingsPath    = NSMutableAttributedString(string:"voiceover_text_settingsPath".localized, attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 16.0)])
                 
                 cellString.append(settingsPath)
                 
@@ -105,7 +105,7 @@ class VoiceOverViewController: DefaultTableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return UITableViewAutomaticDimension
+        return UITableView.automaticDimension
     }
     
     /*override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
