@@ -86,14 +86,14 @@ class SlideshowViewController: UIViewController {
     }
     
     // MARK: - Private methods
-    func enterFullscreen() {
+    @objc func enterFullscreen() {
         
         UIView.animate(withDuration: 0.5, animations: { () -> Void in
             
             self.navigationController?.navigationBar.alpha      = 0
             self.tabBarController?.tabBar.alpha                 = 0
             self.controlsView.alpha                             = 0
-            self.closeButton.alpha                              = self.isAccessible && UIAccessibilityIsVoiceOverRunning() ? 1 : 0
+            self.closeButton.alpha                              = self.isAccessible && UIAccessibility.isVoiceOverRunning ? 1 : 0
         }) 
         
         isFullScreen = true
@@ -134,8 +134,8 @@ class SlideshowViewController: UIViewController {
     }
     
     // MARK: - VoiceOver notifications
-    func voiceOverStatusDidChange(_ notification: Notification) {
+    @objc func voiceOverStatusDidChange(_ notification: Notification) {
         
-        self.closeButton.alpha = self.isAccessible && isFullScreen && UIAccessibilityIsVoiceOverRunning() ? 1 : 0
+        self.closeButton.alpha = self.isAccessible && isFullScreen && UIAccessibility.isVoiceOverRunning ? 1 : 0
     }
 }

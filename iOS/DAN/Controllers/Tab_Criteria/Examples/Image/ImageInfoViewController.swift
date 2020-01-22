@@ -30,15 +30,7 @@ class ImageInfoViewController: DefaultTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let btnName = UIButton()
-        btnName.setImage(UIImage(named: "icon_infos"), for: UIControlState())
-        btnName.accessibilityLabel = "common_informationButton".localized
-        btnName.tintColor = UIColor.white
-        btnName.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
-        btnName.addTarget(self, action: #selector(displayVoiceOverMessage(_:)), for: .touchUpInside)
-        
-        let rightBarButton = UIBarButtonItem(customView: btnName)
-        self.navigationItem.rightBarButtonItem = rightBarButton
+        self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displayVoiceOverMessage(_:)))
     }
     
     
@@ -97,12 +89,12 @@ class ImageInfoViewController: DefaultTableViewController {
             return UITableViewAutomaticDimension
         }*/
         
-        return UITableViewAutomaticDimension
+        return UITableView.automaticDimension
     }
     
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return UITableViewAutomaticDimension
+        return UITableView.automaticDimension
     }
     
 }
@@ -130,7 +122,7 @@ class ImageInfoTableViewCell: UITableViewCell {
         
         buttonView.accessibilityLabel = "example_image_info_accessibilityLabel".localized
         buttonView.accessibilityHint = "example_image_info_accessibilityHint".localized
-        buttonView.accessibilityTraits = UIAccessibilityTraitButton
+        buttonView.accessibilityTraits = UIAccessibilityTraits.button
     }
     
 }

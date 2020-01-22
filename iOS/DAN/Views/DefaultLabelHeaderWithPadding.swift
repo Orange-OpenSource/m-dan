@@ -28,7 +28,7 @@ class DefaultLabelHeaderWithPadding: UILabel {
         self.backgroundColor = UIColor.orange_greyBgColor()
         
         if #available(iOS 8.2, *) {
-            self.font = UIFont.systemFont(ofSize: 17, weight:UIFontWeightMedium)
+            self.font = UIFont.systemFont(ofSize: 17, weight:UIFont.Weight.medium)
         } else {
             // Fallback on earlier versions
             self.font = UIFont.systemFont(ofSize: 17)
@@ -37,6 +37,6 @@ class DefaultLabelHeaderWithPadding: UILabel {
     
     override func drawText(in rect: CGRect) {
         let insets = UIEdgeInsets.init(top: 0, left: 15, bottom: 0, right: 15)
-        super.drawText(in: UIEdgeInsetsInsetRect(rect, insets))
+        super.drawText(in: rect.inset(by: insets))
     }
 }

@@ -34,15 +34,7 @@ class ContentChangeElementUpdateViewController: DefaultTableViewController, UITe
         tapGesture.cancelsTouchesInView = true
         tableView.addGestureRecognizer(tapGesture)
         
-        let btnName = UIButton()
-        btnName.setImage(UIImage(named: "icon_infos"), for: UIControlState())
-        btnName.accessibilityLabel = "common_informationButton".localized
-        btnName.tintColor = UIColor.white
-        btnName.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
-        btnName.addTarget(self, action: #selector(displayVoiceOverMessage(_:)), for: .touchUpInside)
-        
-        let rightBarButton = UIBarButtonItem(customView: btnName)
-        self.navigationItem.rightBarButtonItem = rightBarButton
+        self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displayVoiceOverMessage(_:)))
     }
     
     override func didReceiveMemoryWarning() {
@@ -50,7 +42,7 @@ class ContentChangeElementUpdateViewController: DefaultTableViewController, UITe
     }
     
     // MARK: - Private methods
-    func hideKeyboard() {
+    @objc func hideKeyboard() {
         tableView.endEditing(true)
     }
     
@@ -69,7 +61,7 @@ class ContentChangeElementUpdateViewController: DefaultTableViewController, UITe
         ]
     }
     
-    func switchStateDidChange(_ addressSwitch: UISwitch) {
+    @objc func switchStateDidChange(_ addressSwitch: UISwitch) {
   
         tableView.beginUpdates()
         tableView.endUpdates()
@@ -83,7 +75,7 @@ class ContentChangeElementUpdateViewController: DefaultTableViewController, UITe
         
         if addressSwitch.tag == accessibleSection && !addressSwitch.isOn {
             
-            UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, cell?.addressTextfield)
+            UIAccessibility.post(notification: UIAccessibility.Notification.layoutChanged, argument: cell?.addressTextfield)
             
             //print("test" + String(cell?.accessibilityElementCount()));
         }
@@ -122,7 +114,7 @@ class ContentChangeElementUpdateViewController: DefaultTableViewController, UITe
             
             addressCell.addressSwitch.addTarget(self, action: #selector(ContentChangeElementUpdateViewController.switchStateDidChange(_:)), for: .valueChanged)
             
-            let placeholder = NSAttributedString(string: "example_contentChange_elementUpdate_placeholder".localized, attributes: [NSForegroundColorAttributeName:UIColor.colorWithHex(0x666666)])
+            let placeholder = NSAttributedString(string: "example_contentChange_elementUpdate_placeholder".localized, attributes: [NSAttributedString.Key.foregroundColor:UIColor.colorWithHex(0x666666)])
             addressCell.addressTextfield.attributedPlaceholder = placeholder
 
             return addressCell
@@ -134,7 +126,7 @@ class ContentChangeElementUpdateViewController: DefaultTableViewController, UITe
         
         if (indexPath as NSIndexPath).section == 0 {
             
-            return UITableViewAutomaticDimension
+            return UITableView.automaticDimension
         }
         else {
             
