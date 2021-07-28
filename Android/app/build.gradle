@@ -13,6 +13,10 @@ android {
         targetSdkVersion 30
         vectorDrawables.useSupportLibrary = true
 
+        applicationId "com.orange.ease.dan"
+        versionCode 2
+        versionName "2.0.0"
+
         // If you have different applicationIds for buildTypes or productFlavors uncomment this block.
         //javaCompileOptions {
      /*   annotationProcessorOptions {
@@ -44,33 +48,15 @@ android {
     }
 
 // Specific config
-
-    flavorDimensions "version"
-
-    productFlavors {
-        qualif {
-            applicationId "com.orange.ease.dan.qualif"
-            versionCode 11
-            versionName "3.3"
-        }
-        prod {
-            applicationId "com.orange.ease.dan"
-            versionCode 1
-            versionName "1.0"
-        }
-    }
-
     buildTypes {
         debug {
             debuggable true
-            proguardFile 'proguard-rules.txt'
             minifyEnabled false
             signingConfig signingConfigs.debug
         }
         release {
             debuggable false
             zipAlignEnabled true
-            proguardFile 'proguard-rules.txt'
             // TODO passer minify a true
             minifyEnabled false
             signingConfig signingConfigs.debug
