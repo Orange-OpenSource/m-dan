@@ -5,12 +5,12 @@ plugins {
 def AAVersion = '4.3.1'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 25
+        targetSdkVersion 30
         vectorDrawables.useSupportLibrary = true
 
         // If you have different applicationIds for buildTypes or productFlavors uncomment this block.
@@ -44,6 +44,9 @@ android {
     }
 
 // Specific config
+
+    flavorDimensions "version"
+
     productFlavors {
         qualif {
             applicationId "com.orange.ease.dan.qualif"
