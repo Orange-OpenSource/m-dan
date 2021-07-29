@@ -19,7 +19,7 @@
 
 package com.orange.ease.dan.guide.accessibility.lvl1;
 
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.util.Log;
 import android.view.View;
 import android.widget.ListView;

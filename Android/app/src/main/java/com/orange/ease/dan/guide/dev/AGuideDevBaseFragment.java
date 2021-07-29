@@ -19,8 +19,8 @@
 
 package com.orange.ease.dan.guide.dev;
 
-import android.support.annotation.StringRes;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.StringRes;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.orange.ease.dan.BaseFragment;
