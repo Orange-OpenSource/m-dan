@@ -56,6 +56,7 @@ android {
         }
         prod {
             dimension "version"
+            isDefault true
             applicationId "com.orange.ease.dan"
             versionCode 1
             versionName "1.0"
