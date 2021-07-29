@@ -89,11 +89,11 @@ dependencies {
     // include the view badgers etc.
     implementation fileTree(include: ['*.jar'], dir: 'libs')
 
-    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0') {
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.4.0') {
         exclude group: 'com.android.support', module: 'support-annotations'
     }
 
-    androidTestImplementation('androidx.test.espresso:espresso-contrib:3.1.0') {
+    androidTestImplementation('androidx.test.espresso:espresso-contrib:3.4.0') {
         exclude group: 'com.android.support', module: 'appcompat'
         exclude group: 'com.android.support', module: 'support-v4'
         exclude group: 'com.android.support', module: 'support-v7'
@@ -114,5 +114,5 @@ dependencies {
     implementation('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2') {
         exclude module: 'support-v4'
     }
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13.2'
 }
