@@ -2,7 +2,7 @@ package com.orange.ease.dan;
 
 
 import android.content.Context;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 
 import com.orange.ease.dan.navFragments.OnNewFragment;
 

@@ -1,7 +1,7 @@
 package com.orange.ease.dan.guide.accessibility.lvl1;
 
 import android.os.Bundle;
-import android.support.annotation.StringRes;
+import androidx.annotation.StringRes;
 
 import com.orange.ease.dan.BaseListFragment;
 import com.orange.ease.dan.R;
