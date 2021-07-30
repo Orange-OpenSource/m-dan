@@ -1,7 +1,7 @@
 package com.orange.ease.dan.view;
 
 import android.content.Context;
-import android.support.annotation.StringRes;
+import androidx.annotation.StringRes;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 

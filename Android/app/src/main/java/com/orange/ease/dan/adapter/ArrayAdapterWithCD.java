@@ -21,7 +21,7 @@ package com.orange.ease.dan.adapter;
 
 import android.content.Context;
 import android.os.Build;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -40,7 +40,7 @@ public class ArrayAdapterWithCD<S> extends ArrayAdapter {
     public View getView(int position, View convertView, @NonNull ViewGroup parent) {
 
         if(convertView != null){
-            TextView tv = (TextView) convertView.findViewById(R.id.textCategory);
+            TextView tv = convertView.findViewById(R.id.textCategory);
             if(convertView.isSelected()){
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     tv.setContentDescription(tv.getText());

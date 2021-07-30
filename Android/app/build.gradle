@@ -1,22 +1,22 @@
-apply plugin: 'com.android.application'
-
-def AAVersion = '4.3.1'
+plugins {
+    id 'com.android.application'
+}
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 25
+        targetSdkVersion 30
         vectorDrawables.useSupportLibrary = true
 
         // If you have different applicationIds for buildTypes or productFlavors uncomment this block.
         //javaCompileOptions {
-     /*   annotationProcessorOptions {
-            arguments = ["resourcePackageName": android.defaultConfig.applicationId]
-        }*/
-        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+        /*   annotationProcessorOptions {
+               arguments = ["resourcePackageName": android.defaultConfig.applicationId]
+           }*/
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
 
 
@@ -42,13 +42,19 @@ android {
     }
 
 // Specific config
+
+    flavorDimensions "version"
+
     productFlavors {
         qualif {
+            dimension "version"
             applicationId "com.orange.ease.dan.qualif"
             versionCode 11
             versionName "3.3"
         }
         prod {
+            dimension "version"
+            isDefault true
             applicationId "com.orange.ease.dan"
             versionCode 1
             versionName "1.0"
@@ -71,16 +77,23 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
+    // include the view badgers etc.
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
 
-    androidTestCompile("com.android.support.test.espresso:espresso-contrib:2.2.2") {
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.4.0') {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+
+    androidTestImplementation('androidx.test.espresso:espresso-contrib:3.4.0') {
         exclude group: 'com.android.support', module: 'appcompat'
         exclude group: 'com.android.support', module: 'support-v4'
         exclude group: 'com.android.support', module: 'support-v7'
@@ -90,15 +103,16 @@ dependencies {
     }
 
     // AppCompat / Support
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:cardview-v7:25.3.1'
-    compile 'com.android.support:recyclerview-v7:25.3.1'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
 
+    def AAVersion = '4.8.0'
     annotationProcessor "org.androidannotations:androidannotations:$AAVersion"
-    compile "org.androidannotations:androidannotations-api:$AAVersion"
+    implementation "org.androidannotations:androidannotations-api:$AAVersion"
 
-    compile('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2') {
+    implementation('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2') {
         exclude module: 'support-v4'
     }
-    testCompile 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13.2'
 }
