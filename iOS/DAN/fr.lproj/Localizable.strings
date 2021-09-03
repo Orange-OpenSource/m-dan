@@ -51,8 +51,8 @@
 // Criteria tab
 // ---------------------------------------------------------------------------
 // Title
-"tab_criteria_title"    = "Guide d'accessibilité iOS";
-"tab_criteria_title_short"    = "Guide";
+"tab_criteria_title"    = "Critère accessibilité";
+"tab_criteria_title_short"    = "Critère";
 
 // Sections
 "criteria_section_description" = "Description et utilisation";
@@ -79,6 +79,7 @@
 "criteria_category_form"                = "Formulaire";
 "criteria_category_readingOrder"        = "Ordre de lecture";
 "criteria_category_language"            = "Langue";
+"criteria_category_voiceOver"           = "Voice Over";
 
 // -----------------
 // Examples - Image
@@ -394,6 +395,21 @@
 "example_language_accent_hello"             = "hello, welcome on Orange";
 "example_language_accent_newsletter"        = "warning";
 "example_language_accent_login"             = "download completed";
+
+// --------------------
+// Examples - Voice Over
+// --------------------
+"criteria_category_voiceOver_whatFor"   = "VoiceOver est un lecteur d’écran intégré qui décrit à haute voix les éléments qui apparaissent sur l’écran de votre téléphone. Il est gratuit et permet à un utilisateur non ou mal voyant, dyslexique et illettré de pouvoir vocaliser tous les éléments visibles contenus dans la page.";
+"criteria_category_voiceOver_howTo"     = "Pour activer VoiceOver, il suffit de l’activer dans le menu :\n\nRéglages/Général/Accessibilité/VoiceOver";
+
+// Examples - language -> text
+"example_voiceover_accent_title"             = "Voir tous les gestes";
+"example_voiceover_accent_shortDescription"  = "Nous décrirons ici les gestes de base pour une utilisation courante de VoiceOver.";
+"example_language_accent_description"       = "Ci-dessous, quelques exemples qu'il est nécessaire de déclarer dans une autre langue que celle du système.";
+"example_language_accent_hello"             = "hello, welcome on Orange";
+"example_language_accent_newsletter"        = "warning";
+"example_language_accent_login"             = "download completed";
+
 
 
 // ---------------------------------------------------------------------------

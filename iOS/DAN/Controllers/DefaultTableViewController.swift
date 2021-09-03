@@ -20,7 +20,7 @@
 import UIKit
 
 class DefaultTableViewController: UITableViewController {
-
+    
     //MARK: - Properties
     var cellsContent: [[String]]    = []
     var cellsSubtitle: [[String]]   = []
@@ -30,16 +30,36 @@ class DefaultTableViewController: UITableViewController {
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        tableView.backgroundColor   = UIColor.orange_grayForWhiteBG()
+        
         tableView.rowHeight         = UITableView.automaticDimension
         
         tableView.register(UINib(nibName: "DefaultHeaderViewCell", bundle: nil), forCellReuseIdentifier: headerCellIdentifier)
         
         // Remove cell separators for empty cells
         tableView.tableFooterView = UIView()
-        
+    
         setUpDatas()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        setUpNavigationBar()
+    }
+    
+    func setUpNavigationBar() {
+        
+        //Navigation Bar Color + Title
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.barTintColor = UIColor.white
+        
+        //        let attrs = [
+        //            NSAttributedString.Key.foregroundColor: UIColor.label,
+        //            NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .largeTitle)
+        //        ]
+        //        navigationController?.navigationBar.largeTitleTextAttributes = attrs
+        
+        DispatchQueue.main.async { [weak self] in
+            self?.navigationController?.navigationBar.sizeToFit()
+        }
     }
     
     func setUpDatas() {
@@ -68,7 +88,7 @@ class DefaultTableViewController: UITableViewController {
             || sectionHeaders[section] == "common_accessibleCustomExample"
             || sectionHeaders[section] == "common_notAccessibleCustomExample") {
             
-                return
+            return
         }
         else {
             let header: UITableViewHeaderFooterView     = view as! UITableViewHeaderFooterView

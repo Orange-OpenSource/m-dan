@@ -50,8 +50,8 @@
 // Criteria tab
 // ---------------------------------------------------------------------------
 // Title
-"tab_criteria_title"    = "iOS accessibility guide";
-"tab_criteria_title_short"    = "Guide";
+"tab_criteria_title"    = "Accessibility criteria";
+"tab_criteria_title_short"    = "Accessibility criteria";
 
 // Sections
 "criteria_section_description" = "Description and use";
@@ -78,6 +78,7 @@
 "criteria_category_form"                = "Form";
 "criteria_category_readingOrder"        = "Reading order";
 "criteria_category_language"            = "Language";
+"criteria_category_voiceOver"           = "Voice over";
 
 // -----------------
 // Examples - Image

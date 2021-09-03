@@ -24,8 +24,8 @@ class DefaultLabelHeaderWithPadding: UILabel {
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
         
-        self.textColor = UIColor.orange_blackColor()
-        self.backgroundColor = UIColor.orange_greyBgColor()
+//        self.textColor = UIColor.orange_blackColor()
+//        self.backgroundColor = UIColor.orange_greyBgColor()
         
         if #available(iOS 8.2, *) {
             self.font = UIFont.systemFont(ofSize: 17, weight:UIFont.Weight.medium)
