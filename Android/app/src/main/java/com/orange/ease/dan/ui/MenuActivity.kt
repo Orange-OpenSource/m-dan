@@ -8,6 +8,7 @@ import com.orange.ease.dan.databinding.ActivityMenuBinding
 import androidx.fragment.app.commit
 import com.orange.ease.dan.ui.criteria.CriteriaFragment
 import com.orange.ease.dan.ui.developmentguide.DevelopmentGuideFragment
+import com.orange.ease.dan.ui.tools.OptionsFragment
 
 class MenuActivity : AppCompatActivity() {
 
@@ -39,6 +40,10 @@ class MenuActivity : AppCompatActivity() {
         displayFragment(DevelopmentGuideFragment.newInstance())
     }
 
+    private fun initOptionFragment(){
+        displayFragment(OptionsFragment.newInstance())
+    }
+
     private fun displayFragment(fragment: Fragment) {
         val fragmentContainerViewId: Int = R.id.main_container
 
@@ -53,7 +58,7 @@ class MenuActivity : AppCompatActivity() {
         when (integer) {
             R.id.action_android -> initCriteriaFragment()
             R.id.action_logo -> initDevelopmentFragment()
-            R.id.action_landscape -> initDevelopmentFragment()
+            R.id.action_landscape -> initOptionFragment()
         }
         return true
     }
