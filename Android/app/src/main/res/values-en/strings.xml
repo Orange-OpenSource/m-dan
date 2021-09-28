@@ -663,6 +663,11 @@
         <item>Correcting colors\n(This option is not available on your device)</item>
         <item>Inverting colors\n(This option is not available on your device)</item>
     </string-array>
+    <string name="options_magnification_title">Font size</string>
+    <string name="options_zoom_title">Zoom</string>
+    <string name="options_colors_correction_title">Correcting colors</string>
+    <string name="options_colors_inversion_title">Inverting colors</string>
+    <string name="options_talkback_title">Talkback</string>
 
 
     <!-- accessibility & Orange view -->
