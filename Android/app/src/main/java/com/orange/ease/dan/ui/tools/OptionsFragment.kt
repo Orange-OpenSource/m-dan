@@ -10,11 +10,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.ConcatAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.orange.ease.dan.databinding.RecyclerViewFragmentBinding
-import com.orange.ease.dan.model.DevelopmentGuide
-import com.orange.ease.dan.model.DevelopmentGuideRepository
-import com.orange.ease.dan.model.Option
-import com.orange.ease.dan.model.OptionRepository
-import com.orange.ease.dan.ui.developmentguide.details.DetailsDevGuideActivity
+import com.orange.ease.dan.model.*
+import com.orange.ease.dan.ui.tools.classic.ClassicOptionActivity
+import com.orange.ease.dan.ui.tools.talkback.GestureActivity
 
 class OptionsFragment: Fragment(), ListOptionsRecyclerViewAdapter.ListOptionRecyclerViewClickListener {
 
@@ -54,7 +52,11 @@ class OptionsFragment: Fragment(), ListOptionsRecyclerViewAdapter.ListOptionRecy
 
     override fun listItemClicked(option: Option) {
         OptionRepository.setCurrentOption(option)
-        val intent = Intent(activity, DetailsDevGuideActivity::class.java)
+        val intent  = when (option) {
+            is OptionTalkback ->  Intent(activity, GestureActivity::class.java)
+            is OptionClassic -> Intent(activity, ClassicOptionActivity::class.java)
+            else -> null
+        }
         startActivity(intent)
     }
 }

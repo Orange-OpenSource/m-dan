@@ -87,6 +87,7 @@
             android:layout_centerHorizontal="true"
             android:text="@string/tb_talkback_btn"
             android:focusable="true"
+            android:onClick="enableTalkback"
             android:layout_marginBottom="@dimen/medium_margin"/>
 
         <TextView
@@ -131,6 +132,7 @@
             android:layout_below="@id/textViewContentUseTalkback"
             android:layout_centerHorizontal="true"
             android:text="@string/tb_moves_btn"
+            android:onClick="seeGesture"
             android:focusable="true"
             android:layout_marginBottom="@dimen/large_margin"/>
 

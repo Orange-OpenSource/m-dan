@@ -666,6 +666,11 @@
         <item>Correction des couleurs\n(Option non disponible pour votre mobile)</item>
         <item>Inversion des couleurs\n(Option non disponible pour votre mobile)</item>
     </string-array>
+    <string name="options_magnification_title">Agrandissement des caractères</string>
+    <string name="options_zoom_title">Zoom</string>
+    <string name="options_colors_correction_title">Correction des couleurs</string>
+    <string name="options_colors_inversion_title">Inversion des couleurs</string>
+    <string name="options_talkback_title">Talkback</string>
 
 
     <!-- accessibility & Orange view -->
