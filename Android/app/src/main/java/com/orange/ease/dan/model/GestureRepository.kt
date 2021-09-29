@@ -48,7 +48,8 @@ object GestureRepository {
             gesture7,
             gesture8,
             gesture9,
-            gesture10
+            gesture10,
+            gesture11
         )
     }
 }
