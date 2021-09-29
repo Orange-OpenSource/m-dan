@@ -4,20 +4,20 @@
     <item
         android:id="@+id/action_android"
         android:enabled="true"
-        android:icon="@drawable/dev_illustration"
-        android:title="@string/bottom_navigation_menu_android"
+        android:icon="@drawable/icon_guid_android"
+        android:title="@string/bottom_navigation_menu_criteria"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_logo"
         android:enabled="true"
-        android:icon="@drawable/dev_illustration"
-        android:title="@string/bottom_navigation_menu_logos"
+        android:icon="@drawable/icon_guid_dev"
+        android:title="@string/bottom_navigation_menu_dev"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_landscape"
         android:enabled="true"
-        android:icon="@drawable/dev_illustration"
-        android:title="@string/bottom_navigation_menu_landscape"
+        android:icon="@drawable/icon_settings"
+        android:title="@string/bottom_navigation_menu_options"
         app:showAsAction="ifRoom" />
 </menu>
 

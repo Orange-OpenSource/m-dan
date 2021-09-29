@@ -706,9 +706,9 @@
     <string name="about_other_licences_content"><b>AnimatedExpandableListView</b>\nCopyright &#169; 2014 Gary Guo\n\nAnimatedExpandableListView est distribué selon les termes de la <a rel="about_licence" href="http://www.apache.org/licenses/LICENSE-2.0">licence Apache 2.0</a>\nPour en savoir plus : <a rel="about_licence" href="https://github.com/idunnololz/AnimatedExpandableListView">https://github.com/idunnololz/AnimatedExpandableListView</a>\n\n<b>Android Annotations</b>\nCopyright © 2012–2016 eBusiness Information\n\nAndroidAnnotations est distribué selon les termes de la <a rel="about_licence" href="http://www.apache.org/licenses/LICENSE-2.0">licence Apache 2.0</a>\nPour en savoir plus : <a rel="about_licence" href="https://github.com/excilys/androidannotations/">https://github.com/excilys/androidannotations/</a>\n\n<b>Android Auto Scroll ViewPager</b>\nCopyright &#169; 2014 trinea.cn\n\nAndroidAutoScrollViewPager est distribué selon les termes de la <a rel="about_licence" href="http://www.apache.org/licenses/LICENSE-2.0">licence Apache 2.0</a>\nPour en savoir plus : <a rel="about_licence" href="https://github.com/Trinea/android-auto-scroll-view-pager">https://github.com/Trinea/android-auto-scroll-view-pager</a>\n\n<b>Pochette d\'album \"Mary Daisy Jane\"</b>\nLa pochette de l\'album de Mael \"Mary Daisy Jane\" est sous licence <a rel="about_licence" href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</a> et est propriété de ses créateurs ou détenteurs.</string>
 
     <!-- Navigation view -->
-    <string name="bottom_navigation_menu_landscape">Landscape</string>
-    <string name="bottom_navigation_menu_logos">Logo</string>
-    <string name="bottom_navigation_menu_android">Android</string>
+    <string name="bottom_navigation_menu_options">Options</string>
+    <string name="bottom_navigation_menu_dev">Development</string>
+    <string name="bottom_navigation_menu_criteria">Criteria</string>
 
 </resources>
 

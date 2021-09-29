@@ -13,7 +13,7 @@ class GestureAdapter(fa: FragmentActivity) : FragmentStateAdapter(fa) {
 
     override fun createFragment(position: Int): Fragment {
         val fragment = GestureFragment()
-        fragment.changeContent(gestures[position], position+1, gestures.size)
+        fragment.setGestureValues(gestures[position], position+1, gestures.size)
         return fragment
     }
 

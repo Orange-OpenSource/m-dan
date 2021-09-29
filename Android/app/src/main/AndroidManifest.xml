@@ -27,12 +27,42 @@
         android:label="@string/app_name"
         android:theme="@style/OrangeTheme">
         <activity
-            android:name=".SplashScreen_"
+            android:name=".ui.MenuActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.criteria.details.DetailsCriteriaActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            >
+        </activity>
+        <activity
+            android:name=".ui.developmentguide.details.DetailsDevGuideActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            >
+        </activity>
+        <activity
+            android:name=".ui.tools.classic.ClassicOptionActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            >
+        </activity>
+        <activity
+            android:name=".ui.tools.talkback.GestureActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            >
+        </activity>
+        <activity
+            android:name=".ui.tools.talkback.TalkbackOptionActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            >
         </activity>
         <activity
             android:name=".MainActivity_"

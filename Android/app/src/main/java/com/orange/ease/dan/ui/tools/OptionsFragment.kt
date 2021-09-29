@@ -13,6 +13,7 @@ import com.orange.ease.dan.databinding.RecyclerViewFragmentBinding
 import com.orange.ease.dan.model.*
 import com.orange.ease.dan.ui.tools.classic.ClassicOptionActivity
 import com.orange.ease.dan.ui.tools.talkback.GestureActivity
+import com.orange.ease.dan.ui.tools.talkback.TalkbackOptionActivity
 
 class OptionsFragment: Fragment(), ListOptionsRecyclerViewAdapter.ListOptionRecyclerViewClickListener {
 
@@ -53,7 +54,7 @@ class OptionsFragment: Fragment(), ListOptionsRecyclerViewAdapter.ListOptionRecy
     override fun listItemClicked(option: Option) {
         OptionRepository.setCurrentOption(option)
         val intent  = when (option) {
-            is OptionTalkback ->  Intent(activity, GestureActivity::class.java)
+            is OptionTalkback ->  Intent(activity, TalkbackOptionActivity::class.java)
             is OptionClassic -> Intent(activity, ClassicOptionActivity::class.java)
             else -> null
         }
