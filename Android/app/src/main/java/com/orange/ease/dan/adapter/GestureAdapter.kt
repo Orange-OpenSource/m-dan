@@ -1,9 +1,10 @@
-package com.orange.ease.dan.ui.tools.talkback
+package com.orange.ease.dan.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.orange.ease.dan.model.Gesture
+import com.orange.ease.dan.ui.tools.talkback.GestureFragment
 
 class GestureAdapter(fa: FragmentActivity) : FragmentStateAdapter(fa) {
 

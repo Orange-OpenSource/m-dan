@@ -1,11 +1,12 @@
-package com.orange.ease.dan.ui.developmentguide.details
+package com.orange.ease.dan.ui.developmentguide
 
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.orange.ease.dan.databinding.DetailsDevGuideActivityBinding
-import com.orange.ease.dan.model.DevelopmentGuideRepository
+import com.orange.ease.dan.data.DevelopmentGuideRepository
+import com.orange.ease.dan.viewmodel.DevGuideDetailsViewModel
 
 class DetailsDevGuideActivity : AppCompatActivity() {
 
@@ -32,9 +33,9 @@ class DetailsDevGuideActivity : AppCompatActivity() {
         val guide = viewModel.guide?.let { it } ?: return
 
         //binding.textViewTitleDescriptionGuideDev.text = getString(guide.titleRes)
-        binding.textViewDescriptionContentGuideDev.text = getString(guide.descriptionRes)
+        binding.textViewDescriptionContentGuideDev.text = getString(guide.resDescription)
 
-        val strongLink = guide.linkRes?.let {getString(it)} ?: return
+        val strongLink = guide.resLink?.let {getString(it)} ?: return
 
         binding.textViewContentLinksGuideDev.text = strongLink
         binding.textViewTitleLinksGuideDev.visibility = View.VISIBLE
@@ -43,7 +44,7 @@ class DetailsDevGuideActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        supportActionBar?.title = viewModel.guide?.let { getString(it.titleRes) }
+        supportActionBar?.title = viewModel.guide?.let { getString(it.resTitle) }
     }
 }
 

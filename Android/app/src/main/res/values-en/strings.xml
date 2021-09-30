@@ -703,10 +703,10 @@
     <string name="about_other_licences_content"><b>AnimatedExpandableListView</b>\nCopyright &#169; 2014 Gary Guo\n\nAnimatedExpandableListView licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" rel="about_licence">Apache License, Version 2.0</a>\nFor more information: <a href="https://github.com/idunnololz/AnimatedExpandableListView" rel="about_licence">https://github.com/idunnololz/AnimatedExpandableListView</a>\n\n<b>Android Annotations</b>\nCopyright © 2012–2016 eBusiness Information\n\nAndroidAnnotations  licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" rel="about_licence">Apache License, Version 2.0</a>\nFor more information: <a href="https://github.com/excilys/androidannotations/" rel="about_licence">https://github.com/excilys/androidannotations/</a>\n\n<b>Android Auto Scroll ViewPager</b>\nCopyright &#169; 2014 trinea.cn\n\nAndroidAutoScrollViewPager  licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" rel="about_licence">Apache License, Version 2.0</a>\nFor more information: <a href="https://github.com/Trinea/android-auto-scroll-view-pager" rel="about_licence">https://github.com/Trinea/android-auto-scroll-view-pager</a>\n\n<b>The \"Mary Daisy Jane\" album cover</b>\nThe \"Mary Daisy Jane\" album cover, licensed under the <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en" rel="about_licence">Creative Commons Attribution-Share Alike 3.0 Unported</a> and is the property of its owners creators or holders.</string>
 
     <!-- Navigation view -->
-    <string name="bottom_navigation_menu_options">Options</string>
-    <string name="bottom_navigation_menu_dev">Développement</string>
-    <string name="bottom_navigation_menu_criteria">Critères</string>
 
+    <string name="bottom_navigation_menu_options">Options</string>
+    <string name="bottom_navigation_menu_dev">Development</string>
+    <string name="bottom_navigation_menu_criteria">Criteria</string>
 </resources>
 
 

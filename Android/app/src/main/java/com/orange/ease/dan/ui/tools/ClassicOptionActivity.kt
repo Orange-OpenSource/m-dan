@@ -1,11 +1,12 @@
-package com.orange.ease.dan.ui.tools.classic
+package com.orange.ease.dan.ui.tools
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.orange.ease.dan.databinding.OptionsTemplateBinding
 import com.orange.ease.dan.model.OptionClassic
-import com.orange.ease.dan.model.OptionRepository
+import com.orange.ease.dan.data.OptionRepository
+import com.orange.ease.dan.viewmodel.ClassicOptionViewModel
 
 class ClassicOptionActivity : AppCompatActivity() {
 
@@ -20,7 +21,7 @@ class ClassicOptionActivity : AppCompatActivity() {
         setContentView(view)
 
         viewModel = ViewModelProvider(this).get(ClassicOptionViewModel::class.java)
-        viewModel.option = OptionRepository.getCurrentOption()
+        viewModel.option = OptionRepository.getCurrentOption() as OptionClassic
 
         initView()
     }
@@ -33,7 +34,7 @@ class ClassicOptionActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        supportActionBar?.title = viewModel.option?.let { getString(it.title) }
+        supportActionBar?.title = viewModel.option?.let { getString(it.resTitle) }
     }
 }
 

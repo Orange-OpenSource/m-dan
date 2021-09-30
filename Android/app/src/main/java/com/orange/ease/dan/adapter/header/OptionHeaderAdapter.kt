@@ -1,15 +1,15 @@
-package com.orange.ease.dan.ui.criteria
+package com.orange.ease.dan.adapter.header
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.orange.ease.dan.databinding.HeaderBinding
+import com.orange.ease.dan.databinding.HeaderOptionsBinding
 
-class CriteriaHeaderAdapter() : RecyclerView.Adapter<CriteriaHeaderAdapter.HeaderViewHolder>() {
+class OptionHeaderAdapter() : RecyclerView.Adapter<OptionHeaderAdapter.HeaderViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HeaderViewHolder {
         val binding =
-            HeaderBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+            HeaderOptionsBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return HeaderViewHolder(binding)
     }
 
@@ -21,7 +21,7 @@ class CriteriaHeaderAdapter() : RecyclerView.Adapter<CriteriaHeaderAdapter.Heade
         return 1
     }
 
-    class HeaderViewHolder(val binding: HeaderBinding) : RecyclerView.ViewHolder(binding.root){}
+    class HeaderViewHolder(val binding: HeaderOptionsBinding) : RecyclerView.ViewHolder(binding.root){}
 }
 
 

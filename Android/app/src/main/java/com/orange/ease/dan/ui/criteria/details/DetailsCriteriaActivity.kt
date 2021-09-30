@@ -7,8 +7,9 @@ import androidx.fragment.app.commit
 import androidx.lifecycle.ViewModelProvider
 import com.orange.ease.dan.R
 import com.orange.ease.dan.databinding.DetailsCriteriaActivityBinding
-import com.orange.ease.dan.model.CriteriaRepository
+import com.orange.ease.dan.data.CriteriaRepository
 import com.orange.ease.dan.ui.criteria.details.examples.ExampleCriteriaFragment
+import com.orange.ease.dan.viewmodel.CriteriaDetailsViewModel
 
 class DetailsCriteriaActivity : AppCompatActivity() {
 

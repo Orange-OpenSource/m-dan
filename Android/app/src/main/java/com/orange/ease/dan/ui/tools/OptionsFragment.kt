@@ -9,13 +9,15 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.ConcatAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.orange.ease.dan.adapter.ListRecyclerViewAdapter
+import com.orange.ease.dan.adapter.header.OptionHeaderAdapter
+import com.orange.ease.dan.data.OptionRepository
 import com.orange.ease.dan.databinding.RecyclerViewFragmentBinding
 import com.orange.ease.dan.model.*
-import com.orange.ease.dan.ui.tools.classic.ClassicOptionActivity
-import com.orange.ease.dan.ui.tools.talkback.GestureActivity
 import com.orange.ease.dan.ui.tools.talkback.TalkbackOptionActivity
+import com.orange.ease.dan.viewmodel.OptionsViewModel
 
-class OptionsFragment: Fragment(), ListOptionsRecyclerViewAdapter.ListOptionRecyclerViewClickListener {
+class OptionsFragment: Fragment(), ListRecyclerViewAdapter.ListRecyclerViewClickListener {
 
     private lateinit var binding: RecyclerViewFragmentBinding
     private lateinit var viewModel: OptionsViewModel
@@ -45,15 +47,15 @@ class OptionsFragment: Fragment(), ListOptionsRecyclerViewAdapter.ListOptionRecy
 
         val headerAdapter = OptionHeaderAdapter()
         val recyclerViewAdapter =
-            this.context?.let { ListOptionsRecyclerViewAdapter(viewModel.listOptions, this, it) }
+            this.context?.let { ListRecyclerViewAdapter(viewModel.listOptions, this, it) }
 
         val concatAdapter = ConcatAdapter(headerAdapter, recyclerViewAdapter)
         binding.listsRecyclerview.adapter = concatAdapter
     }
 
-    override fun listItemClicked(option: Option) {
-        OptionRepository.setCurrentOption(option)
-        val intent  = when (option) {
+    override fun listItemClicked(row: AccessibilityEntity) {
+        OptionRepository.setCurrentOption(row)
+        val intent  = when (row) {
             is OptionTalkback ->  Intent(activity, TalkbackOptionActivity::class.java)
             is OptionClassic -> Intent(activity, ClassicOptionActivity::class.java)
             else -> null

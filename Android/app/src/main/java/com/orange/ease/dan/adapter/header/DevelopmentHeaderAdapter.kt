@@ -1,4 +1,4 @@
-package com.orange.ease.dan.ui.developmentguide
+package com.orange.ease.dan.adapter.header
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

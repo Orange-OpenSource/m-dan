@@ -6,9 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager2.widget.ViewPager2
+import com.orange.ease.dan.adapter.GestureAdapter
 import com.orange.ease.dan.databinding.ActivityTalkbackBinding
 import com.orange.ease.dan.model.Gesture
-import com.orange.ease.dan.model.GestureRepository
+import com.orange.ease.dan.data.GestureRepository
+import com.orange.ease.dan.viewmodel.GestureViewModel
 
 
 class GestureActivity : AppCompatActivity() {

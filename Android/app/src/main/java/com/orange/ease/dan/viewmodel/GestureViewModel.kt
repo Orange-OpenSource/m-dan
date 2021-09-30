@@ -1,4 +1,4 @@
-package com.orange.ease.dan.ui.tools.talkback
+package com.orange.ease.dan.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

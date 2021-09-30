@@ -707,8 +707,8 @@
 
     <!-- Navigation view -->
     <string name="bottom_navigation_menu_options">Options</string>
-    <string name="bottom_navigation_menu_dev">Development</string>
-    <string name="bottom_navigation_menu_criteria">Criteria</string>
+    <string name="bottom_navigation_menu_dev">Développement</string>
+    <string name="bottom_navigation_menu_criteria">Critères</string>
 
 </resources>
 

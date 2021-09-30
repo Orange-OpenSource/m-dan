@@ -1,4 +1,4 @@
-package com.orange.ease.dan.ui.criteria.details
+package com.orange.ease.dan.adapter.header
 
 import android.content.Context
 import android.view.LayoutInflater

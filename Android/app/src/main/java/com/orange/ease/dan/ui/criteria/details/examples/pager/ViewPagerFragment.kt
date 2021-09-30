@@ -14,6 +14,7 @@ import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener
 import com.orange.ease.dan.R
+import com.orange.ease.dan.adapter.ViewPagerExampleAdapter
 import com.orange.ease.dan.databinding.Excontrolcontent1FragBinding
 
 class ViewPagerFragment: Fragment() {
@@ -32,7 +33,7 @@ class ViewPagerFragment: Fragment() {
 
     var mButtons = arrayOfNulls<ImageButton>(INDICE_END_HUMAN)
 
-    private var adapter: ImageAdapter? = null
+    private var adapter: ViewPagerExampleAdapter? = null
 
     var mOnSelectPageClickListener =
         View.OnClickListener { v -> binding.viewPager.setCurrentItem(v.id, true) }
@@ -69,7 +70,7 @@ class ViewPagerFragment: Fragment() {
             mIsAccessible = true
             mIsScrollEx = false
         }
-        adapter = ImageAdapter(context = mContext, mIsAccessible = mIsAccessible)
+        adapter = ViewPagerExampleAdapter(context = mContext, mIsAccessible = mIsAccessible)
         binding.viewPager.setAdapter(adapter)
         if (mIsAccessible) {
             if (!isAccessibilitySettingsOn()) {

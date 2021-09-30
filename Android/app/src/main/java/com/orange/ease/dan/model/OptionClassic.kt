@@ -1,4 +1,4 @@
 package com.orange.ease.dan.model
 
-class OptionClassic(title: Int, val description: Int) : Option(title) {
+class OptionClassic(resTitle: Int, val description: Int) : AccessibilityEntity(resTitle) {
 }
