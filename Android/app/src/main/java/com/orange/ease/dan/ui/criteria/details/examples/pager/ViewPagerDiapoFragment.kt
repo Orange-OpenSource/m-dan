@@ -1,7 +1,6 @@
 package com.orange.ease.dan.ui.criteria.details.examples.pager
 
 import android.accessibilityservice.AccessibilityService
-import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Build
 import android.os.Bundle
@@ -18,6 +17,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener
 import com.orange.ease.dan.R
+import com.orange.ease.dan.adapter.ViewPagerExampleAdapter
 import com.orange.ease.dan.databinding.Excontrolcontent2FragBinding
 import com.orange.ease.dan.guide.accessibility.lvl2.MyViewPagerDiapo
 
@@ -35,7 +35,7 @@ class ViewPagerDiapoFragment: Fragment() {
     var mIsAccessible = false
     var mIsScrollEx = false
 
-    private lateinit var adapter: ImageAdapter
+    private lateinit var adapter: ViewPagerExampleAdapter
 
     companion object {
         fun newInstance() = ViewPagerDiapoFragment()
@@ -73,7 +73,7 @@ class ViewPagerDiapoFragment: Fragment() {
         val args = arguments
         mIsAccessible = args == null || args.getBoolean(MyViewPagerDiapo.IS_ACCESSIBLE, false)
 
-        adapter = ImageAdapter(mIsAccessible, mContext)
+        adapter = ViewPagerExampleAdapter(mIsAccessible, mContext)
         binding.viewPager.setAdapter(adapter)
 
 

@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.orange.ease.dan.R
 import com.orange.ease.dan.databinding.FragmentGestureBinding
 import com.orange.ease.dan.model.Gesture
+import com.orange.ease.dan.viewmodel.GestureViewModel
 
 class GestureFragment: Fragment() {
 

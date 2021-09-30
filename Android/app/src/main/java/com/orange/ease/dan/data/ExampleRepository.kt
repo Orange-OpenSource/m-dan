@@ -1,94 +1,95 @@
-package com.orange.ease.dan.model
+package com.orange.ease.dan.data
 
 import com.orange.ease.dan.R
+import com.orange.ease.dan.model.Example
 import com.orange.ease.dan.ui.criteria.details.examples.view.*
 
 object ExampleRepository {
 
     private val exampleChangeContent : Example by lazy {
-        Example(title = R.string.criteria_contentchange_item1, detailsExample = ChangeContentExempleDetail())
+        Example(resTitle = R.string.criteria_contentchange_item1, detailsExample = ChangeContentExempleDetail())
     }
     private val exampleClickZone : Example by lazy {
-        Example(title = R.string.criteria_clickarea_item1, detailsExample = ClickZoneExempleDetail())
+        Example(resTitle = R.string.criteria_clickarea_item1, detailsExample = ClickZoneExempleDetail())
     }
     private val exampleColor1 : Example by lazy {
-        Example(title = R.string.criteria_color_item1, detailsExample = ColorExemple1Detail())
+        Example(resTitle = R.string.criteria_color_item1, detailsExample = ColorExemple1Detail())
     }
     private val exampleColor2 : Example by lazy {
-        Example(title = R.string.criteria_color_item2, detailsExample = ColorExemple2Detail())
+        Example(resTitle = R.string.criteria_color_item2, detailsExample = ColorExemple2Detail())
     }
     private val exampleControlContent1 : Example by lazy {
-        Example(title = R.string.criteria_contentcontrol_item1, detailsExample = ControlContentExemple1Detail())
+        Example(resTitle = R.string.criteria_contentcontrol_item1, detailsExample = ControlContentExemple1Detail())
     }
     private val exampleControlContent2 : Example by lazy {
-        Example(title = R.string.criteria_contentcontrol_item2, detailsExample = ControlContentExemple2Detail())
+        Example(resTitle = R.string.criteria_contentcontrol_item2, detailsExample = ControlContentExemple2Detail())
     }
     private val exampleFocusNav : Example by lazy {
-        Example(title = R.string.criteria_focusnav_item1, detailsExample = FocusNavExempleDetail())
+        Example(resTitle = R.string.criteria_focusnav_item1, detailsExample = FocusNavExempleDetail())
     }
     private val exampleGhost : Example by lazy {
-        Example(title = R.string.criteria_ghostelement_item1, detailsExample = GhostExempleDetail())
+        Example(resTitle = R.string.criteria_ghostelement_item1, detailsExample = GhostExempleDetail())
     }
     private val exampleImage1 : Example by lazy {
-        Example(title = R.string.criteria_img_item1, detailsExample = ImgExemple1Detail())
+        Example(resTitle = R.string.criteria_img_item1, detailsExample = ImgExemple1Detail())
     }
     private val exampleImage2 : Example by lazy {
-        Example(title = R.string.criteria_img_item2, detailsExample = ImgExemple2Detail())
+        Example(resTitle = R.string.criteria_img_item2, detailsExample = ImgExemple2Detail())
     }
     private val exampleImage3 : Example by lazy {
-        Example(title = R.string.criteria_img_item3, detailsExample = ImgExemple3Detail())
+        Example(resTitle = R.string.criteria_img_item3, detailsExample = ImgExemple3Detail())
     }
 
     private val exampleAlt1 : Example by lazy {
-        Example(title = R.string.criteria_alt_item1, detailsExample = ImgExemple3Detail())
+        Example(resTitle = R.string.criteria_alt_item1, detailsExample = ImgExemple3Detail())
     }
     private val exampleAlt2 : Example by lazy {
-        Example(title = R.string.criteria_alt_item2, detailsExample = ColorExemple1Detail())
+        Example(resTitle = R.string.criteria_alt_item2, detailsExample = ColorExemple1Detail())
     }
 
     private val exampleReadOrder : Example by lazy {
-        Example(title = R.string.criteria_readorder_item1, detailsExample = ReadOrderExempleDetail())
+        Example(resTitle = R.string.criteria_readorder_item1, detailsExample = ReadOrderExempleDetail())
     }
     private val exampleScroll : Example by lazy {
-        Example(title = R.string.criteria_scroll_item1, detailsExample = ScrollExempleDetail())
+        Example(resTitle = R.string.criteria_scroll_item1, detailsExample = ScrollExempleDetail())
     }
     private val exampleTextSize : Example by lazy {
-        Example(title = R.string.criteria_textsize_item1, detailsExample = TextSizeExempleDetail())
+        Example(resTitle = R.string.criteria_textsize_item1, detailsExample = TextSizeExempleDetail())
     }
     private val exampleStandardComponent1 : Example by lazy {
-        Example(title = R.string.criteria_standardcomponent_title, detailsExample = StandardComponentExempleDetail())
+        Example(resTitle = R.string.criteria_standardcomponent_title, detailsExample = StandardComponentExempleDetail())
     }
     private val exampleStandardComponent2 : Example by lazy {
-        Example(title = R.string.criteria_standardcomponent_ex2_title, detailsExample = StandardComponent2ExempleDetail())
+        Example(resTitle = R.string.criteria_standardcomponent_ex2_title, detailsExample = StandardComponent2ExempleDetail())
     }
     private val exampleStateElements1 : Example by lazy {
-        Example(title = R.string.criteria_stateelement_item1, detailsExample = StateElementsExempleDetail())
+        Example(resTitle = R.string.criteria_stateelement_item1, detailsExample = StateElementsExempleDetail())
     }
     private val exampleStateElements2 : Example by lazy {
-        Example(title = R.string.criteria_stateelement_item2, detailsExample = StateElementsExemple2Detail())
+        Example(resTitle = R.string.criteria_stateelement_item2, detailsExample = StateElementsExemple2Detail())
     }
     private val exampleStateElements3 : Example by lazy {
-        Example(title = R.string.criteria_stateelement_item3, detailsExample = StateElementsExemple3Detail())
+        Example(resTitle = R.string.criteria_stateelement_item3, detailsExample = StateElementsExemple3Detail())
     }
     private val exampleTitle : Example by lazy {
-        Example(title = R.string.criteria_title_item1, detailsExample = TitleExempleDetail())
+        Example(resTitle = R.string.criteria_title_item1, detailsExample = TitleExempleDetail())
     }
     private val exampleText1 : Example by lazy {
-        Example(title = R.string.criteria_alt_item4, detailsExample = Text1ExempleDetail())
+        Example(resTitle = R.string.criteria_alt_item4, detailsExample = Text1ExempleDetail())
     }
     private val exampleText2 : Example by lazy {
-        Example(title = R.string.criteria_alt_item5, detailsExample = Text2ExempleDetail())
+        Example(resTitle = R.string.criteria_alt_item5, detailsExample = Text2ExempleDetail())
     }
     private val exampleText3 : Example by lazy {
-        Example(title = R.string.criteria_alt_item6, detailsExample = Text3ExempleDetail())
+        Example(resTitle = R.string.criteria_alt_item6, detailsExample = Text3ExempleDetail())
     }
 
     private val exampleForm : Example by lazy {
-        Example(title = R.string.criteria_form_item1, detailsExample = FormExempleDetail())
+        Example(resTitle = R.string.criteria_form_item1, detailsExample = FormExempleDetail())
     }
 
     private val exampleAlt3 : Example by lazy {
-        Example(title = R.string.criteria_alt_item3, detailsExample = FormExempleDetail())
+        Example(resTitle = R.string.criteria_alt_item3, detailsExample = FormExempleDetail())
     }
 
 

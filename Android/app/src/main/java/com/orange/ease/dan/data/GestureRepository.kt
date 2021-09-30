@@ -1,6 +1,7 @@
-package com.orange.ease.dan.model
+package com.orange.ease.dan.data
 
 import com.orange.ease.dan.R
+import com.orange.ease.dan.model.Gesture
 
 object GestureRepository {
 
@@ -39,7 +40,8 @@ object GestureRepository {
     )
 
     fun getListOfGesture(): List<Gesture> {
-        return listOf<Gesture>(gesture1,
+        return listOf<Gesture>(
+            gesture1,
             gesture2,
             gesture3,
             gesture4,

@@ -9,12 +9,16 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.ConcatAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.orange.ease.dan.adapter.header.CriteriaHeaderAdapter
+import com.orange.ease.dan.adapter.ListRecyclerViewAdapter
 import com.orange.ease.dan.databinding.RecyclerViewFragmentBinding
 import com.orange.ease.dan.model.Criteria
-import com.orange.ease.dan.model.CriteriaRepository
+import com.orange.ease.dan.data.CriteriaRepository
+import com.orange.ease.dan.model.AccessibilityEntity
 import com.orange.ease.dan.ui.criteria.details.DetailsCriteriaActivity
+import com.orange.ease.dan.viewmodel.CriteriaViewModel
 
-class CriteriaFragment: Fragment(), ListSelectionRecyclerViewAdapter.ListSelectionRecyclerViewClickListener {
+class CriteriaFragment: Fragment(), ListRecyclerViewAdapter.ListRecyclerViewClickListener {
 
     private lateinit var binding: RecyclerViewFragmentBinding
     private lateinit var viewModel: CriteriaViewModel
@@ -45,14 +49,14 @@ class CriteriaFragment: Fragment(), ListSelectionRecyclerViewAdapter.ListSelecti
 
         val headerAdapter = CriteriaHeaderAdapter()
         val recyclerViewAdapter =
-            this.context?.let { ListSelectionRecyclerViewAdapter(viewModel.listCriteria, this, it) }
+            this.context?.let { ListRecyclerViewAdapter(viewModel.listCriteria, this, it) }
 
         val concatAdapter = ConcatAdapter(headerAdapter, recyclerViewAdapter)
         binding.listsRecyclerview.adapter = concatAdapter
     }
 
-    override fun listItemClicked(criteria: Criteria) {
-        CriteriaRepository.setCurrentCriteria(criteria)
+    override fun listItemClicked(row: AccessibilityEntity) {
+        CriteriaRepository.setCurrentCriteria(row as Criteria)
         val intent = Intent(activity, DetailsCriteriaActivity::class.java)
         startActivity(intent)
     }

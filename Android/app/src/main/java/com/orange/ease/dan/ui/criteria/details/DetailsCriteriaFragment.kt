@@ -9,10 +9,14 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.ConcatAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.orange.ease.dan.adapter.header.DetailsHeaderAdapter
+import com.orange.ease.dan.adapter.ListRecyclerViewAdapter
 import com.orange.ease.dan.databinding.RecyclerViewFragmentBinding
+import com.orange.ease.dan.model.AccessibilityEntity
 import com.orange.ease.dan.model.Example
+import com.orange.ease.dan.viewmodel.CriteriaDetailsViewModel
 
-class DetailsCriteriaFragment: Fragment(), ListExampleRecyclerViewAdapter.ListExampleRecyclerViewClickListener {
+class DetailsCriteriaFragment: Fragment(), ListRecyclerViewAdapter.ListRecyclerViewClickListener {
 
     private lateinit var binding: RecyclerViewFragmentBinding
     private lateinit var viewModel: CriteriaDetailsViewModel
@@ -49,14 +53,14 @@ class DetailsCriteriaFragment: Fragment(), ListExampleRecyclerViewAdapter.ListEx
 
         val headerAdapter = DetailsHeaderAdapter(viewModel.criteria, mContext)
         val recyclerViewAdapter =
-            this.context?.let { ListExampleRecyclerViewAdapter(viewModel.criteria!!.exampleList, this, it) }
+            this.context?.let { ListRecyclerViewAdapter(viewModel.criteria!!.exampleList, this, it) }
 
         val concatAdapter = ConcatAdapter(headerAdapter, recyclerViewAdapter)
         binding.listsRecyclerview.adapter = concatAdapter
     }
 
-    override fun listItemClicked(example: Example) {
-        viewModel.setCurrentExample(example)
+    override fun listItemClicked(row: AccessibilityEntity) {
+        viewModel.setCurrentExample(row as Example)
         (activity as DetailsCriteriaActivity?)?.let {
             it.updateFragmentWithExample()
         }

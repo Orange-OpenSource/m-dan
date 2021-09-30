@@ -1,4 +1,4 @@
-package com.orange.ease.dan.ui.developmentguide
+package com.orange.ease.dan.viewmodel
 
 import androidx.lifecycle.ViewModel
 import com.orange.ease.dan.model.DevelopmentGuide

@@ -1,6 +1,7 @@
-package com.orange.ease.dan.model
+package com.orange.ease.dan.data
 
 import com.orange.ease.dan.R
+import com.orange.ease.dan.model.Criteria
 
 object CriteriaRepository {
 
@@ -106,7 +107,8 @@ object CriteriaRepository {
     }
 
     fun getListOfCriteria(): List<Criteria> {
-        return listOf<Criteria>(criteriaImage,
+        return listOf<Criteria>(
+            criteriaImage,
             criteriaColor,
             criteriaAlt,
             criteriaTitles,

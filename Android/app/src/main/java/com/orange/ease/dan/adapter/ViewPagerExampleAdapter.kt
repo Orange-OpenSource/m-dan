@@ -1,4 +1,4 @@
-package com.orange.ease.dan.ui.criteria.details.examples.pager
+package com.orange.ease.dan.adapter
 
 import android.content.Context
 import android.os.Build
@@ -10,7 +10,7 @@ import android.widget.ImageView
 import androidx.viewpager.widget.PagerAdapter
 import com.orange.ease.dan.R
 
-class ImageAdapter(mIsAccessible: Boolean, context: Context) : PagerAdapter() {
+class ViewPagerExampleAdapter(mIsAccessible: Boolean, context: Context) : PagerAdapter() {
 
     val INDICE_START = 0
     val INDICE_END = 2
