@@ -5,8 +5,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.orange.ease.dan.R
 import com.orange.ease.dan.databinding.ExampleFragLvl2Binding
 import com.orange.ease.dan.data.CriteriaRepository
 import com.orange.ease.dan.viewmodel.CriteriaDetailsViewModel
@@ -53,6 +55,9 @@ class ExampleCriteriaFragment: Fragment() {
         viewModel.getCurrentExample()?.let {
             binding.frameLayoutExampleAxsYes.addView(it.detailsExample.getAccessibleExample(mContext))
             binding.frameLayoutExampleAxsNo.addView(it.detailsExample.getNotAccessibleExample(mContext))
+            val examplesCount = viewModel.criteria?.exampleList?.size ?: 1
+            val currentExampleCount = (viewModel.criteria?.exampleList?.indexOf(it) ?: 0) + 1
+            (activity as AppCompatActivity).supportActionBar?.title = getString(R.string.example) + " $currentExampleCount/$examplesCount"
         }
     }
 

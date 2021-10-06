@@ -18,6 +18,7 @@ class MenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMenuBinding.inflate(layoutInflater)
         val view = binding.root
+        setSupportActionBar(binding.myToolbar)
         setContentView(view)
 
         if (savedInstanceState == null) {

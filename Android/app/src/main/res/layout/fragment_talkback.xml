@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Licensed to the Apache Software Foundation (ASF) under one
   ~ or more contributor license agreements.  See the NOTICE file
   ~ distributed with this work for additional information
@@ -18,123 +17,137 @@
   ~ under the License.
   -->
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:animateLayoutChanges="false">
+    android:orientation="vertical">
 
-    <RelativeLayout
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:theme="@style/ToolBar.style" />
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:animateLayoutChanges="false">
+        android:animateLayoutChanges="false"
+        android:fillViewport="true">
 
-        <ImageView
-            android:id="@+id/splitImageTb"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:background="@drawable/talkback_illustration"
-            android:importantForAccessibility="no"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"/>
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="false">
 
-        <TextView
-            android:id="@+id/textViewTitleTalkback"
-            style="@style/BrandTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="45dp"
-            android:paddingBottom="5dp"
-            android:paddingTop="10dp"
-            android:text="@string/tb_what_title"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/core_black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:paddingRight="@dimen/large_margin"
-            android:paddingLeft="@dimen/large_margin"
-            android:layout_below="@id/splitImageTb"
-            android:background="@drawable/border"
-            android:gravity="center_vertical"/>
+            <ImageView
+                android:id="@+id/splitImageTb"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/talkback_illustration"
+                android:importantForAccessibility="no" />
 
-        <TextView
-            android:id="@+id/textViewContentTalkback"
-            style="@style/BrandBody1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textViewTitleTalkback"
-            android:padding="@dimen/large_margin"
-            android:text="@string/tb_what_description"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="#333333"
-            android:textSize="14sp" />
+            <TextView
+                android:id="@+id/textViewTitleTalkback"
+                style="@style/BrandTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/splitImageTb"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/border"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:paddingLeft="@dimen/large_margin"
+                android:paddingTop="10dp"
+                android:paddingRight="@dimen/large_margin"
+                android:paddingBottom="5dp"
+                android:text="@string/tb_what_title"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/core_black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/buttonTalkback"
-            style="@style/BrandButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textViewContentTalkback"
-            android:layout_centerHorizontal="true"
-            android:text="@string/tb_talkback_btn"
-            android:focusable="true"
-            android:onClick="enableTalkback"
-            android:layout_marginBottom="@dimen/medium_margin"/>
+            <TextView
+                android:id="@+id/textViewContentTalkback"
+                style="@style/BrandBody1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewTitleTalkback"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/large_margin"
+                android:text="@string/tb_what_description"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333"
+                android:textSize="14sp" />
 
-        <TextView
-            android:id="@+id/textViewTitleUseTalkback"
-            style="@style/BrandTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="45dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/buttonTalkback"
-            android:padding="@dimen/medium_margin"
-            android:text="@string/tb_how_title"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/core_black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:background="@drawable/border"
-            android:gravity="center_vertical"
-            android:layout_marginTop="@dimen/large_margin"/>
+            <Button
+                android:id="@+id/buttonTalkback"
+                style="@style/BrandButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewContentTalkback"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:focusable="true"
+                android:onClick="enableTalkback"
+                android:text="@string/tb_talkback_btn" />
 
-        <TextView
-            android:id="@+id/textViewContentUseTalkback"
-            style="@style/BrandBody1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="10dp"
-            android:text="@string/tb_how_description"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="#333333"
-            android:textSize="14sp"
-            android:padding="@dimen/large_margin"
-            android:layout_below="@+id/textViewTitleUseTalkback"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true" />
+            <TextView
+                android:id="@+id/textViewTitleUseTalkback"
+                style="@style/BrandTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonTalkback"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/large_margin"
+                android:background="@drawable/border"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:padding="@dimen/medium_margin"
+                android:text="@string/tb_how_title"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/core_black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/buttonGesture"
-            style="@style/BrandWhiteButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/textViewContentUseTalkback"
-            android:layout_centerHorizontal="true"
-            android:text="@string/tb_moves_btn"
-            android:onClick="seeGesture"
-            android:focusable="true"
-            android:layout_marginBottom="@dimen/large_margin"/>
+            <TextView
+                android:id="@+id/textViewContentUseTalkback"
+                style="@style/BrandBody1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewTitleUseTalkback"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/large_margin"
+                android:paddingBottom="10dp"
+                android:text="@string/tb_how_description"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333"
+                android:textSize="14sp" />
 
-    </RelativeLayout>
-</ScrollView>
+            <Button
+                android:id="@+id/buttonGesture"
+                style="@style/BrandWhiteButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewContentUseTalkback"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/large_margin"
+                android:focusable="true"
+                android:onClick="seeGesture"
+                android:text="@string/tb_moves_btn" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

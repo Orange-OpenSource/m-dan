@@ -60,6 +60,7 @@ class CriteriaFragment: Fragment(), ListRecyclerViewAdapter.ListRecyclerViewClic
         val intent = Intent(activity, DetailsCriteriaActivity::class.java)
         startActivity(intent)
     }
+
 }
 
 

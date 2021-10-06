@@ -6,8 +6,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import androidx.lifecycle.ViewModelProvider
 import com.orange.ease.dan.R
-import com.orange.ease.dan.databinding.DetailsCriteriaActivityBinding
 import com.orange.ease.dan.data.CriteriaRepository
+import com.orange.ease.dan.databinding.DetailsCriteriaActivityBinding
 import com.orange.ease.dan.ui.criteria.details.examples.ExampleCriteriaFragment
 import com.orange.ease.dan.viewmodel.CriteriaDetailsViewModel
 
@@ -21,6 +21,7 @@ class DetailsCriteriaActivity : AppCompatActivity() {
         binding = DetailsCriteriaActivityBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+        setupToolbar()
 
         if (savedInstanceState == null) {
             initFragment()
@@ -29,6 +30,13 @@ class DetailsCriteriaActivity : AppCompatActivity() {
         viewModel = ViewModelProvider(this).get(CriteriaDetailsViewModel::class.java)
         viewModel.criteria = CriteriaRepository.getCurrentCriteria()
 
+    }
+
+    private fun setupToolbar() {
+        setSupportActionBar(binding.myToolbar)
+        val actionBar=supportActionBar
+        actionBar?.setDisplayHomeAsUpEnabled(true)
+        binding.myToolbar.setNavigationOnClickListener { _ -> onBackPressed() }
     }
 
     private fun initFragment(){
