@@ -23,6 +23,7 @@ class TalkbackOptionActivity : AppCompatActivity() {
         binding = FragmentTalkbackBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+        setupToolbar()
     }
 
     fun enableTalkback(view: View) {
@@ -35,6 +36,12 @@ class TalkbackOptionActivity : AppCompatActivity() {
         startTuto()
     }
 
+    private fun setupToolbar() {
+        setSupportActionBar(binding.myToolbar)
+        val actionBar=supportActionBar
+        actionBar?.setDisplayHomeAsUpEnabled(true)
+        binding.myToolbar.setNavigationOnClickListener { _ -> onBackPressed() }
+    }
 
     override fun onResume() {
         super.onResume()

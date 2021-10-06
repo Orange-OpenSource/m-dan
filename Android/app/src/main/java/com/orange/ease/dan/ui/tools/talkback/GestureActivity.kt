@@ -32,6 +32,14 @@ class GestureActivity : AppCompatActivity() {
         setContentView(view)
         initViewPager()
         initViewModel()
+        setupToolbar()
+    }
+
+    private fun setupToolbar() {
+        setSupportActionBar(binding.myToolbar)
+        val actionBar=supportActionBar
+        actionBar?.setDisplayHomeAsUpEnabled(true)
+        binding.myToolbar.setNavigationOnClickListener { _ -> onBackPressed() }
     }
 
     private fun initViewModel() {

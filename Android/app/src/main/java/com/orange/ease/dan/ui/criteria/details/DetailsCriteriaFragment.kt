@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.ConcatAdapter
@@ -41,6 +42,13 @@ class DetailsCriteriaFragment: Fragment(), ListRecyclerViewAdapter.ListRecyclerV
 
         viewModel = ViewModelProvider(requireActivity()).get(CriteriaDetailsViewModel::class.java)
         initExample()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        viewModel.criteria?.let {
+            (activity as AppCompatActivity).supportActionBar?.title = getString(it.resTitle)
+        }
     }
 
     override fun onAttach(context: Context) {

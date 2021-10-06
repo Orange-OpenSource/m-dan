@@ -24,6 +24,14 @@ class DetailsDevGuideActivity : AppCompatActivity() {
         viewModel.guide = DevelopmentGuideRepository.getCurrentGuide()
 
         initView()
+        setupToolbar()
+    }
+
+    private fun setupToolbar() {
+        setSupportActionBar(binding.myToolbar)
+        val actionBar=supportActionBar
+        actionBar?.setDisplayHomeAsUpEnabled(true)
+        binding.myToolbar.setNavigationOnClickListener { _ -> onBackPressed() }
     }
 
     private fun initView() {

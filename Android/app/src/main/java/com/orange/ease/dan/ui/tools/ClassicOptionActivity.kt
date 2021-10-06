@@ -24,12 +24,20 @@ class ClassicOptionActivity : AppCompatActivity() {
         viewModel.option = OptionRepository.getCurrentOption() as OptionClassic
 
         initView()
+        setupToolbar()
     }
 
     private fun initView() {
         val option = viewModel.option?.let { it } ?: return
         binding.optionDescription.text = getString((option as OptionClassic).description)
 
+    }
+
+    private fun setupToolbar() {
+        setSupportActionBar(binding.myToolbar)
+        val actionBar=supportActionBar
+        actionBar?.setDisplayHomeAsUpEnabled(true)
+        binding.myToolbar.setNavigationOnClickListener { _ -> onBackPressed() }
     }
 
     override fun onResume() {
