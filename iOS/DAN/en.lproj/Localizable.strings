@@ -50,8 +50,8 @@
 // Criteria tab
 // ---------------------------------------------------------------------------
 // Title
-"tab_criteria_title"    = "Accessibility criteria";
-"tab_criteria_title_short"    = "Accessibility criteria";
+"tab_criteria_title"    = "Criteria";
+"tab_criteria_title_short"    = "Criteria";
 
 // Sections
 "criteria_section_description" = "Description and use";
@@ -78,7 +78,7 @@
 "criteria_category_form"                = "Form";
 "criteria_category_readingOrder"        = "Reading order";
 "criteria_category_language"            = "Language";
-"criteria_category_voiceOver"           = "Voice over";
+"criteria_category_voiceOver"           = "Voice Over";
 
 // -----------------
 // Examples - Image
@@ -150,7 +150,7 @@
 // Examples - TextualAlternative
 // ------------------------------
 "criteria_category_textualAlternative_whatFor"   = "Text alternatives are at the core of mobile accessibility. Thanks to them, a visually impaired user can use an application without loss of information.";
-"criteria_category_textualAlternative_howTo"     = "As for the images, it is important to add a text alternative when information is not available for the visually impaired/blind.\n\nThis is the case of components that provide information by color, shape, position, sound...\n\nOn mobile, all components can have a text alternative, it is possible to enrich the native vocalization of an element, including a simple text.";
+"criteria_category_textualAlternative_howTo"     = "As for the images, it is important to add a text alternative when information is not available for the visually impaired/blind.\n\nThis is the case of components that provide information by color, shape, position, sound etc\n\nOn mobile, all components can have a text alternative, it is possible to enrich the native vocalization of an element, including a simple text.";
 
 // Examples - Redirection !
 "example_textualAlternative_image_title"        = "Text alternative of images";
@@ -387,6 +387,11 @@
 "criteria_category_language_whatFor"   = "VoiceOver vocalization uses the default language of the mobile.\nSometimes some words / texts of an application are in a different language.\nIn order to make them audible, they have to be declared in that specific language.";
 "criteria_category_language_howTo"     = "Notify the change of language for text and words.";
 
+// Examples - language -> text
+"example_language_accent_hello"             = "hello, welcome on Orange";
+"example_language_accent_newsletter"        = "warning";
+"example_language_accent_login"             = "download completed";
+
 // Examples - Color -> Contrast
 "example_language_accent_title"             = "Vocalization according to the language";
 "example_language_accent_shortDescription"  = "Ensure a good vocalization for the words in a different language";
@@ -395,6 +400,17 @@
 "example_language_accent_newsletter"        = "newsletter";
 "example_language_accent_login"             = "download completed";
 
+// --------------------
+// Examples - Voice Over
+// --------------------
+"criteria_category_voiceOver_whatFor"   = "VoiceOver est un lecteur d’écran intégré qui décrit à haute voix les éléments qui apparaissent sur l’écran de votre téléphone. Il est gratuit et permet à un utilisateur non ou mal voyant, dyslexique et illettré de pouvoir vocaliser tous les éléments visibles contenus dans la page.";
+"criteria_category_voiceOver_howTo"     = "To activate it, go to settings:\n\nSettings/General/Accessibility/VoiceOver";
+
+// Examples - voice over -> text
+"example_voiceOver_carousel_description" = "When VoiceOver is on, the standard gestures behave differently. Furthermore, additional gestures let you move the focus on the screen and control the selected items. VoiceOver has gestures with one, two and three fingers to select and to go through elements. We describe here the basic gestures commonly used.";
+"example_voiceover_accent_title"             = "See all gestures";
+"example_voiceover_accent_shortDescription"  = "We describe here the basic gestures commonly used.";
+"example_voiceover_carousel_accessibleCarousel"          = "Basic Voice Over gestures";
 
 // ---------------------------------------------------------------------------
 // Developer tab
@@ -542,7 +558,7 @@
 
 // Menu items
 "plus_menu_home"                = "Introduction to accessibility";
-"plus_menu_orangeAccessibility" = "Orange's accessibility";
+"plus_menu_orangeAccessibility" = "Accessibility declaration";
 "plus_menu_about"               = "About";
 "plus_menu_contact"             = "Contact";
 
@@ -551,17 +567,18 @@
 // Menu - Intro
 // ----------------
 "intro_header1" = "Accessibility, kezako?";
-"intro_header1" = "Why  digital accessibility?";
-"intro_header1" = "DAN among that:";
+"intro_header2" = "Why  digital accessibility?";
+"intro_header3" = "DAN among that:";
 "intro_text1"   = "It is the ability of a product or service to be used by all in all kinds of situations. An accessible mobile application is an application that supports the built-in accessibility options of a device.\n\nThus, a blind user, visually impaired, hearing impaired or with any other type of disability will be able to use 100% of the functionality of the application.";
 "intro_text2"   = "• Because there is over 80 million disabled and elderly people in Europe\n• Because we spend on average 8 years of our life in a handicap situation\n• But also and especially because an accessible product is easier to use and everyone would benefit from it!";
 "intro_text3"   = "Digital accessibility is often unknown or unrecognized field. \n\nThis Digital Accessibility Demonstrator aims to introduce mobile accessibility in all its forms.\n\nThe application explains:\n\n- What is digital accessibility\n- Accessibility options that exist on iOS\nHow to use the built-in options\n A guide for VoiceOver (iOS screenreader).\n- Mobile accessibility criteria (non-technical presentation) with examples.\n- A memo for developers (how to develop accessible).";
 
 
 // ----------------
-// Menu - Orange
+// Menu - Orange Accessibility
 // ----------------
 "orange_nav_title"  = "Orange";
+"orange_accessibility_nav_title" = "Declaration";
 "orange_title"      = "And at Orange?";
 "orange_header"     = "Accessible applications";
 "orange_text"       = "Orange is striving to make its mobile applications accessible. In this section we offer a list of applications that held a special interest to accessibility for their developments.";

@@ -68,7 +68,7 @@ class ColorContrastViewController: DefaultTableViewController {
             
             cell.accessoryType              = .none
             cell.isUserInteractionEnabled     = false
-            cell.textLabel?.numberOfLines   = 1
+            cell.textLabel?.numberOfLines   = 0
             cell.textLabel?.textColor = (indexPath as NSIndexPath).section == accessibleSection ? .colorWithHex(0x000000) : .colorWithHex(0x999999)
             cell.textLabel?.text            = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
             cell.detailTextLabel?.text      = (indexPath as NSIndexPath).section == accessibleSection ? "example_color_contrast_cellSubtitleAccessible".localized : "example_color_contrast_cellSubtitleNonAccessible".localized

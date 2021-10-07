@@ -9,19 +9,19 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="45" id="rk7-DF-zyM" customClass="DefaultHeaderViewCell" customModule="mDAN" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rk7-DF-zyM" customClass="DefaultHeaderViewCell" customModule="mDAN" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="925" height="45"/>
-            <autoresizingMask key="autoresizingMask"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rk7-DF-zyM" id="CAB-YG-elJ">
                 <rect key="frame" x="0.0" y="0.0" width="925" height="45"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mon header custom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="Us2-Md-WCk">
-                        <rect key="frame" x="41" y="11" width="149" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon header custom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Us2-Md-WCk">
+                        <rect key="frame" x="41" y="12" width="869" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="Tq1-wD-KAC"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Tq1-wD-KAC"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -36,7 +36,7 @@
                 </subviews>
                 <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Us2-Md-WCk" secondAttribute="trailing" constant="67" id="9KU-Wh-3xa"/>
+                    <constraint firstAttribute="trailing" secondItem="Us2-Md-WCk" secondAttribute="trailing" constant="15" id="3cB-cx-x3H"/>
                     <constraint firstItem="hp5-dr-sSc" firstAttribute="centerY" secondItem="CAB-YG-elJ" secondAttribute="centerY" id="MaW-z6-O8d"/>
                     <constraint firstItem="Us2-Md-WCk" firstAttribute="leading" secondItem="hp5-dr-sSc" secondAttribute="trailing" constant="8" id="ZM1-Ie-KZs"/>
                     <constraint firstItem="hp5-dr-sSc" firstAttribute="leading" secondItem="CAB-YG-elJ" secondAttribute="leading" constant="8" id="mNu-Md-d5U"/>

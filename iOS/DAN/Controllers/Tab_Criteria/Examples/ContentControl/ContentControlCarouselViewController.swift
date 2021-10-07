@@ -71,6 +71,10 @@ class ContentControlCarouselViewController: DefaultTableViewController {
             buttonCell.button.setTitle("example_contentControl_carousel_buttonText".localized, for: UIControl.State())
             buttonCell.button.tag                   = (indexPath as NSIndexPath).section // allow to differenciate buttons while preparing for segue
             buttonCell.button.accessibilityLabel    = (indexPath as NSIndexPath).section == accessibleSection ? "example_contentControl_carousel_buttonLabelAccessible".localized : "example_contentControl_carousel_buttonLabelNonAccessible".localized
+            buttonCell.button.titleLabel?.numberOfLines = 0
+            buttonCell.button.titleLabel?.lineBreakMode = .byWordWrapping
+            buttonCell.button.titleLabel?.adjustsFontSizeToFitWidth = true
+            buttonCell.sizeToFit()
             
             return buttonCell
         }
@@ -79,14 +83,16 @@ class ContentControlCarouselViewController: DefaultTableViewController {
     // MARK: - TableViewDelegate
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        if (indexPath as NSIndexPath).section == 0 {
-            
-            return UITableView.automaticDimension
-        }
-        else {
-            
-            return 90;
-        }
+//        if (indexPath as NSIndexPath).section == 0 {
+//
+//            return UITableView.automaticDimension
+//        }
+//        else {
+//
+//            return 90;
+//        }
+        
+        return UITableView.automaticDimension
     }
     
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {

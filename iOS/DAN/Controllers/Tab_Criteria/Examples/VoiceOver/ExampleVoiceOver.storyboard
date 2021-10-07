@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Voice Over View Controller-->
+        <scene sceneID="sEa-O1-hxo">
+            <objects>
+                <tableViewController storyboardIdentifier="Example-VoiceOver-Carousel" id="d9S-gN-w4C" customClass="VoiceOverViewController" customModule="mDAN" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="45" sectionFooterHeight="28" id="Hlt-YE-lrn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="textCell" rowHeight="100" id="M8O-6f-JO6" customClass="TextTableViewCell" customModule="mDAN" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M8O-6f-JO6" id="b5E-FG-xzC">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekR-w8-p9o">
+                                            <rect key="frame" x="15" y="12" width="570" height="75"/>
+                                            <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe.</string>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="ekR-w8-p9o" secondAttribute="trailing" constant="15" id="7IZ-0d-9Hx"/>
+                                        <constraint firstItem="ekR-w8-p9o" firstAttribute="leading" secondItem="b5E-FG-xzC" secondAttribute="leading" constant="15" id="htA-xE-ImF"/>
+                                        <constraint firstAttribute="bottom" secondItem="ekR-w8-p9o" secondAttribute="bottom" constant="12" id="mu8-Nv-LTh"/>
+                                        <constraint firstItem="ekR-w8-p9o" firstAttribute="top" secondItem="b5E-FG-xzC" secondAttribute="top" constant="12" id="qXO-YX-Lfv"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="label" destination="ekR-w8-p9o" id="3EQ-JF-1uA"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="buttonCell" rowHeight="90" id="kcW-aa-0YS" customClass="ButtonTableViewCell" customModule="mDAN" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="128" width="414" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kcW-aa-0YS" id="kt1-QK-GAO">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LX1-Ma-WpD">
+                                            <rect key="frame" x="137.5" y="24" width="139" height="42"/>
+                                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                            <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                            <state key="normal" title="carousel_button">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="JB6-JI-tBM" kind="show" id="Qio-kK-F7M"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="LX1-Ma-WpD" firstAttribute="centerY" secondItem="kt1-QK-GAO" secondAttribute="centerY" id="05s-uO-Tax"/>
+                                        <constraint firstItem="LX1-Ma-WpD" firstAttribute="top" secondItem="kt1-QK-GAO" secondAttribute="topMargin" constant="13" id="3kh-C9-HFJ"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="LX1-Ma-WpD" secondAttribute="bottom" constant="13" id="Nm9-hX-ptd"/>
+                                        <constraint firstItem="LX1-Ma-WpD" firstAttribute="centerX" secondItem="kt1-QK-GAO" secondAttribute="centerX" id="zPm-iI-dZu"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="button" destination="LX1-Ma-WpD" id="gFj-yH-l2i"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="d9S-gN-w4C" id="NhR-Yt-9Nf"/>
+                            <outlet property="delegate" destination="d9S-gN-w4C" id="R20-bg-FDm"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cVx-i1-5BH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="404" y="541"/>
+        </scene>
+        <!--Voice Over Carousel View Controller-->
+        <scene sceneID="HaQ-MG-z7R">
+            <objects>
+                <viewController id="JB6-JI-tBM" customClass="VoiceOverCarouselViewController" customModule="mDAN" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JUC-DW-r7Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="GzV-tj-D68"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VAs-PJ-yBf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBB-1p-fgO">
+                                <rect key="frame" x="0.0" y="65" width="600" height="488"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="JB6-JI-tBM" id="efT-gX-ygM"/>
+                                </connections>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(non_)accessible_carousel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TuI-8r-uh5">
+                                <rect key="frame" x="0.0" y="20" width="600" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="5Od-JS-Wf9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="mYh-ij-jld">
+                                <rect key="frame" x="281" y="553" width="39" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="UeV-Se-l1U"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="pageControlValueDidChange:" destination="JB6-JI-tBM" eventType="valueChanged" id="Kf6-Z3-Y6O"/>
+                                </connections>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cGH-mt-qhD"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kBB-1p-fgO" firstAttribute="top" secondItem="TuI-8r-uh5" secondAttribute="bottom" id="B8u-jd-RgO"/>
+                            <constraint firstItem="kBB-1p-fgO" firstAttribute="leading" secondItem="VAs-PJ-yBf" secondAttribute="leading" id="DQc-Xs-RlK"/>
+                            <constraint firstItem="TuI-8r-uh5" firstAttribute="leading" secondItem="VAs-PJ-yBf" secondAttribute="leading" id="VUo-q3-Fjq"/>
+                            <constraint firstItem="TuI-8r-uh5" firstAttribute="top" secondItem="JUC-DW-r7Y" secondAttribute="bottom" id="XRE-TJ-epq"/>
+                            <constraint firstAttribute="trailing" secondItem="TuI-8r-uh5" secondAttribute="trailing" id="gCr-7s-oe3"/>
+                            <constraint firstItem="GzV-tj-D68" firstAttribute="top" secondItem="mYh-ij-jld" secondAttribute="bottom" constant="10" id="rAJ-o8-bbx"/>
+                            <constraint firstItem="mYh-ij-jld" firstAttribute="centerX" secondItem="VAs-PJ-yBf" secondAttribute="centerX" id="uCE-uW-8xv"/>
+                            <constraint firstItem="mYh-ij-jld" firstAttribute="top" secondItem="kBB-1p-fgO" secondAttribute="bottom" id="wyI-YX-zhM"/>
+                            <constraint firstAttribute="trailing" secondItem="kBB-1p-fgO" secondAttribute="trailing" id="zNV-W6-z7z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9JF-ph-PGg"/>
+                    <connections>
+                        <outlet property="pageControl" destination="mYh-ij-jld" id="AYp-Ez-7Ug"/>
+                        <outlet property="scrollView" destination="kBB-1p-fgO" id="C2J-DE-DHe"/>
+                        <outlet property="titleLabel" destination="TuI-8r-uh5" id="meu-Vm-Y0f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qSW-uh-Sy0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1220" y="541"/>
+        </scene>
+    </scenes>
+</document>

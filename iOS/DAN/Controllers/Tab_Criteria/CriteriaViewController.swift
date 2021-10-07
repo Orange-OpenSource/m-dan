@@ -57,7 +57,8 @@ class CriteriaViewController: DefaultTableViewController {
                 "horizontalScroll",
                 "form",
                 "readingOrder",
-                "language"
+                "language",
+                "voiceOver"
             ]
         ]
         
@@ -78,7 +79,7 @@ class CriteriaViewController: DefaultTableViewController {
             textCell.label.text = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
             textCell.label.textColor = UIColor.black
             textCell.label2.text = "criteria_description_options_cell".localized
-            textCell.label2.textColor = UIColor.orange_functionalRed()
+            textCell.label2.textColor = UIColor.orange_orangeForBlackText()
             
             return textCell
         } else {
@@ -87,7 +88,6 @@ class CriteriaViewController: DefaultTableViewController {
 
             cell                    = tableView.dequeueReusableCell(withIdentifier: categoryCellIdentifier, for: indexPath)
             cell.textLabel?.text    = ("criteria_category_"+cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row]).localized
-            cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 16.0)
             
             return cell
         }
@@ -95,7 +95,6 @@ class CriteriaViewController: DefaultTableViewController {
     
     // MARK: - TableView Delegate
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        
         if((indexPath as NSIndexPath).section == 0) {
             
             return 100

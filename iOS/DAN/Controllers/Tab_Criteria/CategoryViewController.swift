@@ -30,6 +30,9 @@ class CategoryViewController: DefaultTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    override func viewDidAppear(_ animated: Bool) {
+        self.reloadTransaction()
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -207,6 +210,16 @@ class CategoryViewController: DefaultTableViewController {
             examplesDetail = [
                 "example_language_accent_shortDescription"
             ]
+            
+        case "voiceOver":
+
+            examples = [
+                "example_voiceover_accent_title"
+            ]
+            
+            examplesDetail = [
+                "example_voiceover_accent_shortDescription"
+            ]
 
             
         default:
@@ -261,42 +274,26 @@ class CategoryViewController: DefaultTableViewController {
         }
         else {
             
-            let cell: UITableViewCell
+            let textCell: TextAndSubTextTableViewCell
             
-            cell = tableView.dequeueReusableCell(withIdentifier: exampleCellIdentifier, for: indexPath)
-           
-            cell.accessoryType              = .disclosureIndicator
-            cell.isUserInteractionEnabled     = true
-            cell.textLabel?.numberOfLines   = 1
-            cell.textLabel?.text            = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
-            cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 16.0)
-            cell.detailTextLabel?.text      = cellsSubtitle[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
-
-            return cell
+            textCell            = tableView.dequeueReusableCell(withIdentifier: exampleCellIdentifier, for: indexPath) as! TextAndSubTextTableViewCell
+            textCell.isUserInteractionEnabled     = true
+            textCell.label.text = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
+            textCell.subLabel.text = cellsSubtitle[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
+            
+            return textCell
         }        
     }
     
     // MARK: - TableViewDelegate    
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        
         if((indexPath as NSIndexPath).section == 0 || (indexPath as NSIndexPath).section == 1) {
-            
+
             return 100
         }
         else {
-            
-            return 50
-        }
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        if((indexPath as NSIndexPath).section == 0 || (indexPath as NSIndexPath).section == 1) {
-            
-            return UITableView.automaticDimension
-        } else {
-            
-            return 50
+
+            return 65
         }
     }
     
@@ -401,6 +398,10 @@ class CategoryViewController: DefaultTableViewController {
         case "language":
             if (indexPath as NSIndexPath).row == 0 {
                 self.performSegue(withIdentifier: "example-language-accent", sender: cell)
+            }
+        case "voiceOver":
+            if (indexPath as NSIndexPath).row == 0 {
+                self.performSegue(withIdentifier: "example-voiceOver-carousel", sender: cell)
             }
             
         default:

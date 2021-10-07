@@ -51,6 +51,8 @@ class GhostElementViewController: UIViewController {
         accessibleButton.layer.cornerRadius     = 5
         popUpContainerView.layer.cornerRadius   = 5
         
+        self.view.backgroundColor = .white
+        
         self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displayVoiceOverMessage(_:)))
     }
     

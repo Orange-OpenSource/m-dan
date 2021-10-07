@@ -24,14 +24,6 @@ class DefaultLabelHeader: UILabel {
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
         
-//        self.textColor = UIColor.orange_blackColor()
-//        self.backgroundColor = UIColor.orange_greyBgColor()
-        
-        if #available(iOS 8.2, *) {
-            self.font = UIFont.systemFont(ofSize: 17, weight:UIFont.Weight.medium)
-        } else {
-            // Fallback on earlier versions
-            self.font = UIFont.systemFont(ofSize: 17)
-        }
+        self.textColor = UIColor.orange_blackColor()
     }
 }

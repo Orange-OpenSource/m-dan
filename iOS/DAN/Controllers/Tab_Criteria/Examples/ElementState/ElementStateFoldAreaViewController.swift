@@ -57,9 +57,9 @@ class ElementStateFoldAreaViewController: DefaultTableViewController {
         cellsContent = [
             ["example_elementState_foldArea_description"],
             [""],
-            ["Sarah", "Damien"],
+            ["Sarah", "Damien", "David", "Elodie"],
             [""],
-            ["Sarah", "Damien"]
+            ["Sarah", "Damien", "David", "Elodie"]
         ]
     }
     
@@ -104,13 +104,13 @@ class ElementStateFoldAreaViewController: DefaultTableViewController {
             if(nonAccessibleIsFold) {
                 return 0
             }
-            return 44
+            return UITableView.automaticDimension
         }
         else if (indexPath as NSIndexPath).section == accessibleFoldSection {
             if(accessibleIsFold) {
                 return 0
             }
-            return 44
+            return UITableView.automaticDimension
         }
 
         return UITableView.automaticDimension
@@ -119,10 +119,10 @@ class ElementStateFoldAreaViewController: DefaultTableViewController {
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
         if section == nonAccessibleFoldSection || section == accessibleFoldSection {
-            return 44
+            return UITableView.automaticDimension
         }
         else {
-            return 45
+            return UITableView.automaticDimension
         }
     }
 

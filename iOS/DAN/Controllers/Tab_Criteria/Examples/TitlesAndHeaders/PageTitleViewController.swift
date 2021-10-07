@@ -70,20 +70,11 @@ class PageTitleViewController: DefaultTableViewController {
     
     // MARK: - TableViewDelegate
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        if (indexPath as NSIndexPath).section == 0 {
-            
-            return UITableView.automaticDimension
-        }
-        else {
-            
-            return 160
-        }
+        return UITableView.automaticDimension
     }
     
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        return 100
+        return UITableView.automaticDimension
     }
     
     // MARK: - Private methods
