@@ -51,7 +51,7 @@ object ExampleRepository {
         Example(resTitle = R.string.criteria_alt_item1, detailsExample = ImgExemple3Detail())
     }
     private val exampleAlt2 : Example by lazy {
-        Example(resTitle = R.string.criteria_alt_item2, detailsExample = ColorExemple1Detail())
+        Example(resTitle = R.string.criteria_alt_item2, detailsExample = StateElementsExempleDetail())
     }
 
     private val exampleReadOrder : Example by lazy {

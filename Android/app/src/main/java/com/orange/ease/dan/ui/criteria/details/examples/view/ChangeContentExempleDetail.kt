@@ -109,7 +109,11 @@ class ChangeContentExempleDetail: AccessibilityDetailsExample {
         return context.getString(R.string.criteria_contentchange_ex1_description)
     }
 
-    override fun hasUseOption(): Boolean {
+    override fun getOptionRessource(context: Context): String? {
+        return context.getString(R.string.criteria_template_option_tb)
+    }
+
+    override fun useOption(): Boolean {
         return true
     }
 }

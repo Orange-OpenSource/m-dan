@@ -38,8 +38,12 @@ class TextSizeExempleDetail: AccessibilityDetailsExample {
         return context.getString(R.string.criteria_textsize_ex1_description)
     }
 
-    override fun hasUseOption(): Boolean {
+    override fun useOption(): Boolean {
         return true
+    }
+
+    override fun getOptionRessource(context: Context): String? {
+        return context.getString(R.string.criteria_template_option_largetext)
     }
 }
 

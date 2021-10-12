@@ -58,6 +58,10 @@ class ExampleCriteriaFragment: Fragment() {
             val examplesCount = viewModel.criteria?.exampleList?.size ?: 1
             val currentExampleCount = (viewModel.criteria?.exampleList?.indexOf(it) ?: 0) + 1
             (activity as AppCompatActivity).supportActionBar?.title = getString(R.string.example) + " $currentExampleCount/$examplesCount"
+
+            val optionVisibility =  if (it.detailsExample.useOption()) View.VISIBLE else View.GONE
+            binding.viewOptionEnabled.visibility = optionVisibility
+            binding.textViewOptionEnabled.text = it.detailsExample.getOptionRessource(mContext)
         }
     }
 

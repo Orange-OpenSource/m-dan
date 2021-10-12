@@ -132,7 +132,7 @@ class StateElementsExemple2Detail: AccessibilityDetailsExample {
         return context.getString(R.string.criteria_stateelement_ex2_description)
     }
 
-    override fun hasUseOption(): Boolean {
+    override fun useOption(): Boolean {
         return true
     }
 
@@ -145,6 +145,10 @@ class StateElementsExemple2Detail: AccessibilityDetailsExample {
             val childIndex = pos - firstListItemPosition
             listView.getChildAt(childIndex)
         }
+    }
+
+    override fun getOptionRessource(context: Context): String? {
+        return context.getString(R.string.criteria_template_option_tb)
     }
 }
 

@@ -37,8 +37,12 @@ class HeadingExempleDetail: AccessibilityDetailsExample {
         return context.getString(R.string.example_headings_desc)
     }
 
-    override fun hasUseOption(): Boolean {
+    override fun useOption(): Boolean {
         return true
+    }
+
+    override fun getOptionRessource(context: Context): String? {
+        return context.getString(R.string.criteria_template_option_tb)
     }
 }
 

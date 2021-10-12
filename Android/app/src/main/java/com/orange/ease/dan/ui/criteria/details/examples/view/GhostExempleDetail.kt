@@ -19,7 +19,7 @@ class GhostExempleDetail: AccessibilityDetailsExample {
         val btnYes = accessibleView.findViewById<Button>(R.id.btngeneric)
         btnYes.text = context.getString(R.string.axsactivated)
         btnYes.setOnClickListener {
-            val accessibleGhostFragment = ExGhost1_1Fragment()
+            val accessibleGhostFragment = GhostExemple2Detail()
             val accessibleGhostFragmentBundle = Bundle()
             accessibleGhostFragmentBundle.putString(
                 "content",
@@ -40,7 +40,7 @@ class GhostExempleDetail: AccessibilityDetailsExample {
         val btnNo = notAccessibleView.findViewById<Button>(R.id.btngeneric)
         btnNo.text = context.getString(R.string.axsdisabled)
         btnNo.setOnClickListener {
-            val notAccessibleGhostFragment = ExGhost1_1Fragment()
+            val notAccessibleGhostFragment = GhostExemple2Detail()
             val notAccessibleGhostFragmentBundle = Bundle()
             notAccessibleGhostFragmentBundle.putString(
                 "content",
@@ -48,7 +48,7 @@ class GhostExempleDetail: AccessibilityDetailsExample {
             )
             notAccessibleGhostFragment.arguments = notAccessibleGhostFragmentBundle
             (context as DetailsCriteriaActivity?)?.let {
-                it.updateSpecificFragment(notAccessibleGhostFragment)
+                it.addSpecificFragment(notAccessibleGhostFragment)
             }
         }
         return notAccessibleView
@@ -66,8 +66,12 @@ class GhostExempleDetail: AccessibilityDetailsExample {
         return context.getString(R.string.criteria_ghostelement_ex1_description)
     }
 
-    override fun hasUseOption(): Boolean {
+    override fun useOption(): Boolean {
         return true
+    }
+
+    override fun getOptionRessource(context: Context): String? {
+        return context.getString(R.string.criteria_template_option_tb)
     }
 }
 
