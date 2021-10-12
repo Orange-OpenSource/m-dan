@@ -15,6 +15,7 @@ import com.orange.ease.dan.adapter.ListRecyclerViewAdapter
 import com.orange.ease.dan.databinding.RecyclerViewFragmentBinding
 import com.orange.ease.dan.model.AccessibilityEntity
 import com.orange.ease.dan.model.Example
+import com.orange.ease.dan.navigation.FragmentManagerActivity
 import com.orange.ease.dan.viewmodel.CriteriaDetailsViewModel
 
 class DetailsCriteriaFragment: Fragment(), ListRecyclerViewAdapter.ListRecyclerViewClickListener {
@@ -69,7 +70,7 @@ class DetailsCriteriaFragment: Fragment(), ListRecyclerViewAdapter.ListRecyclerV
 
     override fun listItemClicked(row: AccessibilityEntity) {
         viewModel.setCurrentExample(row as Example)
-        (activity as DetailsCriteriaActivity?)?.let {
+        (activity as FragmentManagerActivity?)?.let {
             it.updateFragmentWithExample()
         }
     }

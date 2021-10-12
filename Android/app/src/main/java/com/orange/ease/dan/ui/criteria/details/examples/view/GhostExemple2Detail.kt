@@ -1,14 +1,13 @@
 package com.orange.ease.dan.ui.criteria.details.examples.view
 
 import android.content.Context
-import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.orange.ease.dan.databinding.Exghost11FragBinding
-import com.orange.ease.dan.ui.criteria.details.DetailsCriteriaActivity
+import com.orange.ease.dan.navigation.FragmentManagerActivity
 
 class GhostExemple2Detail: Fragment() {
 
@@ -37,7 +36,7 @@ class GhostExemple2Detail: Fragment() {
         binding.textViewContent.announceForAccessibility(mContent)
         binding.textViewContent.text = mContent
         binding.btnok.setOnClickListener{
-            (context as DetailsCriteriaActivity?)?.let {
+            (context as FragmentManagerActivity?)?.let {
                 it.back()
             }
         }

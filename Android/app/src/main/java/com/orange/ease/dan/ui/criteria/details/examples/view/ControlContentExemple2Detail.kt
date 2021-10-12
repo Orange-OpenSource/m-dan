@@ -9,9 +9,8 @@ import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
 import com.orange.ease.dan.R
 import com.orange.ease.dan.guide.accessibility.lvl2.MyViewPager
-import com.orange.ease.dan.guide.accessibility.lvl2.MyViewPagerDiapo
-import com.orange.ease.dan.ui.criteria.details.DetailsCriteriaActivity
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
+import com.orange.ease.dan.navigation.FragmentManagerActivity
 import com.orange.ease.dan.ui.criteria.details.examples.pager.ViewPagerDiapoFragment
 
 class ControlContentExemple2Detail: AccessibilityDetailsExample {
@@ -27,7 +26,7 @@ class ControlContentExemple2Detail: AccessibilityDetailsExample {
             val args = Bundle()
             args.putBoolean(MyViewPager.IS_ACCESSIBLE, true)
             myDiapoFragement.arguments = args
-            (context as DetailsCriteriaActivity?)?.let {
+            (context as FragmentManagerActivity?)?.let {
                 it.updateSpecificFragment(myDiapoFragement)
             }
         }
@@ -46,7 +45,7 @@ class ControlContentExemple2Detail: AccessibilityDetailsExample {
             val args = Bundle()
             args.putBoolean(MyViewPager.IS_ACCESSIBLE, false)
             myDiapoFragement.arguments = args
-            (context as DetailsCriteriaActivity?)?.let {
+            (context as FragmentManagerActivity?)?.let {
                 it.updateSpecificFragment(myDiapoFragement)
             }
         }
