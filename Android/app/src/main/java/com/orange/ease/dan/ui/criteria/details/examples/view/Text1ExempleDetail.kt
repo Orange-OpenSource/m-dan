@@ -13,7 +13,7 @@ import java.util.*
 class Text1ExempleDetail: AccessibilityDetailsExample {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView = inflater.inflate(R.layout.extxt1_frag, null) as LinearLayout
+        val accessibleView = inflater.inflate(R.layout.extxt1_frag, null) as LinearLayout
 
         val c = Calendar.getInstance()
         val sdf = SimpleDateFormat(context.getString(R.string.date_format), Locale.getDefault())
@@ -21,7 +21,7 @@ class Text1ExempleDetail: AccessibilityDetailsExample {
 
         val monthName = c.getDisplayName(Calendar.MONTH, Calendar.LONG, Locale.getDefault())
 
-        val ex1 = myView.findViewById<View>(R.id.ex1txt1) as TextView
+        val ex1 = accessibleView.findViewById<TextView>(R.id.ex1txt1)
 
         ex1.text = date
         ex1.contentDescription =
@@ -29,28 +29,28 @@ class Text1ExempleDetail: AccessibilityDetailsExample {
                 R.string.heure
             ) + " " + c[Calendar.MINUTE]
 
-        myView.findViewById<View>(R.id.ex2txt1).contentDescription =
+        accessibleView.findViewById<View>(R.id.ex2txt1).contentDescription =
             context.getString(R.string.criteria_alt_ex1_cd_txt1)
-        myView.findViewById<View>(R.id.ex3txt1).contentDescription =
+        accessibleView.findViewById<View>(R.id.ex3txt1).contentDescription =
             context.getString(R.string.criteria_alt_ex1_cd_txt2)
-        myView.findViewById<View>(R.id.ex4txt1).contentDescription =
+        accessibleView.findViewById<View>(R.id.ex4txt1).contentDescription =
             context.getString(R.string.criteria_alt_ex1_cd_txt3)
 
-        return myView
+        return accessibleView
     }
 
     override fun getNotAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView2 = inflater.inflate(R.layout.extxt1_frag, null) as LinearLayout
-        myView2.removeView(myView2.findViewById(R.id.ex3txt1))
+        val notAccessibleView = inflater.inflate(R.layout.extxt1_frag, null) as LinearLayout
+        notAccessibleView.removeView(notAccessibleView.findViewById(R.id.ex3txt1))
 
         val c = Calendar.getInstance()
         val sdf = SimpleDateFormat(context.getString(R.string.date_format), Locale.getDefault())
         val date = sdf.format(c.time)
 
-        val ex1AxsNo = myView2.findViewById<View>(R.id.ex1txt1) as TextView
-        ex1AxsNo.setText(date)
-        return myView2
+        val ex1AxsNo = notAccessibleView.findViewById<TextView>(R.id.ex1txt1)
+        ex1AxsNo.text = date
+        return notAccessibleView
     }
 
     override fun getTitleRessource(context: Context): String {

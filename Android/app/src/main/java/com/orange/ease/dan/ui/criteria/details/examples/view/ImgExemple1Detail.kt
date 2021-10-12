@@ -12,11 +12,7 @@ import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExam
 
 class ImgExemple1Detail: AccessibilityDetailsExample {
     override fun getAccessibleExample(context: Context): View {
-        val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView = inflater.inflate(R.layout.exform1_frag, null) as LinearLayout
-
-
-        // Commons params for ImageView
+       // Commons params for ImageView
         val params = FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.WRAP_CONTENT,
             FrameLayout.LayoutParams.WRAP_CONTENT
@@ -24,18 +20,16 @@ class ImgExemple1Detail: AccessibilityDetailsExample {
         params.gravity = Gravity.CENTER_HORIZONTAL or Gravity.TOP
 
         // Accessible ImageView
-        val accessibileImageView = ImageView(context)
-        accessibileImageView.adjustViewBounds = true
-        accessibileImageView.contentDescription = context.getString(R.string.criteria_img_ex1_cd_image)
-        accessibileImageView.layoutParams = params
-        accessibileImageView.setImageResource(R.drawable.exampleimg)
+        val accessibleImageView = ImageView(context)
+        accessibleImageView.adjustViewBounds = true
+        accessibleImageView.contentDescription = context.getString(R.string.criteria_img_ex1_cd_image)
+        accessibleImageView.layoutParams = params
+        accessibleImageView.setImageResource(R.drawable.exampleimg)
 
-        return accessibileImageView
+        return accessibleImageView
     }
 
     override fun getNotAccessibleExample(context: Context): View {
-        val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-
         // Commons params for ImageView
         val params = FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.WRAP_CONTENT,
@@ -45,11 +39,11 @@ class ImgExemple1Detail: AccessibilityDetailsExample {
 
 
         // Not accessible ImageView
-        val notAccessibileImageView = ImageView(context)
-        notAccessibileImageView.layoutParams = params
-        notAccessibileImageView.adjustViewBounds = true
-        notAccessibileImageView.setImageResource(R.drawable.exampleimg)
-        return notAccessibileImageView
+        val notAccessibleImageView = ImageView(context)
+        notAccessibleImageView.layoutParams = params
+        notAccessibleImageView.adjustViewBounds = true
+        notAccessibleImageView.setImageResource(R.drawable.exampleimg)
+        return notAccessibleImageView
     }
 
     override fun getTitleRessource(context: Context): String {

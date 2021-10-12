@@ -1,5 +1,6 @@
 package com.orange.ease.dan.data
 
+import android.os.Build
 import com.orange.ease.dan.R
 import com.orange.ease.dan.model.Example
 import com.orange.ease.dan.ui.criteria.details.examples.view.*
@@ -24,8 +25,14 @@ object ExampleRepository {
     private val exampleControlContent2 : Example by lazy {
         Example(resTitle = R.string.criteria_contentcontrol_item2, detailsExample = ControlContentExemple2Detail())
     }
+    private val exampleControlContent3 : Example by lazy {
+        Example(resTitle = R.string.criteria_timetotakeaction_title, detailsExample = TimeTakeActionExempleDetail(), apiVersion = Build.VERSION_CODES.Q)
+    }
     private val exampleFocusNav : Example by lazy {
         Example(resTitle = R.string.criteria_focusnav_item1, detailsExample = FocusNavExempleDetail())
+    }
+    private val exampleFocusColor : Example by lazy {
+        Example(resTitle = R.string.example_focus_color_title, detailsExample = FocusColorExempleDetail())
     }
     private val exampleGhost : Example by lazy {
         Example(resTitle = R.string.criteria_ghostelement_item1, detailsExample = GhostExempleDetail())
@@ -56,6 +63,9 @@ object ExampleRepository {
     private val exampleTextSize : Example by lazy {
         Example(resTitle = R.string.criteria_textsize_item1, detailsExample = TextSizeExempleDetail())
     }
+    private val exampleTextReadability : Example by lazy {
+        Example(resTitle = R.string.criteria_textsize_item2, detailsExample = TextReadabilityExempleDetail())
+    }
     private val exampleStandardComponent1 : Example by lazy {
         Example(resTitle = R.string.criteria_standardcomponent_title, detailsExample = StandardComponentExempleDetail())
     }
@@ -83,9 +93,18 @@ object ExampleRepository {
     private val exampleText3 : Example by lazy {
         Example(resTitle = R.string.criteria_alt_item6, detailsExample = Text3ExempleDetail())
     }
+    private val exampleGroup : Example by lazy {
+        Example(resTitle = R.string.criteria_alt_item7, detailsExample = GroupExempleDetail())
+    }
+    private val exampleHeading : Example by lazy {
+        Example(resTitle = R.string.criteria_alt_item8, detailsExample = HeadingExempleDetail(), apiVersion = Build.VERSION_CODES.P)
+    }
 
     private val exampleForm : Example by lazy {
         Example(resTitle = R.string.criteria_form_item1, detailsExample = FormExempleDetail())
+    }
+    private val exampleFormError : Example by lazy {
+        Example(resTitle = R.string.criteria_form_item2, detailsExample = FormErrorExempleDetail())
     }
 
     private val exampleAlt3 : Example by lazy {
@@ -117,7 +136,8 @@ object ExampleRepository {
 
     fun getListOfAltExample(): List<Example> {
         return listOf<Example>(
-            exampleAlt1, exampleAlt2, exampleAlt3, exampleText1, exampleText2, exampleText3
+            exampleAlt1, exampleAlt2, exampleAlt3, exampleText1, exampleText2,
+            exampleText3, exampleGroup, exampleHeading
         )
     }
 
@@ -135,7 +155,7 @@ object ExampleRepository {
 
     fun getListOfContentControlExample(): List<Example> {
         return listOf<Example>(
-            exampleControlContent1, exampleControlContent2
+            exampleControlContent1, exampleControlContent2, exampleControlContent3
         )
     }
 
@@ -147,13 +167,13 @@ object ExampleRepository {
 
     fun getListOfFocusExample(): List<Example> {
         return listOf<Example>(
-            exampleFocusNav
+            exampleFocusNav, exampleFocusColor
         )
     }
 
     fun getListOfFormExample(): List<Example> {
         return listOf<Example>(
-            exampleForm
+            exampleForm, exampleFormError
         )
     }
 
@@ -187,9 +207,9 @@ object ExampleRepository {
         )
     }
 
-    fun getListOfTextSizeExample(): List<Example> {
+    fun getListOfTextExample(): List<Example> {
         return listOf<Example>(
-            exampleTextSize
+            exampleTextSize, exampleTextReadability
         )
     }
 }

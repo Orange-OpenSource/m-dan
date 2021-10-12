@@ -87,7 +87,7 @@ object CriteriaRepository {
         resTitle = R.string.criteria_textsize_title,
         resRuleDescription = R.string.criteria_textsize_rule_description,
         resWhyDescription = R.string.criteria_textsize_why_description,
-        ExampleRepository.getListOfTextSizeExample()
+        ExampleRepository.getListOfTextExample()
     )
     private val criteriaForm = Criteria(
         resTitle = R.string.criteria_form_title,

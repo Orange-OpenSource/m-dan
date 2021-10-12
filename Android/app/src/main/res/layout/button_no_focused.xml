@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
   ~ Licensed to the Apache Software Foundation (ASF) under one
   ~ or more contributor license agreements.  See the NOTICE file
@@ -17,19 +18,17 @@
   ~ under the License.
   -->
 
-<resources>
-    <!-- Base application theme. -->
-    <style name="OrangeTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:statusBarColor">@color/status_bar_bg</item>
-        <item name="android:windowTranslucentStatus">false</item>
-        <item name="android:windowBackground">@color/app_bg</item>
-
-        <item name="windowActionBar">false</item>
-        <item name="android:editTextStyle">@style/EditText</item>
-        <item name="android:textViewStyle">@style/TextViewStandard</item>
-        <item name="android:checkboxStyle">@style/Checkbox</item>
-        <item name="android:radioButtonStyle">@style/RadioButton</item>
-    </style>
-
-</resources>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/btngeneric"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        style="@style/BrandButtonNoFocused"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

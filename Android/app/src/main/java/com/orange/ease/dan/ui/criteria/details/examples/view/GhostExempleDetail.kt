@@ -14,44 +14,44 @@ import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExam
 class GhostExempleDetail: AccessibilityDetailsExample {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView = inflater.inflate(R.layout.buttongeneric, null) as LinearLayout
+        val accessibleView = inflater.inflate(R.layout.buttongeneric, null) as LinearLayout
 
-        val btnYes = myView.findViewById<View>(R.id.btngeneric) as Button
-        btnYes.setText(context.getString(R.string.axsactivated))
+        val btnYes = accessibleView.findViewById<Button>(R.id.btngeneric)
+        btnYes.text = context.getString(R.string.axsactivated)
         btnYes.setOnClickListener {
-            val accessibleGhostFragement = ExGhost1_1Fragment()
-            val accessibleGhostFragementBundle = Bundle()
-            accessibleGhostFragementBundle.putString(
+            val accessibleGhostFragment = ExGhost1_1Fragment()
+            val accessibleGhostFragmentBundle = Bundle()
+            accessibleGhostFragmentBundle.putString(
                 "content",
                 context.getString(R.string.criteria_ghostelement_ex1_ghost)
             )
-            accessibleGhostFragement.arguments = accessibleGhostFragementBundle
+            accessibleGhostFragment.arguments = accessibleGhostFragmentBundle
             (context as DetailsCriteriaActivity?)?.let {
-                it.updateSpecificFragment(accessibleGhostFragement)
+                it.updateSpecificFragment(accessibleGhostFragment)
             }
         }
-        return myView
+        return accessibleView
     }
 
     override fun getNotAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView2 = inflater.inflate(R.layout.buttongeneric, null) as LinearLayout
+        val notAccessibleView = inflater.inflate(R.layout.buttongeneric, null) as LinearLayout
 
-        val btnNo = myView2.findViewById<View>(R.id.btngeneric) as Button
-        btnNo.setText(context.getString(R.string.axsdisabled))
+        val btnNo = notAccessibleView.findViewById<Button>(R.id.btngeneric)
+        btnNo.text = context.getString(R.string.axsdisabled)
         btnNo.setOnClickListener {
-            val notAccessibleGhostFragement = ExGhost1_1Fragment()
+            val notAccessibleGhostFragment = ExGhost1_1Fragment()
             val notAccessibleGhostFragmentBundle = Bundle()
             notAccessibleGhostFragmentBundle.putString(
                 "content",
                 context.getString(R.string.criteria_ghostelement_ex1_noghost)
             )
-            notAccessibleGhostFragement.arguments = notAccessibleGhostFragmentBundle
+            notAccessibleGhostFragment.arguments = notAccessibleGhostFragmentBundle
             (context as DetailsCriteriaActivity?)?.let {
-                it.updateSpecificFragment(notAccessibleGhostFragement)
+                it.updateSpecificFragment(notAccessibleGhostFragment)
             }
         }
-        return myView2
+        return notAccessibleView
     }
 
     override fun getTitleRessource(context: Context): String {

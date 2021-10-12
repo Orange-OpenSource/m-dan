@@ -291,6 +291,8 @@
     <string name="criteria_alt_item4">Abréviations, dates et heures</string>
     <string name="criteria_alt_item5">Image complétée par du texte</string>
     <string name="criteria_alt_item6">Composant complexe</string>
+    <string name="criteria_alt_item7">Regroupement des éléments</string>
+    <string name="criteria_alt_item8">Navigation par entêtes</string>
 
     <!-- criteria : titles -->
     <string name="criteria_title_title">Titre et entête</string>
@@ -337,10 +339,14 @@
         <item>Démonstrateur</item>
         <item>Accessibilité</item>
     </string-array>
-
     <string name="criteria_stateelement_item1">Onglets</string>
     <string name="criteria_stateelement_item2">Listes</string>
     <string name="criteria_stateelement_item3">Zones dépliables</string>
+
+    <!-- criteria : time to take action -->
+    <string name="criteria_timetotakeaction_title">Time to take action</string>
+    <string name="criteria_timetotakeaction_description">Une option d\'accessibilité nommée Time to take action existe depuis Android 10, et permet de définir son propre timeout depuis les paramètres d\'accessibilité. Il est ainsi possible d\'exploiter cette option par le biais de la fonction getRecommendedTimeoutMillis(). Cette méthode prend en charge les délais d\'expiration définis par l\'utilisateur pour les éléments d\'interface utilisateur interactifs et non interactifs. La valeur de retour est influencée à la fois par les préférences de l\'utilisateur (Time to take action) et les API du service d\'accessibilité.</string>
+    <string name="criteria_timetotakeaction_cell">Time to take action</string>
 
     <!-- criteria : standard -->
     <string name="criteria_standardcomponent_title">Composants standards</string>
@@ -398,9 +404,19 @@
     <string name="criteria_textsize_ex1_sizetxtYes">Ce texte utilise une police acceptant l\'agrandissement de caractère et réagira donc suivant les options d\'accessibilité définies par l\'utilisateur.</string>
     <string name="criteria_textsize_ex1_sizetxtNo">A contrario, ce texte ne réagira pas aux options d\'agrandissement des caractères.</string>
     <string name="criteria_textsize_item1">Taille dynamique</string>
+    <string name="criteria_textsize_item2">Lisibilité</string>
     <string-array name="criteria_textsize_list">
         <item>Taille dynamique</item>
+        <item>Lisibilité</item>
     </string-array>
+
+    <string name="criteria_text_readability_title">Lisibilité des textes</string>
+    <string name="criteria_text_readability_description">Dans l\'exemple ci-dessous, le texte non accessible n\'utilise pas les recommandations en terme de lisibilité d\'un texte : police sans-serif, italique à éviter, taille de texte suffisamment grande.</string>
+    <string name="criteria_text_readability_ex_yes">Ce texte utilise une police sans-serif et est de taille suffisante pour être lisible facilement et donc accessible.</string>
+    <string name="criteria_text_readability_ex_no_small">Ce texte est de taille trop petite pour être lisible facilement et est donc inaccessible.</string>
+    <string name="criteria_text_readability_ex_no_italic">L\'italique de ce texte gêne la lisibilité de celui-ci qui n\'est donc pas accessible.</string>
+    <string name="criteria_text_readability_ex_no_serif">Ce texte utilise une police serif qui peut rendre sa lecture difficile pour les dyslexiques et est donc inaccessible.</string>
+
 
     <!-- criteria : content control -->
     <string name="criteria_contentcontrol_title">Contrôle de contenu</string>
@@ -468,11 +484,16 @@
     <string name="criteria_form_rule_description">Chaque champ de formulaire doit être lié à un label.</string>
     <string name="criteria_form_ex1_title">Un champ de formulaire doit être lié à un label</string>
     <string name="criteria_form_ex1_description">Dans l\'exemple ci-dessous, certains champs de formulaire sont labellisés et d\'autres non. Vous pouvez donc écouter la différence de vocalisation entre un champ labellisé et un champ non labellisé.\nA noter qu\'un texte d\'exemple qui remplit le champ est bien vocalisé.</string>
+    <string name="criteria_form_ex2_title">Un champ en erreur est identifiable</string>
+    <string name="criteria_form_ex2_description">Dans l\'exemple ci-dessous, le champ accessible présente une erreur identifiable et explicite lorsqu\'on ne remplit pas le champ obligatoire, tandis que le champ non accessible n\'affiche rien.</string>
     <string name="criteria_form_ex1_label_name">Nom :</string>
+    <string name="criteria_form_ex1_label_name_mandatory">Nom : *</string>
     <string name="criteria_form_ex1_label_mail">Adresse mail :</string>
     <string name="criteria_form_ex1_placeholder">Répétez l\'adresse mail</string>
     <string name="criteria_form_ex1_label_checkbox">Accepter les conditions d\'utilisation</string>
+    <string name="criteria_form_ex1_label_button">VALIDER</string>
     <string name="criteria_form_item1">Label</string>
+    <string name="criteria_form_item2">Erreur</string>
     <string-array name="criteria_form_list">
         <item>Label</item>
     </string-array>
@@ -673,6 +694,27 @@
     <string name="options_talkback_title">Talkback</string>
 
 
+    <string name="example_group_title">Regroupement des éléments</string>
+    <string name="example_group_desc">Il est recommandé de regrouper les éléments pour la vocalisation vocale lorsque cela permet de gagner en efficacité et en compréhension.\nPar exemple, dans le cadre d\'une application de musique, il est plus intéressant regrouper la vocalisation du nom de la musique, du nom de l\'artiste et de la durée de celle-ci en un seul bloc, plutôt que de les vocaliser séparément et d\'alourdir la navigation.</string>
+    <string name="my_songwriter">Lenny Kravitz</string>
+    <string name="my_song_title">Are you gonna go my way</string>
+    <string name="my_song_length">3:36</string>
+    <string name="my_song_length_alt">3 minutes 36</string>
+    <string name="my_song_title2">Low</string>
+    <string name="my_song_length2">4:46</string>
+    <string name="my_song_length2_alt">4 minutes 46</string>
+
+    <string name="example_headings_title">Navigation par entêtes</string>
+    <string name="example_headings_desc">Au sein d\'un même écran, il arrive parfois que le contenu affiché présente différentes sections, avec pour chacune d\'entre elles une entête. Il est possible avec le lecteur d\'écran Talkback de naviguer par entêtes, plutôt que de naviguer par éléments.</string>
+    <string name="section1" translatable="false">SECTION 1</string>
+    <string name="section2" translatable="false">SECTION 2</string>
+    <string name="section3" translatable="false">SECTION 3</string>
+    <string name="lorem_ipsum" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+
+    <string name="example_focus_color_title">État du focus</string>
+    <string name="example_focus_color_desc">Tout élément interactif peut recevoir le focus, il faut donc que l\'état du focus soit défini et permette de distinguer d\’un seul coup d\’œil quel élément a le focus.</string>
+
+
     <!-- accessibility & Orange view -->
     <string name="orange_title">Et chez Orange?</string>
     <string name="orange_content">Orange s\'efforce de rendre ses applications mobiles accessibles. Dans cette section, nous vous proposons une liste d\'applications ayant porté un intérêt particulier à l\'accessibilité pendant leurs développements.</string>
@@ -709,6 +751,15 @@
     <string name="bottom_navigation_menu_options">Options</string>
     <string name="bottom_navigation_menu_dev">Développement</string>
     <string name="bottom_navigation_menu_criteria">Critères</string>
+
+    <!-- android version -->
+    <string name="required_version">Non disponible (Android API %1$d requis)</string>
+
+    <!-- snackbar time to take action -->
+    <string name="snackbar_title_take_action">Timeout snackbar accessible</string>
+    <string name="snackbar_title_not_take_action">Timeout snackbar non accessible</string>
+    <string name="snackbar_button_take_action">ANNULER</string>
+    <string name="toast_message_take_action">Snackbar est annulé !</string>
 
 </resources>
 

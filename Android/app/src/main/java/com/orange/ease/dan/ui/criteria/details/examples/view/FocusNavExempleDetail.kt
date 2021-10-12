@@ -10,12 +10,10 @@ import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExam
 
 class FocusNavExempleDetail: AccessibilityDetailsExample {
     override fun getAccessibleExample(context: Context): View {
-        val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-
         val texteExempleAccessible = TextView(context)
-        texteExempleAccessible.setText(context.getString(R.string.criteria_focusnav_ex1_axs))
+        texteExempleAccessible.text = context.getString(R.string.criteria_focusnav_ex1_axs)
         val lyaxs = LinearLayout(context)
-        val scale: Float = context.getResources().getDisplayMetrics().density
+        val scale: Float = context.resources.displayMetrics.density
         lyaxs.setPadding((15 * scale + 0.5f).toInt(), 0, (15 * scale + 0.5f).toInt(), 0)
         lyaxs.orientation = LinearLayout.VERTICAL
         lyaxs.addView(texteExempleAccessible)
@@ -24,10 +22,10 @@ class FocusNavExempleDetail: AccessibilityDetailsExample {
 
     override fun getNotAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView2 = inflater.inflate(R.layout.exfocusnav1_frag, null) as LinearLayout
+        val notAccessibleView = inflater.inflate(R.layout.exfocusnav1_frag, null) as LinearLayout
 
-        val ly = myView2.findViewById<View>(R.id.listViewAxsNoFocusNav) as LinearLayout
-        val items: Array<String> = context.getResources().getStringArray(R.array.criteria_focusnav_ex1_list)
+        val ly = notAccessibleView.findViewById<LinearLayout>(R.id.listViewAxsNoFocusNav)
+        val items: Array<String> = context.resources.getStringArray(R.array.criteria_focusnav_ex1_list)
         var mFakeListView: LinearLayout
         for (item in items) {
             mFakeListView =
@@ -36,7 +34,7 @@ class FocusNavExempleDetail: AccessibilityDetailsExample {
                 item
             ly.addView(mFakeListView)
         }
-        return myView2
+        return notAccessibleView
     }
 
     override fun getTitleRessource(context: Context): String {

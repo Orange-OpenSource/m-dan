@@ -16,25 +16,25 @@ class ColorExemple2Detail: AccessibilityDetailsExample {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val myViewAxsYes = inflater.inflate(R.layout.excolor2_frag, null) as LinearLayout
 
-        val tvmail = myViewAxsYes.findViewById<View>(R.id.textView42) as TextView
+        val tvmail = myViewAxsYes.findViewById<TextView>(R.id.textView42)
         tvmail.contentDescription =
             context.getString(R.string.criteria_color_ex2_service).toString() + " " + tvmail.text.toString()
         myViewAxsYes.findViewById<View>(R.id.imageView15).contentDescription =
             tvmail.contentDescription.toString() + " " + context.getString(R.string.criteria_color_ex2_cd_active)
 
-        val tvmusic = myViewAxsYes.findViewById<View>(R.id.textView41) as TextView
+        val tvmusic = myViewAxsYes.findViewById<TextView>(R.id.textView41)
         tvmusic.contentDescription =
             context.getString(R.string.criteria_color_ex2_service).toString() + " " + tvmusic.text.toString()
         myViewAxsYes.findViewById<View>(R.id.imageView17).contentDescription =
             tvmusic.contentDescription.toString() + " " + context.getString(R.string.criteria_color_ex2_cd_error)
 
-        val tvvideo = myViewAxsYes.findViewById<View>(R.id.textView43) as TextView
+        val tvvideo = myViewAxsYes.findViewById<TextView>(R.id.textView43)
         tvvideo.contentDescription =
             context.getString(R.string.criteria_color_ex2_service).toString() + " " + tvvideo.text.toString()
         myViewAxsYes.findViewById<View>(R.id.imageView19).contentDescription =
             tvvideo.contentDescription.toString() + " " + context.getString(R.string.criteria_color_ex2_cd_inactive)
 
-        val tvweb: TextView = myViewAxsYes.findViewById<View>(R.id.textView44) as TextView
+        val tvweb: TextView = myViewAxsYes.findViewById<TextView>(R.id.textView44)
         tvweb.contentDescription =
             context.getString(R.string.criteria_color_ex2_service).toString() + " " + tvweb.text.toString()
         myViewAxsYes.findViewById<View>(R.id.imageView21).contentDescription =
@@ -50,14 +50,14 @@ class ColorExemple2Detail: AccessibilityDetailsExample {
         myViewAxsNo.removeView(myViewAxsNo.findViewById(R.id.legendlayout))
         myViewAxsNo.removeView(myViewAxsNo.findViewById(R.id.virtualSeparator))
 
-        val ivNo1 = myViewAxsNo.findViewById<View>(R.id.imageView15) as ImageView
-        val tv1 = myViewAxsNo.findViewById<View>(R.id.textView42) as TextView
-        val ivNo2 = myViewAxsNo.findViewById<View>(R.id.imageView17) as ImageView
-        val tv2 = myViewAxsNo.findViewById<View>(R.id.textView41) as TextView
-        val ivNo3 = myViewAxsNo.findViewById<View>(R.id.imageView19) as ImageView
-        val tv3 = myViewAxsNo.findViewById<View>(R.id.textView43) as TextView
-        val ivNo4 = myViewAxsNo.findViewById<View>(R.id.imageView21) as ImageView
-        val tv4 = myViewAxsNo.findViewById<View>(R.id.textView44) as TextView
+        val ivNo1 = myViewAxsNo.findViewById<ImageView>(R.id.imageView15)
+        val tv1 = myViewAxsNo.findViewById<TextView>(R.id.textView42)
+        val ivNo2 = myViewAxsNo.findViewById<ImageView>(R.id.imageView17)
+        val tv2 = myViewAxsNo.findViewById<TextView>(R.id.textView41)
+        val ivNo3 = myViewAxsNo.findViewById<ImageView>(R.id.imageView19)
+        val tv3 = myViewAxsNo.findViewById<TextView>(R.id.textView43)
+        val ivNo4 = myViewAxsNo.findViewById<ImageView>(R.id.imageView21)
+        val tv4 = myViewAxsNo.findViewById<TextView>(R.id.textView44)
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
             ivNo1.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_YES

@@ -14,9 +14,9 @@ import java.util.*
 class Text2ExempleDetail: AccessibilityDetailsExample {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView = inflater.inflate(R.layout.extxt2_frag, null) as LinearLayout
+        val accessibleView = inflater.inflate(R.layout.extxt2_frag, null) as LinearLayout
 
-        val btn = myView.findViewById<View>(R.id.imageButton10) as ImageButton
+        val btn = accessibleView.findViewById<ImageButton>(R.id.imageButton10)
         val badge = BadgeView(context, btn)
         badge.text = "3"
         badge.show()
@@ -26,18 +26,18 @@ class Text2ExempleDetail: AccessibilityDetailsExample {
         btn.contentDescription =
             badge.text.toString() + " " + context.getString(R.string.criteria_alt_ex2_cd_btn)
 
-        return myView
+        return accessibleView
     }
 
     override fun getNotAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView2 = inflater.inflate(R.layout.extxt2_frag, null) as LinearLayout
+        val notAccessibleView = inflater.inflate(R.layout.extxt2_frag, null) as LinearLayout
 
-        val btnNo = myView2.findViewById<View>(R.id.imageButton10) as ImageButton
+        val btnNo = notAccessibleView.findViewById<ImageButton>(R.id.imageButton10)
         val badgeNo = BadgeView(context, btnNo)
         badgeNo.text = "3"
         badgeNo.show()
-        return myView2
+        return notAccessibleView
     }
 
     override fun getTitleRessource(context: Context): String {
