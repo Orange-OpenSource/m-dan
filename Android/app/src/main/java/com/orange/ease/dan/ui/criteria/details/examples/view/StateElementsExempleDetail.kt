@@ -52,7 +52,7 @@ class StateElementsExempleDetail: AccessibilityDetailsExample {
         return context.getString(R.string.criteria_stateelement_ex1_description)
     }
 
-    override fun hasUseOption(): Boolean {
+    override fun useOption(): Boolean {
         return true
     }
 
@@ -95,6 +95,10 @@ class StateElementsExempleDetail: AccessibilityDetailsExample {
             }
             mTabHost.tabWidget.getChildAt(tabNumber).contentDescription = contentDescription
         }
+    }
+
+    override fun getOptionRessource(context: Context): String? {
+        return context.getString(R.string.criteria_template_option_tb)
     }
 }
 

@@ -2,6 +2,7 @@ package com.orange.ease.dan.ui.criteria.details.examples.pager
 
 import android.accessibilityservice.AccessibilityService
 import android.content.Context
+import android.graphics.PorterDuff
 import android.os.Build
 import android.os.Bundle
 import android.provider.Settings
@@ -11,16 +12,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener
 import com.orange.ease.dan.R
 import com.orange.ease.dan.adapter.ViewPagerExampleAdapter
 import com.orange.ease.dan.databinding.Excontrolcontent1FragBinding
 
-class ViewPagerFragment: Fragment() {
+class ViewPagerFragment : Fragment() {
 
     private lateinit var binding: Excontrolcontent1FragBinding
-    private lateinit var mContext : Context
+    private lateinit var mContext: Context
 
     val INDICE_START = 0
     val INDICE_END = 2
@@ -49,6 +51,7 @@ class ViewPagerFragment: Fragment() {
     ): View {
         binding = Excontrolcontent1FragBinding.inflate(inflater, container, false)
         updateViews()
+        setupClickListener()
         return binding.root
     }
 
@@ -71,29 +74,29 @@ class ViewPagerFragment: Fragment() {
             mIsScrollEx = false
         }
         adapter = ViewPagerExampleAdapter(context = mContext, mIsAccessible = mIsAccessible)
-        binding.viewPager.setAdapter(adapter)
+        binding.viewPager.adapter = adapter
         if (mIsAccessible) {
             if (!isAccessibilitySettingsOn()) {
-                binding.imgButtonPrevious.setVisibility(View.VISIBLE)
-                binding.imgButtonNext.setVisibility(View.VISIBLE)
+                binding.imgButtonPrevious.visibility = View.VISIBLE
+                binding.imgButtonNext.visibility = View.VISIBLE
             } else {
-                binding.imgButtonPrevious.setVisibility(View.GONE)
-                binding.imgButtonNext.setVisibility(View.GONE)
+                binding.imgButtonPrevious.visibility = View.GONE
+                binding.imgButtonNext.visibility = View.GONE
             }
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                binding.linearLayout.setImportantForAccessibility(View.IMPORTANT_FOR_ACCESSIBILITY_NO_HIDE_DESCENDANTS)
-            }
-            binding.linearLayout.setContentDescription(getString(R.string.promotion) + " " + 1 + "sur" + (INDICE_END + 1))
+            binding.linearLayout.importantForAccessibility =
+                View.IMPORTANT_FOR_ACCESSIBILITY_NO_HIDE_DESCENDANTS
+            binding.linearLayout.contentDescription =
+                getString(R.string.promotion) + " " + 1 + "sur" + (INDICE_END + 1)
         } else {
-            binding.imgButtonPrevious.setVisibility(View.GONE)
-            binding.imgButtonNext.setVisibility(View.GONE)
+            binding.imgButtonPrevious.visibility = View.GONE
+            binding.imgButtonNext.visibility = View.GONE
             binding.viewPager.startAutoScroll(2000)
         }
         if (mIsScrollEx) {
-            binding.imgButtonPrevious.setVisibility(View.GONE)
-            binding.imgButtonNext.setVisibility(View.GONE)
+            binding.imgButtonPrevious.visibility = View.GONE
+            binding.imgButtonNext.visibility = View.GONE
             binding.viewPager.stopAutoScroll()
-            binding.linearLayout.setVisibility(View.GONE)
+            binding.linearLayout.visibility = View.GONE
         }
         for (i in INDICE_START..INDICE_END) {
             val button = ImageButton(context)
@@ -105,18 +108,16 @@ class ViewPagerFragment: Fragment() {
             button.setImageResource(R.drawable.ic_radio_button_checked_white_24dp)
             button.setBackgroundResource(R.color.core_black)
             if (i == INDICE_START) {
-                button.setColorFilter(R.color.core_orange_dark)
+                button.setColorFilter(ContextCompat.getColor(requireContext(), R.color.core_orange_dark), PorterDuff.Mode.SRC_ATOP)
             } else {
-                button.setColorFilter(R.color.core_white)
+                button.setColorFilter(ContextCompat.getColor(requireContext(), R.color.core_white), PorterDuff.Mode.SRC_ATOP)
             }
             button.layoutParams = ViewGroup.LayoutParams(
                 ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT
             )
             button.setOnClickListener(mOnSelectPageClickListener)
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                button.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_NO
-            }
+            button.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_NO
             button.isFocusable = true
             mButtons[i] = button
             binding.linearLayout.addView(button, i)
@@ -131,18 +132,17 @@ class ViewPagerFragment: Fragment() {
 
             override fun onPageSelected(position: Int) {
                 if (mIsAccessible) {
-                    binding.linearLayout.setContentDescription(
+                    binding.linearLayout.contentDescription =
                         getString(R.string.promotion) + " " + (position + 1) + " " + getString(
                             R.string.on
                         ) + " " + (INDICE_END + 1)
-                    )
                 }
                 for (i in INDICE_START..INDICE_END) {
                     val button = binding.linearLayout.getChildAt(i) as ImageButton
                     if (i == position) {
-                        button.setColorFilter(R.color.core_orange_dark)
+                        button.setColorFilter(ContextCompat.getColor(requireContext(), R.color.core_orange_dark), PorterDuff.Mode.SRC_ATOP)
                     } else {
-                        button.setColorFilter(R.color.core_white)
+                        button.setColorFilter(ContextCompat.getColor(requireContext(), R.color.core_white), PorterDuff.Mode.SRC_ATOP)
                     }
                 }
             }
@@ -180,6 +180,28 @@ class ViewPagerFragment: Fragment() {
             }
         }
         return false
+    }
+
+    private fun setupClickListener() {
+        binding.imgButtonPrevious.setOnClickListener { _ ->
+            if (binding.viewPager.currentItem == INDICE_START) {
+                binding.viewPager.setCurrentItem(INDICE_END, true)
+            } else {
+                binding.viewPager.currentItem = binding.viewPager.currentItem - 1
+            }
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                binding.viewPager.announceForAccessibility(adapter!!.getContentDescriptionImage(binding.viewPager.currentItem))
+            }
+        }
+
+        binding.imgButtonNext.setOnClickListener { _ ->
+            if (binding.viewPager.currentItem == INDICE_END) {
+                binding.viewPager.setCurrentItem(INDICE_START, true)
+            } else {
+                binding.viewPager.currentItem = binding.viewPager.currentItem + 1
+            }
+            binding.viewPager.announceForAccessibility(adapter!!.getContentDescriptionImage(binding.viewPager.currentItem))
+        }
     }
 }
 

@@ -88,7 +88,7 @@ class ReadOrderExempleDetail: AccessibilityDetailsExample {
         return context.getString(R.string.criteria_readorder_ex1_description)
     }
 
-    override fun hasUseOption(): Boolean {
+    override fun useOption(): Boolean {
         return true
     }
 
@@ -105,6 +105,10 @@ class ReadOrderExempleDetail: AccessibilityDetailsExample {
         view.nextFocusLeftId = leftid
         view.nextFocusRightId = rightid
         view.nextFocusForwardId = forwardid
+    }
+
+    override fun getOptionRessource(context: Context): String? {
+        return context.getString(R.string.criteria_template_option_tb)
     }
 }
 

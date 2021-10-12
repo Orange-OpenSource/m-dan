@@ -61,6 +61,17 @@ class DetailsCriteriaActivity : AppCompatActivity() {
         transaction.commit()
     }
 
+    public fun addSpecificFragment(fragment: Fragment) {
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.add(R.id.details_container, fragment)
+        transaction.addToBackStack("back")
+        transaction.commit()
+    }
+
+    public fun back() {
+        onBackPressed()
+    }
+
 }
 
 

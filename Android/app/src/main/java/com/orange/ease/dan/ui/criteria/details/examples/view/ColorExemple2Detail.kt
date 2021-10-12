@@ -91,8 +91,12 @@ class ColorExemple2Detail: AccessibilityDetailsExample {
         return context.getString(R.string.criteria_color_ex2_description)
     }
 
-    override fun hasUseOption(): Boolean {
+    override fun useOption(): Boolean {
         return false
+    }
+
+    override fun getOptionRessource(context: Context): String? {
+        return null
     }
 }
 

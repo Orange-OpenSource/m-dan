@@ -111,8 +111,12 @@ class StandardComponent2ExempleDetail: AccessibilityDetailsExample {
         return context.getString(R.string.criteria_standardcomponent_ex2_description)
     }
 
-    override fun hasUseOption(): Boolean {
+    override fun useOption(): Boolean {
         return true
+    }
+
+    override fun getOptionRessource(context: Context): String? {
+        return context.getString(R.string.criteria_template_option_tb)
     }
 }
 

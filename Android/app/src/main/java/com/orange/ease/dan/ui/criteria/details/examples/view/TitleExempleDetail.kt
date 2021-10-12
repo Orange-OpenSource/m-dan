@@ -100,8 +100,12 @@ class TitleExempleDetail: AccessibilityDetailsExample {
         return context.getString(R.string.criteria_title_ex1_description)
     }
 
-    override fun hasUseOption(): Boolean {
-        return true
+    override fun useOption(): Boolean {
+        return false
+    }
+
+    override fun getOptionRessource(context: Context): String? {
+        return null
     }
 }
 

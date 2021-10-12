@@ -21,10 +21,10 @@ import com.orange.ease.dan.adapter.ViewPagerExampleAdapter
 import com.orange.ease.dan.databinding.Excontrolcontent2FragBinding
 import com.orange.ease.dan.guide.accessibility.lvl2.MyViewPagerDiapo
 
-class ViewPagerDiapoFragment: Fragment() {
+class ViewPagerDiapoFragment : Fragment() {
 
     private lateinit var binding: Excontrolcontent2FragBinding
-    private lateinit var mContext : Context
+    private lateinit var mContext: Context
 
     val INDICE_START = 0
     val INDICE_END = 2
@@ -74,7 +74,7 @@ class ViewPagerDiapoFragment: Fragment() {
         mIsAccessible = args == null || args.getBoolean(MyViewPagerDiapo.IS_ACCESSIBLE, false)
 
         adapter = ViewPagerExampleAdapter(mIsAccessible, mContext)
-        binding.viewPager.setAdapter(adapter)
+        binding.viewPager.adapter = adapter
 
 
         if (!mIsAccessible) {
@@ -85,24 +85,28 @@ class ViewPagerDiapoFragment: Fragment() {
         }
 
         binding.imgButtonPrevious.setOnClickListener(View.OnClickListener {
-            if (binding.viewPager.currentItem === INDICE_START) {
+            if (binding.viewPager.currentItem == INDICE_START) {
                 binding.viewPager.setCurrentItem(INDICE_END, true)
             } else {
                 binding.viewPager.currentItem = binding.viewPager.currentItem - 1
             }
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                binding.viewPager.announceForAccessibility(adapter!!.getContentDescriptionImage(binding.viewPager.currentItem))
-            }
+            binding.viewPager.announceForAccessibility(
+                adapter!!.getContentDescriptionImage(
+                    binding.viewPager.currentItem
+                )
+            )
         })
         binding.imgButtonNext.setOnClickListener(View.OnClickListener {
-            if (binding.viewPager.currentItem === INDICE_END) {
+            if (binding.viewPager.currentItem == INDICE_END) {
                 binding.viewPager.setCurrentItem(INDICE_START, true)
             } else {
                 binding.viewPager.currentItem = binding.viewPager.currentItem + 1
             }
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                binding.viewPager.announceForAccessibility(adapter!!.getContentDescriptionImage(binding.viewPager.currentItem))
-            }
+            binding.viewPager.announceForAccessibility(
+                adapter!!.getContentDescriptionImage(
+                    binding.viewPager.currentItem
+                )
+            )
         })
         binding.imgButtonPlay.setOnClickListener(View.OnClickListener {
             binding.imgButtonPrevious.visibility = View.GONE
@@ -111,9 +115,7 @@ class ViewPagerDiapoFragment: Fragment() {
             binding.viewPager.startAutoScroll(4000)
             binding.viewPager.setCycle(true)
             if (mIsAccessible) {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                    view?.announceForAccessibility(getString(R.string.criteria_contentcontrol_ex2_announceForAxs))
-                }
+                view?.announceForAccessibility(getString(R.string.criteria_contentcontrol_ex2_announceForAxs))
             }
         })
         binding.imgButtonPrevious.visibility = View.VISIBLE
@@ -129,28 +131,24 @@ class ViewPagerDiapoFragment: Fragment() {
 
             override fun onPageSelected(position: Int) {
                 SystemClock.sleep(2000)
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                    binding.viewPager.announceForAccessibility(
-                        adapter.getContentDescriptionPosition(
-                            position
-                        )
+                binding.viewPager.announceForAccessibility(
+                    adapter.getContentDescriptionPosition(
+                        position
                     )
-                }
+                )
             }
 
             override fun onPageScrollStateChanged(state: Int) {}
         })
 
-        binding.viewPager.setOnTouchListener(OnTouchListener { v, event ->
+        binding.viewPager.setOnTouchListener(OnTouchListener { _, event ->
             if (event.action == MotionEvent.ACTION_DOWN) {
                 binding.imgButtonPrevious.visibility = View.VISIBLE
                 binding.imgButtonNext.visibility = View.VISIBLE
                 binding.imgButtonPlay.visibility = View.VISIBLE
                 binding.viewPager.stopAutoScroll()
                 if (mIsAccessible) {
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                        view?.announceForAccessibility(getString(R.string.criteria_contentcontrol_ex2_announceForAxs2))
-                    }
+                    view?.announceForAccessibility(getString(R.string.criteria_contentcontrol_ex2_announceForAxs2))
                 }
             }
             false

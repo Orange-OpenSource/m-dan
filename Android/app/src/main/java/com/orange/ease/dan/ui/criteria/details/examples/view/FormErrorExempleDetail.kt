@@ -41,8 +41,12 @@ class FormErrorExempleDetail: AccessibilityDetailsExample {
         return context.getString(R.string.criteria_form_ex2_description)
     }
 
-    override fun hasUseOption(): Boolean {
+    override fun useOption(): Boolean {
         return true
+    }
+
+    override fun getOptionRessource(context: Context): String? {
+        return context.getString(R.string.criteria_template_option_tb)
     }
 }
 
