@@ -7,9 +7,8 @@ import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
 import com.orange.ease.dan.R
-import com.orange.ease.dan.guide.accessibility.lvl2.ExGhost1_1Fragment
-import com.orange.ease.dan.ui.criteria.details.DetailsCriteriaActivity
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
+import com.orange.ease.dan.navigation.FragmentManagerActivity
 
 class GhostExempleDetail: AccessibilityDetailsExample {
     override fun getAccessibleExample(context: Context): View {
@@ -26,7 +25,7 @@ class GhostExempleDetail: AccessibilityDetailsExample {
                 context.getString(R.string.criteria_ghostelement_ex1_ghost)
             )
             accessibleGhostFragment.arguments = accessibleGhostFragmentBundle
-            (context as DetailsCriteriaActivity?)?.let {
+            (context as FragmentManagerActivity?)?.let {
                 it.updateSpecificFragment(accessibleGhostFragment)
             }
         }
@@ -47,7 +46,7 @@ class GhostExempleDetail: AccessibilityDetailsExample {
                 context.getString(R.string.criteria_ghostelement_ex1_noghost)
             )
             notAccessibleGhostFragment.arguments = notAccessibleGhostFragmentBundle
-            (context as DetailsCriteriaActivity?)?.let {
+            (context as FragmentManagerActivity?)?.let {
                 it.addSpecificFragment(notAccessibleGhostFragment)
             }
         }

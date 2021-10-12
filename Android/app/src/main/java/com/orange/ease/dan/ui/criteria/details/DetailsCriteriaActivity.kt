@@ -9,9 +9,10 @@ import com.orange.ease.dan.R
 import com.orange.ease.dan.data.CriteriaRepository
 import com.orange.ease.dan.databinding.DetailsCriteriaActivityBinding
 import com.orange.ease.dan.ui.criteria.details.examples.ExampleCriteriaFragment
+import com.orange.ease.dan.navigation.FragmentManagerActivity
 import com.orange.ease.dan.viewmodel.CriteriaDetailsViewModel
 
-class DetailsCriteriaActivity : AppCompatActivity() {
+class DetailsCriteriaActivity : AppCompatActivity(), FragmentManagerActivity {
 
     private lateinit var binding: DetailsCriteriaActivityBinding
     private lateinit var viewModel: CriteriaDetailsViewModel
@@ -50,25 +51,25 @@ class DetailsCriteriaActivity : AppCompatActivity() {
         }
     }
 
-    public fun updateFragmentWithExample() {
+    override fun updateFragmentWithExample() {
         updateSpecificFragment(ExampleCriteriaFragment())
     }
 
-    public fun updateSpecificFragment(fragment: Fragment) {
+    override fun updateSpecificFragment(fragment: Fragment) {
         val transaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.details_container, fragment)
         transaction.addToBackStack("back")
         transaction.commit()
     }
 
-    public fun addSpecificFragment(fragment: Fragment) {
+    override fun addSpecificFragment(fragment: Fragment) {
         val transaction = supportFragmentManager.beginTransaction()
         transaction.add(R.id.details_container, fragment)
         transaction.addToBackStack("back")
         transaction.commit()
     }
 
-    public fun back() {
+    override fun back() {
         onBackPressed()
     }
 
