@@ -12,23 +12,23 @@ import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExam
 class ColorExemple1Detail: AccessibilityDetailsExample {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView = inflater.inflate(R.layout.excolor1_list, null) as LinearLayout
-        val tv = myView.findViewById<View>(R.id.textViewsubtitle) as TextView
+        val accessibleView = inflater.inflate(R.layout.excolor1_list, null) as LinearLayout
+        val tv = accessibleView.findViewById<TextView>(R.id.textViewsubtitle)
         tv.setTextColor(ContextCompat.getColor(context, R.color.functional_greys_2))
-        return myView
+        return accessibleView
     }
 
     override fun getNotAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView2 = inflater.inflate(R.layout.excolor1_list, null) as LinearLayout
+        val notAccessibleView = inflater.inflate(R.layout.excolor1_list, null) as LinearLayout
 
-        val tvDescNo = myView2.findViewById<View>(R.id.exDesc) as TextView
-        tvDescNo.setText(context.getString(R.string.criteria_color_ex1_not_accessible_desc))
-        val tvTitleNo = myView2.findViewById<View>(R.id.textViewlisttitle) as TextView
+        val tvDescNo = notAccessibleView.findViewById<TextView>(R.id.exDesc)
+        tvDescNo.text = context.getString(R.string.criteria_color_ex1_not_accessible_desc)
+        val tvTitleNo = notAccessibleView.findViewById<TextView>(R.id.textViewlisttitle)
         tvTitleNo.setTextColor(ContextCompat.getColor(context, R.color.functional_greys_3))
-        val tvNo = myView2.findViewById<View>(R.id.textViewsubtitle) as TextView
+        val tvNo = notAccessibleView.findViewById<TextView>(R.id.textViewsubtitle)
         tvNo.setTextColor(ContextCompat.getColor(context, R.color.functional_greys_4))
-        return myView2
+        return notAccessibleView
     }
 
     override fun getTitleRessource(context: Context): String {

@@ -23,7 +23,7 @@ class StateElementsExemple3Detail: AccessibilityDetailsExample {
 
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView = inflater.inflate(R.layout.exstateelmts3_frag, null) as LinearLayout
+        val accessibleView = inflater.inflate(R.layout.exstateelmts3_frag, null) as LinearLayout
 
         val items: MutableList<GroupItem> = ArrayList()
 
@@ -42,11 +42,11 @@ class StateElementsExemple3Detail: AccessibilityDetailsExample {
         adapter = CustomExpandableListViewAdapter(context)
         adapter!!.setData(items)
 
-        mListView = myView.findViewById<View>(R.id.expandableListView) as AnimatedExpandableListView
+        mListView = accessibleView.findViewById<AnimatedExpandableListView>(R.id.expandableListView)
         mListView!!.setAdapter(adapter)
         Utils.setListViewHeightBasedOnItems(mListView)
 
-        mListView!!.setOnGroupClickListener { parent, v, groupPosition, id ->
+        mListView!!.setOnGroupClickListener { _, _, groupPosition, _ ->
             if (mListView!!.isGroupExpanded(groupPosition)) {
                 mListView!!.collapseGroupWithAnimation(groupPosition)
                 Utils.setListViewHeightBasedOnItems(mListView)
@@ -57,12 +57,12 @@ class StateElementsExemple3Detail: AccessibilityDetailsExample {
             true
         }
 
-        return myView
+        return accessibleView
     }
 
     override fun getNotAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView2 = inflater.inflate(R.layout.exstateelmts3_frag, null) as LinearLayout
+        val notAccessibleView = inflater.inflate(R.layout.exstateelmts3_frag, null) as LinearLayout
 
         val items: MutableList<GroupItem> = ArrayList()
 
@@ -82,12 +82,12 @@ class StateElementsExemple3Detail: AccessibilityDetailsExample {
         adapter2!!.setData(items)
         adapter2!!.isAccessible = false
         mListViewNo =
-            myView2.findViewById<View>(R.id.expandableListView) as AnimatedExpandableListView
+            notAccessibleView.findViewById<AnimatedExpandableListView>(R.id.expandableListView)
 
         mListViewNo!!.setAdapter(adapter2)
         Utils.setListViewHeightBasedOnItems(mListViewNo)
 
-        mListViewNo!!.setOnGroupClickListener { parent, v, groupPosition, id ->
+        mListViewNo!!.setOnGroupClickListener { _, _, groupPosition, _ ->
             if (mListViewNo!!.isGroupExpanded(groupPosition)) {
                 mListViewNo!!.collapseGroupWithAnimation(groupPosition)
                 Utils.setListViewHeightBasedOnItems(mListViewNo)
@@ -98,7 +98,7 @@ class StateElementsExemple3Detail: AccessibilityDetailsExample {
             true
         }
 
-        return myView2
+        return notAccessibleView
     }
 
     override fun getTitleRessource(context: Context): String {

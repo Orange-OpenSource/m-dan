@@ -1,4 +1,6 @@
 package com.orange.ease.dan.model
 
-abstract class AccessibilityEntity(val resTitle: Int) {
+import androidx.annotation.StringRes
+
+abstract class AccessibilityEntity(@StringRes val resTitle: Int) {
 }

@@ -13,31 +13,31 @@ import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExam
 class StateElementsExempleDetail: AccessibilityDetailsExample {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView = inflater.inflate(R.layout.exstateelmts1_frag, null) as LinearLayout
+        val accessibleView = inflater.inflate(R.layout.exstateelmts1_frag, null) as LinearLayout
 
 
         //HostYesAxs
         val tabslabs = arrayOfNulls<String>(2)
         tabslabs[0] = context.getString(R.string.criteria_stateelement_ex1_public)
         tabslabs[1] = context.getString(R.string.criteria_stateelement_ex1_private)
-        val hostYes = initTabHost(myView, context)
+        val hostYes = initTabHost(accessibleView, context)
         hostYes?.setOnTabChangedListener(TabHostListener(hostYes, tabslabs))
         setContentDescription(hostYes, tabslabs)
 
         for (i in 0 until hostYes!!.tabWidget.childCount) hostYes?.tabWidget?.getChildAt(i)!!.setBackgroundResource(R.drawable.tab_selector)
 
-        return myView
+        return accessibleView
     }
 
     override fun getNotAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView2 = inflater.inflate(R.layout.exstateelmts1_frag, null) as LinearLayout
+        val notAccessibleView = inflater.inflate(R.layout.exstateelmts1_frag, null) as LinearLayout
 
-        val hostNo = initTabHost(myView2, context)
+        val hostNo = initTabHost(notAccessibleView, context)
         for (i in 0 until hostNo!!.tabWidget.childCount) hostNo.tabWidget.getChildAt(i)
             .setBackgroundResource(R.drawable.tab_selector)
 
-        return myView2
+        return notAccessibleView
     }
 
     override fun getTitleRessource(context: Context): String {

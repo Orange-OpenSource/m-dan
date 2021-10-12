@@ -28,10 +28,10 @@ class StandardComponentExempleDetail: AccessibilityDetailsExample {
 
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView = inflater.inflate(R.layout.exstandardcomponent1_frag, null) as LinearLayout
+        val accessibleView = inflater.inflate(R.layout.exstandardcomponent1_frag, null) as LinearLayout
 
         mExpandableListViewAxsMore =
-            myView.findViewById<View>(R.id.expandableListView) as ExpandableListView
+            accessibleView.findViewById<ExpandableListView>(R.id.expandableListView)
         mExpandableListDetail = ExpandableListDataPump.getData(context)
         mExpandableListTitle = (mExpandableListDetail as HashMap<String, MutableList<String>>?)?.keys?.toList()
         mExpandableListAdapterMore = com.orange.ease.dan.adapter.ExpandableListAdapter(
@@ -53,12 +53,12 @@ class StandardComponentExempleDetail: AccessibilityDetailsExample {
                 mExpandableListViewAxsMore
             )
         }
-        return myView
+        return accessibleView
     }
 
     override fun getNotAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView2 = inflater.inflate(R.layout.exstateelmts3_frag, null) as LinearLayout
+        val notAccessibleView = inflater.inflate(R.layout.exstateelmts3_frag, null) as LinearLayout
 
         val items: MutableList<GroupItem> = ArrayList()
 
@@ -78,12 +78,12 @@ class StandardComponentExempleDetail: AccessibilityDetailsExample {
         mExpandableListAdapter!!.setData(items)
 
         mExpandableListView =
-            myView2.findViewById<View>(R.id.expandableListView) as AnimatedExpandableListView
+            notAccessibleView.findViewById<AnimatedExpandableListView>(R.id.expandableListView)
         mExpandableListView!!.setAdapter(mExpandableListAdapter)
 
         Utils.setListViewHeightBasedOnItems(mExpandableListView)
 
-        mExpandableListView!!.setOnGroupClickListener { parent, v, groupPosition, id ->
+        mExpandableListView!!.setOnGroupClickListener { _, _, groupPosition, _ ->
             if (mExpandableListView!!.isGroupExpanded(groupPosition)) {
                 mExpandableListView!!.collapseGroupWithAnimation(groupPosition)
                 Utils.setListViewHeightBasedOnItems(mExpandableListView)
@@ -93,7 +93,7 @@ class StandardComponentExempleDetail: AccessibilityDetailsExample {
             }
             true
         }
-        return myView2
+        return notAccessibleView
     }
 
     override fun getTitleRessource(context: Context): String {

@@ -16,10 +16,10 @@ import com.orange.ease.dan.ui.criteria.details.examples.pager.ViewPagerFragment
 class ControlContentExemple1Detail: AccessibilityDetailsExample {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView = inflater.inflate(R.layout.buttongeneric, null) as LinearLayout
+        val accessibleView = inflater.inflate(R.layout.buttongeneric, null) as LinearLayout
 
-        val btnYes = myView.findViewById<View>(R.id.btngeneric) as Button
-        btnYes.setText(context.getString(R.string.axsactivated))
+        val btnYes = accessibleView.findViewById<Button>(R.id.btngeneric)
+        btnYes.text = context.getString(R.string.axsactivated)
         btnYes.setOnClickListener {
             val myPagerFragment: Fragment = ViewPagerFragment()
             val args = Bundle()
@@ -30,15 +30,15 @@ class ControlContentExemple1Detail: AccessibilityDetailsExample {
                 it.updateSpecificFragment(myPagerFragment)
             }
         }
-        return myView
+        return accessibleView
     }
 
     override fun getNotAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView2 = inflater.inflate(R.layout.buttongeneric, null) as LinearLayout
+        val notAccessibleView = inflater.inflate(R.layout.buttongeneric, null) as LinearLayout
 
-        val btnNo = myView2.findViewById<View>(R.id.btngeneric) as Button
-        btnNo.setText(context.getString(R.string.axsdisabled))
+        val btnNo = notAccessibleView.findViewById<Button>(R.id.btngeneric)
+        btnNo.text = context.getString(R.string.axsdisabled)
         btnNo.setOnClickListener {
             val myPagerFragment: Fragment = ViewPagerFragment()
             val args = Bundle()
@@ -48,7 +48,7 @@ class ControlContentExemple1Detail: AccessibilityDetailsExample {
                 it.updateSpecificFragment(myPagerFragment)
             }
         }
-        return myView2
+        return notAccessibleView
     }
 
     override fun getTitleRessource(context: Context): String {

@@ -13,22 +13,22 @@ import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExam
 class ReadOrderExempleDetail: AccessibilityDetailsExample {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView = inflater.inflate(R.layout.exreadorder_frag, null) as LinearLayout
+        val accessibleView = inflater.inflate(R.layout.exreadorder_frag, null) as LinearLayout
 
-        val volup = myView.findViewById<View>(R.id.volup) as ImageView
-        val voldown = myView.findViewById<View>(R.id.voldown) as ImageView
-        val chaineplus = myView.findViewById<View>(R.id.chaineplus) as ImageView
-        val chainemoins = myView.findViewById<View>(R.id.chainemoins) as ImageView
-        val remote1 = myView.findViewById<View>(R.id.remote1) as Button
-        val remote2 = myView.findViewById<View>(R.id.remote2) as Button
-        val remote3 = myView.findViewById<View>(R.id.remote3) as Button
-        val remote4 = myView.findViewById<View>(R.id.remote4) as Button
-        val remote5 = myView.findViewById<View>(R.id.remote5) as Button
-        val remote6 = myView.findViewById<View>(R.id.remote6) as Button
-        val remote7 = myView.findViewById<View>(R.id.remote7) as Button
-        val remote8 = myView.findViewById<View>(R.id.remote8) as Button
-        val remote9 = myView.findViewById<View>(R.id.remote9) as Button
-        val remote0 = myView.findViewById<View>(R.id.remote0) as Button
+        val volup = accessibleView.findViewById<ImageView>(R.id.volup)
+        val voldown = accessibleView.findViewById<ImageView>(R.id.voldown)
+        val chaineplus = accessibleView.findViewById<ImageView>(R.id.chaineplus)
+        val chainemoins = accessibleView.findViewById<ImageView>(R.id.chainemoins)
+        val remote1 = accessibleView.findViewById<Button>(R.id.remote1)
+        val remote2 = accessibleView.findViewById<Button>(R.id.remote2)
+        val remote3 = accessibleView.findViewById<Button>(R.id.remote3)
+        val remote4 = accessibleView.findViewById<Button>(R.id.remote4)
+        val remote5 = accessibleView.findViewById<Button>(R.id.remote5)
+        val remote6 = accessibleView.findViewById<Button>(R.id.remote6)
+        val remote7 = accessibleView.findViewById<Button>(R.id.remote7)
+        val remote8 = accessibleView.findViewById<Button>(R.id.remote8)
+        val remote9 = accessibleView.findViewById<Button>(R.id.remote9)
+        val remote0 = accessibleView.findViewById<Button>(R.id.remote0)
 
         volup.contentDescription = context.getString(R.string.criteria_readorder_ex1_volup)
         voldown.contentDescription = context.getString(R.string.criteria_readorder_ex1_voldown)
@@ -37,19 +37,19 @@ class ReadOrderExempleDetail: AccessibilityDetailsExample {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP_MR1) {
             //  remote1.accessibilityTraversalAfter = mTextViewTitleExempleAxsYes.getId()
-            remote2.accessibilityTraversalAfter = myView.findViewById<View>(R.id.remote1).id
-            remote3.accessibilityTraversalAfter = myView.findViewById<View>(R.id.remote2).id
-            remote4.accessibilityTraversalAfter = myView.findViewById<View>(R.id.remote3).id
-            remote5.accessibilityTraversalAfter = myView.findViewById<View>(R.id.remote4).id
-            remote6.accessibilityTraversalAfter = myView.findViewById<View>(R.id.remote5).id
-            remote7.accessibilityTraversalAfter = myView.findViewById<View>(R.id.remote6).id
-            remote8.accessibilityTraversalAfter = myView.findViewById<View>(R.id.remote7).id
-            remote9.accessibilityTraversalAfter = myView.findViewById<View>(R.id.remote8).id
-            remote0.accessibilityTraversalAfter = myView.findViewById<View>(R.id.remote9).id
-            volup.accessibilityTraversalAfter = myView.findViewById<View>(R.id.remote0).id
-            voldown.accessibilityTraversalAfter = myView.findViewById<View>(R.id.volup).id
-            chaineplus.accessibilityTraversalAfter = myView.findViewById<View>(R.id.voldown).id
-            chainemoins.accessibilityTraversalAfter = myView.findViewById<View>(R.id.chaineplus).id
+            remote2.accessibilityTraversalAfter = accessibleView.findViewById<View>(R.id.remote1).id
+            remote3.accessibilityTraversalAfter = accessibleView.findViewById<View>(R.id.remote2).id
+            remote4.accessibilityTraversalAfter = accessibleView.findViewById<View>(R.id.remote3).id
+            remote5.accessibilityTraversalAfter = accessibleView.findViewById<View>(R.id.remote4).id
+            remote6.accessibilityTraversalAfter = accessibleView.findViewById<View>(R.id.remote5).id
+            remote7.accessibilityTraversalAfter = accessibleView.findViewById<View>(R.id.remote6).id
+            remote8.accessibilityTraversalAfter = accessibleView.findViewById<View>(R.id.remote7).id
+            remote9.accessibilityTraversalAfter = accessibleView.findViewById<View>(R.id.remote8).id
+            remote0.accessibilityTraversalAfter = accessibleView.findViewById<View>(R.id.remote9).id
+            volup.accessibilityTraversalAfter = accessibleView.findViewById<View>(R.id.remote0).id
+            voldown.accessibilityTraversalAfter = accessibleView.findViewById<View>(R.id.volup).id
+            chaineplus.accessibilityTraversalAfter = accessibleView.findViewById<View>(R.id.voldown).id
+            chainemoins.accessibilityTraversalAfter = accessibleView.findViewById<View>(R.id.chaineplus).id
         }
 
         // setNextFocus(mTextViewTitleExempleAxsYes, 0, volup.id, 0, 0, volup.id)
@@ -68,14 +68,12 @@ class ReadOrderExempleDetail: AccessibilityDetailsExample {
         setNextFocus(chaineplus, 0, chainemoins.id, remote3.id, volup.id, chainemoins.id)
         //  setNextFocus(chainemoins, chaineplus.id, remote9.id, remote6.id, voldown.id, mTextViewTitleExempleAxsNo.getId())
 
-        return myView
+        return accessibleView
     }
 
     override fun getNotAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView2 = inflater.inflate(R.layout.exreadorder_frag, null) as LinearLayout
-
-        return myView2
+        return inflater.inflate(R.layout.exreadorder_frag, null)
     }
 
     override fun getTitleRessource(context: Context): String {

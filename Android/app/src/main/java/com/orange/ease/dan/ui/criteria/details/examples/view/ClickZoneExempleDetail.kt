@@ -15,10 +15,10 @@ class ClickZoneExempleDetail: AccessibilityDetailsExample {
 
         val myViewAxsYes = inflater.inflate(R.layout.exclickzone1_frag_lvl2, null) as LinearLayout
 
-        val tb = myViewAxsYes.findViewById<View>(R.id.tableRow) as TableRow
+        val tb = myViewAxsYes.findViewById<TableRow>(R.id.tableRow)
 
         val ibYes = myViewAxsYes.findViewById<View>(R.id.imageButtonplay)
-        val titlemusic = myViewAxsYes.findViewById<View>(R.id.textView30) as TextView
+        val titlemusic = myViewAxsYes.findViewById<TextView>(R.id.textView30)
         ibYes.contentDescription =
             context.getString(R.string.criteria_clickarea_ex1_play).toString() + " " + titlemusic.text
         ibYes.isFocusable = false
@@ -43,12 +43,12 @@ class ClickZoneExempleDetail: AccessibilityDetailsExample {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
         val myViewAxsNo = inflater.inflate(R.layout.exclickzone1_frag_lvl2, null) as LinearLayout
-        val scale: Float = context.getResources().getDisplayMetrics().density
+        val scale: Float = context.resources.displayMetrics.density
 
-        val titlemusic = myViewAxsNo.findViewById<View>(R.id.textView30) as TextView
-        val authormusic = myViewAxsNo.findViewById<View>(R.id.textView31) as TextView
+        val titlemusic = myViewAxsNo.findViewById<TextView>(R.id.textView30)
+        val authormusic = myViewAxsNo.findViewById<TextView>(R.id.textView31)
 
-        val ibNo = myViewAxsNo.findViewById<View>(R.id.imageButtonplay) as ImageButton
+        val ibNo = myViewAxsNo.findViewById<ImageButton>(R.id.imageButtonplay)
         ibNo.background =
             ContextCompat.getDrawable(context, R.drawable.play_bad_button_selector)
         val layoutParams =
@@ -56,13 +56,13 @@ class ClickZoneExempleDetail: AccessibilityDetailsExample {
         layoutParams.gravity = Gravity.CENTER
         ibNo.layoutParams = layoutParams
         ibNo.contentDescription =
-            context.getString(R.string.criteria_clickarea_ex1_play).toString() + " " + titlemusic.getText()
+            context.getString(R.string.criteria_clickarea_ex1_play).toString() + " " + titlemusic.text
         ibNo.isFocusable = false
-        val tbNo = myViewAxsNo.findViewById<View>(R.id.tableRow) as TableRow
+        val tbNo = myViewAxsNo.findViewById<TableRow>(R.id.tableRow)
         tbNo.contentDescription =
-            context.getString(R.string.criteria_clickarea_ex1_music).toString() + " " + titlemusic.getText() + " " + context.getString(
+            context.getString(R.string.criteria_clickarea_ex1_music).toString() + " " + titlemusic.text + " " + context.getString(
                 R.string.criteria_clickarea_ex1_author
-            ) + " " + authormusic.getText()
+            ) + " " + authormusic.text
         ibNo.setOnClickListener {
             Toast.makeText(
                 context,

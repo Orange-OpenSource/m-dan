@@ -11,20 +11,18 @@ import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExam
 class ImgExemple2Detail: AccessibilityDetailsExample {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView = inflater.inflate(R.layout.eximg2_tuile, null) as LinearLayout
-
-        return myView
+        return inflater.inflate(R.layout.eximg2_tuile, null)
     }
 
     override fun getNotAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView2 = inflater.inflate(R.layout.eximg2_tuile, null) as LinearLayout
-        val axsNo = myView2.findViewById<View>(R.id.imageView6)
+        val notAccessibleView = inflater.inflate(R.layout.eximg2_tuile, null) as LinearLayout
+        val axsNo = notAccessibleView.findViewById<View>(R.id.imageView6)
         axsNo.contentDescription = ""
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
             axsNo.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_NO
         }
-        return myView2
+        return notAccessibleView
     }
 
     override fun getTitleRessource(context: Context): String {

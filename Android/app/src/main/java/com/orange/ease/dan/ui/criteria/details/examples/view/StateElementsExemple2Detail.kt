@@ -18,7 +18,7 @@ class StateElementsExemple2Detail: AccessibilityDetailsExample {
 
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val items: Array<String> =
-            context.getResources().getStringArray(R.array.criteria_stateelement_ex2_list)
+            context.resources.getStringArray(R.array.criteria_stateelement_ex2_list)
         val aaAxs = ArrayAdapterWithCD(
             context,
             R.layout.simple_list_item_text,
@@ -31,13 +31,13 @@ class StateElementsExemple2Detail: AccessibilityDetailsExample {
         lvaxsYes.choiceMode = AbsListView.CHOICE_MODE_SINGLE
         lvaxsYes.adapter = aaAxs
         lvaxsYes.onItemClickListener =
-            OnItemClickListener { parent, view, position, id ->
+            OnItemClickListener { parent, view, position, _ ->
                 if (!view.isSelected) {
                     view.isSelected = true
                     for (i in 0 until parent.count) {
                         val parentView = parent.getChildAt(i) as RelativeLayout
                         val descTextView =
-                            parentView.findViewById<View>(R.id.textCategory) as TextView
+                            parentView.findViewById<TextView>(R.id.textCategory)
                         descTextView.contentDescription =
                             descTextView.text.toString() + ", " + context.getString(R.string.not) + " " + context.getString(
                                 R.string.selected
@@ -45,7 +45,7 @@ class StateElementsExemple2Detail: AccessibilityDetailsExample {
                     }
                     val parentViewSelected = parent.getChildAt(position) as RelativeLayout
                     val myTextViewSelected =
-                        parentViewSelected.findViewById<View>(R.id.textCategory) as TextView
+                        parentViewSelected.findViewById<TextView>(R.id.textCategory)
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                         myTextViewSelected.contentDescription = myTextViewSelected.text
                     } else { //LOLLIPOP_MR1 -
@@ -56,7 +56,7 @@ class StateElementsExemple2Detail: AccessibilityDetailsExample {
                     view.isSelected = false
                     val parentViewSelected = parent.getChildAt(position) as RelativeLayout
                     val myTextViewSelected =
-                        parentViewSelected.findViewById<View>(R.id.textCategory) as TextView
+                        parentViewSelected.findViewById<TextView>(R.id.textCategory)
                     myTextViewSelected.contentDescription =
                         myTextViewSelected.text.toString() + ", " + context.getString(R.string.not) + " " + context.getString(
                             R.string.selected

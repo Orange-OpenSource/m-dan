@@ -10,24 +10,22 @@ import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExam
 class ImgExemple3Detail: AccessibilityDetailsExample {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView = inflater.inflate(R.layout.eximg3_frag, null) as LinearLayout
-
-        return myView
+        return inflater.inflate(R.layout.eximg3_frag, null)
     }
 
     override fun getNotAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView2 = inflater.inflate(R.layout.eximg3_frag, null) as LinearLayout
+        val notAccessibleView = inflater.inflate(R.layout.eximg3_frag, null) as LinearLayout
 
-        myView2.findViewById<View>(R.id.imageView7).contentDescription = ""
+        notAccessibleView.findViewById<View>(R.id.imageView7).contentDescription = ""
 
-        myView2.findViewById<View>(R.id.imageButtonedit).contentDescription =
+        notAccessibleView.findViewById<View>(R.id.imageButtonedit).contentDescription =
             context.getString(R.string.criteria_img_ex3_cd_btn_edit)
 
-        myView2.findViewById<View>(R.id.imageButtonsettings).contentDescription =
+        notAccessibleView.findViewById<View>(R.id.imageButtonsettings).contentDescription =
             context.getString(R.string.criteria_img_ex3_cd_btn_parameters)
 
-        return myView2
+        return notAccessibleView
     }
 
     override fun getTitleRessource(context: Context): String {

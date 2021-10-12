@@ -14,19 +14,17 @@ import java.util.*
 class Text3ExempleDetail: AccessibilityDetailsExample {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView = inflater.inflate(R.layout.exalt_football_match_field, null) as RelativeLayout
-
-        return myView
+        return inflater.inflate(R.layout.exalt_football_match_field, null)
     }
 
     override fun getNotAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView2 = inflater.inflate(R.layout.exalt_football_match_field, null) as RelativeLayout
+        val notAccessibleView = inflater.inflate(R.layout.exalt_football_match_field, null) as RelativeLayout
 
-        val matchField = myView2.findViewById<View>(R.id.match_field_view) as MatchFieldView
+        val matchField = notAccessibleView.findViewById<MatchFieldView>(R.id.match_field_view)
         matchField.setAccessible(false)
 
-        return myView2
+        return notAccessibleView
     }
 
     override fun getTitleRessource(context: Context): String {
@@ -34,7 +32,7 @@ class Text3ExempleDetail: AccessibilityDetailsExample {
     }
 
     override fun getCellNameRessource(context: Context): String {
-        return context.resources.getStringArray(R.array.criteria_alt_list)[2]
+        return context.resources.getStringArray(R.array.criteria_alt_list)[5]
     }
 
     override fun getDescriptionRessource(context: Context): String {

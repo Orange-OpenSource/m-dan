@@ -13,9 +13,9 @@ import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExam
 class TitleExempleDetail: AccessibilityDetailsExample {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView = inflater.inflate(R.layout.buttongeneric, null) as LinearLayout
+        val accessibleView = inflater.inflate(R.layout.buttongeneric, null) as LinearLayout
 
-        val scale: Float = context.getResources().getDisplayMetrics().density
+        val scale: Float = context.resources.displayMetrics.density
         val dpAsPixels = (15 * scale + 0.5f).toInt() //padding de 15dp
 
         val dpAsPixels2 = (5 * scale + 0.5f).toInt() //padding de 5dp
@@ -27,12 +27,12 @@ class TitleExempleDetail: AccessibilityDetailsExample {
 
         /* AXS YES */
         val exAxsDescription = TextView(context)
-        exAxsDescription.setText(context.getString(R.string.criteria_title_ex1_axsDesc))
+        exAxsDescription.text = context.getString(R.string.criteria_title_ex1_axsDesc)
         exAxsDescription.setPadding(dpAsPixels, dpAsPixels2, dpAsPixels, dpAsPixels2)
 
-        val buttonAvessibilityYes = myView.findViewById<View>(R.id.btngeneric) as Button
-        buttonAvessibilityYes.setText(R.string.criteria_title_ex1_axsButton)
-        /* buttonAvessibilityYes.setOnClickListener {
+        val buttonAccessibilityYes = accessibleView.findViewById<Button>(R.id.btngeneric)
+        buttonAccessibilityYes.setText(R.string.criteria_title_ex1_axsButton)
+        /* buttonAccessibilityYes.setOnClickListener {
              mOnNewFragment.setTemplateTitle(getString(R.string.example).toString() + " 1/1", true)
              if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
                  getView().announceForAccessibility(
@@ -47,16 +47,16 @@ class TitleExempleDetail: AccessibilityDetailsExample {
         lyAxs.orientation = LinearLayout.VERTICAL
         lyAxs.layoutParams = layoutParams
         lyAxs.addView(exAxsDescription)
-        lyAxs.addView(myView)
+        lyAxs.addView(accessibleView)
 
         return lyAxs
     }
 
     override fun getNotAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val myView2 = inflater.inflate(R.layout.buttongeneric, null) as LinearLayout
+        val notAccessibleView = inflater.inflate(R.layout.buttongeneric, null) as LinearLayout
 
-        val scale: Float = context.getResources().getDisplayMetrics().density
+        val scale: Float = context.resources.displayMetrics.density
         val dpAsPixels = (15 * scale + 0.5f).toInt() //padding de 15dp
 
         val dpAsPixels2 = (5 * scale + 0.5f).toInt() //padding de 5dp
@@ -67,12 +67,12 @@ class TitleExempleDetail: AccessibilityDetailsExample {
         )
 
         val exNotAxsDescription = TextView(context)
-        exNotAxsDescription.setText(context.getString(R.string.criteria_title_ex1_notAxsDesc))
+        exNotAxsDescription.text = context.getString(R.string.criteria_title_ex1_notAxsDesc)
         exNotAxsDescription.setPadding(dpAsPixels, dpAsPixels2, dpAsPixels, dpAsPixels2)
 
-        val buttonAvessibilityNo = myView2.findViewById<View>(R.id.btngeneric) as Button
-        buttonAvessibilityNo.setText(R.string.criteria_title_ex1_notAxsButton)
-        /* buttonAvessibilityNo.setOnClickListener {
+        val buttonAccessibilityNo = notAccessibleView.findViewById<Button>(R.id.btngeneric)
+        buttonAccessibilityNo.setText(R.string.criteria_title_ex1_notAxsButton)
+        /* buttonAccessibilityNo.setOnClickListener {
              mOnNewFragment.setTemplateTitle(" ", true)
              if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
                  getView().announceForAccessibility(getString(R.string.criteria_title_ex1_announceaxsno))
@@ -83,7 +83,7 @@ class TitleExempleDetail: AccessibilityDetailsExample {
         lyNotAxs.orientation = LinearLayout.VERTICAL
         lyNotAxs.layoutParams = layoutParams
         lyNotAxs.addView(exNotAxsDescription)
-        lyNotAxs.addView(myView2)
+        lyNotAxs.addView(notAccessibleView)
 
         return lyNotAxs
     }
