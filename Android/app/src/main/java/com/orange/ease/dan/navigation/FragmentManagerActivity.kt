@@ -2,9 +2,10 @@ package com.orange.ease.dan.navigation
 
 import androidx.fragment.app.Fragment
 
-interface FragmentManagerActivity {
-    public fun updateFragmentWithExample()
-    public fun updateSpecificFragment(fragment: Fragment)
-    public fun addSpecificFragment(fragment: Fragment)
-    public fun back()
+public interface FragmentManagerActivity {
+    fun updateFragmentWithExample()
+    fun updateSpecificFragment(fragment: Fragment)
+    fun addSpecificFragment(fragment: Fragment)
+    fun back()
+    fun setMenuActionVisibility(isVisible: Boolean)
 }

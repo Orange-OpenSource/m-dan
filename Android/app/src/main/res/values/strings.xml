@@ -761,6 +761,9 @@
     <string name="snackbar_button_take_action">ANNULER</string>
     <string name="toast_message_take_action">Snackbar est annulé !</string>
 
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+
 </resources>
 
 

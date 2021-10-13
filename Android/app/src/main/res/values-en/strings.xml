@@ -755,6 +755,9 @@
     <string name="snackbar_title_not_take_action">Not accessible snackbar timeout</string>
     <string name="snackbar_button_take_action">CANCEL</string>
     <string name="toast_message_take_action">Snackbar is cancelled!</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>
 
 
