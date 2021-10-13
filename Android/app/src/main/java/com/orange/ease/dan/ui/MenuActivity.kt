@@ -57,9 +57,9 @@ class MenuActivity : AppCompatActivity() {
 
     private fun updateMainFragment(integer: Int): Boolean {
         when (integer) {
-            R.id.action_android -> initCriteriaFragment()
-            R.id.action_logo -> initDevelopmentFragment()
-            R.id.action_landscape -> initOptionFragment()
+            R.id.action_criteria -> initCriteriaFragment()
+            R.id.action_development -> initDevelopmentFragment()
+            R.id.action_options -> initOptionFragment()
         }
         return true
     }

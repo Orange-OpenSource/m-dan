@@ -50,6 +50,7 @@ class DetailsCriteriaFragment: Fragment(), ListRecyclerViewAdapter.ListRecyclerV
         viewModel.criteria?.let {
             (activity as AppCompatActivity).supportActionBar?.title = getString(it.resTitle)
         }
+        (mContext as FragmentManagerActivity).setMenuActionVisibility(false)
     }
 
     override fun onAttach(context: Context) {

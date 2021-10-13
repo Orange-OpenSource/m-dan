@@ -11,6 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.orange.ease.dan.R
 import com.orange.ease.dan.databinding.ExampleFragLvl2Binding
 import com.orange.ease.dan.data.CriteriaRepository
+import com.orange.ease.dan.navigation.FragmentManagerActivity
 import com.orange.ease.dan.viewmodel.CriteriaDetailsViewModel
 
 class ExampleCriteriaFragment: Fragment() {
@@ -59,9 +60,11 @@ class ExampleCriteriaFragment: Fragment() {
             val currentExampleCount = (viewModel.criteria?.exampleList?.indexOf(it) ?: 0) + 1
             (activity as AppCompatActivity).supportActionBar?.title = getString(R.string.example) + " $currentExampleCount/$examplesCount"
 
-            val optionVisibility =  if (it.detailsExample.useOption()) View.VISIBLE else View.GONE
+            val useOption = it.detailsExample.useOption()
+            val optionVisibility =  if (useOption) View.VISIBLE else View.GONE
             binding.viewOptionEnabled.visibility = optionVisibility
             binding.textViewOptionEnabled.text = it.detailsExample.getOptionRessource(mContext)
+            (mContext as FragmentManagerActivity).setMenuActionVisibility(useOption)
         }
     }
 

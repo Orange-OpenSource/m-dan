@@ -2,19 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_android"
+        android:id="@+id/action_criteria"
         android:enabled="true"
         android:icon="@drawable/icon_guid_android"
         android:title="@string/bottom_navigation_menu_criteria"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/action_logo"
+        android:id="@+id/action_development"
         android:enabled="true"
         android:icon="@drawable/icon_guid_dev"
         android:title="@string/bottom_navigation_menu_dev"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/action_landscape"
+        android:id="@+id/action_options"
         android:enabled="true"
         android:icon="@drawable/icon_settings"
         android:title="@string/bottom_navigation_menu_options"
