@@ -6,12 +6,12 @@ import androidx.lifecycle.ViewModelProvider
 import com.orange.ease.dan.databinding.OptionsTemplateBinding
 import com.orange.ease.dan.model.OptionClassic
 import com.orange.ease.dan.data.OptionRepository
+import com.orange.ease.dan.navigation.DialogActivity
 import com.orange.ease.dan.viewmodel.ClassicOptionViewModel
 
 class ClassicOptionActivity : AppCompatActivity() {
 
     private lateinit var binding: OptionsTemplateBinding
-
     private lateinit var viewModel: ClassicOptionViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,7 +30,6 @@ class ClassicOptionActivity : AppCompatActivity() {
     private fun initView() {
         val option = viewModel.option?.let { it } ?: return
         binding.optionDescription.text = getString((option as OptionClassic).description)
-
     }
 
     private fun setupToolbar() {

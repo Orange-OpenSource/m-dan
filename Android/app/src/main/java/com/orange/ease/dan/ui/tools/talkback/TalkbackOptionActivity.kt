@@ -13,8 +13,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.orange.ease.dan.R
 import com.orange.ease.dan.databinding.FragmentTalkbackBinding
+import com.orange.ease.dan.navigation.DialogActivity
 
-class TalkbackOptionActivity : AppCompatActivity() {
+class TalkbackOptionActivity : DialogActivity() {
 
     private lateinit var binding: FragmentTalkbackBinding
 
@@ -28,7 +29,10 @@ class TalkbackOptionActivity : AppCompatActivity() {
 
     fun enableTalkback(view: View) {
         if (!isAccessibilitySettingsOn(applicationContext)) {
-            initAlertDialogStartActivity()
+            val startActivitySettings: () -> Unit = {
+                startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
+            }
+            initAlertDialogStartActivity(startActivitySettings)
         }
     }
 
@@ -75,38 +79,6 @@ class TalkbackOptionActivity : AppCompatActivity() {
             }
         }
         return false
-    }
-
-    private fun initAlertDialogStartActivity() {
-        val builder1 = AlertDialog.Builder(this)
-        builder1.setMessage(getString(R.string.alert_before_leaving))
-        builder1.setCancelable(true)
-        builder1.setPositiveButton(
-            "Oui"
-        ) { dialog, id -> startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)) }
-        builder1.setNegativeButton(
-            "Non"
-        ) { dialog, id -> dialog.cancel() }
-        val alert11 = builder1.create()
-        alert11.show()
-        val button0 = alert11.getButton(AlertDialog.BUTTON_POSITIVE)
-        button0.setCompoundDrawablesWithIntrinsicBounds(
-            ContextCompat.getDrawable(
-                this,
-                R.drawable.icon_check_good
-            ), null, null, null
-        )
-        button0.contentDescription = "Oui"
-        button0.text = ""
-        val button1 = alert11.getButton(AlertDialog.BUTTON_NEGATIVE)
-        button1.setCompoundDrawablesWithIntrinsicBounds(
-            ContextCompat.getDrawable(
-                this,
-                R.drawable.icon_check_bad
-            ), null, null, null
-        )
-        button1.contentDescription = "Non"
-        button1.text = ""
     }
 
     private fun startTuto() {
