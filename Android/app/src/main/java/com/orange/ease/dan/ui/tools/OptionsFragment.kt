@@ -2,6 +2,7 @@ package com.orange.ease.dan.ui.tools
 
 import android.content.Intent
 import android.os.Bundle
+import android.provider.Settings
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,10 +15,11 @@ import com.orange.ease.dan.adapter.header.OptionHeaderAdapter
 import com.orange.ease.dan.data.OptionRepository
 import com.orange.ease.dan.databinding.RecyclerViewFragmentBinding
 import com.orange.ease.dan.model.*
+import com.orange.ease.dan.navigation.DialogActivity
 import com.orange.ease.dan.ui.tools.talkback.TalkbackOptionActivity
 import com.orange.ease.dan.viewmodel.OptionsViewModel
 
-class OptionsFragment: Fragment(), ListRecyclerViewAdapter.ListRecyclerViewClickListener {
+class OptionsFragment: Fragment(), ListRecyclerViewAdapter.ListRecyclerViewClickListener, OptionHeaderAdapter.HeaderOptionButtonClickListener {
 
     private lateinit var binding: RecyclerViewFragmentBinding
     private lateinit var viewModel: OptionsViewModel
@@ -45,7 +47,7 @@ class OptionsFragment: Fragment(), ListRecyclerViewAdapter.ListRecyclerViewClick
 
         viewModel.listOptions = OptionRepository.getListOfOption()
 
-        val headerAdapter = OptionHeaderAdapter()
+        val headerAdapter = OptionHeaderAdapter(this)
         val recyclerViewAdapter =
             this.context?.let { ListRecyclerViewAdapter(viewModel.listOptions, this, it) }
 
@@ -61,6 +63,14 @@ class OptionsFragment: Fragment(), ListRecyclerViewAdapter.ListRecyclerViewClick
             else -> null
         }
         startActivity(intent)
+    }
+
+    override fun accessibilityButton() {
+        val startActivitySettings: () -> Unit = {
+            startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
+        }
+
+        (activity as DialogActivity).initAlertDialogStartActivity(startActivitySettings)
     }
 }
 

@@ -19,6 +19,7 @@
         android:icon="@drawable/icon_settings"
         android:title="@string/bottom_navigation_menu_options"
         app:showAsAction="ifRoom" />
+
 </menu>
 
 
