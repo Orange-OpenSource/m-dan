@@ -28,8 +28,6 @@ class ViewPagerFragment : Fragment() {
     val INDICE_END = 2
     val INDICE_END_HUMAN = INDICE_END + 1
 
-    val IS_ACCESSIBLE = "isAccessible"
-    val IS_SCROLLEX = "isScrollEx"
     var mIsAccessible = false
     var mIsScrollEx = false
 
@@ -42,6 +40,8 @@ class ViewPagerFragment : Fragment() {
 
     companion object {
         fun newInstance() = ViewPagerFragment()
+        val IS_ACCESSIBLE = "isAccessible"
+        val IS_SCROLLEX = "isScrollEx"
     }
 
     override fun onCreateView(

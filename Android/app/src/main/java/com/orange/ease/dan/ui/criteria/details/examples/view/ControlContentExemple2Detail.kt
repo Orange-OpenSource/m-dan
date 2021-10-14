@@ -8,7 +8,6 @@ import android.widget.Button
 import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
 import com.orange.ease.dan.R
-import com.orange.ease.dan.guide.accessibility.lvl2.MyViewPager
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 import com.orange.ease.dan.navigation.FragmentManagerActivity
 import com.orange.ease.dan.ui.criteria.details.examples.pager.ViewPagerDiapoFragment
@@ -22,12 +21,12 @@ class ControlContentExemple2Detail: AccessibilityDetailsExample {
         btnYes.text = context.getString(R.string.axsactivated)
 
         btnYes.setOnClickListener {
-            val myDiapoFragement: Fragment = ViewPagerDiapoFragment()
+            val myDiapoFragment: Fragment = ViewPagerDiapoFragment()
             val args = Bundle()
-            args.putBoolean(MyViewPager.IS_ACCESSIBLE, true)
-            myDiapoFragement.arguments = args
+            args.putBoolean(ViewPagerDiapoFragment.IS_ACCESSIBLE, true)
+            myDiapoFragment.arguments = args
             (context as FragmentManagerActivity?)?.let {
-                it.updateSpecificFragment(myDiapoFragement)
+                it.updateSpecificFragment(myDiapoFragment)
             }
         }
         return accessibleView
@@ -41,12 +40,12 @@ class ControlContentExemple2Detail: AccessibilityDetailsExample {
         val btnNo = notAccessibleView.findViewById<Button>(R.id.btngeneric)
         btnNo.text = context.getString(R.string.axsdisabled)
         btnNo.setOnClickListener {
-            val myDiapoFragement: Fragment = ViewPagerDiapoFragment()
+            val myDiapoFragment: Fragment = ViewPagerDiapoFragment()
             val args = Bundle()
-            args.putBoolean(MyViewPager.IS_ACCESSIBLE, false)
-            myDiapoFragement.arguments = args
+            args.putBoolean(ViewPagerDiapoFragment.IS_ACCESSIBLE, false)
+            myDiapoFragment.arguments = args
             (context as FragmentManagerActivity?)?.let {
-                it.updateSpecificFragment(myDiapoFragement)
+                it.updateSpecificFragment(myDiapoFragment)
             }
         }
         return notAccessibleView

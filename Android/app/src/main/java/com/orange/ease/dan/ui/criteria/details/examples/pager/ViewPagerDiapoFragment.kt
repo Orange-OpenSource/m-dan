@@ -2,7 +2,6 @@ package com.orange.ease.dan.ui.criteria.details.examples.pager
 
 import android.accessibilityservice.AccessibilityService
 import android.content.Context
-import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.SystemClock
@@ -19,7 +18,6 @@ import androidx.viewpager.widget.ViewPager.OnPageChangeListener
 import com.orange.ease.dan.R
 import com.orange.ease.dan.adapter.ViewPagerExampleAdapter
 import com.orange.ease.dan.databinding.Excontrolcontent2FragBinding
-import com.orange.ease.dan.guide.accessibility.lvl2.MyViewPagerDiapo
 
 class ViewPagerDiapoFragment : Fragment() {
 
@@ -30,8 +28,6 @@ class ViewPagerDiapoFragment : Fragment() {
     val INDICE_END = 2
     val INDICE_END_HUMAN = INDICE_END + 1
 
-    val IS_ACCESSIBLE = "isAccessible"
-    val IS_SCROLLEX = "isScrollEx"
     var mIsAccessible = false
     var mIsScrollEx = false
 
@@ -39,6 +35,8 @@ class ViewPagerDiapoFragment : Fragment() {
 
     companion object {
         fun newInstance() = ViewPagerDiapoFragment()
+        val IS_ACCESSIBLE = "isAccessible"
+        val IS_SCROLLEX = "isScrollEx"
     }
 
     override fun onCreateView(
@@ -71,7 +69,7 @@ class ViewPagerDiapoFragment : Fragment() {
 
     private fun updateViews() {
         val args = arguments
-        mIsAccessible = args == null || args.getBoolean(MyViewPagerDiapo.IS_ACCESSIBLE, false)
+        mIsAccessible = args == null || args.getBoolean(IS_ACCESSIBLE, false)
 
         adapter = ViewPagerExampleAdapter(mIsAccessible, mContext)
         binding.viewPager.adapter = adapter

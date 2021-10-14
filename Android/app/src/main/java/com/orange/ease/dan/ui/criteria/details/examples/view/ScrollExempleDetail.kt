@@ -8,7 +8,6 @@ import android.widget.Button
 import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
 import com.orange.ease.dan.R
-import com.orange.ease.dan.guide.accessibility.lvl2.MyViewPager
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 import com.orange.ease.dan.navigation.FragmentManagerActivity
 import com.orange.ease.dan.ui.criteria.details.examples.pager.ViewPagerFragment
@@ -23,7 +22,7 @@ class ScrollExempleDetail: AccessibilityDetailsExample {
         btnYes.setOnClickListener {
             val myPagerFragment: Fragment = ViewPagerFragment()
             val args = Bundle()
-            args.putBoolean(MyViewPager.IS_ACCESSIBLE, true)
+            args.putBoolean(ViewPagerFragment.IS_ACCESSIBLE, true)
             myPagerFragment.arguments = args
             (context as FragmentManagerActivity?)?.let {
                 it.updateSpecificFragment(myPagerFragment)
@@ -42,8 +41,8 @@ class ScrollExempleDetail: AccessibilityDetailsExample {
         btnNo.setOnClickListener {
             val myPagerFragment: Fragment = ViewPagerFragment()
             val args = Bundle()
-            args.putBoolean(MyViewPager.IS_ACCESSIBLE, false)
-            args.putBoolean(MyViewPager.IS_SCROLLEX, true)
+            args.putBoolean(ViewPagerFragment.IS_ACCESSIBLE, false)
+            args.putBoolean(ViewPagerFragment.IS_SCROLLEX, true)
             myPagerFragment.arguments = args
             (context as FragmentManagerActivity?)?.let {
                 it.updateSpecificFragment(myPagerFragment)

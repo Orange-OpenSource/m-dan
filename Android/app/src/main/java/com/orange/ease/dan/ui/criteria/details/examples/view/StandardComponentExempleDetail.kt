@@ -10,7 +10,7 @@ import com.orange.ease.dan.R
 import com.orange.ease.dan.adapter.CustomExpandableListViewAdapter
 import com.orange.ease.dan.adapter.CustomExpandableListViewAdapter.ChildItem
 import com.orange.ease.dan.adapter.CustomExpandableListViewAdapter.GroupItem
-import com.orange.ease.dan.guide.accessibility.lvl2.ExpandableListDataPump
+import com.orange.ease.dan.data.ExpandableListDataPumpRepository
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 import com.orange.ease.dan.utils.Utils
 import com.orange.ease.idunnololz.widgets.AnimatedExpandableListView
@@ -19,8 +19,8 @@ import java.util.*
 class StandardComponentExempleDetail: AccessibilityDetailsExample {
 
 
-    var mExpandableListViewAxsMore: ExpandableListView? = null
-    var mExpandableListView: AnimatedExpandableListView? = null
+    private var mExpandableListViewAxsMore: ExpandableListView? = null
+    private var mExpandableListView: AnimatedExpandableListView? = null
     private var mExpandableListAdapterMore: ExpandableListAdapter? = null
     private var mExpandableListAdapter: CustomExpandableListViewAdapter? = null
     private var mExpandableListTitle: List<String>? = null
@@ -32,7 +32,7 @@ class StandardComponentExempleDetail: AccessibilityDetailsExample {
 
         mExpandableListViewAxsMore =
             accessibleView.findViewById<ExpandableListView>(R.id.expandableListView)
-        mExpandableListDetail = ExpandableListDataPump.getData(context)
+        mExpandableListDetail = ExpandableListDataPumpRepository.getData(context)
         mExpandableListTitle = (mExpandableListDetail as HashMap<String, MutableList<String>>?)?.keys?.toList()
         mExpandableListAdapterMore = com.orange.ease.dan.adapter.ExpandableListAdapter(
             context,
