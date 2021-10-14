@@ -7,10 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.orange.ease.dan.R
-import com.orange.ease.dan.databinding.ListGuideViewHolderBinding
 import com.orange.ease.dan.databinding.ListViewHolderBinding
 import com.orange.ease.dan.model.AccessibilityEntity
-import com.orange.ease.dan.model.DevelopmentGuide
 import com.orange.ease.dan.model.Example
 
 class ListRecyclerViewAdapter(private val lists: List<AccessibilityEntity>, val clickListener: ListRecyclerViewClickListener, val context: Context) : RecyclerView.Adapter<ListRecyclerViewHolder>() {
