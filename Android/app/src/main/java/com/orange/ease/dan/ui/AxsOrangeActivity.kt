@@ -16,6 +16,7 @@ class AxsOrangeActivity : DialogActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAxsorangeBinding.inflate(layoutInflater)
         val view = binding.root
+        setSupportActionBar(binding.myToolbar)
         setContentView(view)
     }
 

@@ -57,7 +57,6 @@ class MenuActivity : DialogActivity() {
         supportFragmentManager.commit {
             setReorderingAllowed(true)
             replace(fragmentContainerViewId, fragment)
-            addToBackStack(null)
         }
     }
 

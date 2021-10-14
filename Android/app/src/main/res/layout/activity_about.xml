@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Licensed to the Apache Software Foundation (ASF) under one
   ~ or more contributor license agreements.  See the NOTICE file
   ~ distributed with this work for additional information
@@ -18,101 +17,118 @@
   ~ under the License.
   -->
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <RelativeLayout
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:theme="@style/ToolBar.style"
+        app:popupTheme="@style/ToolBar.popup" />
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/imgViewLogo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="23dp"
-            android:src="@drawable/logo"
-            android:elevation="3dp" />
-
-        <TextView
-            android:id="@+id/textViewTitleAbout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/imgViewLogo"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
-            android:text="@string/about_tittle"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textViewSubtitleAbout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textViewTitleAbout"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"
-            android:text="@string/about_subtittle"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/textViewContentAbout"
-            style="@style/BrandBody1"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/textViewSubtitleAbout"
-            android:layout_marginTop="23dp"
-            android:nestedScrollingEnabled="false"
-            android:paddingBottom="10dp"
-            android:autoLink="web"
-            android:text="@string/about_licence"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="#333333"
-            android:textSize="14sp"
-            android:paddingRight="@dimen/medium_margin"
-            android:paddingLeft="@dimen/medium_margin"
-            android:textColorLink="@color/core_orange_dark"/>
+            android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textViewLawDetails"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/textViewContentAbout"
-            android:layout_marginTop="25dp"
-            android:text="@string/about_other_licences"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:paddingRight="@dimen/medium_margin"
-            android:paddingLeft="@dimen/medium_margin" />
+            <ImageView
+                android:id="@+id/imgViewLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:elevation="3dp"
+                android:src="@drawable/logo" />
 
-        <TextView
-            android:id="@+id/textViewContentLawDetails"
-            style="@style/BrandBody1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:autoLink="web"
-            android:layout_below="@+id/textViewLawDetails"
-            android:nestedScrollingEnabled="false"
-            android:paddingBottom="10dp"
-            android:text="@string/about_other_licences_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="#333333"
-            android:textSize="14sp"
-            android:layout_marginTop="7sp"
-            android:paddingRight="@dimen/medium_margin"
-            android:paddingLeft="@dimen/medium_margin"
-            android:textColorLink="@color/core_orange_dark"/>
-    </RelativeLayout>
-</ScrollView>
+            <TextView
+                android:id="@+id/textViewTitleAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgViewLogo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="@string/about_tittle"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewSubtitleAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewTitleAbout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/about_subtittle"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewContentAbout"
+                style="@style/BrandBody1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewSubtitleAbout"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="23dp"
+                android:autoLink="web"
+                android:nestedScrollingEnabled="false"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin"
+                android:paddingBottom="10dp"
+                android:text="@string/about_licence"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333"
+                android:textColorLink="@color/core_orange_dark"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewLawDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewContentAbout"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="25dp"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin"
+                android:text="@string/about_other_licences"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewContentLawDetails"
+                style="@style/BrandBody1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewLawDetails"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="7sp"
+                android:autoLink="web"
+                android:nestedScrollingEnabled="false"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin"
+                android:paddingBottom="10dp"
+                android:text="@string/about_other_licences_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#333333"
+                android:textColorLink="@color/core_orange_dark"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
