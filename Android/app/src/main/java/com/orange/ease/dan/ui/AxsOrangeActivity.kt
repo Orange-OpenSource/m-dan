@@ -16,8 +16,15 @@ class AxsOrangeActivity : DialogActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAxsorangeBinding.inflate(layoutInflater)
         val view = binding.root
-        setSupportActionBar(binding.myToolbar)
+        setupToolbar()
         setContentView(view)
+    }
+
+    private fun setupToolbar() {
+        setSupportActionBar(binding.myToolbar)
+        val actionBar = supportActionBar
+        actionBar?.setDisplayHomeAsUpEnabled(true)
+        binding.myToolbar.setNavigationOnClickListener { _ -> onBackPressed() }
     }
 
     fun clickNetwork(view: View) {
