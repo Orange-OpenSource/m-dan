@@ -29,7 +29,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.orange.ease.dan.R
 import com.orange.ease.dan.databinding.ExampleFragLvl2Binding
-import com.orange.ease.dan.data.CriteriaRepository
+import com.orange.ease.dan.data.repository.CriteriaRepository
 import com.orange.ease.dan.navigation.FragmentManagerActivity
 import com.orange.ease.dan.viewmodel.CriteriaDetailsViewModel
 

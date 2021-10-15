@@ -31,7 +31,7 @@ import androidx.recyclerview.widget.ConcatAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.orange.ease.dan.adapter.ListRecyclerViewAdapter
 import com.orange.ease.dan.adapter.header.OptionHeaderAdapter
-import com.orange.ease.dan.data.OptionRepository
+import com.orange.ease.dan.data.repository.OptionRepository
 import com.orange.ease.dan.databinding.RecyclerViewFragmentBinding
 import com.orange.ease.dan.model.*
 import com.orange.ease.dan.navigation.DialogActivity

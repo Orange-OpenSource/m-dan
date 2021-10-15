@@ -28,7 +28,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.orange.ease.dan.adapter.GestureAdapter
 import com.orange.ease.dan.databinding.ActivityTalkbackBinding
 import com.orange.ease.dan.model.Gesture
-import com.orange.ease.dan.data.GestureRepository
+import com.orange.ease.dan.data.repository.GestureRepository
 import com.orange.ease.dan.viewmodel.GestureViewModel
 
 

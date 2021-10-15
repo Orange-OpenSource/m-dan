@@ -24,8 +24,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.orange.ease.dan.databinding.OptionsTemplateBinding
 import com.orange.ease.dan.model.OptionClassic
-import com.orange.ease.dan.data.OptionRepository
-import com.orange.ease.dan.navigation.DialogActivity
+import com.orange.ease.dan.data.repository.OptionRepository
 import com.orange.ease.dan.viewmodel.ClassicOptionViewModel
 
 class ClassicOptionActivity : AppCompatActivity() {
