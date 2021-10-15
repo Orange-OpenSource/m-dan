@@ -17,7 +17,7 @@
  * under the License.
  */
 
-package com.orange.ease.dan.data
+package com.orange.ease.dan.data.repository
 
 import android.content.Context
 import com.orange.ease.dan.R

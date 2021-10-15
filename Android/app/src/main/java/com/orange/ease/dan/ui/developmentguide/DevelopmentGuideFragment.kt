@@ -32,7 +32,7 @@ import com.orange.ease.dan.adapter.header.DevelopmentHeaderAdapter
 import com.orange.ease.dan.adapter.ListRecyclerViewAdapter
 import com.orange.ease.dan.databinding.RecyclerViewFragmentBinding
 import com.orange.ease.dan.model.DevelopmentGuide
-import com.orange.ease.dan.data.DevelopmentGuideRepository
+import com.orange.ease.dan.data.repository.DevelopmentGuideRepository
 import com.orange.ease.dan.model.AccessibilityEntity
 import com.orange.ease.dan.viewmodel.DevelopmentGuideViewModel
 

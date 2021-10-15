@@ -20,9 +20,10 @@
 package com.orange.ease.dan.data
 
 import com.orange.ease.dan.R
+import com.orange.ease.dan.data.repository.ExampleRepository
 import com.orange.ease.dan.model.Criteria
 
-object CriteriaRepository {
+object CriteriaDataSource {
 
     private val criteriaImage = Criteria(
         resTitle = R.string.criteria_img_title,
@@ -115,34 +116,21 @@ object CriteriaRepository {
         ExampleRepository.getListOfFormExample()
     )
 
-    private var currentCriteria: Criteria? = null
-
-    fun getCurrentCriteria(): Criteria? {
-        return currentCriteria
-    }
-
-    fun setCurrentCriteria(criteria: Criteria) {
-        currentCriteria = criteria
-    }
-
-    fun getListOfCriteria(): List<Criteria> {
-        return listOf<Criteria>(
-            criteriaImage,
-            criteriaColor,
-            criteriaAlt,
-            criteriaTitles,
-            criteriaElementsState,
-            criteriaStandardComponent,
-            criteriaClickArea,
-            criteriaGhost,
-            criteriaTextSize,
-            criteriaContentControl,
-            criteriaContentChange,
-            criteriaScroll,
-            criteriaForm,
-            criteriaReadOrder,
-            criteriaFocusNavigation
-        )
-    }
+    val allCriterias = listOf(
+        criteriaImage,
+        criteriaColor,
+        criteriaAlt,
+        criteriaTitles,
+        criteriaElementsState,
+        criteriaStandardComponent,
+        criteriaClickArea,
+        criteriaGhost,
+        criteriaTextSize,
+        criteriaContentControl,
+        criteriaContentChange,
+        criteriaScroll,
+        criteriaForm,
+        criteriaReadOrder,
+        criteriaFocusNavigation
+    )
 }
-

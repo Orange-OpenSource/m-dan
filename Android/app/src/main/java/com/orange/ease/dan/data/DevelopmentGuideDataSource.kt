@@ -20,9 +20,10 @@
 package com.orange.ease.dan.data
 
 import com.orange.ease.dan.R
+import com.orange.ease.dan.model.Criteria
 import com.orange.ease.dan.model.DevelopmentGuide
 
-object DevelopmentGuideRepository {
+object DevelopmentGuideDataSource {
 
     private val guideAlt = DevelopmentGuide(
         resTitle = R.string.dev_title_alt,
@@ -96,32 +97,18 @@ object DevelopmentGuideRepository {
         resLink = null
     )
 
-    private var currentGuide: DevelopmentGuide? = null
-
-    fun getCurrentGuide(): DevelopmentGuide? {
-        return currentGuide
-    }
-
-    fun setCurrentGuide(guide: DevelopmentGuide) {
-        currentGuide = guide
-    }
-
-    fun getListOfGuide(): List<DevelopmentGuide> {
-        return listOf<DevelopmentGuide>(
-            guideAlt,
-            guideAxsEvents,
-            guideFocusNav,
-            guideForms,
-            guideListVoc,
-            guideLive,
-            guideHide,
-            guideReadOrder,
-            guideTalkback,
-            guideTxtSize,
-            guideVoc,
-            guideWebView
-        )
-    }
+    val allDevelopmentGuides = listOf(
+        guideAlt,
+        guideAxsEvents,
+        guideFocusNav,
+        guideForms,
+        guideListVoc,
+        guideLive,
+        guideHide,
+        guideReadOrder,
+        guideTalkback,
+        guideTxtSize,
+        guideVoc,
+        guideWebView
+    )
 }
-
-

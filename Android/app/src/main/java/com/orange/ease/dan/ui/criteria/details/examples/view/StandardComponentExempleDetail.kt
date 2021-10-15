@@ -29,7 +29,7 @@ import com.orange.ease.dan.R
 import com.orange.ease.dan.adapter.CustomExpandableListViewAdapter
 import com.orange.ease.dan.adapter.CustomExpandableListViewAdapter.ChildItem
 import com.orange.ease.dan.adapter.CustomExpandableListViewAdapter.GroupItem
-import com.orange.ease.dan.data.ExpandableListDataPumpRepository
+import com.orange.ease.dan.data.repository.ExpandableListDataPumpRepository
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 import com.orange.ease.dan.utils.Utils
 import com.orange.ease.idunnololz.widgets.AnimatedExpandableListView

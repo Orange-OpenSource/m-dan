@@ -24,7 +24,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.orange.ease.dan.databinding.DetailsDevGuideActivityBinding
-import com.orange.ease.dan.data.DevelopmentGuideRepository
+import com.orange.ease.dan.data.repository.DevelopmentGuideRepository
 import com.orange.ease.dan.viewmodel.DevGuideDetailsViewModel
 
 class DetailsDevGuideActivity : AppCompatActivity() {

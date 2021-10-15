@@ -20,12 +20,12 @@
 package com.orange.ease.dan.data
 
 import com.orange.ease.dan.R
-import com.orange.ease.dan.model.AccessibilityEntity
-import com.orange.ease.dan.model.Option
+import com.orange.ease.dan.model.Criteria
+import com.orange.ease.dan.model.DevelopmentGuide
 import com.orange.ease.dan.model.OptionClassic
 import com.orange.ease.dan.model.OptionTalkback
 
-object OptionRepository {
+object OptionDataSource {
 
     private val optionColorCorrection = OptionClassic(
         resTitle = R.string.options_colors_correction_title,
@@ -51,24 +51,11 @@ object OptionRepository {
         resTitle = R.string.options_talkback_title
     )
 
-    private var currentOption: AccessibilityEntity? = null
-
-    fun getCurrentOption(): AccessibilityEntity? {
-        return currentOption
-    }
-
-    fun setCurrentOption(option: AccessibilityEntity) {
-        currentOption = option
-    }
-
-    fun getListOfOption(): List<AccessibilityEntity> {
-        return listOf<AccessibilityEntity>(
-            optionTalkback,
-            optionTextSize,
-            optionZoom,
-            optionColorCorrection,
-            optionColorInversion
-        )
-    }
+    val allOptions = listOf(
+        optionTalkback,
+        optionTextSize,
+        optionZoom,
+        optionColorCorrection,
+        optionColorInversion
+    )
 }
-

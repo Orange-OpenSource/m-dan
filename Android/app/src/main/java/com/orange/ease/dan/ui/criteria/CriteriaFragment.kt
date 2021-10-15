@@ -32,7 +32,7 @@ import com.orange.ease.dan.adapter.header.CriteriaHeaderAdapter
 import com.orange.ease.dan.adapter.ListRecyclerViewAdapter
 import com.orange.ease.dan.databinding.RecyclerViewFragmentBinding
 import com.orange.ease.dan.model.Criteria
-import com.orange.ease.dan.data.CriteriaRepository
+import com.orange.ease.dan.data.repository.CriteriaRepository
 import com.orange.ease.dan.model.AccessibilityEntity
 import com.orange.ease.dan.ui.criteria.details.DetailsCriteriaActivity
 import com.orange.ease.dan.viewmodel.CriteriaViewModel
