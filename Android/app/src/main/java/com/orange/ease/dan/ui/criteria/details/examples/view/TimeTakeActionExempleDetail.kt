@@ -33,7 +33,7 @@ import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 
 
-class TimeTakeActionExempleDetail: AccessibilityDetailsExample {
+class TimeTakeActionExempleDetail: AccessibilityDetailsExample() {
 
     @RequiresApi(Build.VERSION_CODES.Q)
     override fun getAccessibleExample(context: Context): View {
@@ -96,11 +96,11 @@ class TimeTakeActionExempleDetail: AccessibilityDetailsExample {
     }
 
     override fun useOption(): Boolean {
-        return false
+        return true
     }
 
     override fun getOptionRessource(context: Context): String? {
-        return null
+        return context.getString(R.string.options_timetotakeaction_title)
     }
 }
 

@@ -121,7 +121,7 @@ object ExampleRepository {
 
     fun getStandardComponentExample(): List<Example> {
         return listOf<Example>(
-            ExampleDataSource.exampleStandardComponent1, ExampleDataSource.exampleStandardComponent2
+            ExampleDataSource.exampleStandardComponent2
         )
     }
 

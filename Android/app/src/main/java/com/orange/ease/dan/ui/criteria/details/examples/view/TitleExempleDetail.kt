@@ -25,85 +25,32 @@ import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
+import com.orange.ease.dan.ui.criteria.details.examples.ExampleCriteriaFragment
 
-class TitleExempleDetail: AccessibilityDetailsExample {
+class TitleExempleDetail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
-        val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val accessibleView = inflater.inflate(R.layout.buttongeneric, null) as LinearLayout
-
+        val texteExampleAccessible = TextView(context)
+        texteExampleAccessible.text = context.getString(R.string.criteria_title_ex1_axs)
+        val lyaxs = LinearLayout(context)
         val scale: Float = context.resources.displayMetrics.density
-        val dpAsPixels = (15 * scale + 0.5f).toInt() //padding de 15dp
-
-        val dpAsPixels2 = (5 * scale + 0.5f).toInt() //padding de 5dp
-
-        val layoutParams = LinearLayout.LayoutParams(
-            LinearLayout.LayoutParams.MATCH_PARENT,
-            LinearLayout.LayoutParams.WRAP_CONTENT
-        )
-
-        /* AXS YES */
-        val exAxsDescription = TextView(context)
-        exAxsDescription.text = context.getString(R.string.criteria_title_ex1_axsDesc)
-        exAxsDescription.setPadding(dpAsPixels, dpAsPixels2, dpAsPixels, dpAsPixels2)
-
-        val buttonAccessibilityYes = accessibleView.findViewById<Button>(R.id.btngeneric)
-        buttonAccessibilityYes.setText(R.string.criteria_title_ex1_axsButton)
-        /* buttonAccessibilityYes.setOnClickListener {
-             mOnNewFragment.setTemplateTitle(getString(R.string.example).toString() + " 1/1", true)
-             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                 getView().announceForAccessibility(
-                     getString(R.string.criteria_title_ex1_announceaxsyes).toString() + " " + getString(
-                         R.string.example
-                     ) + " 1/1"
-                 )
-             }
-         }*/
-
-        val lyAxs = LinearLayout(context)
-        lyAxs.orientation = LinearLayout.VERTICAL
-        lyAxs.layoutParams = layoutParams
-        lyAxs.addView(exAxsDescription)
-        lyAxs.addView(accessibleView)
-
-        return lyAxs
+        lyaxs.setPadding((15 * scale + 0.5f).toInt(), 0, (15 * scale + 0.5f).toInt(), 0)
+        lyaxs.orientation = LinearLayout.VERTICAL
+        lyaxs.addView(texteExampleAccessible)
+        return lyaxs
     }
 
     override fun getNotAccessibleExample(context: Context): View {
-        val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val notAccessibleView = inflater.inflate(R.layout.buttongeneric, null) as LinearLayout
-
+        val texteExampleNotAccessible = TextView(context)
+        texteExampleNotAccessible.text = context.getString(R.string.criteria_title_ex1_noaxs)
+        val lyaxs = LinearLayout(context)
         val scale: Float = context.resources.displayMetrics.density
-        val dpAsPixels = (15 * scale + 0.5f).toInt() //padding de 15dp
-
-        val dpAsPixels2 = (5 * scale + 0.5f).toInt() //padding de 5dp
-
-        val layoutParams = LinearLayout.LayoutParams(
-            LinearLayout.LayoutParams.MATCH_PARENT,
-            LinearLayout.LayoutParams.WRAP_CONTENT
-        )
-
-        val exNotAxsDescription = TextView(context)
-        exNotAxsDescription.text = context.getString(R.string.criteria_title_ex1_notAxsDesc)
-        exNotAxsDescription.setPadding(dpAsPixels, dpAsPixels2, dpAsPixels, dpAsPixels2)
-
-        val buttonAccessibilityNo = notAccessibleView.findViewById<Button>(R.id.btngeneric)
-        buttonAccessibilityNo.setText(R.string.criteria_title_ex1_notAxsButton)
-        /* buttonAccessibilityNo.setOnClickListener {
-             mOnNewFragment.setTemplateTitle(" ", true)
-             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                 getView().announceForAccessibility(getString(R.string.criteria_title_ex1_announceaxsno))
-             }
-         }*/
-
-        val lyNotAxs = LinearLayout(context)
-        lyNotAxs.orientation = LinearLayout.VERTICAL
-        lyNotAxs.layoutParams = layoutParams
-        lyNotAxs.addView(exNotAxsDescription)
-        lyNotAxs.addView(notAccessibleView)
-
-        return lyNotAxs
+        lyaxs.setPadding((15 * scale + 0.5f).toInt(), 0, (15 * scale + 0.5f).toInt(), 0)
+        lyaxs.orientation = LinearLayout.VERTICAL
+        lyaxs.addView(texteExampleNotAccessible)
+        return lyaxs
     }
 
     override fun getTitleRessource(context: Context): String {
@@ -118,12 +65,8 @@ class TitleExempleDetail: AccessibilityDetailsExample {
         return context.getString(R.string.criteria_title_ex1_description)
     }
 
-    override fun useOption(): Boolean {
-        return false
-    }
-
-    override fun getOptionRessource(context: Context): String? {
-        return null
+    override fun hasEmptyTitle(): Boolean {
+        return true
     }
 }
 

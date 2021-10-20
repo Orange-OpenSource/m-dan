@@ -29,7 +29,7 @@ import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 import com.orange.ease.dan.navigation.FragmentManagerActivity
 
-class GhostExempleDetail: AccessibilityDetailsExample {
+class GhostExempleDetail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val accessibleView = inflater.inflate(R.layout.buttongeneric, null) as LinearLayout

@@ -29,7 +29,7 @@ import android.widget.LinearLayout
 import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 
-class ImgExemple1Detail: AccessibilityDetailsExample {
+class ImgExemple1Detail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
        // Commons params for ImageView
         val params = FrameLayout.LayoutParams(

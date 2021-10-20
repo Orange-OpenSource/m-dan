@@ -28,7 +28,7 @@ import androidx.annotation.RequiresApi
 import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 
-class HeadingExempleDetail: AccessibilityDetailsExample {
+class HeadingExempleDetail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         return inflater.inflate(R.layout.headings_example, null)
@@ -41,7 +41,7 @@ class HeadingExempleDetail: AccessibilityDetailsExample {
         notAccessibleView.findViewById<TextView>(R.id.section1).isAccessibilityHeading = false
         notAccessibleView.findViewById<TextView>(R.id.section2).isAccessibilityHeading = false
         notAccessibleView.findViewById<TextView>(R.id.section3).isAccessibilityHeading = false
-        return inflater.inflate(R.layout.headings_example, null)
+        return notAccessibleView
     }
 
     override fun getTitleRessource(context: Context): String {

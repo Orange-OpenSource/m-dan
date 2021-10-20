@@ -20,8 +20,10 @@
 package com.orange.ease.dan.ui.developmentguide
 
 import android.os.Bundle
+import android.text.Html
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.text.HtmlCompat
 import androidx.lifecycle.ViewModelProvider
 import com.orange.ease.dan.databinding.DetailsDevGuideActivityBinding
 import com.orange.ease.dan.data.repository.DevelopmentGuideRepository
@@ -59,8 +61,7 @@ class DetailsDevGuideActivity : AppCompatActivity() {
 
         val guide = viewModel.guide?.let { it } ?: return
 
-        //binding.textViewTitleDescriptionGuideDev.text = getString(guide.titleRes)
-        binding.textViewDescriptionContentGuideDev.text = getString(guide.resDescription)
+        binding.textViewDescriptionContentGuideDev.text = HtmlCompat.fromHtml(getString(guide.resDescription),  HtmlCompat.FROM_HTML_MODE_LEGACY)
 
         val strongLink = guide.resLink?.let {getString(it)} ?: return
 

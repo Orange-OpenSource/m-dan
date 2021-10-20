@@ -5,5 +5,11 @@
         android:color="@color/accent"/>
     <item
         android:state_checked="false"
+        android:state_focused="false"
         android:color="@color/white"/>
+
+    <item
+        android:state_checked="false"
+        android:state_focused="true"
+        android:color="@color/dark_medium_grey"/>
 </selector>

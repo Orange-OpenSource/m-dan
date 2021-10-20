@@ -27,7 +27,7 @@ import android.widget.TextView
 import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 
-class FocusNavExempleDetail: AccessibilityDetailsExample {
+class FocusNavExempleDetail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val texteExempleAccessible = TextView(context)
         texteExempleAccessible.text = context.getString(R.string.criteria_focusnav_ex1_axs)
@@ -69,7 +69,7 @@ class FocusNavExempleDetail: AccessibilityDetailsExample {
     }
 
     override fun useOption(): Boolean {
-        return false
+        return true
     }
 
     override fun getOptionRessource(context: Context): String? {

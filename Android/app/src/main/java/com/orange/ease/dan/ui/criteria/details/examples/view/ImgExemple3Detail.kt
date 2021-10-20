@@ -26,25 +26,25 @@ import android.widget.LinearLayout
 import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 
-class ImgExemple3Detail: AccessibilityDetailsExample {
+class ImgExemple3Detail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        return inflater.inflate(R.layout.eximg3_frag, null)
+        val accessibleView = inflater.inflate(R.layout.eximg3_frag, null)
+
+        accessibleView.findViewById<View>(R.id.imageView7).contentDescription = ""
+
+        accessibleView.findViewById<View>(R.id.imageButtonedit).contentDescription =
+            context.getString(R.string.criteria_img_ex3_cd_btn_edit)
+
+        accessibleView.findViewById<View>(R.id.imageButtonsettings).contentDescription =
+            context.getString(R.string.criteria_img_ex3_cd_btn_parameters)
+
+        return accessibleView
     }
 
     override fun getNotAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val notAccessibleView = inflater.inflate(R.layout.eximg3_frag, null) as LinearLayout
-
-        notAccessibleView.findViewById<View>(R.id.imageView7).contentDescription = ""
-
-        notAccessibleView.findViewById<View>(R.id.imageButtonedit).contentDescription =
-            context.getString(R.string.criteria_img_ex3_cd_btn_edit)
-
-        notAccessibleView.findViewById<View>(R.id.imageButtonsettings).contentDescription =
-            context.getString(R.string.criteria_img_ex3_cd_btn_parameters)
-
-        return notAccessibleView
+        return inflater.inflate(R.layout.eximg3_frag, null) as LinearLayout
     }
 
     override fun getTitleRessource(context: Context): String {

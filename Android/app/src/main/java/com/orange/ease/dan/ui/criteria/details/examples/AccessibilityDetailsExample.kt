@@ -23,14 +23,24 @@ import android.content.Context
 import android.view.View
 import kotlin.properties.Delegates
 
-interface AccessibilityDetailsExample {
-    fun getAccessibleExample(context: Context) : View
-    fun getNotAccessibleExample(context: Context) : View
-    fun getTitleRessource(context: Context) : String
-    fun getCellNameRessource(context: Context) : String
-    fun getDescriptionRessource(context: Context) : String
-    fun getOptionRessource(context: Context): String?
-    fun useOption(): Boolean
+abstract class AccessibilityDetailsExample {
+    abstract fun getAccessibleExample(context: Context) : View
+    abstract fun getNotAccessibleExample(context: Context) : View
+    abstract fun getTitleRessource(context: Context) : String
+    abstract fun getCellNameRessource(context: Context) : String
+    abstract fun getDescriptionRessource(context: Context) : String
+
+    open fun hasEmptyTitle() : Boolean {
+        return false
+    }
+
+    open fun useOption(): Boolean {
+        return false
+    }
+
+    open fun getOptionRessource(context: Context): String? {
+        return null
+    }
 }
 
 

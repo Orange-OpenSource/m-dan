@@ -29,7 +29,7 @@ import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExam
 import java.text.SimpleDateFormat
 import java.util.*
 
-class Text1ExempleDetail: AccessibilityDetailsExample {
+class Text1ExempleDetail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val accessibleView = inflater.inflate(R.layout.extxt1_frag, null) as LinearLayout

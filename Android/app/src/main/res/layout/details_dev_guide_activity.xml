@@ -27,6 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:elevation="4dp"
+        android:touchscreenBlocksFocus="false"
         android:theme="@style/ToolBar.style" />
 
 
@@ -46,7 +47,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/border"
-                android:focusable="true"
                 android:gravity="center_vertical"
                 android:minHeight="45dp"
                 android:padding="@dimen/large_margin"
@@ -78,7 +78,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/border"
-                android:focusable="true"
                 android:gravity="center_vertical"
                 android:minHeight="45dp"
                 android:padding="@dimen/large_margin"

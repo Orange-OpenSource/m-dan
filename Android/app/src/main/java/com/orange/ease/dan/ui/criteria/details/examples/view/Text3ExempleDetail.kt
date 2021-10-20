@@ -30,7 +30,7 @@ import com.orange.ease.dan.view.MatchFieldView
 import java.text.SimpleDateFormat
 import java.util.*
 
-class Text3ExempleDetail: AccessibilityDetailsExample {
+class Text3ExempleDetail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         return inflater.inflate(R.layout.exalt_football_match_field, null)
