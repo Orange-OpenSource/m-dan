@@ -31,7 +31,7 @@ import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExam
 import com.orange.ease.dan.navigation.FragmentManagerActivity
 import com.orange.ease.dan.ui.criteria.details.examples.pager.ViewPagerFragment
 
-class ScrollExempleDetail: AccessibilityDetailsExample {
+class ScrollExempleDetail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val accessibleView = inflater.inflate(R.layout.buttongeneric, null) as LinearLayout

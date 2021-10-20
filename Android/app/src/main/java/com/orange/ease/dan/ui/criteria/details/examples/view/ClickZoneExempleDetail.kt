@@ -28,7 +28,7 @@ import androidx.core.content.ContextCompat
 import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 
-class ClickZoneExempleDetail: AccessibilityDetailsExample {
+class ClickZoneExempleDetail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
@@ -102,14 +102,6 @@ class ClickZoneExempleDetail: AccessibilityDetailsExample {
 
     override fun getDescriptionRessource(context: Context): String {
         return context.getString(R.string.criteria_clickarea_ex1_description)
-    }
-
-    override fun useOption(): Boolean {
-        return false
-    }
-
-    override fun getOptionRessource(context: Context): String? {
-        return null
     }
 }
 

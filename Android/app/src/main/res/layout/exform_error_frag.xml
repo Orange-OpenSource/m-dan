@@ -32,8 +32,7 @@
             android:text="@string/criteria_form_ex1_label_name_mandatory"
             android:id="@+id/name_labelfor"
             style="@style/BrandBody2"
-            android:labelFor="@+id/editText"
-            android:importantForAccessibility="no" />
+            android:labelFor="@+id/name_textfield" />
 
         <EditText
             android:layout_width="match_parent"

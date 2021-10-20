@@ -529,6 +529,9 @@
         <item>Example 3</item>
     </string-array>
 
+    <!-- criteria title -->
+    <string name="criteria_title_ex1_axs">Each screen in the app has a relevant title (except the current screen)</string>
+    <string name="criteria_title_ex1_noaxs">This screen is the only one that does not offer a title and is therefore inaccessible</string>
 
     <!-- guide dev view -->
     <string-array name="dev_list">
@@ -691,6 +694,7 @@
     <string name="options_colors_correction_title">Correcting colors</string>
     <string name="options_colors_inversion_title">Inverting colors</string>
     <string name="options_talkback_title">Talkback</string>
+    <string name="options_timetotakeaction_title">Time to take action</string>
 
 
     <string name="example_group_title">Grouping of elements</string>

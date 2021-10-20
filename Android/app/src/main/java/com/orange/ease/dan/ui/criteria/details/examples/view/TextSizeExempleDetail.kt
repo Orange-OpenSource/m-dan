@@ -27,7 +27,7 @@ import android.widget.TextView
 import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 
-class TextSizeExempleDetail: AccessibilityDetailsExample {
+class TextSizeExempleDetail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val accessibleView = inflater.inflate(R.layout.exsizetxt1_frag, null) as LinearLayout

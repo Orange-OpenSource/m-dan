@@ -77,7 +77,8 @@ class ExampleCriteriaFragment: Fragment() {
             binding.frameLayoutExampleAxsNo.addView(it.detailsExample.getNotAccessibleExample(mContext))
             val examplesCount = viewModel.criteria?.exampleList?.size ?: 1
             val currentExampleCount = (viewModel.criteria?.exampleList?.indexOf(it) ?: 0) + 1
-            (activity as AppCompatActivity).supportActionBar?.title = getString(R.string.example) + " $currentExampleCount/$examplesCount"
+            val title = if (it.detailsExample.hasEmptyTitle()) "" else (getString(R.string.example) + " $currentExampleCount/$examplesCount")
+            (activity as AppCompatActivity).supportActionBar?.title = title
 
             val useOption = it.detailsExample.useOption()
             val optionVisibility =  if (useOption) View.VISIBLE else View.GONE

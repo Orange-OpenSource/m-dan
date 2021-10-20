@@ -35,7 +35,7 @@ import com.orange.ease.dan.utils.Utils
 import com.orange.ease.idunnololz.widgets.AnimatedExpandableListView
 import java.util.*
 
-class StandardComponentExempleDetail: AccessibilityDetailsExample {
+class StandardComponentExempleDetail: AccessibilityDetailsExample() {
 
 
     private var mExpandableListViewAxsMore: ExpandableListView? = null

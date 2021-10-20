@@ -25,7 +25,7 @@ import android.view.View
 import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 
-class GroupExempleDetail: AccessibilityDetailsExample {
+class GroupExempleDetail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         return inflater.inflate(R.layout.grouped_elements, null)

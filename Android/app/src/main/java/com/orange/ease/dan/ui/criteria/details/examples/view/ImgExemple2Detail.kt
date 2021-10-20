@@ -27,20 +27,21 @@ import android.widget.LinearLayout
 import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 
-class ImgExemple2Detail: AccessibilityDetailsExample {
+class ImgExemple2Detail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        return inflater.inflate(R.layout.eximg2_tuile, null)
+        val accessibleView = inflater.inflate(R.layout.eximg2_tuile, null) as LinearLayout
+        val axsYes = accessibleView.findViewById<View>(R.id.imageView6)
+        axsYes.contentDescription = ""
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            axsYes.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_NO
+        }
+        return accessibleView
     }
 
     override fun getNotAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val notAccessibleView = inflater.inflate(R.layout.eximg2_tuile, null) as LinearLayout
-        val axsNo = notAccessibleView.findViewById<View>(R.id.imageView6)
-        axsNo.contentDescription = ""
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-            axsNo.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_NO
-        }
         return notAccessibleView
     }
 

@@ -29,6 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:elevation="4dp"
+        android:touchscreenBlocksFocus="false"
         android:theme="@style/ToolBar.style"
         app:popupTheme="@style/ToolBar.popup"/>
 

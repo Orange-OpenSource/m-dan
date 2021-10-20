@@ -30,7 +30,7 @@ import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExam
 import com.readystatesoftware.viewbadger.BadgeView
 import java.util.*
 
-class Text2ExempleDetail: AccessibilityDetailsExample {
+class Text2ExempleDetail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val accessibleView = inflater.inflate(R.layout.extxt2_frag, null) as LinearLayout

@@ -27,7 +27,7 @@ import android.widget.TextView
 import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 
-class TextReadabilityExempleDetail: AccessibilityDetailsExample {
+class TextReadabilityExempleDetail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val accessibleView = inflater.inflate(R.layout.ex_texte_readability_frag, null) as LinearLayout
@@ -55,14 +55,6 @@ class TextReadabilityExempleDetail: AccessibilityDetailsExample {
 
     override fun getDescriptionRessource(context: Context): String {
         return context.getString(R.string.criteria_text_readability_description)
-    }
-
-    override fun useOption(): Boolean {
-        return false
-    }
-
-    override fun getOptionRessource(context: Context): String? {
-        return null
     }
 }
 

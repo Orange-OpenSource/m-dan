@@ -28,10 +28,6 @@
         android:id="@+id/listsRecyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clickable="true"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:descendantFocusability="blocksDescendants"
         />
 
 </LinearLayout>

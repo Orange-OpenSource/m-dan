@@ -28,7 +28,7 @@ import androidx.core.content.ContextCompat
 import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 
-class ColorExemple1Detail: AccessibilityDetailsExample {
+class ColorExemple1Detail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val accessibleView = inflater.inflate(R.layout.excolor1_list, null) as LinearLayout
@@ -60,14 +60,6 @@ class ColorExemple1Detail: AccessibilityDetailsExample {
 
     override fun getDescriptionRessource(context: Context): String {
         return context.getString(R.string.criteria_color_ex1_description)
-    }
-
-    override fun useOption(): Boolean {
-        return false
-    }
-
-    override fun getOptionRessource(context: Context): String? {
-        return null
     }
 }
 

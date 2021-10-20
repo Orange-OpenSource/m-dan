@@ -28,7 +28,7 @@ import android.widget.LinearLayout
 import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 
-class FormErrorExempleDetail: AccessibilityDetailsExample {
+class FormErrorExempleDetail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val accessibleView = inflater.inflate(R.layout.exform_error_frag, null) as LinearLayout
