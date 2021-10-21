@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Licensed to the Apache Software Foundation (ASF) under one
   ~ or more contributor license agreements.  See the NOTICE file
   ~ distributed with this work for additional information
@@ -26,28 +25,30 @@
     <TextView
         android:id="@+id/headerCriteriaWhyLabel"
         style="@style/TextViewStandard.Title.Level2"
-        android:text="@string/criteria_template_why"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="45dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:padding="@dimen/large_margin"
         android:background="@drawable/border"
         android:gravity="center_vertical"
-        android:textColor="@color/core_black"/>
+        android:minHeight="45dp"
+        android:padding="@dimen/large_margin"
+        android:screenReaderFocusable="true"
+        android:text="@string/criteria_template_why"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/core_black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/headerCriteriaWhyDescription"
         style="@style/BrandBody1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
-        android:paddingBottom="10dp"
-        android:paddingEnd="@dimen/large_margin"
+        android:layout_marginBottom="10dp"
         android:paddingStart="@dimen/large_margin"
+        android:paddingEnd="@dimen/large_margin"
+        android:paddingBottom="10dp"
+        android:screenReaderFocusable="true"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@color/core_black"
         android:textSize="14sp" />
@@ -55,28 +56,30 @@
     <TextView
         android:id="@+id/headerCriteriaRuleLabel"
         style="@style/TextViewStandard.Title.Level2"
-        android:text="@string/criteria_template_rule"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="45dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:padding="@dimen/large_margin"
         android:background="@drawable/border"
         android:gravity="center_vertical"
-        android:textColor="@color/core_black"/>
+        android:minHeight="45dp"
+        android:padding="@dimen/large_margin"
+        android:screenReaderFocusable="true"
+        android:text="@string/criteria_template_rule"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/core_black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/headerCriteriaRuleDescription"
         style="@style/BrandBody1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
-        android:paddingBottom="10dp"
-        android:paddingEnd="@dimen/large_margin"
+        android:layout_marginBottom="10dp"
         android:paddingStart="@dimen/large_margin"
+        android:paddingEnd="@dimen/large_margin"
+        android:paddingBottom="10dp"
+        android:screenReaderFocusable="true"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@color/core_black"
         android:textSize="14sp" />
@@ -84,17 +87,18 @@
     <TextView
         android:id="@+id/headerCriteriaListLabel"
         style="@style/TextViewStandard.Title.Level2"
-        android:text="@string/criteria_template_example"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="45dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:padding="@dimen/large_margin"
         android:background="@drawable/border"
         android:gravity="center_vertical"
-        android:textColor="@color/core_black"/>
+        android:screenReaderFocusable="true"
+        android:minHeight="45dp"
+        android:padding="@dimen/large_margin"
+        android:text="@string/criteria_template_example"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/core_black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 </LinearLayout>
 

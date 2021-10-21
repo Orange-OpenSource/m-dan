@@ -60,6 +60,7 @@ class ClassicOptionActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         supportActionBar?.title = viewModel.option?.let { getString(it.resTitle) }
+        title = viewModel.option?.let { getString(it.resTitle) }
     }
 }
 

@@ -37,6 +37,7 @@
         android:minHeight="45dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/options_content_description"
+        android:screenReaderFocusable="true"
         style="@style/TextViewStandard"
         android:textStyle="bold"
         android:textSize="18sp"
@@ -45,17 +46,18 @@
         android:gravity="center_vertical" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/options_content"
         android:id="@+id/textViewDescriptionOptAxs"
         style="@style/TextViewStandard"
-        android:textSize="14sp"
-        android:paddingRight="@dimen/medium_margin"
-        android:paddingLeft="@dimen/medium_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp"
-        android:layout_marginTop="5dp" />
+        android:paddingLeft="@dimen/medium_margin"
+        android:paddingRight="@dimen/medium_margin"
+        android:screenReaderFocusable="true"
+        android:text="@string/options_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14sp" />
 
     <Button
         android:layout_width="match_parent"
@@ -63,6 +65,7 @@
         android:text="@string/options_content_btn"
         android:id="@+id/buttonOptionsAxs"
         style="@style/BrandButton"
+        android:screenReaderFocusable="true"
         android:layout_marginBottom="@dimen/medium_margin" />
 
     <TextView
@@ -74,6 +77,7 @@
         android:id="@+id/textViewTitleListOptAxs"
         style="@style/TextViewStandard"
         android:textStyle="bold"
+        android:screenReaderFocusable="true"
         android:textSize="18sp"
         android:background="@drawable/border"
         android:gravity="center_vertical"
