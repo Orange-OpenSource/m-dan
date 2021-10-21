@@ -79,7 +79,6 @@ class OrientationViewController: DefaultTableViewController {
             
             buttonCell.button.setTitle("example_orientation_buttonText".localized, for: UIControl.State())
             buttonCell.button.tag                   = (indexPath as NSIndexPath).section // allow to differenciate buttons while preparing for segue
-            buttonCell.button.accessibilityLabel    = (indexPath as NSIndexPath).section == accessibleSection ? "example_horizontalScroll_carousel_buttonLabelAccessible".localized : "example_horizontalScroll_carousel_buttonLabelNonAccessible".localized
             
             return buttonCell
         }
