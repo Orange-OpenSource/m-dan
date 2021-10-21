@@ -53,6 +53,8 @@
 		04ED731C1D76D07600D1247B /* DoubleTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ED731B1D76D07600D1247B /* DoubleTextTableViewCell.swift */; };
 		04FB95501D75E0A2003675D2 /* CALayer+XibConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB954F1D75E0A2003675D2 /* CALayer+XibConfiguration.swift */; };
 		446C9084239AAA3E00C4BEBB /* UIBarButtonItem+Orange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446C9083239AAA3E00C4BEBB /* UIBarButtonItem+Orange.swift */; };
+		6D009D9127183458004612BE /* OrientationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D009D9027183458004612BE /* OrientationViewController.swift */; };
+		6D009D9527183478004612BE /* ExempleOrientation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D009D9427183478004612BE /* ExempleOrientation.storyboard */; };
 		6D4B985A26E17C6900FF505E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B985926E17C6900FF505E /* SceneDelegate.swift */; };
 		6D4B985E26E1DEE500FF505E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D4B985D26E1DEE500FF505E /* LaunchScreen.storyboard */; };
 		6D4B986426E2B9D900FF505E /* VoiceOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B986326E2B9D900FF505E /* VoiceOverViewController.swift */; };
@@ -187,6 +189,8 @@
 		04FB954F1D75E0A2003675D2 /* CALayer+XibConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+XibConfiguration.swift"; sourceTree = "<group>"; };
 		136840CCDDF7B8ADD3926B9E /* Pods_mDAN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mDAN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		446C9083239AAA3E00C4BEBB /* UIBarButtonItem+Orange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Orange.swift"; sourceTree = "<group>"; };
+		6D009D9027183458004612BE /* OrientationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationViewController.swift; sourceTree = "<group>"; };
+		6D009D9427183478004612BE /* ExempleOrientation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExempleOrientation.storyboard; sourceTree = "<group>"; };
 		6D4B985926E17C6900FF505E /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6D4B985D26E1DEE500FF505E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D4B986326E2B9D900FF505E /* VoiceOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceOverViewController.swift; sourceTree = "<group>"; };
@@ -347,6 +351,15 @@
 			name = DevContentHtml;
 			sourceTree = "<group>";
 		};
+		6D009D8F2718342E004612BE /* Orientation */ = {
+			isa = PBXGroup;
+			children = (
+				6D009D9027183458004612BE /* OrientationViewController.swift */,
+				6D009D9427183478004612BE /* ExempleOrientation.storyboard */,
+			);
+			path = Orientation;
+			sourceTree = "<group>";
+		};
 		6D4B986226E2B95500FF505E /* VoiceOver */ = {
 			isa = PBXGroup;
 			children = (
@@ -381,6 +394,7 @@
 				F40CD2121C1F093400546018 /* ContentControl */,
 				F4E9A01F1C280896001858DC /* ContentChange */,
 				F40A503C1C32C4EE00033AD4 /* HorizontalScroll */,
+				6D009D8F2718342E004612BE /* Orientation */,
 				DA9567881C22BAB9002C8233 /* ReadingOrder */,
 				F40A50431C32CFAF00033AD4 /* Language */,
 				6D4B986226E2B95500FF505E /* VoiceOver */,
@@ -777,6 +791,7 @@
 				04CBE4261D01DBAC0041A95D /* textSize_en.html in Resources */,
 				F48AF8D01C04718000CBB44D /* Localizable.strings in Resources */,
 				04CBE41E1D01DA9A0041A95D /* systemEvents_fr.html in Resources */,
+				6D009D9527183478004612BE /* ExempleOrientation.storyboard in Resources */,
 				DAF4EA6A1C2AED5800971CD4 /* DefaultHeaderViewCell.xib in Resources */,
 				04CBE3F61D01CFBF0041A95D /* elementsSemantic_en.html in Resources */,
 				DAFB6C621C15BB2D00D40524 /* ExampleImage.storyboard in Resources */,
@@ -878,6 +893,7 @@
 				DAB832BC1C23228E008E7942 /* TabCustomTableViewCell.swift in Sources */,
 				DA95678E1C22BD1B002C8233 /* RemoteControlTableViewCell.swift in Sources */,
 				F40A503B1C32827C00033AD4 /* OrangeAccessibilityViewController.swift in Sources */,
+				6D009D9127183458004612BE /* OrientationViewController.swift in Sources */,
 				F48BA2341C1730AA00FC39B2 /* ClickZoneSizeViewController.swift in Sources */,
 				DAFCD3B01C2437E60092551A /* UIImage+Orange.swift in Sources */,
 				F4E6EC381C217194008C1FF7 /* ContentControlSlideshowViewController.swift in Sources */,

@@ -940,11 +940,12 @@
                         <segue destination="XNk-V1-B8M" kind="show" identifier="example-language-accent" id="yav-Ym-1pU"/>
                         <segue destination="ilV-FX-Aqg" kind="show" identifier="example-standardcomponents-tab" id="1WP-2i-Xzw"/>
                         <segue destination="T8l-ly-ge9" kind="show" identifier="example-voiceOver-carousel" id="PZ5-0N-WQ4"/>
+                        <segue destination="qmJ-ts-mc3" kind="show" identifier="example-orientation" id="Fzn-Q8-CX0"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dbr-27-yOp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3301.4018691588785" y="-2437.5809935205184"/>
+            <point key="canvasLocation" x="3379" y="-2438"/>
         </scene>
         <!--Example-Image-Info-->
         <scene sceneID="mmg-in-wM0">
@@ -1114,7 +1115,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xt8-KZ-eU1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4247.663551401869" y="-2454.427645788337"/>
+            <point key="canvasLocation" x="4242" y="-2471"/>
         </scene>
         <!--Example-Form-Label-->
         <scene sceneID="tQY-QA-kcH">
@@ -1532,6 +1533,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eap-kv-mTC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4214" y="-2128"/>
+        </scene>
+        <!--Example-Orientation-->
+        <scene sceneID="A2K-jb-j1F">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ExempleOrientation" referencedIdentifier="Example-Orientation" id="qmJ-ts-mc3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="f3e-Rf-2Ak"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oxp-KO-cjn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4202" y="-2425"/>
         </scene>
         <!--Orange Accessibility View Controller-->
         <scene sceneID="zSM-zj-ltt">

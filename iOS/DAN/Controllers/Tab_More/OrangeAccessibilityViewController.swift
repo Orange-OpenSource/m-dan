@@ -30,7 +30,7 @@ class OrangeAccessibilityViewController: UIViewController {
         super.viewDidLoad()
 
         title = "orange_accessibility_nav_title".localized
-//        setupDeclaration()
+        setupDeclaration()
     }
 
     override func didReceiveMemoryWarning() {

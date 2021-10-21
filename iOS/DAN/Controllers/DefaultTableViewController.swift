@@ -91,19 +91,7 @@ class DefaultTableViewController: UITableViewController {
              }
         }
         
-        
-        
         self.navigationController?.navigationBar.tintColor = UIColor.orange_orangeForBlackText()
-        
-//        if #available(iOS 13.0, *) {
-//            if traitCollection.userInterfaceStyle == .dark {
-//                overrideUserInterfaceStyle = .light
-//                navigationController?.navigationBar.barTintColor = UIColor.black
-//                navigationController?.navigationBar.largeTitleTextAttributes = [
-//                    NSAttributedString.Key.foregroundColor: UIColor.black
-//                ]
-//            }
-//        }
     }
     
     internal func reloadTransaction(){
@@ -133,9 +121,6 @@ class DefaultTableViewController: UITableViewController {
     
     // MARK: - TableView Delegate
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-//        let adjustForTabbarInsets: UIEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: self.tabBarController!.tabBar.frame.height, right: 0)
-//        self.tableView.contentInset = adjustForTabbarInsets
-//        self.tableView.scrollIndicatorInsets = adjustForTabbarInsets
         
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -156,8 +141,8 @@ class DefaultTableViewController: UITableViewController {
             header.sizeToFit()
             header.textLabel?.sizeToFit()
             header.textLabel?.lineBreakMode = .byWordWrapping
-//            self.tableView.estimatedSectionHeaderHeight = 50
             self.tableView.sectionHeaderHeight = UITableView.automaticDimension
+            
             
         }
 

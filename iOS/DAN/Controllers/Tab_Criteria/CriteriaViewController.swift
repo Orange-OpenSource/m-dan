@@ -55,6 +55,7 @@ class CriteriaViewController: DefaultTableViewController {
                 "contentControl",
                 "contentChange",
                 "horizontalScroll",
+                "orientation",
                 "form",
                 "readingOrder",
                 "language",

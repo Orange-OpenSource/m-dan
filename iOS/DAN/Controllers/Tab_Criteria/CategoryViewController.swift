@@ -179,6 +179,16 @@ class CategoryViewController: DefaultTableViewController {
             examplesDetail = [
                 "example_horizontalScroll_carousel_shortDescription"
             ]
+            
+        case "orientation":
+            
+            examples = [
+                "example_orientation_title"
+            ]
+            
+            examplesDetail = [
+                "example_orientation_shortDescription"
+            ]
 
             
         case "form":
@@ -386,6 +396,10 @@ class CategoryViewController: DefaultTableViewController {
         case "horizontalScroll":
             if (indexPath as NSIndexPath).row == 0 {
                 self.performSegue(withIdentifier: "example-horizontalScroll-carousel", sender: cell)
+            }
+        case "orientation":
+            if (indexPath as NSIndexPath).row == 0 {
+                self.performSegue(withIdentifier: "example-orientation", sender: cell)
             }
         case "form":
             if (indexPath as NSIndexPath).row == 0 {

@@ -75,6 +75,7 @@
 "criteria_category_contentControl"      = "Content control";
 "criteria_category_contentChange"       = "Changing content";
 "criteria_category_horizontalScroll"    = "Horizontal scroll";
+"criteria_category_orientation"         = "Orientation";
 "criteria_category_form"                = "Form";
 "criteria_category_readingOrder"        = "Reading order";
 "criteria_category_language"            = "Language";
@@ -341,14 +342,26 @@
 "example_horizontalScroll_carousel_description"                 = "Here, the carousel is accessible because it has dots that reflect it has several pages.\nOn the contrary, in the non accessible example, one can think there is only one page.";
 "example_horizontalScroll_carousel_buttonText"                  = "Show carousel";
 "example_horizontalScroll_carousel_accessibleCarousel"          = "Accessible carousel";
-"example_horizontalScroll_carousel_nonAccessibleCarousel"       = "Non accessible carousel";
+"example_horizontalScroll_carousel_nonAccessibleCarousel"       = "No accessible carousel";
 "example_horizontalScroll_carousel_imageLabel1"                 = "Order before the 21th of December and get your gifts before Christmas!";
 "example_horizontalScroll_carousel_imageLabel2"                 = "Deal - Sony Xperia Z3 for 1 euro instead of 69,99€ with the Origami Play 4Go plan, shipped before Christmas if ordered at Orange.fr before the 21th of December 2015 midi, deal valid from the 14th to the 20th of December 2015 included";
 "example_horizontalScroll_carousel_imageLabel3"                 = "Deal - one free month on the Origami Play 4Go plan for any new subscription to Origami Play 4Go plan with 24-month engagement with the promo code PLAY4, deal valid from the 14th to the 20th of December 2015 included";
 "example_horizontalScroll_carousel_buttonLabelAccessible"       = "Show accessible carousel";
 "example_horizontalScroll_carousel_buttonLabelNonAccessible"    = "Show non accessible carousel";
 
+// ----------------------------
+// Examples - Orientation
+// ----------------------------
+"criteria_category_orientation_whatFor"   = "A horizontal scroll can be very difficult to detect if no visual feedback is displayed to help the user understand that there are several pages.";
+"criteria_category_orientation_howTo"     = "Do not hesitate to display a view to indicate a horizontal scroll (\"dots\" for example). When necessary, also add \"next\" and \"previous\" buttons.";
 
+// Examples - Orientation -> Turn
+"example_orientation_title"                       = "Orientation";
+"example_orientation_shortDescription"            = "Show that we can perform horizontal orientation";
+"example_orientation_description"                 = "Here, the button is accessible because the graphic elements are well managed with the constraints.\nOn the contrary, in the non accessible example, we can think that the button has no constraints.";
+"example_orientation_buttonText"                  = "T";
+"example_orientation_accessible"                  = "Accessible orientation";
+"example_orientation_carousel_nonAccessible"      = "Non accessible orientation";
 // ----------------
 // Examples - Form
 // ----------------
