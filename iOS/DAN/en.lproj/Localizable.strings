@@ -333,7 +333,7 @@
 // ----------------------------
 // Examples - Horizontal Scroll
 // ----------------------------
-"criteria_category_horizontalScroll_whatFor"   = "A horizontal scroll can be very difficult to detect if no visual feedback is displayed to help the user understand that there are several pages.";
+"criteria_category_horizontalScroll_whatFor"   = "Poor management of constraints when designing the screen can cause problems when you want to use the application in landscape mode.";
 "criteria_category_horizontalScroll_howTo"     = "Do not hesitate to display a view to indicate a horizontal scroll (\"dots\" for example). When necessary, also add \"next\" and \"previous\" buttons.";
 
 // Examples - Horizontal Scroll -> Carousel
@@ -353,7 +353,7 @@
 // Examples - Orientation
 // ----------------------------
 "criteria_category_orientation_whatFor"   = "A horizontal scroll can be very difficult to detect if no visual feedback is displayed to help the user understand that there are several pages.";
-"criteria_category_orientation_howTo"     = "Do not hesitate to display a view to indicate a horizontal scroll (\"dots\" for example). When necessary, also add \"next\" and \"previous\" buttons.";
+"criteria_category_orientation_howTo"     = "Do not hesitate to use constraints or UIStackView so that the elements fit correctly. \ N \ nFor a perfect optimization it is possible to use size classes when necessary";
 
 // Examples - Orientation -> Turn
 "example_orientation_title"                       = "Orientation";

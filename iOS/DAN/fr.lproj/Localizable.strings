@@ -353,8 +353,8 @@
 // ----------------------------
 // Examples - Orientation
 // ----------------------------
-"criteria_category_orientation_whatFor"   = "Un scroll horizontal peut être très difficile à détecter si aucun visuel n'aide l'utilisateur à comprendre qu'il existe plusieurs pages.";
-"criteria_category_orientation_howTo"     = "Ne pas hésiter à afficher un élément pour indiquer un scroll horizontal (des \"points\" par exemple).\n\nQuand cela est nécessaire, ajouter également des boutons \"suivant\" et \"précédent\".";
+"criteria_category_orientation_whatFor"   = "Une mauvaise gestion des contraintes lors de la conception de l'écran peut provoquer des problèmes  lorsque l'on souhaite utiliser l'application en mode paysage.";
+"criteria_category_orientation_howTo"     = "Ne pas hésiter à utiliser les contraintes ou les UIStackView pour que les élements s'adaptent correctement.\n\nPour une optimisation parfaite il est possible d'utiliser les sizes classes quand cela est nécessaire.";
 
 // Examples - Orientation -> Turn
 "example_orientation_title"                       = "Orientation";
