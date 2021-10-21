@@ -43,6 +43,7 @@
         android:text="@string/criteria_description_title"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#000000"
+        android:screenReaderFocusable="true"
         android:textSize="18sp"
         android:textStyle="bold"
         android:background="@drawable/border"
@@ -55,6 +56,7 @@
         android:layout_height="wrap_content"
         android:paddingBottom="10dp"
         android:padding="@dimen/large_margin"
+        android:screenReaderFocusable="true"
         android:text="@string/criteria_description_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="#333333"
@@ -71,6 +73,7 @@
         android:text="@string/criteria_description_content2"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@color/red"
+        android:screenReaderFocusable="true"
         android:textSize="14sp"/>
 
     <TextView
@@ -81,6 +84,7 @@
         android:minHeight="45dp"
         android:contentDescription="@string/criteria_cd_sections"
         android:paddingEnd="@dimen/large_margin"
+        android:screenReaderFocusable="true"
         android:paddingStart="@dimen/large_margin"
         android:text="@string/criteria_sections"
         android:textAppearance="?android:attr/textAppearanceSmall"

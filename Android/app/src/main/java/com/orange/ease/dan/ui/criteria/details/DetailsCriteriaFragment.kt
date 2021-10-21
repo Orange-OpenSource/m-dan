@@ -68,6 +68,7 @@ class DetailsCriteriaFragment: Fragment(), ListRecyclerViewAdapter.ListRecyclerV
         super.onResume()
         viewModel.criteria?.let {
             (activity as AppCompatActivity).supportActionBar?.title = getString(it.resTitle)
+            (activity as AppCompatActivity).title = getString(it.resTitle)
         }
         (mContext as FragmentManagerActivity).setMenuActionVisibility(false)
     }

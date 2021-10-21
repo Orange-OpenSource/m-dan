@@ -73,6 +73,7 @@ class DetailsDevGuideActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         supportActionBar?.title = viewModel.guide?.let { getString(it.resTitle) }
+        title = viewModel.guide?.let { getString(it.resTitle) }
     }
 }
 

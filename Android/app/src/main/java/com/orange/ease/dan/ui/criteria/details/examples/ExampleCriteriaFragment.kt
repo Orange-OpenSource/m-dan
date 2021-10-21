@@ -79,6 +79,7 @@ class ExampleCriteriaFragment: Fragment() {
             val currentExampleCount = (viewModel.criteria?.exampleList?.indexOf(it) ?: 0) + 1
             val title = if (it.detailsExample.hasEmptyTitle()) "" else (getString(R.string.example) + " $currentExampleCount/$examplesCount")
             (activity as AppCompatActivity).supportActionBar?.title = title
+            (activity as AppCompatActivity).title = getString(R.string.example)
 
             val useOption = it.detailsExample.useOption()
             val optionVisibility =  if (useOption) View.VISIBLE else View.GONE
