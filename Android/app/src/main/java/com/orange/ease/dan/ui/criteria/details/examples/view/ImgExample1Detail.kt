@@ -20,41 +20,61 @@
 package com.orange.ease.dan.ui.criteria.details.examples.view
 
 import android.content.Context
-import android.os.Build
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
+import android.widget.FrameLayout
+import android.widget.ImageView
 import android.widget.LinearLayout
 import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 
-class ImgExemple2Detail: AccessibilityDetailsExample() {
+class ImgExample1Detail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
-        val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val accessibleView = inflater.inflate(R.layout.eximg2_tuile, null) as LinearLayout
-        val axsYes = accessibleView.findViewById<View>(R.id.imageView6)
-        axsYes.contentDescription = ""
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-            axsYes.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_NO
-        }
-        return accessibleView
+       // Commons params for ImageView
+        val params = FrameLayout.LayoutParams(
+            FrameLayout.LayoutParams.WRAP_CONTENT,
+            FrameLayout.LayoutParams.WRAP_CONTENT
+        )
+        params.gravity = Gravity.CENTER_HORIZONTAL or Gravity.TOP
+
+        // Accessible ImageView
+        val accessibleImageView = ImageView(context)
+        accessibleImageView.adjustViewBounds = true
+        accessibleImageView.contentDescription = context.getString(R.string.criteria_img_ex1_cd_image)
+        accessibleImageView.layoutParams = params
+        accessibleImageView.setImageResource(R.drawable.exampleimg)
+
+        return accessibleImageView
     }
 
     override fun getNotAccessibleExample(context: Context): View {
-        val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val notAccessibleView = inflater.inflate(R.layout.eximg2_tuile, null) as LinearLayout
-        return notAccessibleView
+        // Commons params for ImageView
+        val params = FrameLayout.LayoutParams(
+            FrameLayout.LayoutParams.WRAP_CONTENT,
+            FrameLayout.LayoutParams.WRAP_CONTENT
+        )
+        params.gravity = Gravity.CENTER_HORIZONTAL or Gravity.TOP
+
+
+        // Not accessible ImageView
+        val notAccessibleImageView = ImageView(context)
+        notAccessibleImageView.layoutParams = params
+        notAccessibleImageView.adjustViewBounds = true
+        notAccessibleImageView.setImageResource(R.drawable.exampleimg)
+        return notAccessibleImageView
     }
 
     override fun getTitleRessource(context: Context): String {
-        return context.getString(R.string.criteria_img_ex2_title)
+        return context.getString(R.string.criteria_img_ex1_title)
     }
 
     override fun getCellNameRessource(context: Context): String {
-        return context.resources.getStringArray(R.array.criteria_img_list)[1]
+        return context.resources.getStringArray(R.array.criteria_img_list)[0]
     }
 
     override fun getDescriptionRessource(context: Context): String {
-        return context.getString(R.string.criteria_img_ex2_description)
+        return context.getString(R.string.criteria_img_ex1_description)
     }
 
     override fun useOption(): Boolean {

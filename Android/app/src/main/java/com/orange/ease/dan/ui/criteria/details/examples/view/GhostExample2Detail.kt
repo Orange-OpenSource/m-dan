@@ -28,14 +28,14 @@ import androidx.fragment.app.Fragment
 import com.orange.ease.dan.databinding.Exghost11FragBinding
 import com.orange.ease.dan.navigation.FragmentManagerActivity
 
-class GhostExemple2Detail: Fragment() {
+class GhostExample2Detail: Fragment() {
 
     private lateinit var binding: Exghost11FragBinding
     private lateinit var mContext : Context
     private var mContent: String = ""
 
     companion object {
-        fun newInstance() = GhostExemple2Detail()
+        fun newInstance() = GhostExample2Detail()
     }
 
     override fun onCreateView(

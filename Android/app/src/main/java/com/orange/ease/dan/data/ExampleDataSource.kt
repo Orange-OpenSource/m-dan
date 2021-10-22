@@ -27,106 +27,106 @@ import com.orange.ease.dan.ui.criteria.details.examples.view.*
 object ExampleDataSource {
 
     val exampleChangeContent : Example by lazy {
-        Example(resTitle = R.string.criteria_contentchange_item1, detailsExample = ChangeContentExempleDetail())
+        Example(resTitle = R.string.criteria_contentchange_item1, detailsExample = ChangeContentExampleDetail())
     }
     val exampleClickZone : Example by lazy {
-        Example(resTitle = R.string.criteria_clickarea_item1, detailsExample = ClickZoneExempleDetail())
+        Example(resTitle = R.string.criteria_clickarea_item1, detailsExample = ClickZoneExampleDetail())
     }
     val exampleColor1 : Example by lazy {
-        Example(resTitle = R.string.criteria_color_item1, detailsExample = ColorExemple1Detail())
+        Example(resTitle = R.string.criteria_color_item1, detailsExample = ColorExample1Detail())
     }
     val exampleColor2 : Example by lazy {
-        Example(resTitle = R.string.criteria_color_item2, detailsExample = ColorExemple2Detail())
+        Example(resTitle = R.string.criteria_color_item2, detailsExample = ColorExample2Detail())
     }
     val exampleControlContent1 : Example by lazy {
-        Example(resTitle = R.string.criteria_contentcontrol_item1, detailsExample = ControlContentExemple1Detail())
+        Example(resTitle = R.string.criteria_contentcontrol_item1, detailsExample = ControlContentExample1Detail())
     }
     val exampleControlContent2 : Example by lazy {
-        Example(resTitle = R.string.criteria_contentcontrol_item2, detailsExample = ControlContentExemple2Detail())
+        Example(resTitle = R.string.criteria_contentcontrol_item2, detailsExample = ControlContentExample2Detail())
     }
     val exampleControlContent3 : Example by lazy {
-        Example(resTitle = R.string.criteria_timetotakeaction_title, detailsExample = TimeTakeActionExempleDetail(), apiVersion = Build.VERSION_CODES.Q)
+        Example(resTitle = R.string.criteria_timetotakeaction_title, detailsExample = TimeTakeActionExampleDetail(), apiVersion = Build.VERSION_CODES.Q)
     }
     val exampleFocusNav : Example by lazy {
-        Example(resTitle = R.string.criteria_focusnav_item1, detailsExample = FocusNavExempleDetail())
+        Example(resTitle = R.string.criteria_focusnav_item1, detailsExample = FocusNavExampleDetail())
     }
     val exampleFocusColor : Example by lazy {
-        Example(resTitle = R.string.example_focus_color_title, detailsExample = FocusColorExempleDetail())
+        Example(resTitle = R.string.example_focus_color_title, detailsExample = FocusColorExampleDetail())
     }
     val exampleGhost : Example by lazy {
         Example(resTitle = R.string.criteria_ghostelement_item1, detailsExample = GhostExempleDetail())
     }
     val exampleImage1 : Example by lazy {
-        Example(resTitle = R.string.criteria_img_item1, detailsExample = ImgExemple1Detail())
+        Example(resTitle = R.string.criteria_img_item1, detailsExample = ImgExample1Detail())
     }
     val exampleImage2 : Example by lazy {
-        Example(resTitle = R.string.criteria_img_item2, detailsExample = ImgExemple2Detail())
+        Example(resTitle = R.string.criteria_img_item2, detailsExample = ImgExample2Detail())
     }
     val exampleImage3 : Example by lazy {
-        Example(resTitle = R.string.criteria_img_item3, detailsExample = ImgExemple3Detail())
+        Example(resTitle = R.string.criteria_img_item3, detailsExample = ImgExample3Detail())
     }
 
     val exampleAlt1 : Example by lazy {
-        Example(resTitle = R.string.criteria_alt_item1, detailsExample = ImgExemple3Detail())
+        Example(resTitle = R.string.criteria_alt_item1, detailsExample = ImgExample3Detail())
     }
     val exampleAlt2 : Example by lazy {
-        Example(resTitle = R.string.criteria_alt_item2, detailsExample = StateElementsExempleDetail())
+        Example(resTitle = R.string.criteria_alt_item2, detailsExample = StateElementsExampleDetail())
     }
 
     val exampleReadOrder : Example by lazy {
-        Example(resTitle = R.string.criteria_readorder_item1, detailsExample = ReadOrderExempleDetail())
+        Example(resTitle = R.string.criteria_readorder_item1, detailsExample = ReadOrderExampleDetail())
     }
     val exampleScroll : Example by lazy {
-        Example(resTitle = R.string.criteria_scroll_item1, detailsExample = ScrollExempleDetail())
+        Example(resTitle = R.string.criteria_scroll_item1, detailsExample = ScrollExampleDetail())
     }
     val exampleTextSize : Example by lazy {
-        Example(resTitle = R.string.criteria_textsize_item1, detailsExample = TextSizeExempleDetail())
+        Example(resTitle = R.string.criteria_textsize_item1, detailsExample = TextSizeExampleDetail())
     }
     val exampleTextReadability : Example by lazy {
-        Example(resTitle = R.string.criteria_textsize_item2, detailsExample = TextReadabilityExempleDetail())
+        Example(resTitle = R.string.criteria_textsize_item2, detailsExample = TextReadabilityExampleDetail())
     }
     val exampleStandardComponent1 : Example by lazy {
-        Example(resTitle = R.string.criteria_standardcomponent_title, detailsExample = StandardComponentExempleDetail())
+        Example(resTitle = R.string.criteria_standardcomponent_title, detailsExample = StandardComponentExampleDetail())
     }
     val exampleStandardComponent2 : Example by lazy {
-        Example(resTitle = R.string.criteria_standardcomponent_ex2_title, detailsExample = StandardComponent2ExempleDetail())
+        Example(resTitle = R.string.criteria_standardcomponent_ex2_title, detailsExample = StandardComponent2ExampleDetail())
     }
     val exampleStateElements1 : Example by lazy {
-        Example(resTitle = R.string.criteria_stateelement_item1, detailsExample = StateElementsExempleDetail())
+        Example(resTitle = R.string.criteria_stateelement_item1, detailsExample = StateElementsExampleDetail())
     }
     val exampleStateElements2 : Example by lazy {
-        Example(resTitle = R.string.criteria_stateelement_item2, detailsExample = StateElementsExemple2Detail())
+        Example(resTitle = R.string.criteria_stateelement_item2, detailsExample = StateElementsExample2Detail())
     }
     val exampleStateElements3 : Example by lazy {
-        Example(resTitle = R.string.criteria_stateelement_item3, detailsExample = StateElementsExemple3Detail())
+        Example(resTitle = R.string.criteria_stateelement_item3, detailsExample = StateElementsExample3Detail())
     }
     val exampleTitle : Example by lazy {
-        Example(resTitle = R.string.criteria_title_item1, detailsExample = TitleExempleDetail())
+        Example(resTitle = R.string.criteria_title_item1, detailsExample = TitleExampleDetail())
     }
     val exampleText1 : Example by lazy {
-        Example(resTitle = R.string.criteria_alt_item4, detailsExample = Text1ExempleDetail())
+        Example(resTitle = R.string.criteria_alt_item4, detailsExample = Text1ExampleDetail())
     }
     val exampleText2 : Example by lazy {
-        Example(resTitle = R.string.criteria_alt_item5, detailsExample = Text2ExempleDetail())
+        Example(resTitle = R.string.criteria_alt_item5, detailsExample = Text2ExampleDetail())
     }
     val exampleText3 : Example by lazy {
-        Example(resTitle = R.string.criteria_alt_item6, detailsExample = Text3ExempleDetail())
+        Example(resTitle = R.string.criteria_alt_item6, detailsExample = Text3ExampleDetail())
     }
     val exampleGroup : Example by lazy {
-        Example(resTitle = R.string.criteria_alt_item7, detailsExample = GroupExempleDetail())
+        Example(resTitle = R.string.criteria_alt_item7, detailsExample = GroupExampleDetail())
     }
     val exampleHeading : Example by lazy {
-        Example(resTitle = R.string.criteria_alt_item8, detailsExample = HeadingExempleDetail(), apiVersion = Build.VERSION_CODES.P)
+        Example(resTitle = R.string.criteria_alt_item8, detailsExample = HeadingExampleDetail(), apiVersion = Build.VERSION_CODES.P)
     }
 
     val exampleForm : Example by lazy {
-        Example(resTitle = R.string.criteria_form_item1, detailsExample = FormExempleDetail())
+        Example(resTitle = R.string.criteria_form_item1, detailsExample = FormExampleDetail())
     }
     val exampleFormError : Example by lazy {
-        Example(resTitle = R.string.criteria_form_item2, detailsExample = FormErrorExempleDetail())
+        Example(resTitle = R.string.criteria_form_item2, detailsExample = FormErrorExampleDetail())
     }
 
     val exampleAlt3 : Example by lazy {
-        Example(resTitle = R.string.criteria_alt_item3, detailsExample = FormExempleDetail())
+        Example(resTitle = R.string.criteria_alt_item3, detailsExample = FormExampleDetail())
     }
 }

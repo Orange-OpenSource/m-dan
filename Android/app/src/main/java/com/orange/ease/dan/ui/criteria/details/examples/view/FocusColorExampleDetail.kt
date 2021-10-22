@@ -20,40 +20,37 @@
 package com.orange.ease.dan.ui.criteria.details.examples.view
 
 import android.content.Context
-import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
-import android.widget.TextView
-import androidx.annotation.RequiresApi
+import android.widget.Button
 import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 
-class HeadingExempleDetail: AccessibilityDetailsExample() {
+class FocusColorExampleDetail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        return inflater.inflate(R.layout.headings_example, null)
+        val accessibleView = inflater.inflate(R.layout.buttongeneric, null)
+        accessibleView.findViewById<Button>(R.id.btngeneric).text = context.getString(R.string.criteria_accessible_example)
+        return accessibleView
     }
 
-    @RequiresApi(Build.VERSION_CODES.P)
     override fun getNotAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val notAccessibleView = inflater.inflate(R.layout.headings_example, null)
-        notAccessibleView.findViewById<TextView>(R.id.section1).isAccessibilityHeading = false
-        notAccessibleView.findViewById<TextView>(R.id.section2).isAccessibilityHeading = false
-        notAccessibleView.findViewById<TextView>(R.id.section3).isAccessibilityHeading = false
+        val notAccessibleView = inflater.inflate(R.layout.button_no_focused, null)
+        notAccessibleView.findViewById<Button>(R.id.btngeneric).text = context.getString(R.string.criteria_not_accessible_example)
         return notAccessibleView
     }
 
     override fun getTitleRessource(context: Context): String {
-        return context.getString(R.string.example_headings_title)
+        return context.getString(R.string.example_focus_color_title)
     }
 
     override fun getCellNameRessource(context: Context): String {
-        return context.getString(R.string.example_headings_title)
+        return context.getString(R.string.example_focus_color_title)
     }
 
     override fun getDescriptionRessource(context: Context): String {
-        return context.getString(R.string.example_headings_desc)
+        return context.getString(R.string.example_focus_color_desc)
     }
 
     override fun useOption(): Boolean {
@@ -61,7 +58,7 @@ class HeadingExempleDetail: AccessibilityDetailsExample() {
     }
 
     override fun getOptionRessource(context: Context): String? {
-        return context.getString(R.string.criteria_template_option_tb)
+        return context.getString(R.string.criteria_template_option_focus)
     }
 }
 

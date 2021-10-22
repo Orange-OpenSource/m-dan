@@ -20,22 +20,18 @@
 package com.orange.ease.dan.ui.criteria.details.examples.view
 
 import android.content.Context
-import android.os.Build
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
-import android.view.accessibility.AccessibilityManager
 import android.widget.Button
 import android.widget.LinearLayout
-import android.widget.Toast
-import androidx.annotation.RequiresApi
-import com.google.android.material.snackbar.Snackbar
+import androidx.fragment.app.Fragment
 import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
+import com.orange.ease.dan.navigation.FragmentManagerActivity
+import com.orange.ease.dan.ui.criteria.details.examples.pager.ViewPagerFragment
 
-
-class TimeTakeActionExempleDetail: AccessibilityDetailsExample() {
-
-    @RequiresApi(Build.VERSION_CODES.Q)
+class ControlContentExample1Detail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val accessibleView = inflater.inflate(R.layout.buttongeneric, null) as LinearLayout
@@ -43,20 +39,14 @@ class TimeTakeActionExempleDetail: AccessibilityDetailsExample() {
         val btnYes = accessibleView.findViewById<Button>(R.id.btngeneric)
         btnYes.text = context.getString(R.string.axsactivated)
         btnYes.setOnClickListener {
-            val accessibilityManager = context.getSystemService(Context.ACCESSIBILITY_SERVICE) as
-                    android.view.accessibility.AccessibilityManager
-            val snackbar = Snackbar
-                .make(accessibleView, R.string.snackbar_title_take_action, accessibilityManager.getRecommendedTimeoutMillis(2000, AccessibilityManager.FLAG_CONTENT_CONTROLS))
-                .setAction(R.string.snackbar_button_take_action) { // Show another Snackbar.
-                    val toaster =
-                        Toast.makeText(context, R.string.toast_message_take_action, accessibilityManager.getRecommendedTimeoutMillis(2000, AccessibilityManager.FLAG_CONTENT_TEXT))
-                    toaster.show()
-                }
-                .setBackgroundTint(context.resources.getColor(R.color.primary_dark))
-                .setActionTextColor(context.resources.getColor(R.color.accent))
-                .setTextColor(context.resources.getColor(R.color.white))
+            val myPagerFragment: Fragment = ViewPagerFragment()
+            val args = Bundle()
+            args.putBoolean(ViewPagerFragment.IS_ACCESSIBLE, true)
+            myPagerFragment.arguments = args
 
-            snackbar.show()
+            (context as FragmentManagerActivity?)?.let {
+                it.updateSpecificFragment(myPagerFragment)
+            }
         }
         return accessibleView
     }
@@ -68,31 +58,27 @@ class TimeTakeActionExempleDetail: AccessibilityDetailsExample() {
         val btnNo = notAccessibleView.findViewById<Button>(R.id.btngeneric)
         btnNo.text = context.getString(R.string.axsdisabled)
         btnNo.setOnClickListener {
-            val snackbar = Snackbar
-                .make(notAccessibleView, R.string.snackbar_title_not_take_action, 2000)
-                .setAction(R.string.snackbar_button_take_action) { // Show another Snackbar.
-                    val toaster =
-                        Toast.makeText(context, R.string.toast_message_take_action, Toast.LENGTH_SHORT)
-                    toaster.show()
-                }
-                .setBackgroundTint(context.resources.getColor(R.color.primary_dark))
-                .setActionTextColor(context.resources.getColor(R.color.accent))
-                .setTextColor(context.resources.getColor(R.color.white))
-            snackbar.show()
+            val myPagerFragment: Fragment = ViewPagerFragment()
+            val args = Bundle()
+            args.putBoolean(ViewPagerFragment.IS_ACCESSIBLE, false)
+            myPagerFragment.arguments = args
+            (context as FragmentManagerActivity?)?.let {
+                it.updateSpecificFragment(myPagerFragment)
+            }
         }
         return notAccessibleView
     }
 
     override fun getTitleRessource(context: Context): String {
-        return context.getString(R.string.criteria_timetotakeaction_title)
+        return context.getString(R.string.criteria_contentcontrol_ex1_title)
     }
 
     override fun getCellNameRessource(context: Context): String {
-        return context.getString(R.string.criteria_timetotakeaction_cell)
+        return context.resources.getStringArray(R.array.criteria_contentcontrol_list)[0]
     }
 
     override fun getDescriptionRessource(context: Context): String {
-        return context.getString(R.string.criteria_timetotakeaction_description)
+        return context.getString(R.string.criteria_contentcontrol_ex1_description)
     }
 
     override fun useOption(): Boolean {
@@ -100,7 +86,7 @@ class TimeTakeActionExempleDetail: AccessibilityDetailsExample() {
     }
 
     override fun getOptionRessource(context: Context): String? {
-        return context.getString(R.string.options_timetotakeaction_title)
+        return context.getString(R.string.criteria_template_option_tb)
     }
 }
 

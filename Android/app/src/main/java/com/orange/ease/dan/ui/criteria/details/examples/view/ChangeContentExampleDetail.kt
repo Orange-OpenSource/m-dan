@@ -30,7 +30,7 @@ import android.widget.TextView
 import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 
-class ChangeContentExempleDetail: AccessibilityDetailsExample() {
+class ChangeContentExampleDetail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
