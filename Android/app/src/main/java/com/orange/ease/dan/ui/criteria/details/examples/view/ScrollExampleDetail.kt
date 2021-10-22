@@ -29,57 +29,57 @@ import androidx.fragment.app.Fragment
 import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 import com.orange.ease.dan.navigation.FragmentManagerActivity
-import com.orange.ease.dan.ui.criteria.details.examples.pager.ViewPagerDiapoFragment
+import com.orange.ease.dan.ui.criteria.details.examples.pager.ViewPagerFragment
 
-class ControlContentExemple2Detail: AccessibilityDetailsExample() {
+class ScrollExampleDetail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val accessibleView = inflater.inflate(R.layout.buttongeneric, null) as LinearLayout
 
         val btnYes = accessibleView.findViewById<Button>(R.id.btngeneric)
         btnYes.text = context.getString(R.string.axsactivated)
-
         btnYes.setOnClickListener {
-            val myDiapoFragment: Fragment = ViewPagerDiapoFragment()
+            val myPagerFragment: Fragment = ViewPagerFragment()
             val args = Bundle()
-            args.putBoolean(ViewPagerDiapoFragment.IS_ACCESSIBLE, true)
-            myDiapoFragment.arguments = args
+            args.putBoolean(ViewPagerFragment.IS_ACCESSIBLE, true)
+            myPagerFragment.arguments = args
             (context as FragmentManagerActivity?)?.let {
-                it.updateSpecificFragment(myDiapoFragment)
+                it.updateSpecificFragment(myPagerFragment)
             }
         }
         return accessibleView
     }
 
     override fun getNotAccessibleExample(context: Context): View {
-        val inflater =
-            context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+        val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val notAccessibleView = inflater.inflate(R.layout.buttongeneric, null) as LinearLayout
 
         val btnNo = notAccessibleView.findViewById<Button>(R.id.btngeneric)
         btnNo.text = context.getString(R.string.axsdisabled)
+
         btnNo.setOnClickListener {
-            val myDiapoFragment: Fragment = ViewPagerDiapoFragment()
+            val myPagerFragment: Fragment = ViewPagerFragment()
             val args = Bundle()
-            args.putBoolean(ViewPagerDiapoFragment.IS_ACCESSIBLE, false)
-            myDiapoFragment.arguments = args
+            args.putBoolean(ViewPagerFragment.IS_ACCESSIBLE, false)
+            args.putBoolean(ViewPagerFragment.IS_SCROLLEX, true)
+            myPagerFragment.arguments = args
             (context as FragmentManagerActivity?)?.let {
-                it.updateSpecificFragment(myDiapoFragment)
+                it.updateSpecificFragment(myPagerFragment)
             }
         }
         return notAccessibleView
     }
 
     override fun getTitleRessource(context: Context): String {
-        return context.getString(R.string.criteria_contentcontrol_ex2_title)
+        return context.getString(R.string.criteria_scroll_ex1_title)
     }
 
     override fun getCellNameRessource(context: Context): String {
-        return context.resources.getStringArray(R.array.criteria_contentcontrol_list)[1]
+        return context.resources.getStringArray(R.array.criteria_scroll_list)[0]
     }
 
     override fun getDescriptionRessource(context: Context): String {
-        return context.getString(R.string.criteria_contentcontrol_ex2_description)
+        return context.getString(R.string.criteria_scroll_ex1_description)
     }
 
     override fun useOption(): Boolean {
@@ -89,7 +89,6 @@ class ControlContentExemple2Detail: AccessibilityDetailsExample() {
     override fun getOptionRessource(context: Context): String? {
         return context.getString(R.string.criteria_template_option_tb)
     }
-
 }
 
 

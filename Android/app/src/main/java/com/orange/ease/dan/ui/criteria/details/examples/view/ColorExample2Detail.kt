@@ -30,7 +30,7 @@ import androidx.core.content.ContextCompat
 import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 
-class ColorExemple2Detail: AccessibilityDetailsExample() {
+class ColorExample2Detail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val myViewAxsYes = inflater.inflate(R.layout.excolor2_frag, null) as LinearLayout

@@ -22,42 +22,30 @@ package com.orange.ease.dan.ui.criteria.details.examples.view
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.LinearLayout
 import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 
-class FormErrorExempleDetail: AccessibilityDetailsExample() {
+class GroupExampleDetail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val accessibleView = inflater.inflate(R.layout.exform_error_frag, null) as LinearLayout
-
-        val buttonValidate = accessibleView.findViewById<Button>(R.id.validate_form)
-        val textField = accessibleView.findViewById<EditText>(R.id.name_textfield)
-        buttonValidate.setOnClickListener { v ->
-            if (textField.length() == 0) {
-                textField.error = "Name is mandatory"
-            }
-        }
-        return accessibleView
+        return inflater.inflate(R.layout.grouped_elements, null)
     }
 
     override fun getNotAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        return inflater.inflate(R.layout.exform_error_frag, null)
+        return inflater.inflate(R.layout.ungrouped_elements, null)
     }
 
     override fun getTitleRessource(context: Context): String {
-        return context.getString(R.string.criteria_form_ex2_title)
+        return context.getString(R.string.example_group_title)
     }
 
     override fun getCellNameRessource(context: Context): String {
-        return context.getString(R.string.criteria_form_item2)
+        return context.getString(R.string.example_group_title)
     }
 
     override fun getDescriptionRessource(context: Context): String {
-        return context.getString(R.string.criteria_form_ex2_description)
+        return context.getString(R.string.example_group_desc)
     }
 
     override fun useOption(): Boolean {

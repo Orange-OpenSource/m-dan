@@ -30,7 +30,7 @@ import com.orange.ease.dan.adapter.ArrayAdapterWithCD
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 import com.orange.ease.dan.view.NonScrollableListView
 
-class StateElementsExemple2Detail: AccessibilityDetailsExample() {
+class StateElementsExample2Detail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val scale: Float = context.resources.displayMetrics.density
         val dpAsPixels = (15 * scale + 0.5f).toInt() //padding de 15dp

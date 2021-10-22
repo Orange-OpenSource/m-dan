@@ -22,39 +22,42 @@ package com.orange.ease.dan.ui.criteria.details.examples.view
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
+import android.widget.Button
+import android.widget.EditText
 import android.widget.LinearLayout
-import android.widget.TextView
 import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 
-class TextSizeExempleDetail: AccessibilityDetailsExample() {
+class FormErrorExampleDetail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val accessibleView = inflater.inflate(R.layout.exsizetxt1_frag, null) as LinearLayout
+        val accessibleView = inflater.inflate(R.layout.exform_error_frag, null) as LinearLayout
 
-        val tvNo = accessibleView.findViewById<TextView>(R.id.textView34)
-        accessibleView.removeView(tvNo)
+        val buttonValidate = accessibleView.findViewById<Button>(R.id.validate_form)
+        val textField = accessibleView.findViewById<EditText>(R.id.name_textfield)
+        buttonValidate.setOnClickListener { v ->
+            if (textField.length() == 0) {
+                textField.error = "Name is mandatory"
+            }
+        }
         return accessibleView
     }
 
     override fun getNotAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val notAccessibleView = inflater.inflate(R.layout.exsizetxt1_frag, null) as LinearLayout
-
-        notAccessibleView.removeView(notAccessibleView.findViewById(R.id.textView33))
-        return notAccessibleView
+        return inflater.inflate(R.layout.exform_error_frag, null)
     }
 
     override fun getTitleRessource(context: Context): String {
-        return context.getString(R.string.criteria_textsize_title)
+        return context.getString(R.string.criteria_form_ex2_title)
     }
 
     override fun getCellNameRessource(context: Context): String {
-        return context.resources.getStringArray(R.array.criteria_textsize_list)[0]
+        return context.getString(R.string.criteria_form_item2)
     }
 
     override fun getDescriptionRessource(context: Context): String {
-        return context.getString(R.string.criteria_textsize_ex1_description)
+        return context.getString(R.string.criteria_form_ex2_description)
     }
 
     override fun useOption(): Boolean {
@@ -62,7 +65,7 @@ class TextSizeExempleDetail: AccessibilityDetailsExample() {
     }
 
     override fun getOptionRessource(context: Context): String? {
-        return context.getString(R.string.criteria_template_option_largetext)
+        return context.getString(R.string.criteria_template_option_tb)
     }
 }
 

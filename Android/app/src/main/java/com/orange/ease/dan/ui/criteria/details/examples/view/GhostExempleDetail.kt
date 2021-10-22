@@ -37,7 +37,7 @@ class GhostExempleDetail: AccessibilityDetailsExample() {
         val btnYes = accessibleView.findViewById<Button>(R.id.btngeneric)
         btnYes.text = context.getString(R.string.axsactivated)
         btnYes.setOnClickListener {
-            val accessibleGhostFragment = GhostExemple2Detail()
+            val accessibleGhostFragment = GhostExample2Detail()
             val accessibleGhostFragmentBundle = Bundle()
             accessibleGhostFragmentBundle.putString(
                 "content",
@@ -58,7 +58,7 @@ class GhostExempleDetail: AccessibilityDetailsExample() {
         val btnNo = notAccessibleView.findViewById<Button>(R.id.btngeneric)
         btnNo.text = context.getString(R.string.axsdisabled)
         btnNo.setOnClickListener {
-            val notAccessibleGhostFragment = GhostExemple2Detail()
+            val notAccessibleGhostFragment = GhostExample2Detail()
             val notAccessibleGhostFragmentBundle = Bundle()
             notAccessibleGhostFragmentBundle.putString(
                 "content",

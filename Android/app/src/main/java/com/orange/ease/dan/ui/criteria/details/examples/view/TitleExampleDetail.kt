@@ -30,7 +30,7 @@ import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 import com.orange.ease.dan.ui.criteria.details.examples.ExampleCriteriaFragment
 
-class TitleExempleDetail: AccessibilityDetailsExample() {
+class TitleExampleDetail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val texteExampleAccessible = TextView(context)
         texteExampleAccessible.text = context.getString(R.string.criteria_title_ex1_axs)

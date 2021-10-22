@@ -20,55 +20,68 @@
 package com.orange.ease.dan.ui.criteria.details.examples.view
 
 import android.content.Context
-import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
-import android.widget.ImageButton
 import android.widget.LinearLayout
+import android.widget.TextView
 import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
-import com.readystatesoftware.viewbadger.BadgeView
+import java.text.SimpleDateFormat
 import java.util.*
 
-class Text2ExempleDetail: AccessibilityDetailsExample() {
+class Text1ExampleDetail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val accessibleView = inflater.inflate(R.layout.extxt2_frag, null) as LinearLayout
+        val accessibleView = inflater.inflate(R.layout.extxt1_frag, null) as LinearLayout
 
-        val btn = accessibleView.findViewById<ImageButton>(R.id.imageButton10)
-        val badge = BadgeView(context, btn)
-        badge.text = "3"
-        badge.show()
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-            badge.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_NO
-        }
-        btn.contentDescription =
-            badge.text.toString() + " " + context.getString(R.string.criteria_alt_ex2_cd_btn)
+        val c = Calendar.getInstance()
+        val sdf = SimpleDateFormat(context.getString(R.string.date_format), Locale.getDefault())
+        val date = sdf.format(c.time)
+
+        val monthName = c.getDisplayName(Calendar.MONTH, Calendar.LONG, Locale.getDefault())
+
+        val ex1 = accessibleView.findViewById<TextView>(R.id.ex1txt1)
+
+        ex1.text = date
+        ex1.contentDescription =
+            c[Calendar.DAY_OF_MONTH].toString() + " " + monthName + " " + c[Calendar.YEAR] + " , " + (c[Calendar.HOUR] + 12) + " " + context.getString(
+                R.string.heure
+            ) + " " + c[Calendar.MINUTE]
+
+        accessibleView.findViewById<View>(R.id.ex2txt1).contentDescription =
+            context.getString(R.string.criteria_alt_ex1_cd_txt1)
+        accessibleView.findViewById<View>(R.id.ex3txt1).contentDescription =
+            context.getString(R.string.criteria_alt_ex1_cd_txt2)
+        accessibleView.findViewById<View>(R.id.ex4txt1).contentDescription =
+            context.getString(R.string.criteria_alt_ex1_cd_txt3)
 
         return accessibleView
     }
 
     override fun getNotAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val notAccessibleView = inflater.inflate(R.layout.extxt2_frag, null) as LinearLayout
+        val notAccessibleView = inflater.inflate(R.layout.extxt1_frag, null) as LinearLayout
+        notAccessibleView.removeView(notAccessibleView.findViewById(R.id.ex3txt1))
 
-        val btnNo = notAccessibleView.findViewById<ImageButton>(R.id.imageButton10)
-        val badgeNo = BadgeView(context, btnNo)
-        badgeNo.text = "3"
-        badgeNo.show()
+        val c = Calendar.getInstance()
+        val sdf = SimpleDateFormat(context.getString(R.string.date_format), Locale.getDefault())
+        val date = sdf.format(c.time)
+
+        val ex1AxsNo = notAccessibleView.findViewById<TextView>(R.id.ex1txt1)
+        ex1AxsNo.text = date
         return notAccessibleView
     }
 
     override fun getTitleRessource(context: Context): String {
-        return context.getString(R.string.criteria_alt_ex2_title)
+        return context.getString(R.string.criteria_alt_ex1_title)
     }
 
     override fun getCellNameRessource(context: Context): String {
-        return context.resources.getStringArray(R.array.criteria_alt_list)[1]
+        return context.resources.getStringArray(R.array.criteria_alt_list)[0]
     }
 
     override fun getDescriptionRessource(context: Context): String {
-        return context.getString(R.string.criteria_alt_ex2_description)
+        return context.getString(R.string.criteria_alt_ex1_description)
     }
 
     override fun useOption(): Boolean {
