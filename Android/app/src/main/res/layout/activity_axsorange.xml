@@ -36,6 +36,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <com.orange.accessibilitystatementlibrary.StatementView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:details_url="https://www.orange.fr/accessibilite?url=app.orangetv.android.orange.fr"
+            app:declarant="@string/registrant"/>
 
     </ScrollView>
 </LinearLayout>

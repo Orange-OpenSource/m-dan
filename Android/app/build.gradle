@@ -97,6 +97,7 @@ dependencies {
     // include the view badgers etc.
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation project(path: ':AccessibilityStatementLibrary')
 
     androidTestImplementation('androidx.test.espresso:espresso-core:3.4.0') {
         exclude group: 'com.android.support', module: 'support-annotations'

@@ -72,7 +72,7 @@
         <activity
             android:name=".ui.AxsOrangeActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:label="@string/section_axs_orange"
+            android:label="@string/section_axs_statement"
             android:parentActivityName=".ui.MenuActivity"
             >
         </activity>
