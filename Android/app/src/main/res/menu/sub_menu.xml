@@ -24,7 +24,7 @@
 
     <item
         android:id="@+id/action_axs_orange"
-        android:title="@string/section_axs_orange"
+        android:title="@string/section_axs_statement"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_about"
