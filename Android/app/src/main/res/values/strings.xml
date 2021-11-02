@@ -25,8 +25,10 @@
     <string name="section_talkback">Talkback</string>
     <string name="section_axs_options">Options d\'accessibilité</string>
     <string name="section_axs_orange">L\'accessibilité chez Orange</string>
+    <string name="section_axs_statement">Déclaration d\'accessibilité</string>
     <string name="section_about">À propos</string>
     <string name="section_contact">Contact</string>
+    <string name="registrant" translatable="false">ORANGE SA\nSiège social : 111, quai du Président Roosevelt\n92130 Issy-les-Moulineaux</string>
 
 
     <!-- @todo : remove it before release -->

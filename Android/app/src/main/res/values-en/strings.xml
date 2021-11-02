@@ -25,6 +25,7 @@
     <string name="section_talkback">TalkBack</string>
     <string name="section_axs_options">Accessibility options</string>
     <string name="section_axs_orange">Accessibility at Orange</string>
+    <string name="section_axs_statement">Accessibility statement</string>
     <string name="section_about">About</string>
     <string name="section_contact">Contact</string>
 

@@ -21,8 +21,6 @@ package com.orange.ease.dan.navigation
 
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
-import androidx.fragment.app.Fragment
 import com.orange.ease.dan.R
 
 public abstract class DialogActivity: AppCompatActivity() {
@@ -40,23 +38,9 @@ public abstract class DialogActivity: AppCompatActivity() {
         val alert = builder.create()
         alert.show()
         val buttonYes = alert.getButton(AlertDialog.BUTTON_POSITIVE)
-        buttonYes.setCompoundDrawablesWithIntrinsicBounds(
-            ContextCompat.getDrawable(
-                this,
-                R.drawable.icon_check_good
-            ), null, null, null
-        )
-        buttonYes.contentDescription = getString(R.string.yes)
-        buttonYes.text = ""
+        buttonYes.setTextColor(getColor(R.color.accent_color))
         val buttonNo = alert.getButton(AlertDialog.BUTTON_NEGATIVE)
-        buttonNo.setCompoundDrawablesWithIntrinsicBounds(
-            ContextCompat.getDrawable(
-                this,
-                R.drawable.icon_check_bad
-            ), null, null, null
-        )
-        buttonNo.contentDescription = getString(R.string.no)
-        buttonNo.text = ""
+        buttonNo.setTextColor(getColor(R.color.accent_color))
     }
 
 }
