@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0405116A1D75D9A900115A0F /* DefaultLabelHeaderWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040511691D75D9A900115A0F /* DefaultLabelHeaderWithPadding.swift */; };
-		04320A851D7979F80076DFFB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04320A841D7979F80076DFFB /* HomeViewController.swift */; };
-		045C16681DC9F89800CEF457 /* VoiceOverCarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C16671DC9F89800CEF457 /* VoiceOverCarouselViewController.swift */; };
 		0482FC2D1CECC359003870F4 /* StandardComponentsTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482FC2C1CECC359003870F4 /* StandardComponentsTabViewController.swift */; };
 		0482FC2F1CECC3E7003870F4 /* ExampleStandardComponents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0482FC2E1CECC3E7003870F4 /* ExampleStandardComponents.storyboard */; };
 		049A83111DDB4FB500E78240 /* TextAndButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A83101DDB4FB500E78240 /* TextAndButtonTableViewCell.swift */; };
@@ -55,6 +53,17 @@
 		04ED731C1D76D07600D1247B /* DoubleTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ED731B1D76D07600D1247B /* DoubleTextTableViewCell.swift */; };
 		04FB95501D75E0A2003675D2 /* CALayer+XibConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB954F1D75E0A2003675D2 /* CALayer+XibConfiguration.swift */; };
 		446C9084239AAA3E00C4BEBB /* UIBarButtonItem+Orange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446C9083239AAA3E00C4BEBB /* UIBarButtonItem+Orange.swift */; };
+		6D009D9127183458004612BE /* OrientationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D009D9027183458004612BE /* OrientationViewController.swift */; };
+		6D009D9527183478004612BE /* ExempleOrientation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D009D9427183478004612BE /* ExempleOrientation.storyboard */; };
+		6D23CC252733EAF000246A48 /* UIWindow+Orange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D23CC242733EAF000246A48 /* UIWindow+Orange.swift */; };
+		6D4B985A26E17C6900FF505E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B985926E17C6900FF505E /* SceneDelegate.swift */; };
+		6D4B985E26E1DEE500FF505E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D4B985D26E1DEE500FF505E /* LaunchScreen.storyboard */; };
+		6D4B986426E2B9D900FF505E /* VoiceOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B986326E2B9D900FF505E /* VoiceOverViewController.swift */; };
+		6D4B986826E2BA3E00FF505E /* ExampleVoiceOver.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D4B986726E2BA3E00FF505E /* ExampleVoiceOver.storyboard */; };
+		6D4B986B26E2BB9800FF505E /* VoiceOverCarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B986A26E2BB9800FF505E /* VoiceOverCarouselViewController.swift */; };
+		6DD0496826FCB0610067561E /* accessibility_result.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6DD0496726FCB0610067561E /* accessibility_result.xml */; };
+		6DF1DA7E26EF4B0D007EF7C6 /* TextAndSubTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF1DA7D26EF4B0D007EF7C6 /* TextAndSubTextTableViewCell.swift */; };
+		9829F534E666D217A3E51431 /* Pods_mDAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136840CCDDF7B8ADD3926B9E /* Pods_mDAN.framework */; };
 		DA6B9A381C1AC16D00767DB4 /* ElementStateFoldAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B9A371C1AC16D00767DB4 /* ElementStateFoldAreaViewController.swift */; };
 		DA6B9A3F1C1AE77C00767DB4 /* AccordionHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B9A3E1C1AE77C00767DB4 /* AccordionHeaderViewCell.swift */; };
 		DA7AD7671C060E8900A42F3D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7AD7661C060E8900A42F3D /* CategoryViewController.swift */; };
@@ -107,7 +116,6 @@
 		F48AF8CD1C046F8000CBB44D /* DeveloperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AF8CC1C046F8000CBB44D /* DeveloperViewController.swift */; };
 		F48AF8D01C04718000CBB44D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F48AF8D21C04718000CBB44D /* Localizable.strings */; };
 		F48AF8D51C04733400CBB44D /* String+Orange.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AF8D41C04733400CBB44D /* String+Orange.swift */; };
-		F48AF8DD1C04B64700CBB44D /* VoiceOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AF8DC1C04B64700CBB44D /* VoiceOverViewController.swift */; };
 		F48AF8DF1C04B6B000CBB44D /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AF8DE1C04B6B000CBB44D /* OptionsViewController.swift */; };
 		F48AF8E11C04B6C200CBB44D /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AF8E01C04B6C200CBB44D /* MoreViewController.swift */; };
 		F48BA2281C15DAE200FC39B2 /* LegendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48BA2271C15DAE200FC39B2 /* LegendTableViewCell.swift */; };
@@ -133,9 +141,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		013AEA2B41ABECA0CC6F2464 /* Pods-mDAN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mDAN.release.xcconfig"; path = "Target Support Files/Pods-mDAN/Pods-mDAN.release.xcconfig"; sourceTree = "<group>"; };
 		040511691D75D9A900115A0F /* DefaultLabelHeaderWithPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultLabelHeaderWithPadding.swift; sourceTree = "<group>"; };
-		04320A841D7979F80076DFFB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		045C16671DC9F89800CEF457 /* VoiceOverCarouselViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceOverCarouselViewController.swift; sourceTree = "<group>"; };
 		0482FC2C1CECC359003870F4 /* StandardComponentsTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StandardComponentsTabViewController.swift; path = StandardComponents/StandardComponentsTabViewController.swift; sourceTree = "<group>"; };
 		0482FC2E1CECC3E7003870F4 /* ExampleStandardComponents.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ExampleStandardComponents.storyboard; path = StandardComponents/ExampleStandardComponents.storyboard; sourceTree = "<group>"; };
 		049A83101DDB4FB500E78240 /* TextAndButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextAndButtonTableViewCell.swift; sourceTree = "<group>"; };
@@ -181,7 +188,19 @@
 		04CBE42D1D01DBE80041A95D /* readingOrderLinks.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; lineEnding = 0; path = readingOrderLinks.html; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.html; };
 		04ED731B1D76D07600D1247B /* DoubleTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleTextTableViewCell.swift; sourceTree = "<group>"; };
 		04FB954F1D75E0A2003675D2 /* CALayer+XibConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+XibConfiguration.swift"; sourceTree = "<group>"; };
+		136840CCDDF7B8ADD3926B9E /* Pods_mDAN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mDAN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		446C9083239AAA3E00C4BEBB /* UIBarButtonItem+Orange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Orange.swift"; sourceTree = "<group>"; };
+		6D009D9027183458004612BE /* OrientationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationViewController.swift; sourceTree = "<group>"; };
+		6D009D9427183478004612BE /* ExempleOrientation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExempleOrientation.storyboard; sourceTree = "<group>"; };
+		6D23CC242733EAF000246A48 /* UIWindow+Orange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Orange.swift"; sourceTree = "<group>"; };
+		6D4B985926E17C6900FF505E /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6D4B985D26E1DEE500FF505E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D4B986326E2B9D900FF505E /* VoiceOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceOverViewController.swift; sourceTree = "<group>"; };
+		6D4B986726E2BA3E00FF505E /* ExampleVoiceOver.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExampleVoiceOver.storyboard; sourceTree = "<group>"; };
+		6D4B986A26E2BB9800FF505E /* VoiceOverCarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceOverCarouselViewController.swift; sourceTree = "<group>"; };
+		6DD0496726FCB0610067561E /* accessibility_result.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = accessibility_result.xml; sourceTree = "<group>"; };
+		6DF1DA7D26EF4B0D007EF7C6 /* TextAndSubTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextAndSubTextTableViewCell.swift; path = Cells/TextAndSubTextTableViewCell.swift; sourceTree = "<group>"; };
+		7794F9564B3A37D70DEB1540 /* Pods-mDAN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mDAN.debug.xcconfig"; path = "Target Support Files/Pods-mDAN/Pods-mDAN.debug.xcconfig"; sourceTree = "<group>"; };
 		DA6B9A371C1AC16D00767DB4 /* ElementStateFoldAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ElementStateFoldAreaViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DA6B9A3E1C1AE77C00767DB4 /* AccordionHeaderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccordionHeaderViewCell.swift; path = Cells/AccordionHeaderViewCell.swift; sourceTree = "<group>"; };
 		DA7AD7661C060E8900A42F3D /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
@@ -237,7 +256,6 @@
 		F48AF8D41C04733400CBB44D /* String+Orange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Orange.swift"; sourceTree = "<group>"; };
 		F48AF8D91C04777F00CBB44D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F48AF8DB1C04779200CBB44D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F48AF8DC1C04B64700CBB44D /* VoiceOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceOverViewController.swift; sourceTree = "<group>"; };
 		F48AF8DE1C04B6B000CBB44D /* OptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		F48AF8E01C04B6C200CBB44D /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		F48BA2271C15DAE200FC39B2 /* LegendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LegendTableViewCell.swift; path = Cells/LegendTableViewCell.swift; sourceTree = "<group>"; };
@@ -267,6 +285,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9829F534E666D217A3E51431 /* Pods_mDAN.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,10 +353,30 @@
 			name = DevContentHtml;
 			sourceTree = "<group>";
 		};
+		6D009D8F2718342E004612BE /* Orientation */ = {
+			isa = PBXGroup;
+			children = (
+				6D009D9027183458004612BE /* OrientationViewController.swift */,
+				6D009D9427183478004612BE /* ExempleOrientation.storyboard */,
+			);
+			path = Orientation;
+			sourceTree = "<group>";
+		};
+		6D4B986226E2B95500FF505E /* VoiceOver */ = {
+			isa = PBXGroup;
+			children = (
+				6D4B986326E2B9D900FF505E /* VoiceOverViewController.swift */,
+				6D4B986A26E2BB9800FF505E /* VoiceOverCarouselViewController.swift */,
+				6D4B986726E2BA3E00FF505E /* ExampleVoiceOver.storyboard */,
+			);
+			path = VoiceOver;
+			sourceTree = "<group>";
+		};
 		8ED8C2DEC3776740F7E5642E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				F4B4A9971C0351350036A823 /* Models */,
+				136840CCDDF7B8ADD3926B9E /* Pods_mDAN.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -357,8 +396,10 @@
 				F40CD2121C1F093400546018 /* ContentControl */,
 				F4E9A01F1C280896001858DC /* ContentChange */,
 				F40A503C1C32C4EE00033AD4 /* HorizontalScroll */,
+				6D009D8F2718342E004612BE /* Orientation */,
 				DA9567881C22BAB9002C8233 /* ReadingOrder */,
 				F40A50431C32CFAF00033AD4 /* Language */,
+				6D4B986226E2B95500FF505E /* VoiceOver */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -411,6 +452,15 @@
 				DA6B9A371C1AC16D00767DB4 /* ElementStateFoldAreaViewController.swift */,
 			);
 			path = ElementState;
+			sourceTree = "<group>";
+		};
+		F059428ABCE888D2A7CFC989 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7794F9564B3A37D70DEB1540 /* Pods-mDAN.debug.xcconfig */,
+				013AEA2B41ABECA0CC6F2464 /* Pods-mDAN.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		F40A503C1C32C4EE00033AD4 /* HorizontalScroll */ = {
@@ -473,15 +523,6 @@
 			path = Tab_Developer;
 			sourceTree = "<group>";
 		};
-		F46DEA5A1C0DD675009980E1 /* Tab_VoiceOver */ = {
-			isa = PBXGroup;
-			children = (
-				F48AF8DC1C04B64700CBB44D /* VoiceOverViewController.swift */,
-				045C16671DC9F89800CEF457 /* VoiceOverCarouselViewController.swift */,
-			);
-			path = Tab_VoiceOver;
-			sourceTree = "<group>";
-		};
 		F46DEA5B1C0DD67F009980E1 /* Tab_Options */ = {
 			isa = PBXGroup;
 			children = (
@@ -509,6 +550,7 @@
 				F4817FDB1C03130800E9612D /* DAN */,
 				F4817FDA1C03130800E9612D /* Products */,
 				8ED8C2DEC3776740F7E5642E /* Frameworks */,
+				F059428ABCE888D2A7CFC989 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -526,7 +568,9 @@
 				F4B4A9961C0351220036A823 /* Views */,
 				F4B4A9951C03510B0036A823 /* Controllers */,
 				F4B4A99B1C035D690036A823 /* Helpers */,
+				6D4B985926E17C6900FF505E /* SceneDelegate.swift */,
 				F4817FDC1C03130800E9612D /* AppDelegate.swift */,
+				6D4B985D26E1DEE500FF505E /* LaunchScreen.storyboard */,
 				F4817FE21C03130800E9612D /* Main.storyboard */,
 				F4817FE51C03130800E9612D /* Assets.xcassets */,
 				F48AF8D21C04718000CBB44D /* Localizable.strings */,
@@ -559,10 +603,8 @@
 			isa = PBXGroup;
 			children = (
 				F48AF8CA1C04630D00CBB44D /* DefaultTableViewController.swift */,
-				04320A841D7979F80076DFFB /* HomeViewController.swift */,
 				F46DEA581C0DB210009980E1 /* Tab_Criteria */,
 				F46DEA591C0DD66A009980E1 /* Tab_Developer */,
-				F46DEA5A1C0DD675009980E1 /* Tab_VoiceOver */,
 				F46DEA5B1C0DD67F009980E1 /* Tab_Options */,
 				F46DEA5C1C0DD688009980E1 /* Tab_More */,
 			);
@@ -596,6 +638,7 @@
 				F4B4A9991C0352640036A823 /* UIColor+Orange.swift */,
 				04FB954F1D75E0A2003675D2 /* CALayer+XibConfiguration.swift */,
 				446C9083239AAA3E00C4BEBB /* UIBarButtonItem+Orange.swift */,
+				6D23CC242733EAF000246A48 /* UIWindow+Orange.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -603,6 +646,7 @@
 		F4B4A99B1C035D690036A823 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				6DD0496726FCB0610067561E /* accessibility_result.xml */,
 				F4B4A9981C03513B0036A823 /* Extensions */,
 			);
 			path = Helpers;
@@ -630,6 +674,7 @@
 				04CBE3D81CFF0C890041A95D /* WebviewTableViewCell.swift */,
 				04ED731B1D76D07600D1247B /* DoubleTextTableViewCell.swift */,
 				049A83101DDB4FB500E78240 /* TextAndButtonTableViewCell.swift */,
+				6DF1DA7D26EF4B0D007EF7C6 /* TextAndSubTextTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -660,9 +705,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4817FED1C03130800E9612D /* Build configuration list for PBXNativeTarget "mDAN" */;
 			buildPhases = (
+				B87CDD2CE497D4E6327BC810 /* [CP] Check Pods Manifest.lock */,
 				F4817FD51C03130800E9612D /* Sources */,
 				F4817FD61C03130800E9612D /* Frameworks */,
 				F4817FD71C03130800E9612D /* Resources */,
+				A30A91F1C1526615A8866592 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -721,6 +768,7 @@
 				04CBE4021D01D25D0041A95D /* accessibilityOptionsStateLinks.html in Resources */,
 				04CBE4161D01D8230041A95D /* changeVoiceOverFocusLinks.html in Resources */,
 				04CBE41C1D01DA6E0041A95D /* groupItemsLinks.html in Resources */,
+				6D4B985E26E1DEE500FF505E /* LaunchScreen.storyboard in Resources */,
 				04CBE41A1D01DA610041A95D /* groupItems_en.html in Resources */,
 				04CBE4141D01D8160041A95D /* changeVoiceOverFocus_en.html in Resources */,
 				04CBE4001D01D2120041A95D /* accessibilityOptionsState_en.html in Resources */,
@@ -734,6 +782,7 @@
 				04CBE3E41D005E110041A95D /* elementsSemantic_fr.html in Resources */,
 				F40CD2141C1F096C00546018 /* ExampleContentControl.storyboard in Resources */,
 				04CBE3F41D01CF920041A95D /* textualAlternative_en.html in Resources */,
+				6D4B986826E2BA3E00FF505E /* ExampleVoiceOver.storyboard in Resources */,
 				04CBE3FC1D01CFF60041A95D /* triggerVocalizationLinks.html in Resources */,
 				0482FC2F1CECC3E7003870F4 /* ExampleStandardComponents.storyboard in Resources */,
 				04B25B931D3E649B00403E32 /* about_en.html in Resources */,
@@ -745,6 +794,7 @@
 				04CBE4261D01DBAC0041A95D /* textSize_en.html in Resources */,
 				F48AF8D01C04718000CBB44D /* Localizable.strings in Resources */,
 				04CBE41E1D01DA9A0041A95D /* systemEvents_fr.html in Resources */,
+				6D009D9527183478004612BE /* ExempleOrientation.storyboard in Resources */,
 				DAF4EA6A1C2AED5800971CD4 /* DefaultHeaderViewCell.xib in Resources */,
 				04CBE3F61D01CFBF0041A95D /* elementsSemantic_en.html in Resources */,
 				DAFB6C621C15BB2D00D40524 /* ExampleImage.storyboard in Resources */,
@@ -771,10 +821,54 @@
 				04CBE3EE1D01CBED0041A95D /* hideItems_en.html in Resources */,
 				F4817FE41C03130800E9612D /* Main.storyboard in Resources */,
 				04B25B911D3E648A00403E32 /* about_fr.html in Resources */,
+				6DD0496826FCB0610067561E /* accessibility_result.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A30A91F1C1526615A8866592 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mDAN/Pods-mDAN-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DeclarationAccessibility/DeclarationAccessibility.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeclarationAccessibility.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mDAN/Pods-mDAN-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B87CDD2CE497D4E6327BC810 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mDAN-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F4817FD51C03130800E9612D /* Sources */ = {
@@ -788,6 +882,7 @@
 				F48BA2281C15DAE200FC39B2 /* LegendTableViewCell.swift in Sources */,
 				04CBE3D91CFF0C890041A95D /* WebviewTableViewCell.swift in Sources */,
 				DAF4EA6B1C2AED5800971CD4 /* TextTableViewCell.swift in Sources */,
+				6D4B985A26E17C6900FF505E /* SceneDelegate.swift in Sources */,
 				0482FC2D1CECC359003870F4 /* StandardComponentsTabViewController.swift in Sources */,
 				F4C799E31C158B6C0087ADDB /* ServiceInfoTableViewCell.swift in Sources */,
 				DAC349A51C11D22D00527510 /* ImageDecoViewController.swift in Sources */,
@@ -801,6 +896,7 @@
 				DAB832BC1C23228E008E7942 /* TabCustomTableViewCell.swift in Sources */,
 				DA95678E1C22BD1B002C8233 /* RemoteControlTableViewCell.swift in Sources */,
 				F40A503B1C32827C00033AD4 /* OrangeAccessibilityViewController.swift in Sources */,
+				6D009D9127183458004612BE /* OrientationViewController.swift in Sources */,
 				F48BA2341C1730AA00FC39B2 /* ClickZoneSizeViewController.swift in Sources */,
 				DAFCD3B01C2437E60092551A /* UIImage+Orange.swift in Sources */,
 				F4E6EC381C217194008C1FF7 /* ContentControlSlideshowViewController.swift in Sources */,
@@ -812,6 +908,7 @@
 				0405116A1D75D9A900115A0F /* DefaultLabelHeaderWithPadding.swift in Sources */,
 				F49FCD8E1C19AFB800B847F5 /* HeaderBisViewController.swift in Sources */,
 				F48AF8DF1C04B6B000CBB44D /* OptionsViewController.swift in Sources */,
+				6D23CC252733EAF000246A48 /* UIWindow+Orange.swift in Sources */,
 				F48BA22F1C16E69F00FC39B2 /* PageTitleViewController.swift in Sources */,
 				DAB832BE1C240F9A008E7942 /* TabTableViewCell.swift in Sources */,
 				F40CD21A1C1F207C00546018 /* CarouselViewController.swift in Sources */,
@@ -821,16 +918,16 @@
 				DA6B9A3F1C1AE77C00767DB4 /* AccordionHeaderViewCell.swift in Sources */,
 				DAC349A71C11D22D00527510 /* ImageInfoViewController.swift in Sources */,
 				F40A503E1C32C53F00033AD4 /* HorizontalScrollViewController.swift in Sources */,
-				F48AF8DD1C04B64700CBB44D /* VoiceOverViewController.swift in Sources */,
+				6D4B986B26E2BB9800FF505E /* VoiceOverCarouselViewController.swift in Sources */,
 				F4FC42D41C11D47800A553F1 /* ColorContrastViewController.swift in Sources */,
 				F4E9A0251C282F38001858DC /* AddressTableViewCell.swift in Sources */,
 				F48BA2381C173AD400FC39B2 /* SongTableViewCell.swift in Sources */,
 				F40A504B1C33D14E00033AD4 /* AboutViewController.swift in Sources */,
+				6DF1DA7E26EF4B0D007EF7C6 /* TextAndSubTextTableViewCell.swift in Sources */,
 				F4C799E01C1584620087ADDB /* ColorInfoViewController.swift in Sources */,
 				F40A50491C32E24E00033AD4 /* ContactViewController.swift in Sources */,
 				DA9567811C1F1B3E002C8233 /* FormLabelViewController.swift in Sources */,
 				F48AF8CD1C046F8000CBB44D /* DeveloperViewController.swift in Sources */,
-				04320A851D7979F80076DFFB /* HomeViewController.swift in Sources */,
 				049A83111DDB4FB500E78240 /* TextAndButtonTableViewCell.swift in Sources */,
 				DA95678C1C22BAB9002C8233 /* ReadingOrderViewController.swift in Sources */,
 				DAFC75C01C16EB170008AA81 /* TextImageTableViewCell.swift in Sources */,
@@ -838,7 +935,6 @@
 				DAFC75BE1C16E01E0008AA81 /* TextualAlternativeTextImageViewController.swift in Sources */,
 				F48BA2311C16E6B000FC39B2 /* HeaderViewController.swift in Sources */,
 				F4E6EC3A1C217281008C1FF7 /* SlideshowViewController.swift in Sources */,
-				045C16681DC9F89800CEF457 /* VoiceOverCarouselViewController.swift in Sources */,
 				446C9084239AAA3E00C4BEBB /* UIBarButtonItem+Orange.swift in Sources */,
 				DAFC75BC1C15E4EA0008AA81 /* TextualAlternativeDateViewController.swift in Sources */,
 				F49FCD901C19B86200B847F5 /* HeaderTableViewCell.swift in Sources */,
@@ -846,6 +942,7 @@
 				04ED731C1D76D07600D1247B /* DoubleTextTableViewCell.swift in Sources */,
 				F40688F01C2C4B65008B4F45 /* IntroductionViewController.swift in Sources */,
 				DA9567D91C230B98002C8233 /* ElementStateSelectionListViewController.swift in Sources */,
+				6D4B986426E2B9D900FF505E /* VoiceOverViewController.swift in Sources */,
 				F4B4A9A11C037C720036A823 /* CriteriaViewController.swift in Sources */,
 				DAFC75C71C1725D20008AA81 /* ElementStateTabViewController.swift in Sources */,
 			);
@@ -971,15 +1068,16 @@
 		};
 		F4817FEE1C03130800E9612D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7794F9564B3A37D70DEB1540 /* Pods-mDAN.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N2U26FVUB7;
 				INFOPLIST_FILE = DAN/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devrap.DAN;
 				PRODUCT_NAME = mDAN;
@@ -991,15 +1089,16 @@
 		};
 		F4817FEF1C03130800E9612D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 013AEA2B41ABECA0CC6F2464 /* Pods-mDAN.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N2U26FVUB7;
 				INFOPLIST_FILE = DAN/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devrap.DAN;
 				PRODUCT_NAME = mDAN;

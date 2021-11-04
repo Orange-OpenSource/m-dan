@@ -32,7 +32,7 @@ class AboutViewController: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.orange_grayForWhiteBG()
+        view.backgroundColor = UIColor.white
         
         title = "about_title".localized
         subtitleLabel.text  = "about_companyText".localized
