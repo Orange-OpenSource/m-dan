@@ -35,14 +35,11 @@ class SongTableViewCell: UITableViewCell {
     }
 
     @IBAction func playButtonPressed(_ sender: UIButton) {
-        
-        let playAlert:UIAlertView = UIAlertView(
-            title: "example_clickZone_size_play_alertTitle".localized,
-            message: "",
-            delegate: nil,
-            cancelButtonTitle: "common_ok".localized)
-        
-        playAlert.show()
-        
+        let alert = UIAlertController(title: "example_clickZone_size_play_alertTitle".localized, message: "", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "common_ok".localized, style: .default, handler: nil))
+        alert.view.tintColor = .orange_orangeForWhiteBG()
+        if let keyWindow = UIWindow.key {
+            keyWindow.rootViewController?.present(alert, animated: true, completion: nil)
+        }
     }
 }

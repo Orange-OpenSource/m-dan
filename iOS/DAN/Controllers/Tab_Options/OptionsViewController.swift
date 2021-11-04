@@ -83,19 +83,17 @@ class OptionsViewController: DefaultTableViewController {
         }
         else {
             
-            let cell: UITableViewCell
-            
-            cell                    = tableView.dequeueReusableCell(withIdentifier: optionCellIdentifier, for: indexPath)
-            cell.textLabel?.text    = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
-            cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 16.0)
-            
-            return cell
+            let textCell: TextTableViewCell
+
+            textCell            = tableView.dequeueReusableCell(withIdentifier: optionCellIdentifier, for: indexPath) as! TextTableViewCell
+            textCell.label?.text    = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
+
+            return textCell
         }
     }
     
     // MARK: - TableViewDelegate
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        
         if((indexPath as NSIndexPath).section == 0) {
             
             return 100

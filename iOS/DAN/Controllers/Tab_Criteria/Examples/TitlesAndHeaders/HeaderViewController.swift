@@ -112,6 +112,10 @@ class HeaderViewController: DefaultTableViewController {
             
             cell.textLabel?.text = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
             
+            cell.textLabel?.numberOfLines = 0
+            cell.sizeToFit()
+            cell.textLabel?.sizeToFit()
+            cell.textLabel?.lineBreakMode = .byWordWrapping
             return cell
         }
     }
@@ -138,7 +142,7 @@ class HeaderViewController: DefaultTableViewController {
             return 0;
         } else {
             
-            return 44
+            return UITableView.automaticDimension
         }
     }
     

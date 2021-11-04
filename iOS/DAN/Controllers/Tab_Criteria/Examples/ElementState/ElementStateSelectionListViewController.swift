@@ -43,7 +43,6 @@ class ElementStateSelectionListViewController: UIViewController, UITableViewDele
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        scrollView.backgroundColor              = UIColor.orange_grayForWhiteBG()
         nonAccessibleTableView.backgroundColor  = UIColor.orange_whiteColor()
         accessibleTableView.backgroundColor     = UIColor.orange_grayForWhiteBG()
         

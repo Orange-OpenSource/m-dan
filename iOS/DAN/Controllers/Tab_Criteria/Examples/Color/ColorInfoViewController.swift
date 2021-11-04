@@ -126,17 +126,10 @@ class ColorInfoViewController: DefaultTableViewController {
     
     // MARK: - TableViewDelegate
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        if (indexPath as NSIndexPath).section == accessibleSection && (indexPath as NSIndexPath).row == 0 {
-            return UITableView.automaticDimension
-        } else if (indexPath as NSIndexPath).section == 0 {
-            return UITableView.automaticDimension
-        } else {
-            return 44
-        }
+        return UITableView.automaticDimension
     }
     
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44
+        return UITableView.automaticDimension
     }
 }

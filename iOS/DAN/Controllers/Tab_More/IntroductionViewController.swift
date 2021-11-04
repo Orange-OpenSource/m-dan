@@ -35,7 +35,7 @@ class IntroductionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.orange_grayForWhiteBG()
+        view.backgroundColor = UIColor.white
         
         title = "common_accessibility".localized
         

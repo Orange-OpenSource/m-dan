@@ -20,7 +20,7 @@
 import UIKit
 
 class DefaultTableViewController: UITableViewController {
-
+    
     //MARK: - Properties
     var cellsContent: [[String]]    = []
     var cellsSubtitle: [[String]]   = []
@@ -30,17 +30,76 @@ class DefaultTableViewController: UITableViewController {
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        tableView.backgroundColor   = UIColor.orange_grayForWhiteBG()
+        
         tableView.rowHeight         = UITableView.automaticDimension
         
         tableView.register(UINib(nibName: "DefaultHeaderViewCell", bundle: nil), forCellReuseIdentifier: headerCellIdentifier)
         
         // Remove cell separators for empty cells
         tableView.tableFooterView = UIView()
-        
+    
         setUpDatas()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        setUpNavigationBar()
+    }
+    
+    func setupLargeTitleAutoAdjustFont() {
+        guard let navigationBar = navigationController?.navigationBar else {
+            return
+        }
+        // recursively find the label
+        func findLabel(in view: UIView) -> UILabel? {
+            if view.subviews.count > 0 {
+                for subview in view.subviews {
+                    if let label = findLabel(in: subview) {
+                        return label
+                    }
+                }
+            }
+            return view as? UILabel
+        }
+
+        if let label = findLabel(in: navigationBar) {
+            if label.text == self.title {
+                label.adjustsFontSizeToFitWidth = true
+                label.minimumScaleFactor = 0.7
+            }
+        }
+    }
+    
+    // MARK: - Navigation Bar Setting
+    func setUpNavigationBar() {
+        
+        self.tableView.reloadData()
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.barTintColor = UIColor.white
+        
+        DispatchQueue.main.async { [weak self] in
+            self?.navigationController?.navigationBar.sizeToFit()
+        }
+        
+        for navItem in(self.navigationController?.navigationBar.subviews)! {
+             for itemSubView in navItem.subviews {
+                 if let largeLabel = itemSubView as? UILabel {
+                     largeLabel.text = self.title
+                     largeLabel.numberOfLines = 0
+                     largeLabel.lineBreakMode = .byWordWrapping
+                 }
+             }
+        }
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.orange_orangeForBlackText()
+    }
+    
+    internal func reloadTransaction(){
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+
     
     func setUpDatas() {
     }
@@ -63,24 +122,31 @@ class DefaultTableViewController: UITableViewController {
     // MARK: - TableView Delegate
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        
         if(sectionHeaders[section] == "common_accessibleExample"
             || sectionHeaders[section] == "common_notAccessibleExample"
             || sectionHeaders[section] == "common_accessibleCustomExample"
             || sectionHeaders[section] == "common_notAccessibleCustomExample") {
-            
-                return
+            return
         }
         else {
             let header: UITableViewHeaderFooterView     = view as! UITableViewHeaderFooterView
             header.contentView.backgroundColor          = .orange_greyBgColor()
-            header.textLabel!.textColor                 = .orange_blackColor()
+            header.textLabel?.textColor                 = .orange_blackColor()
             header.layer.borderWidth = 1
             header.layer.borderColor = UIColor.orange_functionalGrey6().cgColor
+            header.textLabel?.numberOfLines = 0
+            header.sizeToFit()
+            header.textLabel?.sizeToFit()
+            header.textLabel?.lineBreakMode = .byWordWrapping
+            self.tableView.sectionHeaderHeight = UITableView.automaticDimension
         }
-        
+
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
         
         if(sectionHeaders[section] == "common_accessibleExample"
             || sectionHeaders[section] == "common_notAccessibleExample"
@@ -91,7 +157,6 @@ class DefaultTableViewController: UITableViewController {
             
             if(sectionHeaders[section] == "common_accessibleExample" || sectionHeaders[section] == "common_accessibleCustomExample") {
                 defaultHeaderViewCell.headerImageView.image = UIImage(named: "icon_check_good")
-                defaultHeaderViewCell.imageViewHeaderConstraint.constant = 20.0
                 defaultHeaderViewCell.headerLabel.text      = sectionHeaders[section].localized
             }
             else {
@@ -113,7 +178,7 @@ class DefaultTableViewController: UITableViewController {
         
         let header: UITableViewHeaderFooterView     = UITableViewHeaderFooterView()
         header.textLabel?.adjustsFontSizeToFitWidth = true
-        header.textLabel?.minimumScaleFactor        = 0.7
+        header.textLabel?.numberOfLines = 0
         
         return header;
     }

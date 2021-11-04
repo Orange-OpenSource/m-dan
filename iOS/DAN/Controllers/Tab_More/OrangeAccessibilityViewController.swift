@@ -18,36 +18,19 @@
  */
 
 import UIKit
+import DeclarationAccessibility
 
 class OrangeAccessibilityViewController: UIViewController {
 
-    @IBOutlet weak var titleLabel:      UILabel!
-    @IBOutlet weak var headerLabel:     UILabel!
-    @IBOutlet weak var textView:        UITextView!
-    @IBOutlet weak var myLiveboxLabel:  UILabel!
-    @IBOutlet weak var myNetworkLabel:  UILabel!
     @IBOutlet weak var myOrangeLabel:   UILabel!
-    @IBOutlet weak var liveboxButton:   UIButton!
-    @IBOutlet weak var networkButton:   UIButton!
-    @IBOutlet weak var orangeButton:    UIButton!
+
     
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "orange_nav_title".localized
-        
-        titleLabel.text     = "orange_title".localized
-        headerLabel.text    = "orange_header".localized
-        textView.text       = "orange_text".localized
-        myLiveboxLabel.text = "orange_myLivebox".localized
-        myNetworkLabel.text = "orange_myNetwork".localized
-        myOrangeLabel.text  = "orange_myOrange".localized
-        
-        liveboxButton.accessibilityLabel    = "orange_myLivebox".localized
-        networkButton.accessibilityLabel    = "orange_myNetwork".localized
-        orangeButton.accessibilityLabel     = "orange_myOrange".localized
-
+        title = "orange_accessibility_nav_title".localized
+        setupDeclaration()
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,18 +38,12 @@ class OrangeAccessibilityViewController: UIViewController {
     }
     
     // MARK: - Private methods
-    @IBAction func myLiveboxButtonPressed(_ sender: AnyObject) {
-        
-        UIApplication.shared.openURL(URL(string: "itms://itunes.apple.com/fr/app/ma-livebox/id445573616?mt=8&ign-mpt=uo%3D4")!)
-    }
-    
-    @IBAction func myNetworkButtonPressed(_ sender: AnyObject) {
-        
-        UIApplication.shared.openURL(URL(string: "itms://itunes.apple.com/fr/app/mon-reseau/id286597170?mt=8")!)
-    }
-    
-    @IBAction func myOrangeButtonPressed(_ sender: AnyObject) {
-        
-        UIApplication.shared.openURL(URL(string: "itms://itunes.apple.com/fr/app/orange-et-moi-lespace-client/id367722531?mt=8")!)
+    private func setupDeclaration() {
+        let declarationViewController = DeclarationViewController()
+        self.show(declarationViewController, sender: nil)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+        declarationViewController.declarations.detailUrl = "https://a11y-guidelines.orange.com/fr/"
+        declarationViewController.declarations.identityName = "ORANGE SA"
+        declarationViewController.declarations.identityAdresse = "Siège social : 111, quai du Président Roosevelt, 92130 Issy-les-Moulineaux"
     }
 }

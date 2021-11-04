@@ -17,6 +17,7 @@
  * under the License.
  */
 
+import Foundation
 import UIKit
 
 class VoiceOverViewController: DefaultTableViewController {
@@ -64,7 +65,6 @@ class VoiceOverViewController: DefaultTableViewController {
             var textAndButtonCell: TextAndButtonTableViewCell
             
             textAndButtonCell            = tableView.dequeueReusableCell(withIdentifier: creditCellIdentifier, for: indexPath) as! TextAndButtonTableViewCell
-            textAndButtonCell.label.text = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
             textAndButtonCell.button.setTitle("voiceover_gestures".localized, for: UIControl.State())
             
             return textAndButtonCell

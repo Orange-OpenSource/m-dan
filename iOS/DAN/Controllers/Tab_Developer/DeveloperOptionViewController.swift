@@ -32,7 +32,6 @@ class DeveloperOptionViewController: DefaultTableViewController, UIWebViewDelega
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -65,6 +64,7 @@ class DeveloperOptionViewController: DefaultTableViewController, UIWebViewDelega
             webviewCell.webview.loadRequest(urlRequest)
             let htmlHeight = contentHeights[(indexPath as NSIndexPath).section]
             webviewCell.webview.frame = CGRect(x: 0, y: 0, width: webviewCell.frame.size.width, height: htmlHeight)
+            webviewCell.webview.reload()
             
             return webviewCell
             
@@ -82,11 +82,12 @@ class DeveloperOptionViewController: DefaultTableViewController, UIWebViewDelega
             webviewCell.webview.loadRequest(urlRequest)
             let htmlHeight = contentHeights[(indexPath as NSIndexPath).section]
             webviewCell.webview.frame = CGRect(x: 0, y: 0, width: webviewCell.frame.size.width, height: htmlHeight)
-            
+            webviewCell.webview.reload()
             return webviewCell
 
         }
     }
+    
     
     // MARK: - UIWebViewDelegate
     func webViewDidFinishLoad(_ webView: UIWebView) {
@@ -121,8 +122,9 @@ class DeveloperOptionViewController: DefaultTableViewController, UIWebViewDelega
     // MARK: - TableViewDelegate
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 100
+        return UITableView.automaticDimension
     }
+    
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         

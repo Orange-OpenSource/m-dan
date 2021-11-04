@@ -78,18 +78,16 @@ class DeveloperViewController: DefaultTableViewController {
         }
         else {
             
-            let cell: UITableViewCell
+            let textCell: TextTableViewCell
 
-            cell                    = tableView.dequeueReusableCell(withIdentifier: optionCellIdentifier, for: indexPath)
-            cell.textLabel?.text    = ("developer_option_"+cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row]).localized
-            cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 16.0)
-            
-            return cell
+            textCell            = tableView.dequeueReusableCell(withIdentifier: optionCellIdentifier, for: indexPath) as! TextTableViewCell
+            textCell.label?.text    = ("developer_option_"+cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row]).localized
+
+            return textCell
         }
     }
     
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        
         if((indexPath as NSIndexPath).section == 0) {
             
             return 100

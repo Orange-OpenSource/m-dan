@@ -51,8 +51,8 @@
 // Criteria tab
 // ---------------------------------------------------------------------------
 // Title
-"tab_criteria_title"    = "Guide d'accessibilité iOS";
-"tab_criteria_title_short"    = "Guide";
+"tab_criteria_title"    = "Critères";
+"tab_criteria_title_short"    = "Critère";
 
 // Sections
 "criteria_section_description" = "Description et utilisation";
@@ -76,9 +76,11 @@
 "criteria_category_contentControl"      = "Contrôle du contenu";
 "criteria_category_contentChange"       = "Changement de contenu";
 "criteria_category_horizontalScroll"    = "Scroll horizontal";
+"criteria_category_orientation"         = "Orientation";
 "criteria_category_form"                = "Formulaire";
 "criteria_category_readingOrder"        = "Ordre de lecture";
 "criteria_category_language"            = "Langue";
+"criteria_category_voiceOver"           = "Voice Over";
 
 // -----------------
 // Examples - Image
@@ -150,7 +152,7 @@
 // Examples - TextualAlternative
 // ------------------------------
 "criteria_category_textualAlternative_whatFor"   = "Les alternatives textuelles sont au coeur de l'accessibilité sur mobile.\nGrâce à elles, un utilisateur non voyant peut utiliser une application sans perte d'information.";
-"criteria_category_textualAlternative_howTo"     = "Tout comme pour les images, il est important de renseigner une alternative textuelle lorsque l'information n'est pas disponible pour les personnes malvoyantes/non-voyantes.\n\nC'est le cas des composants fournissant de l'information par la couleur, la forme, la position, le son...\n\nSur mobile, tous les composants peuvent recevoir une alternative textuelle, il est donc possible d'enrichir la vocalisation native d'un élément, y compris celle d'un simple texte.";
+"criteria_category_textualAlternative_howTo"     = "Tout comme pour les images, il est important de renseigner une alternative textuelle lorsque l'information n'est pas disponible pour les personnes malvoyantes/non-voyantes.\n\nC'est le cas des composants fournissant de l'information par la couleur, la forme, la position, le son etc\n\nSur mobile, tous les composants peuvent recevoir une alternative textuelle, il est donc possible d'enrichir la vocalisation native d'un élément, y compris celle d'un simple texte.";
 
 // Examples - Redirection !
 "example_textualAlternative_image_title"        = "Les alternatives textuelles des images";
@@ -348,6 +350,19 @@
 "example_horizontalScroll_carousel_buttonLabelAccessible"       = "Afficher le carousel accessible";
 "example_horizontalScroll_carousel_buttonLabelNonAccessible"    = "Afficher le carousel non accessible";
 
+// ----------------------------
+// Examples - Orientation
+// ----------------------------
+"criteria_category_orientation_whatFor"   = "Une mauvaise gestion des contraintes lors de la conception de l'écran peut provoquer des problèmes  lorsque l'on souhaite utiliser l'application en mode paysage.";
+"criteria_category_orientation_howTo"     = "Ne pas hésiter à utiliser les contraintes ou les UIStackView pour que les élements s'adaptent correctement.\n\nPour une optimisation parfaite il est possible d'utiliser les sizes classes quand cela est nécessaire.";
+
+// Examples - Orientation -> Turn
+"example_orientation_title"                       = "Orientation";
+"example_orientation_shortDescription"            = "Indiquer que l'on peut utilisé l'application en mode paysage";
+"example_orientation_description"                 = "Le bouton accessible ci-dessous est correctement géré par les \"contraintes\" nous avons aucunes pertes d'informations.\n\nA contrario, le bouton non accessible ne permet pas d'être lu facilement lorsque l'on oriente le téléphone en mode paysage ; la navigation sera désagréable pour l'utilisateur.";
+"example_orientation_buttonText"                  = "V";
+"example_orientation_accessible"                  = "Accessible orientation";
+"example_orientation_carousel_nonAccessible"      = "Non accessible orientation";
 
 // ----------------
 // Examples - Form
@@ -395,6 +410,18 @@
 "example_language_accent_newsletter"        = "warning";
 "example_language_accent_login"             = "download completed";
 
+// --------------------
+// Examples - Voice Over
+// --------------------
+"criteria_category_voiceOver_whatFor"   = "VoiceOver est un lecteur d’écran intégré qui décrit à haute voix les éléments qui apparaissent sur l’écran de votre téléphone. Il est gratuit et permet à un utilisateur non ou mal voyant, dyslexique et illettré de pouvoir vocaliser tous les éléments visibles contenus dans la page.";
+"criteria_category_voiceOver_howTo"     = "Pour activer VoiceOver, il suffit de l’activer dans le menu :\n\nRéglages/Général/Accessibilité/VoiceOver";
+
+// Examples - voice over -> text
+"example_voiceOver_carousel_description" = "Nous décrirons ici les gestes de base pour une utilisation courante de VoiceOver :\n\nLorsque VoiceOver est activé, les gestes standard effectués sur l’écran tactile donnent des résultats différents ; en outre, des gestes supplémentaires permettent de se déplacer à l’écran et de contrôler des éléments sélectionnés. VoiceOver comprend des gestes de toucher et de balayage à deux, trois et quatre doigts. Nous décrirons ici les gestes de base pour une utilisation courante de VoiceOver.";
+"example_voiceover_accent_title"             = "Voir tous les gestes";
+"example_voiceover_accent_shortDescription"  = "Nous décrirons ici les gestes de base pour une utilisation courante de VoiceOver.";
+"example_language_accent_description"       = "Ci-dessous, quelques exemples qu'il est nécessaire de déclarer dans une autre langue que celle du système.";
+"example_voiceover_carousel_accessibleCarousel"          = "Gestes de base de Voice Over";
 
 // ---------------------------------------------------------------------------
 // Developer tab
@@ -543,7 +570,7 @@
 
 // Menu items
 "plus_menu_home"                = "Introduction à l'accessibilité";
-"plus_menu_orangeAccessibility" = "L'accessibilité chez Orange";
+"plus_menu_orangeAccessibility" = "Déclaration d'accessibilité";
 "plus_menu_about"               = "A propos";
 "plus_menu_contact"             = "Contact";
 
@@ -563,6 +590,7 @@
 // Menu - Orange
 // ----------------
 "orange_nav_title"  = "Orange";
+"orange_accessibility_nav_title" = "Déclaration";
 "orange_title"      = "Et chez Orange ?";
 "orange_header"     = "Applications accessibles";
 "orange_text"       = "Orange s'efforce de rendre ses applications mobiles accessibles. Dans cette section, nous vous proposons une liste d'applications ayant porté un intérêt particulier à l'accessibilité pendant leurs développements.";

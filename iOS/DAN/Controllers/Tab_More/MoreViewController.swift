@@ -18,6 +18,7 @@
  */
 
 import UIKit
+import DeclarationAccessibility
 
 class MoreViewController: DefaultTableViewController {
 
@@ -58,10 +59,16 @@ class MoreViewController: DefaultTableViewController {
     // MARK: TableViewDelegate
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 44.0
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: textCellIdentifier, for: indexPath)
         
         cell.textLabel?.text    = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
-        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 16.0)
+        cell.textLabel?.numberOfLines = 0
+        cell.sizeToFit()
+        cell.textLabel?.sizeToFit()
+        cell.textLabel?.lineBreakMode = .byWordWrapping
         cell.accessoryType      = .disclosureIndicator
                 
         return cell
@@ -81,14 +88,18 @@ class MoreViewController: DefaultTableViewController {
         case 0:
             performSegue(withIdentifier: "introduction-segue", sender: cell)
         case 1:
-            performSegue(withIdentifier: "orange-segue", sender: cell)
+            let declarationViewController = DeclarationViewController()
+            declarationViewController.declarations.detailUrl = "https://a11y-guidelines.orange.com/fr/"
+            declarationViewController.declarations.identityName = "ORANGE SA"
+            declarationViewController.declarations.identityAdresse = "Siège social : 111, quai du Président Roosevelt, 92130 Issy-les-Moulineaux"
+            self.navigationController?.pushViewController(declarationViewController, animated: true)
+
         case 2:
             performSegue(withIdentifier: "about-segue", sender: cell)
-        /*case 3:
-            performSegueWithIdentifier("contact-segue", sender: cell)*/
          
         default:
             performSegue(withIdentifier: "default-segue", sender: cell)
         }
     }
 }
+
