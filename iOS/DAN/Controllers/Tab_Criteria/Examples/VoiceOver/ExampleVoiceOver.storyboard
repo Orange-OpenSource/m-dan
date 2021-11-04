@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="textCell" rowHeight="100" id="M8O-6f-JO6" customClass="TextTableViewCell" customModule="mDAN" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="descCell" rowHeight="100" id="M8O-6f-JO6" customClass="TextTableViewCell" customModule="mDAN" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M8O-6f-JO6" id="b5E-FG-xzC">
@@ -40,10 +40,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="label" destination="ekR-w8-p9o" id="3EQ-JF-1uA"/>
+                                    <outlet property="label" destination="ekR-w8-p9o" id="0s3-kZ-nfp"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="buttonCell" rowHeight="90" id="kcW-aa-0YS" customClass="ButtonTableViewCell" customModule="mDAN" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="gestureCell" rowHeight="90" id="kcW-aa-0YS" customClass="TextAndButtonTableViewCell" customModule="mDAN" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="128" width="414" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kcW-aa-0YS" id="kt1-QK-GAO">
@@ -71,7 +71,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="button" destination="LX1-Ma-WpD" id="gFj-yH-l2i"/>
+                                    <outlet property="button" destination="LX1-Ma-WpD" id="qOU-hP-Cuo"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -104,7 +104,7 @@
                                     <outlet property="delegate" destination="JB6-JI-tBM" id="efT-gX-ygM"/>
                                 </connections>
                             </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(non_)accessible_carousel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TuI-8r-uh5">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(non_)accessible_carousel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TuI-8r-uh5">
                                 <rect key="frame" x="0.0" y="20" width="600" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="5Od-JS-Wf9"/>

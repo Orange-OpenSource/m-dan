@@ -55,6 +55,7 @@
 		446C9084239AAA3E00C4BEBB /* UIBarButtonItem+Orange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446C9083239AAA3E00C4BEBB /* UIBarButtonItem+Orange.swift */; };
 		6D009D9127183458004612BE /* OrientationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D009D9027183458004612BE /* OrientationViewController.swift */; };
 		6D009D9527183478004612BE /* ExempleOrientation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D009D9427183478004612BE /* ExempleOrientation.storyboard */; };
+		6D23CC252733EAF000246A48 /* UIWindow+Orange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D23CC242733EAF000246A48 /* UIWindow+Orange.swift */; };
 		6D4B985A26E17C6900FF505E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B985926E17C6900FF505E /* SceneDelegate.swift */; };
 		6D4B985E26E1DEE500FF505E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D4B985D26E1DEE500FF505E /* LaunchScreen.storyboard */; };
 		6D4B986426E2B9D900FF505E /* VoiceOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B986326E2B9D900FF505E /* VoiceOverViewController.swift */; };
@@ -191,6 +192,7 @@
 		446C9083239AAA3E00C4BEBB /* UIBarButtonItem+Orange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Orange.swift"; sourceTree = "<group>"; };
 		6D009D9027183458004612BE /* OrientationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationViewController.swift; sourceTree = "<group>"; };
 		6D009D9427183478004612BE /* ExempleOrientation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExempleOrientation.storyboard; sourceTree = "<group>"; };
+		6D23CC242733EAF000246A48 /* UIWindow+Orange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Orange.swift"; sourceTree = "<group>"; };
 		6D4B985926E17C6900FF505E /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6D4B985D26E1DEE500FF505E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D4B986326E2B9D900FF505E /* VoiceOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceOverViewController.swift; sourceTree = "<group>"; };
@@ -636,6 +638,7 @@
 				F4B4A9991C0352640036A823 /* UIColor+Orange.swift */,
 				04FB954F1D75E0A2003675D2 /* CALayer+XibConfiguration.swift */,
 				446C9083239AAA3E00C4BEBB /* UIBarButtonItem+Orange.swift */,
+				6D23CC242733EAF000246A48 /* UIWindow+Orange.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -905,6 +908,7 @@
 				0405116A1D75D9A900115A0F /* DefaultLabelHeaderWithPadding.swift in Sources */,
 				F49FCD8E1C19AFB800B847F5 /* HeaderBisViewController.swift in Sources */,
 				F48AF8DF1C04B6B000CBB44D /* OptionsViewController.swift in Sources */,
+				6D23CC252733EAF000246A48 /* UIWindow+Orange.swift in Sources */,
 				F48BA22F1C16E69F00FC39B2 /* PageTitleViewController.swift in Sources */,
 				DAB832BE1C240F9A008E7942 /* TabTableViewCell.swift in Sources */,
 				F40CD21A1C1F207C00546018 /* CarouselViewController.swift in Sources */,

@@ -359,7 +359,7 @@
 "example_orientation_title"                       = "Orientation";
 "example_orientation_shortDescription"            = "Show that we can perform horizontal orientation";
 "example_orientation_description"                 = "Here, the button is accessible because the graphic elements are well managed with the constraints.\nOn the contrary, in the non accessible example, we can think that the button has no constraints.";
-"example_orientation_buttonText"                  = "T";
+"example_orientation_buttonText"                  = "V";
 "example_orientation_accessible"                  = "Accessible orientation";
 "example_orientation_carousel_nonAccessible"      = "Non accessible orientation";
 // ----------------

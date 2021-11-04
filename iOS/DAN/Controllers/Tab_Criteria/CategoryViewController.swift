@@ -151,8 +151,8 @@ class CategoryViewController: DefaultTableViewController {
         case "contentControl":
 
             examples = [
-                "example_contentControl_carousel_title",
-                "example_contentControl_slideshow_title"
+                "example_contentControl_carousel_title"
+//                "example_contentControl_slideshow_title"   /*obsolète*/
             ]
             
             examplesDetail = [

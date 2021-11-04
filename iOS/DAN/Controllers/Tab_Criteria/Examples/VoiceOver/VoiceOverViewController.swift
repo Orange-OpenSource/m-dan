@@ -1,91 +1,122 @@
-//
-//  VoiceOverViewController.swift
-//  mDAN
-//
-//  Created by Tayeb SEDRAIA on 03/09/2021.
-//  Copyright © 2021 Devrap. All rights reserved.
-//
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
 
 import Foundation
 import UIKit
 
 class VoiceOverViewController: DefaultTableViewController {
 
-    let textCellIdentifier      = "textCell"
-    let buttonCellIdentifier    = "buttonCell"
-    let accessibleSection       = 1
+    //MARK: - Properties
+    let textCellIdentifier      = "descCell"
+    let creditCellIdentifier    = "gestureCell"
+
+    
+    let descriptionSection      = 0
+    let activationSection       = 1
+    let gestureSection          = 2
     
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displayVoiceOverMessage(_:)))
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
     // MARK: - Private methods
     override func setUpDatas() {
-        
+
+        title = "tab_voiceover_title".localized
+
         sectionHeaders = [
             "common_description",
-            "common_example"
+            "common_activation",
+            "common_use"
         ]
         
         cellsContent = [
-            ["example_voiceOver_carousel_description"],
-            [""],
+            ["voiceover_text_desctription"],
+            ["voiceover_text_activation"],
+            ["voiceover_text_use"],
         ]
     }
     
     // MARK: - TableViewDataSource
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if (indexPath as NSIndexPath).section == 0 {
+        if (indexPath as NSIndexPath).section == gestureSection {
+            var textAndButtonCell: TextAndButtonTableViewCell
             
-            let textCell: TextTableViewCell
+            textAndButtonCell            = tableView.dequeueReusableCell(withIdentifier: creditCellIdentifier, for: indexPath) as! TextAndButtonTableViewCell
+            textAndButtonCell.button.setTitle("voiceover_gestures".localized, for: UIControl.State())
+            
+            return textAndButtonCell
+            
+        } else {
+            var textCell: TextTableViewCell
             
             textCell            = tableView.dequeueReusableCell(withIdentifier: textCellIdentifier, for: indexPath) as! TextTableViewCell
             textCell.label.text = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
+
+            
+            if (indexPath as NSIndexPath).section == activationSection {
+                
+                let cellString      = NSMutableAttributedString(string:cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized)
+                let settingsPath    = NSMutableAttributedString(string:"voiceover_text_settingsPath".localized, attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 16.0)])
+                
+                cellString.append(settingsPath)
+                
+                textCell.label.attributedText = cellString
+            }
             
             return textCell
-        }
-        else {
-            
-            let buttonCell: ButtonTableViewCell = tableView.dequeueReusableCell( withIdentifier: buttonCellIdentifier, for: indexPath) as! ButtonTableViewCell
-
-            buttonCell.button.setTitle("example_voiceover_accent_title".localized, for: UIControl.State())
-            buttonCell.button.tag                   = (indexPath as NSIndexPath).section // allow to differenciate buttons while preparing for segue
-//            buttonCell.button.accessibilityLabel    = (indexPath as NSIndexPath).section == accessibleSection ? "example_horizontalScroll_carousel_buttonLabelAccessible".localized : "example_horizontalScroll_carousel_buttonLabelNonAccessible".localized
-            
-            return buttonCell
         }
     }
     
     // MARK: - TableViewDelegate
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        if (indexPath as NSIndexPath).section == 0 {
+        if((indexPath as NSIndexPath).section == 0) {
             
-            return UITableView.automaticDimension
+            return 100
         }
         else {
             
-            return 90;
+            return 44
         }
     }
     
-    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 100
+        return UITableView.automaticDimension
     }
     
-    // MARK: - Storyboard
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    /*override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let carouselVC          = segue.destination as! VoiceOverCarouselViewController
-        carouselVC.isAccessible = (sender as AnyObject).tag == accessibleSection
-    }
+        if (indexPath as NSIndexPath).section == linksSection {
+            
+            UIApplication.shared.openURL(URL(string:appleDocUrl)!)
+        }
+        else if (indexPath as NSIndexPath).section == useSection {
+            
+            UIApplication.shared.openURL(URL(string:cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row] == "voiceover_imagesLicense" ? imagesLicenseURL : imagesCreditURL)!)
+        }
+    }*/
 }

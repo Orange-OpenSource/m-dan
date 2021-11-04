@@ -128,7 +128,6 @@ class DefaultTableViewController: UITableViewController {
             || sectionHeaders[section] == "common_notAccessibleExample"
             || sectionHeaders[section] == "common_accessibleCustomExample"
             || sectionHeaders[section] == "common_notAccessibleCustomExample") {
-            
             return
         }
         else {
@@ -142,8 +141,6 @@ class DefaultTableViewController: UITableViewController {
             header.textLabel?.sizeToFit()
             header.textLabel?.lineBreakMode = .byWordWrapping
             self.tableView.sectionHeaderHeight = UITableView.automaticDimension
-            
-            
         }
 
     }
@@ -160,7 +157,6 @@ class DefaultTableViewController: UITableViewController {
             
             if(sectionHeaders[section] == "common_accessibleExample" || sectionHeaders[section] == "common_accessibleCustomExample") {
                 defaultHeaderViewCell.headerImageView.image = UIImage(named: "icon_check_good")
-//                defaultHeaderViewCell.imageViewHeaderConstraint.constant = 20.0
                 defaultHeaderViewCell.headerLabel.text      = sectionHeaders[section].localized
             }
             else {
@@ -182,7 +178,6 @@ class DefaultTableViewController: UITableViewController {
         
         let header: UITableViewHeaderFooterView     = UITableViewHeaderFooterView()
         header.textLabel?.adjustsFontSizeToFitWidth = true
-//        header.textLabel?.minimumScaleFactor        = 0.7
         header.textLabel?.numberOfLines = 0
         
         return header;

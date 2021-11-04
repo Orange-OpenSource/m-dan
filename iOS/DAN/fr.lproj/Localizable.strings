@@ -360,7 +360,7 @@
 "example_orientation_title"                       = "Orientation";
 "example_orientation_shortDescription"            = "Indiquer que l'on peut utilisé l'application en mode paysage";
 "example_orientation_description"                 = "Le bouton accessible ci-dessous est correctement géré par les \"contraintes\" nous avons aucunes pertes d'informations.\n\nA contrario, le bouton non accessible ne permet pas d'être lu facilement lorsque l'on oriente le téléphone en mode paysage ; la navigation sera désagréable pour l'utilisateur.";
-"example_orientation_buttonText"                  = "T";
+"example_orientation_buttonText"                  = "V";
 "example_orientation_accessible"                  = "Accessible orientation";
 "example_orientation_carousel_nonAccessible"      = "Non accessible orientation";
 

@@ -156,7 +156,6 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="cgS-6q-zU2" secondAttribute="bottom" id="7Zt-eX-qJl"/>
                                     <constraint firstItem="cgS-6q-zU2" firstAttribute="top" secondItem="0ZI-3M-HOt" secondAttribute="top" id="axv-bL-R1F"/>

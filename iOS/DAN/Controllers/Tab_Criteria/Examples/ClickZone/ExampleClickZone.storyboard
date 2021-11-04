@@ -64,7 +64,7 @@
                                             </constraints>
                                             <state key="normal" image="icon_play_good"/>
                                             <connections>
-                                                <action selector="playButtonPressed:" destination="fut-Xd-7DI" eventType="touchUpInside" id="iOd-0X-QAk"/>
+                                                <action selector="playButtonPressed:" destination="fut-Xd-7DI" eventType="touchUpInside" id="rRu-Kc-nLQ"/>
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mary Daisy Jane" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHK-PX-efn">
@@ -125,7 +125,7 @@
                                             </constraints>
                                             <state key="normal" image="icon_play_bad"/>
                                             <connections>
-                                                <action selector="playButtonPressed:" destination="CqH-L3-NWN" eventType="touchUpInside" id="H4x-jf-lV5"/>
+                                                <action selector="playButtonPressed:" destination="CqH-L3-NWN" eventType="touchUpInside" id="hmP-oP-yvC"/>
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nirvana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9my-zD-Fbo">

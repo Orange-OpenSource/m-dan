@@ -88,12 +88,10 @@ class MoreViewController: DefaultTableViewController {
         case 0:
             performSegue(withIdentifier: "introduction-segue", sender: cell)
         case 1:
-//            performSegue(withIdentifier: "orange-accessibility-segue", sender: cell)
             let declarationViewController = DeclarationViewController()
             declarationViewController.declarations.detailUrl = "https://a11y-guidelines.orange.com/fr/"
             declarationViewController.declarations.identityName = "ORANGE SA"
             declarationViewController.declarations.identityAdresse = "Siège social : 111, quai du Président Roosevelt, 92130 Issy-les-Moulineaux"
-//            present(declarationViewController, animated: true, completion: nil)
             self.navigationController?.pushViewController(declarationViewController, animated: true)
 
         case 2:
