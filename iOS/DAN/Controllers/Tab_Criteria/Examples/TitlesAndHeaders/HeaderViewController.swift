@@ -66,12 +66,12 @@ class HeaderViewController: DefaultTableViewController {
             }
             else {
                 
-                if cells[headers.index(of: firstChar)!].count >= 3 {
+                if cells[headers.firstIndex(of: firstChar)!].count >= 3 {
                     
                     continue
                 }
                 else {
-                    cells[headers.index(of: firstChar)!].append(countryName)
+                    cells[headers.firstIndex(of: firstChar)!].append(countryName)
                 }
             }
         }
