@@ -732,8 +732,8 @@
 				TargetAttributes = {
 					F4817FD81C03130800E9612D = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = N2U26FVUB7;
-						LastSwiftMigration = 0800;
+						DevelopmentTeam = TUM972C778;
+						LastSwiftMigration = 1230;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1075,15 +1075,17 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N2U26FVUB7;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_TEAM = TUM972C778;
 				INFOPLIST_FILE = DAN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.devrap.DAN;
 				PRODUCT_NAME = mDAN;
-				PROVISIONING_PROFILE = "25ded91b-9fdf-466c-8076-192aa9a136e8";
+				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1096,15 +1098,17 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N2U26FVUB7;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_TEAM = TUM972C778;
 				INFOPLIST_FILE = DAN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.devrap.DAN;
 				PRODUCT_NAME = mDAN;
-				PROVISIONING_PROFILE = "25ded91b-9fdf-466c-8076-192aa9a136e8";
+				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
