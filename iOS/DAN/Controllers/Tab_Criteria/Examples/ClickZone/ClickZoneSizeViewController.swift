@@ -101,12 +101,12 @@ class ClickZoneSizeViewController: DefaultTableViewController {
         }
         else {
             
-            return 100;
+            return UITableView.automaticDimension
         }
     }
     
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 100
+        return UITableView.automaticDimension
     }
 }
