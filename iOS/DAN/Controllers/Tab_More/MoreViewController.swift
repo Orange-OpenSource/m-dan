@@ -18,10 +18,10 @@
  */
 
 import UIKit
-import DeclarationAccessibility
 
 class MoreViewController: DefaultTableViewController {
 
+    
     let textCellIdentifier = "defaultCell"
     
     // MARK: - View life cycle
@@ -88,12 +88,7 @@ class MoreViewController: DefaultTableViewController {
         case 0:
             performSegue(withIdentifier: "introduction-segue", sender: cell)
         case 1:
-            let declarationViewController = DeclarationViewController()
-            declarationViewController.declarations.detailUrl = "https://a11y-guidelines.orange.com/fr/"
-            declarationViewController.declarations.identityName = "ORANGE SA"
-            declarationViewController.declarations.identityAdresse = "Siège social : 111, quai du Président Roosevelt, 92130 Issy-les-Moulineaux"
-            self.navigationController?.pushViewController(declarationViewController, animated: true)
-
+            performSegue(withIdentifier: "orange-accessibility-segue", sender: cell)
         case 2:
             performSegue(withIdentifier: "about-segue", sender: cell)
          
