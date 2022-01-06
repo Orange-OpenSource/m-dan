@@ -32,6 +32,13 @@ class DeveloperOptionViewController: DefaultTableViewController, UIWebViewDelega
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        reload = [true, true]
+        tableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {

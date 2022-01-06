@@ -80,7 +80,7 @@ class CriteriaViewController: DefaultTableViewController {
             textCell.label.text = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
             textCell.label.textColor = UIColor.black
             textCell.label2.text = "criteria_description_options_cell".localized
-            textCell.label2.textColor = UIColor.orange_orangeForBlackText()
+            textCell.label2.textColor = UIColor.orange_functionalRed()
             
             return textCell
         } else {
