@@ -18,32 +18,40 @@
  */
 
 import UIKit
-import DeclarationAccessibility
+import WebKit
 
-class OrangeAccessibilityViewController: UIViewController {
+class OrangeAccessibilityViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
 
     @IBOutlet weak var myOrangeLabel:   UILabel!
-
+    
+    let webView = WKWebView()
     
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "orange_accessibility_nav_title".localized
-        setupDeclaration()
-    }
+        let urlfr = "mdan_fr"
+        let urlen = "mdan_en"
+        var htmlPath = String()
+        
+        let langStr = Locale.current.languageCode
+        if langStr == "en" {
+            htmlPath = Bundle.main.path(forResource: urlen, ofType: "html")!
+        } else {
+            htmlPath = Bundle.main.path(forResource: urlfr, ofType: "html")!
+        }
+        
+        let htmlUrl = URL(fileURLWithPath: htmlPath, isDirectory: false)
+        webView.loadFileURL(htmlUrl, allowingReadAccessTo: htmlUrl)
+        webView.navigationDelegate = self
+        view = webView
+        
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
     
-    // MARK: - Private methods
-    private func setupDeclaration() {
-        let declarationViewController = DeclarationViewController()
-        self.show(declarationViewController, sender: nil)
-        navigationController?.setNavigationBarHidden(false, animated: false)
-        declarationViewController.declarations.detailUrl = "https://a11y-guidelines.orange.com/fr/"
-        declarationViewController.declarations.identityName = "ORANGE SA"
-        declarationViewController.declarations.identityAdresse = "Siège social : 111, quai du Président Roosevelt, 92130 Issy-les-Moulineaux"
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        webView.frame = view.bounds
     }
 }
