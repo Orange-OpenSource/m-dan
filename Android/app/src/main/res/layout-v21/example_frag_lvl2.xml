@@ -40,7 +40,7 @@
             android:padding="@dimen/large_margin"
             android:background="@drawable/border"
             android:gravity="center_vertical"
-            android:focusable="true"
+            android:screenReaderFocusable="true"
             android:textColor="@color/core_black"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
@@ -118,7 +118,7 @@
                 android:id="@+id/imageView8"
                 android:adjustViewBounds="true"
                 app:srcCompat="@drawable/icon_check_good"
-                android:tint="@color/functional_colours_2"
+                app:tint="@color/functional_colours_2"
                 android:paddingBottom="1sp" />
 
             <TextView
@@ -131,7 +131,7 @@
                 android:textSize="18sp"
                 android:background="@color/lightest_grey"
                 android:gravity="center_vertical"
-                android:focusable="true"
+                android:screenReaderFocusable="true"
                 android:textColor="@color/core_black"
                 android:padding="@dimen/large_margin"/>
 
@@ -166,7 +166,7 @@
                 android:id="@+id/imageView9"
                 android:adjustViewBounds="true"
                 app:srcCompat="@drawable/icon_check_bad"
-                android:tint="@color/functional_colours_1"/>
+                app:tint="@color/functional_colours_1"/>
 
             <TextView
                 style="@style/TextViewStandard.Title.Level2"
@@ -178,7 +178,7 @@
                 android:textSize="18sp"
                 android:background="@color/lightest_grey"
                 android:gravity="center_vertical"
-                android:focusable="true"
+                android:screenReaderFocusable="true"
                 android:textColor="@color/core_black"
                 android:padding="@dimen/large_margin"/>
         </LinearLayout>
