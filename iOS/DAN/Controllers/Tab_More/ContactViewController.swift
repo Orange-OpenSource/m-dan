@@ -32,12 +32,12 @@ class ContactViewController: UIViewController {
         
         title = "contact_title".localized
         
-        webSiteButton.setTitleColor(UIColor.orange_orangeForWhiteBG(), for: UIControl.State())
-        supportButton.setTitleColor(UIColor.orange_orangeForWhiteBG(), for: UIControl.State())
-        mailButton.setTitleColor(UIColor.orange_orangeForWhiteBG(), for: UIControl.State())
+        webSiteButton.setTitleColor(UIColor.orange_orangeForWhiteBG(), for: .normal)
+        supportButton.setTitleColor(UIColor.orange_orangeForWhiteBG(), for: .normal)
+        mailButton.setTitleColor(UIColor.orange_orangeForWhiteBG(), for: .normal)
         
-        webSiteButton.setTitle("contact_webSite".localized, for: UIControl.State())
-        supportButton.setTitle("contact_support".localized, for: UIControl.State())
+        webSiteButton.setTitle("contact_webSite".localized, for: .normal)
+        supportButton.setTitle("contact_support".localized, for: .normal)
         contactLabel.text   = "contact_contactTeam".localized
         
     }
@@ -49,12 +49,12 @@ class ContactViewController: UIViewController {
     // MARK: - Private methods
     @IBAction func webSiteButtonPressed(_ sender: AnyObject) {
         
-        UIApplication.shared.openURL(URL(string: "http://webidea.si.francetelecom.fr/spip/spip.php?rubrique119")!)
+        UIApplication.shared.openURL(URL(string: "https://a11y-guidelines.orange.com/fr/")!)
     }
     
     @IBAction func supportButtonPressed(_ sender: AnyObject) {
         
-        UIApplication.shared.openURL(URL(string: "http://isf.idea.rd.francetelecom.fr/issue.html?applicationId=4453&projectName=")!)
+        UIApplication.shared.openURL(URL(string: "https://github.com/Orange-OpenSource/a11y-guidelines")!)
     }
     
     @IBAction func contactButtonPressed(_ sender: AnyObject) {

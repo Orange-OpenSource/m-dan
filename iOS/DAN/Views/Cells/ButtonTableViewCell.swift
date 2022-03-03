@@ -27,6 +27,7 @@ class ButtonTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         button.layer.cornerRadius = 5
+        button.backgroundColor = UIColor.orange_orangeForWhiteText()
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

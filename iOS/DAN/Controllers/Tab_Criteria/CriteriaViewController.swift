@@ -43,6 +43,7 @@ class CriteriaViewController: DefaultTableViewController {
         cellsContent = [
             ["criteria_description_cell"],
             [
+                "voiceOver",
                 "image",
                 "color",
                 "textualAlternative",
@@ -58,8 +59,7 @@ class CriteriaViewController: DefaultTableViewController {
                 "orientation",
                 "form",
                 "readingOrder",
-                "language",
-                "voiceOver"
+                "language"
             ]
         ]
         
@@ -80,7 +80,7 @@ class CriteriaViewController: DefaultTableViewController {
             textCell.label.text = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
             textCell.label.textColor = UIColor.black
             textCell.label2.text = "criteria_description_options_cell".localized
-            textCell.label2.textColor = UIColor.orange_functionalRed()
+            textCell.label2.textColor = UIColor.orange_orangeForWhiteText()
             
             return textCell
         } else {

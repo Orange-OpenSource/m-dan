@@ -66,6 +66,7 @@ class VoiceOverViewController: DefaultTableViewController {
             
             textAndButtonCell            = tableView.dequeueReusableCell(withIdentifier: creditCellIdentifier, for: indexPath) as! TextAndButtonTableViewCell
             textAndButtonCell.button.setTitle("voiceover_gestures".localized, for: UIControl.State())
+            textAndButtonCell.button.backgroundColor = UIColor.orange_orangeForWhiteText()
             
             return textAndButtonCell
             

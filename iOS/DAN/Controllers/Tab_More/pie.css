@@ -4,7 +4,7 @@
   height: 200px;
   border-radius: 50%;
   background: #eee;
-  background-image: linear-gradient(to right, transparent 50%, #F16E00 0);
+  background-image: linear-gradient(to right, transparent 50%, #0054AE 0);
 }
 
 .pie:after,
@@ -20,7 +20,7 @@
   transform-origin: left;
 }
 
-.pie:after { background-color: #F16E00 }
+.pie:after { background-color: #0054AE }
 
 .pie-val {
   position: absolute;

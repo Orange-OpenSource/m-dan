@@ -59,7 +59,7 @@
 
 // Description
 "criteria_description_cell" = "This guide aims to present the different accessibility criteria for getting an accessible iOS application. Each criterion explains for whom it is important, when it can be implemented, why it is important and the corresponding accessibility rule. The criteria are explained through real case examples.";
-"criteria_description_options_cell" = "Almost all example require VoiceOver, the iOS screenreader, in order to test the accessibility.";
+"criteria_description_options_cell" = "Almost all example require VoiceOver, the iOS screenreader, in order to test the accessibility. A mention at the top right of the navigation bar will be present to indicate when it is necessary to activate VoiceOver (mention with the 'Information' logo)";
 
 
 // Categories
@@ -416,7 +416,7 @@
 // --------------------
 // Examples - Voice Over
 // --------------------
-"criteria_category_voiceOver_whatFor"   = "VoiceOver est un lecteur d’écran intégré qui décrit à haute voix les éléments qui apparaissent sur l’écran de votre téléphone. Il est gratuit et permet à un utilisateur non ou mal voyant, dyslexique et illettré de pouvoir vocaliser tous les éléments visibles contenus dans la page.";
+"criteria_category_voiceOver_whatFor"   = "The majority of our examples will use Apple's screen reader. It is therefore important to master the basic gestures to continue to discover the mDAN application. \nVoiceOver is a screen reader that describes aloud the items that appear on your phone screen. It is free and allows a blind or visually impaired, dyslexic and illiterate user to be able to vocalize all the visible elements contained in the page.";
 "criteria_category_voiceOver_howTo"     = "To activate it, go to settings:\n\nSettings/General/Accessibility/VoiceOver";
 
 // Examples - voice over -> text
@@ -572,6 +572,9 @@
 // Menu items
 "plus_menu_home"                = "Introduction to accessibility";
 "plus_menu_orangeAccessibility" = "Accessibility declaration";
+"plus_menu_cgu"                 = "Terms of service";
+"plus_menu_legal_notice"        = "Legal notice";
+"plus_menu_other_application"   = "Other apps";
 "plus_menu_about"               = "About";
 "plus_menu_contact"             = "Contact";
 
@@ -599,6 +602,20 @@
 "orange_myNetwork"  = "My Network";
 "orange_myOrange"   = "My Orange";
 
+// ----------------
+// Menu - CGU
+// ----------------
+"cgu_nav_title"  = "Terms of service";
+
+// ----------------
+// Menu - Legal notice
+// ----------------
+"legal_notice_nav_title"  = "Legal notice";
+
+// ----------------
+// Menu - Other application
+// ----------------
+"other_application_nav_title"  = "Other apps";
 
 // ---------------
 // Menu - About
