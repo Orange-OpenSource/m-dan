@@ -30,6 +30,14 @@ extension UIColor {
         return UIColor(red: r, green: g, blue: b, alpha: alpha)
     }
     
+    convenience init(hexaString: String, alpha: CGFloat = 1) {
+        let chars = Array(hexaString.dropFirst())
+        self.init(red:   .init(strtoul(String(chars[0...1]),nil,16))/255,
+                  green: .init(strtoul(String(chars[2...3]),nil,16))/255,
+                  blue:  .init(strtoul(String(chars[4...5]),nil,16))/255,
+                  alpha: alpha)}
+    
+    
     // MARK: - Black
     class func orange_blackColor()          -> UIColor { return UIColor.colorWithHex(0x000000) }
     
@@ -45,12 +53,12 @@ extension UIColor {
     
     // MARK: - Orange
     // MARK: Background
-    class func orange_orangeForBlackText()  -> UIColor { return UIColor.colorWithHex(0xFF7900) }
-    class func orange_orangeForWhiteText()  -> UIColor { return UIColor.colorWithHex(0xF16E00) }
+    class func orange_orangeForBlackText()  -> UIColor { return UIColor(hexaString: "#0075F6") }
+    class func orange_orangeForWhiteText()  -> UIColor { return UIColor(hexaString: "#0054AE") }
     
     // MARK: Text
-    class func orange_orangeForBlackBG()    -> UIColor { return UIColor.colorWithHex(0xFF7900) }
-    class func orange_orangeForWhiteBG()    -> UIColor { return UIColor.colorWithHex(0xF16E00) }
+    class func orange_orangeForBlackBG()    -> UIColor { return UIColor(hexaString: "#0075F6") }
+    class func orange_orangeForWhiteBG()    -> UIColor { return UIColor(hexaString: "#0054AE") }
     
     // MARK: Functional
     class func orange_red()                 -> UIColor { return UIColor.colorWithHex(0xC1431A) }

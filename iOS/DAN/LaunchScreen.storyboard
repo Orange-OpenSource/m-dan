@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,37 +13,88 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Scm-co-mBd">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoorange" translatesAutoresizingMaskIntoConstraints="NO" id="jfE-un-FL0">
+                                <rect key="frame" x="362" y="826" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Scm-co-mBd" secondAttribute="height" multiplier="207:448" id="UMv-cq-nfw"/>
-                                    <constraint firstAttribute="width" constant="414" id="WsY-7m-yWW"/>
-                                    <constraint firstAttribute="height" constant="896" id="Z9u-kY-J2l"/>
+                                    <constraint firstAttribute="height" constant="50" id="Uq9-Ij-thg">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="50" id="l1j-th-yDP">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                    </constraint>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand_dark" translatesAutoresizingMaskIntoConstraints="NO" id="wgH-6e-Tgo">
+                                <rect key="frame" x="99" y="324" width="230" height="320"/>
+                                <viewLayoutGuide key="safeArea" id="E6n-6S-dnI"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="6Q7-5r-7UZ">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="500"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="230" id="JKf-UQ-NTr">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="360"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mDAN" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVU-OB-6Hz">
+                                <rect key="frame" x="16" y="48" width="396" height="44.666666666666657"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="56"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="from" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYC-qw-NGN">
+                                <rect key="frame" x="15.999999999999996" y="92.666666666666671" width="51.666666666666657" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orange Innovation" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ten-zB-icJ">
+                                <rect key="frame" x="75.666666666666686" y="92.666666666666671" width="205" height="31.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.94509803920000002" green="0.43137254899999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Scm-co-mBd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DMW-zK-D6c"/>
-                            <constraint firstAttribute="bottom" secondItem="Scm-co-mBd" secondAttribute="bottom" id="PHD-gK-c6y"/>
-                            <constraint firstItem="Scm-co-mBd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kHw-Pe-tJh"/>
-                            <constraint firstItem="Scm-co-mBd" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="pmH-W4-dNG"/>
+                            <constraint firstItem="ten-zB-icJ" firstAttribute="leading" secondItem="FYC-qw-NGN" secondAttribute="trailing" constant="8" id="17B-8R-sPh"/>
+                            <constraint firstItem="AVU-OB-6Hz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="4" id="1bC-78-NsQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AVU-OB-6Hz" secondAttribute="trailing" constant="16" id="24S-0C-6u9"/>
+                            <constraint firstItem="wgH-6e-Tgo" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="16" id="9QK-cM-tJI"/>
+                            <constraint firstItem="FYC-qw-NGN" firstAttribute="top" secondItem="AVU-OB-6Hz" secondAttribute="bottom" id="Acn-i1-tQm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jfE-un-FL0" secondAttribute="trailing" constant="16" id="L3E-ir-sdR">
+                                <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                            </constraint>
+                            <constraint firstItem="wgH-6e-Tgo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Y2k-5x-TCi"/>
+                            <constraint firstItem="AVU-OB-6Hz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gNe-Li-Tfg"/>
+                            <constraint firstItem="FYC-qw-NGN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="r5T-iK-bnn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jfE-un-FL0" secondAttribute="bottom" constant="16" id="wJR-I6-sZc">
+                                <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                            </constraint>
+                            <constraint firstItem="ten-zB-icJ" firstAttribute="top" secondItem="AVU-OB-6Hz" secondAttribute="bottom" id="y7b-DW-dBQ"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="163.768115942029" y="160.71428571428569"/>
+            <point key="canvasLocation" x="50.625" y="373.94366197183098"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="384" height="512"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="hand_dark" width="300" height="416"/>
+        <image name="logoorange" width="53.333332061767578" height="53.333332061767578"/>
     </resources>
 </document>

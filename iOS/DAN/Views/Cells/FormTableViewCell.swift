@@ -36,9 +36,14 @@ class FormTableViewCell: UITableViewCell, UITextFieldDelegate {
         formView.isAccessibilityElement = false
         formView.shouldGroupAccessibilityChildren = true
         formView.accessibilityElements = []
-        formView.accessibilityElements?.append(textfieldView)
-        formView.accessibilityElements?.append(memorySwitch)
-        formView.accessibilityElements?.append(buttonView)
+        formView.accessibilityElements?.append(textfieldView as Any)
+        formView.accessibilityElements?.append(memorySwitch as Any)
+        formView.accessibilityElements?.append(buttonView as Any)
+        
+        // Color
+        buttonView.setTitleColor(UIColor.orange_orangeForWhiteText(), for: .normal)
+        memorySwitch.onTintColor = UIColor.orange_orangeForWhiteText()
+        textfieldView.tintColor = UIColor.orange_orangeForWhiteText()
         
         memorySwitch.accessibilityLabel = memoryLabel.text
         //Correction d'un bug générant une double vocalisation du bouton "valider"

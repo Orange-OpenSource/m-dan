@@ -44,8 +44,12 @@ class GhostElementViewController: UIViewController {
         customAlertLabel.text               = "example_ghostElement_alert_nonAccessibleAlerteTitle".localized
 
         nonAccesibleButton.setTitle("example_ghostElement_alert_buttonText".localized, for: UIControl.State())
+        nonAccesibleButton.backgroundColor = UIColor.orange_orangeForWhiteText()
         accessibleButton.setTitle("example_ghostElement_alert_buttonText".localized, for: UIControl.State())
+        accessibleButton.backgroundColor = UIColor.orange_orangeForWhiteText()
         customAlertButton.setTitle("common_ok".localized, for: UIControl.State())
+        customAlertButton.backgroundColor = UIColor.orange_orangeForWhiteText()
+
         
         nonAccesibleButton.layer.cornerRadius   = 5
         accessibleButton.layer.cornerRadius     = 5

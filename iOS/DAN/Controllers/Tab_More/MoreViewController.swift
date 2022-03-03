@@ -49,6 +49,10 @@ class MoreViewController: DefaultTableViewController {
             [
                 "plus_menu_home",
                 "plus_menu_orangeAccessibility",
+                "plus_menu_cgu",
+                "plus_menu_legal_notice",
+                "plus_menu_other_application",
+                /*"plus_menu_contact",*/
                 "plus_menu_about"
             ]
         ]
@@ -90,6 +94,12 @@ class MoreViewController: DefaultTableViewController {
         case 1:
             performSegue(withIdentifier: "orange-accessibility-segue", sender: cell)
         case 2:
+            performSegue(withIdentifier: "cgu-segue", sender: cell)
+        case 3:
+            performSegue(withIdentifier: "legal-segue", sender: cell)
+        case 4:
+            performSegue(withIdentifier: "other-application-segue", sender: cell)
+        case 5:
             performSegue(withIdentifier: "about-segue", sender: cell)
          
         default:

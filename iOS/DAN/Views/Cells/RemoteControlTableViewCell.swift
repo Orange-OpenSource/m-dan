@@ -93,6 +93,12 @@ class RemoteControlTableViewCell: UITableViewCell {
         remoteView.layer.cornerRadius = 10
         volumeView.layer.cornerRadius = 22
         channelView.layer.cornerRadius = 22
+        
+        //Color
+        volumePlusButton.backgroundColor = UIColor.orange_orangeForWhiteText()
+        volumeMinusButton.backgroundColor = UIColor.orange_orangeForWhiteText()
+        channelPlusButton.backgroundColor = UIColor.orange_orangeForWhiteText()
+        channelMinusButton.backgroundColor = UIColor.orange_orangeForWhiteText()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
