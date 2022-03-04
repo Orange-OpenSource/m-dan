@@ -2,11 +2,11 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:state_checked="true"
-        android:color="@color/accent"/>
+        android:color="@color/white"/>
     <item
         android:state_checked="false"
         android:state_focused="false"
-        android:color="@color/white"/>
+        android:color="@color/functional_greys_4"/>
 
     <item
         android:state_checked="false"

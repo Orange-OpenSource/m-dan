@@ -27,7 +27,11 @@
     <string name="section_axs_orange">L\'accessibilité chez Orange</string>
     <string name="section_axs_statement">Déclaration d\'accessibilité</string>
     <string name="section_about">À propos</string>
+    <string name="section_legal">Mentions légales</string>
     <string name="section_contact">Contact</string>
+    <string name="section_cgu">Conditions générales d\'utilisation</string>
+    <string name="section_other_apps">Autres applications</string>
+    <string name="section_contact_us">Nous contacter</string>
     <string name="registrant" translatable="false">ORANGE SA\nSiège social : 111, quai du Président Roosevelt\n92130 Issy-les-Moulineaux</string>
 
 
@@ -768,6 +772,15 @@
 
     <string name="yes">Oui</string>
     <string name="no">Non</string>
+
+    <string name="mail_address">accessibility.support@orange.com</string>
+    <string name="mail_subject">sujet du email</string>
+    <string name="mail_body">corps du email</string>
+    <string name="mail_toast">Il n\'y a aucun client email installé.</string>
+
+
+    <string name="pz_content_desc_logo">Logo Orange</string>
+    <string name="pz_from">from <font fgcolor="#EF7814" tools:ignore="UnusedResources" tools:keep="@font/">Orange Innovation</font> </string>
 
 </resources>
 

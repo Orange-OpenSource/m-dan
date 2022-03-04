@@ -32,20 +32,6 @@ android {
         abortOnError false
     }
 
-    signingConfigs {
-        debug {
-            storeFile file("debug.keystore.jks")
-            storePassword "devrap"
-            keyAlias "com.devrap.1013reseau.keystore"
-            keyPassword "devrap"
-        }
-        unsigned {
-            storePassword = ""
-            keyAlias = ""
-            keyPassword = ""
-        }
-    }
-
 // Specific config
 
     flavorDimensions "version"
@@ -53,14 +39,14 @@ android {
     productFlavors {
         qualif {
             dimension "version"
-            applicationId "com.orange.ease.dan.qualif"
+            applicationId "com.orange.labs.dan.qualif"
             versionCode 11
             versionName "3.3"
         }
         prod {
             dimension "version"
             isDefault true
-            applicationId "com.orange.ease.dan"
+            applicationId "com.orange.labs.dan"
             versionCode 1
             versionName "1.0"
         }

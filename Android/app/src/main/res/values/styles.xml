@@ -137,7 +137,7 @@
         <item name="android:textSize">@dimen/font_size_small</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/button_bg_selector</item>
-        <item name="android:background">@color/core_orange_dark</item>
+        <item name="android:background">@color/accent_color</item>
         <item name="android:paddingLeft">30dp</item>
         <item name="android:paddingRight">30dp</item>
         <item name="android:layout_margin">10dp</item>
@@ -147,7 +147,7 @@
         <item name="android:textSize">@dimen/font_size_small</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/core_white</item>
-        <item name="android:background">@color/core_orange_dark</item>
+        <item name="android:background">@color/accent_color</item>
         <item name="android:paddingLeft">30dp</item>
         <item name="android:paddingRight">30dp</item>
         <item name="android:layout_margin">10dp</item>

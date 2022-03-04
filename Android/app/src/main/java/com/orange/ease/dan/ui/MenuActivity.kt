@@ -19,20 +19,22 @@
 
 package com.orange.ease.dan.ui
 
+import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
-import androidx.appcompat.app.AppCompatActivity
+import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.commit
 import com.orange.ease.dan.R
 import com.orange.ease.dan.databinding.ActivityMenuBinding
-import androidx.fragment.app.commit
 import com.orange.ease.dan.navigation.DialogActivity
 import com.orange.ease.dan.ui.criteria.CriteriaFragment
 import com.orange.ease.dan.ui.developmentguide.DevelopmentGuideFragment
 import com.orange.ease.dan.ui.tools.OptionsFragment
+
 
 class MenuActivity : DialogActivity() {
 
@@ -101,7 +103,34 @@ class MenuActivity : DialogActivity() {
             true
         }
         R.id.action_about -> {
-            val intent = Intent(this, AboutActivity::class.java)
+            val intent = Intent(this, LegalActivity::class.java)
+            startActivity(intent)
+            true
+        }
+        R.id.action_cgu -> {
+            val intent = Intent(this, TermsActivity::class.java)
+            startActivity(intent)
+            true
+        }
+        R.id.action_contact -> {
+            val i = Intent(Intent.ACTION_SEND)
+            i.type = "message/rfc822"
+            i.putExtra(Intent.EXTRA_EMAIL, arrayOf(getString(R.string.mail_address)))
+            i.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.mail_subject))
+            i.putExtra(Intent.EXTRA_TEXT, getString(R.string.mail_body))
+            try {
+                startActivity(Intent.createChooser(i, "Send mail..."))
+            } catch (ex: ActivityNotFoundException) {
+                Toast.makeText(
+                    this@MenuActivity,
+                    R.string.mail_toast,
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+            true
+        }
+        R.id.action_other_apps -> {
+            val intent = Intent(this, OtherAppsActivity::class.java)
             startActivity(intent)
             true
         }
