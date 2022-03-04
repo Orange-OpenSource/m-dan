@@ -5,7 +5,7 @@
         android:right="32dp"
         android:top="52dp">
         <shape android:shape="line">
-            <stroke android:width="2dp" android:height="1dp" android:color="@color/accent"/>
+            <stroke android:width="2dp" android:height="1dp" android:color="@color/white"/>
             <corners android:radius="5dp"/>
         </shape>
     </item>

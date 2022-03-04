@@ -24,27 +24,28 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
+import com.orange.ease.dan.databinding.ActivitySplashscreenBinding
 import com.orange.ease.dan.databinding.SplashBinding
 
 class SplashScreenActivity : AppCompatActivity() {
 
-    private lateinit var binding: SplashBinding
+    private lateinit var binding: ActivitySplashscreenBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = SplashBinding.inflate(layoutInflater)
+        binding = ActivitySplashscreenBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
         initTimer()
     }
 
-    fun startMenuActivity() {
+    private fun startMenuActivity() {
         val intent = Intent(this, MenuActivity::class.java)
         startActivity(intent)
         finish()
     }
 
-    fun initTimer() {
+    private fun initTimer() {
         Handler(Looper.getMainLooper()).postDelayed(
             {
                 startMenuActivity()

@@ -27,8 +27,11 @@
     <string name="section_axs_orange">Accessibility at Orange</string>
     <string name="section_axs_statement">Accessibility statement</string>
     <string name="section_about">About</string>
+    <string name="section_legal">Legal notice</string>
     <string name="section_contact">Contact</string>
-
+    <string name="section_cgu">Terms of Service</string>
+    <string name="section_other_apps">Other applications</string>
+    <string name="section_contact_us">Contact us</string>
 
     <!-- @todo : remove it before release -->
     <string name="title_content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</string>
@@ -763,6 +766,15 @@
 
     <string name="yes">Yes</string>
     <string name="no">No</string>
+
+    <string name="mail_address">accessibility.support@orange.com</string>
+    <string name="mail_subject">subject of email</string>
+    <string name="mail_body">body of email</string>
+    <string name="mail_toast">There are no email clients installed.</string>
+
+    <string name="pz_content_desc_logo">Orange icon</string>
+    <string name="pz_from">from <font fgcolor="#EF7814" tools:ignore="UnusedResources" tools:keep="@font/">Orange Innovation</font> </string>
+
 </resources>
 
 
