@@ -1,0 +1,35 @@
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one
+  ~ or more contributor license agreements.  See the NOTICE file
+  ~ distributed with this work for additional information
+  ~ regarding copyright ownership.  The ASF licenses this file
+  ~ to you under the Apache License, Version 2.0 (the
+  ~ "License"); you may not use this file except in compliance
+  ~ with the License.  You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<resources>
+    <string name="library_name">Accessibility statement</string>
+    <string name="result">%1$d%%\ncompliant</string>
+    <string name="result_content_desc">%1$d%% WCAG compliant</string>
+    <string name="nameOfApp">This application</string>
+    <string name="conformity_state">%1$s is %2$d%% WCAG compliant.</string>
+    <string name="no_conformity_state">%1$s does not comply with WCAG criteria.</string>
+    <string name="partial_conformity_state">%1$s is in partial compliance with WCAG criteria.</string>
+    <string name="total_conformity_state">%1$s is in full compliance with WCAG criteria.</string>
+    <string name="state_conformity">Compliance status</string>
+    <string name="audit_date">Date of the audit</string>
+    <string name="registrant_identity">Declarant identity</string>
+    <string name="referential">Standard applied</string>
+    <string name="app_technologies">Technical specifications</string>
+    <string name="details">View details</string>
+</resources>

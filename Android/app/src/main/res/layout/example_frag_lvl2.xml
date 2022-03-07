@@ -36,11 +36,12 @@
             android:minHeight="45dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textStyle="bold"
+            android:focusable="false"
             android:textSize="18sp"
+            android:screenReaderFocusable="true"
             android:padding="@dimen/large_margin"
             android:background="@drawable/border"
             android:gravity="center_vertical"
-            android:focusable="true"
             android:textColor="@color/core_black"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
@@ -128,9 +129,9 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textStyle="bold"
                 android:textSize="18sp"
+                android:screenReaderFocusable="true"
                 android:background="@color/lightest_grey"
                 android:gravity="center_vertical"
-                android:focusable="true"
                 android:textColor="@color/core_black"
                 android:padding="@dimen/large_margin"/>
 
@@ -171,12 +172,12 @@
                 android:id="@+id/textViewTitleExempleAxsNo"
                 android:text="@string/criteria_not_accessible_example"
                 android:minHeight="45dp"
+                android:screenReaderFocusable="true"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:background="@color/lightest_grey"
                 android:gravity="center_vertical"
-                android:focusable="true"
                 android:textColor="@color/core_black"
                 android:padding="@dimen/large_margin"/>
         </LinearLayout>

@@ -20,9 +20,9 @@
 <vector android:height="30dp" android:viewportHeight="512.0"
     android:viewportWidth="512.0" android:width="30dp" xmlns:android="http://schemas.android.com/apk/res/android"
     android:tintMode="multiply"
-    android:tint="@color/orange_digital_2">
+    android:tint="@color/blue_digital_2">
 
-    <path android:fillColor="@color/orange_digital_2"
+    <path android:fillColor="@color/blue_digital_2"
         android:pathData="M256,0l256,512l-512,0z"
         android:strokeColor="#00000000" android:strokeWidth="1"/>
 </vector>
