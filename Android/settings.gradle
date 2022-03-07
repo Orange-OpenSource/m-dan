@@ -1,2 +1,3 @@
 rootProject.name = "mDAN Android"
 include ':app'
+include ':AccessibilityStatementLibrary'

@@ -93,7 +93,7 @@
             android:layout_height="15dp"
             android:id="@+id/imageView13"
             app:srcCompat="@drawable/icon_triangle"
-            android:tint="@color/orange_digital_2"
+            android:tint="@color/blue_digital_2"
             android:layout_marginLeft="20dp"
             android:importantForAccessibility="yes" />
 
@@ -234,7 +234,7 @@
                 android:layout_height="30dp"
                 android:id="@+id/imageView19"
                 app:srcCompat="@drawable/icon_triangle"
-                android:tint="@color/orange_digital_2"
+                android:tint="@color/blue_digital_2"
                 android:layout_gravity="center_vertical"
                 android:importantForAccessibility="yes" />
         </LinearLayout>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<declaration>
+<!-- from la va11ydette with love -->
+
+<!--
+ TITLE
+ This is the name for the site, or page, or section of a site that was audited
+ -->
+ <title><![CDATA[mDan]]></title>
+
+<!--
+LANGUAGE
+This declaration was done in this language:
+(please use proper HTML lang attribute)
+-->
+<lang>fr</lang>
+
+<!-- 
+STATUS
+Either being audited or having been audited
+So:
+[WIP|DONE]
+-->
+<status>DONE</status>
+
+<!--
+
+ below this line will not be read if we're WIP, so don't bother filling it up
+-->
+
+<!--
+******************************************************
+GENERAL DECLARATION INFORMATION
+******************************************************
+-->
+
+<!--
+APPROVAL
+Name: approval name
+Content: usefull for additional information like a postal address for example. This is CDATA-protected, please add properly formatted HTML. 
+-->
+<approval>
+	<name>Service client</name>
+	<content>
+<![CDATA[]]>
+</content>
+</approval>
+
+<!--
+CONTACT
+Name: contact name
+Content: full contact informations. This is CDATA-protected, please add properly formatted HTML. 
+-->
+<contact>
+	<name>Orange France</name>
+	<content>
+<![CDATA[]]>
+</content>
+</contact>
+
+<!--
+AUDIT DATE
+Format: YYYY-MM-DD
+-->
+<audit_date>2021-12-08</audit_date>
+
+<!--
+DIGITAL ACCESSIBILITY PLAN
+Plan: Paragraph for the digital accessibility plan. This is CDATA-protected, please add properly formatted HTML. 
+-->
+<plan>
+<![CDATA[]]>
+</plan>
+
+<!--
+REFERENTIAL USED
+-->
+<referential>
+	<name>WCAG</name><!-- if it's an abbreviation, the document template must translate it to plain text -->
+	<version>2.1</version>
+	<level>AA</level>
+	<url>https://www.w3.org/Translations/WCAG20-fr/</url>
+</referential>
+
+<!--
+TECHNOLOGIES USED IN THE SITE
+-->
+<technologies>
+	<technology>Java </technology>
+	<technology>Kotlin </technology>
+	<technology>XML </technology>
+</technologies>
+
+<!--
+TESTS PERFORMED TO EVALUATE ACCESSIBILITY
+a test can have the type [auto|manual|functional|user]:
+* automatic testing
+* manual testing
+* functional testing
+* test done by a real user
+-->
+<tests>
+	<test type="auto">
+		<name>aXe</name>
+		<version>0.10.2</version>
+	</test>
+	<test type="auto">
+		<name>Accessibility Scanner</name>
+		<version></version>
+	</test>
+	<test type="functional">
+		<name>Talkback</name>
+		<version></version>
+	</test>
+	<test type="functional">
+		<name>Switch Access</name>
+		<version></version>
+	</test>
+</tests>
+
+<!--
+ENVIRONMENTS USED TO EVALUATE ACCESSIBILITY
+Environment: an environment should indicate a user agent and an assistive technologie. This is CDATA-protected, please add properly formatted HTML. 
+-->
+<environments>
+	<environment><![CDATA[Android 10 et Talkback]]></environment>
+</environments>
+
+<!--
+URLS
+This is the list of URLs that were tested
+This is CDATA-protected, please add properly formatted HTML.
+-->
+<urls>
+	<url>
+		<name><![CDATA[Guide d'accessibilité - Description et utilisation]]></name>
+		<location><![CDATA[]]></location>
+	</url>
+	<url>
+		<name><![CDATA[Navigaton au focus]]></name>
+		<location><![CDATA[]]></location>
+	</url>
+	<url>
+		<name><![CDATA[Guide d'accessibilité Android - développement]]></name>
+		<location><![CDATA[]]></location>
+	</url>
+	<url>
+		<name><![CDATA[Guide d'accessibilité Android - options]]></name>
+		<location><![CDATA[]]></location>
+	</url>
+	<url>
+		<name><![CDATA[TalkBack]]></name>
+		<location><![CDATA[]]></location>
+	</url>
+	<url>
+		<name><![CDATA[Exemple 1/3 Image contenant du texte ou informative]]></name>
+		<location><![CDATA[]]></location>
+	</url>
+</urls>
+<!--
+******************************************************
+END GENERAL DECLARATION INFORMATION
+******************************************************
+START SPECIFIC CONFORMITY NUMBERS
+******************************************************
+-->
+<!--
+USERS
+Number of real users that tested the pages
+and blocking points they found (if 0, the document will have to say “with no blocking points from a user's point of view”
+-->
+<users>0</users>
+<blocking_points>0</blocking_points>
+
+<!--
+Pages results details
+-->
+<pages_results conformity="95">
+	<page name="Guide d&#039;accessibilité - Description et utilisation">
+		<ok type="a">13</ok><!-- valid -->
+		<ok type="aa">11</ok><!-- valid -->
+		<nok type="a">2</nok> <!-- not valid -->
+		<nok type="aa">0</nok> <!-- not valid -->
+		<na type="a">15</na><!-- not applicable -->
+		<na type="aa">9</na><!-- not applicable -->
+		<conformity>92</conformity><!-- percentage, expressed as a number with no “%” sign -->
+</page>
+	<page name="Navigaton au focus">
+		<ok type="a">12</ok><!-- valid -->
+		<ok type="aa">12</ok><!-- valid -->
+		<nok type="a">1</nok> <!-- not valid -->
+		<nok type="aa">0</nok> <!-- not valid -->
+		<na type="a">17</na><!-- not applicable -->
+		<na type="aa">8</na><!-- not applicable -->
+		<conformity>96</conformity><!-- percentage, expressed as a number with no “%” sign -->
+</page>
+	<page name="Guide d&#039;accessibilité Android - développement">
+		<ok type="a">13</ok><!-- valid -->
+		<ok type="aa">11</ok><!-- valid -->
+		<nok type="a">1</nok> <!-- not valid -->
+		<nok type="aa">0</nok> <!-- not valid -->
+		<na type="a">16</na><!-- not applicable -->
+		<na type="aa">9</na><!-- not applicable -->
+		<conformity>96</conformity><!-- percentage, expressed as a number with no “%” sign -->
+</page>
+	<page name="Guide d&#039;accessibilité Android - options">
+		<ok type="a">11</ok><!-- valid -->
+		<ok type="aa">11</ok><!-- valid -->
+		<nok type="a">1</nok> <!-- not valid -->
+		<nok type="aa">0</nok> <!-- not valid -->
+		<na type="a">18</na><!-- not applicable -->
+		<na type="aa">9</na><!-- not applicable -->
+		<conformity>96</conformity><!-- percentage, expressed as a number with no “%” sign -->
+</page>
+	<page name="TalkBack">
+		<ok type="a">10</ok><!-- valid -->
+		<ok type="aa">11</ok><!-- valid -->
+		<nok type="a">1</nok> <!-- not valid -->
+		<nok type="aa">0</nok> <!-- not valid -->
+		<na type="a">19</na><!-- not applicable -->
+		<na type="aa">9</na><!-- not applicable -->
+		<conformity>95</conformity><!-- percentage, expressed as a number with no “%” sign -->
+</page>
+	<page name="Exemple 1/3 Image contenant du texte ou informative">
+		<ok type="a">11</ok><!-- valid -->
+		<ok type="aa">12</ok><!-- valid -->
+		<nok type="a">1</nok> <!-- not valid -->
+		<nok type="aa">0</nok> <!-- not valid -->
+		<na type="a">18</na><!-- not applicable -->
+		<na type="aa">8</na><!-- not applicable -->
+		<conformity>96</conformity><!-- percentage, expressed as a number with no “%” sign -->
+</page>
+</pages_results>
+
+<!--
+Non conformity details
+-->
+<details>
+	<detail>
+		<title>1.4.1, Utilisation de la couleur, Niveau A</title>
+		<description><![CDATA[]]></description>
+	</detail>
+	<detail>
+		<title>2.1.1, Clavier, Niveau A</title>
+		<description><![CDATA[]]></description>
+	</detail>
+</details>
+
+<!--
+DEROGATIONS
+Derogations list. This is CDATA-protected, please add properly formatted HTML. 
+-->
+<derogations>
+<![CDATA[]]>
+</derogations>
+
+<!--
+DEROGATIONS
+Exemptions list. This is CDATA-protected, please add properly formatted HTML. 
+-->
+<exemptions>
+<![CDATA[]]>
+</exemptions>
+
+</declaration>

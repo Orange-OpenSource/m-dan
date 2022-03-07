@@ -25,8 +25,14 @@
     <string name="section_talkback">Talkback</string>
     <string name="section_axs_options">Options d\'accessibilité</string>
     <string name="section_axs_orange">L\'accessibilité chez Orange</string>
+    <string name="section_axs_statement">Déclaration d\'accessibilité</string>
     <string name="section_about">À propos</string>
+    <string name="section_legal">Mentions légales</string>
     <string name="section_contact">Contact</string>
+    <string name="section_cgu">Conditions générales d\'utilisation</string>
+    <string name="section_other_apps">Autres applications</string>
+    <string name="section_contact_us">Nous contacter</string>
+    <string name="registrant" translatable="false">ORANGE SA\nSiège social : 111, quai du Président Roosevelt\n92130 Issy-les-Moulineaux</string>
 
 
     <!-- @todo : remove it before release -->
@@ -133,6 +139,9 @@
     <string name="criteria_img_ex3_cd_btn_edit">Éditer le nom de l\'image</string>
     <string name="criteria_img_ex3_cd_btn_parameters">Paramètres</string>
     <string name="criteria_img_ex3_cd_image">Montagnard partant vers un sommet</string>
+    <string name="criteria_img_item1">L\'image porteuse d\'information</string>
+    <string name="criteria_img_item2">L\'image décorative</string>
+    <string name="criteria_img_item3">Illustrations et icônes</string>
     <string-array name="criteria_img_list">
         <item>L\'image porteuse d\'information </item>
         <item>L\'image décorative</item>
@@ -163,6 +172,8 @@
     <string name="criteria_color_ex2_videostream">Streaming vidéo</string>
     <string name="criteria_color_ex2_browser">Navigateur web</string>
     <string name="criteria_color_ex2_service">Le service </string>
+    <string name="criteria_color_item1">Contrastes</string>
+    <string name="criteria_color_item2">Informations par la couleur</string>
     <string-array name="criteria_color_list">
         <item>Contrastes </item>
         <item>Informations par la couleur</item>
@@ -280,6 +291,15 @@
         <item>Composant complexe</item>
     </string-array>
 
+    <string name="criteria_alt_item1">Les alternatives textuelles des images</string>
+    <string name="criteria_alt_item2">L\'état des éléments</string>
+    <string name="criteria_alt_item3">Les formulaires</string>
+    <string name="criteria_alt_item4">Abréviations, dates et heures</string>
+    <string name="criteria_alt_item5">Image complétée par du texte</string>
+    <string name="criteria_alt_item6">Composant complexe</string>
+    <string name="criteria_alt_item7">Regroupement des éléments</string>
+    <string name="criteria_alt_item8">Navigation par entêtes</string>
+
     <!-- criteria : titles -->
     <string name="criteria_title_title">Titre et entête</string>
     <string name="criteria_title_why_description">Le titre de la page est le premier élément qui est vocalisé ou vu sur un écran mobile.\n\nIl facilite la navigation pour tout le monde : à tout moment, on sait où on se trouve dans l\'application.</string>
@@ -293,6 +313,7 @@
     <string name="criteria_title_ex1_announceaxsyes">Le titre de la page est : </string>
     <string name="criteria_title_ex1_announceaxsno">La page n\'a plus de titre</string>
     <string name="criteria_title_ex1_btn">Titre accessible : </string>
+    <string name="criteria_title_item1">Titre de page</string>
     <string-array name="criteria_title_list">
         <item>Titre de page</item>
     </string-array>
@@ -324,6 +345,14 @@
         <item>Démonstrateur</item>
         <item>Accessibilité</item>
     </string-array>
+    <string name="criteria_stateelement_item1">Onglets</string>
+    <string name="criteria_stateelement_item2">Listes</string>
+    <string name="criteria_stateelement_item3">Zones dépliables</string>
+
+    <!-- criteria : time to take action -->
+    <string name="criteria_timetotakeaction_title">Time to take action</string>
+    <string name="criteria_timetotakeaction_description">Une option d\'accessibilité nommée Time to take action existe depuis Android 10, et permet de définir son propre timeout depuis les paramètres d\'accessibilité. Il est ainsi possible d\'exploiter cette option par le biais de la fonction getRecommendedTimeoutMillis(). Cette méthode prend en charge les délais d\'expiration définis par l\'utilisateur pour les éléments d\'interface utilisateur interactifs et non interactifs. La valeur de retour est influencée à la fois par les préférences de l\'utilisateur (Time to take action) et les API du service d\'accessibilité.</string>
+    <string name="criteria_timetotakeaction_cell">Time to take action</string>
 
     <!-- criteria : standard -->
     <string name="criteria_standardcomponent_title">Composants standards</string>
@@ -352,6 +381,8 @@
     <string name="criteria_clickarea_ex1_music">Musique</string>
     <string name="criteria_clickarea_ex1_author">de</string>
     <string name="criteria_clickarea_ex1_success">Vous avez réussi à appuyer sur le bouton</string>
+
+    <string name="criteria_clickarea_item1">Taille de zone de clic</string>
     <string-array name="criteria_clickarea_list">
         <item>Taille de zone de clic</item>
     </string-array>
@@ -365,6 +396,7 @@
     <string name="criteria_ghostelement_ex1_ghost">Ici, le contenu de la page actuelle est accessible</string>
     <string name="criteria_ghostelement_ex1_noghost">Ici, le contenu de la page actuelle n\'est pas accessible</string>
     <string name="criteria_ghostelement_ex1_return">Retourner à la page précédente</string>
+    <string name="criteria_ghostelement_item1">Vue fantôme</string>
     <string-array name="criteria_ghostelement_list">
         <item>Vue fantôme</item>
     </string-array>
@@ -377,9 +409,20 @@
     <string name="criteria_textsize_button_text">Changer les options d\'accessibilité</string>
     <string name="criteria_textsize_ex1_sizetxtYes">Ce texte utilise une police acceptant l\'agrandissement de caractère et réagira donc suivant les options d\'accessibilité définies par l\'utilisateur.</string>
     <string name="criteria_textsize_ex1_sizetxtNo">A contrario, ce texte ne réagira pas aux options d\'agrandissement des caractères.</string>
+    <string name="criteria_textsize_item1">Taille dynamique</string>
+    <string name="criteria_textsize_item2">Lisibilité</string>
     <string-array name="criteria_textsize_list">
         <item>Taille dynamique</item>
+        <item>Lisibilité</item>
     </string-array>
+
+    <string name="criteria_text_readability_title">Lisibilité des textes</string>
+    <string name="criteria_text_readability_description">Dans l\'exemple ci-dessous, le texte non accessible n\'utilise pas les recommandations en terme de lisibilité d\'un texte : police sans-serif, italique à éviter, taille de texte suffisamment grande.</string>
+    <string name="criteria_text_readability_ex_yes">Ce texte utilise une police sans-serif et est de taille suffisante pour être lisible facilement et donc accessible.</string>
+    <string name="criteria_text_readability_ex_no_small">Ce texte est de taille trop petite pour être lisible facilement et est donc inaccessible.</string>
+    <string name="criteria_text_readability_ex_no_italic">L\'italique de ce texte gêne la lisibilité de celui-ci qui n\'est donc pas accessible.</string>
+    <string name="criteria_text_readability_ex_no_serif">Ce texte utilise une police serif qui peut rendre sa lecture difficile pour les dyslexiques et est donc inaccessible.</string>
+
 
     <!-- criteria : content control -->
     <string name="criteria_contentcontrol_title">Contrôle de contenu</string>
@@ -399,6 +442,8 @@
     <string name="criteria_contentcontrol_ex2_btn_next">Image suivante</string>
     <string name="criteria_contentcontrol_ex2_title">Diaporama accessible, c\'est possible</string>
     <string name="criteria_contentcontrol_ex2_cd_launch">Lancer le diaporama</string>
+    <string name="criteria_contentcontrol_item1">Carousel automatique</string>
+    <string name="criteria_contentcontrol_item2">Diaporama d\'images</string>
     <string-array name="criteria_contentcontrol_list">
         <item>Carousel automatique</item>
         <item>Diaporama d\'images</item>
@@ -414,6 +459,7 @@
     <string name="criteria_contentchange_ex1_majwifireload">Recharger la liste des réseaux WiFi</string>
     <string name="criteria_contentchange_ex1_announce">La liste des réseaux WiFi a été mise a jour</string>
     <string name="criteria_contentchange_ex1_list_title">Liste des réseaux Wi-Fi</string>
+    <string name="criteria_contentchange_item1">Mise à jour d\'un élément</string>
     <string-array name="criteria_contentchange_list">
         <item>Mise à jour d\'un élément</item>
     </string-array>
@@ -433,6 +479,7 @@
     <string name="criteria_horizontalscroll_rule_description">Ne pas hésiter à afficher un élément pour indiquer un scroll horizontal (des "points" par exemple).\n\nQuand cela est nécessaire, ajouter également des boutons "suivant" et "précédent".</string>
     <string name="criteria_scroll_ex1_title">Indiquer qu\'on peut scroller horizontalement</string>
     <string name="criteria_scroll_ex1_description">Le carrousel accessible ci-dessous fait bien comprendre grâce aux "points" qu\'il possède plusieurs pages.\n\nA contrario, le carrousel non accessible ne permet pas de comprendre en un coup d\'œil cela et on peut facilement croire que c\'est une seule et unique information.</string>
+    <string name="criteria_scroll_item1">Scroll horizontal</string>
     <string-array name="criteria_scroll_list">
         <item>Scroll horizontal</item>
     </string-array>
@@ -443,10 +490,16 @@
     <string name="criteria_form_rule_description">Chaque champ de formulaire doit être lié à un label.</string>
     <string name="criteria_form_ex1_title">Un champ de formulaire doit être lié à un label</string>
     <string name="criteria_form_ex1_description">Dans l\'exemple ci-dessous, certains champs de formulaire sont labellisés et d\'autres non. Vous pouvez donc écouter la différence de vocalisation entre un champ labellisé et un champ non labellisé.\nA noter qu\'un texte d\'exemple qui remplit le champ est bien vocalisé.</string>
+    <string name="criteria_form_ex2_title">Un champ en erreur est identifiable</string>
+    <string name="criteria_form_ex2_description">Dans l\'exemple ci-dessous, le champ accessible présente une erreur identifiable et explicite lorsqu\'on ne remplit pas le champ obligatoire, tandis que le champ non accessible n\'affiche rien.</string>
     <string name="criteria_form_ex1_label_name">Nom :</string>
+    <string name="criteria_form_ex1_label_name_mandatory">Nom : *</string>
     <string name="criteria_form_ex1_label_mail">Adresse mail :</string>
     <string name="criteria_form_ex1_placeholder">Répétez l\'adresse mail</string>
     <string name="criteria_form_ex1_label_checkbox">Accepter les conditions d\'utilisation</string>
+    <string name="criteria_form_ex1_label_button">VALIDER</string>
+    <string name="criteria_form_item1">Label</string>
+    <string name="criteria_form_item2">Erreur</string>
     <string-array name="criteria_form_list">
         <item>Label</item>
     </string-array>
@@ -461,6 +514,7 @@
     <string name="criteria_readorder_ex1_canalup">Chaîne suivante, Bouton</string>
     <string name="criteria_readorder_ex1_canaldown">chaîne précédente, Bouton</string>
     <string name="criteria_readorder_ex1_title">Assurer un ordre de lecture cohérent</string>
+    <string name="criteria_readorder_item1">Ordre de lecture</string>
     <string-array name="criteria_readorder_list">
         <item>Ordre de lecture</item>
     </string-array>
@@ -472,6 +526,7 @@
     <string name="criteria_focusnav_ex1_description">Pour cet exemple, essayer la navigation au focus avec un clavier Bluetooth, un dock tablette ou une application dédiée.</string>
     <string name="criteria_focusnav_ex1_title">Gérer la navigation au focus</string>
     <string name="criteria_focusnav_ex1_axs">Toute l\'application mDAN est navigable au focus (sauf l\'exemple ci-dessous). Quoi de mieux comme exemple ?</string>
+    <string name="criteria_focusnav_item1">Navigation au focus</string>
     <string-array name="criteria_focusnav_list">
         <item>Navigation au focus</item>
     </string-array>
@@ -481,7 +536,9 @@
         <item>Exemple 3</item>
     </string-array>
 
-
+    <!-- criteria title -->
+    <string name="criteria_title_ex1_axs">Chaque écran de l\'application dispose d\'un titre pertinent (sauf l\'écran actuel)</string>
+    <string name="criteria_title_ex1_noaxs">Cet écran est le seul qui ne propose pas de titre et il est donc inacessible</string>
 
     <!-- guide dev view -->
     <string-array name="dev_list">
@@ -509,7 +566,7 @@
     <!-- guide dev : alt -->
     <string name="dev_title_alt">Alternatives textuelles</string>
     <string name="dev_description_alt">Sous Android, la vocalisation d\'un élément s\'effectue à travers un attribut, à savoir le <i>contentDescription</i>.\n\nCet attribut qui accepte une simple chaîne de caractère en paramètre (et donc internationalisable) redéfinit complètement le texte qui sera lu par le service d\'accessibilité et notamment TalkBack.\nCela permet d\'avoir un texte de composant plus explicite que celui affiché à l\'écran. Par exemple, dans le cas d\'un bouton dont le titre est « OK », on pourra indiquer que le bouton sert à valider un choix.
-        \n\nLe <i>contentDescription</i> doit aussi être utilisé sur les éléments custom pour indiquer leur nature. Par exemple, un <i>LinearLayout</i> que l\'on rendrait cliquable doit avoir un <i>contentDescription</i> type « nom_du_bouton, bouton » (il faut également permettre le focus du bouton à l\'accessibilité, voir la section correspondante).
+       \n\nLe <i>contentDescription</i> doit aussi être utilisé sur les éléments custom pour indiquer leur nature. Par exemple, un <i>LinearLayout</i> que l\'on rendrait cliquable doit avoir un <i>contentDescription</i> type « nom_du_bouton, bouton » (il faut également permettre le focus du bouton à l\'accessibilité, voir la section correspondante).
 \n\nA noter que le <i>contentDescription</i> est disponible sous tout élément qui hérite de View. Il est donc possible de positionner un <i>contentDescription</i> sur une <i>TextView</i> par exemple, comme montré dans la section « guide d\'accessibilité – alternative textuelle – abréviations, dates et heures ».</string>
     <string name="dev_lien_alt">- contentDescription : \n\n http://developer.android.com/reference/android/view/View.html#attr_android:contentDescription</string>
 
@@ -517,46 +574,46 @@
     <string name="dev_title_hideaxs">Masquer des éléments à l\'accessibilité</string>
     <string name="dev_description_hideaxs">Il est possible via un attribut d\'accessibilité de masquer des éléments aux outils d\'accessibilité (TalkBack par exemple). Par extension, il est possible de forcer certains éléments à être visible aux outils d\'accessibilité.\n\n
 <i>ImportantForAccessibility</i> : suivant la valeur de l\'attribut, cela permet d\'indiquer qu\'un élément est visible ou non de l\'API d\'accessibilité.\n\n
--	<i>auto</i> (0) : valeur par défaut, c\'est le système qui décide. Par exemple, un <i>Button</i> aura sa valeur par défaut à 1 (<i>yes</i>) et un <i>LinearLayout</i> à 2 (<i>no</i>).\n\n
--	<i>yes</i> (1) : la vue est importante pour l\'accessibilité. Elle peut par exemple recevoir le focus de TalkBack.\n\n
--	<i>no</i>(2) : la vue n\'est pas importante pour l\'accessibilité. Elle ne déclenche plus d\'évènement d\'accessibilité et est par conséquent ignorée par des services tel que TalkBack.\n\n
--	<i>noHideDescendants</i>  (4) : la vue n\'est pas importante pour l\'accessibilité, mais également toutes ses vues filles. Cela permet de cacher tous les éléments d\'une vue à l\'accessibilité en une seule fois. Très utile sur les éléments custom.\n\nA noter : l\'attribut « <i>importantForAccessibility</i> » est disponible pour tout élément qui hérite de View.</string>
-    <string name="dev_lien_hideaxs">-	importantForAccessibility :\n\nhttp://developer.android.com/reference/android/view/View.html#attr_android:importantForAccessibility</string>
+-  <i>auto</i> (0) : valeur par défaut, c\'est le système qui décide. Par exemple, un <i>Button</i> aura sa valeur par défaut à 1 (<i>yes</i>) et un <i>LinearLayout</i> à 2 (<i>no</i>).\n\n
+-  <i>yes</i> (1) : la vue est importante pour l\'accessibilité. Elle peut par exemple recevoir le focus de TalkBack.\n\n
+-  <i>no</i>(2) : la vue n\'est pas importante pour l\'accessibilité. Elle ne déclenche plus d\'évènement d\'accessibilité et est par conséquent ignorée par des services tel que TalkBack.\n\n
+-  <i>noHideDescendants</i>  (4) : la vue n\'est pas importante pour l\'accessibilité, mais également toutes ses vues filles. Cela permet de cacher tous les éléments d\'une vue à l\'accessibilité en une seule fois. Très utile sur les éléments custom.\n\nA noter : l\'attribut « <i>importantForAccessibility</i> » est disponible pour tout élément qui hérite de View.</string>
+    <string name="dev_lien_hideaxs">-  importantForAccessibility :\n\nhttp://developer.android.com/reference/android/view/View.html#attr_android:importantForAccessibility</string>
 
     <!-- guide dev : vocalization -->
     <string name="dev_title_voc">Déclencher une vocalisation</string>
     <string name="dev_description_voc">Il est très facile de déclencher des vocalisations avec TalkBack.\n\nAttention: nous parlons de la vocalisation si TalkBack est activé et non pas de TTS (Text To Speech) qui peut fonctionner indépendamment du statut de TalkBack. Déclencher une vocalisation est très utile dans le cas de contenu dynamique, au même titre que les <i>LiveRegion</i> (voir la section correspondante).\n\nPour déclencher une vocalisation, il suffit de faire appel à la méthode « <i>announceForAccessibility</i> » en lui passant en paramètre l\'id de la chaine de caractère à vocaliser.\n\nA noter : la méthode « <i>announceForAccessibility</i> » est disponible sur tout élément qui hérite de View et se fait dans la langue du système.</string>
-    <string name="dev_lien_voc">-	announceForAccessibility : \n\nhttp://developer.android.com/reference/android/view/View.html#announceForAccessibility&amp;#3728java.lang.CharSequence&amp;#3729</string>
+    <string name="dev_lien_voc">-  announceForAccessibility : \n\nhttp://developer.android.com/reference/android/view/View.html#announceForAccessibility&amp;#3728java.lang.CharSequence&amp;#3729</string>
 
     <!-- guide dev : accessibility activated -->
     <string name="dev_title_detect">Détecter si TalkBack est activé</string>
     <string name="dev_description_detect">Sous Android, il est possible de savoir si l\'API d\'accessibilité est activée, et donc de savoir si TalkBack est activé.\n\nA l\'usage  : \n\n
-        <![CDATA[ <b><font color=#A885D8>AccessibilityManager</b>]]> am = (<![CDATA[<b><font color=#A885D8>AccessibilityManager</b>]]>) <![CDATA[<b><font color=#A885D8>context</b>]]>.getSystemService(<![CDATA[<b><font color=#A885D8>ACCESSIBILITY_SERVICE</b>]]>);\n
+       <![CDATA[ <b><font color=#A885D8>AccessibilityManager</b>]]> am = (<![CDATA[<b><font color=#A885D8>AccessibilityManager</b>]]>) <![CDATA[<b><font color=#A885D8>context</b>]]>.getSystemService(<![CDATA[<b><font color=#A885D8>ACCESSIBILITY_SERVICE</b>]]>);\n
 <![CDATA[<b><font color=#A885D8>boolean</b>]]> isAccessibilityEnabled = am.<![CDATA[<b><font color=#A885D8>isEnabled()</b>]]>;</string>
 
     <!-- guide dev : live region -->
     <string name="dev_title_liveregion">Régions Live (contenu dynamique)</string>
     <string name="dev_description_liveregion">Il est possible de spécifier à une vue qu\'elle est une région « live », c\'est-à-dire que son contenu est susceptible d\'être modifié dynamiquement et qu\'elle doit dans ce cas prévenir l\'API d\'accessibilité.\nCela aura pour conséquence de générer des vocalisations avec TalkBack par exemple.\n\nUn exemple type d\'utilisation : sur un formulaire, si l\'utilisateur fait une erreur et qu\'un message d\'erreur apparaît, la vue contenant le message doit être définie comme une région « live ».\n\nIl faut passer par la méthode « <i>setAccessibilityLiveRegion</i> » qui prend en paramètre un mode pour la région live. Il existe 3 modes :\n\n
--	ACCESSIBILITY_LIVE_REGION_NONE : cette vue n\'est pas une région « live ». C\'est la valeur par défaut de la plupart des vues.\n\n
--	ACCESSIBILITY_LIVE_REGION_POLITE : en cas de changement dans la vue, des vocalisations sont effectuées sur les changements. Ces vocalisations sont « polies » : elles sont moins prioritaires que les vocalisations système par exemple.\n\n
--	ACCESSIBILITY_LIVE_REGION_ASSERTIVE : en cas de changement dans la vue, des vocalisations seront effectuées sur les changements. Ces vocalisations sont « rudes » : elles sont prioritaires et immédiatement vocalisées.\n\nA noter : la méthode « <i>setAccessibilityLiveRegion</i> » est disponible sur tout élément qui hérite de View.</string>
-    <string  name="dev_lien_liveregion">-	setAccessibilityLiveRegion :\n\nhttp://developer.android.com/reference/android/view/View.html#setAccessibilityLiveRegion&amp;#3728int&amp;#3729</string>
+-  ACCESSIBILITY_LIVE_REGION_NONE : cette vue n\'est pas une région « live ». C\'est la valeur par défaut de la plupart des vues.\n\n
+-  ACCESSIBILITY_LIVE_REGION_POLITE : en cas de changement dans la vue, des vocalisations sont effectuées sur les changements. Ces vocalisations sont « polies » : elles sont moins prioritaires que les vocalisations système par exemple.\n\n
+-  ACCESSIBILITY_LIVE_REGION_ASSERTIVE : en cas de changement dans la vue, des vocalisations seront effectuées sur les changements. Ces vocalisations sont « rudes » : elles sont prioritaires et immédiatement vocalisées.\n\nA noter : la méthode « <i>setAccessibilityLiveRegion</i> » est disponible sur tout élément qui hérite de View.</string>
+    <string  name="dev_lien_liveregion">-  setAccessibilityLiveRegion :\n\nhttp://developer.android.com/reference/android/view/View.html#setAccessibilityLiveRegion&amp;#3728int&amp;#3729</string>
 
     <!-- guide dev : read order (TalkBack) -->
     <string name="dev_title_talkbackreadorder">Gérer l\'ordre de lecture (TalkBack)</string>
     <string name="dev_description_talkbackreadorder">L\'ordre du focus de la synthèse vocale par défaut prend en compte plusieurs paramètres : la lecture « logique », (en France) soit de gauche à droite et de haut en bas, et la lecture du xml (ordre de déclaration des éléments).\nIl est tout à fait possible de redéfinir cet ordre de lecture avec deux outils :\n\n
-    -	<i>accessibilityTraversalAfter</i> : prend un id en paramètre et permet de spécifier à la vue qu\'elle doit être « vue » par l\'accessibilité après la vue passée en paramètre.\n\n
+   -  <i>accessibilityTraversalAfter</i> : prend un id en paramètre et permet de spécifier à la vue qu\'elle doit être « vue » par l\'accessibilité après la vue passée en paramètre.\n\n
 - <i>accessibilityTraversalBefore</i> : prend un id en paramètre et permet de spécifier à la vue qu\'elle doit être « vue » par l\'accessibilité avant la vue passée en paramètre.\n\nA noter : ces attributs peuvent être utilisés directement dans le xml mais également dans le code via les méthodes « <i>setAccessibilityTraversalAfter</i> » et « <i>setAccessibilityTraversalBefore</i> ».\nCes méthodes sont disponibles pour tout élément qui hérite de View.</string>
     <string formatted="false"  name="dev_lien_talkbackreadorder">
-    -	setAccessibilityTraversalAfter :\nhttp://developer.android.com/reference/android/view/View.html#setAccessibilityTraversalAfter&amp;#3728int&amp;#3729 \n\n
--	setAccessibilityTraversalBefore : \nhttp://developer.android.com/reference/android/view/View.html#setAccessibilityTraversalBefore&amp;#3728int&amp;#3729</string>
+   -  setAccessibilityTraversalAfter :\nhttp://developer.android.com/reference/android/view/View.html#setAccessibilityTraversalAfter&amp;#3728int&amp;#3729 \n\n
+-  setAccessibilityTraversalBefore : \nhttp://developer.android.com/reference/android/view/View.html#setAccessibilityTraversalBefore&amp;#3728int&amp;#3729</string>
 
     <!-- guide dev : forms -->
     <string name="dev_title_form">Formulaires</string>
     <string name="dev_description_form">Il est important que les champs de formulaire soient liés à un label.\nIl existe 2 grandes techniques pour réaliser cette liaison :\n\n
-    -	<i>labelFor</i> : permet de spécifier à une vue qu\'elle est le label d\'une autre vue. Cette méthode prend en paramètre l\'id de la vue que l\'on labellise. On peut utiliser cette méthode avec quasiment tout type de champ de formulaire.\nUtilisable depuis le xml « <i>android:labelFor</i>» ou le code « <i>setLabelFor</i> ». <i>LabelFor</i> est utilisable depuis tout élément qui hérite de <i>View</i>.\n\n
+   -  <i>labelFor</i> : permet de spécifier à une vue qu\'elle est le label d\'une autre vue. Cette méthode prend en paramètre l\'id de la vue que l\'on labellise. On peut utiliser cette méthode avec quasiment tout type de champ de formulaire.\nUtilisable depuis le xml « <i>android:labelFor</i>» ou le code « <i>setLabelFor</i> ». <i>LabelFor</i> est utilisable depuis tout élément qui hérite de <i>View</i>.\n\n
 - <i>hint</i> : permet d\'ajouter un texte d\'exemple quand le champ de texte est vide. Cette méthode ne marche que pour les <i>TextView</i>.\nPrend en paramètre l\'id d\'une chaîne de caractère. Utilisable depuis le xml « <i>android:hint</i> » ou le code « <i>setHint</i> ».\n</string>
-    <string name="dev_lien_form">-	setLabelFor :\nhttp://developer.android.com/reference/android/view/View.html#setLabelFor&amp;#3728int&amp;#3729 \n\n-	setHint : \nhttp://developer.android.com/reference/android/widget/TextView.html#setHint&amp;#3728int&amp;#3729</string>
+    <string name="dev_lien_form">- setLabelFor :\nhttp://developer.android.com/reference/android/view/View.html#setLabelFor&amp;#3728int&amp;#3729 \n\n-  setHint : \nhttp://developer.android.com/reference/android/widget/TextView.html#setHint&amp;#3728int&amp;#3729</string>
 
     <!-- guide dev : text size -->
     <string name="dev_title_textsize">Taille des textes</string>
@@ -566,7 +623,7 @@
     <!-- guide dev : events -->
     <string name="dev_title_axsevents">Evénements d\'accessibilité &amp; Custom Views</string>
     <string name="dev_description_axsevents">Il existe sous Android un bon nombre d\'événements liés à l\'API d\'accessibilité.\nVous pouvez manipuler ces événements au même titre que d\'autres événements. Ils permettent d\'enrichir des composants custom insuffisamment accessibles.\n\nL\'utilisation des événements d\'accessibilité est assez rare dans les applications non dédiées à l\'accessibilité, les autres options étant généralement suffisantes.\nCependant, il faut savoir qu\'ils existent et permettent de surcharger la vocalisation d\'un composant.\n\nPour plus d\'informations, nous vous invitons à regarder les liens ci-dessous.</string>
-    <string name="dev_lien_axsevents">-	AccessibilityEvents :\nhttp://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html\n\n-	Construire une vue custom accessible :\nhttp://developer.android.com/guide/topics/ui/accessibility/apps.html#custom-views</string>
+    <string name="dev_lien_axsevents">-    AccessibilityEvents :\nhttp://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html\n\n-  Construire une vue custom accessible :\nhttp://developer.android.com/guide/topics/ui/accessibility/apps.html#custom-views</string>
 
     <!-- guide dev : webviews -->
     <string name="dev_title_webview">WebView</string>
@@ -638,6 +695,33 @@
         <item>Correction des couleurs\n(Option non disponible pour votre mobile)</item>
         <item>Inversion des couleurs\n(Option non disponible pour votre mobile)</item>
     </string-array>
+    <string name="options_magnification_title">Agrandissement des caractères</string>
+    <string name="options_zoom_title">Zoom</string>
+    <string name="options_colors_correction_title">Correction des couleurs</string>
+    <string name="options_colors_inversion_title">Inversion des couleurs</string>
+    <string name="options_talkback_title">Talkback</string>
+    <string name="options_timetotakeaction_title">Time to take action</string>
+
+
+    <string name="example_group_title">Regroupement des éléments</string>
+    <string name="example_group_desc">Il est recommandé de regrouper les éléments pour la vocalisation vocale lorsque cela permet de gagner en efficacité et en compréhension.\nPar exemple, dans le cadre d\'une application de musique, il est plus intéressant regrouper la vocalisation du nom de la musique, du nom de l\'artiste et de la durée de celle-ci en un seul bloc, plutôt que de les vocaliser séparément et d\'alourdir la navigation.</string>
+    <string name="my_songwriter">Lenny Kravitz</string>
+    <string name="my_song_title">Are you gonna go my way</string>
+    <string name="my_song_length">3:36</string>
+    <string name="my_song_length_alt">3 minutes 36</string>
+    <string name="my_song_title2">Low</string>
+    <string name="my_song_length2">4:46</string>
+    <string name="my_song_length2_alt">4 minutes 46</string>
+
+    <string name="example_headings_title">Navigation par entêtes</string>
+    <string name="example_headings_desc">Au sein d\'un même écran, il arrive parfois que le contenu affiché présente différentes sections, avec pour chacune d\'entre elles une entête. Il est possible avec le lecteur d\'écran Talkback de naviguer par entêtes, plutôt que de naviguer par éléments.</string>
+    <string name="section1" translatable="false">SECTION 1</string>
+    <string name="section2" translatable="false">SECTION 2</string>
+    <string name="section3" translatable="false">SECTION 3</string>
+    <string name="lorem_ipsum" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+
+    <string name="example_focus_color_title">État du focus</string>
+    <string name="example_focus_color_desc">Tout élément interactif peut recevoir le focus, il faut donc que l\'état du focus soit défini et permette de distinguer d\’un seul coup d\’œil quel élément a le focus.</string>
 
 
     <!-- accessibility & Orange view -->
@@ -672,4 +756,32 @@
     <string name="about_other_licences">Logiciels tiers</string>
     <string name="about_other_licences_content"><b>AnimatedExpandableListView</b>\nCopyright &#169; 2014 Gary Guo\n\nAnimatedExpandableListView est distribué selon les termes de la <a rel="about_licence" href="http://www.apache.org/licenses/LICENSE-2.0">licence Apache 2.0</a>\nPour en savoir plus : <a rel="about_licence" href="https://github.com/idunnololz/AnimatedExpandableListView">https://github.com/idunnololz/AnimatedExpandableListView</a>\n\n<b>Android Annotations</b>\nCopyright © 2012–2016 eBusiness Information\n\nAndroidAnnotations est distribué selon les termes de la <a rel="about_licence" href="http://www.apache.org/licenses/LICENSE-2.0">licence Apache 2.0</a>\nPour en savoir plus : <a rel="about_licence" href="https://github.com/excilys/androidannotations/">https://github.com/excilys/androidannotations/</a>\n\n<b>Android Auto Scroll ViewPager</b>\nCopyright &#169; 2014 trinea.cn\n\nAndroidAutoScrollViewPager est distribué selon les termes de la <a rel="about_licence" href="http://www.apache.org/licenses/LICENSE-2.0">licence Apache 2.0</a>\nPour en savoir plus : <a rel="about_licence" href="https://github.com/Trinea/android-auto-scroll-view-pager">https://github.com/Trinea/android-auto-scroll-view-pager</a>\n\n<b>Pochette d\'album \"Mary Daisy Jane\"</b>\nLa pochette de l\'album de Mael \"Mary Daisy Jane\" est sous licence <a rel="about_licence" href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</a> et est propriété de ses créateurs ou détenteurs.</string>
 
+    <!-- Navigation view -->
+    <string name="bottom_navigation_menu_options">Options</string>
+    <string name="bottom_navigation_menu_dev">Développement</string>
+    <string name="bottom_navigation_menu_criteria">Critères</string>
+
+    <!-- android version -->
+    <string name="required_version">Non disponible (Android API %1$d requis)</string>
+
+    <!-- snackbar time to take action -->
+    <string name="snackbar_title_take_action">Timeout snackbar accessible</string>
+    <string name="snackbar_title_not_take_action">Timeout snackbar non accessible</string>
+    <string name="snackbar_button_take_action">ANNULER</string>
+    <string name="toast_message_take_action">Snackbar est annulé !</string>
+
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+
+    <string name="mail_address">accessibility.support@orange.com</string>
+    <string name="mail_subject">sujet du email</string>
+    <string name="mail_body">corps du email</string>
+    <string name="mail_toast">Il n\'y a aucun client email installé.</string>
+
+
+    <string name="pz_content_desc_logo">Logo Orange</string>
+    <string name="pz_from">from <font fgcolor="#EF7814" tools:ignore="UnusedResources" tools:keep="@font/">Orange Innovation</font> </string>
+
 </resources>
+
+

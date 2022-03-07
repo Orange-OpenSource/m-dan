@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ ~ Licensed to the Apache Software Foundation (ASF) under one
+ ~ or more contributor license agreements.  See the NOTICE file
+ ~ distributed with this work for additional information
+ ~ regarding copyright ownership.  The ASF licenses this file
+ ~ to you under the Apache License, Version 2.0 (the
+ ~ "License"); you may not use this file except in compliance
+ ~ with the License.  You may obtain a copy of the License at
+ ~
+ ~   http://www.apache.org/licenses/LICENSE-2.0
+ ~
+ ~ Unless required by applicable law or agreed to in writing,
+ ~ software distributed under the License is distributed on an
+ ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ ~ KIND, either express or implied.  See the License for the
+ ~ specific language governing permissions and limitations
+ ~ under the License.
+ -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:touchscreenBlocksFocus="false"
+        android:theme="@style/ToolBar.style" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTitleDescriptionGuideDev"
+                style="@style/TextViewStandard.Title.Level2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:padding="@dimen/large_margin"
+                android:screenReaderFocusable="true"
+                android:text="@string/dev_description"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/core_black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewDescriptionContentGuideDev"
+                style="@style/BrandBody1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewTitleExample"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="@dimen/medium_margin"
+                android:screenReaderFocusable="true"
+                android:paddingRight="@dimen/medium_margin"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/core_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewTitleLinksGuideDev"
+                style="@style/TextViewStandard.Title.Level2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:padding="@dimen/large_margin"
+                android:screenReaderFocusable="true"
+                android:text="@string/dev_links"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/core_black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textViewContentLinksGuideDev"
+                style="@style/BrandBody1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewTitleExample"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:screenReaderFocusable="true"
+                android:layout_marginBottom="10dp"
+                android:autoLink="web"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/core_black"
+                android:textColorLink="@color/core_orange_dark"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

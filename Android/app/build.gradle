@@ -1,13 +1,18 @@
 plugins {
     id 'com.android.application'
+    id 'kotlin-android'
 }
 
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
+    buildFeatures {
+        viewBinding true
+    }
+
     defaultConfig {
-        minSdkVersion 19
+        minSdkVersion 23
         targetSdkVersion 30
         vectorDrawables.useSupportLibrary = true
 
@@ -27,20 +32,6 @@ android {
         abortOnError false
     }
 
-    signingConfigs {
-        debug {
-            storeFile file("debug.keystore.jks")
-            storePassword "devrap"
-            keyAlias "com.devrap.1013reseau.keystore"
-            keyPassword "devrap"
-        }
-        unsigned {
-            storePassword = ""
-            keyAlias = ""
-            keyPassword = ""
-        }
-    }
-
 // Specific config
 
     flavorDimensions "version"
@@ -48,14 +39,14 @@ android {
     productFlavors {
         qualif {
             dimension "version"
-            applicationId "com.orange.ease.dan.qualif"
+            applicationId "com.orange.labs.dan.qualif"
             versionCode 11
             versionName "3.3"
         }
         prod {
             dimension "version"
             isDefault true
-            applicationId "com.orange.ease.dan"
+            applicationId "com.orange.labs.dan"
             versionCode 1
             versionName "1.0"
         }
@@ -82,12 +73,17 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
 }
 
 
 dependencies {
     // include the view badgers etc.
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation project(path: ':AccessibilityStatementLibrary')
 
     androidTestImplementation('androidx.test.espresso:espresso-core:3.4.0') {
         exclude group: 'com.android.support', module: 'support-annotations'
@@ -103,9 +99,17 @@ dependencies {
     }
 
     // AppCompat / Support
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation "androidx.fragment:fragment-ktx:1.2.5"
     implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.3.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'com.android.support:design:30.0.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.github.pzienowicz:androidx-auto-scroll-view-pager:1.0.0'
+    implementation 'androidx.core:core:1.0.1'
 
     def AAVersion = '4.8.0'
     annotationProcessor "org.androidannotations:androidannotations:$AAVersion"
@@ -116,3 +120,4 @@ dependencies {
     }
     testImplementation 'junit:junit:4.13.2'
 }
+
