@@ -19,13 +19,13 @@
   -->
 
 <resources>
-    <color name="action_bar_bg">#000000</color>
-    <color name="status_bar_bg">#000000</color>
+    <color name="action_bar_bg">#0054AE</color>
+    <color name="status_bar_bg">#003875</color>
     <color name="separator_bg">#CCCCCC</color>
 
-    <color name="accent_color">#ff7900</color>
-    <color name="accent_color_fallback">#ffa726</color>
-    <color name="orange_digital_2">#F16E00</color>
+    <color name="accent_color">@color/blue_base</color>
+    <color name="accent_color_fallback">#003E80</color>
+    <color name="blue_digital_2">#016EE3</color>
 
     <color name="primary_text">#191919</color>
     <color name="secondary_text">#666666</color>
@@ -61,6 +61,9 @@
     <color name="core_white">#ffffff</color>
     <color name="core_black">#000000</color>
 
+    <!-- Theme colors -->
+    <color name="blue_base">#0054AE</color>
+
     <!-- Brand Supporting colours -->
     <color name="supporting_colour_1">#FFD200</color>
     <color name="supporting_colour_2">#4BB4E6</color>
@@ -88,7 +91,7 @@
     <color name="primary_light">@color/functional_greys_3</color>
     <color name="primary">@color/core_black</color>
     <color name="primary_dark">@color/core_black</color>
-    <color name="accent">@color/core_orange_base</color>
+    <color name="accent">@color/blue_base</color>
     <color name="wall">@color/functional_greys_7</color>
     <color name="activity_background">@color/core_white</color>
 

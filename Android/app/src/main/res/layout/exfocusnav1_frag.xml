@@ -26,6 +26,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ok"
+        android:focusable="false"
+        android:screenReaderFocusable="true"
         android:id="@+id/buttonFalseFocusNav"
         android:layout_gravity="center_horizontal"
         style="@style/BrandButtonNoFocused" />

@@ -22,6 +22,14 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:touchscreenBlocksFocus="false"
+        android:theme="@style/ToolBar.style" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

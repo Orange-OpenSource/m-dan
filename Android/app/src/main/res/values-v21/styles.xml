@@ -31,4 +31,5 @@
         <item name="android:checkboxStyle">@style/Checkbox</item>
         <item name="android:radioButtonStyle">@style/RadioButton</item>
     </style>
+
 </resources>
