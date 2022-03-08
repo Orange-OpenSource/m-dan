@@ -23,8 +23,6 @@ import WebKit
 class OtherApplicationViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     
     let webView = WKWebView()
-    let urlfr = "legal_notice_fr"
-    let urlen = "legal_notice_en"
     
     // MARK: - View life cycle
     override func viewDidLoad() {

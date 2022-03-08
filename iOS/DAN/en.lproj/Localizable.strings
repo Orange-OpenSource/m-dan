@@ -75,7 +75,7 @@
 "criteria_category_contentControl"      = "Content control";
 "criteria_category_contentChange"       = "Changing content";
 "criteria_category_horizontalScroll"    = "Horizontal scroll";
-"criteria_category_orientation"         = "Orientation";
+"criteria_category_orientation"         = "Orientation device";
 "criteria_category_form"                = "Form";
 "criteria_category_readingOrder"        = "Reading order";
 "criteria_category_language"            = "Language";
@@ -356,7 +356,7 @@
 "criteria_category_orientation_howTo"     = "Do not hesitate to use constraints or UIStackView so that the elements fit correctly. \ N \ nFor a perfect optimization it is possible to use size classes when necessary";
 
 // Examples - Orientation -> Turn
-"example_orientation_title"                       = "Orientation";
+"example_orientation_title"                       = "Orientation device";
 "example_orientation_shortDescription"            = "Show that we can perform horizontal orientation";
 "example_orientation_description"                 = "Here, the button is accessible because the graphic elements are well managed with the constraints.\nOn the contrary, in the non accessible example, we can think that the button has no constraints.";
 "example_orientation_buttonText"                  = "V";
@@ -631,6 +631,6 @@
 // Menu - Contact
 // ---------------
 "contact_title"         = "Contact";
-"contact_webSite"       = "• Web site";
-"contact_support"       = "• Ask for support";
+"contact_webSite"       = "Web site";
+"contact_support"       = "Ask for support";
 "contact_contactTeam"   = "Contact team:";

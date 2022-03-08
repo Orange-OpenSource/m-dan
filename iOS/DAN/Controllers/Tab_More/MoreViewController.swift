@@ -28,12 +28,14 @@ class MoreViewController: DefaultTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        /*
         if (UserDefaults.standard.value(forKey: "isFirstLaunch") == nil) {
         
             performSegue(withIdentifier: "introduction-segue", sender: nil)
             
             UserDefaults.standard.setValue(false, forKey: "isFirstLaunch")
         }
+         */
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,7 +54,7 @@ class MoreViewController: DefaultTableViewController {
                 "plus_menu_cgu",
                 "plus_menu_legal_notice",
                 "plus_menu_other_application",
-                /*"plus_menu_contact",*/
+                "plus_menu_contact",
                 "plus_menu_about"
             ]
         ]
@@ -100,6 +102,8 @@ class MoreViewController: DefaultTableViewController {
         case 4:
             performSegue(withIdentifier: "other-application-segue", sender: cell)
         case 5:
+            performSegue(withIdentifier: "contact-segue", sender: cell)
+        case 6:
             performSegue(withIdentifier: "about-segue", sender: cell)
          
         default:

@@ -54,8 +54,6 @@
 		6D04282927D10FE3007AC365 /* CGUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04282827D10FE3007AC365 /* CGUViewController.swift */; };
 		6D04282B27D10FF7007AC365 /* LegalNoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04282A27D10FF7007AC365 /* LegalNoticeViewController.swift */; };
 		6D04284327D11040007AC365 /* OtherApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04284227D11040007AC365 /* OtherApplicationViewController.swift */; };
-		6D04285627D1192E007AC365 /* about_fr.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D04285427D1192E007AC365 /* about_fr.html */; };
-		6D04285727D1192E007AC365 /* about_en.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D04285527D1192E007AC365 /* about_en.html */; };
 		6D04286C27D11963007AC365 /* TabCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04285927D11960007AC365 /* TabCustomTableViewCell.swift */; };
 		6D04286D27D11963007AC365 /* DefaultHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04285A27D11960007AC365 /* DefaultHeaderViewCell.swift */; };
 		6D04286E27D11963007AC365 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04285B27D11960007AC365 /* PersonTableViewCell.swift */; };
@@ -88,6 +86,9 @@
 		6D04289427D119D1007AC365 /* mdan_en.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D04289227D119D1007AC365 /* mdan_en.html */; };
 		6D04289727D119D8007AC365 /* legal_notice_fr.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D04289527D119D8007AC365 /* legal_notice_fr.html */; };
 		6D04289827D119D8007AC365 /* legal_notice_en.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D04289627D119D8007AC365 /* legal_notice_en.html */; };
+		6D0428A127D62B76007AC365 /* about_fr.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D04289F27D62B75007AC365 /* about_fr.html */; };
+		6D0428A227D62B76007AC365 /* about_en.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D0428A027D62B76007AC365 /* about_en.html */; };
+		6D0428A427D62B7E007AC365 /* style_about.css in Resources */ = {isa = PBXBuildFile; fileRef = 6D0428A327D62B7E007AC365 /* style_about.css */; };
 		6D23CC252733EAF000246A48 /* UIWindow+Orange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D23CC242733EAF000246A48 /* UIWindow+Orange.swift */; };
 		6D4B985A26E17C6900FF505E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B985926E17C6900FF505E /* SceneDelegate.swift */; };
 		6D4B985E26E1DEE500FF505E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D4B985D26E1DEE500FF505E /* LaunchScreen.storyboard */; };
@@ -217,8 +218,6 @@
 		6D04282827D10FE3007AC365 /* CGUViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGUViewController.swift; sourceTree = "<group>"; };
 		6D04282A27D10FF7007AC365 /* LegalNoticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegalNoticeViewController.swift; sourceTree = "<group>"; };
 		6D04284227D11040007AC365 /* OtherApplicationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherApplicationViewController.swift; sourceTree = "<group>"; };
-		6D04285427D1192E007AC365 /* about_fr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = about_fr.html; path = ../../../../../../../../Desktop/Views/about_fr.html; sourceTree = "<group>"; };
-		6D04285527D1192E007AC365 /* about_en.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = about_en.html; path = ../../../../../../../../Desktop/Views/about_en.html; sourceTree = "<group>"; };
 		6D04285927D11960007AC365 /* TabCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCustomTableViewCell.swift; sourceTree = "<group>"; };
 		6D04285A27D11960007AC365 /* DefaultHeaderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultHeaderViewCell.swift; sourceTree = "<group>"; };
 		6D04285B27D11960007AC365 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
@@ -251,6 +250,9 @@
 		6D04289227D119D1007AC365 /* mdan_en.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = mdan_en.html; path = ../../../../../../../../../Desktop/HTML/DeclarationContentHtml/mdan_en.html; sourceTree = "<group>"; };
 		6D04289527D119D8007AC365 /* legal_notice_fr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = legal_notice_fr.html; path = ../../../../../../../../../Desktop/HTML/LegalNoticeHtml/legal_notice_fr.html; sourceTree = "<group>"; };
 		6D04289627D119D8007AC365 /* legal_notice_en.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = legal_notice_en.html; path = ../../../../../../../../../Desktop/HTML/LegalNoticeHtml/legal_notice_en.html; sourceTree = "<group>"; };
+		6D04289F27D62B75007AC365 /* about_fr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about_fr.html; sourceTree = "<group>"; };
+		6D0428A027D62B76007AC365 /* about_en.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about_en.html; sourceTree = "<group>"; };
+		6D0428A327D62B7E007AC365 /* style_about.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style_about.css; sourceTree = "<group>"; };
 		6D23CC242733EAF000246A48 /* UIWindow+Orange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Orange.swift"; sourceTree = "<group>"; };
 		6D4B985926E17C6900FF505E /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6D4B985D26E1DEE500FF505E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -582,6 +584,8 @@
 		F46DEA5C1C0DD688009980E1 /* Tab_More */ = {
 			isa = PBXGroup;
 			children = (
+				6D0428A027D62B76007AC365 /* about_en.html */,
+				6D04289F27D62B75007AC365 /* about_fr.html */,
 				6D04289627D119D8007AC365 /* legal_notice_en.html */,
 				6D04289527D119D8007AC365 /* legal_notice_fr.html */,
 				6D04289227D119D1007AC365 /* mdan_en.html */,
@@ -591,6 +595,7 @@
 				6D04288827D119C9007AC365 /* orange-logo.svg */,
 				6D04288727D119C9007AC365 /* pie.css */,
 				6D04288B27D119C9007AC365 /* style.css */,
+				6D0428A327D62B7E007AC365 /* style_about.css */,
 				6D04288327D119C0007AC365 /* CGU_en.html */,
 				6D04288427D119C0007AC365 /* CGU_fr.html */,
 				6D04284227D11040007AC365 /* OtherApplicationViewController.swift */,
@@ -675,8 +680,6 @@
 			isa = PBXGroup;
 			children = (
 				6D04285827D11938007AC365 /* Cells */,
-				6D04285527D1192E007AC365 /* about_en.html */,
-				6D04285427D1192E007AC365 /* about_fr.html */,
 				6D04281927D10E7E007AC365 /* DefaultLabelHeader.swift */,
 				6D04281B27D10E7E007AC365 /* DefaultLabelHeaderWithPadding.swift */,
 			);
@@ -764,7 +767,7 @@
 				TargetAttributes = {
 					F4817FD81C03130800E9612D = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = 8WX7SDBSVX;
+						DevelopmentTeam = B9YP84K776;
 						LastSwiftMigration = 1230;
 						ProvisioningStyle = Automatic;
 					};
@@ -794,7 +797,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D04285627D1192E007AC365 /* about_fr.html in Resources */,
 				04CBE4221D01DAB20041A95D /* systemEventsLinks.html in Resources */,
 				04CBE3F01D01CF6F0041A95D /* triggerVocalization_fr.html in Resources */,
 				6D04288527D119C0007AC365 /* CGU_en.html in Resources */,
@@ -804,7 +806,6 @@
 				04CBE41C1D01DA6E0041A95D /* groupItemsLinks.html in Resources */,
 				6D04288D27D119C9007AC365 /* orange-logo.svg in Resources */,
 				6D4B985E26E1DEE500FF505E /* LaunchScreen.storyboard in Resources */,
-				6D04285727D1192E007AC365 /* about_en.html in Resources */,
 				6D04288C27D119C9007AC365 /* pie.css in Resources */,
 				04CBE41A1D01DA610041A95D /* groupItems_en.html in Resources */,
 				04CBE4141D01D8160041A95D /* changeVoiceOverFocus_en.html in Resources */,
@@ -816,6 +817,7 @@
 				04CBE3E21D005DEF0041A95D /* textualAlternative_fr.html in Resources */,
 				04CBE4101D01D71A0041A95D /* changeVocalizationLinks.html in Resources */,
 				6D04289427D119D1007AC365 /* mdan_en.html in Resources */,
+				6D0428A127D62B76007AC365 /* about_fr.html in Resources */,
 				04CBE4081D01D2900041A95D /* notifyChangeOnPageLinks.html in Resources */,
 				04CBE4061D01D2810041A95D /* notifyChangeOnPage_en.html in Resources */,
 				04CBE3E41D005E110041A95D /* elementsSemantic_fr.html in Resources */,
@@ -846,6 +848,8 @@
 				04CBE4241D01DB9D0041A95D /* textSize_fr.html in Resources */,
 				F44F64081C1AC47E003FD410 /* ExampleGhostElement.storyboard in Resources */,
 				04CBE3EA1D0086120041A95D /* textualAlternativeLinks.html in Resources */,
+				6D0428A227D62B76007AC365 /* about_en.html in Resources */,
+				6D0428A427D62B7E007AC365 /* style_about.css in Resources */,
 				04CBE3F21D01CF7C0041A95D /* triggerVocalization_en.html in Resources */,
 				04CBE42E1D01DBE80041A95D /* readingOrderLinks.html in Resources */,
 				04CBE4281D01DBB60041A95D /* textSizeLinks.html in Resources */,
@@ -1022,7 +1026,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1061,7 +1065,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1077,13 +1081,13 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = 8WX7SDBSVX;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = B9YP84K776;
 				INFOPLIST_FILE = DAN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.orange.MDAN;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.orange.labs.mdan;
 				PRODUCT_NAME = mDAN;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1099,13 +1103,13 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = 8WX7SDBSVX;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = B9YP84K776;
 				INFOPLIST_FILE = DAN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.orange.MDAN;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.orange.labs.mdan;
 				PRODUCT_NAME = mDAN;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

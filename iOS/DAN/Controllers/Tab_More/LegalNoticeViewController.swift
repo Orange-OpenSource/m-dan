@@ -22,26 +22,20 @@ import WebKit
 
 class LegalNoticeViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     
-    let webView = WKWebView()
-    let urlfr = "legal_notice_fr"
-    let urlen = "legal_notice_en"
+    var webView = WKWebView()
     
     // MARK: - View life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         title = "legal_notice_nav_title".localized
-        var htmlPath = String()
         
-        let langStr = Locale.current.languageCode
-        if langStr == "en" {
-            htmlPath = Bundle.main.path(forResource: urlen, ofType: "html")!
-        } else {
-            htmlPath = Bundle.main.path(forResource: urlfr, ofType: "html")!
-        }
-        
-        let htmlUrl = URL(fileURLWithPath: htmlPath, isDirectory: false)
-        webView.loadFileURL(htmlUrl, allowingReadAccessTo: htmlUrl)
+        let language = Bundle.main.preferredLocalizations.first! as NSString
+        let fileName = "legal_notice_" + (language as String)
+        let url = URL(fileURLWithPath: Bundle.main.path(forResource: fileName, ofType: "html")!)
+        let urlRequest = URLRequest(url: url)
+        webView.load(urlRequest)
         webView.navigationDelegate = self
         view = webView
     }
@@ -49,5 +43,24 @@ class LegalNoticeViewController: UIViewController, WKNavigationDelegate, WKUIDel
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         webView.frame = view.bounds
+    }
+}
+
+extension LegalNoticeViewController {
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction,
+                 decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        guard
+            let url = navigationAction.request.url,
+            let scheme = url.scheme else {
+                decisionHandler(.cancel)
+                return
+            }
+        
+        if (scheme.lowercased() == "mailto") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            decisionHandler(.cancel)
+            return
+        }
+        decisionHandler(.allow)
     }
 }

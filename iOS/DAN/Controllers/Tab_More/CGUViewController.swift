@@ -25,28 +25,18 @@ class CGUViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     @IBOutlet weak var myOrangeLabel:   UILabel!
     
     var webView = WKWebView()
-    let urlfr = "CGU_fr"
-    let urlen = "CGU_en"
     
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "cgu_nav_title".localized
-        var htmlPath = String()
         
-        let langStr = Locale.current.languageCode
-        if langStr == "en" {
-            htmlPath = Bundle.main.path(forResource: urlen, ofType: "html")!
-        } else {
-            htmlPath = Bundle.main.path(forResource: urlfr, ofType: "html")!
-        }
-        
-        let htmlUrl = URL(fileURLWithPath: htmlPath, isDirectory: false)
-        let configuration = WKWebViewConfiguration()
-        webView = WKWebView(frame: .zero,
-                                configuration: configuration)
-        webView.loadFileURL(htmlUrl, allowingReadAccessTo: htmlUrl)
+        let language = Bundle.main.preferredLocalizations.first! as NSString
+        let fileName = "CGU_" + (language as String)
+        let url = URL(fileURLWithPath: Bundle.main.path(forResource: fileName, ofType: "html")!)
+        let urlRequest = URLRequest(url: url)
+        webView.load(urlRequest)
         webView.navigationDelegate = self
         view = webView
     }

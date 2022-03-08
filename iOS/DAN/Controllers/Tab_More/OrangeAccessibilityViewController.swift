@@ -25,28 +25,20 @@ class OrangeAccessibilityViewController: UIViewController, WKNavigationDelegate,
     @IBOutlet weak var myOrangeLabel:   UILabel!
     
     let webView = WKWebView()
-    let urlfr = "mdan_fr"
-    let urlen = "mdan_en"
     
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "orange_accessibility_nav_title".localized
-        var htmlPath = String()
         
-        let langStr = Locale.current.languageCode
-        if langStr == "en" {
-            htmlPath = Bundle.main.path(forResource: urlen, ofType: "html")!
-        } else {
-            htmlPath = Bundle.main.path(forResource: urlfr, ofType: "html")!
-        }
-        
-        let htmlUrl = URL(fileURLWithPath: htmlPath, isDirectory: false)
-        webView.loadFileURL(htmlUrl, allowingReadAccessTo: htmlUrl)
+        let language = Bundle.main.preferredLocalizations.first! as NSString
+        let fileName = "mdan_" + (language as String)
+        let url = URL(fileURLWithPath: Bundle.main.path(forResource: fileName, ofType: "html")!)
+        let urlRequest = URLRequest(url: url)
+        webView.load(urlRequest)
         webView.navigationDelegate = self
         view = webView
-        
 
     }
     

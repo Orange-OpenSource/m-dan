@@ -19,7 +19,7 @@
 
 import UIKit
 
-class CarouselViewController_bis: UIViewController {
+class CarouselViewController_bis: UIViewController, UIScrollViewDelegate, UIGestureRecognizerDelegate {
 
     // MARK: - Properties
     @IBOutlet weak var scrollView:  UIScrollView!
@@ -35,6 +35,7 @@ class CarouselViewController_bis: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    
         pageImages = [
             UIImage(named: "carousel_img1.jpg")!,
             UIImage(named: "carousel_img2.jpg")!,
@@ -46,6 +47,7 @@ class CarouselViewController_bis: UIViewController {
             "example_horizontalScroll_carousel_imageLabel2".localized,
             "example_horizontalScroll_carousel_imageLabel3".localized
         ]
+        
         
         pageControl.isHidden          = !isAccessible
         pageControl.currentPage     = 0

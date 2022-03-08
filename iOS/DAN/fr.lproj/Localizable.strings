@@ -76,7 +76,7 @@
 "criteria_category_contentControl"      = "Contrôle du contenu";
 "criteria_category_contentChange"       = "Changement de contenu";
 "criteria_category_horizontalScroll"    = "Scroll horizontal";
-"criteria_category_orientation"         = "Orientation";
+"criteria_category_orientation"         = "Orientation de l'appareil";
 "criteria_category_form"                = "Formulaire";
 "criteria_category_readingOrder"        = "Ordre de lecture";
 "criteria_category_language"            = "Langue";
@@ -357,7 +357,7 @@
 "criteria_category_orientation_howTo"     = "Ne pas hésiter à utiliser les contraintes ou les UIStackView pour que les élements s'adaptent correctement.\n\nPour une optimisation parfaite il est possible d'utiliser les sizes classes quand cela est nécessaire.";
 
 // Examples - Orientation -> Turn
-"example_orientation_title"                       = "Orientation";
+"example_orientation_title"                       = "Orientation de l'appareil";
 "example_orientation_shortDescription"            = "Indiquer que l'on peut utilisé l'application en mode paysage";
 "example_orientation_description"                 = "Le bouton accessible ci-dessous est correctement géré par les \"contraintes\" nous avons aucunes pertes d'informations.\n\nA contrario, le bouton non accessible ne permet pas d'être lu facilement lorsque l'on oriente le téléphone en mode paysage ; la navigation sera désagréable pour l'utilisateur.";
 "example_orientation_buttonText"                  = "V";
@@ -572,7 +572,7 @@
 "plus_menu_home"                = "Introduction à l'accessibilité";
 "plus_menu_orangeAccessibility" = "Déclaration d'accessibilité";
 "plus_menu_cgu"                 = "Conditions d'utilisation";
-"plus_menu_legal_notice"        = "Mention légale";
+"plus_menu_legal_notice"        = "Mentions légales";
 "plus_menu_other_application"   = "Autres applications";
 "plus_menu_about"               = "A propos";
 "plus_menu_contact"             = "Contact";
@@ -609,7 +609,7 @@
 // ----------------
 // Menu - Legal notice
 // ----------------
-"legal_notice_nav_title"  = "Mention légale";
+"legal_notice_nav_title"  = "Mentions légales";
 
 // ----------------
 // Menu - Other application
@@ -630,6 +630,6 @@
 // Menu - Contact
 // ---------------
 "contact_title"         = "Contact";
-"contact_webSite"       = "• Site web";
-"contact_support"       = "• Demande de support";
+"contact_webSite"       = "Site web";
+"contact_support"       = "Demande de support";
 "contact_contactTeam"   = "Contacter l'équipe :";

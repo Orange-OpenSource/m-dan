@@ -18,62 +18,30 @@
  */
 
 import UIKit
+import WebKit
 
-class AboutViewController: UIViewController, UIWebViewDelegate {
-
-    @IBOutlet weak var subtitleLabel:   UILabel!
-    @IBOutlet weak var webview:   UIWebView!
-    @IBOutlet weak var container:   UIView!
-    @IBOutlet weak var scroll:   UIScrollView!
+class AboutViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     
-    
+    let webView = WKWebView()
     
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.white
-        
         title = "about_title".localized
-        subtitleLabel.text  = "about_companyText".localized
         
         let language = Bundle.main.preferredLocalizations.first! as NSString
         let fileName = "about_" + (language as String)
         let url = URL(fileURLWithPath: Bundle.main.path(forResource: fileName, ofType: "html")!)
         let urlRequest = URLRequest(url: url)
-        webview.delegate = self
-        webview.scrollView.isScrollEnabled = false
-        webview.scrollView.bounces = false
-        webview.loadRequest(urlRequest)
-        webview.isUserInteractionEnabled = true
+        webView.load(urlRequest)
+        webView.navigationDelegate = self
+        view = webView
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        webView.frame = view.bounds
     }
-    
-    // MARK: - UIWebViewDelegate
-    func webViewDidFinishLoad(_ webView: UIWebView) {
-        
-        var frame = webView.frame
-        frame.size.height = 1
-        webView.frame = frame
-        let fittingSize = webView.sizeThatFits(CGSize.zero)
-        frame.size = fittingSize
-        webView.frame = frame
-
-        
-        scroll.contentSize.height = frame.size.height + 200
-        //container.frame.size.height = scroll.contentSize.height
-
-    }
-    
-    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebView.NavigationType) -> Bool {
-        if navigationType == UIWebView.NavigationType.linkClicked {
-            UIApplication.shared.openURL(request.url!)
-            return false
-        }
-        return true
-    }
-
 }
+
