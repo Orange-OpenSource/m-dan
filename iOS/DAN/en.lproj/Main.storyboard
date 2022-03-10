@@ -1067,11 +1067,11 @@
             </objects>
             <point key="canvasLocation" x="3301.4018691588785" y="-1775.3779697624191"/>
         </scene>
-        <!--Critères-->
+        <!--Criteria-->
         <scene sceneID="DYU-xr-lF5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UDS-tC-Wdh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Critères" image="task_list" id="pr2-Ra-dmD"/>
+                    <tabBarItem key="tabBarItem" title="Criteria" image="task_list" id="pr2-Ra-dmD"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vN6-Hk-PVC">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>
@@ -1086,11 +1086,11 @@
             </objects>
             <point key="canvasLocation" x="1546.2616822429907" y="-2437.5809935205184"/>
         </scene>
-        <!--Développeur-->
+        <!--Developer-->
         <scene sceneID="RXP-Xr-A36">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OLI-xK-9KY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Développeur" image="repair" id="Ek0-Tx-tB2"/>
+                    <tabBarItem key="tabBarItem" title="Developer" image="repair" id="Ek0-Tx-tB2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jB6-5w-Tkm">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>
