@@ -32,15 +32,9 @@
         android:touchscreenBlocksFocus="false"
         app:popupTheme="@style/ToolBar.popup" />
 
-    <ScrollView
+    <WebView  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/webView_accessibility"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <com.orange.accessibilitystatementlibrary.StatementView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:details_url="https://www.orange.fr/accessibilite?url=app.orangetv.android.orange.fr"
-            app:declarant="@string/registrant"/>
-
-    </ScrollView>
+        android:layout_height="match_parent"
+        />
 </LinearLayout>

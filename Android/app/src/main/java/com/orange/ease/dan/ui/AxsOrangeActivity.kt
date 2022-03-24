@@ -26,6 +26,7 @@ import android.os.Bundle
 import android.view.View
 import com.orange.ease.dan.databinding.ActivityAxsorangeBinding
 import com.orange.ease.dan.navigation.DialogActivity
+import java.util.*
 
 class AxsOrangeActivity : DialogActivity() {
 
@@ -37,6 +38,9 @@ class AxsOrangeActivity : DialogActivity() {
         val view = binding.root
         setupToolbar()
         setContentView(view)
+
+        val webView = binding.webViewAccessibility
+        webView.loadUrl("file:///android_asset/mdan_accessibility.html")
     }
 
     private fun setupToolbar() {
@@ -46,42 +50,6 @@ class AxsOrangeActivity : DialogActivity() {
         binding.myToolbar.setNavigationOnClickListener { _ -> onBackPressed() }
     }
 
-    fun clickNetwork(view: View) {
-        val packageName = "com.orange.wifiorange"
-        startPackageActivity(packageName)
-    }
-
-    fun clickFootball(view: View) {
-        val packageName = "com.orange.ofc"
-        startPackageActivity(packageName)
-    }
-
-    fun clickLivebox(view: View) {
-        val packageName = "com.orange.mylivebox.fr"
-        startPackageActivity(packageName)
-    }
-
-    fun clickOEM(view: View) {
-        val packageName = "com.orange.orangeetmoi"
-        startPackageActivity(packageName)
-    }
-
-    private fun startPackageActivity(packageName: String) {
-        val startActivitySettings: () -> Unit = {
-            startNewActivity(this, packageName)
-        }
-        initAlertDialogStartActivity(startActivitySettings)
-    }
-
-    private fun startNewActivity(context: Context, packageName: String) {
-        var intent = context.packageManager.getLaunchIntentForPackage(packageName)
-        if (intent == null) {
-            intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse("market://details?id=$packageName")
-        }
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-        context.startActivity(intent)
-    }
 }
 
 
