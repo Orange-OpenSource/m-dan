@@ -768,8 +768,8 @@
     <string name="no">No</string>
 
     <string name="mail_address">accessibility.support@orange.com</string>
-    <string name="mail_subject">subject of email</string>
-    <string name="mail_body">body of email</string>
+    <string name="mail_subject">About MDAN</string>
+    <string name="mail_body">MDAN Android (don\'t delete)</string>
     <string name="mail_toast">There are no email clients installed.</string>
 
     <string name="pz_content_desc_logo">Orange icon</string>
