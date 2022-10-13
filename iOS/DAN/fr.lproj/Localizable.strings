@@ -560,6 +560,13 @@
 "option_selectionControl_activation"      = "Réglages > Général > Accessibilité > Contrôle de sélection";
 
 
+// ---------------------------------------------------------------------------
+// Testing tab
+// ---------------------------------------------------------------------------
+// Title
+"tab_testings_title"    = "Tester";
+"tab_testings_title_accessibilityLabel"    = "tester";
+
 
 // ---------------------------------------------------------------------------
 // Plus tab

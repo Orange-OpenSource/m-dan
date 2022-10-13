@@ -75,17 +75,6 @@
 		6D04287E27D11963007AC365 /* AccordionHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04286B27D11963007AC365 /* AccordionHeaderViewCell.swift */; };
 		6D04288027D1198F007AC365 /* TextAndButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04287F27D1198F007AC365 /* TextAndButtonTableViewCell.swift */; };
 		6D04288227D11995007AC365 /* DoubleTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04288127D11995007AC365 /* DoubleTextTableViewCell.swift */; };
-		6D04288527D119C0007AC365 /* CGU_en.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D04288327D119C0007AC365 /* CGU_en.html */; };
-		6D04288627D119C0007AC365 /* CGU_fr.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D04288427D119C0007AC365 /* CGU_fr.html */; };
-		6D04288C27D119C9007AC365 /* pie.css in Resources */ = {isa = PBXBuildFile; fileRef = 6D04288727D119C9007AC365 /* pie.css */; };
-		6D04288D27D119C9007AC365 /* orange-logo.svg in Resources */ = {isa = PBXBuildFile; fileRef = 6D04288827D119C9007AC365 /* orange-logo.svg */; };
-		6D04288E27D119C9007AC365 /* mdan-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D04288927D119C9007AC365 /* mdan-logo.png */; };
-		6D04288F27D119C9007AC365 /* boosted-grid.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 6D04288A27D119C9007AC365 /* boosted-grid.min.css */; };
-		6D04289027D119C9007AC365 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 6D04288B27D119C9007AC365 /* style.css */; };
-		6D04289327D119D1007AC365 /* mdan_fr.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D04289127D119D1007AC365 /* mdan_fr.html */; };
-		6D04289427D119D1007AC365 /* mdan_en.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D04289227D119D1007AC365 /* mdan_en.html */; };
-		6D04289727D119D8007AC365 /* legal_notice_fr.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D04289527D119D8007AC365 /* legal_notice_fr.html */; };
-		6D04289827D119D8007AC365 /* legal_notice_en.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D04289627D119D8007AC365 /* legal_notice_en.html */; };
 		6D0428A127D62B76007AC365 /* about_fr.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D04289F27D62B75007AC365 /* about_fr.html */; };
 		6D0428A227D62B76007AC365 /* about_en.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D0428A027D62B76007AC365 /* about_en.html */; };
 		6D0428A427D62B7E007AC365 /* style_about.css in Resources */ = {isa = PBXBuildFile; fileRef = 6D0428A327D62B7E007AC365 /* style_about.css */; };
@@ -96,6 +85,17 @@
 		6D4B986826E2BA3E00FF505E /* ExampleVoiceOver.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D4B986726E2BA3E00FF505E /* ExampleVoiceOver.storyboard */; };
 		6D4B986B26E2BB9800FF505E /* VoiceOverCarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B986A26E2BB9800FF505E /* VoiceOverCarouselViewController.swift */; };
 		6D842500276B5004002E6B80 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6D9F6EB628F850CD00328FB3 /* legal_notice_en.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D9F6EB528F850CD00328FB3 /* legal_notice_en.html */; };
+		6D9F6EB828F850DA00328FB3 /* legal_notice_fr.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D9F6EB728F850DA00328FB3 /* legal_notice_fr.html */; };
+		6D9F6EC128F8510F00328FB3 /* pie.css in Resources */ = {isa = PBXBuildFile; fileRef = 6D9F6EB928F8510E00328FB3 /* pie.css */; };
+		6D9F6EC228F8510F00328FB3 /* CGU_en.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D9F6EBA28F8510E00328FB3 /* CGU_en.html */; };
+		6D9F6EC328F8510F00328FB3 /* mdan-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D9F6EBB28F8510E00328FB3 /* mdan-logo.png */; };
+		6D9F6EC428F8510F00328FB3 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 6D9F6EBC28F8510E00328FB3 /* style.css */; };
+		6D9F6EC528F8510F00328FB3 /* mdan_en.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D9F6EBD28F8510E00328FB3 /* mdan_en.html */; };
+		6D9F6EC628F8510F00328FB3 /* mdan_fr.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D9F6EBE28F8510E00328FB3 /* mdan_fr.html */; };
+		6D9F6EC728F8510F00328FB3 /* orange-logo.svg in Resources */ = {isa = PBXBuildFile; fileRef = 6D9F6EBF28F8510E00328FB3 /* orange-logo.svg */; };
+		6D9F6EC828F8510F00328FB3 /* CGU_fr.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D9F6EC028F8510E00328FB3 /* CGU_fr.html */; };
+		6D9F6ECB28F857B600328FB3 /* TestingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9F6ECA28F857B500328FB3 /* TestingsViewController.swift */; };
 		DA6B9A381C1AC16D00767DB4 /* ElementStateFoldAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B9A371C1AC16D00767DB4 /* ElementStateFoldAreaViewController.swift */; };
 		DA7AD7671C060E8900A42F3D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7AD7661C060E8900A42F3D /* CategoryViewController.swift */; };
 		DA95677F1C1F1AF7002C8233 /* ExampleForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA95677E1C1F1AF7002C8233 /* ExampleForm.storyboard */; };
@@ -239,17 +239,6 @@
 		6D04286B27D11963007AC365 /* AccordionHeaderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccordionHeaderViewCell.swift; sourceTree = "<group>"; };
 		6D04287F27D1198F007AC365 /* TextAndButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextAndButtonTableViewCell.swift; sourceTree = "<group>"; };
 		6D04288127D11995007AC365 /* DoubleTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleTextTableViewCell.swift; sourceTree = "<group>"; };
-		6D04288327D119C0007AC365 /* CGU_en.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = CGU_en.html; path = ../../../../../../../../../Desktop/HTML/CGUHtml/CGU_en.html; sourceTree = "<group>"; };
-		6D04288427D119C0007AC365 /* CGU_fr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = CGU_fr.html; path = ../../../../../../../../../Desktop/HTML/CGUHtml/CGU_fr.html; sourceTree = "<group>"; };
-		6D04288727D119C9007AC365 /* pie.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = pie.css; path = ../../../../../../../../../Desktop/HTML/css/pie.css; sourceTree = "<group>"; };
-		6D04288827D119C9007AC365 /* orange-logo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "orange-logo.svg"; path = "../../../../../../../../../Desktop/HTML/css/orange-logo.svg"; sourceTree = "<group>"; };
-		6D04288927D119C9007AC365 /* mdan-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mdan-logo.png"; path = "../../../../../../../../../Desktop/HTML/css/mdan-logo.png"; sourceTree = "<group>"; };
-		6D04288A27D119C9007AC365 /* boosted-grid.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = "boosted-grid.min.css"; path = "../../../../../../../../../Desktop/HTML/css/boosted-grid.min.css"; sourceTree = "<group>"; };
-		6D04288B27D119C9007AC365 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = style.css; path = ../../../../../../../../../Desktop/HTML/css/style.css; sourceTree = "<group>"; };
-		6D04289127D119D1007AC365 /* mdan_fr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = mdan_fr.html; path = ../../../../../../../../../Desktop/HTML/DeclarationContentHtml/mdan_fr.html; sourceTree = "<group>"; };
-		6D04289227D119D1007AC365 /* mdan_en.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = mdan_en.html; path = ../../../../../../../../../Desktop/HTML/DeclarationContentHtml/mdan_en.html; sourceTree = "<group>"; };
-		6D04289527D119D8007AC365 /* legal_notice_fr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = legal_notice_fr.html; path = ../../../../../../../../../Desktop/HTML/LegalNoticeHtml/legal_notice_fr.html; sourceTree = "<group>"; };
-		6D04289627D119D8007AC365 /* legal_notice_en.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = legal_notice_en.html; path = ../../../../../../../../../Desktop/HTML/LegalNoticeHtml/legal_notice_en.html; sourceTree = "<group>"; };
 		6D04289F27D62B75007AC365 /* about_fr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about_fr.html; sourceTree = "<group>"; };
 		6D0428A027D62B76007AC365 /* about_en.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about_en.html; sourceTree = "<group>"; };
 		6D0428A327D62B7E007AC365 /* style_about.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style_about.css; sourceTree = "<group>"; };
@@ -259,6 +248,17 @@
 		6D4B986326E2B9D900FF505E /* VoiceOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceOverViewController.swift; sourceTree = "<group>"; };
 		6D4B986726E2BA3E00FF505E /* ExampleVoiceOver.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExampleVoiceOver.storyboard; sourceTree = "<group>"; };
 		6D4B986A26E2BB9800FF505E /* VoiceOverCarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceOverCarouselViewController.swift; sourceTree = "<group>"; };
+		6D9F6EB528F850CD00328FB3 /* legal_notice_en.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = legal_notice_en.html; sourceTree = "<group>"; };
+		6D9F6EB728F850DA00328FB3 /* legal_notice_fr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = legal_notice_fr.html; sourceTree = "<group>"; };
+		6D9F6EB928F8510E00328FB3 /* pie.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = pie.css; sourceTree = "<group>"; };
+		6D9F6EBA28F8510E00328FB3 /* CGU_en.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CGU_en.html; sourceTree = "<group>"; };
+		6D9F6EBB28F8510E00328FB3 /* mdan-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mdan-logo.png"; sourceTree = "<group>"; };
+		6D9F6EBC28F8510E00328FB3 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		6D9F6EBD28F8510E00328FB3 /* mdan_en.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = mdan_en.html; sourceTree = "<group>"; };
+		6D9F6EBE28F8510E00328FB3 /* mdan_fr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = mdan_fr.html; sourceTree = "<group>"; };
+		6D9F6EBF28F8510E00328FB3 /* orange-logo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "orange-logo.svg"; sourceTree = "<group>"; };
+		6D9F6EC028F8510E00328FB3 /* CGU_fr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CGU_fr.html; sourceTree = "<group>"; };
+		6D9F6ECA28F857B500328FB3 /* TestingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingsViewController.swift; sourceTree = "<group>"; };
 		DA6B9A371C1AC16D00767DB4 /* ElementStateFoldAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ElementStateFoldAreaViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DA7AD7661C060E8900A42F3D /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		DA95677E1C1F1AF7002C8233 /* ExampleForm.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExampleForm.storyboard; sourceTree = "<group>"; };
@@ -431,6 +431,14 @@
 			path = VoiceOver;
 			sourceTree = "<group>";
 		};
+		6D9F6EC928F8578000328FB3 /* Tab_Testing */ = {
+			isa = PBXGroup;
+			children = (
+				6D9F6ECA28F857B500328FB3 /* TestingsViewController.swift */,
+			);
+			path = Tab_Testing;
+			sourceTree = "<group>";
+		};
 		8ED8C2DEC3776740F7E5642E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -586,18 +594,17 @@
 			children = (
 				6D0428A027D62B76007AC365 /* about_en.html */,
 				6D04289F27D62B75007AC365 /* about_fr.html */,
-				6D04289627D119D8007AC365 /* legal_notice_en.html */,
-				6D04289527D119D8007AC365 /* legal_notice_fr.html */,
-				6D04289227D119D1007AC365 /* mdan_en.html */,
-				6D04289127D119D1007AC365 /* mdan_fr.html */,
-				6D04288A27D119C9007AC365 /* boosted-grid.min.css */,
-				6D04288927D119C9007AC365 /* mdan-logo.png */,
-				6D04288827D119C9007AC365 /* orange-logo.svg */,
-				6D04288727D119C9007AC365 /* pie.css */,
-				6D04288B27D119C9007AC365 /* style.css */,
+				6D9F6EB528F850CD00328FB3 /* legal_notice_en.html */,
+				6D9F6EB728F850DA00328FB3 /* legal_notice_fr.html */,
+				6D9F6EC028F8510E00328FB3 /* CGU_fr.html */,
+				6D9F6EBA28F8510E00328FB3 /* CGU_en.html */,
+				6D9F6EBD28F8510E00328FB3 /* mdan_en.html */,
+				6D9F6EBE28F8510E00328FB3 /* mdan_fr.html */,
+				6D9F6EBB28F8510E00328FB3 /* mdan-logo.png */,
+				6D9F6EBF28F8510E00328FB3 /* orange-logo.svg */,
+				6D9F6EB928F8510E00328FB3 /* pie.css */,
+				6D9F6EBC28F8510E00328FB3 /* style.css */,
 				6D0428A327D62B7E007AC365 /* style_about.css */,
-				6D04288327D119C0007AC365 /* CGU_en.html */,
-				6D04288427D119C0007AC365 /* CGU_fr.html */,
 				6D04284227D11040007AC365 /* OtherApplicationViewController.swift */,
 				6D04282A27D10FF7007AC365 /* LegalNoticeViewController.swift */,
 				6D04282827D10FE3007AC365 /* CGUViewController.swift */,
@@ -671,6 +678,7 @@
 				F46DEA581C0DB210009980E1 /* Tab_Criteria */,
 				F46DEA591C0DD66A009980E1 /* Tab_Developer */,
 				F46DEA5B1C0DD67F009980E1 /* Tab_Options */,
+				6D9F6EC928F8578000328FB3 /* Tab_Testing */,
 				F46DEA5C1C0DD688009980E1 /* Tab_More */,
 			);
 			path = Controllers;
@@ -799,46 +807,44 @@
 			files = (
 				04CBE4221D01DAB20041A95D /* systemEventsLinks.html in Resources */,
 				04CBE3F01D01CF6F0041A95D /* triggerVocalization_fr.html in Resources */,
-				6D04288527D119C0007AC365 /* CGU_en.html in Resources */,
 				04CBE4181D01DA530041A95D /* groupItems_fr.html in Resources */,
 				04CBE4021D01D25D0041A95D /* accessibilityOptionsStateLinks.html in Resources */,
+				6D9F6EC728F8510F00328FB3 /* orange-logo.svg in Resources */,
 				04CBE4161D01D8230041A95D /* changeVoiceOverFocusLinks.html in Resources */,
 				04CBE41C1D01DA6E0041A95D /* groupItemsLinks.html in Resources */,
-				6D04288D27D119C9007AC365 /* orange-logo.svg in Resources */,
+				6D9F6EC328F8510F00328FB3 /* mdan-logo.png in Resources */,
 				6D4B985E26E1DEE500FF505E /* LaunchScreen.storyboard in Resources */,
-				6D04288C27D119C9007AC365 /* pie.css in Resources */,
 				04CBE41A1D01DA610041A95D /* groupItems_en.html in Resources */,
 				04CBE4141D01D8160041A95D /* changeVoiceOverFocus_en.html in Resources */,
 				04CBE4001D01D2120041A95D /* accessibilityOptionsState_en.html in Resources */,
+				6D9F6EC228F8510F00328FB3 /* CGU_en.html in Resources */,
 				04CBE3F81D01CFD10041A95D /* elementsSemanticLinks.html in Resources */,
-				6D04288627D119C0007AC365 /* CGU_fr.html in Resources */,
 				04CBE3FA1D01CFE70041A95D /* hideItemsLinks.html in Resources */,
 				F4B841C01C15CBDB008C107F /* ExampleColor.storyboard in Resources */,
 				04CBE3E21D005DEF0041A95D /* textualAlternative_fr.html in Resources */,
 				04CBE4101D01D71A0041A95D /* changeVocalizationLinks.html in Resources */,
-				6D04289427D119D1007AC365 /* mdan_en.html in Resources */,
 				6D0428A127D62B76007AC365 /* about_fr.html in Resources */,
 				04CBE4081D01D2900041A95D /* notifyChangeOnPageLinks.html in Resources */,
+				6D9F6EC828F8510F00328FB3 /* CGU_fr.html in Resources */,
 				04CBE4061D01D2810041A95D /* notifyChangeOnPage_en.html in Resources */,
+				6D9F6EB628F850CD00328FB3 /* legal_notice_en.html in Resources */,
 				04CBE3E41D005E110041A95D /* elementsSemantic_fr.html in Resources */,
 				F40CD2141C1F096C00546018 /* ExampleContentControl.storyboard in Resources */,
-				6D04289327D119D1007AC365 /* mdan_fr.html in Resources */,
+				6D9F6EC528F8510F00328FB3 /* mdan_en.html in Resources */,
 				04CBE3F41D01CF920041A95D /* textualAlternative_en.html in Resources */,
 				6D4B986826E2BA3E00FF505E /* ExampleVoiceOver.storyboard in Resources */,
 				04CBE3FC1D01CFF60041A95D /* triggerVocalizationLinks.html in Resources */,
 				0482FC2F1CECC3E7003870F4 /* ExampleStandardComponents.storyboard in Resources */,
-				6D04289827D119D8007AC365 /* legal_notice_en.html in Resources */,
 				F4E9A0231C28098D001858DC /* ExampleContentChange.storyboard in Resources */,
 				6D04287927D11963007AC365 /* DefaultHeaderViewCell.xib in Resources */,
 				04CBE4201D01DAA50041A95D /* systemEvents_en.html in Resources */,
 				F40A50471C32D03200033AD4 /* ExampleLanguage.storyboard in Resources */,
+				6D9F6EC428F8510F00328FB3 /* style.css in Resources */,
 				04CBE42A1D01DBC70041A95D /* readingOrder_fr.html in Resources */,
 				DA95677F1C1F1AF7002C8233 /* ExampleForm.storyboard in Resources */,
 				04CBE4261D01DBAC0041A95D /* textSize_en.html in Resources */,
 				F48AF8D01C04718000CBB44D /* Localizable.strings in Resources */,
-				6D04288F27D119C9007AC365 /* boosted-grid.min.css in Resources */,
 				04CBE41E1D01DA9A0041A95D /* systemEvents_fr.html in Resources */,
-				6D04289727D119D8007AC365 /* legal_notice_fr.html in Resources */,
 				6D009D9527183478004612BE /* ExempleOrientation.storyboard in Resources */,
 				04CBE3F61D01CFBF0041A95D /* elementsSemantic_en.html in Resources */,
 				DAFB6C621C15BB2D00D40524 /* ExampleImage.storyboard in Resources */,
@@ -857,16 +863,17 @@
 				04CBE3EC1D01C8EA0041A95D /* hideItems_fr.html in Resources */,
 				F40A50401C32C59400033AD4 /* ExampleHorizontalScroll.storyboard in Resources */,
 				DAFC75C51C17237B0008AA81 /* ExampleElementState.storyboard in Resources */,
+				6D9F6EC628F8510F00328FB3 /* mdan_fr.html in Resources */,
 				F48BA22D1C16E62E00FC39B2 /* ExampleTitleAndHeader.storyboard in Resources */,
+				6D9F6EC128F8510F00328FB3 /* pie.css in Resources */,
 				04CBE4041D01D2750041A95D /* notifyChangeOnPage_fr.html in Resources */,
 				DAFC75BA1C15E2F30008AA81 /* ExampleTextualAlternative.storyboard in Resources */,
 				F48BA2361C17315100FC39B2 /* ExampleClickZone.storyboard in Resources */,
 				F4817FE61C03130800E9612D /* Assets.xcassets in Resources */,
 				04CBE4121D01D8090041A95D /* changeVoiceOverFocus_fr.html in Resources */,
-				6D04289027D119C9007AC365 /* style.css in Resources */,
 				04CBE40A1D01D6F30041A95D /* changeVocalization_fr.html in Resources */,
+				6D9F6EB828F850DA00328FB3 /* legal_notice_fr.html in Resources */,
 				04CBE3EE1D01CBED0041A95D /* hideItems_en.html in Resources */,
-				6D04288E27D119C9007AC365 /* mdan-logo.png in Resources */,
 				F4817FE41C03130800E9612D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -947,6 +954,7 @@
 				F4B4A99A1C0352640036A823 /* UIColor+Orange.swift in Sources */,
 				F40688F01C2C4B65008B4F45 /* IntroductionViewController.swift in Sources */,
 				DA9567D91C230B98002C8233 /* ElementStateSelectionListViewController.swift in Sources */,
+				6D9F6ECB28F857B600328FB3 /* TestingsViewController.swift in Sources */,
 				6D4B986426E2B9D900FF505E /* VoiceOverViewController.swift in Sources */,
 				F4B4A9A11C037C720036A823 /* CriteriaViewController.swift in Sources */,
 				6D04287527D11963007AC365 /* AddressTableViewCell.swift in Sources */,
