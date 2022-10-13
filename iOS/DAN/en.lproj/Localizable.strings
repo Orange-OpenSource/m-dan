@@ -569,6 +569,18 @@
 "tab_testings_title"    = "Tester";
 "tab_testings_title_accessibilityLabel"    = "tester";
 
+// Sections
+"testings_section_description" = "Description";
+"testings_section_situationTest"    = "Situation tests";
+
+// Description
+"testings_description_cell" = "The purpose of this guide is to help you test the accessibility of mobile applications on iOS. \nIt is advisable to start with the most used screens.";
+
+// Testings
+"testings_option_generalNavigation"     = "General navigation";
+"testings_option_fontEnlargement"       = "Font enlargement";
+"testings_option_screenReader"          = "Screen reader - Voice Over";
+"testings_option_selectionControl"      = "Selection control";
 
 // ---------------------------------------------------------------------------
 // Plus tab

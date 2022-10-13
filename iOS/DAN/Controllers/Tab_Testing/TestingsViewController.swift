@@ -40,20 +40,17 @@ class TestingsViewController: DefaultTableViewController {
         ]
         
         sectionHeaders = [
-            "common_whatIsIt",
-            "options_section_accessibilityOptions"
+            "testings_section_description",
+            "testings_section_situationTest"
         ]
         
         cellsContent = [
-            ["options_description_cell"],
+            ["testings_description_cell"],
             [
-                "options_option_characterScale",
-                "options_option_contrastIncrease",
-                "options_option_monoMode",
-                "options_option_zoom",
-                "options_option_colorInversion",
-                "options_option_buttonForm",
-                "options_option_selectionControl"
+                "testings_option_generalNavigation",
+                "testings_option_fontEnlargement",
+                "testings_option_screenReader",
+                "testings_option_selectionControl"
             ]
         ]
     }
