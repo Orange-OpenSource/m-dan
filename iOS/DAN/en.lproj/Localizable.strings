@@ -576,11 +576,16 @@
 // Description
 "testings_description_cell" = "The purpose of this guide is to help you test the accessibility of mobile applications on iOS. \nIt is advisable to start with the most used screens.";
 
-// Testings
-"testings_option_generalNavigation"     = "General navigation";
-"testings_option_fontEnlargement"       = "Font enlargement";
-"testings_option_screenReader"          = "Screen reader - Voice Over";
-"testings_option_selectionControl"      = "Selection control";
+// Testings situation
+"testings_option_generalNavigation"     = "Use general navigation";
+"testings_option_fontEnlargement"       = "Use font magnification";
+"testings_option_screenReader"          = "Use the Screen Reader - Voice Over";
+"testings_option_selectionControl"      = "Use switch control";
+
+// Testings another
+"testings_option_useColorContrast"      = "Use Color Contrast Calculator";
+"testings_option_useMultimedia"         = "Use audios and videos";
+"testings_option_screenWebView"          = "Use webviews";
 
 // ---------------------------------------------------------------------------
 // Plus tab

@@ -570,16 +570,21 @@
 // Sections
 "testings_section_description" = "Description";
 "testings_section_situationTest"    = "Tests de mise en situation";
+"testings_section_anotherTest"    = "Autre test à réaliser";
 
 // Description
 "testings_description_cell" = "Ce guide a pour objectif de vous accompagner pour tester l’accessibilité des applications mobiles sur iOS. \nIl est conseillé de commencer par les écrans les plus utilisés.";
 
-// Testings
-"testings_option_generalNavigation"     = "Navigation générale";
-"testings_option_fontEnlargement"       = "Agrandissement de la police";
-"testings_option_screenReader"          = "Lecteur d'écran - Voice Over";
-"testings_option_selectionControl"      = "Contrôle de sélection";
+// Testings situation
+"testings_option_generalNavigation"     = "Utiliser la navigation générale";
+"testings_option_fontEnlargement"       = "Utiliser l'agrandissement de la police";
+"testings_option_screenReader"          = "Utiliser le lecteur d'écran - Voice Over";
+"testings_option_selectionControl"      = "Utiliser le contrôle de sélection";
 
+// Testings another
+"testings_option_useColorContrast"      = "Utiliser Color Contrast Calculator";
+"testings_option_useMultimedia"         = "Utiliser les audios et de vidéos";
+"testings_option_screenWebView"          = "Utiliser les webviews";
 
 // ---------------------------------------------------------------------------
 // Plus tab

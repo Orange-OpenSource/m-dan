@@ -24,24 +24,16 @@ class TestingsViewController: DefaultTableViewController {
         super.didReceiveMemoryWarning()
     }
     
+    
     // MARK: - Private methods
     override func setUpDatas() {
 
         title = "tab_testings_title".localized
         
-        optionsKeys = [
-            "characterScale",
-            "contrastIncrease",
-            "monoMode",
-            "zoom",
-            "colorInversion",
-            "buttonForm",
-            "selectionControl"
-        ]
-        
         sectionHeaders = [
             "testings_section_description",
-            "testings_section_situationTest"
+            "testings_section_situationTest",
+            "testings_section_anotherTest"
         ]
         
         cellsContent = [
@@ -51,7 +43,12 @@ class TestingsViewController: DefaultTableViewController {
                 "testings_option_fontEnlargement",
                 "testings_option_screenReader",
                 "testings_option_selectionControl"
-            ]
+            ],
+            [
+                "testings_option_useColorContrast",
+                "testings_option_useMultimedia",
+                "testings_option_screenWebView"
+            ],
         ]
     }
 
@@ -64,7 +61,6 @@ class TestingsViewController: DefaultTableViewController {
             
             textCell            = tableView.dequeueReusableCell(withIdentifier: textCellIdentifier, for: indexPath) as! TextTableViewCell
             textCell.label.text = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
-            
             return textCell
         }
         else {
@@ -92,7 +88,7 @@ class TestingsViewController: DefaultTableViewController {
     
     // MARK: - StoryBoard
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        /*
         let cell:UITableViewCell                        = sender as! UITableViewCell
         let row                                         = ((tableView.indexPath(for: cell) as NSIndexPath?)?.row)!
         //let optionNumber                                = row+1
@@ -106,6 +102,7 @@ class TestingsViewController: DefaultTableViewController {
             ["option_\(optionsKeys[row])_desctription"],
             ["option_\(optionsKeys[row])_activation"]
         ]
+         */
     }
 }
 

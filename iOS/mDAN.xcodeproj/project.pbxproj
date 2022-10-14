@@ -96,6 +96,7 @@
 		6D9F6EC728F8510F00328FB3 /* orange-logo.svg in Resources */ = {isa = PBXBuildFile; fileRef = 6D9F6EBF28F8510E00328FB3 /* orange-logo.svg */; };
 		6D9F6EC828F8510F00328FB3 /* CGU_fr.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D9F6EC028F8510E00328FB3 /* CGU_fr.html */; };
 		6D9F6ECB28F857B600328FB3 /* TestingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9F6ECA28F857B500328FB3 /* TestingsViewController.swift */; };
+		6D9F6ECD28F9984900328FB3 /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9F6ECC28F9984900328FB3 /* TestingViewController.swift */; };
 		DA6B9A381C1AC16D00767DB4 /* ElementStateFoldAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B9A371C1AC16D00767DB4 /* ElementStateFoldAreaViewController.swift */; };
 		DA7AD7671C060E8900A42F3D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7AD7661C060E8900A42F3D /* CategoryViewController.swift */; };
 		DA95677F1C1F1AF7002C8233 /* ExampleForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA95677E1C1F1AF7002C8233 /* ExampleForm.storyboard */; };
@@ -259,6 +260,7 @@
 		6D9F6EBF28F8510E00328FB3 /* orange-logo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "orange-logo.svg"; sourceTree = "<group>"; };
 		6D9F6EC028F8510E00328FB3 /* CGU_fr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CGU_fr.html; sourceTree = "<group>"; };
 		6D9F6ECA28F857B500328FB3 /* TestingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingsViewController.swift; sourceTree = "<group>"; };
+		6D9F6ECC28F9984900328FB3 /* TestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
 		DA6B9A371C1AC16D00767DB4 /* ElementStateFoldAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ElementStateFoldAreaViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DA7AD7661C060E8900A42F3D /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		DA95677E1C1F1AF7002C8233 /* ExampleForm.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExampleForm.storyboard; sourceTree = "<group>"; };
@@ -435,6 +437,7 @@
 			isa = PBXGroup;
 			children = (
 				6D9F6ECA28F857B500328FB3 /* TestingsViewController.swift */,
+				6D9F6ECC28F9984900328FB3 /* TestingViewController.swift */,
 			);
 			path = Tab_Testing;
 			sourceTree = "<group>";
@@ -932,6 +935,7 @@
 				6D04287327D11963007AC365 /* HomeCollectionViewCell.swift in Sources */,
 				6D4B986B26E2BB9800FF505E /* VoiceOverCarouselViewController.swift in Sources */,
 				F4FC42D41C11D47800A553F1 /* ColorContrastViewController.swift in Sources */,
+				6D9F6ECD28F9984900328FB3 /* TestingViewController.swift in Sources */,
 				F40A504B1C33D14E00033AD4 /* AboutViewController.swift in Sources */,
 				6D04288027D1198F007AC365 /* TextAndButtonTableViewCell.swift in Sources */,
 				F4C799E01C1584620087ADDB /* ColorInfoViewController.swift in Sources */,
