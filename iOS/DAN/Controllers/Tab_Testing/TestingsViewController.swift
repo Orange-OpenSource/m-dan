@@ -13,7 +13,7 @@ class TestingsViewController: DefaultTableViewController {
     //MARK: - Properties
     let textCellIdentifier      = "textCell"
     let optionCellIdentifier    = "optionCell"
-    var optionsKeys : [String]  = []
+    var optionsKeys : [[String]]    = []
 
     // MARK: - View life cycle
     override func viewDidLoad() {
@@ -29,6 +29,21 @@ class TestingsViewController: DefaultTableViewController {
     override func setUpDatas() {
 
         title = "tab_testings_title".localized
+        
+        optionsKeys = [
+            [""],
+            [
+                "generalNavigation",
+                "contrastIncrease",
+                "monoMode",
+                "zoom"
+            ],
+            [
+                "colorInversion",
+                "buttonForm",
+                "webView"
+            ],
+        ]
         
         sectionHeaders = [
             "testings_section_description",
@@ -88,21 +103,20 @@ class TestingsViewController: DefaultTableViewController {
     
     // MARK: - StoryBoard
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        /*
-        let cell:UITableViewCell                        = sender as! UITableViewCell
-        let row                                         = ((tableView.indexPath(for: cell) as NSIndexPath?)?.row)!
-        //let optionNumber                                = row+1
-        //let optionsCount                                = tableView.dataSource?.tableView(tableView, numberOfRowsInSection: (tableView.indexPathForCell(cell)?.section)!)
-        let destinationVC: DefaultTableViewController   = segue.destination as! DefaultTableViewController
         
-        //destinationVC.title = "common_option".localized + " \(optionNumber)/\(optionsCount!)"
-        destinationVC.title = cellsContent[1][row].localized
+        
+        let cell:UITableViewCell                        = sender as! UITableViewCell
+        let section = self.tableView.indexPathForSelectedRow!.section
+        let row                                         = ((tableView.indexPath(for: cell) as NSIndexPath?)?.row)!
+                                                                                              
+        let destinationVC: DefaultTableViewController   = segue.destination as! DefaultTableViewController
 
+        destinationVC.title = cellsContent[section][row].localized
         destinationVC.cellsContent = [
-            ["option_\(optionsKeys[row])_desctription"],
-            ["option_\(optionsKeys[row])_activation"]
+            ["testing_\(optionsKeys[section][row])_desctription"],
+            ["testing_\(optionsKeys[section][row])_check"]
         ]
-         */
+        
     }
 }
 

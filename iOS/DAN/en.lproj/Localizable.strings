@@ -25,6 +25,8 @@
 "common_ok"                         = "OK";
 "common_description"                = "Description";
 "common_activation"                 = "Activation";
+"common_test"                       = "Situation tests";
+"common_check"                      = "Check";
 "common_use"                        = "Use";
 "common_links"                      = "Links";
 "common_of"                         = "of";
@@ -586,6 +588,12 @@
 "testings_option_useColorContrast"      = "Use Color Contrast Calculator";
 "testings_option_useMultimedia"         = "Use audios and videos";
 "testings_option_screenWebView"          = "Use webviews";
+
+// -------------------------
+// Testing - General Navigation
+// -------------------------
+"testing_generalNavigation_desctription"    = "Test general navigation.";
+"testing_generalNavigation_check"      = "1 - Check that all screens have visible, unique and relevant titles \n\n2 - Check that the texts are readable \n\n3 - Check that click errors can be undone \n\n4 - Verify that the app works in both orientations of the phone (landscape/portrait) \n\n5 - Limit visual animations";
 
 // ---------------------------------------------------------------------------
 // Plus tab

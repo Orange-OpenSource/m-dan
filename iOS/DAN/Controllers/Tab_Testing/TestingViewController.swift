@@ -29,10 +29,9 @@ class TestingViewController: DefaultTableViewController {
     
     // MARK: - Private methods
     override func setUpDatas() {
-                
         sectionHeaders = [
-            "common_description",
-            "common_activation"
+            "common_test",
+            "common_check"
         ]
     }
     
@@ -41,22 +40,6 @@ class TestingViewController: DefaultTableViewController {
         
         let textCell        = tableView.dequeueReusableCell(withIdentifier: textCellIdentifier, for: indexPath) as! TextTableViewCell
         textCell.label.text = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
-        
-        /*
-        if indexPath.section == linksSection {
-            
-            let cellString  = NSMutableAttributedString(string:cellsContent[indexPath.section][indexPath.row].localized)
-            let docLink     = NSMutableAttributedString(string:"voiceover_appleDocLink".localized)
-            docLink.addAttribute(NSLinkAttributeName, value: "SOME_URL_HERE", range: NSMakeRange(0, docLink.length))
-            
-            cellString.appendAttributedString(docLink)
-            
-            textCell.label.attributedText = cellString
-            
-            textCell.userInteractionEnabled = true
-            
-        }
-        */
         
         return textCell
         

@@ -25,6 +25,8 @@
 "common_ok"                         = "OK";
 "common_description"                = "Description";
 "common_activation"                 = "Activation";
+"common_test"                       = "Tests de mise en situation";
+"common_check"                      = "Vérification";
 "common_use"                        = "Utilisation";
 "common_links"                      = "Liens";
 "common_of"                         = "sur";
@@ -585,6 +587,51 @@
 "testings_option_useColorContrast"      = "Utiliser Color Contrast Calculator";
 "testings_option_useMultimedia"         = "Utiliser les audios et de vidéos";
 "testings_option_screenWebView"          = "Utiliser les webviews";
+
+// -------------------------
+// Testing - General Navigation
+// -------------------------
+"testing_generalNavigation_desctription"    = "Tester la navigation générale.";
+"testing_generalNavigation_check"      = "1 - Vérifier que tous les écrans ont des titres visibles, uniques et pertinents \n\n2 - Vérifier que les textes sont lisibles \n\n3 - Vérifier que les erreurs de clic peuvent être annulées \n\n4 - Vérifier que l'application fonctionne dans les deux orientations du téléphone (paysage/portrait) \n\n5 - Limiter les animations visuelles";
+
+
+// --------------------------
+// Option - Contrast increase
+// --------------------------
+"option_contrastIncrease_desctription"  = "Permet d’améliorer artificiellement le contraste.";
+"option_contrastIncrease_activation"    = "Réglages > Général > Accessibilité > Augmenter le contraste";
+
+
+// -------------------
+// Option - Mono mode
+// -------------------
+"option_monoMode_desctription"  = "Permet de passer d’un son stéréo à mono. Très utile pour les personnes avec une déficience auditive sur une oreille.";
+"option_monoMode_activation"    = "Réglages > Général > Accessibilité > Audio mono";
+
+
+// --------------
+// Option - Zoom
+// --------------
+"option_zoom_desctription"  = "Permet de zoomer sur l'écran. Une fois l'option activée, appuyez deux fois sur l'écran avec trois doigts pour effectuer le zoom. Il est ensuite possible de se déplacer sur l’écran en faisant glisser trois doigts.";
+"option_zoom_activation"    = "Réglages > Général > Accessibilité > Zoom";
+
+// -------------------------
+// Option - Color inversion
+// -------------------------
+"option_colorInversion_desctription"    = "Cette option permet d'inverser les couleurs à l'écran, ce qui peut aider à traiter les problèmes de contrastes sur certaines applications.";
+"option_colorInversion_activation"      = "Réglages > Général > Accessibilité > Inverser les couleurs";
+
+// -------------------------
+// Option - Button Form
+// -------------------------
+"option_buttonForm_desctription"    = "Permet d’afficher une forme aux boutons. Depuis iOS 7, les boutons sont de simples textes de couleurs. Avec cette option activée, les boutons sont dessinés.";
+"option_buttonForm_activation"      = "Réglages > Général > Accessibilité > Formes des boutons";
+
+// -------------------------
+// Option - Focus Control
+// -------------------------
+"option_selectionControl_desctription"    = "Le contrôle de sélection permet, une fois activé, d’afficher un focus à l’écran qui va se déplacer automatiquement d’élément interactif en élément interactif. Il est possible, via une action utilisateur, d’activer l’élément focus, d’annuler son action etc. L’action peut être configurée : par exemple, on peut utiliser la caméra pour que l’action soit un simple mouvement de tête vers la droite. Cet option est utile pour des personnes avec des difficultés motrices.";
+"option_selectionControl_activation"      = "Réglages > Général > Accessibilité > Contrôle de sélection";
 
 // ---------------------------------------------------------------------------
 // Plus tab
