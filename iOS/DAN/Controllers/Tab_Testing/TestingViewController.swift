@@ -29,9 +29,10 @@ class TestingViewController: DefaultTableViewController {
     
     // MARK: - Private methods
     override func setUpDatas() {
+        
         sectionHeaders = [
-            "common_test",
-            "common_check"
+            "",
+            ""
         ]
     }
     

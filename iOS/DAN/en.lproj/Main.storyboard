@@ -1109,7 +1109,6 @@
         <!--Options-->
         <scene sceneID="naj-aI-vxT">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jXt-LS-u2P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Gq-Tk-p8N" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Options" image="settings" id="h8L-vZ-go4"/>
                     <toolbarItems/>
@@ -1122,6 +1121,7 @@
                         <segue destination="a5R-PR-ubu" kind="relationship" relationship="rootViewController" id="imp-5B-9MT"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jXt-LS-u2P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1546" y="-921"/>
         </scene>
@@ -1259,11 +1259,11 @@
             </objects>
             <point key="canvasLocation" x="377" y="1339"/>
         </scene>
-        <!--Tester-->
+        <!--Tests-->
         <scene sceneID="xg9-3Q-jDi">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EVu-0v-eif" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tester" image="task_list" id="nOG-Vt-DJr"/>
+                    <tabBarItem key="tabBarItem" title="Tests" image="task_list" id="nOG-Vt-DJr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ktz-Nq-MNr">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>

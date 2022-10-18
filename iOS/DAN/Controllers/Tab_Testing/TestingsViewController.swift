@@ -34,9 +34,9 @@ class TestingsViewController: DefaultTableViewController {
             [""],
             [
                 "generalNavigation",
-                "contrastIncrease",
-                "monoMode",
-                "zoom"
+                "fontEnlargement",
+                "screenReader",
+                "selectionControl"
             ],
             [
                 "colorInversion",
@@ -113,7 +113,7 @@ class TestingsViewController: DefaultTableViewController {
 
         destinationVC.title = cellsContent[section][row].localized
         destinationVC.cellsContent = [
-            ["testing_\(optionsKeys[section][row])_desctription"],
+            //["testing_\(optionsKeys[section][row])_desctription"],
             ["testing_\(optionsKeys[section][row])_check"]
         ]
         

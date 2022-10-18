@@ -26,7 +26,6 @@
 "common_description"                = "Description";
 "common_activation"                 = "Activation";
 "common_test"                       = "Situation tests";
-"common_check"                      = "Check";
 "common_use"                        = "Use";
 "common_links"                      = "Links";
 "common_of"                         = "of";
@@ -568,32 +567,51 @@
 // Testing tab
 // ---------------------------------------------------------------------------
 // Title
-"tab_testings_title"    = "Tester";
-"tab_testings_title_accessibilityLabel"    = "tester";
+"tab_testings_title"    = "Tests";
+"tab_testings_title_accessibilityLabel"    = "test";
 
 // Sections
-"testings_section_description" = "Description";
+"testings_section_description"      = "Description";
 "testings_section_situationTest"    = "Situation tests";
+"testings_section_anotherTest"      = "Another test to perform";
 
 // Description
 "testings_description_cell" = "The purpose of this guide is to help you test the accessibility of mobile applications on iOS. \nIt is advisable to start with the most used screens.";
 
 // Testings situation
-"testings_option_generalNavigation"     = "Use general navigation";
-"testings_option_fontEnlargement"       = "Use font magnification";
-"testings_option_screenReader"          = "Use the Screen Reader - Voice Over";
-"testings_option_selectionControl"      = "Use switch control";
+"testings_option_generalNavigation"     = "General navigation";
+"testings_option_fontEnlargement"       = "Font magnification";
+"testings_option_screenReader"          = "Screen Reader voice over";
+"testings_option_selectionControl"      = "Switch control";
 
 // Testings another
-"testings_option_useColorContrast"      = "Use Color Contrast Calculator";
-"testings_option_useMultimedia"         = "Use audios and videos";
-"testings_option_screenWebView"          = "Use webviews";
+"testings_option_useColorContrast"      = "Color contrasts";
+"testings_option_useMultimedia"         = "Audio and video";
+"testings_option_screenWebView"         = "Webview";
 
 // -------------------------
 // Testing - General Navigation
 // -------------------------
 "testing_generalNavigation_desctription"    = "Test general navigation.";
-"testing_generalNavigation_check"      = "1 - Check that all screens have visible, unique and relevant titles \n\n2 - Check that the texts are readable \n\n3 - Check that click errors can be undone \n\n4 - Verify that the app works in both orientations of the phone (landscape/portrait) \n\n5 - Limit visual animations";
+"testing_generalNavigation_check"      = "- Check that all screens have visible, unique and relevant titles \n\n- Check that the texts are readable \n\n- Check that click errors can be undone \n\n- Verify that the app works in both orientations of the phone (landscape/portrait) \n\n- Limit visual animations";
+
+// --------------------------
+// Option - Font Enlargement
+// --------------------------
+"testing_fontEnlargement_desctription"  = "Use the application by enlarging the font of the phone to 200%";
+"testing_fontEnlargement_check"         = "Enable text magnification in system settings. \n\n- Check that all icons, texts, graphic elements are visible without any overflow or overlapping problem \n\n- Check that navigation of the different screens remains possible without loss of functionality";
+
+// --------------------------
+// Testings - Screen Reader
+// --------------------------
+"testing_screenReader_desctription"  = "Use the app with the VoiceOver screen reader ";
+"testing_screenReader_check"         = "Activate Voiceover. If you're unfamiliar with VoiceOver, use the user guide. \n\n- Check that you can navigate between the different screens and use the different features using only the screen reader \n\nTo be sure to test correctly, it is possible to turn off the screen by switching its screen to 'curtain' mode'.";
+
+// --------------------------
+// Testings - Selection Control
+// --------------------------
+"testing_selectionControl_desctription"  = "Use the Switch Control Tool ";
+"testing_selectionControl_check"         = "The Switch control simulates the use of an external keyboard. \n\n- Check that the focus is visible and follows the logical order  \n\n- Check that features are usable  \n\n- Check that there is no keyboard trap (not blocked on a component) \n\nIt is possible to do the same tests by connecting an external keyboard (bluetooth or wired)";
 
 // ---------------------------------------------------------------------------
 // Plus tab
