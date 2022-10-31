@@ -34,7 +34,7 @@ import com.orange.ease.dan.navigation.DialogActivity
 import com.orange.ease.dan.ui.criteria.CriteriaFragment
 import com.orange.ease.dan.ui.developmentguide.DevelopmentGuideFragment
 import com.orange.ease.dan.ui.tools.OptionsFragment
-
+import com.orange.ease.dan.ui.tools.TestFragment
 
 class MenuActivity : DialogActivity() {
 
@@ -72,6 +72,10 @@ class MenuActivity : DialogActivity() {
         displayFragment(OptionsFragment.newInstance())
     }
 
+    private fun initTestFragment(){
+        displayFragment(TestFragment.newInstance())
+    }
+
     private fun displayFragment(fragment: Fragment) {
         val fragmentContainerViewId: Int = R.id.main_container
 
@@ -86,6 +90,7 @@ class MenuActivity : DialogActivity() {
             R.id.action_criteria -> initCriteriaFragment()
             R.id.action_development -> initDevelopmentFragment()
             R.id.action_options -> initOptionFragment()
+            R.id.action_Test -> initTestFragment()
         }
         return true
     }

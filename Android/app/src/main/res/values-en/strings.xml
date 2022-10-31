@@ -22,6 +22,7 @@
     <string name="section_home">Home</string>
     <string name="section_criteria">Android Accessibility Guide</string>
     <string name="section_dev">Developer\'s guide</string>
+    <string name="section_test">Tester\'s guide</string>
     <string name="section_talkback">TalkBack</string>
     <string name="section_axs_options">Accessibility options</string>
     <string name="section_axs_orange">Accessibility at Orange</string>
@@ -680,6 +681,9 @@
     <string name="options_content_colorInversion">This option allows to invert colors on the screen, allowing to correct poor contrast on some application. Since Android 5 only.</string>
     <string name="options_content_description">Description</string>
     <string name="options_content_list_title">Accessibility option list</string>
+    <string name="test_content_list_title">Accessibility test list</string>
+    <string name="test_content">Ce guide propose des outils et des méthodes pour tester l\'accessibilité des applications mobiles Android.
+    Il est conseiller de commencer par les écrans les plus utilisés.</string>
     <string name="options_content_btn">Go to accessibility settings</string>
     <string-array name="options_list">
         <item>Font size</item>
@@ -717,6 +721,48 @@
     <string name="example_focus_color_title">Focus state</string>
     <string name="example_focus_color_desc">Any interactive element can receive focus, so the state of focus must be defined and make it possible to distinguish at a glance which element has focus.</string>
 
+    <!-- guide test : hide -->
+    <string name="manual_test_title">Manual Tests</string>
+    <string name="other_test_title">other tests</string>
+
+    <string name="general_navigation_test_title">General Navigation</string>
+    <string name="magnification_test_title">Text Magnification</string>
+    <string name="screen_reader_test_title">Screen reader Talkback</string>
+    <string name="keyboard_navigation_test_title">Keyboard Navigation</string>
+    <string name="general_navigation_test_description">-    Vérifier que tous les écrans ont des titres visibles, uniques et pertinents.\n\n-  Vérifier que les textes sont lisibles.\n\n-  Vérifier que les erreurs de clic peuvent être annulees.\n\n-  Vérifier que l\'application fonctionne dans les deux orientations du téléphone.\n\n-  Limiter les animations visuelles.</string>
+    <string name="magnification_test_description">"Activer l'agrandissement de texte dans les réglages du système
+
+    •	Vérifier que tous les textes, icones, éléments graphiques sont visibles sans aucun problème de dépassement ou de superposition.
+
+    •	Vérifier que les différentes fonctionnalités de l’application sont utilisables et que le contenu reste visible et clair."
+    </string>
+
+    <string name="screen_Reader_test_description">"Activer Talkback.
+
+        Si vous ne connaissez pas Talkback, utilisez le guide d’utilisation, (lien vers le guide), pour voir comment l’activer et découvrir les différentes gestuelles de navigation.
+
+        •	Vérifier que l'on peut naviguer entre les différents écrans et utiliser les différentes fonctionnalités en utilisant uniquement le lecteur d’écran.
+
+        Cet outil est utilisé par les utilisateurs malvoyants et non-voyants.
+
+        Pour simuler leurs situations, il est possible de tester avec l’écran éteint :
+
+        Activer Talkback ; glisser votre doigt du haut vers le bas puis vers la droite (en écrivant la lettre L majuscule) pour ouvrir le menu talkback ; naviguer jusqu’à « masquer l’écran » ; cliquez deux fois pour l’activer"</string>
+
+    <string name="keyboard_navigation_test_description">"Connecter un clavier externe à votre téléphone (bluetooth ou filaire)
+
+    Naviguer dans l’application en utilisant seulement le clavier
+
+    •	Vérifier que le focus est visible et suit l'ordre logique
+
+    •	Vérifier que les fonctionnalités sont utilisables
+
+    •	Vérifier qu'il n'y a pas de piège clavier (le focus ne reste pas bloqué sur un composant)"
+        </string>
+
+    <string name="test">Now is the time/nfor all good men to/ncome to the aid of their/nparty</string>
+
+
     <!-- accessibility & Orange view -->
     <string name="orange_title">And at Orange?</string>
     <string name="orange_content">Orange is striving to make its mobile applications accessible. In this section we offer a list of applications that held a special interest to accessibility for their developments.</string>
@@ -751,6 +797,7 @@
 
     <!-- Navigation view -->
 
+    <string name="bottom_navigation_menu_test">Test</string>
     <string name="bottom_navigation_menu_options">Options</string>
     <string name="bottom_navigation_menu_dev">Development</string>
     <string name="bottom_navigation_menu_criteria">Criteria</string>

@@ -42,22 +42,6 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textViewTitleDescriptionGuideDev"
-                style="@style/TextViewStandard.Title.Level2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/border"
-                android:gravity="center_vertical"
-                android:minHeight="45dp"
-                android:padding="@dimen/large_margin"
-                android:screenReaderFocusable="true"
-                android:text="@string/dev_description"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@color/core_black"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
                 android:id="@+id/textViewDescriptionContentGuideDev"
                 style="@style/BrandBody1"
                 android:layout_width="match_parent"
@@ -73,6 +57,14 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/core_black"
                 android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imgTestExemple"
+                android:layout_width="match_parent"
+                android:layout_height="480dp"
+                android:layout_margin="30dp"
+                android:visibility="gone"
+                />
 
             <TextView
                 android:id="@+id/textViewTitleLinksGuideDev"

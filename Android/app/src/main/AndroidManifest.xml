@@ -52,6 +52,13 @@
         <activity
             android:name=".ui.developmentguide.DetailsDevGuideActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/section_test"
+            android:parentActivityName=".ui.MenuActivity"
+            >
+        </activity>
+        <activity
+            android:name=".ui.test.DetailsTestActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/section_dev"
             android:parentActivityName=".ui.MenuActivity"
             >
