@@ -21,7 +21,6 @@ package com.orange.ease.dan.data
 
 import com.orange.ease.dan.R
 import com.orange.ease.dan.model.TestGuide
-import com.orange.ease.dan.model.TestOtherGuide
 
 object TestGuideDataSource {
 
@@ -66,21 +65,41 @@ object TestGuideDataSource {
         resImg2 = null
     )
 
-    /*private val test = TestOtherGuide(
-        resTitle = R.string.keyboard_navigation_test_title,
-        resDescription = R.string.keyboard_navigation_test_description,
-        //resImg1= null,
-        //resImg2 = null
-    )*/
+    private val colorContrast = TestGuide(
+        resTitle = R.string.contrastColor_test_title,
+        resDescription = R.string.contrastColor_test_description  ,
+        resImg1 = R.drawable.scanner_accessibility_report,
+        resImg2 = null
+    )
+
+    private val multimedia = TestGuide(
+        resTitle = R.string.multimedia_test_title,
+        resDescription = R.string.multimedia_test_description,
+        resImg1 = null,
+        resImg2 = null
+    )
+
+
+    private val webview = TestGuide(
+        resTitle = R.string.webview_test_title,
+        resDescription = R.string.webview_test_description,
+        resImg1 = null,
+        resImg2 = null
+    )
 
 
 
-    val allTestGuides = listOf(
+    val allManualTests = listOf(
         generalNavigation,
         textMagnification,
         screenReader,
         keyboardNavigation
+    )
 
+    val allOtherTests = listOf(
+        colorContrast,
+        multimedia,
+        webview
     )
 
 

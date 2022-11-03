@@ -26,6 +26,7 @@ import com.orange.ease.dan.model.TestGuide
 class TestGuideDetailsViewModel : ViewModel() {
 
     var guide: TestGuide? = null
+
 }
 
 

@@ -23,7 +23,6 @@ import com.orange.ease.dan.data.DevelopmentGuideDataSource
 import com.orange.ease.dan.data.TestGuideDataSource
 import com.orange.ease.dan.model.DevelopmentGuide
 import com.orange.ease.dan.model.TestGuide
-import com.orange.ease.dan.model.TestOtherGuide
 
 object TestGuideRepository {
 
@@ -38,11 +37,11 @@ object TestGuideRepository {
     }
 
     fun getListOfGuide(): List<TestGuide> {
-        return TestGuideDataSource.allTestGuides
+        return TestGuideDataSource.allManualTests
     }
-    /*fun getListOfOtherGuide(): List<TestOtherGuide> {
-        return TestGuideDataSource.allTestOtherGuides
-    }*/
+   fun getListOfOtherGuide(): List<TestGuide> {
+        return TestGuideDataSource.allOtherTests
+    }
 }
 
 

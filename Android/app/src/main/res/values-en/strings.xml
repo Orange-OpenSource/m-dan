@@ -729,8 +729,14 @@
     <string name="magnification_test_title">Text Magnification</string>
     <string name="screen_reader_test_title">Screen reader Talkback</string>
     <string name="keyboard_navigation_test_title">Keyboard Navigation</string>
+    <string name="contrastColor_test_title">Color Contrast</string>
+    <string name="multimedia_test_title">Multimedia content</string>
+    <string name="webview_test_title">Webviews</string>
+
+
     <string name="general_navigation_test_description">-    Vérifier que tous les écrans ont des titres visibles, uniques et pertinents.\n\n-  Vérifier que les textes sont lisibles.\n\n-  Vérifier que les erreurs de clic peuvent être annulees.\n\n-  Vérifier que l\'application fonctionne dans les deux orientations du téléphone.\n\n-  Limiter les animations visuelles.</string>
     <string name="magnification_test_description">"Activer l'agrandissement de texte dans les réglages du système
+
 
     •	Vérifier que tous les textes, icones, éléments graphiques sont visibles sans aucun problème de dépassement ou de superposition.
 
@@ -759,6 +765,22 @@
 
     •	Vérifier qu'il n'y a pas de piège clavier (le focus ne reste pas bloqué sur un composant)"
         </string>
+
+    <string name="contrastColor_test_description">Contrastes de couleur</string>
+
+
+    <string name="multimedia_test_description">
+    •	Vérifier que Les contenus multimédias peuvent être contrôlés par l\’utilisateur (présence d\’un bouton pause, bouton mode plein-écran, etc.…)
+    •	Vérifier que l\’utilisateur peut contrôler tout son émis pour plus de 3 secondes (arrêter ou mettre en pause)
+    •	Vérifier qu\’Il n\'y a pas de démarrage automatique de la vidéo au chargement de la page.
+    •	Vérifier que tous les contenus de type audio ou vidéo ont une transcription intégrale textuelle.
+    </string>
+    <string name="webview_test_description">
+     Pour tester les webview, il faut tester l\’ensemble des critères d’accessibilité des pages web détaillés dans la rubrique tester
+     https://a11y-guidelines.orange.com/fr/web/
+
+
+    </string>
 
     <string name="test">Now is the time/nfor all good men to/ncome to the aid of their/nparty</string>
 
@@ -797,7 +819,7 @@
 
     <!-- Navigation view -->
 
-    <string name="bottom_navigation_menu_test">Test</string>
+    <string name="bottom_navigation_menu_test">Tests</string>
     <string name="bottom_navigation_menu_options">Options</string>
     <string name="bottom_navigation_menu_dev">Development</string>
     <string name="bottom_navigation_menu_criteria">Criteria</string>

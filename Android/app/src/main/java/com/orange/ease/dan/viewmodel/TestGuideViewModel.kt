@@ -22,12 +22,11 @@ package com.orange.ease.dan.viewmodel
 import androidx.lifecycle.ViewModel
 import com.orange.ease.dan.model.DevelopmentGuide
 import com.orange.ease.dan.model.TestGuide
-import com.orange.ease.dan.model.TestOtherGuide
 
 class TestGuideViewModel : ViewModel() {
 
     lateinit var listGuide : List<TestGuide>
-    //lateinit var listOtherGuide : List<TestOtherGuide>
+    lateinit var listOtherGuide : List<TestGuide>
 }
 
 

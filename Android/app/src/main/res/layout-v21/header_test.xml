@@ -76,20 +76,20 @@
         android:layout_marginTop="@dimen/medium_margin" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="45dp"
-        android:visibility="gone"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Autres tests"
         android:id="@+id/textViewTitleListOtherTest"
         style="@style/TextViewStandard"
-        android:textStyle="bold"
-        android:screenReaderFocusable="true"
-        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin"
         android:background="@drawable/border"
         android:gravity="center_vertical"
+        android:minHeight="45dp"
         android:padding="@dimen/large_margin"
-        android:layout_marginTop="@dimen/medium_margin" />
+        android:screenReaderFocusable="true"
+        android:text="Autres tests"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 </LinearLayout>

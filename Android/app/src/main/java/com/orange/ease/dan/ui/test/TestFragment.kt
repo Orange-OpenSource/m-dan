@@ -29,8 +29,10 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.ConcatAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.orange.ease.dan.R
 import com.orange.ease.dan.adapter.ListRecyclerViewAdapter
 import com.orange.ease.dan.adapter.header.DevelopmentHeaderAdapter
+import com.orange.ease.dan.adapter.header.OtherTestHeaderAdapter
 import com.orange.ease.dan.adapter.header.TestHeaderAdapter
 import com.orange.ease.dan.data.repository.DevelopmentGuideRepository
 import com.orange.ease.dan.data.repository.OptionRepository
@@ -48,7 +50,6 @@ import com.orange.ease.dan.viewmodel.TestGuideViewModel
 class TestFragment: Fragment(), ListRecyclerViewAdapter.ListRecyclerViewClickListener {
 
     private lateinit var binding: RecyclerViewFragmentBinding
-    //private lateinit var binding1: RecyclerViewFragmentBinding
     private lateinit var viewModel: TestGuideViewModel
 
     companion object {
@@ -63,9 +64,6 @@ class TestFragment: Fragment(), ListRecyclerViewAdapter.ListRecyclerViewClickLis
         binding = RecyclerViewFragmentBinding.inflate(inflater, container, false)
 
         binding.listsRecyclerview.layoutManager = LinearLayoutManager(requireContext())
-        //binding1.listsRecyclerview.layoutManager = LinearLayoutManager(requireContext())
-
-
         return binding.root
     }
 
@@ -76,15 +74,17 @@ class TestFragment: Fragment(), ListRecyclerViewAdapter.ListRecyclerViewClickLis
 
         //Change DevelopmentGuideRepository by TestGuideRepository
         viewModel.listGuide = TestGuideRepository.getListOfGuide()
-        //viewModel.listOtherGuide = TestGuideRepository.getListOfOtherGuide()
+        viewModel.listOtherGuide = TestGuideRepository.getListOfOtherGuide()
 
         val headerAdapter = TestHeaderAdapter()
+        val headerOtherTestsAdapter = OtherTestHeaderAdapter()
+
         val recyclerViewAdapter =
             this.context?.let { ListRecyclerViewAdapter(viewModel.listGuide, this, it) }
-        //val recyclerViewAdapter1 =
-           //this.context?.let { ListRecyclerViewAdapter(viewModel.listOtherGuide, this, it) }
+        val recyclerViewAdapter1 =
+           this.context?.let { ListRecyclerViewAdapter(viewModel.listOtherGuide, this, it) }
 
-        val concatAdapter = ConcatAdapter(headerAdapter, recyclerViewAdapter)
+        val concatAdapter = ConcatAdapter(headerAdapter, recyclerViewAdapter,headerOtherTestsAdapter, recyclerViewAdapter1)
         binding.listsRecyclerview.adapter = concatAdapter
     }
 
@@ -94,6 +94,8 @@ class TestFragment: Fragment(), ListRecyclerViewAdapter.ListRecyclerViewClickLis
         val intent = Intent(activity, DetailsTestActivity::class.java)
         startActivity(intent)
     }
+
+
 
 
 }

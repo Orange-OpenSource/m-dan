@@ -23,16 +23,18 @@ package com.orange.ease.dan.adapter.header
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.orange.ease.dan.databinding.HeaderDevelopmentGuideBinding
-import com.orange.ease.dan.databinding.HeaderOptionsBinding
 import com.orange.ease.dan.databinding.HeaderOtherTestBinding
-import com.orange.ease.dan.databinding.HeaderTestBinding
 
-class TestHeaderAdapter() : RecyclerView.Adapter<TestHeaderAdapter.HeaderViewHolder>() {
+class OtherTestHeaderAdapter() : RecyclerView.Adapter<OtherTestHeaderAdapter.HeaderViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HeaderViewHolder {
         val binding =
-            HeaderTestBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+            //HeaderDevelopmentGuideBinding
+            HeaderOtherTestBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+
+        //val bindingOther =
+
+
         return HeaderViewHolder(binding)
     }
 
@@ -44,7 +46,7 @@ class TestHeaderAdapter() : RecyclerView.Adapter<TestHeaderAdapter.HeaderViewHol
         return 1
     }
 
-    class HeaderViewHolder(val binding: HeaderTestBinding) : RecyclerView.ViewHolder(binding.root){}
+    class HeaderViewHolder(val binding: HeaderOtherTestBinding) : RecyclerView.ViewHolder(binding.root){}
 }
 
 
