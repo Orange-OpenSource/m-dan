@@ -127,6 +127,8 @@ class TestingsViewController: DefaultTableViewController {
             self.performSegue(withIdentifier: "testing-fontEnlargement", sender: cell)
         case "testings_option_screenReader".localized :
             self.performSegue(withIdentifier: "testing-screenReader", sender: cell)
+        case "testings_option_selectionControl".localized :
+            self.performSegue(withIdentifier: "testing-selectionControl", sender: cell)
         case "testings_option_useColorContrast".localized :
             self.performSegue(withIdentifier: "testing-colorContrastTool", sender: cell)
         default:
