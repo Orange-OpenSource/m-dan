@@ -764,6 +764,16 @@
             </objects>
             <point key="canvasLocation" x="3187" y="-51"/>
         </scene>
+        <!--Testing-Multimedia-->
+        <scene sceneID="qby-HY-pud">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TestingMultimediaViewController" referencedIdentifier="Testing-Multimedia" id="vSh-tU-ICT" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="wxi-Z2-kOz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7wY-aP-2PC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3201" y="19"/>
+        </scene>
         <!--Example-Image-Info-->
         <scene sceneID="mmg-in-wM0">
             <objects>
@@ -1400,6 +1410,7 @@
                         <segue destination="eGo-hj-L7B" kind="show" identifier="testing-fontEnlargement" id="QrX-8X-SAP"/>
                         <segue destination="9gp-di-kDy" kind="show" identifier="testing-screenReader" id="jkw-3c-wWM"/>
                         <segue destination="UzN-5e-NRR" kind="show" identifier="testing-selectionControl" id="9EF-Ib-LRv"/>
+                        <segue destination="vSh-tU-ICT" kind="show" identifier="testing-multimedia" id="ABW-FM-UJ5"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gID-hl-4NT" userLabel="First Responder" sceneMemberID="firstResponder"/>

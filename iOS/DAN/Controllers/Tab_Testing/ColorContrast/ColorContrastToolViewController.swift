@@ -11,7 +11,7 @@ class ColorContrastToolViewController: DefaultTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "testings_option_useColorContrast".localized
+        self.title = "testings_option_colorContrast".localized
         self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displayVoiceOverMessage(_:)))
     }
     
@@ -64,13 +64,6 @@ class ColorContrastToolViewController: DefaultTableViewController {
     
     // MARK: - TableViewDelegate
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        /*if indexPath.section == notAccessibleSection || indexPath.section == accessibleSection {
-            return 213
-        }
-        else {
-            return UITableViewAutomaticDimension
-        }*/
         
         return UITableView.automaticDimension
     }

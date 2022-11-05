@@ -29,7 +29,6 @@ class TestingsViewController: DefaultTableViewController {
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("TestingsViewController")
     }
 
     override func didReceiveMemoryWarning() {
@@ -72,8 +71,8 @@ class TestingsViewController: DefaultTableViewController {
                 "testings_option_selectionControl"
             ],
             [
-                "testings_option_useColorContrast",
-                "testings_option_useMultimedia",
+                "testings_option_colorContrast",
+                "testings_option_multimedia",
                 "testings_option_screenWebView"
             ],
         ]
@@ -129,34 +128,13 @@ class TestingsViewController: DefaultTableViewController {
             self.performSegue(withIdentifier: "testing-screenReader", sender: cell)
         case "testings_option_selectionControl".localized :
             self.performSegue(withIdentifier: "testing-selectionControl", sender: cell)
-        case "testings_option_useColorContrast".localized :
+        case "testings_option_colorContrast".localized :
             self.performSegue(withIdentifier: "testing-colorContrastTool", sender: cell)
+        case "testings_option_multimedia".localized :
+            self.performSegue(withIdentifier: "testing-multimedia", sender: cell)
         default:
             print("Category unknown")
         }
     }
-     
-
-     
-     
-    /*
-    // MARK: - StoryBoard
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let cell:UITableViewCell                        = sender as! UITableViewCell
-        let section = self.tableView.indexPathForSelectedRow!.section
-        let row                                         = ((tableView.indexPath(for: cell) as NSIndexPath?)?.row)!
-                                                                                              
-        let destinationVC: DefaultTableViewController   = segue.destination as! DefaultTableViewController
-
-        print("cellsContent ", cellsContent)
-        print("cellsContent ", "testings_option_generalNavigation".localized)
-            print("Dedans")
-            destinationVC.title = cellsContent[section][row].localized
-            destinationVC.cellsContent = [
-                ["testing_\(optionsKeys[section][row])_check"]
-            ]
-
-    }
-     */
 }
 

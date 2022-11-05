@@ -95,6 +95,8 @@
 		6D80632B291685A5009F2F28 /* TestingScreenReaderViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D80632A291685A5009F2F28 /* TestingScreenReaderViewController.storyboard */; };
 		6D80632F291686E3009F2F28 /* TestingSelectionControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D80632E291686E3009F2F28 /* TestingSelectionControlViewController.swift */; };
 		6D806331291686ED009F2F28 /* TestingSelectionControlViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D806330291686ED009F2F28 /* TestingSelectionControlViewController.storyboard */; };
+		6D80633429168B53009F2F28 /* TestingMultimediaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D80633329168B53009F2F28 /* TestingMultimediaViewController.storyboard */; };
+		6D80633629168B5E009F2F28 /* TestingMultimediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D80633529168B5E009F2F28 /* TestingMultimediaViewController.swift */; };
 		6D842500276B5004002E6B80 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6D9F6EB628F850CD00328FB3 /* legal_notice_en.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D9F6EB528F850CD00328FB3 /* legal_notice_en.html */; };
 		6D9F6EB828F850DA00328FB3 /* legal_notice_fr.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D9F6EB728F850DA00328FB3 /* legal_notice_fr.html */; };
@@ -270,6 +272,8 @@
 		6D80632A291685A5009F2F28 /* TestingScreenReaderViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestingScreenReaderViewController.storyboard; sourceTree = "<group>"; };
 		6D80632E291686E3009F2F28 /* TestingSelectionControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingSelectionControlViewController.swift; sourceTree = "<group>"; };
 		6D806330291686ED009F2F28 /* TestingSelectionControlViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestingSelectionControlViewController.storyboard; sourceTree = "<group>"; };
+		6D80633329168B53009F2F28 /* TestingMultimediaViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestingMultimediaViewController.storyboard; sourceTree = "<group>"; };
+		6D80633529168B5E009F2F28 /* TestingMultimediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingMultimediaViewController.swift; sourceTree = "<group>"; };
 		6D9F6EB528F850CD00328FB3 /* legal_notice_en.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = legal_notice_en.html; sourceTree = "<group>"; };
 		6D9F6EB728F850DA00328FB3 /* legal_notice_fr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = legal_notice_fr.html; sourceTree = "<group>"; };
 		6D9F6EB928F8510E00328FB3 /* pie.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = pie.css; sourceTree = "<group>"; };
@@ -498,6 +502,15 @@
 			path = SelectionControl;
 			sourceTree = "<group>";
 		};
+		6D80633229168B14009F2F28 /* Multimedia */ = {
+			isa = PBXGroup;
+			children = (
+				6D80633329168B53009F2F28 /* TestingMultimediaViewController.storyboard */,
+				6D80633529168B5E009F2F28 /* TestingMultimediaViewController.swift */,
+			);
+			path = Multimedia;
+			sourceTree = "<group>";
+		};
 		6D9F6EC928F8578000328FB3 /* Tab_Testing */ = {
 			isa = PBXGroup;
 			children = (
@@ -507,6 +520,7 @@
 				6D80632229168385009F2F28 /* FontEnlargement */,
 				6D80631B2915399D009F2F28 /* GeneralNavigation */,
 				6D3448872906C019009124D8 /* ColorContrast */,
+				6D80633229168B14009F2F28 /* Multimedia */,
 			);
 			path = Tab_Testing;
 			sourceTree = "<group>";
@@ -895,6 +909,7 @@
 				04CBE3F81D01CFD10041A95D /* elementsSemanticLinks.html in Resources */,
 				04CBE3FA1D01CFE70041A95D /* hideItemsLinks.html in Resources */,
 				F4B841C01C15CBDB008C107F /* ExampleColor.storyboard in Resources */,
+				6D80633429168B53009F2F28 /* TestingMultimediaViewController.storyboard in Resources */,
 				6D3448932906C6EE009124D8 /* TestingColorContrastView.storyboard in Resources */,
 				04CBE3E21D005DEF0041A95D /* textualAlternative_fr.html in Resources */,
 				04CBE4101D01D71A0041A95D /* changeVocalizationLinks.html in Resources */,
@@ -965,6 +980,7 @@
 			files = (
 				6D04286E27D11963007AC365 /* PersonTableViewCell.swift in Sources */,
 				F40A50451C32D01900033AD4 /* LanguageAccentViewController.swift in Sources */,
+				6D80633629168B5E009F2F28 /* TestingMultimediaViewController.swift in Sources */,
 				6D3448912906C603009124D8 /* ColorContrastToolViewController.swift in Sources */,
 				6D04286C27D11963007AC365 /* TabCustomTableViewCell.swift in Sources */,
 				F40CD2161C1F0BEE00546018 /* ContentControlCarouselViewController.swift in Sources */,
