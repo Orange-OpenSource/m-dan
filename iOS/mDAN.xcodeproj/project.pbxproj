@@ -89,6 +89,8 @@
 		6D80631D291539CD009F2F28 /* TestingGeneralNavigationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D80631C291539CD009F2F28 /* TestingGeneralNavigationViewController.storyboard */; };
 		6D80631F29154222009F2F28 /* TestingGeneralNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D80631E29154222009F2F28 /* TestingGeneralNavigationViewController.swift */; };
 		6D80632129167EA6009F2F28 /* EmptyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D80632029167EA6009F2F28 /* EmptyTableViewController.swift */; };
+		6D806324291683D4009F2F28 /* TestingFontEnlargementViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D806323291683D4009F2F28 /* TestingFontEnlargementViewController.storyboard */; };
+		6D806326291683DD009F2F28 /* TestingFontEnlargementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D806325291683DD009F2F28 /* TestingFontEnlargementViewController.swift */; };
 		6D842500276B5004002E6B80 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6D9F6EB628F850CD00328FB3 /* legal_notice_en.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D9F6EB528F850CD00328FB3 /* legal_notice_en.html */; };
 		6D9F6EB828F850DA00328FB3 /* legal_notice_fr.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D9F6EB728F850DA00328FB3 /* legal_notice_fr.html */; };
@@ -258,6 +260,8 @@
 		6D80631C291539CD009F2F28 /* TestingGeneralNavigationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestingGeneralNavigationViewController.storyboard; sourceTree = "<group>"; };
 		6D80631E29154222009F2F28 /* TestingGeneralNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingGeneralNavigationViewController.swift; sourceTree = "<group>"; };
 		6D80632029167EA6009F2F28 /* EmptyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableViewController.swift; sourceTree = "<group>"; };
+		6D806323291683D4009F2F28 /* TestingFontEnlargementViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestingFontEnlargementViewController.storyboard; sourceTree = "<group>"; };
+		6D806325291683DD009F2F28 /* TestingFontEnlargementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingFontEnlargementViewController.swift; sourceTree = "<group>"; };
 		6D9F6EB528F850CD00328FB3 /* legal_notice_en.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = legal_notice_en.html; sourceTree = "<group>"; };
 		6D9F6EB728F850DA00328FB3 /* legal_notice_fr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = legal_notice_fr.html; sourceTree = "<group>"; };
 		6D9F6EB928F8510E00328FB3 /* pie.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = pie.css; sourceTree = "<group>"; };
@@ -459,12 +463,30 @@
 			path = GeneralNavigation;
 			sourceTree = "<group>";
 		};
+		6D80632229168385009F2F28 /* FontEnlargement */ = {
+			isa = PBXGroup;
+			children = (
+				6D806323291683D4009F2F28 /* TestingFontEnlargementViewController.storyboard */,
+				6D806325291683DD009F2F28 /* TestingFontEnlargementViewController.swift */,
+			);
+			path = FontEnlargement;
+			sourceTree = "<group>";
+		};
+		6D80632729168513009F2F28 /* ScreenReader */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ScreenReader;
+			sourceTree = "<group>";
+		};
 		6D9F6EC928F8578000328FB3 /* Tab_Testing */ = {
 			isa = PBXGroup;
 			children = (
+				6D9F6ECA28F857B500328FB3 /* TestingsViewController.swift */,
+				6D80632729168513009F2F28 /* ScreenReader */,
+				6D80632229168385009F2F28 /* FontEnlargement */,
 				6D80631B2915399D009F2F28 /* GeneralNavigation */,
 				6D3448872906C019009124D8 /* ColorContrast */,
-				6D9F6ECA28F857B500328FB3 /* TestingsViewController.swift */,
 			);
 			path = Tab_Testing;
 			sourceTree = "<group>";
@@ -878,6 +900,7 @@
 				F48AF8D01C04718000CBB44D /* Localizable.strings in Resources */,
 				04CBE41E1D01DA9A0041A95D /* systemEvents_fr.html in Resources */,
 				6D009D9527183478004612BE /* ExempleOrientation.storyboard in Resources */,
+				6D806324291683D4009F2F28 /* TestingFontEnlargementViewController.storyboard in Resources */,
 				04CBE3F61D01CFBF0041A95D /* elementsSemantic_en.html in Resources */,
 				DAFB6C621C15BB2D00D40524 /* ExampleImage.storyboard in Resources */,
 				DA95678B1C22BAB9002C8233 /* ExampleReadingOrder.storyboard in Resources */,
@@ -929,6 +952,7 @@
 				6D4B985A26E17C6900FF505E /* SceneDelegate.swift in Sources */,
 				0482FC2D1CECC359003870F4 /* StandardComponentsTabViewController.swift in Sources */,
 				DAC349A51C11D22D00527510 /* ImageDecoViewController.swift in Sources */,
+				6D806326291683DD009F2F28 /* TestingFontEnlargementViewController.swift in Sources */,
 				F44F64061C19E9B5003FD410 /* GhostElementViewController.swift in Sources */,
 				F48AF8E11C04B6C200CBB44D /* MoreViewController.swift in Sources */,
 				DAC349A61C11D22D00527510 /* ImageIllustrationViewController.swift in Sources */,

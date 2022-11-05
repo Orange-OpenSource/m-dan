@@ -734,6 +734,16 @@
             </objects>
             <point key="canvasLocation" x="3244" y="-275"/>
         </scene>
+        <!--Testing-FontEnlargement-->
+        <scene sceneID="MLK-x7-Cx3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TestingFontEnlargementViewController" referencedIdentifier="Testing-FontEnlargement" id="eGo-hj-L7B" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ylm-0a-VTW"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tbu-f3-UMW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3224" y="-190"/>
+        </scene>
         <!--Example-Image-Info-->
         <scene sceneID="mmg-in-wM0">
             <objects>
@@ -1367,6 +1377,7 @@
                     <connections>
                         <segue destination="kYT-Gp-Cto" kind="show" identifier="testing-colorContrastTool" id="II4-x2-xIZ"/>
                         <segue destination="YGr-Th-sd8" kind="show" identifier="testing-generalNavigation" id="MOk-pF-nca"/>
+                        <segue destination="eGo-hj-L7B" kind="show" identifier="testing-fontEnlargement" id="QrX-8X-SAP"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gID-hl-4NT" userLabel="First Responder" sceneMemberID="firstResponder"/>

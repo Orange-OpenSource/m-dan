@@ -122,13 +122,9 @@ class TestingsViewController: DefaultTableViewController {
         
         switch cell {
         case "testings_option_generalNavigation".localized :
-            
-            let destinationVC: DefaultTableViewController = DefaultTableViewController()
-            destinationVC.cellsContent = [
-                ["testing_\(optionsKeys[1][1])_check"]
-            ]
-             
             self.performSegue(withIdentifier: "testing-generalNavigation", sender: cell)
+        case "testings_option_fontEnlargement".localized :
+            self.performSegue(withIdentifier: "testing-fontEnlargement", sender: cell)
             
         case "testings_option_useColorContrast".localized :
             self.performSegue(withIdentifier: "testing-colorContrastTool", sender: cell)
