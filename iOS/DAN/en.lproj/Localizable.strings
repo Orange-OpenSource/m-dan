@@ -613,6 +613,12 @@
 "testing_selectionControl_desctription"  = "Use the Switch Control Tool ";
 "testing_selectionControl_check"         = "The Switch control simulates the use of an external keyboard. \n\n- Check that the focus is visible and follows the logical order  \n\n- Check that features are usable  \n\n- Check that there is no keyboard trap (not blocked on a component) \n\nIt is possible to do the same tests by connecting an external keyboard (bluetooth or wired)";
 
+// --------------------------
+// Testings - ContrastColor
+// --------------------------
+"testing_contrastColor_desctription"  = "Use Color Contrast Calculator";
+"testing_contrastColor_check"         = "Color Contrast Calculator helps to check colors and contrasts. \nUse this tool from your Mac. \nThe tool gives the result directly (green icon OK, red icon KO, orange icon: to be improved)   \n\n- Check that the contrast between the text and the background of the application is correct (example illustration) \n\n- Check that the colors used in the interface components are sufficiently contrasting";
+
 // ---------------------------------------------------------------------------
 // Plus tab
 // ---------------------------------------------------------------------------

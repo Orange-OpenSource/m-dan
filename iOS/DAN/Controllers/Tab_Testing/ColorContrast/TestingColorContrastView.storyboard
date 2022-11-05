@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19455"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Color Contrast Tool View Controller-->
+        <scene sceneID="ueM-xo-3hA">
+            <objects>
+                <tableViewController storyboardIdentifier="Testing-ColorContrastTool" id="arE-Ha-qEt" customClass="ColorContrastToolViewController" customModule="mDAN" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="45" sectionFooterHeight="28" id="enz-5A-IsY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="textCell" rowHeight="100" id="zBY-eT-fPp" customClass="TextTableViewCell" customModule="mDAN" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zBY-eT-fPp" id="EXM-51-kzO">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3P-te-gRL">
+                                            <rect key="frame" x="15" y="12" width="570" height="75"/>
+                                            <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe.</string>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="V3P-te-gRL" firstAttribute="top" secondItem="EXM-51-kzO" secondAttribute="top" constant="12" id="9nN-Ay-Aed"/>
+                                        <constraint firstItem="V3P-te-gRL" firstAttribute="leading" secondItem="EXM-51-kzO" secondAttribute="leading" constant="15" id="WZG-Mr-5lu"/>
+                                        <constraint firstAttribute="bottom" secondItem="V3P-te-gRL" secondAttribute="bottom" constant="12" id="ekT-oy-3B2"/>
+                                        <constraint firstAttribute="trailing" secondItem="V3P-te-gRL" secondAttribute="trailing" constant="15" id="imO-Z4-Xf0"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="label" destination="V3P-te-gRL" id="7ef-0q-mgD"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="testingImageInfoCell" rowHeight="213" id="xDt-w2-dUB" customClass="TestingImageInfoTableViewCell" customModule="mDAN" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="144.5" width="414" height="213"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xDt-w2-dUB" id="1Qn-ab-crv">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="213"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgU-Ou-xUg">
+                                            <rect key="frame" x="8" y="10" width="398" height="182.5"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <accessibilityTraits key="traits" notEnabled="YES"/>
+                                            </accessibility>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="bgU-Ou-xUg" secondAttribute="height" multiplier="107:49" id="PH9-SA-bSg"/>
+                                            </constraints>
+                                            <state key="normal" image="ColorContrastKO"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="bgU-Ou-xUg" secondAttribute="trailing" constant="8" id="I75-4C-rkt"/>
+                                        <constraint firstItem="bgU-Ou-xUg" firstAttribute="leading" secondItem="1Qn-ab-crv" secondAttribute="leading" constant="8" id="eII-CN-2YK"/>
+                                        <constraint firstAttribute="bottom" secondItem="bgU-Ou-xUg" secondAttribute="bottom" priority="750" constant="8" id="nyU-pi-ewK"/>
+                                        <constraint firstItem="bgU-Ou-xUg" firstAttribute="top" secondItem="1Qn-ab-crv" secondAttribute="top" constant="10" id="o1b-nm-RiP"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="buttonView" destination="bgU-Ou-xUg" id="FdA-pQ-cs1"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="arE-Ha-qEt" id="Fyn-Gj-9AP"/>
+                            <outlet property="delegate" destination="arE-Ha-qEt" id="7b5-eo-Ixy"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FXM-BD-fe1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="168" y="35"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ColorContrastKO" width="776" height="378"/>
+    </resources>
+</document>

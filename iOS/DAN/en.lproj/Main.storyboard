@@ -714,6 +714,26 @@
             </objects>
             <point key="canvasLocation" x="3379" y="-2438"/>
         </scene>
+        <!--Testing-ColorContrastTool-->
+        <scene sceneID="zo7-Kj-1c6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TestingColorContrastView" referencedIdentifier="Testing-ColorContrastTool" id="kYT-Gp-Cto" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="MNI-34-jvD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6G4-5q-Vwi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3212" y="-356"/>
+        </scene>
+        <!--Testing-GeneralNavigation-->
+        <scene sceneID="pRb-0D-YHF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TestingGeneralNavigationViewController" referencedIdentifier="Testing-GeneralNavigation" id="YGr-Th-sd8" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="sN3-wt-MTq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tsp-M8-N4G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3244" y="-275"/>
+        </scene>
         <!--Example-Image-Info-->
         <scene sceneID="mmg-in-wM0">
             <objects>
@@ -1335,7 +1355,6 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="label" destination="Yss-dn-ZJb" id="xSp-F0-Hri"/>
-                                    <segue destination="EqR-id-H9k" kind="show" id="9jk-XS-Trn"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1345,57 +1364,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Fr5-0r-h3y"/>
+                    <connections>
+                        <segue destination="kYT-Gp-Cto" kind="show" identifier="testing-colorContrastTool" id="II4-x2-xIZ"/>
+                        <segue destination="YGr-Th-sd8" kind="show" identifier="testing-generalNavigation" id="MOk-pF-nca"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gID-hl-4NT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2379" y="-149"/>
-        </scene>
-        <!--Testing View Controller-->
-        <scene sceneID="113-hb-K5W">
-            <objects>
-                <tableViewController id="EqR-id-H9k" customClass="TestingViewController" customModule="mDAN" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="45" sectionFooterHeight="28" id="kkZ-Wt-P5n">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="843"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="textCell" rowHeight="100" id="wk8-nc-XNp" customClass="TextTableViewCell" customModule="mDAN" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="100"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wk8-nc-XNp" id="qGQ-9F-M63">
-                                    <rect key="frame" x="0.0" y="0.0" width="428" height="100"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zor-Cm-dgL">
-                                            <rect key="frame" x="15" y="12" width="570" height="75"/>
-                                            <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe.</string>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="Zor-Cm-dgL" firstAttribute="leading" secondItem="qGQ-9F-M63" secondAttribute="leading" constant="15" id="3RD-Ss-n1W"/>
-                                        <constraint firstAttribute="bottom" secondItem="Zor-Cm-dgL" secondAttribute="bottom" constant="12" id="fUg-qJ-JRm"/>
-                                        <constraint firstAttribute="trailing" secondItem="Zor-Cm-dgL" secondAttribute="trailing" constant="15" id="lCg-b8-zKJ"/>
-                                        <constraint firstItem="Zor-Cm-dgL" firstAttribute="top" secondItem="qGQ-9F-M63" secondAttribute="top" constant="12" id="liG-jv-aA9"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="label" destination="Zor-Cm-dgL" id="KQ6-Ai-hSA"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="EqR-id-H9k" id="K6u-DM-iB9"/>
-                            <outlet property="delegate" destination="EqR-id-H9k" id="KxV-Hc-NeU"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="M4j-ts-gSx"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n6y-5h-clg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3244" y="-149"/>
         </scene>
     </scenes>
     <resources>

@@ -113,7 +113,6 @@ class CriteriaViewController: DefaultTableViewController {
         let categoryVC : CategoryViewController = segue.destination as! CategoryViewController
         categoryVC.title                        = cell.textLabel?.text
         categoryVC.categoryKey                  = cellsContent[((tableView.indexPath(for: cell) as NSIndexPath?)?.section)!][((tableView.indexPath(for: cell) as NSIndexPath?)?.row)!]
-        
     }
 
 }

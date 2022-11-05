@@ -1,10 +1,21 @@
-//
-//  TestingsViewController.swift
-//  mDAN
-//
-//  Created by Tayeb SEDRAIA on 13/10/2022.
-//  Copyright © 2022 Devrap. All rights reserved.
-//
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
 
 import UIKit
 
@@ -18,6 +29,7 @@ class TestingsViewController: DefaultTableViewController {
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("TestingsViewController")
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,7 +51,7 @@ class TestingsViewController: DefaultTableViewController {
                 "selectionControl"
             ],
             [
-                "colorInversion",
+                "contrastColor",
                 "buttonForm",
                 "webView"
             ],
@@ -70,6 +82,8 @@ class TestingsViewController: DefaultTableViewController {
     // MARK: - TableViewDataSource
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        //let cell: UITableViewCell = tableView.cellForRow(at: indexPath)!
+        
         if((indexPath as NSIndexPath).section == 0) {
             
             let textCell: TextTableViewCell
@@ -85,6 +99,7 @@ class TestingsViewController: DefaultTableViewController {
             textCell            = tableView.dequeueReusableCell(withIdentifier: optionCellIdentifier, for: indexPath) as! TextTableViewCell
             textCell.label?.text    = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
 
+            //self.performSegue(withIdentifier: "example-titleAndHeader-title", sender: cell)
             return textCell
         }
     }
@@ -96,27 +111,53 @@ class TestingsViewController: DefaultTableViewController {
             return 100
         }
         else {
-            
             return 44
         }
     }
     
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let cell = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
+        
+        switch cell {
+        case "testings_option_generalNavigation".localized :
+            
+            let destinationVC: DefaultTableViewController = DefaultTableViewController()
+            destinationVC.cellsContent = [
+                ["testing_\(optionsKeys[1][1])_check"]
+            ]
+             
+            self.performSegue(withIdentifier: "testing-generalNavigation", sender: cell)
+            
+        case "testings_option_useColorContrast".localized :
+            self.performSegue(withIdentifier: "testing-colorContrastTool", sender: cell)
+        default:
+            print("Category unknown")
+        }
+    }
+     
+
+     
+     
+    /*
     // MARK: - StoryBoard
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        
         let cell:UITableViewCell                        = sender as! UITableViewCell
         let section = self.tableView.indexPathForSelectedRow!.section
         let row                                         = ((tableView.indexPath(for: cell) as NSIndexPath?)?.row)!
                                                                                               
         let destinationVC: DefaultTableViewController   = segue.destination as! DefaultTableViewController
 
-        destinationVC.title = cellsContent[section][row].localized
-        destinationVC.cellsContent = [
-            //["testing_\(optionsKeys[section][row])_desctription"],
-            ["testing_\(optionsKeys[section][row])_check"]
-        ]
-        
+        print("cellsContent ", cellsContent)
+        print("cellsContent ", "testings_option_generalNavigation".localized)
+            print("Dedans")
+            destinationVC.title = cellsContent[section][row].localized
+            destinationVC.cellsContent = [
+                ["testing_\(optionsKeys[section][row])_check"]
+            ]
+
     }
+     */
 }
 

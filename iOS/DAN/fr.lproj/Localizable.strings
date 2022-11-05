@@ -612,7 +612,27 @@
 "testing_selectionControl_desctription"  = "Utiliser l'outil contrôle de sélection ";
 "testing_selectionControl_check"         = "Le contrôle de sélection permet de simuler l'utilisation d'un clavier externe. \n\n- Vérifier que le focus est visible et suit l'ordre logique  \n\n- Vérifier que les fonctionnalités sont utilisables  \n\n- Vérifier qu'il n'y a pas de piège clavier (pas bloqué sur un composant) \n\nIl est possible de faire les mêmes tests en connectant un clavier externe (bluetooth ou filaire)";
 
+// --------------------------
+// Testings - ContrastColor
+// --------------------------
+"testing_contrastColor_desctription"  = "Utiliser Color Contrast Calculator";
+"testing_contrastColor_check"         = "Color Contrast Calculator permet de vérifier les couleurs et les contrastes. \nUtiliser cet outil depuis son Mac. \nL'outil donne directement le résultat (icône vert OK, icône rouge KO, icône orange : à améliorer)   \n\n- Vérifier que le contraste entre le texte et l'arrière-plan de l'application est correct (exemple illustration) \n\n- Vérifier que les couleurs utilisées dans les composants d'interface sont suffisamment contrastées";
 
+// ---------------------------------------------------------------------------
+// Plus tab
+// ---------------------------------------------------------------------------
+// Title
+"tab_plus_title"    = "Plus";
+"tab_plus_title_accessibilityLabel"    = "plusse";
+
+// Menu items
+"plus_menu_home"                = "Introduction à l'accessibilité";
+"plus_menu_orangeAccessibility" = "Déclaration d'accessibilité";
+"plus_menu_cgu"                 = "Conditions d'utilisation";
+"plus_menu_legal_notice"        = "Mentions légales";
+"plus_menu_other_application"   = "Autres applications";
+"plus_menu_about"               = "A propos";
+"plus_menu_contact"             = "Contact";
 
 // ----------------
 // Menu - Intro

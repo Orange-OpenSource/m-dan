@@ -124,6 +124,7 @@ class DefaultTableViewController: UITableViewController {
         
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
+        
         if(sectionHeaders[section] == "common_accessibleExample"
             || sectionHeaders[section] == "common_notAccessibleExample"
             || sectionHeaders[section] == "common_accessibleCustomExample"
@@ -142,8 +143,10 @@ class DefaultTableViewController: UITableViewController {
             header.textLabel?.lineBreakMode = .byWordWrapping
             self.tableView.sectionHeaderHeight = UITableView.automaticDimension
         }
+         
 
     }
+    
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
