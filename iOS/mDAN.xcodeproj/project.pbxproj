@@ -496,8 +496,8 @@
 		6D80632D291686BF009F2F28 /* SelectionControl */ = {
 			isa = PBXGroup;
 			children = (
-				6D80632E291686E3009F2F28 /* TestingSelectionControlViewController.swift */,
 				6D806330291686ED009F2F28 /* TestingSelectionControlViewController.storyboard */,
+				6D80632E291686E3009F2F28 /* TestingSelectionControlViewController.swift */,
 			);
 			path = SelectionControl;
 			sourceTree = "<group>";

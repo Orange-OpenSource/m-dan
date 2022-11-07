@@ -31,9 +31,8 @@ class TestingSelectionControlViewController: EmptyTableViewController {
         super.viewDidLoad()
         
         self.title = "testings_option_selectionControl".localized
-        /*
-        self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displayVoiceOverMessage(_:)))
-         */
+        
+        self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displaySelectionControlMessage(_:)))
     }
     
     override func didReceiveMemoryWarning() {
@@ -75,5 +74,19 @@ class TestingSelectionControlViewController: EmptyTableViewController {
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         
         return UITableView.automaticDimension
+    }
+    
+    @objc func displaySelectionControlMessage(_ sender: UIBarButtonItem) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let optionViewController = storyboard.instantiateViewController(withIdentifier: "OptionViewController") as! OptionViewController
+        optionViewController.setUpNavigationBarClose()
+        optionViewController.title = "options_option_selectionControl".localized
+        optionViewController.cellsContent = [
+            ["option_selectionControl_desctription"],
+            ["option_selectionControl_activation"]
+        ]
+        
+        let navigationController = UINavigationController(rootViewController: optionViewController)
+        self.present(navigationController, animated: true, completion: nil)
     }
 }

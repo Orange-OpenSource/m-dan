@@ -32,7 +32,7 @@ class TestingFontEnlargementViewController: EmptyTableViewController {
         
         self.title = "testings_option_fontEnlargement".localized
         
-        self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displayVoiceOverMessage(_:)))
+        self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displayFontEnlargementMessage(_:)))
          
     }
     
@@ -77,8 +77,7 @@ class TestingFontEnlargementViewController: EmptyTableViewController {
         return UITableView.automaticDimension
     }
     
-    @objc func displayVoiceOverMessage(_ sender: UIBarButtonItem) {
-        
+    @objc func displayFontEnlargementMessage(_ sender: UIBarButtonItem) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let optionViewController = storyboard.instantiateViewController(withIdentifier: "OptionViewController") as! OptionViewController
         optionViewController.setUpNavigationBarClose()
@@ -89,6 +88,6 @@ class TestingFontEnlargementViewController: EmptyTableViewController {
         ]
         
         let navigationController = UINavigationController(rootViewController: optionViewController)
-        self.present(navigationController, animated: true, completion: nil)         
+        self.present(navigationController, animated: true, completion: nil)
     }
 }
