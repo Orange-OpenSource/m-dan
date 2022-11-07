@@ -110,6 +110,7 @@ class EmptyTableViewController: UITableViewController {
         return cellsContent[section].count
     }
     
+    /*
     @objc func displayVoiceOverMessage(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "common_alertVoiceOverTitle".localized, message: "common_alertVoiceOver".localized, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "common_ok".localized, style: .default, handler: nil))
@@ -118,6 +119,7 @@ class EmptyTableViewController: UITableViewController {
         
         alert.view.tintColor = .orange_orangeForWhiteBG()
     }
+     */
 }
 
 

@@ -31,7 +31,9 @@ class TestingSelectionControlViewController: EmptyTableViewController {
         super.viewDidLoad()
         
         self.title = "testings_option_selectionControl".localized
+        /*
         self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displayVoiceOverMessage(_:)))
+         */
     }
     
     override func didReceiveMemoryWarning() {

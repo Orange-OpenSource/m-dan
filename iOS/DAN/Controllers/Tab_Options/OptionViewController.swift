@@ -47,6 +47,18 @@ class OptionViewController: DefaultTableViewController {
         ]
     }
     
+    func setUpNavigationBarClose() {
+        
+        self.tableView.reloadData()
+        navigationItem.largeTitleDisplayMode = .never
+        navigationController?.navigationBar.prefersLargeTitles = false
+        navigationController?.navigationBar.barTintColor = UIColor.white
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.orange_orangeForBlackText()
+        let close = UIBarButtonItem(barButtonSystemItem: .done, target: self, action:#selector(closeTapped))
+        navigationItem.rightBarButtonItems = [close]
+    }
+    
     // MARK: - TableViewDataSource
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -90,5 +102,9 @@ class OptionViewController: DefaultTableViewController {
             
             UIApplication.shared.openURL(URL(string:"SOME_URL_HERE")!)
         }
+    }
+    
+    @objc func closeTapped(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
     }
 }

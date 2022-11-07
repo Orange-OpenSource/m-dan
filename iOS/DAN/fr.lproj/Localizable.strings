@@ -596,22 +596,22 @@
 // --------------------------
 // Testings - Font Enlargement
 // --------------------------
-"testing_fontEnlargement_check"         = "Activer l'agrandissement de texte dans les réglages du système. \n\n- Vérifier que tous les icones, textes, éléments graphiques sont visibles sans aucun problème de dépassement ou de superposition \n\n- Vérifier que la navigation des différents écrans reste possible sans perte de fonctionnalités";
+"testing_fontEnlargement_check"         = "Activer l'agrandissement de texte dans les réglages du système (bouton vers le guide en haut à droite) \n\n- Vérifier que tous les icones, textes, éléments graphiques sont visibles sans aucun problème de dépassement ou de superposition \n\n- Vérifier que la navigation des différents écrans reste possible sans perte de fonctionnalités";
 
 // --------------------------
 // Testings - Screen Reader
 // --------------------------
-"testing_screenReader_check"         = "Activer Voice Over. Si vous ne connaissez pas VoiceOver, utilisez le guide d'utilisation. \n\n- Vérifier que l'on peut naviguer entre les différents écrans et utiliser les différentes fonctionnalités en utilisant uniquement le lecteur d’écran \n\nPour être sûr de tester correctement, il est possible d'éteindre l'écran en passant son écran en mode 'rideau'.";
+"testing_screenReader_check"         = "Activer Voice Over. Si vous ne connaissez pas VoiceOver, utilisez le guide d'utilisation (bouton vers le guide en haut à droite) \n\n- Vérifier que l'on peut naviguer entre les différents écrans et utiliser les différentes fonctionnalités en utilisant uniquement le lecteur d’écran \n\nPour être sûr de tester correctement, il est possible d'éteindre l'écran en passant son écran en mode 'rideau'.";
 
 // --------------------------
 // Testings - Selection Control
 // --------------------------
-"testing_selectionControl_check"         = "Le contrôle de sélection permet de simuler l'utilisation d'un clavier externe. \n\n- Vérifier que le focus est visible et suit l'ordre logique  \n\n- Vérifier que les fonctionnalités sont utilisables  \n\n- Vérifier qu'il n'y a pas de piège clavier (pas bloqué sur un composant) \n\nIl est possible de faire les mêmes tests en connectant un clavier externe (bluetooth ou filaire)";
+"testing_selectionControl_check"         = "Le contrôle de sélection permet de simuler l'utilisation d'un clavier externe (bouton vers le guide en haut à droite) \n\n- Vérifier que le focus est visible et suit l'ordre logique  \n\n- Vérifier que les fonctionnalités sont utilisables  \n\n- Vérifier qu'il n'y a pas de piège clavier (pas bloqué sur un composant) \n\nIl est possible de faire les mêmes tests en connectant un clavier externe (bluetooth ou filaire)";
 
 // --------------------------
 // Testings - ContrastColor
 // --------------------------
-"testing_contrastColor_check"         = "Color Contrast Calculator permet de vérifier les couleurs et les contrastes. \nUtiliser cet outil depuis son Mac. \nL'outil donne directement le résultat (icône vert OK, icône rouge KO, icône orange : à améliorer)   \n\n- Vérifier que le contraste entre le texte et l'arrière-plan de l'application est correct (exemple illustration) \n\n- Vérifier que les couleurs utilisées dans les composants d'interface sont suffisamment contrastées";
+"testing_contrastColor_check"         = "Color Contrast Calculator permet de vérifier les couleurs et les contrastes. \nUtiliser cet outil depuis son Mac. \nL'outil donne directement le résultat (icône vert OK, icône rouge KO)   \n\n- Vérifier que le contraste entre le texte et l'arrière-plan de l'application est correct (exemple illustration) \n\n- Vérifier que les couleurs utilisées dans les composants d'interface sont suffisamment contrastées";
 
 // --------------------------
 // Testings - Multimedia

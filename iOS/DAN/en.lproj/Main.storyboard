@@ -1007,7 +1007,7 @@
         <!--Option View Controller-->
         <scene sceneID="uYu-1K-YDU">
             <objects>
-                <tableViewController id="aTe-vZ-uSS" customClass="OptionViewController" customModule="mDAN" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="OptionViewController" id="aTe-vZ-uSS" customClass="OptionViewController" customModule="mDAN" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="45" sectionFooterHeight="28" id="Dwt-CF-Y8z">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="843"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

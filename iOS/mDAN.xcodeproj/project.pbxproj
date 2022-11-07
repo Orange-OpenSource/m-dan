@@ -487,8 +487,8 @@
 		6D80632729168513009F2F28 /* ScreenReader */ = {
 			isa = PBXGroup;
 			children = (
-				6D8063282916859C009F2F28 /* TestingScreenReaderViewController.swift */,
 				6D80632A291685A5009F2F28 /* TestingScreenReaderViewController.storyboard */,
+				6D8063282916859C009F2F28 /* TestingScreenReaderViewController.swift */,
 			);
 			path = ScreenReader;
 			sourceTree = "<group>";

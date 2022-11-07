@@ -31,7 +31,9 @@ class TestingScreenReaderViewController: EmptyTableViewController {
         super.viewDidLoad()
         
         self.title = "testings_option_screenReader".localized
+        
         self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displayVoiceOverMessage(_:)))
+         
     }
     
     override func didReceiveMemoryWarning() {
@@ -73,5 +75,13 @@ class TestingScreenReaderViewController: EmptyTableViewController {
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         
         return UITableView.automaticDimension
+    }
+    
+    @objc func displayVoiceOverMessage(_ sender: UIBarButtonItem) {
+        let storyboard = UIStoryboard(name: "ExampleVoiceOver", bundle: nil)
+        let voiceOverViewController = storyboard.instantiateViewController(withIdentifier: "Example-VoiceOver-Carousel") as! VoiceOverViewController
+        voiceOverViewController.setUpNavigationBarClose()
+        let navigationController = UINavigationController(rootViewController: voiceOverViewController)
+        self.present(navigationController, animated: true, completion: nil)
     }
 }

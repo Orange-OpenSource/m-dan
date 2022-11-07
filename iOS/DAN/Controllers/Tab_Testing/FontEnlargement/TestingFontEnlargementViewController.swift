@@ -31,7 +31,9 @@ class TestingFontEnlargementViewController: EmptyTableViewController {
         super.viewDidLoad()
         
         self.title = "testings_option_fontEnlargement".localized
+        
         self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displayVoiceOverMessage(_:)))
+         
     }
     
     override func didReceiveMemoryWarning() {
@@ -73,5 +75,20 @@ class TestingFontEnlargementViewController: EmptyTableViewController {
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         
         return UITableView.automaticDimension
+    }
+    
+    @objc func displayVoiceOverMessage(_ sender: UIBarButtonItem) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let optionViewController = storyboard.instantiateViewController(withIdentifier: "OptionViewController") as! OptionViewController
+        optionViewController.setUpNavigationBarClose()
+        optionViewController.title = "options_option_characterScale".localized
+        optionViewController.cellsContent = [
+            ["option_characterScale_desctription"],
+            ["option_characterScale_activation"]
+        ]
+        
+        let navigationController = UINavigationController(rootViewController: optionViewController)
+        self.present(navigationController, animated: true, completion: nil)         
     }
 }

@@ -58,6 +58,18 @@ class VoiceOverViewController: DefaultTableViewController {
         ]
     }
     
+    func setUpNavigationBarClose() {
+        
+        self.tableView.reloadData()
+        navigationItem.largeTitleDisplayMode = .never
+             navigationController?.navigationBar.prefersLargeTitles = false
+        navigationController?.navigationBar.barTintColor = UIColor.white
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.orange_orangeForBlackText()
+        let close = UIBarButtonItem(barButtonSystemItem: .done, target: self, action:#selector(closeTapped))
+        navigationItem.rightBarButtonItems = [close]
+    }
+    
     // MARK: - TableViewDataSource
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -109,15 +121,7 @@ class VoiceOverViewController: DefaultTableViewController {
         return UITableView.automaticDimension
     }
     
-    /*override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        if (indexPath as NSIndexPath).section == linksSection {
-            
-            UIApplication.shared.openURL(URL(string:appleDocUrl)!)
-        }
-        else if (indexPath as NSIndexPath).section == useSection {
-            
-            UIApplication.shared.openURL(URL(string:cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row] == "voiceover_imagesLicense" ? imagesLicenseURL : imagesCreditURL)!)
-        }
-    }*/
+    @objc func closeTapped(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
