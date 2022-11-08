@@ -73,7 +73,7 @@ class TestingsViewController: DefaultTableViewController {
             [
                 "testings_option_colorContrast",
                 "testings_option_multimedia",
-                "testings_option_screenWebView"
+                "testings_option_webView"
             ],
         ]
     }
@@ -118,7 +118,6 @@ class TestingsViewController: DefaultTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let cell = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
-        
         switch cell {
         case "testings_option_generalNavigation".localized :
             self.performSegue(withIdentifier: "testing-generalNavigation", sender: cell)
@@ -132,6 +131,8 @@ class TestingsViewController: DefaultTableViewController {
             self.performSegue(withIdentifier: "testing-colorContrastTool", sender: cell)
         case "testings_option_multimedia".localized :
             self.performSegue(withIdentifier: "testing-multimedia", sender: cell)
+        case "testings_option_webView".localized :
+            self.performSegue(withIdentifier: "testing-webview", sender: cell)
         default:
             print("Category unknown")
         }

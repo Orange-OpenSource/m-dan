@@ -585,7 +585,7 @@
 // Testings another
 "testings_option_colorContrast"         = "Contrastes de couleur";
 "testings_option_multimedia"            = "Audio et vidéo";
-"testings_option_screenWebView"          = "Webview";
+"testings_option_webView"               = "Webview";
 
 // -------------------------
 // Testings - General Navigation
@@ -617,6 +617,13 @@
 // Testings - Multimedia
 // --------------------------
 "testing_multimedia_check"         = "\n- Vérifier que Les contenus multimédias peuvent être contrôlés par l’utilisateur (présence d’un bouton pause, bouton mode plein-écran, etc.…) \n\n- Vérifier que l’utilisateur peut contrôler tout son émis pour plus de 3 secondes (arrêter ou mettre en pause) \n\n- Vérifier qu’Il n'y a pas de démarrage automatique de la vidéo au chargement de la page.  \n\n- Vérifier que tous les contenus de type audio ou vidéo ont une transcription intégrale textuelle.";
+
+// --------------------------
+// Testings - WebView
+// --------------------------
+"testing_webView_check"         = "Pour tester les webview, il faut tester l’ensemble des critères d’accessibilité des pages web détaillés dans la rubrique de notre site de recommandation Orange";
+"testing_webView_button"         = "Rubrique web";
+
 
 // ---------------------------------------------------------------------------
 // Plus tab

@@ -109,6 +109,8 @@
 		6D9F6EC728F8510F00328FB3 /* orange-logo.svg in Resources */ = {isa = PBXBuildFile; fileRef = 6D9F6EBF28F8510E00328FB3 /* orange-logo.svg */; };
 		6D9F6EC828F8510F00328FB3 /* CGU_fr.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D9F6EC028F8510E00328FB3 /* CGU_fr.html */; };
 		6D9F6ECB28F857B600328FB3 /* TestingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9F6ECA28F857B500328FB3 /* TestingsViewController.swift */; };
+		6DFE951A291A9C9000098C00 /* TestingWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFE9519291A9C9000098C00 /* TestingWebViewViewController.swift */; };
+		6DFE951C291A9CAD00098C00 /* TestingWebViewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DFE951B291A9CAD00098C00 /* TestingWebViewViewController.storyboard */; };
 		DA6B9A381C1AC16D00767DB4 /* ElementStateFoldAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B9A371C1AC16D00767DB4 /* ElementStateFoldAreaViewController.swift */; };
 		DA7AD7671C060E8900A42F3D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7AD7661C060E8900A42F3D /* CategoryViewController.swift */; };
 		DA95677F1C1F1AF7002C8233 /* ExampleForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA95677E1C1F1AF7002C8233 /* ExampleForm.storyboard */; };
@@ -285,6 +287,8 @@
 		6D9F6EBF28F8510E00328FB3 /* orange-logo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "orange-logo.svg"; sourceTree = "<group>"; };
 		6D9F6EC028F8510E00328FB3 /* CGU_fr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CGU_fr.html; sourceTree = "<group>"; };
 		6D9F6ECA28F857B500328FB3 /* TestingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingsViewController.swift; sourceTree = "<group>"; };
+		6DFE9519291A9C9000098C00 /* TestingWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingWebViewViewController.swift; sourceTree = "<group>"; };
+		6DFE951B291A9CAD00098C00 /* TestingWebViewViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestingWebViewViewController.storyboard; sourceTree = "<group>"; };
 		DA6B9A371C1AC16D00767DB4 /* ElementStateFoldAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ElementStateFoldAreaViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DA7AD7661C060E8900A42F3D /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		DA95677E1C1F1AF7002C8233 /* ExampleForm.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExampleForm.storyboard; sourceTree = "<group>"; };
@@ -521,8 +525,18 @@
 				6D80631B2915399D009F2F28 /* GeneralNavigation */,
 				6D3448872906C019009124D8 /* ColorContrast */,
 				6D80633229168B14009F2F28 /* Multimedia */,
+				6DFE9518291A98EA00098C00 /* WebView */,
 			);
 			path = Tab_Testing;
+			sourceTree = "<group>";
+		};
+		6DFE9518291A98EA00098C00 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				6DFE9519291A9C9000098C00 /* TestingWebViewViewController.swift */,
+				6DFE951B291A9CAD00098C00 /* TestingWebViewViewController.storyboard */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 		8ED8C2DEC3776740F7E5642E /* Frameworks */ = {
@@ -947,6 +961,7 @@
 				04CBE3EA1D0086120041A95D /* textualAlternativeLinks.html in Resources */,
 				6D0428A227D62B76007AC365 /* about_en.html in Resources */,
 				6D0428A427D62B7E007AC365 /* style_about.css in Resources */,
+				6DFE951C291A9CAD00098C00 /* TestingWebViewViewController.storyboard in Resources */,
 				04CBE3F21D01CF7C0041A95D /* triggerVocalization_en.html in Resources */,
 				6D806331291686ED009F2F28 /* TestingSelectionControlViewController.storyboard in Resources */,
 				04CBE42E1D01DBE80041A95D /* readingOrderLinks.html in Resources */,
@@ -981,6 +996,7 @@
 				6D04286E27D11963007AC365 /* PersonTableViewCell.swift in Sources */,
 				F40A50451C32D01900033AD4 /* LanguageAccentViewController.swift in Sources */,
 				6D80633629168B5E009F2F28 /* TestingMultimediaViewController.swift in Sources */,
+				6DFE951A291A9C9000098C00 /* TestingWebViewViewController.swift in Sources */,
 				6D3448912906C603009124D8 /* ColorContrastToolViewController.swift in Sources */,
 				6D04286C27D11963007AC365 /* TabCustomTableViewCell.swift in Sources */,
 				F40CD2161C1F0BEE00546018 /* ContentControlCarouselViewController.swift in Sources */,
