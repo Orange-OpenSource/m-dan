@@ -53,8 +53,10 @@ class TabCustomTableViewCell: UITableViewCell {
                 if accessible {
                     button.accessibilityTraits = [.button, .selected]
                 }
-                button.setTitleColor(UIColor.orange_orangeForWhiteBG(), for: UIControl.State.selected)
-                button.tintColor = UIColor.clear
+                //button.setTitleColor(UIColor.orange_orangeForWhiteBG(), for: UIControl.State.selected)
+                //button.setTitleColor(.label, for: .normal)
+                button.backgroundColor = UIColor.systemGray6
+                //button.tintColor = UIColor.clear
             }
             else {
                 button.isSelected = false
@@ -62,7 +64,9 @@ class TabCustomTableViewCell: UITableViewCell {
                     button.accessibilityTraits = .none
                     button.accessibilityTraits = .button
                 }
-                button.setTitleColor(UIColor.orange_blackColor(), for: UIControl.State())
+                //button.setTitleColor(UIColor.orange_blackColor(), for: UIControl.State())
+                //button.setTitleColor(.label, for: .normal)
+                button.backgroundColor = UIColor.systemGray5
             }
         }
     }

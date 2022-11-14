@@ -590,7 +590,7 @@
 // -------------------------
 // Testings - General Navigation
 // -------------------------
-"testing_generalNavigation_check"      = "\n- Vérifier que tous les écrans ont des titres visibles, uniques et pertinents \n\n- Vérifier que les textes sont lisibles \n\n- Vérifier que les erreurs de clic peuvent être annulées \n\n- Vérifier que l'application fonctionne dans les deux orientations du téléphone (paysage/portrait) \n\n- Limiter les animations visuelles";
+"testing_generalNavigation_check"      = "Vérifier que tous les écrans ont des titres visibles, uniques et pertinents \n\n- Vérifier que les textes sont lisibles \n\n- Vérifier que les erreurs de clic peuvent être annulées \n\n- Vérifier que l'application fonctionne dans les deux orientations du téléphone (paysage/portrait) \n\n- Limiter les animations visuelles";
 
 
 // --------------------------

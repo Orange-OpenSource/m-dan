@@ -39,10 +39,10 @@ extension UIColor {
     
     
     // MARK: - Black
-    class func orange_blackColor()          -> UIColor { return UIColor.colorWithHex(0x000000) }
+    class func orange_blackColor()          -> UIColor { return UIColor.black }
     
     // MARK: - White
-    class func orange_whiteColor()          -> UIColor { return UIColor.colorWithHex(0xFFFFFF) }
+    class func orange_whiteColor()          -> UIColor { return UIColor.white }
     
     // MARK: - Grey background header
     class func orange_greyBgColor()          -> UIColor { return UIColor.colorWithHex(0xF2F2F2) }
@@ -66,4 +66,23 @@ extension UIColor {
     class func orange_green()               -> UIColor { return UIColor.colorWithHex(0x4EC924) }
     class func orange_functionalGrey6()     -> UIColor { return UIColor.colorWithHex(0xEEEEEE) }
     class func orange_functionalGrey5()     -> UIColor { return UIColor.colorWithHex(0xCCCCCC) }
+}
+
+extension UIColor {
+    static func getColor(darkColor: UIColor, lightColor: UIColor) -> UIColor {
+        if #available(iOS 13, *) {
+            return UIColor { traitCollection  in
+                return traitCollection.userInterfaceStyle == .dark ?
+                    darkColor :
+                    lightColor
+            }
+        }
+        
+        return darkColor
+    }
+    
+    // Usage
+    static var myAdaptiveColor: UIColor {
+        return getColor(darkColor: .black, lightColor: .white)
+    }
 }

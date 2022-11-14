@@ -94,7 +94,7 @@ class FormLabelViewController: DefaultTableViewController, UITextFieldDelegate {
             
             cell.textfieldView.delegate = self
             cell.formView.layer.borderWidth = 2
-            cell.formView.layer.borderColor = UIColor.black.cgColor
+            cell.formView.layer.borderColor = UIColor.label.cgColor
             
             return cell
         }

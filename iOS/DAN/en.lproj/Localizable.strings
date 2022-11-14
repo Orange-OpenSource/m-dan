@@ -617,7 +617,7 @@
 // --------------------------
 // Testings - Multimedia
 // --------------------------
-"testing_multimedia_check"         = "\n- Check that the multimedia content can be controlled by the user (presence of a pause button, full-screen mode button, etc.) \n\n- Check that the user can control any sound emitted for more than 3 seconds (stop or pause) \n\n- Check that there is no automatic start of the video when the page loads.  \n\n- Verify that all audio or video content has a full text transcript.";
+"testing_multimedia_check"         = "- Check that the multimedia content can be controlled by the user (presence of a pause button, full-screen mode button, etc.) \n\n- Check that the user can control any sound emitted for more than 3 seconds (stop or pause) \n\n- Check that there is no automatic start of the video when the page loads.  \n\n- Verify that all audio or video content has a full text transcript.";
 
 // --------------------------
 // Testings - WebView

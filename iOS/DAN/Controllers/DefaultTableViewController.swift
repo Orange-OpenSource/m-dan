@@ -75,7 +75,7 @@ class DefaultTableViewController: UITableViewController {
         self.tableView.reloadData()
         
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.barTintColor = UIColor.white
+        navigationController?.navigationBar.barTintColor = UIColor.systemBackground
         
         DispatchQueue.main.async { [weak self] in
             self?.navigationController?.navigationBar.sizeToFit()
@@ -90,8 +90,6 @@ class DefaultTableViewController: UITableViewController {
                  }
              }
         }
-        
-        self.navigationController?.navigationBar.tintColor = UIColor.orange_orangeForBlackText()
     }
     
     internal func reloadTransaction(){
@@ -133,18 +131,20 @@ class DefaultTableViewController: UITableViewController {
         }
         else {
             let header: UITableViewHeaderFooterView     = view as! UITableViewHeaderFooterView
-            header.contentView.backgroundColor          = .orange_greyBgColor()
-            header.textLabel?.textColor                 = .orange_blackColor()
-            header.layer.borderWidth = 1
-            header.layer.borderColor = UIColor.orange_functionalGrey6().cgColor
+            //header.contentView.backgroundColor          = .orange_greyBgColor()
+            header.contentView.backgroundColor          = UIColor.systemGray5
+            //header.textLabel?.textColor                 = .orange_blackColor()
+            header.textLabel?.textColor                 = UIColor.label
+            //header.layer.borderWidth = 1
+            //header.layer.borderColor = UIColor.orange_functionalGrey6().cgColor
+            //header.layer.borderColor = UIColor(named: "gray_accent")?.cgColor
             header.textLabel?.numberOfLines = 0
             header.sizeToFit()
             header.textLabel?.sizeToFit()
             header.textLabel?.lineBreakMode = .byWordWrapping
+            
             self.tableView.sectionHeaderHeight = UITableView.automaticDimension
         }
-         
-
     }
     
     
@@ -164,11 +164,11 @@ class DefaultTableViewController: UITableViewController {
             }
             else {
                 defaultHeaderViewCell.headerImageView.image = UIImage(named: "icon_bad")
-                defaultHeaderViewCell.headerImageView.tintColor = .orange_red()
+                defaultHeaderViewCell.headerImageView.tintColor = .systemRed
                 defaultHeaderViewCell.headerLabel.text      = sectionHeaders[section].localized
             }
             
-            defaultHeaderViewCell.contentView.backgroundColor = .orange_greyBgColor()
+            defaultHeaderViewCell.contentView.backgroundColor = .systemGray5
             defaultHeaderViewCell.accessibilityTraits = UIAccessibilityTraits.header
             
             // Using a view container to fix a bug when using a tableViewCell as header

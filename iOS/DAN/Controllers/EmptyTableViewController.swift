@@ -72,7 +72,7 @@ class EmptyTableViewController: UITableViewController {
         self.tableView.reloadData()
         
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.barTintColor = UIColor.white
+        navigationController?.navigationBar.barTintColor = UIColor.systemBackground
         
         DispatchQueue.main.async { [weak self] in
             self?.navigationController?.navigationBar.sizeToFit()
@@ -87,8 +87,6 @@ class EmptyTableViewController: UITableViewController {
                  }
              }
         }
-        
-        self.navigationController?.navigationBar.tintColor = UIColor.orange_orangeForBlackText()
     }
     
     internal func reloadTransaction(){

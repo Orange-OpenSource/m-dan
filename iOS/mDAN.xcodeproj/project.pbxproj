@@ -111,6 +111,7 @@
 		6D9F6ECB28F857B600328FB3 /* TestingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9F6ECA28F857B500328FB3 /* TestingsViewController.swift */; };
 		6DFE951A291A9C9000098C00 /* TestingWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFE9519291A9C9000098C00 /* TestingWebViewViewController.swift */; };
 		6DFE951C291A9CAD00098C00 /* TestingWebViewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DFE951B291A9CAD00098C00 /* TestingWebViewViewController.storyboard */; };
+		6DFE951F291D598500098C00 /* developer_style.css in Resources */ = {isa = PBXBuildFile; fileRef = 6DFE951E291D598500098C00 /* developer_style.css */; };
 		DA6B9A381C1AC16D00767DB4 /* ElementStateFoldAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B9A371C1AC16D00767DB4 /* ElementStateFoldAreaViewController.swift */; };
 		DA7AD7671C060E8900A42F3D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7AD7661C060E8900A42F3D /* CategoryViewController.swift */; };
 		DA95677F1C1F1AF7002C8233 /* ExampleForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA95677E1C1F1AF7002C8233 /* ExampleForm.storyboard */; };
@@ -289,6 +290,7 @@
 		6D9F6ECA28F857B500328FB3 /* TestingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingsViewController.swift; sourceTree = "<group>"; };
 		6DFE9519291A9C9000098C00 /* TestingWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingWebViewViewController.swift; sourceTree = "<group>"; };
 		6DFE951B291A9CAD00098C00 /* TestingWebViewViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestingWebViewViewController.storyboard; sourceTree = "<group>"; };
+		6DFE951E291D598500098C00 /* developer_style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = developer_style.css; sourceTree = "<group>"; };
 		DA6B9A371C1AC16D00767DB4 /* ElementStateFoldAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ElementStateFoldAreaViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DA7AD7661C060E8900A42F3D /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		DA95677E1C1F1AF7002C8233 /* ExampleForm.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExampleForm.storyboard; sourceTree = "<group>"; };
@@ -374,6 +376,7 @@
 		04CBE3E01D0057030041A95D /* DevContentHtml */ = {
 			isa = PBXGroup;
 			children = (
+				6DFE951E291D598500098C00 /* developer_style.css */,
 				04CBE3E11D005DEF0041A95D /* textualAlternative_fr.html */,
 				04CBE3F31D01CF920041A95D /* textualAlternative_en.html */,
 				04CBE3E91D0086120041A95D /* textualAlternativeLinks.html */,
@@ -955,6 +958,7 @@
 				DAFB6C621C15BB2D00D40524 /* ExampleImage.storyboard in Resources */,
 				DA95678B1C22BAB9002C8233 /* ExampleReadingOrder.storyboard in Resources */,
 				04CBE3FE1D01D2060041A95D /* accessibilityOptionsState_fr.html in Resources */,
+				6DFE951F291D598500098C00 /* developer_style.css in Resources */,
 				04CBE40E1D01D70C0041A95D /* changeVocalization_en.html in Resources */,
 				04CBE4241D01DB9D0041A95D /* textSize_fr.html in Resources */,
 				F44F64081C1AC47E003FD410 /* ExampleGhostElement.storyboard in Resources */,

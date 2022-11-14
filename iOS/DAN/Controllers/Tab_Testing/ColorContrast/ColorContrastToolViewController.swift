@@ -12,7 +12,6 @@ class ColorContrastToolViewController: DefaultTableViewController {
         super.viewDidLoad()
         
         self.title = "testings_option_colorContrast".localized
-        self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displayVoiceOverMessage(_:)))
     }
     
     
