@@ -100,7 +100,7 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBB-1p-fgO">
                                 <rect key="frame" x="0.0" y="65" width="600" height="488"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="delegate" destination="JB6-JI-tBM" id="efT-gX-ygM"/>
                                 </connections>
@@ -111,7 +111,7 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="5Od-JS-Wf9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="mYh-ij-jld">
@@ -119,13 +119,15 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="UeV-Se-l1U"/>
                                 </constraints>
+                                <color key="pageIndicatorTintColor" systemColor="systemGray3Color"/>
+                                <color key="currentPageIndicatorTintColor" systemColor="labelColor"/>
                                 <connections>
                                     <action selector="pageControlValueDidChange:" destination="JB6-JI-tBM" eventType="valueChanged" id="Kf6-Z3-Y6O"/>
                                 </connections>
                             </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cGH-mt-qhD"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="kBB-1p-fgO" firstAttribute="top" secondItem="TuI-8r-uh5" secondAttribute="bottom" id="B8u-jd-RgO"/>
                             <constraint firstItem="kBB-1p-fgO" firstAttribute="leading" secondItem="VAs-PJ-yBf" secondAttribute="leading" id="DQc-Xs-RlK"/>
@@ -151,8 +153,14 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

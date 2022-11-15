@@ -53,8 +53,8 @@ extension UIColor {
     
     // MARK: - Orange
     // MARK: Background
-    class func orange_orangeForBlackText()  -> UIColor { return UIColor(hexaString: "#0075F6") }
-    class func orange_orangeForWhiteText()  -> UIColor { return UIColor(hexaString: "#0054AE") }
+    //class func orange_orangeInnovation()  -> UIColor { return UIColor.systemRed }
+    class func orange_orangeInnovation()  -> UIColor { return UIColor(named: "blue_accent")! }
     
     // MARK: Text
     class func orange_orangeForBlackBG()    -> UIColor { return UIColor(hexaString: "#0075F6") }

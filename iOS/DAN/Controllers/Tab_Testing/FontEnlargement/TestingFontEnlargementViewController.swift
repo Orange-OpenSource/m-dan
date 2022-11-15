@@ -32,7 +32,7 @@ class TestingFontEnlargementViewController: EmptyTableViewController {
         
         self.title = "testings_option_fontEnlargement".localized
         
-        self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displayFontEnlargementMessage(_:)))
+        self.navigationItem.rightBarButtonItem = .guideButton(self, action: #selector(displayFontEnlargementMessage(_:)))
          
     }
     

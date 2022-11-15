@@ -31,9 +31,6 @@ class TestingGeneralNavigationViewController: EmptyTableViewController {
         super.viewDidLoad()
         
         self.title = "testings_option_generalNavigation".localized
-        /*
-        self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displayVoiceOverMessage(_:)))
-         */
     }
     
     

@@ -33,6 +33,7 @@
 "common_accessibilityDemonstrator"  = "Démonstrateur d'Accessibilité Numérique mobile";
 "common_accessibility"              = "L'accessibilité";
 "common_informationButton"          = "Information";
+"common_guideButton"                = "Guide utilisateur";
 "common_alertVoiceOverTitle"        = "Information";
 "common_alertVoiceOver"             = "Afin de mieux comprendre l'exemple, nous vous conseillons d'activer VoiceOver.\n\nRéglages > Général > Accessibilité > VoiceOver";
 
@@ -623,6 +624,7 @@
 // --------------------------
 "testing_webView_check"         = "Pour tester les webview, il faut tester l’ensemble des critères d’accessibilité des pages web détaillés dans la rubrique de notre site de recommandation Orange";
 "testing_webView_button"         = "Rubrique web";
+"testing_webView_url"            = "https://a11y-guidelines.orange.com/fr/web/tester/";
 
 
 // ---------------------------------------------------------------------------

@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -34,7 +35,7 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exemple accessible" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ws2-dV-7wG" customClass="DefaultLabelHeader" customModule="mDAN" customModuleProvider="target">
                                                 <rect key="frame" x="45" y="146.5" width="330" height="45"/>
-                                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="t00-He-xle"/>
                                                 </constraints>
@@ -47,14 +48,14 @@
                                                 <subviews>
                                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="icon_check_good" translatesAutoresizingMaskIntoConstraints="NO" id="OAo-fz-Kwn">
                                                         <rect key="frame" x="10" y="12.5" width="25" height="20"/>
-                                                        <color key="tintColor" red="0.30588235289999999" green="0.78823529410000004" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" systemColor="systemGreenColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="F0E-tC-XNi"/>
                                                             <constraint firstAttribute="width" constant="25" id="keo-kH-s6O"/>
                                                         </constraints>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <constraints>
                                                     <constraint firstItem="OAo-fz-Kwn" firstAttribute="centerX" secondItem="Ucw-YD-tQF" secondAttribute="centerX" id="9Ca-gf-4NT"/>
                                                     <constraint firstItem="OAo-fz-Kwn" firstAttribute="centerY" secondItem="Ucw-YD-tQF" secondAttribute="centerY" id="Xea-er-51n"/>
@@ -87,7 +88,7 @@
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exemple non accessible" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8z-bA-j5n" customClass="DefaultLabelHeader" customModule="mDAN" customModuleProvider="target">
                                                 <rect key="frame" x="45" y="295.5" width="330" height="45"/>
-                                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="H5Z-pY-0Zr"/>
                                                 </constraints>
@@ -99,14 +100,14 @@
                                                 <subviews>
                                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" image="icon_bad" translatesAutoresizingMaskIntoConstraints="NO" id="5aJ-Ck-LwY">
                                                         <rect key="frame" x="10" y="11" width="25" height="25"/>
-                                                        <color key="tintColor" red="0.75686274509999996" green="0.26274509800000001" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" systemColor="systemRedColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="25" id="g6q-wW-pBy"/>
                                                             <constraint firstAttribute="height" constant="25" id="vtb-4b-qkl"/>
                                                         </constraints>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="X0D-bD-Hgn"/>
                                                     <constraint firstItem="5aJ-Ck-LwY" firstAttribute="centerX" secondItem="uTJ-KU-hj5" secondAttribute="centerX" id="XVC-Vb-Dvj"/>
@@ -129,6 +130,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="Ucw-YD-tQF" firstAttribute="bottom" secondItem="Ws2-dV-7wG" secondAttribute="bottom" id="014-dm-C9e"/>
                                             <constraint firstAttribute="bottom" secondItem="xwd-0a-meh" secondAttribute="bottom" constant="40" id="1Gd-Ym-wuI"/>
@@ -156,6 +158,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="cgS-6q-zU2" secondAttribute="bottom" id="7Zt-eX-qJl"/>
                                     <constraint firstItem="cgS-6q-zU2" firstAttribute="top" secondItem="0ZI-3M-HOt" secondAttribute="top" id="axv-bL-R1F"/>
@@ -195,6 +198,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
                                             <constraint firstItem="F6s-yq-rfa" firstAttribute="leading" secondItem="ELq-TM-zh8" secondAttribute="leading" constant="20" id="FIx-QZ-Uby"/>
                                             <constraint firstAttribute="trailing" secondItem="F6s-yq-rfa" secondAttribute="trailing" constant="20" id="JSv-98-HLm"/>
@@ -212,6 +216,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="cgS-6q-zU2" firstAttribute="height" secondItem="5dJ-Fn-tGr" secondAttribute="height" priority="250" id="43d-QS-3VV"/>
                             <constraint firstItem="kjs-8y-exf" firstAttribute="leading" secondItem="5dJ-Fn-tGr" secondAttribute="leading" id="B8v-1t-3iH"/>
@@ -246,5 +251,20 @@
     <resources>
         <image name="icon_bad" width="410" height="410"/>
         <image name="icon_check_good" width="410" height="410"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

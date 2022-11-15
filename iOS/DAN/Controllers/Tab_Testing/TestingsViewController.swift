@@ -81,8 +81,6 @@ class TestingsViewController: DefaultTableViewController {
     // MARK: - TableViewDataSource
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        //let cell: UITableViewCell = tableView.cellForRow(at: indexPath)!
-        
         if((indexPath as NSIndexPath).section == 0) {
             
             let textCell: TextTableViewCell
@@ -97,8 +95,6 @@ class TestingsViewController: DefaultTableViewController {
 
             textCell            = tableView.dequeueReusableCell(withIdentifier: optionCellIdentifier, for: indexPath) as! TextTableViewCell
             textCell.label?.text    = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
-
-            //self.performSegue(withIdentifier: "example-titleAndHeader-title", sender: cell)
             return textCell
         }
     }

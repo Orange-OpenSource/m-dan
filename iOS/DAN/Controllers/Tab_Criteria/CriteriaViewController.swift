@@ -79,7 +79,7 @@ class CriteriaViewController: DefaultTableViewController {
             textCell            = tableView.dequeueReusableCell(withIdentifier: textCellIdentifier, for: indexPath) as! DoubleTextTableViewCell
             textCell.label.text = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
             textCell.label2.text = "criteria_description_options_cell".localized
-            textCell.label2.textColor = UIColor(named: "blue_accent")
+            textCell.label2.textColor = UIColor.orange_orangeInnovation()
             
             return textCell
         } else {

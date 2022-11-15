@@ -32,7 +32,7 @@ class TestingScreenReaderViewController: EmptyTableViewController {
         
         self.title = "testings_option_screenReader".localized
         
-        self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displayVoiceOverMessage(_:)))
+        self.navigationItem.rightBarButtonItem = .guideButton(self, action: #selector(displayVoiceOverMessage(_:)))
          
     }
     

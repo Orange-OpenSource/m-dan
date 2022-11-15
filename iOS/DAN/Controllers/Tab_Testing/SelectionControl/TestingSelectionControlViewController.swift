@@ -32,7 +32,7 @@ class TestingSelectionControlViewController: EmptyTableViewController {
         
         self.title = "testings_option_selectionControl".localized
         
-        self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displaySelectionControlMessage(_:)))
+        self.navigationItem.rightBarButtonItem = .guideButton(self, action: #selector(displaySelectionControlMessage(_:)))
     }
     
     override func didReceiveMemoryWarning() {

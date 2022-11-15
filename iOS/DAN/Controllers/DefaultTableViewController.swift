@@ -43,6 +43,7 @@ class DefaultTableViewController: UITableViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         setUpNavigationBar()
+        setUpTabBar()
     }
     
     func setupLargeTitleAutoAdjustFont() {
@@ -76,6 +77,7 @@ class DefaultTableViewController: UITableViewController {
         
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.barTintColor = UIColor.systemBackground
+        navigationController?.navigationBar.tintColor = UIColor.orange_orangeInnovation()
         
         DispatchQueue.main.async { [weak self] in
             self?.navigationController?.navigationBar.sizeToFit()
@@ -90,6 +92,11 @@ class DefaultTableViewController: UITableViewController {
                  }
              }
         }
+    }
+    
+    func setUpTabBar() {
+        self.tabBarController?.tabBar.tintColor = UIColor.orange_orangeInnovation()
+        self.tabBarController?.tabBar.barTintColor = UIColor.orange_orangeInnovation()
     }
     
     internal func reloadTransaction(){
@@ -131,13 +138,8 @@ class DefaultTableViewController: UITableViewController {
         }
         else {
             let header: UITableViewHeaderFooterView     = view as! UITableViewHeaderFooterView
-            //header.contentView.backgroundColor          = .orange_greyBgColor()
             header.contentView.backgroundColor          = UIColor.systemGray5
-            //header.textLabel?.textColor                 = .orange_blackColor()
             header.textLabel?.textColor                 = UIColor.label
-            //header.layer.borderWidth = 1
-            //header.layer.borderColor = UIColor.orange_functionalGrey6().cgColor
-            //header.layer.borderColor = UIColor(named: "gray_accent")?.cgColor
             header.textLabel?.numberOfLines = 0
             header.sizeToFit()
             header.textLabel?.sizeToFit()
@@ -196,8 +198,6 @@ class DefaultTableViewController: UITableViewController {
         alert.addAction(UIAlertAction(title: "common_ok".localized, style: .default, handler: nil))
         
         self.present(alert, animated: true, completion: nil)
-        
-        alert.view.tintColor = .orange_orangeForWhiteBG()
     }
 }
 

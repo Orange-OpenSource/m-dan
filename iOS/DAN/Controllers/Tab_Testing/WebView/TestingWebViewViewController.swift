@@ -19,13 +19,14 @@
 
 import Foundation
 import UIKit
+import SafariServices
 
 class TestingWebViewViewController: DefaultTableViewController {
-
+    
     //MARK: - Properties
     let textCellIdentifier      = "descCell"
     let creditCellIdentifier    = "gestureCell"
-
+    
     
     let descriptionSection      = 0
     let gestureSection          = 1
@@ -34,16 +35,16 @@ class TestingWebViewViewController: DefaultTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
     // MARK: - Private methods
     override func setUpDatas() {
-
+        
         title = "testings_option_webView".localized
-
+        
         sectionHeaders = [
             "common_description",
             "common_example"
@@ -59,10 +60,10 @@ class TestingWebViewViewController: DefaultTableViewController {
         
         self.tableView.reloadData()
         navigationItem.largeTitleDisplayMode = .never
-             navigationController?.navigationBar.prefersLargeTitles = false
+        navigationController?.navigationBar.prefersLargeTitles = false
         navigationController?.navigationBar.barTintColor = UIColor.white
         
-        self.navigationController?.navigationBar.tintColor = UIColor.orange_orangeForBlackText()
+        self.navigationController?.navigationBar.tintColor = UIColor.orange_orangeInnovation()
         let close = UIBarButtonItem(barButtonSystemItem: .done, target: self, action:#selector(closeTapped))
         navigationItem.rightBarButtonItems = [close]
     }
@@ -75,7 +76,7 @@ class TestingWebViewViewController: DefaultTableViewController {
             
             textAndButtonCell            = tableView.dequeueReusableCell(withIdentifier: creditCellIdentifier, for: indexPath) as! TextAndButtonTableViewCell
             textAndButtonCell.button.setTitle("testing_webView_button".localized, for: UIControl.State())
-            textAndButtonCell.button.backgroundColor = UIColor.orange_orangeForWhiteText()
+            textAndButtonCell.button.backgroundColor = UIColor.orange_orangeInnovation()
             
             return textAndButtonCell
             
@@ -109,5 +110,9 @@ class TestingWebViewViewController: DefaultTableViewController {
     
     @objc func closeTapped(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func guideButtonAction(_ sender: UIButton) {
+        self.openURL("testing_webView_url".localized)
     }
 }

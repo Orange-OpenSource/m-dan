@@ -54,7 +54,7 @@ class OptionViewController: DefaultTableViewController {
         navigationController?.navigationBar.prefersLargeTitles = false
         navigationController?.navigationBar.barTintColor = UIColor.white
         
-        self.navigationController?.navigationBar.tintColor = UIColor.orange_orangeForBlackText()
+        self.navigationController?.navigationBar.tintColor = UIColor.orange_orangeInnovation()
         let close = UIBarButtonItem(barButtonSystemItem: .done, target: self, action:#selector(closeTapped))
         navigationItem.rightBarButtonItems = [close]
     }

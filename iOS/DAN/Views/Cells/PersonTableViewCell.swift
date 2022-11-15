@@ -31,6 +31,9 @@ class PersonTableViewCell: UITableViewCell {
         // Initialization code
         
         initialLabel.layer.cornerRadius = 22
+        initialLabel.backgroundColor = UIColor.orange_orangeInnovation()
+        checkmarkImageView.image = (UIImage(named: "checkmark")?.withRenderingMode(.alwaysTemplate))
+        checkmarkImageView.tintColor = UIColor.orange_orangeInnovation()
         checkmarkImageView.isHidden = true
     }
 

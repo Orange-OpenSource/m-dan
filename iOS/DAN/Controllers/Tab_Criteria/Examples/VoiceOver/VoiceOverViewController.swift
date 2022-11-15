@@ -65,7 +65,7 @@ class VoiceOverViewController: DefaultTableViewController {
              navigationController?.navigationBar.prefersLargeTitles = false
         navigationController?.navigationBar.barTintColor = UIColor.white
         
-        self.navigationController?.navigationBar.tintColor = UIColor.orange_orangeForBlackText()
+        self.navigationController?.navigationBar.tintColor = UIColor.orange_orangeInnovation()
         let close = UIBarButtonItem(barButtonSystemItem: .done, target: self, action:#selector(closeTapped))
         navigationItem.rightBarButtonItems = [close]
     }
@@ -78,7 +78,7 @@ class VoiceOverViewController: DefaultTableViewController {
             
             textAndButtonCell            = tableView.dequeueReusableCell(withIdentifier: creditCellIdentifier, for: indexPath) as! TextAndButtonTableViewCell
             textAndButtonCell.button.setTitle("voiceover_gestures".localized, for: UIControl.State())
-            textAndButtonCell.button.backgroundColor = UIColor.orange_orangeForWhiteText()
+            textAndButtonCell.button.backgroundColor = UIColor.orange_orangeInnovation()
             
             return textAndButtonCell
             
