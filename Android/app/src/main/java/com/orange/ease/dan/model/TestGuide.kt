@@ -19,4 +19,4 @@
 
 package com.orange.ease.dan.model
 
-class TestGuide(resTitle: Int, val resDescription: Int, val resImg1: Int?,val resImg2: Int? ): AccessibilityEntity(resTitle)
+class TestGuide(resTitle: Int, val resDescription: Int, val resLink: Int? ): AccessibilityEntity(resTitle)

@@ -20,71 +20,57 @@
 package com.orange.ease.dan.data
 
 import com.orange.ease.dan.R
+import com.orange.ease.dan.model.TestColorContrastGuide
 import com.orange.ease.dan.model.TestGuide
+import com.orange.ease.dan.model.TestTalkbackGuide
 
 object TestGuideDataSource {
 
-    /**
-     * Navigation générale
-    Agrandissement de texte
-    Lecteur d’écran Voice Over
-    Contrôle de sélection */
-
     private val generalNavigation = TestGuide(
-        resTitle = R.string.manual_test_title,
-        //general_navigation_test_description
+        resTitle = R.string.general_navigation_test_title,
         resDescription = R.string.general_navigation_test_description,
-        resImg1= null,
-        resImg2 = null
-
-
+        resLink = null,
     )
 
     private val textMagnification = TestGuide(
         resTitle = R.string.magnification_test_title,
         resDescription = R.string.magnification_test_description,
-        resImg1= null,
-        resImg2 = null
-
+        resLink= null,
     )
 
-
-
-    private val screenReader = TestGuide(
+    private val screenReader = TestTalkbackGuide(
         resTitle = R.string.screen_reader_test_title,
-        resDescription = R.string.screen_Reader_test_description,
-        resImg1 = R.drawable.activate_dark_screen,
-        resImg2 = null
-
+        resDescription1 = R.string.screen_Reader_test_description1,
+        resDescription2 = R.string.screen_Reader_test_description2,
+        resImg = R.drawable.activate_dark_screen
     )
 
     private val keyboardNavigation = TestGuide(
         resTitle = R.string.keyboard_navigation_test_title,
         resDescription = R.string.keyboard_navigation_test_description,
-        resImg1= null,
-        resImg2 = null
+        resLink= null
     )
 
-    private val colorContrast = TestGuide(
+    private val colorContrast = TestColorContrastGuide(
         resTitle = R.string.contrastColor_test_title,
-        resDescription = R.string.contrastColor_test_description  ,
-        resImg1 = R.drawable.scanner_accessibility_report,
-        resImg2 = null
+        resDescription1 = R.string.contrastColor_test_description1  ,
+        resDescription2 = R.string.contrastColor_test_description2,
+        resDescription3 = R.string.contrastColor_test_description3,
+        resImg1 = R.drawable.accessibility_scanner_button,
+        resImg2 = R.drawable.accessibility_scanner_report
     )
 
     private val multimedia = TestGuide(
         resTitle = R.string.multimedia_test_title,
         resDescription = R.string.multimedia_test_description,
-        resImg1 = null,
-        resImg2 = null
+        resLink = null,
     )
 
 
     private val webview = TestGuide(
         resTitle = R.string.webview_test_title,
         resDescription = R.string.webview_test_description,
-        resImg1 = null,
-        resImg2 = null
+        resLink = R.string.webview_details_button_title,
     )
 
 
@@ -92,15 +78,20 @@ object TestGuideDataSource {
     val allManualTests = listOf(
         generalNavigation,
         textMagnification,
-        screenReader,
         keyboardNavigation
     )
 
     val allOtherTests = listOf(
-        colorContrast,
         multimedia,
         webview
     )
+
+    val allTalkabackTest = listOf(
+        screenReader)
+
+    val allColorContrastTest = listOf(
+        colorContrast)
+
 
 
 }

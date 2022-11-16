@@ -20,7 +20,6 @@
 package com.orange.ease.dan.ui.test
 
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.text.Html
 import android.view.View
@@ -31,24 +30,27 @@ import androidx.lifecycle.ViewModelProvider
 import com.orange.ease.dan.R
 import com.orange.ease.dan.data.repository.TestGuideRepository
 import com.orange.ease.dan.databinding.DetailsDevGuideActivityBinding
+import com.orange.ease.dan.databinding.DetailsTestGuideActivityBinding
 import com.orange.ease.dan.model.TestGuide
+import com.orange.ease.dan.model.TestTalkbackGuide
+import com.orange.ease.dan.ui.tools.talkback.GestureActivity
 import com.orange.ease.dan.ui.tools.talkback.TalkbackOptionActivity
 import com.orange.ease.dan.viewmodel.TestGuideDetailsViewModel
 
-class DetailsTestActivity : AppCompatActivity() {
+class DetailsTestTalkbackActivity : AppCompatActivity() {
 
-    private lateinit var binding: DetailsDevGuideActivityBinding
+    private lateinit var binding: DetailsTestGuideActivityBinding
 
     private lateinit var viewModel: TestGuideDetailsViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DetailsDevGuideActivityBinding.inflate(layoutInflater)
+        binding = DetailsTestGuideActivityBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
         viewModel = ViewModelProvider(this).get(TestGuideDetailsViewModel::class.java)
-        viewModel.guide = TestGuideRepository.getCurrentGuide() as TestGuide?
+        viewModel.guideTalkaback = TestGuideRepository.getCurrentGuide() as TestTalkbackGuide?
 
         initView()
         setupToolbar()
@@ -62,35 +64,37 @@ class DetailsTestActivity : AppCompatActivity() {
     }
 
     private fun initView() {
-        binding.textViewTitleLinksGuideDev.visibility = View.GONE
+        //binding.textViewTitleLinksGuideDev.visibility = View.GONE
         binding.textViewContentLinksGuideDev.visibility = View.GONE
 
-        val guide = viewModel.guide?.let { it } ?: return
-        binding.textViewDescriptionContentGuideDev.text = guide?.let{ getString(guide.resDescription)}
+        val guide = viewModel.guideTalkaback?.let { it } ?: return
+        binding.buttonGuideTester.setText(R.string.tb_talback_guide_btn)
+        binding.textViewDescriptionContentPart1.text = guide?.let{ getString(guide.resDescription1)}
+        val img = guide.resImg;
+        binding.textViewDescriptionContentPart2.text = guide?.let{ getString(guide.resDescription2)}
 
-        val link = guide.resLink;
-        if (link!=null) {
-            binding.buttonDetailsWebview.visibility = View.VISIBLE
-            binding.buttonDetailsWebview.setText(guide.resLink)
+        if (img!=null) {
+            binding.imgTestExemple.visibility = View.VISIBLE
+            binding.imgTestExemple.setImageDrawable(img?.let { ContextCompat.getDrawable(this, it) })
+        } else {
+            //binding.imgTestExemple.visibility = View.GONE
         }
 
     }
 
-    override fun onResume() {
-        super.onResume()
-        supportActionBar?.title = viewModel.guide?.let { getString(it.resTitle) }
-        title = viewModel.guide?.let { getString(it.resTitle) }
-    }
-
-    fun seeWebviewDetails(view: View) {
+    fun seeTalkback(view: View) {
         startTuto()
     }
 
     private fun startTuto() {
-        val openTutoActivity = Intent(Intent.ACTION_VIEW, Uri.parse("https://a11y-guidelines.orange.com/fr/web/"))
+        val openTutoActivity = Intent(this, TalkbackOptionActivity::class.java)
         startActivity(openTutoActivity)
         overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out)
     }
+
+    override fun onResume() {
+        super.onResume()
+        //supportActionBar?.title = viewModel.guide?.let { getString(it.resTitle) }
+        //title = viewModel.guide?.let { getString(it.resTitle) }
+    }
 }
-
-

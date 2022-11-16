@@ -61,7 +61,8 @@ class DetailsDevGuideActivity : AppCompatActivity() {
 
         val guide = viewModel.guide?.let { it } ?: return
 
-        binding.textViewDescriptionContentGuideDev.text = HtmlCompat.fromHtml(getString(guide.resDescription),  HtmlCompat.FROM_HTML_MODE_LEGACY)
+        binding.textViewDescriptionContentGuideDev.text = guide?.let{ getString(guide.resDescription)}
+            //HtmlCompat.fromHtml(getString(guide.resDescription),  HtmlCompat.FROM_HTML_MODE_LEGACY)
 
         val strongLink = guide.resLink?.let {getString(it)} ?: return
 

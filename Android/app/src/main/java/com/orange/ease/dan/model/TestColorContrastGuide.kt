@@ -17,21 +17,6 @@
  * under the License.
  */
 
-package com.orange.ease.dan.viewmodel
+package com.orange.ease.dan.model
 
-import androidx.lifecycle.ViewModel
-import com.orange.ease.dan.model.DevelopmentGuide
-import com.orange.ease.dan.model.TestColorContrastGuide
-import com.orange.ease.dan.model.TestGuide
-import com.orange.ease.dan.model.TestTalkbackGuide
-
-class TestGuideViewModel : ViewModel() {
-
-    lateinit var listGuide : List<TestGuide>
-    lateinit var listOtherGuide : List<TestGuide>
-    lateinit var talkbackGuide : List<TestTalkbackGuide>
-    lateinit var colorContrastGuide : List<TestColorContrastGuide>
-
-}
-
-
+class TestColorContrastGuide(resTitle: Int, val resDescription1: Int, val resDescription2: Int, val resDescription3: Int,  val resImg1: Int?,val resImg2: Int? ): AccessibilityEntity(resTitle)

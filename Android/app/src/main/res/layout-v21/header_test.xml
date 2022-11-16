@@ -28,7 +28,7 @@
         android:id="@+id/splitImageOptions"
         android:layout_width="match_parent"
         android:layout_height="110dp"
-        android:background="@drawable/options_illustration"
+        android:background="@drawable/tests_illustration"
         android:importantForAccessibility="no" />
 
     <TextView

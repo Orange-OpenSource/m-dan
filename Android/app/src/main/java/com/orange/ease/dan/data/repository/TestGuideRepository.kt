@@ -21,18 +21,21 @@ package com.orange.ease.dan.data.repository
 
 import com.orange.ease.dan.data.DevelopmentGuideDataSource
 import com.orange.ease.dan.data.TestGuideDataSource
+import com.orange.ease.dan.model.AccessibilityEntity
 import com.orange.ease.dan.model.DevelopmentGuide
+import com.orange.ease.dan.model.TestColorContrastGuide
 import com.orange.ease.dan.model.TestGuide
+import com.orange.ease.dan.model.TestTalkbackGuide
 
 object TestGuideRepository {
 
-    private var currentGuide: TestGuide? = null
+    private var currentGuide: AccessibilityEntity? = null
 
-    fun getCurrentGuide(): TestGuide? {
+    fun getCurrentGuide(): AccessibilityEntity? {
         return currentGuide
     }
 
-    fun setCurrentGuide(guide: TestGuide) {
+    fun setCurrentGuide(guide: AccessibilityEntity) {
         currentGuide = guide
     }
 
@@ -42,6 +45,14 @@ object TestGuideRepository {
    fun getListOfOtherGuide(): List<TestGuide> {
         return TestGuideDataSource.allOtherTests
     }
+    fun getTalkbackGuide(): List<TestTalkbackGuide> {
+        return TestGuideDataSource.allTalkabackTest
+    }
+
+    fun getColorContrastGuide(): List<TestColorContrastGuide> {
+        return TestGuideDataSource.allColorContrastTest
+    }
+
 }
 
 

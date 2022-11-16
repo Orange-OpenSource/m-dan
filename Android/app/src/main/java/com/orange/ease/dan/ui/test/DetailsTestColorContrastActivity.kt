@@ -31,24 +31,28 @@ import androidx.lifecycle.ViewModelProvider
 import com.orange.ease.dan.R
 import com.orange.ease.dan.data.repository.TestGuideRepository
 import com.orange.ease.dan.databinding.DetailsDevGuideActivityBinding
+import com.orange.ease.dan.databinding.DetailsTestGuideActivityBinding
+import com.orange.ease.dan.model.TestColorContrastGuide
 import com.orange.ease.dan.model.TestGuide
+import com.orange.ease.dan.model.TestTalkbackGuide
+import com.orange.ease.dan.ui.tools.talkback.GestureActivity
 import com.orange.ease.dan.ui.tools.talkback.TalkbackOptionActivity
 import com.orange.ease.dan.viewmodel.TestGuideDetailsViewModel
 
-class DetailsTestActivity : AppCompatActivity() {
+class DetailsTestColorContrastActivity : AppCompatActivity() {
 
-    private lateinit var binding: DetailsDevGuideActivityBinding
+    private lateinit var binding: DetailsTestGuideActivityBinding
 
     private lateinit var viewModel: TestGuideDetailsViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DetailsDevGuideActivityBinding.inflate(layoutInflater)
+        binding = DetailsTestGuideActivityBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
         viewModel = ViewModelProvider(this).get(TestGuideDetailsViewModel::class.java)
-        viewModel.guide = TestGuideRepository.getCurrentGuide() as TestGuide?
+        viewModel.guideColorContrastGuide = TestGuideRepository.getCurrentGuide() as TestColorContrastGuide?
 
         initView()
         setupToolbar()
@@ -62,35 +66,42 @@ class DetailsTestActivity : AppCompatActivity() {
     }
 
     private fun initView() {
-        binding.textViewTitleLinksGuideDev.visibility = View.GONE
+        binding.textViewDescriptionContentPart3.visibility = View.VISIBLE
+        binding.imgTestExample2.visibility = View.VISIBLE
         binding.textViewContentLinksGuideDev.visibility = View.GONE
 
-        val guide = viewModel.guide?.let { it } ?: return
-        binding.textViewDescriptionContentGuideDev.text = guide?.let{ getString(guide.resDescription)}
+        val guide = viewModel.guideColorContrastGuide?.let { it } ?: return
+        binding.buttonGuideTester.setText(R.string.tb_scanner_guide_btn)
+        //holder.binding.headerCriteriaWhyDescription.text = criteria?.let { context.getString(it.resWhyDescription) }
+        binding.textViewDescriptionContentPart1.text = guide?.let{ getString(guide.resDescription1)}
+        binding.textViewDescriptionContentPart2.text = guide?.let{ getString(guide.resDescription2)}
+        binding.textViewDescriptionContentPart3.text = guide?.let{ getString(guide.resDescription3)}
 
-        val link = guide.resLink;
-        if (link!=null) {
-            binding.buttonDetailsWebview.visibility = View.VISIBLE
-            binding.buttonDetailsWebview.setText(guide.resLink)
+        val img1 = guide.resImg1;
+        val img2 = guide.resImg2
+        if (img1!=null) {
+            binding.imgTestExemple.visibility = View.VISIBLE
+            binding.imgTestExemple.setImageDrawable(img1?.let { ContextCompat.getDrawable(this, it) })
+        }
+        if (img2!=null) {
+            binding.imgTestExample2.visibility = View.VISIBLE
+            binding.imgTestExample2.setImageDrawable(img2?.let { ContextCompat.getDrawable(this, it) })
         }
 
     }
 
-    override fun onResume() {
-        super.onResume()
-        supportActionBar?.title = viewModel.guide?.let { getString(it.resTitle) }
-        title = viewModel.guide?.let { getString(it.resTitle) }
-    }
-
-    fun seeWebviewDetails(view: View) {
+    fun seeTalkback(view: View) {
         startTuto()
     }
 
     private fun startTuto() {
-        val openTutoActivity = Intent(Intent.ACTION_VIEW, Uri.parse("https://a11y-guidelines.orange.com/fr/web/"))
+
+        val openTutoActivity = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.google.android.apps.accessibility.auditor&pli=1"))
         startActivity(openTutoActivity)
         overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out)
     }
+
+    override fun onResume() {
+        super.onResume()
+    }
 }
-
-

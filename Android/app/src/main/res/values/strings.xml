@@ -738,8 +738,10 @@ Il est conseiller de commencer par les écrans les plus utilisés.</string>
     <string name="screen_reader_test_title">Lecteur d\'écran Talkabck</string>
     <string name="keyboard_navigation_test_title">Navigation au clavier</string>
     <string name="contrastColor_test_title">Contrastes de couleur</string>
-    <string name="multimedia_test_title">Contenu multimédia</string>
-    <string name="webview_test_title">Webviews</string>
+    <string name="multimedia_test_title">Audio et vidéo</string>
+    <string name="webview_test_title">Webview</string>
+
+    <string name="webview_details_button_title">Voir les recommandations web</string>
 
 
     <string name="other_test_title">Autres tests</string>
@@ -747,7 +749,7 @@ Il est conseiller de commencer par les écrans les plus utilisés.</string>
     <string name="general_navigation_test_description">
         •	Vérifier que tous les écrans ont des titres visibles, uniques et pertinents.\n\n
         •	Vérifier que les textes sont lisibles.\n\n
-        •	Vérifier que les erreurs de clic peuvent être annulees.\n\n
+        •	Vérifier que les erreurs de clic peuvent être annulées.\n\n
         •	Vérifier que l\'application fonctionne dans les deux orientations du téléphone.\n\n
         •	Limiter les animations visuelles.</string>
 
@@ -756,32 +758,39 @@ Il est conseiller de commencer par les écrans les plus utilisés.</string>
     •	Vérifier que les différentes fonctionnalités de l\’application sont utilisables et que le contenu reste visible et clair.
 </string>
 
-    <string name="screen_Reader_test_description">•	 Activer Talkback.\nSi vous ne connaissez pas Talkback, utilisez le guide d\’utilisation, (lien vers le guide), pour voir comment l\’activer et découvrir les différentes gestuelles de navigation.\n\n
-        •	Vérifier que l\'on peut naviguer entre les différents écrans et utiliser les différentes fonctionnalités en utilisant uniquement le lecteur d\’écran.\nCet outil est utilisé par les utilisateurs malvoyants et non-voyants.\nPour simuler leurs situations, il est possible de tester avec l\’écran éteint :\nActiver Talkback ; glisser votre doigt du haut vers le bas puis vers la droite (en écrivant la lettre L majuscule) pour ouvrir le menu talkback ; naviguer jusqu’à « masquer l’écran » ; cliquez deux fois pour l’activer"</string>
+    <string name="screen_Reader_test_description1">•	 Activer Talkback.\n\nSi vous ne connaissez pas Talkback, utilisez le guide d\’utilisation, pour voir comment l\’activer et découvrir les différentes gestuelles de navigation.</string>
 
-    <string name="keyboard_navigation_test_description">Connecter un clavier externe à votre téléphone (bluetooth ou filaire).\n\nNaviguer dans l\’application en utilisant seulement le clavier:\n\n•	 Vérifier que le focus est visible et suit l\'ordre logique\n\n•	Vérifier que les fonctionnalités sont utilisables\n\n•	 Vérifier qu\'il n\'y a pas de piège clavier (le focus ne reste pas bloqué sur un composant).
+    <string name="screen_Reader_test_description2">•	Vérifier que l\'on peut naviguer entre les différents écrans et utiliser les différentes fonctionnalités en utilisant uniquement le lecteur d\’écran.\n\nCet outil est utilisé par les utilisateurs malvoyants et non-voyants.\nPour simuler leurs situations, il est possible de tester avec l\’écran éteint :\nActiver Talkback ; glisser votre doigt du haut vers le bas puis vers la droite (en écrivant la lettre L majuscule) pour ouvrir le menu talkback ; naviguer jusqu’à « masquer l’écran » ; cliquez deux fois pour l’activer"</string>
+
+<string name="keyboard_navigation_test_description">Connecter un clavier externe à votre téléphone (bluetooth ou filaire).\n\nNaviguer dans l\’application en utilisant seulement le clavier:\n\n•	 Vérifier que le focus est visible et suit l\'ordre logique\n\n•	Vérifier que les fonctionnalités sont utilisables\n\n•	 Vérifier qu\'il n\'y a pas de piège clavier (le focus ne reste pas bloqué sur un composant).
         </string>
 
-    <string name="contrastColor_test_description">Utiliser Accessibility scanner, application disponible sur le Google Play Store.\n
-Cet outil vérifie les contrastes entre les textes et leurs arrière-plans ainsi que les contrastes des composants d\’interface.\n
-Ces tests doivent être réalisés en mode clair et en mode sombre\n\n
-        •	Télécharger l\’application et se laisser ensuite guider.Vous pouvez créer un raccourci sur votre écran principal pour pouvoir activer scanner à tout moment.
-En activant Scanner, un floating button apparait.\n•	Se mettre sur l\’écran à tester et cliquer sur ce bouton ; Ce bouton permet de lancer une analyse sur l\’écran de votre choix.
-        \n•	Le rapport d’erreurs est immédiatement retranscrit sur cet écran :
+    <string name="contrastColor_test_description1">Utiliser Accessibility scanner, application disponible sur le Google Play Store.\n\nCet outil vérifie les contrastes entre les textes et leurs arrière-plans ainsi que les contrastes des composants d\’interface.\n\nCes tests doivent être réalisés en mode clair et en mode sombre\n\n
+        •	Télécharger l\’application et se laisser ensuite guider.</string>
+
+        <string name="contrastColor_test_description2">Vous pouvez créer un raccourci sur votre écran principal pour pouvoir activer scanner à tout moment.
+            En activant Scanner, un floating button apparait.</string>
+
+           <string name="contrastColor_test_description3">•	Se mettre sur l\’écran à tester et cliquer sur ce bouton ; Ce bouton permet de lancer une analyse sur l\’écran de votre choix.
+        \n\n•	Le rapport d’erreurs est immédiatement retranscrit sur cet écran :
 </string>
 
     <string name="multimedia_test_description">
-    •	Vérifier que Les contenus multimédias peuvent être contrôlés par l\’utilisateur (présence d\’un bouton pause, bouton mode plein-écran, etc.…)\n
-    •	Vérifier que l\’utilisateur peut contrôler tout son émis pour plus de 3 secondes (arrêter ou mettre en pause)\n
-    •	Vérifier qu\’Il n\'y a pas de démarrage automatique de la vidéo au chargement de la page.\n
-    •	Vérifier que tous les contenus de type audio ou vidéo ont une transcription intégrale textuelle.\n
+    •	Vérifier que Les contenus multimédias peuvent être contrôlés par l\’utilisateur (présence d\’un bouton pause, bouton mode plein-écran, etc.…)\n\n
+    •	Vérifier que l\’utilisateur peut contrôler tout son émis pour plus de 3 secondes (arrêter ou mettre en pause)\n\n
+    •	Vérifier qu\’Il n\'y a pas de démarrage automatique de la vidéo au chargement de la page.\n\n
+    •	Vérifier que tous les contenus de type audio ou vidéo ont une transcription intégrale textuelle.\n\n
     </string>
     <string name="webview_test_description">
 •	Pour tester les webview, il faut tester l\’ensemble des critères d’accessibilité des pages web détaillés dans la rubrique tester.\n
-https://a11y-guidelines.orange.com/fr/web/
-
     </string>
-    <string name="test">Now is the time\nfor all good men to\ncome to the aid of their party</string>
+
+
+    <string name="tb_talback_guide_btn">Voir le guide Talkabck</string>
+    <string name="tb_scanner_guide_btn">Télécharger Accessibility Scanner</string>
+
+
+
 
 
 

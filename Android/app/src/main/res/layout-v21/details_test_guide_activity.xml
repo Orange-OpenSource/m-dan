@@ -42,7 +42,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textViewDescriptionContentGuideDev"
+                android:id="@+id/textViewDescriptionContentPart1"
                 style="@style/BrandBody1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -58,30 +58,67 @@
                 android:textColor="@color/core_black"
                 android:textSize="14sp" />
 
-            <!--<ImageView
+            <Button
+                android:id="@+id/buttonGuideTester"
+                style="@style/BrandButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewContentTalkback"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:focusable="true"
+                android:onClick="seeTalkback" />
+
+            <TextView
+                android:id="@+id/textViewDescriptionContentPart2"
+                style="@style/BrandBody1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewTitleExample"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="@dimen/medium_margin"
+                android:screenReaderFocusable="true"
+                android:paddingRight="@dimen/medium_margin"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/core_black"
+                android:textSize="14sp" />
+
+            <ImageView
                 android:id="@+id/imgTestExemple"
                 android:layout_width="match_parent"
                 android:layout_height="480dp"
                 android:layout_margin="30dp"
                 android:visibility="gone"
-                />-->
+                />
 
             <TextView
-                android:id="@+id/textViewTitleLinksGuideDev"
-                style="@style/TextViewStandard.Title.Level2"
+                android:id="@+id/textViewDescriptionContentPart3"
+                style="@style/BrandBody1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/border"
-                android:gravity="center_vertical"
-                android:minHeight="45dp"
-                android:padding="@dimen/large_margin"
+                android:layout_below="@+id/textViewTitleExample"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                android:paddingLeft="@dimen/medium_margin"
                 android:screenReaderFocusable="true"
-                android:text="@string/dev_links"
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingRight="@dimen/medium_margin"
+                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/core_black"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:visibility="gone" />
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imgTestExample2"
+                android:layout_width="match_parent"
+                android:layout_height="480dp"
+                android:layout_margin="30dp"
+                android:visibility="gone"
+                />
 
             <TextView
                 android:id="@+id/textViewContentLinksGuideDev"
@@ -102,18 +139,6 @@
                 android:textColorLink="@color/core_orange_dark"
                 android:textSize="14sp"
                 android:visibility="gone" />
-
-            <Button
-                android:id="@+id/buttonDetailsWebview"
-                style="@style/BrandButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone"
-                android:layout_below="@+id/textViewContentTalkback"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="@dimen/medium_margin"
-                android:focusable="true"
-                android:onClick="seeWebviewDetails" />
         </LinearLayout>
     </ScrollView>
 
