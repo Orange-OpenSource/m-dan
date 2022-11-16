@@ -22,17 +22,13 @@ package com.orange.ease.dan.ui.test
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.text.Html
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
-import androidx.core.text.HtmlCompat
 import androidx.lifecycle.ViewModelProvider
 import com.orange.ease.dan.R
 import com.orange.ease.dan.data.repository.TestGuideRepository
 import com.orange.ease.dan.databinding.DetailsDevGuideActivityBinding
 import com.orange.ease.dan.model.TestGuide
-import com.orange.ease.dan.ui.tools.talkback.TalkbackOptionActivity
 import com.orange.ease.dan.viewmodel.TestGuideDetailsViewModel
 
 class DetailsTestActivity : AppCompatActivity() {
