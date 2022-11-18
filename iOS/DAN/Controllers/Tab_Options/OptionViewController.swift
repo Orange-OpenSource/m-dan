@@ -47,27 +47,23 @@ class OptionViewController: DefaultTableViewController {
         ]
     }
     
+    func setUpNavigationBarClose() {
+        
+        self.tableView.reloadData()
+        navigationItem.largeTitleDisplayMode = .never
+        navigationController?.navigationBar.prefersLargeTitles = false
+        navigationController?.navigationBar.barTintColor = UIColor.white
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.orange_orangeInnovation()
+        let close = UIBarButtonItem(barButtonSystemItem: .done, target: self, action:#selector(closeTapped))
+        navigationItem.rightBarButtonItems = [close]
+    }
+    
     // MARK: - TableViewDataSource
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let textCell        = tableView.dequeueReusableCell(withIdentifier: textCellIdentifier, for: indexPath) as! TextTableViewCell
         textCell.label.text = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
-        
-        /*
-        if indexPath.section == linksSection {
-            
-            let cellString  = NSMutableAttributedString(string:cellsContent[indexPath.section][indexPath.row].localized)
-            let docLink     = NSMutableAttributedString(string:"voiceover_appleDocLink".localized)
-            docLink.addAttribute(NSLinkAttributeName, value: "SOME_URL_HERE", range: NSMakeRange(0, docLink.length))
-            
-            cellString.appendAttributedString(docLink)
-            
-            textCell.label.attributedText = cellString
-            
-            textCell.userInteractionEnabled = true
-            
-        }
-        */
         
         return textCell
         
@@ -90,5 +86,9 @@ class OptionViewController: DefaultTableViewController {
             
             UIApplication.shared.openURL(URL(string:"SOME_URL_HERE")!)
         }
+    }
+    
+    @objc func closeTapped(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
     }
 }

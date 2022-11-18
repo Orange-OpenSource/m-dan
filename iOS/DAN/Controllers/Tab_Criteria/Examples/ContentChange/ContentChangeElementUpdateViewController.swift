@@ -76,8 +76,6 @@ class ContentChangeElementUpdateViewController: DefaultTableViewController, UITe
         if addressSwitch.tag == accessibleSection && !addressSwitch.isOn {
             
             UIAccessibility.post(notification: UIAccessibility.Notification.layoutChanged, argument: cell?.addressTextfield)
-            
-            //print("test" + String(cell?.accessibilityElementCount()));
         }
         
         cell?.isAccessibilityElement = false

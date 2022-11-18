@@ -13,23 +13,54 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                
-        <style type="text/css">
-            html {
-                font: -apple-system-body;
-            }
-            body{
-                font-family: '-apple-system', 'HelveticaNeue';
-            }
-            ul {
-                padding: 0;
-                list-style-type: none;
-            }
-                
-            a {
-                word-wrap: break-word;
-            }
-        </style>
+            <style type="text/css">
+                :root {
+                  color-scheme: light dark;
+                  --title-color: red;
+                  --subhead-color: green;
+                  --link-color: blue;
+                }
+
+                @media screen and (prefers-color-scheme: dark) {
+                  :root {
+                    --title-color: #ff8080;
+                    --subhead-color: #80ff80;
+                    --link-color: #0090FF;
+                  }
+                }
+
+                body {
+                    font: -apple-system-body;
+                }
+
+                h1 {
+                    font: -apple-system-headline;
+                    color: var(--title-color);
+                }
+
+                h2 {
+                    font: -apple-system-subheadline;
+                    color: var(--subhead-color);
+                }
+
+                footer {
+                    font: -apple-system-footnote;
+                }
+
+                a {
+                    color: var(--link-color);
+                    word-wrap: break-word;
+                }
+
+                img {
+                    max-width: 100%;
+                }
+
+                ul {
+                    padding: 0;
+                    list-style-type: none;
+                }
+            </style>
     </head>
     <body>
         <ul>

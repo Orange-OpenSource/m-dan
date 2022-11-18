@@ -138,16 +138,25 @@ class ElementStateFoldAreaViewController: DefaultTableViewController {
             accordionHeaderView.titleLabel.text = sectionHeaders[section].localized
             
             if(section == nonAccessibleFoldSection) {
-                if(nonAccessibleIsFold) { accordionHeaderView.arrowImageView.image = UIImage(named: "arrow-up-black") }
-                else { accordionHeaderView.arrowImageView.image = UIImage(named: "arrow-down-black")}
+                if(nonAccessibleIsFold)
+                {
+                    accordionHeaderView.arrowImageView.image = (UIImage(named: "arrow-up-black")?.withRenderingMode(.alwaysTemplate))
+                    accordionHeaderView.arrowImageView.tintColor = UIColor.label
+                }
+                else {
+                    accordionHeaderView.arrowImageView.image = (UIImage(named: "arrow-down-black")?.withRenderingMode(.alwaysTemplate))
+                    accordionHeaderView.arrowImageView.tintColor = UIColor.label
+                }
             }
             else if(section == accessibleFoldSection) {
                 if(accessibleIsFold) {
-                    accordionHeaderView.arrowImageView.image = UIImage(named: "arrow-up-black")
+                    accordionHeaderView.arrowImageView.image = (UIImage(named: "arrow-up-black")?.withRenderingMode(.alwaysTemplate))
+                    accordionHeaderView.arrowImageView.tintColor = UIColor.label
                     accordionHeaderView.accessibilityHint = "example_elementState_foldArea_open_accessibilityHint".localized
                 }
                 else {
-                    accordionHeaderView.arrowImageView.image = UIImage(named: "arrow-down-black")
+                    accordionHeaderView.arrowImageView.image = (UIImage(named: "arrow-down-black")?.withRenderingMode(.alwaysTemplate))
+                    accordionHeaderView.arrowImageView.tintColor = UIColor.label
                     accordionHeaderView.accessibilityHint = "example_elementState_foldArea_close_accessibilityHint".localized
                 }
             }

@@ -25,6 +25,7 @@
 "common_ok"                         = "OK";
 "common_description"                = "Description";
 "common_activation"                 = "Activation";
+"common_test"                       = "Situation tests";
 "common_use"                        = "Use";
 "common_links"                      = "Links";
 "common_of"                         = "of";
@@ -32,8 +33,10 @@
 "common_accessibilityDemonstrator"  = "E-Accessibility Demonstrator";
 "common_accessibility"              = "The accessibility";
 "common_informationButton"          = "Information";
+"common_guideButton"                = "User guide";
 "common_alertVoiceOverTitle"        = "Information";
 "common_alertVoiceOver"             = "In order to understand this example, we recommend you to activate VoiceOver.\n\nRéglages > Général > Accessibilité > VoiceOver";
+"common_site_recommandation"        = "Orange recommendation site";
 
 // ----------------
 // Home
@@ -561,6 +564,71 @@
 "option_selectionControl_desctription"    = "Switch Control allows to sequentially highlight items on the screen that can be activated through an adaptive accessory. It is possible via a user action, to activate the focused element, or cancel the action etc. The action can be configured by the user: we can use the camera to detect when nodding the head on the right for example. This is useful particularly for people with motor impairments.";
 "option_selectionControl_activation"      = "Settings > General > Accessibility > Switch Control";
 
+
+// ---------------------------------------------------------------------------
+// Testing tab
+// ---------------------------------------------------------------------------
+// Title
+"tab_testings_title"    = "Tests";
+"tab_testings_title_accessibilityLabel"    = "test";
+
+// Sections
+"testings_section_description"      = "Description";
+"testings_section_situationTest"    = "Situation tests";
+"testings_section_anotherTest"      = "Another test to perform";
+
+// Description
+"testings_description_cell" = "The purpose of this guide is to help you test the accessibility of mobile applications on iOS. \nIt is advisable to start with the most used screens.";
+
+// Testings situation
+"testings_option_generalNavigation"     = "General navigation";
+"testings_option_fontEnlargement"       = "Font magnification";
+"testings_option_fontEnlargement_truncate" = "Font magnification";
+"testings_option_screenReader"          = "Screen Reader voice over";
+"testings_option_screenReader_truncate" = "Screen Reader";
+"testings_option_selectionControl"      = "Switch control";
+
+// Testings another
+"testings_option_colorContrast"         = "Color contrasts";
+"testings_option_multimedia"            = "Audio and video";
+"testings_option_webView"               = "Webview";
+
+// -------------------------
+// Testing - General Navigation
+// -------------------------
+"testing_generalNavigation_check"      = "- Check that all screens have visible, unique and relevant titles \n\n- Check that the texts are readable \n\n- Check that click errors can be undone \n\n- Verify that the app works on both orientations of the phone (landscape/portrait) \n\n- Limit visual animations";
+
+// --------------------------
+// Option - Font Enlargement
+// --------------------------
+"testing_fontEnlargement_check"         = "Use the application by enlarging the font of the phone to 200%. Enable text magnification in system settings (button to guide top right) \n\n- Check that all icons, texts and graphic elements are visible without any overflow or overlapping problem \n\n- Check that navigation of the different screens remains possible without loss of functionality";
+
+// --------------------------
+// Testings - Screen Reader
+// --------------------------
+"testing_screenReader_check"         = "Activate Voiceover. If you're unfamiliar with VoiceOver, check the user guide (button to guide top right) \n\n- Check that you can navigate between the different screens and use the different functionalities with only the screen reader \n\nTo simulate their situations, it is possible to test with the screen off : \nEnable VoiceOver ; triple-click to activate";
+
+// --------------------------
+// Testings - Selection Control
+// --------------------------
+"testing_selectionControl_check"         = "The Switch control simulates the use of an external keyboard (button to guide top right) \n\n- Check that the focus is visible and follows the logical order  \n\n- Check that features are usable  \n\n- Check that there is no keyboard trap (not blocked on a component) \n\nIt is possible to do the same tests by connecting an external keyboard (bluetooth or wired)";
+
+// --------------------------
+// Testings - ContrastColor
+// --------------------------
+"testing_contrastColor_check"         = "Color Contrast Calculator helps to check colors and contrasts. \nUse this tool from your Mac. \nThe tool gives the result directly (green icon OK, red icon KO)   \n\n- Check that the contrast between the text and the background of the application is correct (example illustration) \n\n- Check that the colors used in the interface components are sufficiently contrasting";
+
+// --------------------------
+// Testings - Multimedia
+// --------------------------
+"testing_multimedia_check"         = "- Check that the multimedia content can be controlled by the user (presence of a pause button, full-screen mode button, etc.) \n\n- Check that the user can control any sound emitted for more than 3 seconds (stop or pause) \n\n- Check that there is no automatic start of the video when the page loads.  \n\n- Verify that all audio or video content has a full text transcript.";
+
+// --------------------------
+// Testings - WebView
+// --------------------------
+"testing_webView_check"         = "To test webviews, you must test all of the web page accessibility criteria detailed in the section of our Orange recommendation site";
+"testing_webView_button"         = "Web section";
+"testing_webView_url"            = "https://a11y-guidelines.orange.com/en/web/test/";
 
 // ---------------------------------------------------------------------------
 // Plus tab

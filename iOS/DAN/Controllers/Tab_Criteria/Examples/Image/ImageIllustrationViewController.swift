@@ -108,7 +108,9 @@ class ImageIllustrationTableViewCell: UITableViewCell {
         
         customImageView.isAccessibilityElement = false
         parameterButton.accessibilityLabel = "example_image_illustration_parameter_accessibilityLabel".localized
+        parameterButton.tintColor = UIColor.orange_orangeInnovation()
         editImageButton.accessibilityLabel = "example_image_illustration_edit_accessibilityLabel".localized
+        editImageButton.tintColor = UIColor.orange_orangeInnovation()
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

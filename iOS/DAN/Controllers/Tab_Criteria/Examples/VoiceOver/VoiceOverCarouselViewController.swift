@@ -145,7 +145,6 @@ class VoiceOverCarouselViewController: UIViewController, UIScrollViewDelegate, U
                 let titleWidthConstraint = NSLayoutConstraint(item: titleLabel, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: pageView.frame.size.width - 50)
                 
                 titleLabel.text = titles[i]
-                titleLabel.textColor = UIColor.white
                 titleLabel.textAlignment = NSTextAlignment.center
                 titleLabel.numberOfLines = 0
                 titleLabel.font = UIFont.boldSystemFont(ofSize: 18.0)
@@ -163,7 +162,6 @@ class VoiceOverCarouselViewController: UIViewController, UIScrollViewDelegate, U
                 var imageBottomConstraint = NSLayoutConstraint(item: titleLabel, attribute: .top, relatedBy: .equal, toItem: imageView, attribute: .bottom, multiplier: 1, constant: 15)
                 
                 contentLabel.text = contents[i]
-                contentLabel.textColor = UIColor.orange_functionalGrey5()
                 contentLabel.textAlignment = NSTextAlignment.center
                 contentLabel.numberOfLines = 0
                 contentLabel.font = contentLabel.font.withSize(14)
@@ -176,8 +174,6 @@ class VoiceOverCarouselViewController: UIViewController, UIScrollViewDelegate, U
                     titleBottomConstraint = NSLayoutConstraint(item: contentLabel, attribute: .top, relatedBy: .equal, toItem: titleLabel, attribute: .bottom, multiplier: 1, constant: 15)
                     
                     imageBottomConstraint = NSLayoutConstraint(item: titleLabel, attribute: .top, relatedBy: .equal, toItem: imageView, attribute: .bottom, multiplier: 1, constant: 15)
-
-                    imageView.tintColor = UIColor.orange_orangeForBlackText()
                     
                     let creditTitleString  = NSMutableAttributedString(string:"voiceover_text_links".localized)
                     let docLink     = NSMutableAttributedString(string:"voiceover_appleDocLink".localized)
@@ -197,7 +193,6 @@ class VoiceOverCarouselViewController: UIViewController, UIScrollViewDelegate, U
                     link.addAttribute(NSAttributedString.Key.underlineStyle, value:1, range: NSMakeRange(0, link.length))
                     
                     creditString2.append(link)
-//                    creditString.append(creditString2)
                     
                     creditString.addAttribute(NSAttributedString.Key.font, value: UIFont.systemFont(ofSize: 11), range: NSMakeRange(0, creditString.length))
                     

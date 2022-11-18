@@ -32,9 +32,9 @@ class AddressTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
-        addressSwitch.onTintColor   = .orange_orangeForWhiteBG()
-        addressSwitch.tintColor     = .orange_orangeForWhiteBG()
-        addressTextfield.tintColor  = .orange_orangeForWhiteBG()
+        addressSwitch.onTintColor   = .orange_orangeInnovation()
+        addressSwitch.tintColor     = .orange_orangeInnovation()
+        addressTextfield.tintColor  = .orange_orangeInnovation()
         
         isAccessibilityElement = false
         shouldGroupAccessibilityChildren = true

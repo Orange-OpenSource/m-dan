@@ -43,8 +43,6 @@ class ElementStateSelectionListViewController: UIViewController, UITableViewDele
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        nonAccessibleTableView.backgroundColor  = UIColor.orange_whiteColor()
-        accessibleTableView.backgroundColor     = UIColor.orange_grayForWhiteBG()
         
         accessibleHeaderLabel.text      = "common_accessibleExample".localized
         accessibleHeaderLabel.accessibilityTraits = UIAccessibilityTraits.header
@@ -52,6 +50,7 @@ class ElementStateSelectionListViewController: UIViewController, UITableViewDele
         nonAccessibleHeaderLabel.accessibilityTraits = UIAccessibilityTraits.header
         
         shortDescriptionHeaderLabel.text    = "example_elementState_selectionList_shortDescription".localized
+        shortDescriptionHeaderLabel.textColor = UIColor.label
         shortDescriptionHeaderLabel.accessibilityTraits = UIAccessibilityTraits.header
         descriptionLabel.text               = "example_elementState_selectionList_description".localized
         
@@ -123,6 +122,7 @@ class ElementStateSelectionListViewController: UIViewController, UITableViewDele
         if(tableView == accessibleTableView) {
             if((indexPath as NSIndexPath).row == accessibleSelectedRow) {
                 personCell.accessoryType = .checkmark
+                personCell.tintColor = UIColor.orange_orangeInnovation()
             }
             else {
                 personCell.accessoryType = .none

@@ -1,3 +1,23 @@
+:root {
+  color-scheme: light dark;
+  --title-color: #e67e30;
+  --subhead-color: green;
+  --link-color: blue;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --title-color: #EF7900;
+    --subhead-color: #80ff80;
+    --link-color: #0090FF;
+  }
+}
+
+body {
+    font: -apple-system-body;
+    margin: 0;
+}
+
 .pie {
   position: relative;
   width: 200px;
@@ -31,6 +51,7 @@
   z-index: 2;
   border-radius: 50%;
   background-color: #fff;
+  color: black;
   padding-top: 25%;
 }
 

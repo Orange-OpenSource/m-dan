@@ -13,18 +13,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                
-        <style type="text/css">
-            html {
-                font: -apple-system-body;
-            }
-            body{
-                font-family: '-apple-system', 'HelveticaNeue';
-            }
-            .italic{
-                font-style: italic;
-            }
-        </style>
+            <link rel="stylesheet" href="developer_style.css">
     </head>
     <body>
         <p>Redefining the VoiceOver reading order is done using the <span class="italic">UIAccessibilityContainer</span> protocol. The idea is to have a table of elements that defines the reading order of the elements. It is often very useful to use the <span class="italic">shouldGroupAccessibilityElement</span> attribute so we have a precise order but for a part if the view only (the rest of the view will be read using the 'logical' order).

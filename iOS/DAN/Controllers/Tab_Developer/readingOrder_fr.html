@@ -13,18 +13,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                
-        <style type="text/css">
-            html {
-                font: -apple-system-body;
-            }
-            body{
-                font-family: '-apple-system', 'HelveticaNeue';
-            }
-            .italic{
-                font-style: italic;
-            }
-        </style>
+            <link rel="stylesheet" href="developer_style.css">
     </head>
     <body>
         <p>Redéfinir l’ordre de lecture VoiceOver s’effectue en respectant le protocole <span class="italic" lang="en">UIAccessibilityContainer</span> . L’idée est d’avoir un tableau des éléments de la vue qui définit l’ordre de lecture des éléments. Il est bien souvent nécessaire d’utiliser l’attribut <span class="italic" lang="en">shouldGroupAccessibilityElement</span> afin d’avoir un ordre précis mais pour une partie seulement de la vue (le reste étant l’ordre naturel de lecture).
