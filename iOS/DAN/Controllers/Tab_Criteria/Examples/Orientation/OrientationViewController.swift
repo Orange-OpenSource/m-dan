@@ -31,8 +31,6 @@ class OrientationViewController: DefaultTableViewController {
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displayVoiceOverMessage(_:)))
     }
     
     override func didReceiveMemoryWarning() {

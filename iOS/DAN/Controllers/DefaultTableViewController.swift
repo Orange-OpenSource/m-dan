@@ -43,6 +43,7 @@ class DefaultTableViewController: UITableViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         setUpNavigationBar()
+        setUpTabBar()
     }
     
     func setupLargeTitleAutoAdjustFont() {
@@ -75,7 +76,8 @@ class DefaultTableViewController: UITableViewController {
         self.tableView.reloadData()
         
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.barTintColor = UIColor.white
+        navigationController?.navigationBar.barTintColor = UIColor.systemBackground
+        navigationController?.navigationBar.tintColor = UIColor.orange_orangeInnovation()
         
         DispatchQueue.main.async { [weak self] in
             self?.navigationController?.navigationBar.sizeToFit()
@@ -90,8 +92,11 @@ class DefaultTableViewController: UITableViewController {
                  }
              }
         }
-        
-        self.navigationController?.navigationBar.tintColor = UIColor.orange_orangeForBlackText()
+    }
+    
+    func setUpTabBar() {
+        self.tabBarController?.tabBar.tintColor = UIColor.orange_orangeInnovation()
+        self.tabBarController?.tabBar.barTintColor = UIColor.orange_orangeInnovation()
     }
     
     internal func reloadTransaction(){
@@ -124,6 +129,7 @@ class DefaultTableViewController: UITableViewController {
         
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
+        
         if(sectionHeaders[section] == "common_accessibleExample"
             || sectionHeaders[section] == "common_notAccessibleExample"
             || sectionHeaders[section] == "common_accessibleCustomExample"
@@ -132,18 +138,17 @@ class DefaultTableViewController: UITableViewController {
         }
         else {
             let header: UITableViewHeaderFooterView     = view as! UITableViewHeaderFooterView
-            header.contentView.backgroundColor          = .orange_greyBgColor()
-            header.textLabel?.textColor                 = .orange_blackColor()
-            header.layer.borderWidth = 1
-            header.layer.borderColor = UIColor.orange_functionalGrey6().cgColor
+            header.contentView.backgroundColor          = UIColor.systemGray5
+            header.textLabel?.textColor                 = UIColor.label
             header.textLabel?.numberOfLines = 0
             header.sizeToFit()
             header.textLabel?.sizeToFit()
             header.textLabel?.lineBreakMode = .byWordWrapping
+            
             self.tableView.sectionHeaderHeight = UITableView.automaticDimension
         }
-
     }
+    
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
@@ -161,11 +166,11 @@ class DefaultTableViewController: UITableViewController {
             }
             else {
                 defaultHeaderViewCell.headerImageView.image = UIImage(named: "icon_bad")
-                defaultHeaderViewCell.headerImageView.tintColor = .orange_red()
+                defaultHeaderViewCell.headerImageView.tintColor = .systemRed
                 defaultHeaderViewCell.headerLabel.text      = sectionHeaders[section].localized
             }
             
-            defaultHeaderViewCell.contentView.backgroundColor = .orange_greyBgColor()
+            defaultHeaderViewCell.contentView.backgroundColor = .systemGray5
             defaultHeaderViewCell.accessibilityTraits = UIAccessibilityTraits.header
             
             // Using a view container to fix a bug when using a tableViewCell as header
@@ -193,8 +198,6 @@ class DefaultTableViewController: UITableViewController {
         alert.addAction(UIAlertAction(title: "common_ok".localized, style: .default, handler: nil))
         
         self.present(alert, animated: true, completion: nil)
-        
-        alert.view.tintColor = .orange_orangeForWhiteBG()
     }
 }
 

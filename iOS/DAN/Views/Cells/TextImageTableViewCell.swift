@@ -28,8 +28,10 @@ class TextImageTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
+        mailImageView.image                = (UIImage(named: "service_email")?.withRenderingMode(.alwaysTemplate))!
+        mailImageView.tintColor = .label
         badgeLabel.layer.cornerRadius = 10
+        badgeLabel.backgroundColor = UIColor.orange_orangeInnovation()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

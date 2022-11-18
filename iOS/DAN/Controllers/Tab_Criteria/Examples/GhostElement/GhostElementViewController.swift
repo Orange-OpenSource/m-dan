@@ -37,6 +37,8 @@ class GhostElementViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        speedDescriptionHeaderLabel.textColor = UIColor.label
+        speedDescriptionHeaderLabel.backgroundColor = UIColor.systemGray5
         speedDescriptionHeaderLabel.text    = "common_description".localized
         nonAccessibleHeaderLabel.text       = "common_notAccessibleExample".localized
         accessibleHeaderLabel.text          = "common_accessibleExample".localized
@@ -44,18 +46,18 @@ class GhostElementViewController: UIViewController {
         customAlertLabel.text               = "example_ghostElement_alert_nonAccessibleAlerteTitle".localized
 
         nonAccesibleButton.setTitle("example_ghostElement_alert_buttonText".localized, for: UIControl.State())
-        nonAccesibleButton.backgroundColor = UIColor.orange_orangeForWhiteText()
+        nonAccesibleButton.backgroundColor = UIColor.orange_orangeInnovation()
         accessibleButton.setTitle("example_ghostElement_alert_buttonText".localized, for: UIControl.State())
-        accessibleButton.backgroundColor = UIColor.orange_orangeForWhiteText()
+        accessibleButton.backgroundColor = UIColor.orange_orangeInnovation()
         customAlertButton.setTitle("common_ok".localized, for: UIControl.State())
-        customAlertButton.backgroundColor = UIColor.orange_orangeForWhiteText()
+        customAlertButton.backgroundColor = UIColor.orange_orangeInnovation()
 
         
         nonAccesibleButton.layer.cornerRadius   = 5
         accessibleButton.layer.cornerRadius     = 5
         popUpContainerView.layer.cornerRadius   = 5
         
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .systemBackground
         
         self.navigationItem.rightBarButtonItem = .infosButton(self, action: #selector(displayVoiceOverMessage(_:)))
     }

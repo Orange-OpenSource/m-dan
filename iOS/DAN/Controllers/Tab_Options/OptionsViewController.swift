@@ -109,11 +109,7 @@ class OptionsViewController: DefaultTableViewController {
         
         let cell:UITableViewCell                        = sender as! UITableViewCell
         let row                                         = ((tableView.indexPath(for: cell) as NSIndexPath?)?.row)!
-        //let optionNumber                                = row+1
-        //let optionsCount                                = tableView.dataSource?.tableView(tableView, numberOfRowsInSection: (tableView.indexPathForCell(cell)?.section)!)
         let destinationVC: DefaultTableViewController   = segue.destination as! DefaultTableViewController
-        
-        //destinationVC.title = "common_option".localized + " \(optionNumber)/\(optionsCount!)"
         destinationVC.title = cellsContent[1][row].localized
 
         destinationVC.cellsContent = [

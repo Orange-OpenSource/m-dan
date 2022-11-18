@@ -39,10 +39,10 @@ extension UIColor {
     
     
     // MARK: - Black
-    class func orange_blackColor()          -> UIColor { return UIColor.colorWithHex(0x000000) }
+    class func orange_blackColor()          -> UIColor { return UIColor.black }
     
     // MARK: - White
-    class func orange_whiteColor()          -> UIColor { return UIColor.colorWithHex(0xFFFFFF) }
+    class func orange_whiteColor()          -> UIColor { return UIColor.white }
     
     // MARK: - Grey background header
     class func orange_greyBgColor()          -> UIColor { return UIColor.colorWithHex(0xF2F2F2) }
@@ -53,8 +53,8 @@ extension UIColor {
     
     // MARK: - Orange
     // MARK: Background
-    class func orange_orangeForBlackText()  -> UIColor { return UIColor(hexaString: "#0075F6") }
-    class func orange_orangeForWhiteText()  -> UIColor { return UIColor(hexaString: "#0054AE") }
+    //class func orange_orangeInnovation()  -> UIColor { return UIColor.systemRed }
+    class func orange_orangeInnovation()  -> UIColor { return UIColor(named: "blue_accent")! }
     
     // MARK: Text
     class func orange_orangeForBlackBG()    -> UIColor { return UIColor(hexaString: "#0075F6") }
@@ -66,4 +66,23 @@ extension UIColor {
     class func orange_green()               -> UIColor { return UIColor.colorWithHex(0x4EC924) }
     class func orange_functionalGrey6()     -> UIColor { return UIColor.colorWithHex(0xEEEEEE) }
     class func orange_functionalGrey5()     -> UIColor { return UIColor.colorWithHex(0xCCCCCC) }
+}
+
+extension UIColor {
+    static func getColor(darkColor: UIColor, lightColor: UIColor) -> UIColor {
+        if #available(iOS 13, *) {
+            return UIColor { traitCollection  in
+                return traitCollection.userInterfaceStyle == .dark ?
+                    darkColor :
+                    lightColor
+            }
+        }
+        
+        return darkColor
+    }
+    
+    // Usage
+    static var myAdaptiveColor: UIColor {
+        return getColor(darkColor: .black, lightColor: .white)
+    }
 }

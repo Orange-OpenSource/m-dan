@@ -86,19 +86,19 @@ class ColorInfoViewController: DefaultTableViewController {
                 switch serviceIndexRow {
                     
                 case 0:
-                    serviceImage                = UIImage(named: "service_email")!
+                    serviceImage                = (UIImage(named: "service_email")?.withRenderingMode(.alwaysTemplate))!
                     statusImage                 = UIImage(named: "status_on")!
                     accessibilityLabelStatus    = "example_color_info_AL_active".localized
                 case 1:
-                    serviceImage                = UIImage(named: "service_audio")!
+                    serviceImage                = (UIImage(named: "service_audio")?.withRenderingMode(.alwaysTemplate))!
                     statusImage                 = (indexPath as NSIndexPath).section == accessibleSection ? UIImage(named: "status_error")! : UIImage(named: "status_error_circle")!
                     accessibilityLabelStatus    = "example_color_info_AL_error".localized
                 case 2:
-                    serviceImage                = UIImage(named: "service_video")!
+                    serviceImage                = (UIImage(named: "service_video")?.withRenderingMode(.alwaysTemplate))!
                     statusImage                 = (indexPath as NSIndexPath).section == accessibleSection ? UIImage(named: "status_off")! : UIImage(named: "status_off_circle")!
                     accessibilityLabelStatus    = "example_color_info_AL_inactive".localized
                 case 3:
-                    serviceImage                = UIImage(named: "service_browser")!
+                    serviceImage                = (UIImage(named: "service_browser")?.withRenderingMode(.alwaysTemplate))!
                     statusImage                 = (indexPath as NSIndexPath).section == accessibleSection ? UIImage(named: "status_error")! : UIImage(named: "status_error_circle")!
                     accessibilityLabelStatus    = "example_color_info_AL_error".localized
                 default:
@@ -112,6 +112,8 @@ class ColorInfoViewController: DefaultTableViewController {
                 serviceInfoCell.serviceTitleLabel.text                      = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
                 serviceInfoCell.serviceImage.image                          = serviceImage
                 serviceInfoCell.serviceStatusImage.image                    = statusImage
+                serviceInfoCell.serviceImage.tintColor = .label
+                serviceInfoCell.serviceStatusImage.tintColor = .label
                 serviceInfoCell.serviceStatusImage.isAccessibilityElement   = (indexPath as NSIndexPath).section == accessibleSection
                 serviceInfoCell.serviceStatusImage.accessibilityLabel       = "example_color_info_AL_service".localized + " " + cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized + " " + accessibilityLabelStatus
                 

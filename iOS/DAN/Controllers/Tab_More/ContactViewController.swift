@@ -32,9 +32,9 @@ class ContactViewController: UIViewController {
         
         title = "contact_title".localized
         
-        webSiteButton.setTitleColor(UIColor.orange_orangeForWhiteBG(), for: .normal)
-        supportButton.setTitleColor(UIColor.orange_orangeForWhiteBG(), for: .normal)
-        mailButton.setTitleColor(UIColor.orange_orangeForWhiteBG(), for: .normal)
+        webSiteButton.setTitleColor(UIColor.orange_orangeInnovation(), for: .normal)
+        supportButton.setTitleColor(UIColor.orange_orangeInnovation(), for: .normal)
+        mailButton.setTitleColor(UIColor.orange_orangeInnovation(), for: .normal)
         
         webSiteButton.setTitle("contact_webSite".localized, for: .normal)
         supportButton.setTitle("contact_support".localized, for: .normal)
