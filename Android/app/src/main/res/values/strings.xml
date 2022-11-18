@@ -20,7 +20,7 @@
     <string name="navigation_return">Retourner à la page précédente</string>
     <string name="navigation_home">Retourner à la page d\'accueil</string>
     <string name="section_home">Accueil</string>
-    <string name="section_criteria">Guide d\'accessibilité Android</string>
+    <string name="section_criteria">Critères d\'accessibilité Android</string>
     <string name="section_dev">Guide pour les développeurs</string>
     <string name="section_test">Guide testeur</string>
     <string name="section_talkback">Talkback</string>
@@ -109,6 +109,7 @@
     <string name="criteria_description_content">Ce guide a pour objectif de présenter les différents critères d\'accessibilité à respecter pour obtenir une application Android accessible. Chaque critère est présenté en expliquant pourquoi il est important et la règle d\'accessibilité qui en découle. Les critères sont explicités par des exemples fonctionnels.</string>
     <string name="criteria_description_content2">Pour la plupart des exemples vous devez avoir au préalable activé Talkback, le lecteur d\'écran d\'Android.</string>
     <string name="criteria_sections">Critères</string>
+    <string name="criteria_sections_title">Critères d\'accessibilité Android</string>
     <string name="criteria_cd_sections">Selectionnez un critère dans la liste ci-dessous</string>
     <string name="criteria_accessible_example">Exemple accessible</string>
     <string name="criteria_accessible_example_more">Exemple accessible ++</string>
@@ -742,7 +743,7 @@ Il est conseiller de commencer par les écrans les plus utilisés.</string>
     <string name="webview_test_title">Webview</string>
 
     <string name="webview_details_button_title">Voir les recommandations web</string>
-
+    <string name="magnification_details_button_title">Activer l\'agrandissement des caractères</string>
 
     <string name="other_test_title">Autres tests</string>
 
@@ -753,7 +754,7 @@ Il est conseiller de commencer par les écrans les plus utilisés.</string>
         -	Vérifier que l\'application fonctionne dans les deux orientations du téléphone.\n\n
         -	Limiter les animations visuelles.</string>
 
-    <string name="magnification_test_description">Activer l\'agrandissement de texte dans les réglages du système:\n\n
+    <string name="magnification_test_description">Activer l\'agrandissement de texte dans les réglages du système :\n\n
     -	Vérifier que tous les textes, icones, éléments graphiques sont visibles sans aucun problème de dépassement ou de superposition.\n\n
     -	Vérifier que les différentes fonctionnalités de l\’application sont utilisables et que le contenu reste visible et clair.
 </string>
@@ -769,7 +770,7 @@ Il est conseiller de commencer par les écrans les plus utilisés.</string>
         </string>
 
     <string name="contrastColor_test_description1">Utiliser Accessibility scanner, application disponible sur le Google Play Store.\n\nCet outil vérifie les contrastes entre les textes et leurs arrière-plans ainsi que les contrastes des composants d\’interface.\n\n
-        Ces tests doivent être réalisés en mode clair et en mode sombre\n\n
+        Ces tests doivent être réalisés en mode clair et en mode sombre.\n\n
         -	Télécharger l\’application et se laisser ensuite guider.</string>
 
         <string name="contrastColor_test_description2">Vous pouvez créer un raccourci sur votre écran principal pour pouvoir activer scanner à tout moment.
@@ -781,7 +782,7 @@ Il est conseiller de commencer par les écrans les plus utilisés.</string>
 
     <string name="multimedia_test_description">
     -	Vérifier que Les contenus multimédias peuvent être contrôlés par l\’utilisateur (présence d\’un bouton pause, bouton mode plein-écran, etc.…)\n\n
-    -	Vérifier que l\’utilisateur peut contrôler tout son émis pour plus de 3 secondes (arrêter ou mettre en pause)\n\n
+    -	Vérifier que l\’utilisateur peut contrôler tout son de plus de 3 secondes (arrêter ou mettre en pause)\n\n
     -	Vérifier qu\’Il n\'y a pas de démarrage automatique de la vidéo au chargement de la page.\n\n
     -	Vérifier que tous les contenus de type audio ou vidéo ont une transcription intégrale textuelle.\n\n
     </string>
@@ -790,7 +791,7 @@ Il est conseiller de commencer par les écrans les plus utilisés.</string>
     </string>
 
 
-    <string name="tb_talback_guide_btn">Voir le guide Talkabck</string>
+    <string name="tb_talback_guide_btn">Voir le guide Talkback</string>
     <string name="tb_scanner_guide_btn">Télécharger Accessibility Scanner</string>
 
 
@@ -840,6 +841,14 @@ Il est conseiller de commencer par les écrans les plus utilisés.</string>
     <string name="bottom_navigation_menu_options">Options</string>
     <string name="bottom_navigation_menu_dev">Développement</string>
     <string name="bottom_navigation_menu_criteria">Critères</string>
+
+
+
+    <!-- Navigation view -->
+    <string name="criteria_section_title">Critères d\'accessibilité Android</string>
+    <string name="options_section_title">Options d\'accessibilité Android</string>
+    <string name="development_section_title">Guide de développement accessible</string>
+    <string name="test_section_title">Tests d\'accessibilité Android</string>
 
 
     <!-- android version -->

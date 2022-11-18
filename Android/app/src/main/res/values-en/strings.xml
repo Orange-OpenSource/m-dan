@@ -105,6 +105,7 @@
     <string name="criteria_description_content">This guide aims to present the different accessibility criteria for getting an accessible Android application. Each criterion explains for whom it is important, when it can be implemented, why it is important and the corresponding accessibility rule. The criteria are explained through real case examples and must be used with TalkBack in order to test the accessibility.</string>
     <string name="criteria_description_content2">For the most part of the examples you must enable TalkBack, the built-in Android screen reader.</string>
     <string name="criteria_sections">Criteria</string>
+    <string name="criteria_sections_title">Accessibility Criteria</string>
     <string name="criteria_cd_sections">Select a criterion from the following list</string>
     <string name="criteria_accessible_example">Accessible example</string>
     <string name="criteria_accessible_example_more">Accessible example ++</string>
@@ -734,56 +735,65 @@
     <string name="webview_test_title">Webviews</string>
 
     <string name="webview_details_button_title">See guidelines web</string>
+    <string name="magnification_details_button_title">Activate Caracters magnification</string>
 
 
 
-    <string name="general_navigation_test_description">-    Vérifier que tous les écrans ont des titres visibles, uniques et pertinents.\n\n-  Vérifier que les textes sont lisibles.\n\n-  Vérifier que les erreurs de clic peuvent être annulees.\n\n-  Vérifier que l\'application fonctionne dans les deux orientations du téléphone.\n\n-  Limiter les animations visuelles.</string>
-    <string name="magnification_test_description">"Activer l'agrandissement de texte dans les réglages du système
 
+    <string name="general_navigation_test_description">
+         - Check that all screens have visible,unique and relevant titles.\n\n
+         - Check that the texts are readable.\n\n
+         - Verify click errors can be undone.\n\n
+         - Check that the application works in both phone orientations (landscape/portrait).\n\n
+         - Limit visual animations.
+</string>
 
-    •	Vérifier que tous les textes, icones, éléments graphiques sont visibles sans aucun problème de dépassement ou de superposition.
+    <string name="magnification_test_description">Use the application by enlarging the font of the phone to 200%.\n\n
+       - Enable text magnification in system settings\n\n
+- Check that all the texts, icons, graphic elements are visible without any overflow or overlapping problem.\n\n
+- Check that the various functionalities of the application are usable and that the content remains visible and clear.\n\n
+</string>
 
-    •	Vérifier que les différentes fonctionnalités de l’application sont utilisables et que le contenu reste visible et clair."
-    </string>
+    <string name="screen_Reader_test_description1">- Enable Talkback..\n\nIf you are unfamiliar with Talkback, use the user guide,to see how to activate it and discover the different navigation gestures.</string>
 
-    <string name="screen_Reader_test_description1">•	 Activer Talkback.\n\nSi vous ne connaissez pas Talkback, utilisez le guide d\’utilisation, pour voir comment l\’activer et découvrir les différentes gestuelles de navigation.</string>
+    <string name="screen_Reader_test_description2">- Check that you can navigate between the different screens and use the different functionalities using only the screen reader.\n\n
+        This tool is used by visually impaired and blind users.\n\n
+        To simulate their situations, it is possible to test with the screen off:\n\n
+Enable Talkback; slide your finger from top to bottom then to the right (writing the capital letter L) to open the talkback menu; navigate to “hide screen”; double-click to activate.
+</string>
+    <string name="keyboard_navigation_test_description">Connect an external keyboard to your phone (bluetooth or wired).\n
+Navigate the application using only the keyboard:\n\n
+-	Check that the focus is visible and follows the logical order\n\n
+-	Check that the functionalities are usable\n\n
+-	Check that there is no keyboard trap (the focus does not remain blocked on a component)\n\n
 
-    <string name="screen_Reader_test_description2">•	Vérifier que l\'on peut naviguer entre les différents écrans et utiliser les différentes fonctionnalités en utilisant uniquement le lecteur d\’écran.\n\nCet outil est utilisé par les utilisateurs malvoyants et non-voyants.\nPour simuler leurs situations, il est possible de tester avec l\’écran éteint :\nActiver Talkback ; glisser votre doigt du haut vers le bas puis vers la droite (en écrivant la lettre L majuscule) pour ouvrir le menu talkback ; naviguer jusqu’à « masquer l’écran » ; cliquez deux fois pour l’activer"</string>
-
-    <string name="keyboard_navigation_test_description">"Connecter un clavier externe à votre téléphone (bluetooth ou filaire)
-
-    Naviguer dans l’application en utilisant seulement le clavier
-
-    •	Vérifier que le focus est visible et suit l'ordre logique
-
-    •	Vérifier que les fonctionnalités sont utilisables
-
-    •	Vérifier qu'il n'y a pas de piège clavier (le focus ne reste pas bloqué sur un composant)"
         </string>
 
-    <string name="contrastColor_test_description1">Utiliser Accessibility scanner, application disponible sur le Google Play Store.\n\nCet outil vérifie les contrastes entre les textes et leurs arrière-plans ainsi que les contrastes des composants d\’interface.\n\nCes tests doivent être réalisés en mode clair et en mode sombre\n\n
-        •	Télécharger l\’application et se laisser ensuite guider.</string>
-
-    <string name="contrastColor_test_description2">Vous pouvez créer un raccourci sur votre écran principal pour pouvoir activer scanner à tout moment.
-        En activant Scanner, un floating button apparait.\n\n•	Se mettre sur l\’écran à tester et cliquer sur ce bouton ; Ce bouton permet de lancer une analyse sur l\’écran de votre choix.
-    \n\n•	Le rapport d’erreurs est immédiatement retranscrit sur cet écran :
+    <string name="contrastColor_test_description1">Use Accessibility scanner, application available on the Google Play Store.\n
+This tool checks the contrasts between texts and their backgrounds as well as the contrasts of graphical components.\n\n
+These tests should be performed in light mode and dark mode.\n\n
+Download the application and then you will be guided.\n
 </string>
-    <string name="contrastColor_test_description3">•	Se mettre sur l\’écran à tester et cliquer sur ce bouton ; Ce bouton permet de lancer une analyse sur l\’écran de votre choix.
-        \n\n•	Le rapport d’erreurs est immédiatement retranscrit sur cet écran :
+
+    <string name="contrastColor_test_description2">You can create a shortcut on your main screen to be able to activate scanner at any time.\n\n
+By activating Scanner, a floating button appears in the screen :\n
+</string>
+
+    <string name="contrastColor_test_description3">- Put yourself on the screen to be tested and click on this button; This button allows you to launch an analysis on the screen of your choice.\n\n
+- The error report is immediately transcribed on this screen:
 </string>
 
     <string name="multimedia_test_description">
-    •	Vérifier que Les contenus multimédias peuvent être contrôlés par l\’utilisateur (présence d\’un bouton pause, bouton mode plein-écran, etc.…)
-    •	Vérifier que l\’utilisateur peut contrôler tout son émis pour plus de 3 secondes (arrêter ou mettre en pause)
-    •	Vérifier qu\’Il n\'y a pas de démarrage automatique de la vidéo au chargement de la page.
-    •	Vérifier que tous les contenus de type audio ou vidéo ont une transcription intégrale textuelle.
+        -	Check that multimedia content can be controlled by the user (pause button, full-screen mode button, etc...).\n\n
+        -	Verify that the user can control any sound longer than 3 seconds (stop or pause).\n\n
+        -	Check that the video does not start automatically when the page loads.\n\n
+        -	Check that all audio or video type content has a full text transcript.\n\n
     </string>
 
     <string name="webview_test_description">
-     Pour tester les webview, il faut tester l\’ensemble des critères d’accessibilité des pages web détaillés dans la rubrique tester.
-    </string>
+To test webviews, you must test all of the web page accessibility criteria detailed in the test section. </string>
 
-    <string name="tb_talback_guide_btn">See guide Talkabck</string>
+    <string name="tb_talback_guide_btn">See Talkabck Guide</string>
     <string name="tb_scanner_guide_btn">Download Accessibility Scanner</string>
 
     <!-- accessibility & Orange view -->
@@ -824,6 +834,11 @@
     <string name="bottom_navigation_menu_options">Options</string>
     <string name="bottom_navigation_menu_dev">Development</string>
     <string name="bottom_navigation_menu_criteria">Criteria</string>
+
+    <string name="criteria_section_title">Accessibility Criteria</string>
+    <string name="options_section_title">Accessibility Options</string>
+    <string name="development_section_title">Accessible Development Guide</string>
+    <string name="test_section_title">Accessibility Tests</string>
 
     <!-- android version -->
     <string name="required_version">Non disponible (Android API %1$d requis)</string>

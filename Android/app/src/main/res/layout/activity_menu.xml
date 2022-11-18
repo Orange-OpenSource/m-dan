@@ -29,9 +29,9 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:elevation="4dp"
-        android:touchscreenBlocksFocus="false"
         android:theme="@style/ToolBar.style"
-        app:popupTheme="@style/ToolBar.popup"/>
+        android:touchscreenBlocksFocus="false"
+        app:popupTheme="@style/ToolBar.popup" />
 
     <androidx.fragment.app.FragmentContainerView
         xmlns:android="http://schemas.android.com/apk/res/android"

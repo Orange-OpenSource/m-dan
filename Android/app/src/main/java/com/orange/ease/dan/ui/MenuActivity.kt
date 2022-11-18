@@ -87,10 +87,22 @@ class MenuActivity : DialogActivity() {
 
     private fun updateMainFragment(integer: Int): Boolean {
         when (integer) {
-            R.id.action_criteria -> initCriteriaFragment()
-            R.id.action_development -> initDevelopmentFragment()
-            R.id.action_options -> initOptionFragment()
-            R.id.action_Test -> initTestFragment()
+            R.id.action_criteria -> {
+                initCriteriaFragment()
+                binding.myToolbar.title = getString(R.string.criteria_section_title)
+            }
+            R.id.action_development -> {
+                initDevelopmentFragment()
+                binding.myToolbar.title = getString(R.string.development_section_title)
+            }
+            R.id.action_options -> {
+                initOptionFragment()
+                binding.myToolbar.title = getString(R.string.options_section_title
+                )
+            }
+            R.id.action_Test -> {
+                initTestFragment()
+                binding.myToolbar.title = getString(R.string.test_section_title)}
         }
         return true
     }

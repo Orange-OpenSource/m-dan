@@ -22,6 +22,7 @@ package com.orange.ease.dan.ui.test
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.provider.Settings
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
@@ -29,13 +30,16 @@ import com.orange.ease.dan.R
 import com.orange.ease.dan.data.repository.TestGuideRepository
 import com.orange.ease.dan.databinding.DetailsDevGuideActivityBinding
 import com.orange.ease.dan.model.TestGuide
+import com.orange.ease.dan.navigation.DialogActivity
 import com.orange.ease.dan.viewmodel.TestGuideDetailsViewModel
 
-class DetailsTestActivity : AppCompatActivity() {
+class DetailsTestActivity : DialogActivity() {
 
     private lateinit var binding: DetailsDevGuideActivityBinding
 
     private lateinit var viewModel: TestGuideDetailsViewModel
+
+   private var optionsDetails : Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -68,6 +72,7 @@ class DetailsTestActivity : AppCompatActivity() {
         if (link!=null) {
             binding.buttonDetailsWebview.visibility = View.VISIBLE
             binding.buttonDetailsWebview.setText(guide.resLink)
+            optionsDetails = guide.option!!
         }
 
     }
@@ -79,13 +84,23 @@ class DetailsTestActivity : AppCompatActivity() {
     }
 
     fun seeWebviewDetails(view: View) {
-        startTuto()
+        if (optionsDetails) startActivitySettings()
+        else startTuto()
     }
 
     private fun startTuto() {
         val openTutoActivity = Intent(Intent.ACTION_VIEW, Uri.parse("https://a11y-guidelines.orange.com/fr/web/"))
         startActivity(openTutoActivity)
         overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out)
+    }
+
+    private fun startActivitySettings() {
+
+        val startActivitySettings: () -> Unit = {
+            startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
+        }
+        initAlertDialogStartActivity(startActivitySettings)
+        //true
     }
 }
 

@@ -33,18 +33,18 @@
             style="@style/TextViewStandard.Title.Level2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="45dp"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:padding="@dimen/large_margin"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
             android:background="@drawable/border"
             android:gravity="center_vertical"
+            android:minHeight="45dp"
+            android:padding="@dimen/large_margin"
             android:screenReaderFocusable="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@color/core_black"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textViewDescriptionExample"

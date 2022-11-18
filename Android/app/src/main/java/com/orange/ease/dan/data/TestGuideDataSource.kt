@@ -30,12 +30,14 @@ object TestGuideDataSource {
         resTitle = R.string.general_navigation_test_title,
         resDescription = R.string.general_navigation_test_description,
         resLink = null,
+        option = false
     )
 
     private val textMagnification = TestGuide(
         resTitle = R.string.magnification_test_title,
         resDescription = R.string.magnification_test_description,
-        resLink= null,
+        resLink= R.string.magnification_details_button_title,
+        option = true
     )
 
     private val screenReader = TestTalkbackGuide(
@@ -48,7 +50,8 @@ object TestGuideDataSource {
     private val keyboardNavigation = TestGuide(
         resTitle = R.string.keyboard_navigation_test_title,
         resDescription = R.string.keyboard_navigation_test_description,
-        resLink= null
+        resLink= null,
+        option = false
     )
 
     private val colorContrast = TestColorContrastGuide(
@@ -64,6 +67,7 @@ object TestGuideDataSource {
         resTitle = R.string.multimedia_test_title,
         resDescription = R.string.multimedia_test_description,
         resLink = null,
+        option = false
     )
 
 
@@ -71,6 +75,7 @@ object TestGuideDataSource {
         resTitle = R.string.webview_test_title,
         resDescription = R.string.webview_test_description,
         resLink = R.string.webview_details_button_title,
+        option = false
     )
 
 
