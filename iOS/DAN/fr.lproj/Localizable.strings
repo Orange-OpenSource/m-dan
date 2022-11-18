@@ -36,6 +36,7 @@
 "common_guideButton"                = "Guide utilisateur";
 "common_alertVoiceOverTitle"        = "Information";
 "common_alertVoiceOver"             = "Afin de mieux comprendre l'exemple, nous vous conseillons d'activer VoiceOver.\n\nRéglages > Général > Accessibilité > VoiceOver";
+"common_site_recommandation"        = "Site de recommandation Orange";
 
 // ----------------
 // Home
@@ -580,7 +581,9 @@
 // Testings situation
 "testings_option_generalNavigation"     = "Navigation générale";
 "testings_option_fontEnlargement"       = "Agrandissement de texte";
+"testings_option_fontEnlargement_truncate" = "Agrandissement";
 "testings_option_screenReader"          = "Lecteur d'écran voice over";
+"testings_option_screenReader_truncate" = "Lecteur d'écran";
 "testings_option_selectionControl"      = "Contrôle de sélection";
 
 // Testings another
@@ -602,7 +605,7 @@
 // --------------------------
 // Testings - Screen Reader
 // --------------------------
-"testing_screenReader_check"         = "Activer Voice Over. Si vous ne connaissez pas VoiceOver, utilisez le guide d'utilisation (bouton vers le guide en haut à droite) \n\n- Vérifier que l'on peut naviguer entre les différents écrans et utiliser les différentes fonctionnalités en utilisant uniquement le lecteur d’écran \n\nPour être sûr de tester correctement, il est possible d'éteindre l'écran en passant son écran en mode 'rideau'.";
+"testing_screenReader_check"         = "Activer Voice Over. Si vous ne connaissez pas VoiceOver, utilisez le guide d'utilisation (bouton vers le guide en haut à droite) \n\n- Vérifier que l'on peut naviguer entre les différents écrans et utiliser les différentes fonctionnalités en utilisant uniquement le lecteur d’écran \n\nPour être sûr de tester correctement, il est possible d'éteindre l'écran en passant son écran en mode 'rideau' : \n Activer Voice Over ; triple clique pour l'activer";
 
 // --------------------------
 // Testings - Selection Control

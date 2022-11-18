@@ -29,8 +29,9 @@ class OtherApplicationViewController: UIViewController, WKNavigationDelegate, WK
         super.viewDidLoad()
 
         title = "other_application_nav_title".localized
-        
-        let url = URL(string: "https://www.primezone.orange-labs.com/index?hl=fr")
+        let language = Bundle.main.preferredLocalizations.first! as NSString
+        let urlLocalized = "https://innovationfactory.orange.com/index?hl=" + (language as String)
+        let url = URL(string: urlLocalized)
         let requestObj = URLRequest(url: url! as URL)
         webView.load(requestObj)
         webView.navigationDelegate = self

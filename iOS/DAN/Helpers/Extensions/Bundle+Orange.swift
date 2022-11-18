@@ -17,14 +17,24 @@
  * under the License.
  */
 
-import UIKit
+import Foundation
 
-extension UIWindow {
-    static var key: UIWindow? {
-        if #available(iOS 13, *) {
-            return UIApplication.shared.windows.first { $0.isKeyWindow }
-        } else {
-            return UIApplication.shared.keyWindow
-        }
+extension Bundle {
+
+    var appName: String {
+        return infoDictionary?["CFBundleName"] as! String
     }
+
+    var bundleId: String {
+        return bundleIdentifier!
+    }
+
+    var versionNumber: String {
+        return infoDictionary?["CFBundleShortVersionString"] as! String
+    }
+
+    var buildNumber: String {
+        return infoDictionary?["CFBundleVersion"] as! String
+    }
+
 }

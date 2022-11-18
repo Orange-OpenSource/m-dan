@@ -110,6 +110,7 @@
 		6D9F6EC828F8510F00328FB3 /* CGU_fr.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D9F6EC028F8510E00328FB3 /* CGU_fr.html */; };
 		6D9F6ECB28F857B600328FB3 /* TestingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9F6ECA28F857B500328FB3 /* TestingsViewController.swift */; };
 		6DFB1F94292401F800A1BF4B /* UIViewController+Orange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFB1F93292401F800A1BF4B /* UIViewController+Orange.swift */; };
+		6DFB1F9629266BB200A1BF4B /* Bundle+Orange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFB1F9529266BB200A1BF4B /* Bundle+Orange.swift */; };
 		6DFE951A291A9C9000098C00 /* TestingWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFE9519291A9C9000098C00 /* TestingWebViewViewController.swift */; };
 		6DFE951C291A9CAD00098C00 /* TestingWebViewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DFE951B291A9CAD00098C00 /* TestingWebViewViewController.storyboard */; };
 		6DFE951F291D598500098C00 /* developer_style.css in Resources */ = {isa = PBXBuildFile; fileRef = 6DFE951E291D598500098C00 /* developer_style.css */; };
@@ -290,6 +291,7 @@
 		6D9F6EC028F8510E00328FB3 /* CGU_fr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CGU_fr.html; sourceTree = "<group>"; };
 		6D9F6ECA28F857B500328FB3 /* TestingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingsViewController.swift; sourceTree = "<group>"; };
 		6DFB1F93292401F800A1BF4B /* UIViewController+Orange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Orange.swift"; sourceTree = "<group>"; };
+		6DFB1F9529266BB200A1BF4B /* Bundle+Orange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Orange.swift"; sourceTree = "<group>"; };
 		6DFE9519291A9C9000098C00 /* TestingWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingWebViewViewController.swift; sourceTree = "<group>"; };
 		6DFE951B291A9CAD00098C00 /* TestingWebViewViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestingWebViewViewController.storyboard; sourceTree = "<group>"; };
 		6DFE951E291D598500098C00 /* developer_style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = developer_style.css; sourceTree = "<group>"; };
@@ -818,6 +820,7 @@
 				446C9083239AAA3E00C4BEBB /* UIBarButtonItem+Orange.swift */,
 				6D23CC242733EAF000246A48 /* UIWindow+Orange.swift */,
 				6DFB1F93292401F800A1BF4B /* UIViewController+Orange.swift */,
+				6DFB1F9529266BB200A1BF4B /* Bundle+Orange.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1040,6 +1043,7 @@
 				6D04286F27D11963007AC365 /* TabTableViewCell.swift in Sources */,
 				6D23CC252733EAF000246A48 /* UIWindow+Orange.swift in Sources */,
 				6D80632F291686E3009F2F28 /* TestingSelectionControlViewController.swift in Sources */,
+				6DFB1F9629266BB200A1BF4B /* Bundle+Orange.swift in Sources */,
 				F48BA22F1C16E69F00FC39B2 /* PageTitleViewController.swift in Sources */,
 				6D04282B27D10FF7007AC365 /* LegalNoticeViewController.swift in Sources */,
 				F40CD21A1C1F207C00546018 /* CarouselViewController.swift in Sources */,
@@ -1213,12 +1217,12 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = B9YP84K776;
 				INFOPLIST_FILE = DAN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.orange.labs.mdan;
 				PRODUCT_NAME = mDAN;
 				PROVISIONING_PROFILE = "";
@@ -1235,12 +1239,12 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = B9YP84K776;
 				INFOPLIST_FILE = DAN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.orange.labs.mdan;
 				PRODUCT_NAME = mDAN;
 				PROVISIONING_PROFILE = "";

@@ -335,34 +335,34 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EASE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3i9-PX-5Tj">
                                                 <rect key="frame" x="180.66666666666666" y="104" width="67" height="33.666666666666657"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smR-oJ-0gV">
-                                                <rect key="frame" x="35" y="151" width="69" height="33"/>
+                                                <rect key="frame" x="35" y="151.33333333333334" width="69" height="33"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <state key="normal" title="Site_web">
-                                                    <color key="titleColor" red="0.1333333333" green="0.32549019610000002" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="titleColor" name="blue_accent"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="webSiteButtonPressed:" destination="FJg-fd-f6z" eventType="touchUpInside" id="0KR-kN-da4"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="od9-ob-476">
-                                                <rect key="frame" x="35" y="192" width="170" height="39"/>
+                                                <rect key="frame" x="35" y="184.33333333333334" width="170" height="39"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="39" id="LVQ-at-Ayp"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <state key="normal" title="Demande_de_support">
-                                                    <color key="titleColor" red="0.1333333333" green="0.32549019610000002" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="titleColor" name="blue_accent"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="supportButtonPressed:" destination="FJg-fd-f6z" eventType="touchUpInside" id="Njk-fR-OWF"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contacter_l'équipe :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uka-ng-p8h">
-                                                <rect key="frame" x="35" y="238" width="154" height="20.666666666666686"/>
+                                                <rect key="frame" x="35" y="243.33333333333331" width="154" height="20.666666666666686"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -370,7 +370,7 @@
                                                     <constraint firstAttribute="height" constant="20.666666666666686" id="dtA-bO-KP9"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJn-0u-6GE">
@@ -380,22 +380,22 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <state key="normal" title="accessibility.support@orange.com">
-                                                    <color key="titleColor" red="0.1333333333" green="0.32549019610000002" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="titleColor" name="blue_accent"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="contactButtonPressed:" destination="FJg-fd-f6z" eventType="touchUpInside" id="eFi-ls-dE2"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="GPW-v8-4mQ" firstAttribute="centerX" secondItem="eih-T7-sBB" secondAttribute="centerX" id="4LG-34-eYQ"/>
                                             <constraint firstItem="3i9-PX-5Tj" firstAttribute="top" secondItem="GPW-v8-4mQ" secondAttribute="bottom" constant="22" id="DEt-BD-vyY"/>
                                             <constraint firstItem="GPW-v8-4mQ" firstAttribute="centerX" secondItem="3i9-PX-5Tj" secondAttribute="centerX" id="DhJ-YB-Vec"/>
-                                            <constraint firstItem="JJn-0u-6GE" firstAttribute="top" secondItem="uka-ng-p8h" secondAttribute="bottom" constant="7.3333333333333144" id="HDP-18-XE5"/>
+                                            <constraint firstItem="JJn-0u-6GE" firstAttribute="top" secondItem="uka-ng-p8h" secondAttribute="bottom" constant="2" id="HDP-18-XE5"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uka-ng-p8h" secondAttribute="trailing" constant="20" symbolic="YES" id="MdD-DG-mfq"/>
                                             <constraint firstItem="smR-oJ-0gV" firstAttribute="leading" secondItem="eih-T7-sBB" secondAttribute="leading" constant="35" id="NQ8-c0-j6N"/>
-                                            <constraint firstItem="uka-ng-p8h" firstAttribute="top" secondItem="od9-ob-476" secondAttribute="bottom" constant="7" id="T4A-Rz-6qO"/>
+                                            <constraint firstItem="uka-ng-p8h" firstAttribute="top" secondItem="od9-ob-476" secondAttribute="bottom" constant="20" id="T4A-Rz-6qO"/>
                                             <constraint firstItem="od9-ob-476" firstAttribute="leading" secondItem="uka-ng-p8h" secondAttribute="leading" id="YpK-O5-Vrb"/>
                                             <constraint firstItem="smR-oJ-0gV" firstAttribute="leading" secondItem="od9-ob-476" secondAttribute="leading" id="dI6-GK-Gsh"/>
                                             <constraint firstItem="uka-ng-p8h" firstAttribute="leading" secondItem="JJn-0u-6GE" secondAttribute="leading" id="f5c-OL-cSf"/>
@@ -404,12 +404,12 @@
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JJn-0u-6GE" secondAttribute="trailing" constant="20" symbolic="YES" id="nQ5-MJ-myj"/>
                                             <constraint firstItem="GPW-v8-4mQ" firstAttribute="top" secondItem="eih-T7-sBB" secondAttribute="top" constant="20" id="sei-QP-5hg"/>
                                             <constraint firstAttribute="bottom" secondItem="JJn-0u-6GE" secondAttribute="bottom" constant="21" id="t5O-8L-leU"/>
-                                            <constraint firstItem="od9-ob-476" firstAttribute="top" secondItem="smR-oJ-0gV" secondAttribute="bottom" constant="8" symbolic="YES" id="vGM-tD-XhG"/>
+                                            <constraint firstItem="od9-ob-476" firstAttribute="top" secondItem="smR-oJ-0gV" secondAttribute="bottom" id="vGM-tD-XhG"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="od9-ob-476" secondAttribute="trailing" constant="20" symbolic="YES" id="zOM-0G-Ozb"/>
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="eih-T7-sBB" firstAttribute="top" secondItem="MjT-54-YWX" secondAttribute="top" constant="44" id="4Cl-j5-tdf"/>
                                     <constraint firstItem="eih-T7-sBB" firstAttribute="leading" secondItem="MjT-54-YWX" secondAttribute="leading" id="MM7-aF-H33"/>
@@ -419,7 +419,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="MjT-54-YWX" firstAttribute="bottom" secondItem="Mc3-Lv-zMk" secondAttribute="top" id="6dK-a0-Dkc"/>
                             <constraint firstItem="MjT-54-YWX" firstAttribute="top" secondItem="NFh-cR-CEk" secondAttribute="top" id="X24-8t-rNU"/>
@@ -1440,7 +1440,7 @@
         <image name="settings" width="25" height="25"/>
         <image name="task_list" width="25" height="25"/>
         <namedColor name="blue_accent">
-            <color red="0.212158978" green="0.44972765450000002" blue="0.84317773579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.21199999749660492" green="0.44999998807907104" blue="0.84299999475479126" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

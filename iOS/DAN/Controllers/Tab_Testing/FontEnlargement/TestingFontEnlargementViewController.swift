@@ -30,7 +30,7 @@ class TestingFontEnlargementViewController: EmptyTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "testings_option_fontEnlargement".localized
+        self.title = "testings_option_fontEnlargement_truncate".localized
         
         self.navigationItem.rightBarButtonItem = .guideButton(self, action: #selector(displayFontEnlargementMessage(_:)))
          

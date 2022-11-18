@@ -30,7 +30,7 @@ class TestingScreenReaderViewController: EmptyTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "testings_option_screenReader".localized
+        self.title = "testings_option_screenReader_truncate".localized
         
         self.navigationItem.rightBarButtonItem = .guideButton(self, action: #selector(displayVoiceOverMessage(_:)))
          

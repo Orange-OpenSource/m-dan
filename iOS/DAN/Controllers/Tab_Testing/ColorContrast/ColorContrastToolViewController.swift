@@ -99,7 +99,6 @@ class TestingImageInfoTableViewCell: UITableViewCell {
         buttonView.accessibilityHint = "example_image_info_accessibilityHint".localized
         buttonView.accessibilityTraits = UIAccessibilityTraits.button
         buttonView.setImage(UIImage(named: "ColorContrastOK"), for: .normal)
-        
     }
     
 }

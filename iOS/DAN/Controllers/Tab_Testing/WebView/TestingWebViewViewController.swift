@@ -47,7 +47,7 @@ class TestingWebViewViewController: DefaultTableViewController {
         
         sectionHeaders = [
             "common_description",
-            "common_example"
+            "common_site_recommandation"
         ]
         
         cellsContent = [

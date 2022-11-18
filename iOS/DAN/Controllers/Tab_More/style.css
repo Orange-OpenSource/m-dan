@@ -1,7 +1,20 @@
+:root {
+  color-scheme: light dark;
+  --title-color: #e67e30;
+  --subhead-color: green;
+  --link-color: blue;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --title-color: #EF7900;
+    --subhead-color: #80ff80;
+    --link-color: #0090FF;
+  }
+}
+
 body {
-    font-family: '-apple-system-body', 'HelveticaNeue';
-	color: #000000;
-    background: #fff;
+    font: -apple-system-body;
     margin: 0;
 }
 
@@ -10,7 +23,6 @@ html {
 }
 
 .content {
-    background-color: #fff;
     padding-bottom: 3em;
 }
 
@@ -108,3 +120,8 @@ table td {
             white-space: nowrap; /* added line */
             border: 0;
       }
+
+a {
+    color: var(--link-color);
+    word-wrap: break-word;
+}
