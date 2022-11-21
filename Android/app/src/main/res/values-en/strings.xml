@@ -683,8 +683,9 @@
     <string name="options_content_description">Description</string>
     <string name="options_content_list_title">Accessibility option list</string>
     <string name="test_content_list_title">Accessibility test list</string>
-    <string name="test_content">Ce guide propose des outils et des méthodes pour tester l\'accessibilité des applications mobiles Android.
-    Il est conseiller de commencer par les écrans les plus utilisés.</string>
+    <string name="test_content">This guide provides tools and methods to test the Android mobile application\’s accessibility.\n
+It is recommended to start with the most used screens.
+</string>
     <string name="options_content_btn">Go to accessibility settings</string>
     <string-array name="options_list">
         <item>Font size</item>
@@ -741,28 +742,29 @@
 
 
     <string name="general_navigation_test_description">
-         - Check that all screens have visible,unique and relevant titles.\n\n
-         - Check that the texts are readable.\n\n
-         - Verify click errors can be undone.\n\n
-         - Check that the application works in both phone orientations (landscape/portrait).\n\n
-         - Limit visual animations.
+         - Check that all screens have visible, unique and relevant titles.\n
+         - Check that the texts are readable.\n
+         - Verify click errors can be undone.\n
+         - Check that the application works on both landscape/portrait mode.\n
+         - Limit visual animations.\n
+
 </string>
 
     <string name="magnification_test_description">Use the application by enlarging the font of the phone to 200%.\n\n
        - Enable text magnification in system settings\n\n
-- Check that all the texts, icons, graphic elements are visible without any overflow or overlapping problem.\n\n
+- Check that all the texts, icons and graphic elements are visible without any overflow or overlapping problem.\n\n
 - Check that the various functionalities of the application are usable and that the content remains visible and clear.\n\n
 </string>
 
-    <string name="screen_Reader_test_description1">- Enable Talkback..\n\nIf you are unfamiliar with Talkback, use the user guide,to see how to activate it and discover the different navigation gestures.</string>
+    <string name="screen_Reader_test_description1">- Enable Talkback..\n\nIf you are unfamiliar with Talkback, check the user guide,to see how to activate it and discover the different navigation gestures.</string>
 
-    <string name="screen_Reader_test_description2">- Check that you can navigate between the different screens and use the different functionalities using only the screen reader.\n\n
+    <string name="screen_Reader_test_description2">- Check that you can navigate between the different screens and use the different functionalities with only the screen reader.\n\n
         This tool is used by visually impaired and blind users.\n\n
         To simulate their situations, it is possible to test with the screen off:\n\n
-Enable Talkback; slide your finger from top to bottom then to the right (writing the capital letter L) to open the talkback menu; navigate to “hide screen”; double-click to activate.
+Enable Talkback; slide your finger from top to bottom, then to the right (writing the capital letter L) to open the talkback menu; navigate to “hide screen”; double-click to activate.
 </string>
     <string name="keyboard_navigation_test_description">Connect an external keyboard to your phone (bluetooth or wired).\n
-Navigate the application using only the keyboard:\n\n
+Navigate the application with only the keyboard:\n\n
 -	Check that the focus is visible and follows the logical order\n\n
 -	Check that the functionalities are usable\n\n
 -	Check that there is no keyboard trap (the focus does not remain blocked on a component)\n\n
@@ -775,8 +777,8 @@ These tests should be performed in light mode and dark mode.\n\n
 Download the application and then you will be guided.\n
 </string>
 
-    <string name="contrastColor_test_description2">You can create a shortcut on your main screen to be able to activate scanner at any time.\n\n
-By activating Scanner, a floating button appears in the screen :\n
+    <string name="contrastColor_test_description2">You can create a shortcut on your main screen to be able to activate the scanner at any time.\n\n
+By activating Scanner, a floating button appears on the screen :\n
 </string>
 
     <string name="contrastColor_test_description3">- Put yourself on the screen to be tested and click on this button; This button allows you to launch an analysis on the screen of your choice.\n\n
