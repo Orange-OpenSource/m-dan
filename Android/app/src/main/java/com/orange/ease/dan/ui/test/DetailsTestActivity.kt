@@ -69,10 +69,16 @@ class DetailsTestActivity : DialogActivity() {
         binding.textViewDescriptionContentGuideDev.text = guide?.let{ getString(guide.resDescription)}
 
         val link = guide.resLink;
+        val option = guide.optionDescription
         if (link!=null) {
             binding.buttonDetailsWebview.visibility = View.VISIBLE
             binding.buttonDetailsWebview.setText(guide.resLink)
             optionsDetails = guide.option!!
+        }
+        if (option!=null) {
+            binding.textViewDescriptionOption.visibility = View.VISIBLE
+            binding.textViewDescriptionOption.setText(option)
+            //optionsDetails = guide.option!!
         }
 
     }

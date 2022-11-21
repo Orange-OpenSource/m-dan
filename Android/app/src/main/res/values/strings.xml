@@ -754,7 +754,9 @@ Il est conseiller de commencer par les écrans les plus utilisés.</string>
         -	Vérifier que l\'application fonctionne dans les deux orientations du téléphone.\n\n
         -	Limiter les animations visuelles.</string>
 
-    <string name="magnification_test_description">Activer l\'agrandissement de texte dans les réglages du système :\n\n
+    <string name="magnification_option_description">- Activer l\'agrandissement de texte dans les réglages du système :\n </string>
+
+    <string name="magnification_test_description">
     -	Vérifier que tous les textes, icones, éléments graphiques sont visibles sans aucun problème de dépassement ou de superposition.\n\n
     -	Vérifier que les différentes fonctionnalités de l\’application sont utilisables et que le contenu reste visible et clair.
 </string>

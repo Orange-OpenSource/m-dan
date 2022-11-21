@@ -114,6 +114,24 @@
                 android:layout_marginBottom="@dimen/medium_margin"
                 android:focusable="true"
                 android:onClick="seeWebviewDetails" />
+
+            <TextView
+                android:id="@+id/textViewDescriptionOption"
+                style="@style/BrandBody1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewTitleExample"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="@dimen/medium_margin"
+                android:screenReaderFocusable="true"
+                android:paddingRight="@dimen/medium_margin"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/core_black"
+                android:textSize="14sp"
+                android:visibility="gone"/>
         </LinearLayout>
     </ScrollView>
 

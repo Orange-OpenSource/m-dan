@@ -29,6 +29,7 @@ object TestGuideDataSource {
     private val generalNavigation = TestGuide(
         resTitle = R.string.general_navigation_test_title,
         resDescription = R.string.general_navigation_test_description,
+        optionDescription = null,
         resLink = null,
         option = false
     )
@@ -36,6 +37,7 @@ object TestGuideDataSource {
     private val textMagnification = TestGuide(
         resTitle = R.string.magnification_test_title,
         resDescription = R.string.magnification_test_description,
+        optionDescription = R.string.magnification_test_description,
         resLink= R.string.magnification_details_button_title,
         option = true
     )
@@ -50,6 +52,7 @@ object TestGuideDataSource {
     private val keyboardNavigation = TestGuide(
         resTitle = R.string.keyboard_navigation_test_title,
         resDescription = R.string.keyboard_navigation_test_description,
+        optionDescription = null,
         resLink= null,
         option = false
     )
@@ -66,6 +69,7 @@ object TestGuideDataSource {
     private val multimedia = TestGuide(
         resTitle = R.string.multimedia_test_title,
         resDescription = R.string.multimedia_test_description,
+        optionDescription = null,
         resLink = null,
         option = false
     )
@@ -74,6 +78,7 @@ object TestGuideDataSource {
     private val webview = TestGuide(
         resTitle = R.string.webview_test_title,
         resDescription = R.string.webview_test_description,
+        optionDescription = null,
         resLink = R.string.webview_details_button_title,
         option = false
     )
