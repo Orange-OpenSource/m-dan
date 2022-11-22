@@ -1,0 +1,17 @@
+/* 
+  File.strings
+  DeclarationAccessibility
+
+  Created by Tayeb SEDRAIA on 21/05/2021.
+  
+*/
+
+"declaration_title" = "إعلان";
+"average_title_label" = "%@ متوافق";
+"result_declaration_subtitle" = "هذا التطبيق %@ متوافق مع المعايير";
+"date_title" = "تاريخ المراجعة";
+"identity_title" = "هوية المصرح";
+"referential_title" = "مخزن";
+"technology_title" = "تكنولوجيا التطبيق";
+"detail_button" = "عرض التفاصيل";
+

@@ -18,6 +18,7 @@
  */
 
 import UIKit
+import DeclarationAccessibility
 
 class MoreViewController: DefaultTableViewController {
 
@@ -27,15 +28,6 @@ class MoreViewController: DefaultTableViewController {
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        /*
-        if (UserDefaults.standard.value(forKey: "isFirstLaunch") == nil) {
-        
-            performSegue(withIdentifier: "introduction-segue", sender: nil)
-            
-            UserDefaults.standard.setValue(false, forKey: "isFirstLaunch")
-        }
-         */
     }
 
     override func didReceiveMemoryWarning() {

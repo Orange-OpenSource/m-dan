@@ -1,0 +1,16 @@
+/* 
+  File.strings
+  DeclarationAccessibility
+
+  Created by Tayeb SEDRAIA on 21/05/2021.
+  
+*/
+
+"declaration_title" = "Декларация";
+"average_title_label" = "%@ совместимый";
+"result_declaration_subtitle" = "Это приложение %@ соответствует критериям WCAG";
+"date_title" = "Дата проверки";
+"identity_title" = "Личность заявителя";
+"referential_title" = "Применяемый стандарт";
+"technology_title" = "Технические характеристики";
+"detail_button" = "ПОДРОБНЕЕ";

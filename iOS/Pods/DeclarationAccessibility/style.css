@@ -1,0 +1,133 @@
+:root {
+  color-scheme: light dark;
+  --title-color: #e67e30;
+  --subhead-color: green;
+  --link-color: blue;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --title-color: #EF7900;
+    --subhead-color: #80ff80;
+    --link-color: #0090FF;
+  }
+}
+
+body {
+    font: -apple-system-body;
+    margin: 0;
+}
+
+html {
+    font: -apple-system-body;
+}
+
+.content {
+    padding-bottom: 3em;
+}
+
+em {
+    color: #e00;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.underover {
+  text-decoration: underline overline #FF3028;
+}
+
+.summary {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.lead {
+    font-weight: bold;
+}
+
+.row > [class*="col-"] {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+h1 {
+    background-image: url(mdan-logo.png);
+    background-size: 3.5rem 3.5rem;
+    background-repeat: no-repeat;
+    background-position: 1rem 1.5rem;    
+    margin: 0;    
+    padding: 2rem 2rem 2rem 8rem;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-top: 3rem;
+}
+
+.summary h2 {
+    text-align: center;
+    font-size: 1em;
+    margin: 1em auto;
+    border-bottom: 0;
+}
+
+.summary h2 span {
+    font-size: 3em;
+}
+
+h3 {
+    margin-top: 1.5rem;
+    font-size: 1em;
+}
+
+table {
+    display:block;
+    width: 100%;
+    margin-bottom: 1.25rem;
+    border-collapse: collapse;
+    text-align: center;
+	overflow-x:auto;
+}
+
+table thead {
+
+}
+
+table tr {
+    border-bottom: 1px solid #ccc;
+}
+
+table th {
+    font-size: .875rem;
+    font-weight: bold;
+    padding: .5rem;
+}
+
+table td {
+    padding: .5rem;
+    font-size: .875rem;
+    line-height: 1rem;
+}
+
+.sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap; /* added line */
+            border: 0;
+      }
+
+a {
+    color: var(--link-color);
+    word-wrap: break-word;
+}
+
+.container-fluid {
+    padding-left: 20px;
+    padding-right: 10px;
+    
+}
