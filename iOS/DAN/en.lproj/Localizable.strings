@@ -684,6 +684,7 @@
 // Menu - Other application
 // ----------------
 "other_application_nav_title"  = "Other apps";
+"other_application_url"        = "https://innovationfactory.orange.com/index?hl=en";
 
 // ---------------
 // Menu - About

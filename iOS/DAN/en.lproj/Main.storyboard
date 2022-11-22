@@ -299,7 +299,6 @@
                         <segue destination="6Dn-bk-MLU" kind="show" identifier="orange-accessibility-segue" id="CSV-CM-J4E"/>
                         <segue destination="juK-yc-I1h" kind="show" identifier="cgu-segue" id="P7j-5I-2TB"/>
                         <segue destination="yJA-vU-Zjg" kind="show" identifier="legal-segue" id="OCM-LG-ewC"/>
-                        <segue destination="vwC-MG-yk6" kind="show" identifier="other-application-segue" id="Goj-Sl-GnX"/>
                         <segue destination="UmT-Hq-hWe" kind="show" identifier="about-segue" id="gaY-Nn-g2r"/>
                     </connections>
                 </tableViewController>
@@ -1244,7 +1243,6 @@
                     <view key="view" contentMode="scaleToFill" id="9qs-HJ-WzI">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="pSR-0q-Vpm"/>
                 </viewController>
@@ -1263,7 +1261,6 @@
                     <view key="view" contentMode="scaleToFill" id="KVA-oi-FWi">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="TNh-6V-hvB"/>
                 </viewController>
@@ -1282,32 +1279,12 @@
                     <view key="view" contentMode="scaleToFill" id="rT1-h8-q1Z">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="1fy-Kz-CP5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="100-y5-d61" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3596" y="1339"/>
-        </scene>
-        <!--Other Application View Controller-->
-        <scene sceneID="COd-OA-5c5">
-            <objects>
-                <viewController id="vwC-MG-yk6" customClass="OtherApplicationViewController" customModule="mDAN" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Uic-aR-tEv"/>
-                        <viewControllerLayoutGuide type="bottom" id="a8E-BU-vJV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8cc-Ug-Xau">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="HIr-DE-QCe"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mgh-u1-LPb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4314" y="1339"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="V51-Pk-hQ1">
@@ -1320,7 +1297,6 @@
                     <view key="view" contentMode="scaleToFill" id="hcX-1w-Hq8">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="aQ3-v6-CGL"/>
                 </viewController>

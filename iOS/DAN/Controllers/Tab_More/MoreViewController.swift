@@ -100,7 +100,7 @@ class MoreViewController: DefaultTableViewController {
         case 3:
             performSegue(withIdentifier: "legal-segue", sender: cell)
         case 4:
-            performSegue(withIdentifier: "other-application-segue", sender: cell)
+            self.openURL("other_application_url".localized)
         case 5:
             performSegue(withIdentifier: "contact-segue", sender: cell)
         case 6:

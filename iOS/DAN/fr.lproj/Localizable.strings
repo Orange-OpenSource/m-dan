@@ -683,6 +683,7 @@
 // Menu - Other application
 // ----------------
 "other_application_nav_title"  = "Autres applications";
+"other_application_url"        = "https://innovationfactory.orange.com/index?hl=fr";
 
 // ---------------
 // Menu - About
