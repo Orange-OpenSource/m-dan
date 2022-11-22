@@ -596,32 +596,32 @@
 // -------------------------
 // Testing - General Navigation
 // -------------------------
-"testing_generalNavigation_check"      = "- Check that all screens have visible, unique and relevant titles \n\n- Check that the texts are readable \n\n- Check that click errors can be undone \n\n- Verify that the app works on both orientations of the phone (landscape/portrait) \n\n- Limit visual animations";
+"testing_generalNavigation_check"      = "- Check that all screens have visible, unique and relevant titles. \n\n- Check that the texts are readable. \n\n- Check that click errors can be undone \n\n- Verify that the app works on both orientations of the phone (landscape/portrait). \n\n- Limit visual animations.";
 
 // --------------------------
 // Option - Font Enlargement
 // --------------------------
-"testing_fontEnlargement_check"         = "Use the application by enlarging the font of the phone to 200%. Enable text magnification in system settings (button to guide top right) \n\n- Check that all icons, texts and graphic elements are visible without any overflow or overlapping problem \n\n- Check that navigation of the different screens remains possible without loss of functionality";
+"testing_fontEnlargement_check"         = "Use the application by enlarging the font of the phone to 200%. Enable text magnification in system settings (button to guide top right). \n\n- Check that all icons, texts and graphic elements are visible without any overflow or overlapping problem \n\n- Check that navigation of the different screens remains possible without loss of functionality.";
 
 // --------------------------
 // Testings - Screen Reader
 // --------------------------
-"testing_screenReader_check"         = "Activate Voiceover. If you're unfamiliar with VoiceOver, check the user guide (button to guide top right) \n\n- Check that you can navigate between the different screens and use the different functionalities with only the screen reader \n\nTo simulate their situations, it is possible to test with the screen off : \nEnable VoiceOver ; triple-click to activate";
+"testing_screenReader_check"         = "Activate Voiceover. If you're unfamiliar with VoiceOver, check the user guide (button to guide top right). \n\n- Check that you can navigate between the different screens and use the different functionalities with only the screen reader. \n\nTo simulate their situations, it is possible to test with the screen off : \nEnable VoiceOver ; triple-click to activate.";
 
 // --------------------------
 // Testings - Selection Control
 // --------------------------
-"testing_selectionControl_check"         = "The Switch control simulates the use of an external keyboard (button to guide top right) \n\n- Check that the focus is visible and follows the logical order  \n\n- Check that features are usable  \n\n- Check that there is no keyboard trap (not blocked on a component) \n\nIt is possible to do the same tests by connecting an external keyboard (bluetooth or wired)";
+"testing_selectionControl_check"         = "The Switch control simulates the use of an external keyboard (button to guide top right). \n\n- Check that the focus is visible and follows the logical order  \n\n- Check that features are usable.  \n\n- Check that there is no keyboard trap (not blocked on a component). \n\nIt is possible to do the same tests by connecting an external keyboard (bluetooth or wired).";
 
 // --------------------------
 // Testings - ContrastColor
 // --------------------------
-"testing_contrastColor_check"         = "Color Contrast Calculator helps to check colors and contrasts. \nUse this tool from your Mac. \nThe tool gives the result directly (green icon OK, red icon KO)   \n\n- Check that the contrast between the text and the background of the application is correct (example illustration) \n\n- Check that the colors used in the interface components are sufficiently contrasting";
+"testing_contrastColor_check"         = "Color Contrast Calculator helps to check colors and contrasts. \nUse this tool from your Mac. \nThe tool gives the result directly (green icon OK, red icon KO).   \n\n- Check that the contrast between the text and the background of the application is correct (example illustration). \n\n- Check that the colors used in the interface components are sufficiently contrasting.";
 
 // --------------------------
 // Testings - Multimedia
 // --------------------------
-"testing_multimedia_check"         = "- Check that the multimedia content can be controlled by the user (presence of a pause button, full-screen mode button, etc.) \n\n- Check that the user can control any sound emitted for more than 3 seconds (stop or pause) \n\n- Check that there is no automatic start of the video when the page loads.  \n\n- Verify that all audio or video content has a full text transcript.";
+"testing_multimedia_check"         = "- Check that the multimedia content can be controlled by the user (presence of a pause button, full-screen mode button, etc). \n\n- Check that the user can control any sound emitted for more than 3 seconds (stop or pause). \n\n- Check that there is no automatic start of the video when the page loads.  \n\n- Verify that all audio or video content has a full text transcript.";
 
 // --------------------------
 // Testings - WebView

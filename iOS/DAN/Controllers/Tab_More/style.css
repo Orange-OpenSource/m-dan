@@ -125,3 +125,9 @@ a {
     color: var(--link-color);
     word-wrap: break-word;
 }
+
+.container-fluid {
+    padding-left: 20px;
+    padding-right: 10px;
+    
+}

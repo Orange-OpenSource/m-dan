@@ -50,9 +50,7 @@ class TestingFontEnlargementViewController: EmptyTableViewController {
         ]
         
         cellsContent = [
-            ["testing_fontEnlargement_check"],
-            [""],
-            [""]
+            ["testing_fontEnlargement_check"]
         ]
     }
     

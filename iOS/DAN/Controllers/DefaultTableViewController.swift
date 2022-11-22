@@ -124,6 +124,7 @@ class DefaultTableViewController: UITableViewController {
         return sectionHeaders[section].localized
     }
     
+    
     // MARK: - TableView Delegate
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         
@@ -137,6 +138,7 @@ class DefaultTableViewController: UITableViewController {
             return
         }
         else {
+            
             let header: UITableViewHeaderFooterView     = view as! UITableViewHeaderFooterView
             header.contentView.backgroundColor          = UIColor.systemGray5
             header.textLabel?.textColor                 = UIColor.label
@@ -145,7 +147,8 @@ class DefaultTableViewController: UITableViewController {
             header.textLabel?.sizeToFit()
             header.textLabel?.lineBreakMode = .byWordWrapping
             
-            self.tableView.sectionHeaderHeight = UITableView.automaticDimension
+            
+            //self.tableView.sectionHeaderHeight = UITableView.automaticDimension
         }
     }
     
@@ -192,6 +195,16 @@ class DefaultTableViewController: UITableViewController {
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+    override func tableView(_ tableView: UITableView,
+                       heightForHeaderInSection section: Int) -> CGFloat {
+            return UITableView.automaticDimension
+        }
+    
+    override func tableView(_ tableView: UITableView,
+                       estimatedHeightForHeaderInSection section: Int) -> CGFloat {
+            return 50.0
+        }
     
     @objc func displayVoiceOverMessage(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "common_alertVoiceOverTitle".localized, message: "common_alertVoiceOver".localized, preferredStyle: .alert)

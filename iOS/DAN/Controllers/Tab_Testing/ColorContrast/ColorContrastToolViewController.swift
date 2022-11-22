@@ -30,9 +30,7 @@ class ColorContrastToolViewController: DefaultTableViewController {
         ]
         
         cellsContent = [
-            ["testing_contrastColor_check"],
-            [""],
-            [""]
+            ["testing_contrastColor_check"]
         ]
     }
     
