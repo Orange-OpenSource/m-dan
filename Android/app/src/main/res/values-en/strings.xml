@@ -630,7 +630,8 @@
 
     <!-- guide dev : lists -->
     <string name="dev_title_listvoc">List vocalization</string>
-    <string name="dev_description_listvoc">Sometimes the lists are not vocalized correctly: the speech synthesis is trying to vocalize the whole list at once (only the items displayed on the screen). This is especially the case when using the <i>RecyclerView</i>. To overcome this problem, there is a simple fix. Just set the "<i>focusable</i>" attribute to "<i>true</i>" for each item in the list.\nThis has the effect of forcing the speech synthesis (TalkBack) to read the items one by one.</string>
+    <string name="dev_description_listvoc">Sometimes the lists are not vocalized correctly:\n\nthe speech synthesis is trying to vocalize the whole list at once (only the items displayed on the screen).\n\n
+        This is especially the case when using the <i>RecyclerView</i>. To overcome this problem, there is a simple fix. Just set the "<i>focusable</i>" attribute to "<i>true</i>" for each item in the list.\nThis has the effect of forcing the speech synthesis (TalkBack) to read the items one by one.</string>
 
     <!-- guide dev : focus nav -->
     <string name="dev_title_focusnav">Navigating via the focus (keyboard)</string>
@@ -794,7 +795,7 @@ By activating Scanner, a floating button appears on the screen :
     <string name="webview_test_description">
 To test webviews, you must test all of the web page accessibility criteria detailed in the test section. </string>
 
-    <string name="tb_talback_guide_btn">See Talkabck Guide</string>
+    <string name="tb_talback_guide_btn">See Talkback Guide</string>
     <string name="tb_scanner_guide_btn">Download Accessibility Scanner</string>
 
     <!-- accessibility & Orange view -->
