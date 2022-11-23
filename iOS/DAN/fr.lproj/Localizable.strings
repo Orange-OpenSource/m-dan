@@ -617,6 +617,9 @@
 // --------------------------
 "testing_contrastColor_check"         = "Color Contrast Calculator permet de vérifier les couleurs et les contrastes. \nUtiliser cet outil depuis son Mac. \nL'outil donne directement le résultat (icône vert OK, icône rouge KO).   \n\n- Vérifier que le contraste entre le texte et l'arrière-plan de l'application est correct (exemple illustration). \n\n- Vérifier que les couleurs utilisées dans les composants d'interface sont suffisamment contrastées.";
 
+"testing_contrastColorOk_accessibilityLabel" = "Aperçu visuel du logiciel lorsque la couleur et le contraste est correcte.";
+"testing_contrastColorKo_accessibilityLabel" = "Aperçu visuel du logiciel lorsque la couleur et le contraste est incorrecte.";
+
 // --------------------------
 // Testings - Multimedia
 // --------------------------

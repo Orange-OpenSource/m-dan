@@ -12,7 +12,7 @@
 		128A15C524E9E6DB727D61EAAC425422 /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 4ACE0EF367DB48189C389C0F91DA62CA /* Localizable.strings */; };
 		132942E8DF2B8A57AB4B37253A6CAE4D /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 0851356A7C20A66239714B2B898A7D7D /* Localizable.strings */; };
 		1425AA41FF3C68CDBAA5CF3B42F0C1A4 /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 7F94E88B4D9AC158E703D029A5A69B9F /* Localizable.strings */; };
-		20CBC7B8D9ACB5B76AB79D2DB131CF5D /* DeclarationAccessibility-DeclarationAccessibility in Resources */ = {isa = PBXBuildFile; fileRef = B6F1599547DF436A8AC0AE8B46B86A80 /* DeclarationAccessibility-DeclarationAccessibility */; };
+		20CBC7B8D9ACB5B76AB79D2DB131CF5D /* DeclarationAccessibility.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6F1599547DF436A8AC0AE8B46B86A80 /* DeclarationAccessibility.bundle */; };
 		26A9DEA239FDF40B25D66804E9F24786 /* Declaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBED74ACEA14D82283E0E7FCAC1111F3 /* Declaration.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		2CA03F67C0603289B039504DD95A9FD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		527A9AA7C1AF97D3DD9A8B9FABC0527B /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 817A5A47BD1214EC92F725380E0002A8 /* Localizable.strings */; };
@@ -100,7 +100,7 @@
 		A1DEB099DB7766E27151E4239C26076D /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A7B1D471EF8B8DE82FF09D5BBA04D1ED /* DeclarationViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeclarationViewController.swift; path = DeclarationAccessibility/Scene/Declaration/View/DeclarationViewController.swift; sourceTree = "<group>"; };
 		B64160BB7718162E3E3BA716472806A6 /* Pods-mDAN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mDAN.release.xcconfig"; sourceTree = "<group>"; };
-		B6F1599547DF436A8AC0AE8B46B86A80 /* DeclarationAccessibility-DeclarationAccessibility */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "DeclarationAccessibility-DeclarationAccessibility"; path = DeclarationAccessibility.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6F1599547DF436A8AC0AE8B46B86A80 /* DeclarationAccessibility.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeclarationAccessibility.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBED74ACEA14D82283E0E7FCAC1111F3 /* Declaration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Declaration.swift; path = DeclarationAccessibility/Scene/Declaration/Model/Declaration.swift; sourceTree = "<group>"; };
 		C0FBB44A561C71BE19D368776D8A3BDC /* Pods-mDAN-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mDAN-Info.plist"; sourceTree = "<group>"; };
 		C7916895C9B627B0DA47E55378FADAA8 /* Pods-mDAN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mDAN.debug.xcconfig"; sourceTree = "<group>"; };
@@ -243,7 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				6C3F66D2646996DD532A9BE2FE6F8C40 /* DeclarationAccessibility */,
-				B6F1599547DF436A8AC0AE8B46B86A80 /* DeclarationAccessibility-DeclarationAccessibility */,
+				B6F1599547DF436A8AC0AE8B46B86A80 /* DeclarationAccessibility.bundle */,
 				8D02BD5C74AA64A2702F24CB174629A9 /* Pods-mDAN */,
 			);
 			name = Products;
@@ -324,7 +324,7 @@
 			);
 			name = "DeclarationAccessibility-DeclarationAccessibility";
 			productName = DeclarationAccessibility;
-			productReference = B6F1599547DF436A8AC0AE8B46B86A80 /* DeclarationAccessibility-DeclarationAccessibility */;
+			productReference = B6F1599547DF436A8AC0AE8B46B86A80 /* DeclarationAccessibility.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -335,6 +335,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F66D204C80A25D18AAEB18EDE5649D11 = {
+						DevelopmentTeam = B9YP84K776;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -391,7 +396,7 @@
 				6DFB1FA4292D1E4C00A1BF4B /* style.css in Resources */,
 				6DFB1FA5292D1E4C00A1BF4B /* mdan_en.html in Resources */,
 				6DFB1FA3292D1E4C00A1BF4B /* mdan-logo.png in Resources */,
-				20CBC7B8D9ACB5B76AB79D2DB131CF5D /* DeclarationAccessibility-DeclarationAccessibility in Resources */,
+				20CBC7B8D9ACB5B76AB79D2DB131CF5D /* DeclarationAccessibility.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +490,7 @@
 			baseConfigurationReference = 6131C201803328AADB39611964640CCA /* DeclarationAccessibility.debug.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DeclarationAccessibility";
+				DEVELOPMENT_TEAM = B9YP84K776;
 				IBSC_MODULE = DeclarationAccessibility;
 				INFOPLIST_FILE = "Target Support Files/DeclarationAccessibility/ResourceBundle-DeclarationAccessibility-DeclarationAccessibility-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -760,6 +766,7 @@
 			baseConfigurationReference = 24BD175595ECE7F609708D7B994FC1D5 /* DeclarationAccessibility.release.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DeclarationAccessibility";
+				DEVELOPMENT_TEAM = B9YP84K776;
 				IBSC_MODULE = DeclarationAccessibility;
 				INFOPLIST_FILE = "Target Support Files/DeclarationAccessibility/ResourceBundle-DeclarationAccessibility-DeclarationAccessibility-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

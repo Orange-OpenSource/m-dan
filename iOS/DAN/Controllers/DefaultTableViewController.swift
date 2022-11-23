@@ -39,11 +39,13 @@ class DefaultTableViewController: UITableViewController {
         tableView.tableFooterView = UIView()
     
         setUpDatas()
+        setUpNavigationBar()
+        setUpTabBar()
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        setUpNavigationBar()
-        setUpTabBar()
+        //setUpNavigationBar()
+        //setUpTabBar()
     }
     
     func setupLargeTitleAutoAdjustFont() {
@@ -146,9 +148,6 @@ class DefaultTableViewController: UITableViewController {
             header.sizeToFit()
             header.textLabel?.sizeToFit()
             header.textLabel?.lineBreakMode = .byWordWrapping
-            
-            
-            //self.tableView.sectionHeaderHeight = UITableView.automaticDimension
         }
     }
     

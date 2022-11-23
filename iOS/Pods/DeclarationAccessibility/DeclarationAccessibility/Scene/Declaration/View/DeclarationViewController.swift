@@ -138,20 +138,10 @@ open class DeclarationViewController: UIViewController {
     }
     
     @IBAction func openDetailButton(_ sender: UIButton) {
-        /*
-        if verifyURL(declarations.detailUrl) {
-            if let url = URL(string: declarations.detailUrl) {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            }
-        } else {
-            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let view = storyBoard.instantiateViewController(withIdentifier: declarations.detailUrl)
-            navigationController?.pushViewController(view, animated: true);
-        }
-         */
-        let vc = DeclarationDetailViewController()
-        let navController = UINavigationController(rootViewController: vc)
-        self.present(navController, animated: true, completion: nil)
+        let declarationDetailViewController = DeclarationDetailViewController()
+
+        self.navigationController?.pushViewController(declarationDetailViewController, animated: true)
+        
     }
     
     @objc func didTapClose(_ sender: Any) {

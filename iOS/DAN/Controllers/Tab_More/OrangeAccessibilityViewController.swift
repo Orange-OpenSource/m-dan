@@ -33,16 +33,6 @@ class OrangeAccessibilityViewController: UIViewController, WKNavigationDelegate,
 
         title = "orange_accessibility_nav_title".localized
         
-        /*
-        let language = Bundle.main.preferredLocalizations.first! as NSString
-        let fileName = "mdan_" + (language as String)
-        let url = URL(fileURLWithPath: Bundle.main.path(forResource: fileName, ofType: "html")!)
-        let urlRequest = URLRequest(url: url)
-        webView.load(urlRequest)
-        webView.navigationDelegate = self
-        view = webView
-         */
-        
         let declarationViewController = DeclarationViewController()
         let language = Bundle.main.preferredLocalizations.first! as NSString
         let fileName = "mdan_" + (language as String)

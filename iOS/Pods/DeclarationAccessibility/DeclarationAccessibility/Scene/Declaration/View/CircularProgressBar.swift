@@ -53,6 +53,15 @@ public class CircularProgressBar: UIView {
         progressLayer.lineCap = .round
         progressLayer.strokeStart = 0
         progressLayer.strokeEnd = progress
-        progressLayer.strokeColor = UIColor.systemBlue.cgColor
+        
+        if #available(iOS 12.0, *) {
+            if traitCollection.userInterfaceStyle == .light {
+                progressLayer.strokeColor = #colorLiteral(red: 0.007521296386, green: 0.3268653452, blue: 0.6822612882, alpha: 1)
+            } else {
+                progressLayer.strokeColor = UIColor.systemBlue.cgColor
+            }
+        } else {
+            progressLayer.strokeColor = UIColor.systemBlue.cgColor
+        }
     }
 }
