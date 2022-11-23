@@ -46,7 +46,7 @@ object TestGuideRepository {
         return TestGuideDataSource.allOtherTests
     }
     fun getTalkbackGuide(): List<TestTalkbackGuide> {
-        return TestGuideDataSource.allTalkabackTest
+        return TestGuideDataSource.allTalkbackTest
     }
 
     fun getColorContrastGuide(): List<TestColorContrastGuide> {

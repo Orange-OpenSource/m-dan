@@ -121,7 +121,7 @@
                 />
 
             <TextView
-                android:id="@+id/textViewContentLinksGuideDev"
+                android:id="@+id/textViewDescriptionContentPart4"
                 style="@style/BrandBody1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -137,8 +137,7 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/core_black"
                 android:textColorLink="@color/core_orange_dark"
-                android:textSize="14sp"
-                android:visibility="gone" />
+                android:textSize="14sp" />
         </LinearLayout>
     </ScrollView>
 

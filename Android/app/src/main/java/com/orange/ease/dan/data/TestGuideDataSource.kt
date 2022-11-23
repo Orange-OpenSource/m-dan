@@ -36,7 +36,7 @@ object TestGuideDataSource {
 
     private val textMagnification = TestGuide(
         resTitle = R.string.magnification_test_title,
-        resDescription = R.string.magnification_test_description,
+        resDescription = R.string.magnification_option_description,
         optionDescription = R.string.magnification_test_description,
         resLink= R.string.magnification_details_button_title,
         option = true
@@ -46,6 +46,7 @@ object TestGuideDataSource {
         resTitle = R.string.screen_reader_test_title,
         resDescription1 = R.string.screen_Reader_test_description1,
         resDescription2 = R.string.screen_Reader_test_description2,
+        resDescription3 = R.string.screen_Reader_test_description3,
         resImg = R.drawable.activate_dark_screen
     )
 
@@ -96,7 +97,7 @@ object TestGuideDataSource {
         webview
     )
 
-    val allTalkabackTest = listOf(
+    val allTalkbackTest = listOf(
         screenReader)
 
     val allColorContrastTest = listOf(

@@ -19,4 +19,4 @@
 
 package com.orange.ease.dan.model
 
-class TestTalkbackGuide(resTitle: Int, val resDescription1: Int, val resDescription2: Int, val resImg: Int?): AccessibilityEntity(resTitle)
+class TestTalkbackGuide(resTitle: Int, val resDescription1: Int, val resDescription2: Int,val resDescription3: Int, val resImg: Int?): AccessibilityEntity(resTitle)

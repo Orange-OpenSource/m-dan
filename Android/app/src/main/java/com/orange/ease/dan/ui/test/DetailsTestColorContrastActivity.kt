@@ -61,7 +61,7 @@ class DetailsTestColorContrastActivity : AppCompatActivity() {
     private fun initView() {
         binding.textViewDescriptionContentPart3.visibility = View.VISIBLE
         binding.imgTestExample2.visibility = View.VISIBLE
-        binding.textViewContentLinksGuideDev.visibility = View.GONE
+        //binding.textViewContentLinksGuideDev.visibility = View.GONE
 
         val guide = viewModel.guideColorContrastGuide?.let { it } ?: return
         binding.buttonGuideTester.setText(R.string.tb_scanner_guide_btn)

@@ -95,7 +95,8 @@ class DetailsTestActivity : DialogActivity() {
     }
 
     private fun startTuto() {
-        val openTutoActivity = Intent(Intent.ACTION_VIEW, Uri.parse("https://a11y-guidelines.orange.com/fr/web/"))
+        //val openTutoActivity = android.content.Intent;
+        val openTutoActivity = Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link_web_accessibility_details)))
         startActivity(openTutoActivity)
         overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out)
     }

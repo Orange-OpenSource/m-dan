@@ -20,7 +20,6 @@
 package com.orange.ease.dan.viewmodel
 
 import androidx.lifecycle.ViewModel
-import com.orange.ease.dan.model.DevelopmentGuide
 import com.orange.ease.dan.model.TestColorContrastGuide
 import com.orange.ease.dan.model.TestGuide
 import com.orange.ease.dan.model.TestTalkbackGuide

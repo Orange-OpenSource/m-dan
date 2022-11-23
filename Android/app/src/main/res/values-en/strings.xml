@@ -736,7 +736,7 @@
     <string name="webview_test_title">Webviews</string>
 
     <string name="webview_details_button_title">See guidelines web</string>
-    <string name="magnification_details_button_title">Activate Caracters magnification</string>
+    <string name="magnification_details_button_title">Activate Characters magnification</string>
 
 
 
@@ -750,20 +750,17 @@
 
 </string>
 
-    <string name="magnification_option_description">- Enable text magnification in system settings :\n </string>
+    <string name="magnification_option_description">- Enable text magnification in system settings :\n</string>
 
-    <string name="magnification_test_description">
-- Check that all the texts, icons and graphic elements are visible without any overflow or overlapping problem.\n\n
-- Check that the various functionalities of the application are usable and that the content remains visible and clear.\n\n
+    <string name="magnification_test_description">- Check that all the texts, icons and graphic elements are visible without any overflow or overlapping problem.\n\n- Check that the various functionalities of the application are usable and that the content remains visible and clear.\n\n
 </string>
 
     <string name="screen_Reader_test_description1">- Enable Talkback.\n\nIf you are unfamiliar with Talkback, check the user guide to see how to activate it and discover the different navigation gestures.</string>
 
-    <string name="screen_Reader_test_description2">- Check that you can navigate between the different screens and use the different functionalities with only the screen reader.\n\n
-        This tool is used by visually impaired and blind users.\n\n
-        To simulate their situations, it is possible to test with the screen off:\n\n
-        Enable Talkback; slide your finger from top to bottom, then to the right (writing the capital letter L) to open the talkback menu; navigate to “hide screen”; double-click to activate.
+    <string name="screen_Reader_test_description2">- Check that you can navigate between the different screens and use the different functionalities with only the screen reader.\n\nThis tool is used by visually impaired and blind users.To simulate their situations, it is possible to test with the screen off:\n\nEnable Talkback; slide your finger from top to bottom, then to the right (writing the capital letter L) to open the talkback menu; navigate to “hide screen”; double-click to activate.\n
 </string>
+    <string name="screen_Reader_test_description3">To show the screen again; slide your finger while writing the letter L; the talkback menu is displayed; navigate to “Show Screen”; click twice.\n\n</string>
+
     <string name="keyboard_navigation_test_description">Connect an external keyboard to your phone (bluetooth or wired).\n\nNavigate the application with only the keyboard:\n\n
 -	Check that the focus is visible and follows the logical order.\n\n
 -	Check that the functionalities are usable.\n\n
@@ -771,29 +768,27 @@
 
         </string>
 
-    <string name="contrastColor_test_description1">Use Accessibility scanner, application available on the Google Play Store.\n\n
-        This tool checks the contrasts between texts and their backgrounds as well as the contrasts of graphical components.\n\n
-        These tests should be performed in light mode and dark mode.\n\n
-        Download the application and then you will be guided.\n
+    <string name="contrastColor_test_description1">Use Accessibility scanner, application available on the Google Play Store.\n\nThis tool checks the contrasts between texts and their backgrounds as well as the contrasts of graphical components.\n\nThese tests should be performed in light mode and dark mode.\n\nDownload the application and then you will be guided.\n
 </string>
 
-    <string name="contrastColor_test_description2">You can create a shortcut on your main screen to be able to activate the scanner at any time.\n\n
-By activating Scanner, a floating button appears on the screen :
+    <string name="contrastColor_test_description2">You can create a shortcut on your main screen to be able to activate the scanner at any time.\n\nBy activating Scanner, a floating button appears on the screen :
 </string>
 
-    <string name="contrastColor_test_description3">- Put yourself on the screen to be tested and click on this button; This button allows you to launch an analysis on the screen of your choice.\n\n
-- The error report is immediately transcribed on this screen:
+    <string name="contrastColor_test_description3">- Put yourself on the screen to be tested and click on this button; This button allows you to launch an analysis on the screen of your choice.\n\n- The error report is immediately transcribed on this screen :
 </string>
 
     <string name="multimedia_test_description">
         -	Check that multimedia content can be controlled by the user (pause button, full-screen mode button, etc...).\n\n
-        -	Verify that the user can control any sound longer than 3 seconds (stop or pause).\n\n
+        -	Verify that the user can control any sound longer than three seconds (stop or pause).\n\n
         -	Check that the video does not start automatically when the page loads.\n\n
         -	Check that all audio or video type content has a full text transcript.\n\n
     </string>
 
     <string name="webview_test_description">
 To test webviews, you must test all of the web page accessibility criteria detailed in the test section. </string>
+
+    <string name="link_web_accessibility_details">https://a11y-guidelines.orange.com/en/web/</string>
+
 
     <string name="tb_talback_guide_btn">See Talkback Guide</string>
     <string name="tb_scanner_guide_btn">Download Accessibility Scanner</string>
@@ -826,7 +821,7 @@ To test webviews, you must test all of the web page accessibility criteria detai
     <!-- about view -->
     <string name="about_tittle">Orange SA</string>
     <string name="about_subtittle">mDAN v1.0.0</string>
-    <string name="about_licence">Documentation under the <a href="https://github.com/Orange-OpenSource/m-dan/blob/master/Android/LICENSE-CC.txt" rel="about_licence">CC BY 3.0 license</a>, source code of this site and examples under the  <a href="https://github.com/Orange-OpenSource/m-dan/blob/master/Android/LICENSE-Apache2.0.txt" rel="about_licence">Apache 2.0 license</a>.\n\nThe Orange logo and some images or screenshots are property of Orange:\nCopyright &#169; 2016 Orange SA All rights reserved\n\n<a href="https://github.com/Orange-OpenSource/m-dan/blob/master/Android/NOTICE.txt" rel="about_licence">List of the concerned files</a></string>
+    <string name="about_licence">Documentation under the <a href="https://github.com/Orange-OpenSource/m-dan/blob/master/Android/LICENSE-CC.txt" rel="about_licence">CC BY 3.0 license</a>, source code of this site and examples under the  <a href="https://github.com/Orange-OpenSource/m-dan/blob/master/Android/LICENSE-Apache2.0.txt" rel="about_licence">Apache 2.0 license</a>.\n\nThe Orange logo and some images or screenshots are property of Orange:\nCopyright &#169; 2016 Orange SA All rights reserved\n\n<a href="httpsset//github.com/Orange-OpenSource/m-dan/blob/master/Android/NOTICE.txt" rel="about_licence">List of the concerned files</a></string>
     <string name="about_other_licences">Third party softwares</string>
     <string name="about_other_licences_content"><b>AnimatedExpandableListView</b>\nCopyright &#169; 2014 Gary Guo\n\nAnimatedExpandableListView licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" rel="about_licence">Apache License, Version 2.0</a>\nFor more information: <a href="https://github.com/idunnololz/AnimatedExpandableListView" rel="about_licence">https://github.com/idunnololz/AnimatedExpandableListView</a>\n\n<b>Android Annotations</b>\nCopyright © 2012–2016 eBusiness Information\n\nAndroidAnnotations  licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" rel="about_licence">Apache License, Version 2.0</a>\nFor more information: <a href="https://github.com/excilys/androidannotations/" rel="about_licence">https://github.com/excilys/androidannotations/</a>\n\n<b>Android Auto Scroll ViewPager</b>\nCopyright &#169; 2014 trinea.cn\n\nAndroidAutoScrollViewPager  licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" rel="about_licence">Apache License, Version 2.0</a>\nFor more information: <a href="https://github.com/Trinea/android-auto-scroll-view-pager" rel="about_licence">https://github.com/Trinea/android-auto-scroll-view-pager</a>\n\n<b>The \"Mary Daisy Jane\" album cover</b>\nThe \"Mary Daisy Jane\" album cover, licensed under the <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en" rel="about_licence">Creative Commons Attribution-Share Alike 3.0 Unported</a> and is the property of its owners creators or holders.</string>
 
@@ -839,7 +834,7 @@ To test webviews, you must test all of the web page accessibility criteria detai
 
     <string name="criteria_section_title">Accessibility Criteria</string>
     <string name="options_section_title">Accessibility Options</string>
-    <string name="development_section_title">Accessible Development Guide</string>
+    <string name="development_section_title">Accessibility Development guide</string>
     <string name="test_section_title">Accessibility Tests</string>
 
     <!-- android version -->

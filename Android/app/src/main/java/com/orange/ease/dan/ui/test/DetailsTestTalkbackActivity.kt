@@ -60,13 +60,15 @@ class DetailsTestTalkbackActivity : AppCompatActivity() {
 
     private fun initView() {
         //binding.textViewTitleLinksGuideDev.visibility = View.GONE
-        binding.textViewContentLinksGuideDev.visibility = View.GONE
+        //binding.text.visibility = View.GONE
 
         val guide = viewModel.guideTalkaback?.let { it } ?: return
         binding.buttonGuideTester.setText(R.string.tb_talback_guide_btn)
         binding.textViewDescriptionContentPart1.text = guide?.let{ getString(guide.resDescription1)}
         val imgExample = guide.resImg;
         binding.textViewDescriptionContentPart2.text = guide?.let{ getString(guide.resDescription2)}
+        binding.textViewDescriptionContentPart4.text = guide?.let{ getString(guide.resDescription3)}
+
 
         if (imgExample!=null) {
             binding.imgTestExemple.visibility = View.VISIBLE
