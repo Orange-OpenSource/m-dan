@@ -21,11 +21,9 @@ package com.orange.ease.dan.ui.criteria.details.examples.view
 
 import android.content.Context
 import android.view.Gravity
-import android.view.LayoutInflater
 import android.view.View
 import android.widget.FrameLayout
 import android.widget.ImageView
-import android.widget.LinearLayout
 import com.orange.ease.dan.R
 import com.orange.ease.dan.ui.criteria.details.examples.AccessibilityDetailsExample
 
@@ -43,7 +41,7 @@ class ImgExample1Detail: AccessibilityDetailsExample() {
         accessibleImageView.adjustViewBounds = true
         accessibleImageView.contentDescription = context.getString(R.string.criteria_img_ex1_cd_image)
         accessibleImageView.layoutParams = params
-        accessibleImageView.setImageResource(R.drawable.exampleimg)
+        accessibleImageView.setImageResource(R.drawable.exampleimg1)
 
         return accessibleImageView
     }
@@ -61,7 +59,8 @@ class ImgExample1Detail: AccessibilityDetailsExample() {
         val notAccessibleImageView = ImageView(context)
         notAccessibleImageView.layoutParams = params
         notAccessibleImageView.adjustViewBounds = true
-        notAccessibleImageView.setImageResource(R.drawable.exampleimg)
+        notAccessibleImageView.setPaddingRelative(0,0,0,25)
+        notAccessibleImageView.setImageResource(R.drawable.exampleimg1)
         return notAccessibleImageView
     }
 

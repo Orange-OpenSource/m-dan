@@ -28,14 +28,14 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/my_toolbar"
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:minHeight="?attr/actionBarSize"
-            app:theme="@style/ToolBar.style"
-            android:touchscreenBlocksFocus="false"
-            app:titleTextAppearance="@style/ToolBar.title"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
             android:importantForAccessibility="no"
-            android:elevation="4dp" />
+            android:minHeight="?attr/actionBarSize"
+            android:touchscreenBlocksFocus="false"
+            app:theme="@style/ToolBar.style"
+            app:titleTextAppearance="@style/ToolBar.title" />
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/container"

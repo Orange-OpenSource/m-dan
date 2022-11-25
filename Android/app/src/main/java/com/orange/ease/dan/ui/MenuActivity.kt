@@ -34,7 +34,7 @@ import com.orange.ease.dan.navigation.DialogActivity
 import com.orange.ease.dan.ui.criteria.CriteriaFragment
 import com.orange.ease.dan.ui.developmentguide.DevelopmentGuideFragment
 import com.orange.ease.dan.ui.tools.OptionsFragment
-
+import com.orange.ease.dan.ui.tools.TestFragment
 
 class MenuActivity : DialogActivity() {
 
@@ -72,6 +72,10 @@ class MenuActivity : DialogActivity() {
         displayFragment(OptionsFragment.newInstance())
     }
 
+    private fun initTestFragment(){
+        displayFragment(TestFragment.newInstance())
+    }
+
     private fun displayFragment(fragment: Fragment) {
         val fragmentContainerViewId: Int = R.id.main_container
 
@@ -83,9 +87,22 @@ class MenuActivity : DialogActivity() {
 
     private fun updateMainFragment(integer: Int): Boolean {
         when (integer) {
-            R.id.action_criteria -> initCriteriaFragment()
-            R.id.action_development -> initDevelopmentFragment()
-            R.id.action_options -> initOptionFragment()
+            R.id.action_criteria -> {
+                initCriteriaFragment()
+                binding.myToolbar.title = getString(R.string.criteria_section_title)
+            }
+            R.id.action_development -> {
+                initDevelopmentFragment()
+                binding.myToolbar.title = getString(R.string.development_section_title)
+            }
+            R.id.action_options -> {
+                initOptionFragment()
+                binding.myToolbar.title = getString(R.string.options_section_title
+                )
+            }
+            R.id.action_Test -> {
+                initTestFragment()
+                binding.myToolbar.title = getString(R.string.test_section_title)}
         }
         return true
     }
