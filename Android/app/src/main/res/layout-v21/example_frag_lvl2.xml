@@ -184,9 +184,9 @@
         </LinearLayout>
 
         <FrameLayout
+            android:id="@+id/frameLayoutExampleAxsNo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/frameLayoutExampleAxsNo"
             android:layout_below="@id/linearfrag4"
             android:animateLayoutChanges="true"
             android:animationCache="false">

@@ -43,7 +43,7 @@ class ImgExample1Detail: AccessibilityDetailsExample() {
         accessibleImageView.adjustViewBounds = true
         accessibleImageView.contentDescription = context.getString(R.string.criteria_img_ex1_cd_image)
         accessibleImageView.layoutParams = params
-        accessibleImageView.setImageResource(R.drawable.exampleimg)
+        accessibleImageView.setImageResource(R.drawable.exampleimg1)
 
         return accessibleImageView
     }
@@ -61,7 +61,8 @@ class ImgExample1Detail: AccessibilityDetailsExample() {
         val notAccessibleImageView = ImageView(context)
         notAccessibleImageView.layoutParams = params
         notAccessibleImageView.adjustViewBounds = true
-        notAccessibleImageView.setImageResource(R.drawable.exampleimg)
+        notAccessibleImageView.setPaddingRelative(0,0,0,25)
+        notAccessibleImageView.setImageResource(R.drawable.exampleimg1)
         return notAccessibleImageView
     }
 

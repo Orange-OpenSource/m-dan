@@ -39,7 +39,7 @@ class DetailsTestActivity : DialogActivity() {
 
     private lateinit var viewModel: TestGuideDetailsViewModel
 
-   private var optionsDetails : Boolean = false
+    private var optionsDetails : Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

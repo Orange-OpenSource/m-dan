@@ -871,7 +871,7 @@ Il est conseiller de commencer par les écrans les plus utilisés.</string>
 
 
     <string name="pz_content_desc_logo">Logo Orange</string>
-    <string name="pz_from">from <font fgcolor="#EF7814" tools:ignore="UnusedResources" tools:keep="@font/">Orange Innovation</font> </string>
+    <string name="pz_from">by <font fgcolor="#EF7814" tools:ignore="UnusedResources" tools:keep="@font/">Orange Innovation</font> </string>
 
 </resources>
 
