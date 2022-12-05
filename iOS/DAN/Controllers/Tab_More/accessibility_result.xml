@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<declaration>
+<!-- from la va11ydette with love -->
+
+<!--
+ TITLE
+ This is the name for the site, or page, or section of a site that was audited
+ -->
+ <title><![CDATA[mDAN]]></title>
+
+<!--
+LANGUAGE
+This declaration was done in this language:
+(please use proper HTML lang attribute)
+-->
+<lang>fr</lang>
+
+<!-- 
+STATUS
+Either being audited or having been audited
+So:
+[WIP|DONE]
+-->
+<status>DONE</status>
+
+<!--
+
+ below this line will not be read if we're WIP, so don't bother filling it up
+-->
+
+<!--
+******************************************************
+GENERAL DECLARATION INFORMATION
+******************************************************
+-->
+
+<!--
+APPROVAL
+Name: approval name
+Content: usefull for additional information like a postal address for example. This is CDATA-protected, please add properly formatted HTML. 
+-->
+<approval>
+	<name>Service interne</name>
+	<content>
+<![CDATA[]]>
+</content>
+</approval>
+
+<!--
+CONTACT
+Name: contact name
+Content: full contact informations. This is CDATA-protected, please add properly formatted HTML. 
+-->
+<contact>
+	<name>Orange France</name>
+	<content>
+<![CDATA[]]>
+</content>
+</contact>
+
+<!--
+AUDIT DATE
+Format: YYYY-MM-DD
+-->
+<audit_date>2021-12-16</audit_date>
+
+<!--
+DIGITAL ACCESSIBILITY PLAN
+Plan: Paragraph for the digital accessibility plan. This is CDATA-protected, please add properly formatted HTML. 
+-->
+<plan>
+<![CDATA[]]>
+</plan>
+
+<!--
+REFERENTIAL USED
+-->
+<referential>
+	<name>WCAG</name><!-- if it's an abbreviation, the document template must translate it to plain text -->
+	<version>2.1</version>
+	<level>AA</level>
+	<url>https://www.w3.org/Translations/WCAG20-fr/</url>
+</referential>
+
+<!--
+TECHNOLOGIES USED IN THE SITE
+-->
+<technologies>
+	<technology>Swift </technology>
+</technologies>
+
+<!--
+TESTS PERFORMED TO EVALUATE ACCESSIBILITY
+a test can have the type [auto|manual|functional|user]:
+* automatic testing
+* manual testing
+* functional testing
+* test done by a real user
+-->
+<tests>
+	<test type="auto">
+		<name>Accessibility Inspector</name>
+		<version></version>
+	</test>
+	<test type="functional">
+		<name>Voice Over</name>
+		<version></version>
+	</test>
+</tests>
+
+<!--
+ENVIRONMENTS USED TO EVALUATE ACCESSIBILITY
+Environment: an environment should indicate a user agent and an assistive technologie. This is CDATA-protected, please add properly formatted HTML. 
+-->
+<environments>
+	<environment><![CDATA[IOS et Voice Over]]></environment>
+</environments>
+
+<!--
+URLS
+This is the list of URLs that were tested
+This is CDATA-protected, please add properly formatted HTML.
+-->
+<urls>
+	<url>
+		<name><![CDATA[Critères]]></name>
+		<location><![CDATA[]]></location>
+	</url>
+	<url>
+		<name><![CDATA[Développeur]]></name>
+		<location><![CDATA[]]></location>
+	</url>
+	<url>
+		<name><![CDATA[Options]]></name>
+		<location><![CDATA[]]></location>
+	</url>
+	<url>
+		<name><![CDATA[Autre]]></name>
+		<location><![CDATA[]]></location>
+	</url>
+</urls>
+<!--
+******************************************************
+END GENERAL DECLARATION INFORMATION
+******************************************************
+START SPECIFIC CONFORMITY NUMBERS
+******************************************************
+-->
+<!--
+USERS
+Number of real users that tested the pages
+and blocking points they found (if 0, the document will have to say “with no blocking points from a user's point of view”
+-->
+<users>0</users>
+<blocking_points>0</blocking_points>
+
+<!--
+RESULTS DETAILS
+-->
+<results>
+	<result type="a">
+		<criteria>30</criteria>
+		<ok>14</ok><!-- valid -->
+		<nok>0</nok><!-- not valid -->
+		<na>15</na><!-- not applicable -->
+		<conformity>100</conformity><!-- percentage, expressed as a number with no “%” sign -->
+	</result>
+
+	<result type="aa">
+		<criteria>20</criteria>
+		<ok>10</ok><!-- valid -->
+		<nok>1</nok><!-- not valid -->
+		<na>6</na><!-- not applicable -->
+		<conformity>91</conformity><!-- percentage, expressed as a number with no “%” sign -->
+	</result>
+
+	<result type="total">
+		<criteria>50</criteria>
+		<ok>24</ok><!-- valid -->
+		<nok>2</nok><!-- not valid -->
+		<na>21</na><!-- not applicable -->
+		<conformity>92</conformity><!-- percentage, expressed as a number with no “%” sign -->
+	</result>
+</results>
+
+<!--
+Pages results details
+-->
+<pages_results conformity="95">
+	<page name="Critères">
+		<ok type="a">13</ok><!-- valid -->
+		<ok type="aa">9</ok><!-- valid -->
+		<nok type="a">0</nok> <!-- not valid -->
+		<nok type="aa">1</nok> <!-- not valid -->
+		<na type="a">17</na><!-- not applicable -->
+		<na type="aa">10</na><!-- not applicable -->
+		<conformity>96</conformity><!-- percentage, expressed as a number with no “%” sign -->
+</page>
+	<page name="Développeur">
+		<ok type="a">11</ok><!-- valid -->
+		<ok type="aa">9</ok><!-- valid -->
+		<nok type="a">0</nok> <!-- not valid -->
+		<nok type="aa">1</nok> <!-- not valid -->
+		<na type="a">19</na><!-- not applicable -->
+		<na type="aa">10</na><!-- not applicable -->
+		<conformity>95</conformity><!-- percentage, expressed as a number with no “%” sign -->
+</page>
+	<page name="Options">
+		<ok type="a">10</ok><!-- valid -->
+		<ok type="aa">9</ok><!-- valid -->
+		<nok type="a">0</nok> <!-- not valid -->
+		<nok type="aa">1</nok> <!-- not valid -->
+		<na type="a">20</na><!-- not applicable -->
+		<na type="aa">10</na><!-- not applicable -->
+		<conformity>95</conformity><!-- percentage, expressed as a number with no “%” sign -->
+</page>
+	<page name="Autre">
+		<ok type="a">10</ok><!-- valid -->
+		<ok type="aa">10</ok><!-- valid -->
+		<nok type="a">0</nok> <!-- not valid -->
+		<nok type="aa">1</nok> <!-- not valid -->
+		<na type="a">20</na><!-- not applicable -->
+		<na type="aa">9</na><!-- not applicable -->
+		<conformity>95</conformity><!-- percentage, expressed as a number with no “%” sign -->
+</page>
+</pages_results>
+
+<!--
+Non conformity details
+-->
+<details>
+	<detail>
+		<title>1.4.12, Espacement du texte, Niveau AA</title>
+		<description><![CDATA[]]></description>
+	</detail>
+	<detail>
+		<title>2.5.5, Taille minimum des zones sensibles, Niveau AAA</title>
+		<description><![CDATA[]]></description>
+	</detail>
+</details>
+
+<!--
+DEROGATIONS
+Derogations list. This is CDATA-protected, please add properly formatted HTML. 
+-->
+<derogations>
+<![CDATA[]]>
+</derogations>
+
+<!--
+DEROGATIONS
+Exemptions list. This is CDATA-protected, please add properly formatted HTML. 
+-->
+<exemptions>
+<![CDATA[]]>
+</exemptions>
+
+</declaration>

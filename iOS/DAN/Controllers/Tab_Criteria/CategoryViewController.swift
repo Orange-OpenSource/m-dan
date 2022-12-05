@@ -57,22 +57,11 @@ class CategoryViewController: DefaultTableViewController {
                 "example_image_illustration_title"
             ]
             
-            examplesDetail = [
-                "example_image_info_shortDescription",
-                "example_image_deco_shortDescription",
-                "example_image_illustration_shortDescription"
-            ]
-            
         case "color":
 
             examples = [
                 "example_color_contrast_title",
                 "example_color_info_title"
-            ]
-            
-            examplesDetail = [
-                "example_color_contrast_shortDescription",
-                "example_color_info_shortDescription"
             ]
             
         case "textualAlternative":
@@ -85,26 +74,12 @@ class CategoryViewController: DefaultTableViewController {
                 "example_textualAlternative_textImage_title"
             ]
             
-            examplesDetail = [
-                "",
-                "",
-                "",
-                "example_textualAlternative_date_shortDescription",
-                "example_textualAlternative_textImage_shortDescription"
-            ]
-            
         case "titleAndHeader":
 
             examples = [
                 "example_titleAndHeader_title_title",
                 "example_titleAndHeader_headerBis_title",
                 "example_titleAndHeader_header_title"
-            ]
-            
-            examplesDetail = [
-                "example_titleAndHeader_title_shortDescription",
-                "example_titleAndHeader_headerBis_shortDescription",
-                "example_titleAndHeader_header_shortDescription"
             ]
             
         case "elementState":
@@ -114,19 +89,10 @@ class CategoryViewController: DefaultTableViewController {
                 "example_elementState_selectionList_title",
                 "example_elementState_foldArea_title"
             ]
-            
-            examplesDetail = [
-                "example_elementState_tab_shortDescription",
-                "example_elementState_selectionList_shortDescription",
-                "example_elementState_foldArea_shortDescription"
-            ]
         
         case "standardComponents":
 
             examples = ["example_standardComponents_standardVsCustom_title"]
-            
-            examplesDetail = [
-                "example_standardComponents_standardVsCustom_shortDescription"]
 
         case "clickZone":
 
@@ -134,18 +100,10 @@ class CategoryViewController: DefaultTableViewController {
                 "example_clickZone_size_title"
             ]
             
-            examplesDetail = [
-                "example_clickZone_size_shortDescription"
-            ]
-            
         case "ghostElement":
             
             examples = [
                 "example_ghostElement_alert_title"
-            ]
-            
-            examplesDetail = [
-                "example_ghostElement_alert_shortDescription"
             ]
             
         case "contentControl":
@@ -155,19 +113,10 @@ class CategoryViewController: DefaultTableViewController {
 //                "example_contentControl_slideshow_title"   /*obsolète*/
             ]
             
-            examplesDetail = [
-                "example_contentControl_carousel_shortDescription",
-                "example_contentControl_slideshow_shortDescription"
-            ]
-            
         case "contentChange":
 
             examples = [
                 "example_contentChange_elementUpdate_title"
-            ]
-            
-            examplesDetail = [
-                "example_contentChange_elementUpdate_shortDescription"
             ]
             
         case "horizontalScroll":
@@ -176,29 +125,16 @@ class CategoryViewController: DefaultTableViewController {
                 "example_horizontalScroll_carousel_title"
             ]
             
-            examplesDetail = [
-                "example_horizontalScroll_carousel_shortDescription"
-            ]
-            
         case "orientation":
             
             examples = [
                 "example_orientation_title"
             ]
             
-            examplesDetail = [
-                "example_orientation_shortDescription"
-            ]
-
-            
         case "form":
 
             examples = [
                 "example_form_label_title"
-            ]
-            
-            examplesDetail = [
-                "example_form_label_shortDescription"
             ]
             
         case "readingOrder":
@@ -207,18 +143,10 @@ class CategoryViewController: DefaultTableViewController {
                 "example_readingOrder_remoteControl_title"
             ]
             
-            examplesDetail = [
-                "example_readingOrder_remoteControl_shortDescription"
-            ]
-            
         case "language":
 
             examples = [
                 "example_language_accent_title"
-            ]
-            
-            examplesDetail = [
-                "example_language_accent_shortDescription"
             ]
             
         case "voiceOver":
@@ -226,11 +154,6 @@ class CategoryViewController: DefaultTableViewController {
             examples = [
                 "example_voiceover_accent_title"
             ]
-            
-            examplesDetail = [
-                "example_voiceover_accent_shortDescription"
-            ]
-
             
         default:
 
@@ -252,11 +175,6 @@ class CategoryViewController: DefaultTableViewController {
             howTo
         ]
         
-        cellsSubtitle = [
-            [],
-            []
-        ]
-        
         sectionHeaders = [
             "common_whatFor",
             "common_howTo"
@@ -265,7 +183,6 @@ class CategoryViewController: DefaultTableViewController {
         // cas des catégories avec exemples
         if(examples.count > 0) {
             cellsContent.append(examples)
-            cellsSubtitle.append(examplesDetail)
             sectionHeaders.append("common_examples")
         }
     }
@@ -284,13 +201,12 @@ class CategoryViewController: DefaultTableViewController {
         }
         else {
             
-            let textCell: TextAndSubTextTableViewCell
+            let textCell: TextTableViewCell
             
-            textCell            = tableView.dequeueReusableCell(withIdentifier: exampleCellIdentifier, for: indexPath) as! TextAndSubTextTableViewCell
+            textCell            = tableView.dequeueReusableCell(withIdentifier: exampleCellIdentifier, for: indexPath) as! TextTableViewCell
             textCell.isUserInteractionEnabled     = true
             textCell.label.text = cellsContent[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
-            textCell.subLabel.text = cellsSubtitle[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row].localized
-            
+
             return textCell
         }        
     }

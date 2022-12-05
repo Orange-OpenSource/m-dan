@@ -594,38 +594,41 @@
 // -------------------------
 // Testings - General Navigation
 // -------------------------
-"testing_generalNavigation_check"      = "Vérifier que tous les écrans ont des titres visibles, uniques et pertinents \n\n- Vérifier que les textes sont lisibles \n\n- Vérifier que les erreurs de clic peuvent être annulées \n\n- Vérifier que l'application fonctionne dans les deux orientations du téléphone (paysage/portrait) \n\n- Limiter les animations visuelles";
+"testing_generalNavigation_check"      = "Vérifier que tous les écrans ont des titres visibles, uniques et pertinents. \n\n- Vérifier que les textes sont lisibles. \n\n- Vérifier que les erreurs de clic peuvent être annulées. \n\n- Vérifier que l'application fonctionne dans les deux orientations du téléphone (paysage/portrait). \n\n- Limiter les animations visuelles.";
 
 
 // --------------------------
 // Testings - Font Enlargement
 // --------------------------
-"testing_fontEnlargement_check"         = "Activer l'agrandissement de texte dans les réglages du système (bouton vers le guide en haut à droite) \n\n- Vérifier que tous les icones, textes, éléments graphiques sont visibles sans aucun problème de dépassement ou de superposition \n\n- Vérifier que la navigation des différents écrans reste possible sans perte de fonctionnalités";
+"testing_fontEnlargement_check"         = "Activer l'agrandissement de texte dans les réglages du système (bouton vers le guide en haut à droite). \n\n- Vérifier que tous les icones, textes, éléments graphiques sont visibles sans aucun problème de dépassement ou de superposition. \n\n- Vérifier que la navigation des différents écrans reste possible sans perte de fonctionnalités.";
 
 // --------------------------
 // Testings - Screen Reader
 // --------------------------
-"testing_screenReader_check"         = "Activer Voice Over. Si vous ne connaissez pas VoiceOver, utilisez le guide d'utilisation (bouton vers le guide en haut à droite) \n\n- Vérifier que l'on peut naviguer entre les différents écrans et utiliser les différentes fonctionnalités en utilisant uniquement le lecteur d’écran \n\nPour être sûr de tester correctement, il est possible d'éteindre l'écran en passant son écran en mode 'rideau' : \n Activer Voice Over ; triple clique pour l'activer";
+"testing_screenReader_check"         = "Activer Voice Over. Si vous ne connaissez pas VoiceOver, utilisez le guide d'utilisation (bouton vers le guide en haut à droite). \n\n- Vérifier que l'on peut naviguer entre les différents écrans et utiliser les différentes fonctionnalités en utilisant uniquement le lecteur d’écran. \n\nPour être sûr de tester correctement, il est possible d'éteindre l'écran en passant son écran en mode 'rideau' : \nActiver Voice Over ; triple clique pour l'activer.";
 
 // --------------------------
 // Testings - Selection Control
 // --------------------------
-"testing_selectionControl_check"         = "Le contrôle de sélection permet de simuler l'utilisation d'un clavier externe (bouton vers le guide en haut à droite) \n\n- Vérifier que le focus est visible et suit l'ordre logique  \n\n- Vérifier que les fonctionnalités sont utilisables  \n\n- Vérifier qu'il n'y a pas de piège clavier (pas bloqué sur un composant) \n\nIl est possible de faire les mêmes tests en connectant un clavier externe (bluetooth ou filaire)";
+"testing_selectionControl_check"         = "Le contrôle de sélection permet de simuler l'utilisation d'un clavier externe (bouton vers le guide en haut à droite). \n\n- Vérifier que le focus est visible et suit l'ordre logique.  \n\n- Vérifier que les fonctionnalités sont utilisables  \n\n- Vérifier qu'il n'y a pas de piège clavier (pas bloqué sur un composant). \n\nIl est possible de faire les mêmes tests en connectant un clavier externe (bluetooth ou filaire).";
 
 // --------------------------
 // Testings - ContrastColor
 // --------------------------
-"testing_contrastColor_check"         = "Color Contrast Calculator permet de vérifier les couleurs et les contrastes. \nUtiliser cet outil depuis son Mac. \nL'outil donne directement le résultat (icône vert OK, icône rouge KO)   \n\n- Vérifier que le contraste entre le texte et l'arrière-plan de l'application est correct (exemple illustration) \n\n- Vérifier que les couleurs utilisées dans les composants d'interface sont suffisamment contrastées";
+"testing_contrastColor_check"         = "Color Contrast Calculator permet de vérifier les couleurs et les contrastes. \nUtiliser cet outil depuis son Mac. \nL'outil donne directement le résultat (icône vert OK, icône rouge KO).   \n\n- Vérifier que le contraste entre le texte et l'arrière-plan de l'application est correct (exemple illustration). \n\n- Vérifier que les couleurs utilisées dans les composants d'interface sont suffisamment contrastées.";
+
+"testing_contrastColorOk_accessibilityLabel" = "Aperçu visuel du logiciel lorsque la couleur et le contraste est correcte.";
+"testing_contrastColorKo_accessibilityLabel" = "Aperçu visuel du logiciel lorsque la couleur et le contraste est incorrecte.";
 
 // --------------------------
 // Testings - Multimedia
 // --------------------------
-"testing_multimedia_check"         = "\n- Vérifier que Les contenus multimédias peuvent être contrôlés par l’utilisateur (présence d’un bouton pause, bouton mode plein-écran, etc.…) \n\n- Vérifier que l’utilisateur peut contrôler tout son émis pour plus de 3 secondes (arrêter ou mettre en pause) \n\n- Vérifier qu’Il n'y a pas de démarrage automatique de la vidéo au chargement de la page.  \n\n- Vérifier que tous les contenus de type audio ou vidéo ont une transcription intégrale textuelle.";
+"testing_multimedia_check"         = "\n- Vérifier que Les contenus multimédias peuvent être contrôlés par l’utilisateur (présence d’un bouton pause, bouton mode plein-écran, etc…). \n\n- Vérifier que l’utilisateur peut contrôler tout son émis pour plus de 3 secondes (arrêter ou mettre en pause). \n\n- Vérifier qu’Il n'y a pas de démarrage automatique de la vidéo au chargement de la page.  \n\n- Vérifier que tous les contenus de type audio ou vidéo ont une transcription intégrale textuelle.";
 
 // --------------------------
 // Testings - WebView
 // --------------------------
-"testing_webView_check"         = "Pour tester les webview, il faut tester l’ensemble des critères d’accessibilité des pages web détaillés dans la rubrique de notre site de recommandation Orange";
+"testing_webView_check"         = "Pour tester les webview, il faut tester l’ensemble des critères d’accessibilité des pages web détaillés dans la rubrique de notre site de recommandation Orange.";
 "testing_webView_button"         = "Rubrique web";
 "testing_webView_url"            = "https://a11y-guidelines.orange.com/fr/web/tester/";
 
@@ -683,6 +686,7 @@
 // Menu - Other application
 // ----------------
 "other_application_nav_title"  = "Autres applications";
+"other_application_url"        = "https://innovationfactory.orange.com/index?hl=fr";
 
 // ---------------
 // Menu - About

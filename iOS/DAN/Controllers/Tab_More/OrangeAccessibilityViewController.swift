@@ -19,6 +19,7 @@
 
 import UIKit
 import WebKit
+import DeclarationAccessibility
 
 class OrangeAccessibilityViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
 
@@ -32,14 +33,22 @@ class OrangeAccessibilityViewController: UIViewController, WKNavigationDelegate,
 
         title = "orange_accessibility_nav_title".localized
         
+        let declarationViewController = DeclarationViewController()
         let language = Bundle.main.preferredLocalizations.first! as NSString
         let fileName = "mdan_" + (language as String)
-        let url = URL(fileURLWithPath: Bundle.main.path(forResource: fileName, ofType: "html")!)
-        let urlRequest = URLRequest(url: url)
-        webView.load(urlRequest)
-        webView.navigationDelegate = self
-        view = webView
+        declarationViewController.declarations.detailUrl = fileName
+        declarationViewController.declarations.identityName = "ORANGE SA"
+        declarationViewController.declarations.identityAdresse = "Siège social : 111, quai du Président Roosevelt, 92130 Issy-les-Moulineaux"
+        declarationViewController.xmlPath = "accessibility_result"
+        self.embed(declarationViewController, inView: view)
+        setUpNavigationBarClose()
 
+    }
+    
+    func setUpNavigationBarClose() {
+        navigationItem.largeTitleDisplayMode = .never
+             //navigationController?.navigationBar.prefersLargeTitles = false
+        self.navigationController?.navigationBar.tintColor = UIColor.orange_orangeInnovation()
     }
     
     override func viewDidLayoutSubviews() {

@@ -1,0 +1,21 @@
+PODS:
+  - DeclarationAccessibility (1.0.0)
+
+DEPENDENCIES:
+  - DeclarationAccessibility (from `https://gitlab.tech.orange/tayeb.sedraia/accessibility_ios_accessibility_statement.git`)
+
+EXTERNAL SOURCES:
+  DeclarationAccessibility:
+    :git: https://gitlab.tech.orange/tayeb.sedraia/accessibility_ios_accessibility_statement.git
+
+CHECKOUT OPTIONS:
+  DeclarationAccessibility:
+    :commit: e3207ab8bd1486c25f05df4d3d0b12b54aeb0518
+    :git: https://gitlab.tech.orange/tayeb.sedraia/accessibility_ios_accessibility_statement.git
+
+SPEC CHECKSUMS:
+  DeclarationAccessibility: 2fc6b32b914c969da1762a82c6c56b1532db277e
+
+PODFILE CHECKSUM: fc725117e9c0651182fa64ff5c235a73c3d1f0bf
+
+COCOAPODS: 1.11.2

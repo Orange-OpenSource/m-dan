@@ -18,6 +18,7 @@
  */
 
 import UIKit
+import DeclarationAccessibility
 
 class MoreViewController: DefaultTableViewController {
 
@@ -27,15 +28,6 @@ class MoreViewController: DefaultTableViewController {
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        /*
-        if (UserDefaults.standard.value(forKey: "isFirstLaunch") == nil) {
-        
-            performSegue(withIdentifier: "introduction-segue", sender: nil)
-            
-            UserDefaults.standard.setValue(false, forKey: "isFirstLaunch")
-        }
-         */
     }
 
     override func didReceiveMemoryWarning() {
@@ -100,7 +92,7 @@ class MoreViewController: DefaultTableViewController {
         case 3:
             performSegue(withIdentifier: "legal-segue", sender: cell)
         case 4:
-            performSegue(withIdentifier: "other-application-segue", sender: cell)
+            self.openURL("other_application_url".localized)
         case 5:
             performSegue(withIdentifier: "contact-segue", sender: cell)
         case 6:

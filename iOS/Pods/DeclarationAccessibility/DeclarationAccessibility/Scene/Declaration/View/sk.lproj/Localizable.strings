@@ -1,0 +1,16 @@
+/* 
+  File.strings
+  DeclarationAccessibility
+
+  Created by Tayeb SEDRAIA on 21/05/2021.
+  
+*/
+
+"declaration_title" = "Vyhlásenie";
+"average_title_label" = "%@ vyhovujúci";
+"result_declaration_subtitle" = "Táto aplikácia je %@ v súlade s kritériami WCAG";
+"date_title" = "Dátum auditu";
+"identity_title" = "Totožnosť vyhlasovateľa";
+"referential_title" = "Použité normy";
+"technology_title" = "Technické špecifikácie";
+"detail_button" = "ZOBRAZIŤ PODROBNÉ ÚDAJE";

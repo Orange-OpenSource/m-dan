@@ -21,16 +21,20 @@ import Foundation
 import WebKit
 
 class CGUViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
-
+    
     @IBOutlet weak var myOrangeLabel:   UILabel!
     
     var webView = WKWebView()
+    var activityIndicator = UIActivityIndicatorView()
     
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         title = "cgu_nav_title".localized
+        
+        self.loadActivityIndicatorView()
+        navigationItem.largeTitleDisplayMode = .never
         
         let language = Bundle.main.preferredLocalizations.first! as NSString
         let fileName = "CGU_" + (language as String)
@@ -38,11 +42,41 @@ class CGUViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
         let urlRequest = URLRequest(url: url)
         webView.load(urlRequest)
         webView.navigationDelegate = self
+        webView.backgroundColor = .systemBackground
+        webView.isOpaque = false
         view = webView
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         webView.frame = view.bounds
+    }
+    
+    func loadActivityIndicatorView() {
+        if #available(iOS 13.0, *) {
+            activityIndicator = UIActivityIndicatorView(style: .large)
+        } else {
+            activityIndicator = UIActivityIndicatorView(style: .gray)
+        }
+        
+        activityIndicator.center = view.center
+        webView.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
+    }
+}
+
+extension CGUViewController {
+    
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        activityIndicator.startAnimating()
+        webView.isOpaque = false
+    }
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        activityIndicator.stopAnimating()
+        webView.isOpaque = true
+    }
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        activityIndicator.stopAnimating()
+        webView.isOpaque = true
     }
 }

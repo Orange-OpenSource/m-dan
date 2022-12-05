@@ -41,6 +41,22 @@ class TestingsViewController: DefaultTableViewController {
 
         title = "tab_testings_title".localized
         
+        
+        cellsContent = [
+            ["testings_description_cell"],
+            [
+                "testings_option_generalNavigation",
+                "testings_option_fontEnlargement",
+                "testings_option_screenReader",
+                "testings_option_selectionControl"
+            ],
+            [
+                "testings_option_colorContrast",
+                "testings_option_multimedia",
+                "testings_option_webView"
+            ],
+        ]
+        
         optionsKeys = [
             [""],
             [
@@ -60,21 +76,6 @@ class TestingsViewController: DefaultTableViewController {
             "testings_section_description",
             "testings_section_situationTest",
             "testings_section_anotherTest"
-        ]
-        
-        cellsContent = [
-            ["testings_description_cell"],
-            [
-                "testings_option_generalNavigation",
-                "testings_option_fontEnlargement",
-                "testings_option_screenReader",
-                "testings_option_selectionControl"
-            ],
-            [
-                "testings_option_colorContrast",
-                "testings_option_multimedia",
-                "testings_option_webView"
-            ],
         ]
     }
 

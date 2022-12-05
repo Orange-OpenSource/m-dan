@@ -55,6 +55,8 @@ class ColorContrastToolViewController: DefaultTableViewController {
             
             if (indexPath as NSIndexPath).section == accessibleSection {
                 cell.accessibilityConfiguration()
+            } else {
+                cell.noAccessibilityConfiguration()
             }
             
             return cell
@@ -94,10 +96,14 @@ class TestingImageInfoTableViewCell: UITableViewCell {
     }
     
     func accessibilityConfiguration() {
-        
-        buttonView.accessibilityLabel = "example_image_info_accessibilityLabel".localized
-        buttonView.accessibilityHint = "example_image_info_accessibilityHint".localized
-        buttonView.accessibilityTraits = UIAccessibilityTraits.button
+        buttonView.accessibilityLabel = "testing_contrastColorOk_accessibilityLabel".localized
+        buttonView.accessibilityTraits = UIAccessibilityTraits.image
+        buttonView.setImage(UIImage(named: "ColorContrastOK"), for: .normal)
+    }
+    
+    func noAccessibilityConfiguration() {
+        buttonView.accessibilityLabel = "testing_contrastColorKo_accessibilityLabel".localized
+        buttonView.accessibilityTraits = UIAccessibilityTraits.image
         buttonView.setImage(UIImage(named: "ColorContrastOK"), for: .normal)
     }
     
