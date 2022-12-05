@@ -630,43 +630,23 @@
                                     <outlet property="label" destination="14o-HA-ITa" id="fOT-Pg-1YA"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="exampleCell" id="Qzc-Dt-AG5" customClass="TextAndSubTextTableViewCell" customModule="mDAN" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="150" width="428" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="exampleCell" textLabel="kDI-wV-fQV" rowHeight="56" style="IBUITableViewCellStyleDefault" id="IUL-ZI-ugf" customClass="TextTableViewCell" customModule="mDAN" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="150" width="428" height="56"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qzc-Dt-AG5" id="JME-sl-jB6">
-                                    <rect key="frame" x="0.0" y="0.0" width="397.66666666666669" height="44"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IUL-ZI-ugf" id="Ad3-od-ydW">
+                                    <rect key="frame" x="0.0" y="0.0" width="397.66666666666669" height="56"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Uxg-Ob-ypf">
-                                            <rect key="frame" x="15" y="0.0" width="369.66666666666669" height="44"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnJ-0d-phq">
-                                                    <rect key="frame" x="0.0" y="0.0" width="369.66666666666669" height="18"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fuO-Sx-rny">
-                                                    <rect key="frame" x="0.0" y="26" width="369.66666666666669" height="18"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </stackView>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="kDI-wV-fQV">
+                                            <rect key="frame" x="20" y="0.0" width="369.66666666666669" height="56"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="Uxg-Ob-ypf" firstAttribute="top" secondItem="JME-sl-jB6" secondAttribute="top" id="Gem-bk-ywM"/>
-                                        <constraint firstItem="Uxg-Ob-ypf" firstAttribute="width" secondItem="JME-sl-jB6" secondAttribute="width" multiplier="0.929907" id="IST-y5-0Ze"/>
-                                        <constraint firstItem="Uxg-Ob-ypf" firstAttribute="height" relation="greaterThanOrEqual" secondItem="JME-sl-jB6" secondAttribute="height" multiplier="0.772727" id="JtR-NP-Mci"/>
-                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Uxg-Ob-ypf" secondAttribute="bottom" id="Lsj-Ye-scd"/>
-                                        <constraint firstAttribute="trailing" secondItem="Uxg-Ob-ypf" secondAttribute="trailing" constant="15" id="Mhd-gB-ad2"/>
-                                        <constraint firstItem="Uxg-Ob-ypf" firstAttribute="leading" secondItem="JME-sl-jB6" secondAttribute="leading" constant="15" id="uMd-6J-6ud"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="label" destination="VnJ-0d-phq" id="joO-EX-Vd8"/>
-                                    <outlet property="subLabel" destination="fuO-Sx-rny" id="8U4-j8-Dgy"/>
+                                    <outlet property="label" destination="kDI-wV-fQV" id="clY-NF-iKZ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1091,7 +1071,7 @@
                                     <outlet property="webview" destination="Fl6-CO-Anm" id="Ogb-Y4-uvu"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="webviewLinksCell" rowHeight="104" id="tro-A6-vvf" customClass="WebviewTableViewCell" customModule="mDAN" customModuleProvider="target">
+                            <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="webviewLinksCell" rowHeight="104" id="tro-A6-vvf" customClass="WebviewTableViewCell" customModule="mDAN" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="157" width="428" height="104"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tro-A6-vvf" id="XT0-dr-w2U">
@@ -1120,6 +1100,7 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="webview" destination="0TH-CZ-Qdi" id="Z56-eb-xJC"/>
                                 </connections>
@@ -1416,7 +1397,7 @@
         <image name="settings" width="25" height="25"/>
         <image name="task_list" width="25" height="25"/>
         <namedColor name="blue_accent">
-            <color red="0.21199999749660492" green="0.44999998807907104" blue="0.84299999475479126" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.20800000429153442" green="0.44999998807907104" blue="0.83899998664855957" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
