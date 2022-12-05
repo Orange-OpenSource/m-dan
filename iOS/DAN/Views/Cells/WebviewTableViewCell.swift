@@ -18,6 +18,7 @@
  */
 
 import UIKit
+import WebKit
 
 class WebviewTableViewCell: UITableViewCell {
     
@@ -31,4 +32,16 @@ class WebviewTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+}
+
+extension WebviewTableViewCell: WKNavigationDelegate, WKUIDelegate {
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        webView.isOpaque = false
+    }
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        webView.isOpaque = true
+    }
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        webView.isOpaque = true
+    }
 }

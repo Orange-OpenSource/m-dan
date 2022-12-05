@@ -35,9 +35,9 @@ class IntroductionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //view.backgroundColor = UIColor.white
-        
         title = "common_accessibility".localized
+        
+        navigationItem.largeTitleDisplayMode = .never
         
         titleLabel.text     = "common_DAN".localized
         subtitleLabel.text  = "common_accessibilityDemonstrator".localized

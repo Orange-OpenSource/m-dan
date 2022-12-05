@@ -65,3 +65,8 @@ ul {
     list-style-type: none;
 }
 
+p {
+    padding-left: 25px;
+    padding-right: 10px;
+}
+

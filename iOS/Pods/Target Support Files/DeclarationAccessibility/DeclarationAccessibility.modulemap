@@ -1,0 +1,6 @@
+framework module DeclarationAccessibility {
+  umbrella header "DeclarationAccessibility-umbrella.h"
+
+  export *
+  module * { export * }
+}

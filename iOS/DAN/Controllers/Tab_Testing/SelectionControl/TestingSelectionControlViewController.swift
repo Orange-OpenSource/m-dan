@@ -49,9 +49,7 @@ class TestingSelectionControlViewController: EmptyTableViewController {
         ]
         
         cellsContent = [
-            ["testing_selectionControl_check"],
-            [""],
-            [""]
+            ["testing_selectionControl_check"]
         ]
     }
     

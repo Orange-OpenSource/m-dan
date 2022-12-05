@@ -1,0 +1,16 @@
+/* 
+  File.strings
+  DeclarationAccessibility
+
+  Created by Tayeb SEDRAIA on 21/05/2021.
+  
+*/
+
+"declaration_title" = "Declaraţie";
+"average_title_label" = "%@ conformă";
+"result_declaration_subtitle" = "Această aplicație este %@ conformă cu criteriile WCAG";
+"date_title" = "Data auditului";
+"identity_title" = "Identitate declarant";
+"referential_title" = "Standard aplicat";
+"technology_title" = "Specificatii tehnice";
+"detail_button" = "VEZI DETALIILE";
