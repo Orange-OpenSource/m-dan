@@ -20,8 +20,9 @@
     <string name="navigation_return">Retourner à la page précédente</string>
     <string name="navigation_home">Retourner à la page d\'accueil</string>
     <string name="section_home">Accueil</string>
-    <string name="section_criteria">Guide d\'accessibilité Android</string>
+    <string name="section_criteria">Critères d\'accessibilité Android</string>
     <string name="section_dev">Guide pour les développeurs</string>
+    <string name="section_test">Guide testeur</string>
     <string name="section_talkback">Talkback</string>
     <string name="section_axs_options">Options d\'accessibilité</string>
     <string name="section_axs_orange">L\'accessibilité chez Orange</string>
@@ -108,6 +109,7 @@
     <string name="criteria_description_content">Ce guide a pour objectif de présenter les différents critères d\'accessibilité à respecter pour obtenir une application Android accessible. Chaque critère est présenté en expliquant pourquoi il est important et la règle d\'accessibilité qui en découle. Les critères sont explicités par des exemples fonctionnels.</string>
     <string name="criteria_description_content2">Pour la plupart des exemples vous devez avoir au préalable activé Talkback, le lecteur d\'écran d\'Android.</string>
     <string name="criteria_sections">Critères</string>
+    <string name="criteria_sections_title">Critères d\'accessibilité Android</string>
     <string name="criteria_cd_sections">Selectionnez un critère dans la liste ci-dessous</string>
     <string name="criteria_accessible_example">Exemple accessible</string>
     <string name="criteria_accessible_example_more">Exemple accessible ++</string>
@@ -683,6 +685,10 @@
     <string name="options_content_description">Description</string>
     <string name="options_content_list_title">Liste des options d\'accessibilité</string>
     <string name="options_content_btn">Accéder aux options d\'accessibilité</string>
+    <string name="test_content_list_title">Tests de mise en situation</string>
+    <string name="test_content">Ce guide propose des outils et des méthodes pour tester l\'accessibilité des applications mobiles Android.
+Il est conseiller de commencer par les écrans les plus utilisés.</string>
+
     <string-array name="options_list">
         <item>Agrandissement des caractères</item>
         <item>Zoom</item>
@@ -723,6 +729,81 @@
     <string name="example_focus_color_title">État du focus</string>
     <string name="example_focus_color_desc">Tout élément interactif peut recevoir le focus, il faut donc que l\'état du focus soit défini et permette de distinguer d\’un seul coup d\’œil quel élément a le focus.</string>
 
+    <!-- guide test : hide -->
+    <string name="manual_test_title">Test de mise en situation</string>
+
+    <!-- titles : in manual tests -->
+
+    <string name="general_navigation_test_title">Navigation générale</string>
+    <string name="magnification_test_title">Agrandissement de texte</string>
+    <string name="screen_reader_test_title">Lecteur d\'écran Talkback</string>
+    <string name="keyboard_navigation_test_title">Navigation au clavier</string>
+    <string name="contrastColor_test_title">Contrastes de couleur</string>
+    <string name="multimedia_test_title">Audio et vidéo</string>
+    <string name="webview_test_title">Webview</string>
+
+    <string name="webview_details_button_title">Voir les recommandations web</string>
+    <string name="magnification_details_button_title">Activer l\'agrandissement des caractères</string>
+
+    <string name="other_test_title">Autres tests</string>
+
+    <string name="general_navigation_test_description">
+        -	Vérifier que tous les écrans ont des titres visibles, uniques et pertinents.\n\n
+        -	Vérifier que les textes sont lisibles.\n\n
+        -	Vérifier que les erreurs de clic peuvent être annulées.\n\n
+        -	Vérifier que l\'application fonctionne dans les deux orientations du téléphone.\n\n
+        -	Limiter les animations visuelles.</string>
+
+    <string name="magnification_option_description">- Activer l\'agrandissement de texte dans les réglages du système :\n </string>
+
+    <string name="magnification_test_description">
+    -	Vérifier que tous les textes, icones, éléments graphiques sont visibles sans aucun problème de dépassement ou de superposition.\n\n-	Vérifier que les différentes fonctionnalités de l\’application sont utilisables et que le contenu reste visible et clair.
+</string>
+
+    <string name="screen_Reader_test_description1">-	 Activer Talkback.\n\nSi vous ne connaissez pas Talkback, utilisez le guide d\’utilisation pour voir comment l\’activer et découvrir les différentes gestuelles de navigation.</string>
+
+    <string name="screen_Reader_test_description2">-	Vérifier que l\'on peut naviguer entre les différents écrans et utiliser les différentes fonctionnalités en utilisant uniquement le lecteur d\’écran.\n\nCet outil est utilisé par les utilisateurs malvoyants et non-voyants.\n\nPour simuler leurs situations, il est possible de tester avec l\’écran éteint :\n\nActiver Talkback ; glisser votre doigt du haut vers le bas puis vers la droite (en écrivant la lettre L majuscule) pour ouvrir le menu talkback ; naviguer jusqu’à « Masquer l’écran » ; cliquez deux fois pour l’activer.</string>
+
+    <string name="screen_Reader_test_description3">Pour désactiver le mode éteint ; reglisser votre doigt en écrivant la lettre L pour ouvrir le menu talkback ; naviguer jusqu\'à « Afficher l\’écran » ; cliquez deux fois.\n\n
+    </string>
+
+    <string name="keyboard_navigation_test_description">Connecter un clavier externe à votre téléphone (bluetooth ou filaire).\n\nNaviguer dans l\’application en utilisant seulement le clavier :\n\n-	Vérifier que le focus est visible et suit l\'ordre logique.\n\n-	Vérifier que les fonctionnalités sont utilisables.\n\n-	Vérifier qu\'il n\'y a pas de piège clavier (le focus ne reste pas bloqué sur un composant).
+        </string>
+
+    <string name="contrastColor_test_description1">Utiliser Accessibility scanner, application disponible sur le Google Play Store.\n\nCet outil vérifie les contrastes entre les textes et leurs arrière-plans ainsi que les contrastes des composants d\’interface.\n\nCes tests doivent être réalisés en mode clair et en mode sombre.\n\n-	Télécharger l\’application et se laisser ensuite guider.</string>
+
+        <string name="contrastColor_test_description2">Vous pouvez créer un raccourci sur votre écran principal pour pouvoir activer scanner à tout moment.\nEn activant Scanner, un floating button apparait.</string>
+
+           <string name="contrastColor_test_description3">-	Se mettre sur l\’écran à tester et cliquer sur ce bouton ; Ce bouton permet de lancer une analyse sur l\’écran de votre choix.
+        \n\n-	Le rapport d’erreurs est immédiatement retranscrit sur cet écran :
+</string>
+
+    <string name="multimedia_test_description">
+    -	Vérifier que Les contenus multimédias peuvent être contrôlés par l\’utilisateur (présence d\’un bouton pause, bouton mode plein-écran, etc…).\n\n
+    -	Vérifier que l\’utilisateur peut contrôler tout son de plus de trois secondes (arrêter ou mettre en pause).\n\n
+    -	Vérifier qu\’Il n\'y a pas de démarrage automatique de la vidéo au chargement de la page.\n\n
+    -	Vérifier que tous les contenus de type audio ou vidéo ont une transcription intégrale textuelle.\n\n
+    </string>
+
+    <string name="webview_test_description">
+-	Pour tester les webview, il faut tester l\’ensemble des critères d’accessibilité des pages web détaillés dans la rubrique tester.\n
+    </string>
+
+    <string name="link_web_accessibility_details">https://a11y-guidelines.orange.com/fr/web/</string>
+
+
+    <string name="tb_talback_guide_btn">Voir le guide Talkback</string>
+    <string name="tb_scanner_guide_btn">Télécharger Accessibility Scanner</string>
+
+
+
+
+
+
+
+
+
+
 
     <!-- accessibility & Orange view -->
     <string name="orange_title">Et chez Orange?</string>
@@ -757,9 +838,19 @@
     <string name="about_other_licences_content"><b>AnimatedExpandableListView</b>\nCopyright &#169; 2014 Gary Guo\n\nAnimatedExpandableListView est distribué selon les termes de la <a rel="about_licence" href="http://www.apache.org/licenses/LICENSE-2.0">licence Apache 2.0</a>\nPour en savoir plus : <a rel="about_licence" href="https://github.com/idunnololz/AnimatedExpandableListView">https://github.com/idunnololz/AnimatedExpandableListView</a>\n\n<b>Android Annotations</b>\nCopyright © 2012–2016 eBusiness Information\n\nAndroidAnnotations est distribué selon les termes de la <a rel="about_licence" href="http://www.apache.org/licenses/LICENSE-2.0">licence Apache 2.0</a>\nPour en savoir plus : <a rel="about_licence" href="https://github.com/excilys/androidannotations/">https://github.com/excilys/androidannotations/</a>\n\n<b>Android Auto Scroll ViewPager</b>\nCopyright &#169; 2014 trinea.cn\n\nAndroidAutoScrollViewPager est distribué selon les termes de la <a rel="about_licence" href="http://www.apache.org/licenses/LICENSE-2.0">licence Apache 2.0</a>\nPour en savoir plus : <a rel="about_licence" href="https://github.com/Trinea/android-auto-scroll-view-pager">https://github.com/Trinea/android-auto-scroll-view-pager</a>\n\n<b>Pochette d\'album \"Mary Daisy Jane\"</b>\nLa pochette de l\'album de Mael \"Mary Daisy Jane\" est sous licence <a rel="about_licence" href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</a> et est propriété de ses créateurs ou détenteurs.</string>
 
     <!-- Navigation view -->
+    <string name="bottom_navigation_menu_test">Tests</string>
     <string name="bottom_navigation_menu_options">Options</string>
     <string name="bottom_navigation_menu_dev">Développement</string>
     <string name="bottom_navigation_menu_criteria">Critères</string>
+
+
+
+    <!-- Navigation view -->
+    <string name="criteria_section_title">Critères d\'accessibilité Android</string>
+    <string name="options_section_title">Options d\'accessibilité Android</string>
+    <string name="development_section_title">Guide de développement accessible</string>
+    <string name="test_section_title">Tests d\'accessibilité Android</string>
+
 
     <!-- android version -->
     <string name="required_version">Non disponible (Android API %1$d requis)</string>
@@ -780,7 +871,7 @@
 
 
     <string name="pz_content_desc_logo">Logo Orange</string>
-    <string name="pz_from">from <font fgcolor="#EF7814" tools:ignore="UnusedResources" tools:keep="@font/">Orange Innovation</font> </string>
+    <string name="pz_from">by <font fgcolor="#EF7814" tools:ignore="UnusedResources" tools:keep="@font/">Orange Innovation</font> </string>
 
 </resources>
 

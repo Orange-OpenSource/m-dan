@@ -38,6 +38,12 @@
         android:icon="@drawable/icon_settings"
         android:title="@string/bottom_navigation_menu_options"
         app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_Test"
+        android:enabled="true"
+        android:icon="@drawable/icon_guid_test"
+        android:title="@string/bottom_navigation_menu_test"
+        app:showAsAction="ifRoom" />
 
 </menu>
 

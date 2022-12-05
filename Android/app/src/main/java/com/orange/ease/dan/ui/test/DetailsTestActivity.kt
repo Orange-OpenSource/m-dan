@@ -17,21 +17,29 @@
  * under the License.
  */
 
-package com.orange.ease.dan.ui.developmentguide
+package com.orange.ease.dan.ui.test
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.provider.Settings
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import com.orange.ease.dan.R
+import com.orange.ease.dan.data.repository.TestGuideRepository
 import com.orange.ease.dan.databinding.DetailsDevGuideActivityBinding
-import com.orange.ease.dan.data.repository.DevelopmentGuideRepository
-import com.orange.ease.dan.viewmodel.DevGuideDetailsViewModel
+import com.orange.ease.dan.model.TestGuide
+import com.orange.ease.dan.navigation.DialogActivity
+import com.orange.ease.dan.viewmodel.TestGuideDetailsViewModel
 
-class DetailsDevGuideActivity : AppCompatActivity() {
+class DetailsTestActivity : DialogActivity() {
 
     private lateinit var binding: DetailsDevGuideActivityBinding
 
-    private lateinit var viewModel: DevGuideDetailsViewModel
+    private lateinit var viewModel: TestGuideDetailsViewModel
+
+    private var optionsDetails : Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,8 +47,8 @@ class DetailsDevGuideActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        viewModel = ViewModelProvider(this).get(DevGuideDetailsViewModel::class.java)
-        viewModel.guide = DevelopmentGuideRepository.getCurrentGuide()
+        viewModel = ViewModelProvider(this).get(TestGuideDetailsViewModel::class.java)
+        viewModel.guide = TestGuideRepository.getCurrentGuide() as TestGuide?
 
         initView()
         setupToolbar()
@@ -58,21 +66,48 @@ class DetailsDevGuideActivity : AppCompatActivity() {
         binding.textViewContentLinksGuideDev.visibility = View.GONE
 
         val guide = viewModel.guide?.let { it } ?: return
-
         binding.textViewDescriptionContentGuideDev.text = guide?.let{ getString(guide.resDescription)}
-            //HtmlCompat.fromHtml(getString(guide.resDescription),  HtmlCompat.FROM_HTML_MODE_LEGACY)
 
-        val strongLink = guide.resLink?.let {getString(it)} ?: return
+        val link = guide.resLink;
+        val option = guide.optionDescription
+        if (link!=null) {
+            binding.buttonDetailsWebview.visibility = View.VISIBLE
+            binding.buttonDetailsWebview.setText(guide.resLink)
+            optionsDetails = guide.option!!
+        }
+        if (option!=null) {
+            binding.textViewDescriptionOption.visibility = View.VISIBLE
+            binding.textViewDescriptionOption.setText(option)
+            //optionsDetails = guide.option!!
+        }
 
-        binding.textViewContentLinksGuideDev.text = strongLink
-        binding.textViewTitleLinksGuideDev.visibility = View.VISIBLE
-        binding.textViewContentLinksGuideDev.visibility = View.VISIBLE
     }
 
     override fun onResume() {
         super.onResume()
         supportActionBar?.title = viewModel.guide?.let { getString(it.resTitle) }
         title = viewModel.guide?.let { getString(it.resTitle) }
+    }
+
+    fun seeWebviewDetails(view: View) {
+        if (optionsDetails) startActivitySettings()
+        else startTuto()
+    }
+
+    private fun startTuto() {
+        //val openTutoActivity = android.content.Intent;
+        val openTutoActivity = Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link_web_accessibility_details)))
+        startActivity(openTutoActivity)
+        overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out)
+    }
+
+    private fun startActivitySettings() {
+
+        val startActivitySettings: () -> Unit = {
+            startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
+        }
+        initAlertDialogStartActivity(startActivitySettings)
+        //true
     }
 }
 

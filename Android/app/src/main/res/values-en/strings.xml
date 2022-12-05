@@ -22,6 +22,7 @@
     <string name="section_home">Home</string>
     <string name="section_criteria">Android Accessibility Guide</string>
     <string name="section_dev">Developer\'s guide</string>
+    <string name="section_test">Tester\'s guide</string>
     <string name="section_talkback">TalkBack</string>
     <string name="section_axs_options">Accessibility options</string>
     <string name="section_axs_orange">Accessibility at Orange</string>
@@ -104,6 +105,7 @@
     <string name="criteria_description_content">This guide aims to present the different accessibility criteria for getting an accessible Android application. Each criterion explains for whom it is important, when it can be implemented, why it is important and the corresponding accessibility rule. The criteria are explained through real case examples and must be used with TalkBack in order to test the accessibility.</string>
     <string name="criteria_description_content2">For the most part of the examples you must enable TalkBack, the built-in Android screen reader.</string>
     <string name="criteria_sections">Criteria</string>
+    <string name="criteria_sections_title">Accessibility Criteria</string>
     <string name="criteria_cd_sections">Select a criterion from the following list</string>
     <string name="criteria_accessible_example">Accessible example</string>
     <string name="criteria_accessible_example_more">Accessible example ++</string>
@@ -628,7 +630,8 @@
 
     <!-- guide dev : lists -->
     <string name="dev_title_listvoc">List vocalization</string>
-    <string name="dev_description_listvoc">Sometimes the lists are not vocalized correctly: the speech synthesis is trying to vocalize the whole list at once (only the items displayed on the screen). This is especially the case when using the <i>RecyclerView</i>. To overcome this problem, there is a simple fix. Just set the "<i>focusable</i>" attribute to "<i>true</i>" for each item in the list.\nThis has the effect of forcing the speech synthesis (TalkBack) to read the items one by one.</string>
+    <string name="dev_description_listvoc">Sometimes the lists are not vocalized correctly:\n\nthe speech synthesis is trying to vocalize the whole list at once (only the items displayed on the screen).\n\n
+        This is especially the case when using the <i>RecyclerView</i>. To overcome this problem, there is a simple fix. Just set the "<i>focusable</i>" attribute to "<i>true</i>" for each item in the list.\nThis has the effect of forcing the speech synthesis (TalkBack) to read the items one by one.</string>
 
     <!-- guide dev : focus nav -->
     <string name="dev_title_focusnav">Navigating via the focus (keyboard)</string>
@@ -680,6 +683,9 @@
     <string name="options_content_colorInversion">This option allows to invert colors on the screen, allowing to correct poor contrast on some application. Since Android 5 only.</string>
     <string name="options_content_description">Description</string>
     <string name="options_content_list_title">Accessibility option list</string>
+    <string name="test_content_list_title">Accessibility test list</string>
+    <string name="test_content">This guide provides tools and methods to test the Android mobile application\’s accessibility.\nIt is recommended to start with the most used screens.
+</string>
     <string name="options_content_btn">Go to accessibility settings</string>
     <string-array name="options_list">
         <item>Font size</item>
@@ -717,6 +723,76 @@
     <string name="example_focus_color_title">Focus state</string>
     <string name="example_focus_color_desc">Any interactive element can receive focus, so the state of focus must be defined and make it possible to distinguish at a glance which element has focus.</string>
 
+    <!-- guide test : hide -->
+    <string name="manual_test_title">Manual Tests</string>
+    <string name="other_test_title">other tests</string>
+
+    <string name="general_navigation_test_title">General Navigation</string>
+    <string name="magnification_test_title">Text Magnification</string>
+    <string name="screen_reader_test_title">Screen reader Talkback</string>
+    <string name="keyboard_navigation_test_title">Keyboard Navigation</string>
+    <string name="contrastColor_test_title">Color Contrast</string>
+    <string name="multimedia_test_title">Multimedia content</string>
+    <string name="webview_test_title">Webviews</string>
+
+    <string name="webview_details_button_title">See guidelines web</string>
+    <string name="magnification_details_button_title">Activate Characters magnification</string>
+
+
+
+
+    <string name="general_navigation_test_description">
+         - Check that all screens have visible, unique and relevant titles.\n\n
+         - Check that the texts are readable.\n\n
+         - Verify click errors can be undone.\n\n
+         - Check that the application works on both landscape/portrait mode.\n\n
+         - Limit visual animations.\n\n
+
+</string>
+
+    <string name="magnification_option_description">- Enable text magnification in system settings:\n</string>
+
+    <string name="magnification_test_description">- Check that all the texts, icons and graphic elements are visible without any overflow or overlapping problem.\n\n- Check that the various functionalities of the application are usable and that the content remains visible and clear.\n\n
+</string>
+
+    <string name="screen_Reader_test_description1">- Enable Talkback.\n\nIf you are unfamiliar with Talkback, check the user guide to see how to activate it and discover the different navigation gestures.</string>
+
+    <string name="screen_Reader_test_description2">- Check that you can navigate between the different screens and use the different functionalities with only the screen reader.\n\nThis tool is used by visually impaired and blind users.To simulate their situations, it is possible to test with the screen off:\n\nEnable Talkback; slide your finger from top to bottom, then to the right (writing the capital letter L) to open the talkback menu; navigate to “hide screen”; double-click to activate.\n
+</string>
+    <string name="screen_Reader_test_description3">To show the screen again; slide your finger while writing the letter L; the talkback menu is displayed; navigate to “Show Screen”; click twice.\n\n</string>
+
+    <string name="keyboard_navigation_test_description">Connect an external keyboard to your phone (bluetooth or wired).\n\nNavigate the application with only the keyboard:\n\n
+-	Check that the focus is visible and follows the logical order.\n\n
+-	Check that the functionalities are usable.\n\n
+-	Check that there is no keyboard trap (the focus does not remain blocked on a component).\n\n
+
+        </string>
+
+    <string name="contrastColor_test_description1">Use Accessibility scanner, application available on the Google Play Store.\n\nThis tool checks the contrasts between texts and their backgrounds as well as the contrasts of graphical components.\n\nThese tests should be performed in light mode and dark mode.\n\nDownload the application and then you will be guided.\n
+</string>
+
+    <string name="contrastColor_test_description2">You can create a shortcut on your main screen to be able to activate the scanner at any time.\n\nBy activating Scanner, a floating button appears on the screen:
+</string>
+
+    <string name="contrastColor_test_description3">- Put yourself on the screen to be tested and click on this button; This button allows you to launch an analysis on the screen of your choice.\n\n- The error report is immediately transcribed on this screen:
+</string>
+
+    <string name="multimedia_test_description">
+        -	Check that multimedia content can be controlled by the user (pause button, full-screen mode button, etc...).\n\n
+        -	Verify that the user can control any sound longer than three seconds (stop or pause).\n\n
+        -	Check that the video does not start automatically when the page loads.\n\n
+        -	Check that all audio or video type content has a full text transcript.\n\n
+    </string>
+
+    <string name="webview_test_description">
+To test webviews, you must test all of the web page accessibility criteria detailed in the test section. </string>
+
+    <string name="link_web_accessibility_details">https://a11y-guidelines.orange.com/en/web/</string>
+
+
+    <string name="tb_talback_guide_btn">See Talkback Guide</string>
+    <string name="tb_scanner_guide_btn">Download Accessibility Scanner</string>
+
     <!-- accessibility & Orange view -->
     <string name="orange_title">And at Orange?</string>
     <string name="orange_content">Orange is striving to make its mobile applications accessible. In this section we offer a list of applications that held a special interest to accessibility for their developments.</string>
@@ -745,15 +821,21 @@
     <!-- about view -->
     <string name="about_tittle">Orange SA</string>
     <string name="about_subtittle">mDAN v1.0.0</string>
-    <string name="about_licence">Documentation under the <a href="https://github.com/Orange-OpenSource/m-dan/blob/master/Android/LICENSE-CC.txt" rel="about_licence">CC BY 3.0 license</a>, source code of this site and examples under the  <a href="https://github.com/Orange-OpenSource/m-dan/blob/master/Android/LICENSE-Apache2.0.txt" rel="about_licence">Apache 2.0 license</a>.\n\nThe Orange logo and some images or screenshots are property of Orange:\nCopyright &#169; 2016 Orange SA All rights reserved\n\n<a href="https://github.com/Orange-OpenSource/m-dan/blob/master/Android/NOTICE.txt" rel="about_licence">List of the concerned files</a></string>
+    <string name="about_licence">Documentation under the <a href="https://github.com/Orange-OpenSource/m-dan/blob/master/Android/LICENSE-CC.txt" rel="about_licence">CC BY 3.0 license</a>, source code of this site and examples under the  <a href="https://github.com/Orange-OpenSource/m-dan/blob/master/Android/LICENSE-Apache2.0.txt" rel="about_licence">Apache 2.0 license</a>.\n\nThe Orange logo and some images or screenshots are property of Orange:\nCopyright &#169; 2016 Orange SA All rights reserved\n\n<a href="httpsset//github.com/Orange-OpenSource/m-dan/blob/master/Android/NOTICE.txt" rel="about_licence">List of the concerned files</a></string>
     <string name="about_other_licences">Third party softwares</string>
     <string name="about_other_licences_content"><b>AnimatedExpandableListView</b>\nCopyright &#169; 2014 Gary Guo\n\nAnimatedExpandableListView licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" rel="about_licence">Apache License, Version 2.0</a>\nFor more information: <a href="https://github.com/idunnololz/AnimatedExpandableListView" rel="about_licence">https://github.com/idunnololz/AnimatedExpandableListView</a>\n\n<b>Android Annotations</b>\nCopyright © 2012–2016 eBusiness Information\n\nAndroidAnnotations  licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" rel="about_licence">Apache License, Version 2.0</a>\nFor more information: <a href="https://github.com/excilys/androidannotations/" rel="about_licence">https://github.com/excilys/androidannotations/</a>\n\n<b>Android Auto Scroll ViewPager</b>\nCopyright &#169; 2014 trinea.cn\n\nAndroidAutoScrollViewPager  licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" rel="about_licence">Apache License, Version 2.0</a>\nFor more information: <a href="https://github.com/Trinea/android-auto-scroll-view-pager" rel="about_licence">https://github.com/Trinea/android-auto-scroll-view-pager</a>\n\n<b>The \"Mary Daisy Jane\" album cover</b>\nThe \"Mary Daisy Jane\" album cover, licensed under the <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en" rel="about_licence">Creative Commons Attribution-Share Alike 3.0 Unported</a> and is the property of its owners creators or holders.</string>
 
     <!-- Navigation view -->
 
+    <string name="bottom_navigation_menu_test">Tests</string>
     <string name="bottom_navigation_menu_options">Options</string>
     <string name="bottom_navigation_menu_dev">Development</string>
     <string name="bottom_navigation_menu_criteria">Criteria</string>
+
+    <string name="criteria_section_title">Accessibility Criteria</string>
+    <string name="options_section_title">Accessibility Options</string>
+    <string name="development_section_title">Accessibility Development guide</string>
+    <string name="test_section_title">Accessibility Tests</string>
 
     <!-- android version -->
     <string name="required_version">Non disponible (Android API %1$d requis)</string>
@@ -773,7 +855,7 @@
     <string name="mail_toast">There are no email clients installed.</string>
 
     <string name="pz_content_desc_logo">Orange icon</string>
-    <string name="pz_from">from <font fgcolor="#EF7814" tools:ignore="UnusedResources" tools:keep="@font/">Orange Innovation</font> </string>
+    <string name="pz_from">by <font fgcolor="#EF7814" tools:ignore="UnusedResources" tools:keep="@font/">Orange Innovation</font> </string>
 
 </resources>
 

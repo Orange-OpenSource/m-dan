@@ -32,7 +32,8 @@ import java.util.*
 class Text1ExampleDetail: AccessibilityDetailsExample() {
     override fun getAccessibleExample(context: Context): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val accessibleView = inflater.inflate(R.layout.extxt1_frag, null) as LinearLayout
+        val accessibleView = inflater.inflate(R.layout.
+        extxt1_frag, null) as LinearLayout
 
         val c = Calendar.getInstance()
         val sdf = SimpleDateFormat(context.getString(R.string.date_format), Locale.getDefault())
