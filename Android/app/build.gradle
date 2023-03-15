@@ -13,7 +13,7 @@ android {
 
     defaultConfig {
         minSdkVersion 23
-        targetSdkVersion 30
+        targetSdkVersion 31
         vectorDrawables.useSupportLibrary = true
 
         // If you have different applicationIds for buildTypes or productFlavors uncomment this block.
@@ -47,7 +47,7 @@ android {
             dimension "version"
             isDefault true
             applicationId "com.orange.labs.dan"
-            versionCode 1
+            versionCode 2
             versionName "1.1"
         }
     }
