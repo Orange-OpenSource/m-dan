@@ -50,9 +50,7 @@ class TestingFontEnlargementViewController: EmptyTableViewController {
         ]
         
         cellsContent = [
-            ["testing_fontEnlargement_check"],
-            [""],
-            [""]
+            ["testing_fontEnlargement_check"]
         ]
     }
     
@@ -78,6 +76,7 @@ class TestingFontEnlargementViewController: EmptyTableViewController {
     }
     
     @objc func displayFontEnlargementMessage(_ sender: UIBarButtonItem) {
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let optionViewController = storyboard.instantiateViewController(withIdentifier: "OptionViewController") as! OptionViewController
         optionViewController.setUpNavigationBarClose()

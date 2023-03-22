@@ -1,0 +1,16 @@
+/* 
+  File.strings
+  DeclarationAccessibility
+
+  Created by Tayeb SEDRAIA on 21/05/2021.
+  
+*/
+
+"declaration_title" = "Verklaring";
+"average_title_label" = "%@ meewerkend";
+"result_declaration_subtitle" = "Deze applicatie voldoet %@ aan de WCAG-criteria";
+"date_title" = "Datum van de audit";
+"identity_title" = "Identiteit aangever";
+"referential_title" = "Toegepaste standaard";
+"technology_title" = "Technische specificaties";
+"detail_button" = "DETAILS BEKIJKEN";

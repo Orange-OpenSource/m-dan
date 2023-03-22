@@ -111,9 +111,11 @@
 		6D9F6ECB28F857B600328FB3 /* TestingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9F6ECA28F857B500328FB3 /* TestingsViewController.swift */; };
 		6DFB1F94292401F800A1BF4B /* UIViewController+Orange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFB1F93292401F800A1BF4B /* UIViewController+Orange.swift */; };
 		6DFB1F9629266BB200A1BF4B /* Bundle+Orange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFB1F9529266BB200A1BF4B /* Bundle+Orange.swift */; };
+		6DFB1F98292D08EB00A1BF4B /* accessibility_result.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6DFB1F97292D08EA00A1BF4B /* accessibility_result.xml */; };
 		6DFE951A291A9C9000098C00 /* TestingWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFE9519291A9C9000098C00 /* TestingWebViewViewController.swift */; };
 		6DFE951C291A9CAD00098C00 /* TestingWebViewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DFE951B291A9CAD00098C00 /* TestingWebViewViewController.storyboard */; };
 		6DFE951F291D598500098C00 /* developer_style.css in Resources */ = {isa = PBXBuildFile; fileRef = 6DFE951E291D598500098C00 /* developer_style.css */; };
+		B5659768F85F890B4F74BA05 /* Pods_mDAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D06E51DD050CB19C00F623A /* Pods_mDAN.framework */; };
 		DA6B9A381C1AC16D00767DB4 /* ElementStateFoldAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B9A371C1AC16D00767DB4 /* ElementStateFoldAreaViewController.swift */; };
 		DA7AD7671C060E8900A42F3D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7AD7661C060E8900A42F3D /* CategoryViewController.swift */; };
 		DA95677F1C1F1AF7002C8233 /* ExampleForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA95677E1C1F1AF7002C8233 /* ExampleForm.storyboard */; };
@@ -228,7 +230,9 @@
 		04CBE42B1D01DBD80041A95D /* readingOrder_en.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; lineEnding = 0; path = readingOrder_en.html; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.html; };
 		04CBE42D1D01DBE80041A95D /* readingOrderLinks.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; lineEnding = 0; path = readingOrderLinks.html; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.html; };
 		04FB954F1D75E0A2003675D2 /* CALayer+XibConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+XibConfiguration.swift"; sourceTree = "<group>"; };
+		2FC40C7CFD9A815579C24812 /* Pods-mDAN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mDAN.release.xcconfig"; path = "Target Support Files/Pods-mDAN/Pods-mDAN.release.xcconfig"; sourceTree = "<group>"; };
 		446C9083239AAA3E00C4BEBB /* UIBarButtonItem+Orange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Orange.swift"; sourceTree = "<group>"; };
+		49B6D37B79A78D16321456BA /* Pods-mDAN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mDAN.debug.xcconfig"; path = "Target Support Files/Pods-mDAN/Pods-mDAN.debug.xcconfig"; sourceTree = "<group>"; };
 		6D009D9027183458004612BE /* OrientationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationViewController.swift; sourceTree = "<group>"; };
 		6D009D9427183478004612BE /* ExempleOrientation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExempleOrientation.storyboard; sourceTree = "<group>"; };
 		6D04281927D10E7E007AC365 /* DefaultLabelHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultLabelHeader.swift; path = DAN/Views/DefaultLabelHeader.swift; sourceTree = SOURCE_ROOT; };
@@ -292,9 +296,11 @@
 		6D9F6ECA28F857B500328FB3 /* TestingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingsViewController.swift; sourceTree = "<group>"; };
 		6DFB1F93292401F800A1BF4B /* UIViewController+Orange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Orange.swift"; sourceTree = "<group>"; };
 		6DFB1F9529266BB200A1BF4B /* Bundle+Orange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Orange.swift"; sourceTree = "<group>"; };
+		6DFB1F97292D08EA00A1BF4B /* accessibility_result.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = accessibility_result.xml; sourceTree = "<group>"; };
 		6DFE9519291A9C9000098C00 /* TestingWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingWebViewViewController.swift; sourceTree = "<group>"; };
 		6DFE951B291A9CAD00098C00 /* TestingWebViewViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestingWebViewViewController.storyboard; sourceTree = "<group>"; };
 		6DFE951E291D598500098C00 /* developer_style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = developer_style.css; sourceTree = "<group>"; };
+		8D06E51DD050CB19C00F623A /* Pods_mDAN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mDAN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6B9A371C1AC16D00767DB4 /* ElementStateFoldAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ElementStateFoldAreaViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DA7AD7661C060E8900A42F3D /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		DA95677E1C1F1AF7002C8233 /* ExampleForm.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExampleForm.storyboard; sourceTree = "<group>"; };
@@ -362,12 +368,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5659768F85F890B4F74BA05 /* Pods_mDAN.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00FFF42E319EE06FB8F55A21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49B6D37B79A78D16321456BA /* Pods-mDAN.debug.xcconfig */,
+				2FC40C7CFD9A815579C24812 /* Pods-mDAN.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		0482FC2A1CECC23C003870F4 /* StandardComponents */ = {
 			isa = PBXGroup;
 			children = (
@@ -550,6 +566,7 @@
 			isa = PBXGroup;
 			children = (
 				F4B4A9971C0351350036A823 /* Models */,
+				8D06E51DD050CB19C00F623A /* Pods_mDAN.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -699,6 +716,7 @@
 		F46DEA5C1C0DD688009980E1 /* Tab_More */ = {
 			isa = PBXGroup;
 			children = (
+				6DFB1F97292D08EA00A1BF4B /* accessibility_result.xml */,
 				6D0428A027D62B76007AC365 /* about_en.html */,
 				6D04289F27D62B75007AC365 /* about_fr.html */,
 				6D9F6EB528F850CD00328FB3 /* legal_notice_en.html */,
@@ -730,6 +748,7 @@
 				F4817FDB1C03130800E9612D /* DAN */,
 				F4817FDA1C03130800E9612D /* Products */,
 				8ED8C2DEC3776740F7E5642E /* Frameworks */,
+				00FFF42E319EE06FB8F55A21 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -859,10 +878,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4817FED1C03130800E9612D /* Build configuration list for PBXNativeTarget "mDAN" */;
 			buildPhases = (
+				74DD2D4DD61B0ACCBD3BFE6F /* [CP] Check Pods Manifest.lock */,
 				F4817FD51C03130800E9612D /* Sources */,
 				F4817FD61C03130800E9612D /* Frameworks */,
 				F4817FD71C03130800E9612D /* Resources */,
 				6D842501276B5004002E6B80 /* Embed Frameworks */,
+				CBAC5522D42EDEF5053D5ACC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -966,6 +987,7 @@
 				04CBE3FE1D01D2060041A95D /* accessibilityOptionsState_fr.html in Resources */,
 				6DFE951F291D598500098C00 /* developer_style.css in Resources */,
 				04CBE40E1D01D70C0041A95D /* changeVocalization_en.html in Resources */,
+				6DFB1F98292D08EB00A1BF4B /* accessibility_result.xml in Resources */,
 				04CBE4241D01DB9D0041A95D /* textSize_fr.html in Resources */,
 				F44F64081C1AC47E003FD410 /* ExampleGhostElement.storyboard in Resources */,
 				04CBE3EA1D0086120041A95D /* textualAlternativeLinks.html in Resources */,
@@ -997,6 +1019,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74DD2D4DD61B0ACCBD3BFE6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mDAN-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBAC5522D42EDEF5053D5ACC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mDAN/Pods-mDAN-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DeclarationAccessibility/DeclarationAccessibility.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeclarationAccessibility.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mDAN/Pods-mDAN-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F4817FD51C03130800E9612D /* Sources */ = {
@@ -1211,18 +1276,19 @@
 		};
 		F4817FEE1C03130800E9612D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49B6D37B79A78D16321456BA /* Pods-mDAN.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = B9YP84K776;
 				INFOPLIST_FILE = DAN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.orange.labs.mdan;
 				PRODUCT_NAME = mDAN;
 				PROVISIONING_PROFILE = "";
@@ -1233,18 +1299,19 @@
 		};
 		F4817FEF1C03130800E9612D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FC40C7CFD9A815579C24812 /* Pods-mDAN.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = B9YP84K776;
 				INFOPLIST_FILE = DAN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.orange.labs.mdan;
 				PRODUCT_NAME = mDAN;
 				PROVISIONING_PROFILE = "";

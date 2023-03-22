@@ -49,9 +49,7 @@ class TestingGeneralNavigationViewController: EmptyTableViewController {
         ]
         
         cellsContent = [
-            ["testing_generalNavigation_check"],
-            [""],
-            [""]
+            ["testing_generalNavigation_check"]
         ]
     }
     

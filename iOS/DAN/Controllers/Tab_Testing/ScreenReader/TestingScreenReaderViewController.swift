@@ -50,9 +50,7 @@ class TestingScreenReaderViewController: EmptyTableViewController {
         ]
         
         cellsContent = [
-            ["testing_screenReader_check"],
-            [""],
-            [""]
+            ["testing_screenReader_check"]
         ]
     }
     

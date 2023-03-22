@@ -1,0 +1,16 @@
+/* 
+  File.strings
+  DeclarationAccessibility
+
+  Created by Tayeb SEDRAIA on 21/05/2021.
+  
+*/
+
+"declaration_title" = "Declaració";
+"average_title_label" = "%@ Compleix amb";
+"result_declaration_subtitle" = "Aquesta aplicació %@ compleix amb WCAG criteria";
+"date_title" = "Data de l\auditoria";
+"identity_title" = "Identitat del declarant";
+"referential_title" = "Estàndard aplicat";
+"technology_title" = "Característiques tècniques";
+"detail_button" = "MOSTRA\'n ELS DETALLS";

@@ -49,7 +49,6 @@ class OptionViewController: DefaultTableViewController {
     
     func setUpNavigationBarClose() {
         
-        self.tableView.reloadData()
         navigationItem.largeTitleDisplayMode = .never
         navigationController?.navigationBar.prefersLargeTitles = false
         navigationController?.navigationBar.barTintColor = UIColor.white
