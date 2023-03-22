@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
     buildToolsVersion "30.0.3"
 
     buildFeatures {
@@ -91,6 +91,9 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
     implementation project(path: ':AccessibilityStatementLibrary')
+    androidTestImplementation 'androidx.test:rules:1.2.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    testImplementation 'androidx.test:runner:1.2.0'
 
     androidTestImplementation('androidx.test.espresso:espresso-core:3.4.0') {
         exclude group: 'com.android.support', module: 'support-annotations'
@@ -112,7 +115,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.3.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
-    implementation 'com.android.support:design:30.0.0'
+    implementation 'com.android.support:design:31.0.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'com.github.pzienowicz:androidx-auto-scroll-view-pager:1.0.0'
